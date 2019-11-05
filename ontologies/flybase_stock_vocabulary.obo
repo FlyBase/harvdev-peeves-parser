@@ -1,0 +1,587 @@
+format-version: 1.2
+data-version: 2018-05-03
+date: 30:10:2019 08:51
+saved-by: gm119
+auto-generated-by: OBO-Edit 2.3.1
+default-namespace: FlyBase_stock_CV
+
+[Term]
+id: FBsv:0000000
+name: stock descriptor
+def: "An aspect of a stock relevant to its use for research." [FlyBase:KM]
+xref: FBcv:0000614
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000001
+name: stock state
+namespace: stock_state
+def: "The biological condition of the material that comprises a stock." [FlyBase:KM]
+is_a: FBsv:0000000 ! stock descriptor
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000002
+name: living stock
+namespace: stock_state
+def: "A living, reproducing culture of organisms." [FlyBase:KM]
+xref: FBcv:0010000
+is_a: FBsv:0000001 ! stock state
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000003
+name: molecular extract
+namespace: stock_state
+def: "Molecular material extracted from a living stock." [FlyBase:KM]
+xref: FBcv:0010001
+is_a: FBsv:0000001 ! stock state
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000004
+name: genomic DNA
+namespace: stock_state
+def: "Total DNA extracted from a living stock." [FlyBase:KM]
+xref: FBcv:0010005
+is_a: FBsv:0000003 ! molecular extract
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000005
+name: preserved specimen
+namespace: stock_state
+def: "A dead organism or tissue treated to prevent decay." [FlyBase:KM]
+xref: FBcv:0010002
+is_a: FBsv:0000001 ! stock state
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000006
+name: desiccated specimen
+namespace: stock_state
+def: "An organism or part of an organism preserved by desiccation." [FlyBase:KM]
+is_a: FBsv:0000005 ! preserved specimen
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000007
+name: ethanol-preserved specimen
+namespace: stock_state
+def: "An organism or part of an organism preserved in ethanol." [FlyBase:KM]
+xref: FBcv:0010006
+is_a: FBsv:0000005 ! preserved specimen
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000008
+name: frozen specimen
+namespace: stock_state
+def: "An organism or part of an organism preserved at low temperature." [FlyBase:KM]
+xref: FBcv:0000656
+is_a: FBsv:0000005 ! preserved specimen
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000100
+name: stock collection
+namespace: stock_collection
+def: "A collection of stocks maintained by a research laboratory, group of laboratories, or resource provider." [FlyBase:KM]
+xref: FBcv:0010012
+is_a: FBsv:0000000 ! stock descriptor
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000101
+name: stock center collection
+namespace: stock_collection
+def: "A collection maintained by a research resource facility." [FlyBase:KM]
+xref: FBcv:0010013
+is_a: FBsv:0000100 ! stock collection
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000102
+name: laboratory collection
+namespace: stock_collection
+def: "A collection maintained by a research laboratory or group of laboratories." [FlyBase:KM]
+xref: FBcv:0010014
+is_a: FBsv:0000100 ! stock collection
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000103
+name: Bloomington Drosophila Stock Center
+namespace: stock_collection
+def: "The collection of the Bloomington Drosophila Stock Center (BDSC), Indiana University, Bloomington,USA." [FlyBase:KM]
+synonym: "BDSC" EXACT []
+synonym: "Bloomington" EXACT []
+synonym: "BSC" EXACT []
+xref: FBcv:0010021
+is_a: FBsv:0000101 ! stock center collection
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000104
+name: Kyoto Stock Center
+namespace: stock_collection
+def: "The collection of the Drosophila Genomics and Genetic Resources (DGGR), Kyoto Institute of Technology, Kyoto, Japan." [FlyBase:KM]
+synonym: "DGGR" EXACT []
+synonym: "DGRC" EXACT []
+synonym: "Kyoto" EXACT []
+xref: FBcv:0010024
+is_a: FBsv:0000101 ! stock center collection
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000105
+name: Exelixis at Harvard Medical School
+namespace: stock_collection
+def: "The Exelixis Collection, Harvard Medical School, Boston, USA." [FlyBase:KM]
+synonym: "Artavanis-Tsakonas laboratory" RELATED []
+synonym: "Harvard" EXACT []
+xref: FBcv:0010020
+is_obsolete: true
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000106
+name: National Drosophila Species Stock Center
+namespace: stock_collection
+def: "The collection of the Drosophila Species Stock Center, Cornell University, Ithaca, USA." [FlyBase:GM]
+synonym: "NDSSC" EXACT []
+synonym: "San Diego" EXACT []
+synonym: "Tucson" EXACT []
+synonym: "UC San Diego Drosophila Species Stock Center" EXACT []
+xref: FBcv:0010022
+is_a: FBsv:0000101 ! stock center collection
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000107
+name: Vienna Drosophila Resource Center
+namespace: stock_collection
+def: "The collection of the Vienna Drosophila Resource Center (VDRC), Institute of Molecular Biotechnology and the Research Institute of Molecular Pathology, Vienna, Austria." [FlyBase:KM]
+synonym: "VDRC" EXACT []
+synonym: "Vienna" EXACT []
+xref: FBcv:0000655
+is_a: FBsv:0000101 ! stock center collection
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000108
+name: Nusslein-Volhard collection
+namespace: stock_collection
+def: "The collection of Christiane Nusslein-Volhard, Max Planck Institut fur Entwicklungsbiologie, Germany." [FlyBase:KM]
+xref: FBcv:0010017
+is_obsolete: true
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000109
+name: Garcia-Bellido collection
+namespace: stock_collection
+def: "The collection of Antonio Garcia-Bellido, Universidad Autonoma de Madrid, Spain." [FlyBase:KM]
+xref: FBcv:0010016
+is_obsolete: true
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000110
+name: Carpenter collection
+namespace: stock_collection
+def: "The collection of Adelaide T. C. Carpenter, University of Cambridge, UK." [FlyBase:KM]
+xref: FBcv:0010018
+is_obsolete: true
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000111
+name: GenetiVision
+namespace: stock_collection
+def: "GenetiVision Autosomal Duplication Stock Collection." [FlyBase:GM]
+synonym: "GVADpC" EXACT []
+is_a: FBsv:0000101 ! stock center collection
+created_by: Administrator
+creation_date: 2018-03-12T06:30:46Z
+
+[Term]
+id: FBsv:0000500
+name: stock breeding history
+namespace: stock_breeding_history
+def: "The method by which a stock was established." [FlyBase:KM]
+is_a: FBsv:0000000 ! stock descriptor
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000501
+name: inbred line
+namespace: stock_breeding_history
+def: "Established from selected sib matings over multiple generations." [FlyBase:KM]
+xref: FBcv:0000660
+is_a: FBsv:0000500 ! stock breeding history
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000502
+name: isofemale line
+namespace: stock_breeding_history
+def: "Established from a single female captured in the wild." [FlyBase:KM]
+xref: FBcv:0000661
+is_a: FBsv:0000500 ! stock breeding history
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000503
+name: multi-female line
+namespace: stock_breeding_history
+def: "Established from two or more females collected in the wild." [FlyBase:KM]
+xref: FBcv:0000676
+is_a: FBsv:0000500 ! stock breeding history
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000504
+name: recent collection
+namespace: stock_breeding_history
+def: "Established from flies collected in the wild within the past 3 years." [FlyBase:KM]
+xref: FBcv:0000662
+is_a: FBsv:0000500 ! stock breeding history
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000600
+name: stock predefined set
+namespace: stock_predefined_set
+def: "A set of stocks that meets specified criteria or serve a specified purpose as determined by the collection that maintains the stock." [FlyBase:KM]
+is_a: FBsv:0000000 ! stock descriptor
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000601
+name: BDSC Deficiency Kit
+namespace: stock_predefined_set
+def: "A predefined set of stocks that make up the Bloomington Drosophila Stock Center Deficiency Kit for D. melanogaster." [FlyBase:KM]
+xref: FBcv:0000632
+is_a: FBsv:0000600 ! stock predefined set
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000602
+name: BDSC X Duplication Kit
+namespace: stock_predefined_set
+def: "A predefined set of stocks that make up the Bloomington Drosophila Stock Center Duplication Kit for the D. melanogaster X chromosome, also known as chromosome 1." [FlyBase:KM]
+xref: FBcv:0000636
+is_a: FBsv:0000600 ! stock predefined set
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000603
+name: Cam 2 Duplication Kit
+namespace: stock_predefined_set
+def: "A predefined set of stocks that make up the D. melanogaster chromosome 2 Duplication Kit created at University of Cambridge, M. Ashburner laboratory." [FlyBase:KM]
+xref: FBcv:0000635
+is_a: FBsv:0000600 ! stock predefined set
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000604
+name: Gene Replacement Kit
+namespace: stock_predefined_set
+def: "A predefined set of stocks that make up the D. melanogaster targeted gene replacement kit created at University of Utah, K. Golic laboratory." [FlyBase:KM]
+xref: FBcv:0000639
+is_a: FBsv:0000600 ! stock predefined set
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0000605
+name: P Mapping Kit
+namespace: stock_predefined_set
+def: "A predefined set of stocks carrying a w[+m]-marked transgene insertion suitable for the mapping technique described in Zhai et al 2003 (FBrf0162283)." [FlyBase:KM]
+xref: FBcv:0000016
+is_a: FBsv:0000600 ! stock predefined set
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0001000
+name: stock feature
+namespace: stock_feature
+def: "A notable property or categorization of a stock as determined by the collection that maintains the stock." [FlyBase:KM]
+is_a: FBsv:0000000 ! stock descriptor
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0001001
+name: balancer chromosome
+namespace: stock_feature
+def: "A chromosome that can be used to preserve a genotype without selection." [FlyBase:KM]
+xref: FBcv:0000152
+is_a: FBsv:0001000 ! stock feature
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0001002
+name: isogenic chromosome
+namespace: stock_feature
+def: "A homologous chromosome pair made genetically identical through inbreeding or chromosome manipulation at some point in the past (isogenecity decays with time)." [FlyBase:KM]
+xref: FBcv:0000619
+is_a: FBsv:0001000 ! stock feature
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0001003
+name: whole genome sequence
+namespace: stock_feature
+def: "A whole genome sequence in the public domain." [FlyBase:KM]
+xref: FBcv:0000638
+xref: FBcv:0000673
+is_a: FBsv:0001000 ! stock feature
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0001004
+name: visible marker mapping chromosome
+namespace: stock_feature
+def: "A chromosome with visible markers suitable for recombination mapping." [FlyBase:KM]
+is_a: FBsv:0001017 ! mapping chromosome
+created_by: Administrator
+creation_date: 2009-09-09T05:18:49Z
+
+[Term]
+id: FBsv:0001005
+name: wild type
+namespace: stock_feature
+def: "Without known, laboratory-induced genetic modifications." [FlyBase:KM]
+xref: FBcv:0000618
+is_a: FBsv:0001000 ! stock feature
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0001006
+name: chromosome 1 balancer
+namespace: stock_feature
+def: "A balancer for D. melanogaster chromosome 1 (also known as the X chromosome)." [FlyBase:KM]
+xref: FBcv:0000158
+is_a: FBsv:0001001 ! balancer chromosome
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0001007
+name: chromosome 2 balancer
+namespace: stock_feature
+def: "A balancer for D. melanogaster chromosome 2." [FlyBase:KM]
+xref: FBcv:0000159
+is_a: FBsv:0001001 ! balancer chromosome
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0001008
+name: chromosome 3 balancer
+namespace: stock_feature
+def: "A balancer for D. melanogaster chromosome 3." [FlyBase:KM]
+xref: FBcv:0000160
+is_a: FBsv:0001001 ! balancer chromosome
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0001009
+name: DTS balancer
+namespace: stock_feature
+def: "A balancer carrying a dominant temperature-sensitive lethal allele." [FlyBase:KM]
+synonym: "dominant temperature-sensitive lethal balancer" EXACT []
+xref: FBcv:0000598
+is_a: FBsv:0001001 ! balancer chromosome
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0001010
+name: fluorescent balancer
+namespace: stock_feature
+def: "A balancer that expresses a fluorescent protein." [FlyBase:KM]
+xref: FBcv:0010009
+is_a: FBsv:0001001 ! balancer chromosome
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0001011
+name: lacZ balancer
+namespace: stock_feature
+def: "A balancer that expresses beta-galactosidase from the E. coli lacZ gene." [FlyBase:KM]
+synonym: "blue balancer" EXACT []
+xref: FBcv:0010010
+is_a: FBsv:0001001 ! balancer chromosome
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0001012
+name: sterile balancer
+namespace: stock_feature
+def: "An autosomal balancer carrying a dominant male or female sterile allele." [FlyBase:KM]
+xref: FBcv:0000174
+xref: FBcv:0000175
+is_a: FBsv:0001001 ! balancer chromosome
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0001013
+name: reference genome sequence
+namespace: stock_feature
+def: "A whole genome sequence used as the standard sequence for a species." [FlyBase:KM]
+is_a: FBsv:0001003 ! whole genome sequence
+created_by: Administrator
+creation_date: 2009-09-08T12:00:00Z
+
+[Term]
+id: FBsv:0001014
+name: dominant marker
+namespace: stock_feature
+def: "A dominant phenotype suitable for scoring in a wide range of crosses." [FlyBase:KM]
+is_a: FBsv:0001000 ! stock feature
+created_by: Administrator
+creation_date: 2009-09-08T08:06:59Z
+
+[Term]
+id: FBsv:0001015
+name: human disease model
+namespace: stock_feature
+def: "A classical or transgenic allele of a human disease gene ortholog that produces a Drosophila phenotype similar to some aspect of the human disease." [FlyBase:KM]
+is_a: FBsv:0001024 ! human disease gene ortholog
+created_by: Administrator
+creation_date: 2009-09-09T12:10:15Z
+
+[Term]
+id: FBsv:0001016
+name: transgenesis tool
+namespace: stock_feature
+def: "A transposable element, transposase gene, integration gene, docking site or other component for the manipulation of transposable elements." [FlyBase:KM]
+is_a: FBsv:0001000 ! stock feature
+created_by: Administrator
+creation_date: 2009-09-09T12:31:44Z
+
+[Term]
+id: FBsv:0001017
+name: mapping chromosome
+namespace: stock_feature
+def: "A chromosome with markers suitable for recombination mapping." [FlyBase:KM]
+is_a: FBsv:0001000 ! stock feature
+created_by: Administrator
+creation_date: 2009-09-09T12:44:32Z
+
+[Term]
+id: FBsv:0001018
+name: SNP mapping chromosome
+namespace: stock_feature
+def: "A chromosome with characterized single nucleotide polymorphisms suitable for recombination mapping." [FlyBase:KM]
+xref: FBcv:0000028
+is_a: FBsv:0001017 ! mapping chromosome
+created_by: Administrator
+creation_date: 2009-09-09T12:50:10Z
+
+[Term]
+id: FBsv:0001019
+name: recombinase
+namespace: stock_feature
+def: "An enzyme that mediates DNA recombination." [FlyBase:KM]
+is_a: FBsv:0001016 ! transgenesis tool
+created_by: Administrator
+creation_date: 2009-09-10T03:17:52Z
+
+[Term]
+id: FBsv:0001020
+name: transposase
+namespace: stock_feature
+def: "A enzyme that mediates transposon mobilization." [FlyBase:KM]
+xref: FBcv:0000043
+is_a: FBsv:0001016 ! transgenesis tool
+created_by: Administrator
+creation_date: 2009-09-10T03:15:59Z
+
+[Term]
+id: FBsv:0001021
+name: integrase
+namespace: stock_feature
+def: "An enzyme that mediates integration of DNA into the genome." [FlyBase:KM]
+is_a: FBsv:0001016 ! transgenesis tool
+created_by: Administrator
+creation_date: 2009-09-10T02:22:31Z
+
+[Term]
+id: FBsv:0001022
+name: mutagenesis ammunition
+namespace: stock_feature
+def: "A transposon insertion capable of mobilization in the presence of suitable transposase." [FlyBase:KM]
+xref: FBcv:0000044
+is_a: FBsv:0001016 ! transgenesis tool
+created_by: Administrator
+creation_date: 2009-09-10T02:57:41Z
+
+[Term]
+id: FBsv:0001023
+name: docking site
+namespace: stock_feature
+def: "An engineered genomic integration site." [FlyBase:KM]
+xref: FBcv:0000675
+is_a: FBsv:0001016 ! transgenesis tool
+created_by: Administrator
+creation_date: 2009-09-10T03:22:45Z
+
+[Term]
+id: FBsv:0001024
+name: human disease gene ortholog
+namespace: stock_feature
+def: "A classical or transgenic allele of a human disease gene ortholog." [FlyBase:KM]
+is_a: FBsv:0001000 ! stock feature
+created_by: nnkjnnkkiim
+creation_date: 2010-12-03T04:23:43Z
+
+[Term]
+id: FBsv:0001025
+name: FlyORF
+namespace: stock_collection
+def: "The collection of the Zurich ORFeome Project, Institute of Molecular Life Sciences, University of Zurich, Zurich, Switzerland." [FlyBase:KM]
+is_a: FBsv:0000101 ! stock center collection
+created_by: nnkjnnkkiim
+creation_date: 2013-08-01T12:00:00Z
