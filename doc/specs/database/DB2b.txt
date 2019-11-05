@@ -1,0 +1,55 @@
+
+## ! DB2b. Action - change existing db.description? (blank/y) :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+- sub check_single_allowed_value checks that any value corresponds to 'y'
+
+Checks between fields:
+
+- If DB2b is filled in, DB2a must be filled in.
+
+- sub check_changes_with_chado carries out the following checks between the data in the DB2a proforma field and any data which is already in chado for that field. The DB2b field is used to provide the 'change/add' information required for these checks.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Need to test these checks.
+
+### Updated:
+
+gm160109.

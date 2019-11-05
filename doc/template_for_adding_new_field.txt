@@ -1,0 +1,123 @@
+##  Template for basic steps required to add standard checking for a new field
+## items marked by <> will be different for the particular field, so these elements
+## in the template code will need changing
+
+##  1. for basic field processing and checks common to all fiels, do the following in the appropriate <proforma>.pl file
+
+# a. if the data needs to be stored for end-of-proforma checks, add an array to store that at the top of the 'do_<proforma>_proforma' sub
+
+##  e.g.
+
+	my @<field>_list = ();
+
+##  b. add elsif loop to do basic processing of field
+
+
+
+	elsif ($field =~ /^(.*?)\s+(<field>)\..*? :(.*)/s)
+	{
+		# if no fields in the proforma can be duplicated, convert '$can_dup{$2} ? 1 : 0' to '0'
+		# do not need to call check_non_utf8, check_non_ascii as long as use process_field_data
+		# do not need to call double_query here as long as use process_field_data
+	    check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
+		# remove '@<field>_list =' if don't need to store field data for end of proforma checking
+		# convert '@<field>_list =' to 'push @<field>_list,' if it is a field that can be duplicated within a proforma
+		@<field>_list = process_field_data ($file, $hash_entries, $1, <'1' if !c allowed, '0' if !c not allowed>, $2, $3, \%proforma_fields, <'0' if multiple lines allowed in field, '1' if single line allowed in field>);
+	}
+
+## NOTE: need to check for uniformity of 	elsif ($field =~ /^(.*?) (<field>)\..*? :(.*)/s) line,
+
+have both:
+
+	elsif ($field =~ /^(.*?) (<field>)\..*? :(.*)/s)
+	elsif ($field =~ /^(.*?)\s+(<field>)\..*? :(.*)/s)
+
+should probably change all to the latter, but want to test first
+
+
+## NOTE: if the field is one that can be duplicated within the proforma
+ - the elsif loop should contain the no_hashes_in_proforma subroutine (to prevent hashing) in addition to the above
+ - the result of process_field data should be pushed into the storage array rather than just assigned into it.  This gets the resulting data into the storage array as a simple array that makes checking between fields at the end of the proforma easier.
+
+ie. 			push @<field>_list, process_field_data ($file, $hash_entries, $1, <'1' if !c allowed, '0' if !c not allowed>, $2, $3, \%proforma_fields, <'0' if multiple lines allowed in field, '1' if single line allowed in field>);
+
+
+
+
+## NOTE: if the data does not need to be stored for end-of-proforma checks, simply call process_field_data without including the '@<field>_list = ' bit
+
+## 2. if there is field-specific checking for this field:
+
+
+## a. in Peeves, add name of subroutine that will do any field-specific checking to the %field_specific_checks hash
+
+##  e.g.
+
+ '<field>' => \&validate_<field>,
+
+## (there is no need to add an entry to the %field_specific_checks if no field-specific checks are required)
+
+## b. add the field-specific checking subroutine to the appropriate <proforma>.pl file (or tools.pl if it is a subroutine that is used to check different fields in different proformae)
+
+
+## Template for field that can contain multi-line data, where each single line is a complete piece of data
+## e.g. CV fields, synonym fields
+## Also use the same template even if the field is currently only allowed to contain a single line, so that if the
+## single line requirement is relaxed in the future, the field-specific checks will still work
+
+sub validate_<field> {
+# converted to process_field_data + %field_specific_checks format. 140703.
+
+	my ($file, $code, $dehashed_data, $context) = @_;
+
+	$dehashed_data eq '' and return;
+
+	my $uniqued_data = check_for_duplicated_lines($file,$code,$dehashed_data,$context->{$code});
+
+	foreach my $datum (keys %{$uniqued_data}) {
+
+		# insert field specific checks here
+
+	}
+
+
+}
+
+## standard doc to add to the appropriate spec for the above template:
+
+* check_for_duplicated_lines:
+   * warns if there is a blank line within the data
+   * warns if there are any duplicated values
+
+
+
+
+## NOTES
+
+# process_field_data does:
+# plingc checks
+# single/multiple line check
+# dehashes data
+# sends dehashed data to field-specific check subroutine (using %field_specific_checks hash)
+# returns dehashed data for storage in array for end-of-proforma checks
+
+# template for multline data:
+# check_for_duplicated_lines does the following, so no need to have separately in template:
+# trim_space_from_ends
+# checks for duplicated data
+# checks for empty line
+
+
+
+
+## standard doc to add to the appropriate spec for the above template:
+
+
+* check_valid_symbol_field does:
+
+   * check_for_duplicated_lines:
+
+    * warns if there is a blank line within the data
+    * warns if there are any duplicated values
+
+   * checks value is a valid symbol of a ?? in chado/generated in the record

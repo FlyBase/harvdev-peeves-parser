@@ -1,0 +1,80 @@
+
+## ! F1c. Action - merge these products(s) (symbols or FB#s) :
+
+### Multiple values allowed:
+
+Yes (separated by returns)
+Implemented (in validate_merge_using_ids)
+
+
+### !c Applicable:
+
+No
+Implemented (in validate_merge_using_ids)
+
+### Inclusion essential:
+
+No
+Implemented
+
+### Mandatorially has value:
+
+No
+Implemented (in validate_merge_using_ids)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+  * sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if MA1g is filled in
+
+  * checks in validate_merge_using_ids:
+    * if field contains data, each entry in list must be separated by returns
+    * there must be at least two entries (i.e. FBid numbers) in the list
+    * there must not be any duplications in the list (checked using check_for_duplicated_lines subroutine)
+
+    * if an entry matches the expected format (i.e. (FBtr|FBpp)[0-9]{7}) it checks that it is valid in Chado and warns if not,
+    * otherwise, if it matches the general format of an FBid, warns that it is not the type of FBid expected for that field,
+    * otherwise, if it matches the valid *symbol* of the FBid type expected (i.e. someone entered an insertion symbol instead of an id by mistake), warns that a symbol has been entered, and provides the valid FBlc number for that symbol, so that it can easily be entered instead,
+    * otherwise, warns that it is not a valid FBid format.
+
+
+Cross-checks with other fields:
+
+    * sub 'plingc_merge_check' - no !c in entire proforma if F1c is filled in
+
+    * sub 'rename_merge_check' -  F1b and F1c must not both contain data
+
+    * subroutine 'cross_check_harv_style_symbol_rename_merge_fields' - see MA1f.txt for details of what this subroutine does.
+
+The following check is done at the end of proforma checking within expression.pl, rather than trying to add it to the 'cross_check_harv_style_symbol_rename_merge_fields' subroutine which is used for several different 'Harvard' style proformae:
+
+
+* If gene products are being merged:
+
+  * checks that the FBids in F1c (merge field) are all of one type (i.e. FBtr or FBpp) and prints an error message if not.
+  * checks that the format of the new valid symbol in F1a matches the type of the FBids (in F1c) which are being merged.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+
+
+### Updated:
+
+gm160328.

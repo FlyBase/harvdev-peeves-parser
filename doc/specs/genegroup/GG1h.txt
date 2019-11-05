@@ -1,0 +1,58 @@
+
+## ! GG1h. FlyBase gene group ID (FBgg)  *z :
+
+### Multiple values allowed:
+
+No (implemented in validate_GG1h)
+
+### !c Applicable:
+
+No (implemented in validate_GG1h)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+Yes if the record is of type user, otherwise no.
+Implemented (in validate_GG1h)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Within validate_GG1h:
+
+* 'FBid_list_check' subroutine checks basic format of value given i.e. it must be an FBid of the expected type (i.e FBgg[0-9]{7})
+
+* If this field is filled in in a non-user record, issue a warning as curators don't normally fill this field in.??Note, this was copied from G1h checks, should revisit code and probably change the user check??
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+See DC-585 for issues I had with getting cross_check_1a_1g to work.
+Similar to the situation for cross_check_1a_1g (see DC-585), I had to remove the prototyping in cross_check_FBid_symbol to work for GG1h.
+
+ought to be able to use cross_check_FBid_symbol:
+
+* 'cross_check_FBid_symbol' subroutine does a lot of field cross-checking and validity checks of field values - see the gene/G1h.txt specs file for details.
+
+
+### Updated:
+
+gm160318.

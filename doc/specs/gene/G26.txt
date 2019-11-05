@@ -1,0 +1,55 @@
+
+## ! G26.  Foreign gene/Tag summary information                  :
+
+### Multiple values allowed:
+
+No
+
+### !c Applicable:
+
+Yes
+
+### Inclusion essential:
+
+No
+
+### Mandatorially has value:
+
+No
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+The basic format of the line, according to curation_manual, is
+
+*u Foreign sequence; species == <>; gene|epitope tag|function tag|sequence tag == <gene symbol>; <accession number>.
+
+where "; <accession number>" is optional.
+
+So the line should match this regexp:
+
+^Foreign sequence\; species \=\= (.+?)\; (gene|epitope tag|function tag|sequence tag) \=\= (.+?)(\; .+?)?\.$
+
+The value given in $1, i.e. the species, must match the species abbreviation of the gene symbol in G1a.
+
+### Related fields:
+
+
+
+### Comments:
+
+It may be possible to put constraints on <gene symbol> in the future but for the time being no checks need to be made.
+
+### Status:
+
+
+
+### Updated:
+
+gm131204 (doc for this field moved here from gene.checks.pro).
+gm151001 (added Dupl. for multiple field info).
+gm160717 (check of species part changed to 'the species, must match the species abbreviation of the gene symbol in G1a.')

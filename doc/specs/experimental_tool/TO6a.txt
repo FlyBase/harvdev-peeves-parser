@@ -1,0 +1,57 @@
+
+## ! TO6a. Accession number for tool (dupl section for multiple)    :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+Yes (Implemented): TO6a -> TO6b, TO6c, TO6d
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if TO6a is filled in (this is to make it easier to implement checking of fields that can be duplicated).
+
+Checks between fields:
+
+* If TO6a is filled in TO6b must be filled in (and vice versa)
+
+* If TO6c is filled in, TO6a must be filled in
+
+* If TO6d is filled in, TO6a must be filled in
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented: any format checking for values in field
+
+
+### Updated:
+
+gm171114.

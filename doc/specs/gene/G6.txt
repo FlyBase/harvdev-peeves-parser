@@ -1,0 +1,57 @@
+
+## ! G6.   Genetic map position - error, if reported          *b :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented) (should check with Kathleen that this is correct)
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks between fields:
+
+* G5 must be filled in if G6 must be filled in.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented:
+
+These are the checks that should be implemented:
+
+numerical value of the form '(n1-9).(n1-9)'
+
+Note: may be able to use existing code in validate_G7ab to help with the regular expression
+
+
+Checks between fields:
+
+* If G6 is filled in, G5 must only contain a single value.
+
+### Updated:
+
+gm151001.

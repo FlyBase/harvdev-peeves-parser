@@ -1,0 +1,63 @@
+## ! P33.  Text of conference abstract    *D :
+
+### Multiple values allowed:
+
+No.
+
+### !c Applicable:
+
+Yes if P22 contains valid data, otherwise no.
+
+### Inclusion essential:
+
+No.
+
+### Mandatorially has value:
+
+No.
+
+### Checks:
+
+The value may consist of an arbitrary amount of text, including layout
+such as multiple lines and paragraphs, subject to the following
+restriction:
+
+* no line within the value may begin with either '! P' or '!c P'
+followed by one or two digits, followed by zero or one lower-case
+letter, followed by a dot character.
+
+If !c is used:
+
+* P22 must contain a valid value and
+* the value given in P33 must be different from the value
+stored in Chado for the publication specified by the value given in
+P22.
+
+If !c is not used:
+
+* if P22 contains a valid value, either:
+    * the value given in P33 must be identical to the value
+stored in Chado for the publication specified by the value given in
+P22 or
+    * P33 must contain a valid value and no value is stored in
+Chado for the publication specified by the value given in P22;
+* if P22 does not contain a valid value, either:
+    * P33 must be empty or
+    * P33 must a contain valid value.
+
+### Related fields:
+
+### Comments:
+
+The restriction on the starts of lines within the value imposed above
+is to remove any ambiguity as to where the text of a conference
+abstract ends and a subsequent proforma field begins.
+
+### Status:
+
+PROFORMA FIELD OBSOLETED
+
+
+### Updated:
+
+gm131204 (removed markdown formatting).

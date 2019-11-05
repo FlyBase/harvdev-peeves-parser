@@ -1,0 +1,54 @@
+
+## ! G2b.  Gene name(s) used in reference                      *V :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented in elsif loop for field)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'validate_synonym_field' (called in elsif loop for field):
+
+  * uses 'check_for_duplicated'_lines to check that there are no duplicated synonyms and no empty lines
+
+  * warns if the synonym is composed entirely of punctuation character(s).
+
+  * warns if any synonym in G2b corresponds exactly to an antibody term (monoclonal/polyclonal) - as this is usually a pasto.
+
+  * warns if the field is filled in for a 'user' or 'auto' curation record.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm170420.

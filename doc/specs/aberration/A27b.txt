@@ -1,0 +1,56 @@
+
+## ! A27b. Action - dissociate A1a from reference TAKE CARE :
+
+### Multiple values allowed:
+
+No (Implemented in validate_dissociate)
+
+### !c Applicable:
+
+No (Implemented in validate_dissociate)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within validate_dissociate:
+
+* P22 must be the FBrf of a publication existing in Chado
+
+* Must be blank or the single value y (No hashing is allowed, for robust checking)
+
+* If filled in (with 'y') prints a warning so that the curator can check they really meant to fill in the field.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+This field is potentially dangerous, so the curator should always
+be warned if it is non-blank.
+
+
+### Status:
+
+Not yet implemented:
+
+* the value in A1a must be the symbol of an aberration already present in Chado, and the rename and merge fields must not be filled in
+
+* all other proforma fields must be blank
+
+### Updated:
+
+gm151001.

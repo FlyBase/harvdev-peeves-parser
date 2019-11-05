@@ -1,0 +1,42 @@
+
+## ! MS17.  Transcript (expression data) :
+
+### Multiple values allowed:
+
+
+
+### !c Applicable:
+
+
+
+### Inclusion essential:
+
+
+
+### Mandatorially has value:
+
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+Only validate_stub implemented - curation manual indicates that this field should be deleted from the proforma.
+
+### Updated:
+
+gm151001.

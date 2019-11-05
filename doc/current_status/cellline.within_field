@@ -1,0 +1,33 @@
+! CULTURED CELL LINE PROFORMA            Version 5:  Jul 02 2014
+!
+! TC1f. FB ID for cell line (FBtc ID or "new")  :FULL
+! TC1j. Use this for FB ID (FBtc ID) :FULL
+! TC1a. Cell line symbol to use in database  :FULL
+! TC1b. Symbol used in paper/source (free text) :FULL
+! TC1c. Symbol synonym (free text)           :FULL
+! TC1d. Species of source [CV]               :FULL
+!
+! TC1e. Action - rename this cell line         :FULL
+! TC1g. Action - merge these cell lines        :FULL(but note that this field is not implemented in proforma parsing, so added a warning to this effect when the field is filled in)
+! TC1h. Action - delete cell line record ("y"/blank)   :FULL(but note that this field is not implemented in proforma parsing, so added a warning to this effect when the field is filled in)
+! TC1i. Action - dissociate TC1f from FBrf ("y"/blank) :FULL
+!
+! TC2a. Source strain (soft CV)            :PARTIAL
+! TC2b. Source genotype (components in FB) :PARTIAL
+! TC2c. Source cross  (components in FB)   :PARTIAL
+! TC2d. Tissue source  [CV]                :FULL
+! TC2e. Developmental stage of source [CV] :FULL
+!
+! TC3a. Lab of origin (free text) :FULL
+! TC4a. Parental cell line (valid cell line symbol) :FULL
+! TC4b. Derived from parental line by (CV) :FULL
+!
+! TC5a. Integrated construct insertion (FBti symbol) :FULL
+! TC5b. Karotype (free text)      :FULL
+! TC5c. Sex ("male" or "female")  :FULL
+! TC5d. Basis for sex (free text) :FULL
+!
+! TC8.  Member of dataset/collection [symbol] :FULL
+! TC9.  Comment(s) (free text)       :FULL
+! TC10. Internal note(s) (free text) :FULL
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

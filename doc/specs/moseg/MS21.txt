@@ -1,0 +1,66 @@
+
+## ! MS21. Transposon class (generic)              :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+
+### !c Applicable:
+
+Yes (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* sub check_valid_symbol_field checks that any value is the valid symbol of a natTE in chado or generated in the record.
+
+
+Cross-checks between fields:
+
+* If MS21 is filled in:
+  * If the symbol in MS1a does not look like an FBtp symbol, MS21 must be empty
+  * If the symbol in MS1a looks like a TI-style FBtp symbol, MS21 must be empty
+
+  * If the symbol in MS1a looks like a regular transposable element-based FBtp construct
+
+    * Warns that this field can only be filled in with !c for existing constructs
+    * Checks that the value given in MS21 matches the natural transposable element that forms the backbone of the transgenic construct symbol in MS1a (i.e. where the ends of the transgenic construct comes from)
+
+
+* If MS21 is NOT filled in:
+
+   * if the proforma is for a brand new regular transposable element-based FBtp construct, warns that MS21 MUST be filled in in this circumstance.
+
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+
+### Updated:
+
+gm151001.

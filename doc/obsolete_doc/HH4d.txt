@@ -1,0 +1,57 @@
+
+## ! HH4d. GO term(s)  :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+Yes (implemented) (check with Kathleen)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+Not yet implemented:
+
+Checks within field:
+
+* must contain a 'GO CV term' - need to know the format - whether it is just 'GO term' or 'GO term ; GOid'
+
+
+Checks between fields:
+
+* HH4d should only be filled in 'health-related process' i.e. if 'HH1g' is 'health-related process' (or I guess need also to find out value from chado for existing FBhh entries)
+
+
+### Updated:
+
+gm151001.

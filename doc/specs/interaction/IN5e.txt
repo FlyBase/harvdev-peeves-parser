@@ -1,0 +1,60 @@
+
+## ! IN5e. Comments concerning source   :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+### Checks:
+
+Checks within field:
+
+*  sub 'check_stamped_free_text' checks that entries flanked by @@ are valid symbols of any FBid type (either existing already in chado or instantiated in the curation record).
+
+ 
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented:
+
+Interactions guidelines doc indicates that this field has a semi-controlled syntax, being 'a three part sentence separated by semi-colons':
+
+<Source was ... /Interaction in vitro>; <free text describing the origin of the first interacting feature (usually bait)>; <free text describing the origin of the second interacting feature (usually prey)>.
+
+
+The first portion either be 'Interaction in vitro' OR must start with 'Source was '
+
+Examples:
+Source was adult heads of wild-type fly line; bait produced from endogenous gene; prey produced from endogenous gene.
+Interaction in vitro; enzyme produced as tagged protein in transfected S2 cells; enzyme target produced as tagged protein in bacterial system.
+
+Have not yet added checks for this semi-controlled format.
+
+### Updated:
+
+gm151128.

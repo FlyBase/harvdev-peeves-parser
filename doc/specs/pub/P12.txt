@@ -1,0 +1,119 @@
+## ! P12.  Author(s)              *a-*b :
+  
+### Multiple values allowed:
+
+Yes. On separate lines.
+
+### !c Applicable:
+
+Yes if P22 contains valid data, otherwise no.
+
+### Inclusion of field essential for proforma checks:
+
+No.
+
+### Field mandatorially has value:
+Yes if P22 is 'new', otherwise no.
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Allowed values:  
+  
+Anonymous   
+Field	H.I. (tab separated surname/initials, dotted initials)  
+Field	?. (no initials: still need a dot)  
+Anonymous       ?.
+  
+### Checks:
+
+A valid value consists of an arbitrary string of characters, followed by
+a TAB character, followed either by the string '?.' or an arbitrary
+number of repetitions of two-character strings each consisting of an
+uppercase Roman letter followed by a dot (aka full-stop, aka period).
+
+The string before the TAB character denotes the author's family name.
+Although it is not strictly illegal for the family name to contain
+dot-characters, Peeves must generate a warning message in this case.
+
+The string after the TAB character is the list of initials of the given
+names of that author.  If no initial is available for the author, the
+string '?.' must be used.
+
+If !c is used:  
+
+* P22 must contain a valid FBrf and
+* the value(s) given in P12 must be different from the value(s)
+stored in Chado for the publication specified by the value given in
+P22.
+
+If !c is not used:
+
+* if P22 contains a valid FBrf, either:
+    * the value(s) given in P12 must be identical to the
+value(s) stored in Chado for the publication specified by the value given
+in P22 or
+    * P12 must contain one or more valid values and no value is
+stored in Chado for the publication specified by the FBrf given in
+P22;
+* if P22 does not contain a valid FBrf:
+    * P12 must contain one or more valid values.
+* if P22 is 'unattributed':
+    * P12 must be left blank.
+    
+### Error messages:
+
+If P22 is 'unattributed':  
+P12: Cannot contain data when P22 is 'unattributed'.  
+  
+If P22 is 'new' and pling-c:  
+P12: Can't change the authors of a new publication!  
+  
+If pling-c and no authors (accidental !c):  
+P12: Not allowed to delete list of authors.  
+
+If pling-c and authors are the same as in chado:  
+P12: Trying to change list of authors to the value <authors list> it already has in Chado.  
+  
+If authors are different in chado:  
+P12: Trying to set list of authors to %s but it is <authors list> in Chado.  
+  
+If P22 is 'new' and no authors (accidental omission):  
+P12: Can't omit list of authors without valid FBrf in P22  
+  
+Check formula:  
+P12: Invalid initials 'xxx' in 'P12 content'  
+P12: The surname 'xxx' in 'P12 content' has a dot. Is this right?  
+P12: Old style data in 'P12 content'.  Please use "Field	H.I."  
+P12: Must not omit author's initials. Use "Field	." if they are unknown.  
+P12: Unrecognized format for author 'P12 content'. Try checking whitespace and/or initials.  
+  
+Existing authors missing:  
+P12: Looking for the existing list of authors for %s but that information isn't yet in Chado   
+		Chado should always have this data, so you've found a serious bug.     
+		****** PLEASE CONTACT camdev URGENTLY! ******   
+
+
+
+### Related fields:
+
+MP11
+
+### Comments:
+
+An author need not be a known human individual.  Examples include
+corporate persons and Anonymous.
+
+The Peeves warning when the family name contains a dot-character is to
+pick up the common error of reversing the order of family name and
+initials.  A family name may legitimately contain a dot-character,
+especially if it is a corporate person named by an abbreviation such
+as "N.A.S.A." though in practice the dots are frequently omitted for
+such cases.
+
+### Updated:
+
+gm131204 (removed markdown formatting).
+gm151001 (added Dupl. for multiple field info).

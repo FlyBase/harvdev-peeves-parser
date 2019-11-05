@@ -1,0 +1,118 @@
+## ! P11c. Sequence accession number       :
+
+### Multiple values allowed:
+
+No.
+
+### !c Applicable:
+
+Yes if P22 contains a valid FBrf, otherwise no.
+
+### Inclusion of field essential for proforma checks:
+
+No.
+
+### Field mandatorially has value:
+
+Yes if :
+
+* P22 is 'new' and
+* P1 contains either
+   * DNA/RNA sequence record
+   * protein sequence record
+
+No otherwise.
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Allowed values:  
+
+
+
+### Checks:
+
+To be valid:  
+  
+* if P1 contains 'DNA/RNA sequence record', any value in P11c
+must match [GenBank's specification (see http://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html#AccessionB).
+  
+* if P1 contains 'protein sequence record', any value in P11c
+must match UniProt's specification (see http://www.uniprot.org/manual/accession_numbers).
+  
+If P11c contains a value:
+  
+* if P22 is 'new', and P1 contains either
+'DNA/RNA sequence record' or 'protein sequence record'.
+
+* if P22 contains a valid FBrf, and the publication type stored in
+Chado for the publication specified by the FBrf given in P22
+contains either 'DNA/RNA sequence record' or 'protein sequence
+record'.
+  
+If !c is used:
+
+* P22 must contain a valid FBrf and
+* the value given in P11c must be different from the value
+stored in Chado for the publication specified by the FBrf given in
+P22.
+
+If !c is not used:
+
+* if P22 contains a valid FBrf, either:
+    * the value given in P11c must be identical to the value
+stored in Chado for the publication specified by the FBrf given in
+P22 or
+    * P11c must contain a valid value and no value is stored in
+Chado for the publication specified by the FBrf given in P22;
+* if P22 is 'new', either:
+    * P11c must be empty or
+    * P11c must a contain valid value.
+* if P22 is 'unattributed':
+    * P11c must be empty.
+
+### Error messages:  
+  
+If P22 is 'unattributed':  
+P11b: Cannot contain data when P22 is 'unattributed'.  
+ 
+If P22 is 'new':  
+P11b: Cannot change the URL of a new publication!  
+ 
+If pling-c and P11b is empty:
+P11b: Not allowed to delete the URL.
+
+If pling-c and P11b is a URL and there is nothing in chado:
+P11b: Not allowed to delete the URL.
+
+If P11b data is empty and so are the other P11 fields:  
+None of P11a through P11d have any data.  
+
+If P11a is not empty:  
+P11b: Must not have data (<data>) when P11a has data (<moredata>).  
+
+If P11c is not empty:  
+P11b: Must not have data (<data>) when P11c has data (<moredata>).  
+  
+If pling-c and existing URL retrieved from chado via FBrf:  
+P11b:  Trying to change the URL to '<your-URL>' but the URL isn't yet in Chado.  
+P11b:  Trying to change the URL to the value (<your-URL>) it already has in Chado.  
+P11b:  Trying to set URL to '<your-URL>' but it is '<chado-URL>' in Chado.  
+
+### Related fields:
+
+### Comments:
+
+If you are curating a new publication of type 'DNA/RNA sequence record'  
+or 'protein sequence record' fill in the accession number here.  
+  
+If you fill this field in, you should not fill anything in in P11a. or  
+P11c.  
+  
+
+### Updated:
+
+gm131204 (removed markdown formatting).
+gm151001 (added Dupl. for multiple field info).

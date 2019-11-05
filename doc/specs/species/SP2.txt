@@ -1,0 +1,65 @@
+
+## ! SP2. Abbreviation to use in FlyBase (organism.abbreviation) :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+- sub check_allowed_characters (validate_primary_species_field) checks that the value only contains characters from the allowed set of 'a-zA-Z0-9'
+
+Checks between fields:
+
+- if the same abbreviation is used in the SP2 field of multiple species proformae in the same curation record, an error message is printed.
+
+If SP1g = 'n'
+ - SP2a MUST be filled in
+ - SP2a must NOT already be a valid organism.abbreviation in chado (don't want to use the same abbreviation more than once for two different organisms)
+
+If 'SP1g' = 'y'
+
+ - if SP2a is filled in
+    - if the organism (SP1a+SP1b) does not already have a species abbreviation in chado
+      - the value in SP2 must not already be in chado as an abbreviation for any species
+    - if the organism (SP1a+SP1b) does already have a species abbreviation in chado an error message is printed indicating that the value in SP2 must be removed (the precise wording of the text depends on whether or not the value in SP2 matches what is already in chado for the organism).
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160107.

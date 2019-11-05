@@ -1,0 +1,51 @@
+
+## ! LC9a. Structured table [SoftCV]  :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+
+### !c Applicable:
+
+Yes (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+ * sub 'check_stamped_free_text' checks that entries flanked by @@ are valid symbols of any FBid type (either existing already in chado or instantiated in the curation record).
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+Note: specs for proforma parsing say 'Single' in the equivalent to 'Multiple values allowed' because each entry in this field represents a single table, but since the table is made up of multiple lines (one line for each Table row), it is implemented as 'Multiple values allowed : Yes' in Peeves, since for Peeves 'Single' means a single line.
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160517.

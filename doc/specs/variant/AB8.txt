@@ -1,0 +1,46 @@
+
+## ! AB8.   Is AB1a used/usable as a balancer? (y/n)            *u :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+### Inclusion essential:
+
+Yes (Implemented)
+
+### Mandatorially has value:
+
+Yes (Implemented) ('contains_data' subroutine in loop where the field is identified)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'validate_cvterm_field' checks that the value is either 'y' or 'n' (only 'y or n' terms are allowed).  Using this subroutine instead of 'check_y_or_n' subroutine because need to go through process_field_data to store values for checks between fields.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm151001.

@@ -1,0 +1,56 @@
+
+## ! DB1g. Is DB1a the current symbol of a database in FlyBase? (y/n) :n
+
+### Multiple values allowed:
+
+No (Implemented)
+
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+Yes (Implemented)
+
+
+### Mandatorially has value:
+
+Yes (Implemented)
+
+
+### Dupl. for multiple field:
+
+
+No (Implemented)
+
+### Checks:
+
+Checks within field:
+
+- the value must be either 'y' or 'n' (checked using check_y_or_n during cross-check with DB1a.
+
+
+Checks between fields:
+
+- If DB1g is 'y' then DB1a must be a valid database name in chado.
+
+- If DB1g is 'n' then DB1a must NOT be a valid database name in chado.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160109.

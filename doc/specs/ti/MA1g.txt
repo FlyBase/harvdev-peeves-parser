@@ -1,0 +1,74 @@
+
+## ! MA1g. Action - merge these insertion(s) (FBti) :
+
+### Multiple values allowed:
+Yes (separated by returns)
+Implemented (in validate_merge_using_ids)
+
+
+### !c Applicable:
+
+No
+Implemented (in validate_merge_using_ids)
+
+### Inclusion essential:
+
+No
+Implemented
+
+### Mandatorially has value:
+
+No
+Implemented (in validate_merge_using_ids)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+  * sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if MA1g is filled in
+
+  * checks in validate_merge_using_ids:
+    * if field contains data, each entry in list must be separated by returns
+    * there must be at least two entries (i.e. FBti numbers) in the list
+    * there must not be any duplications in the list (checked using check_for_duplicated_lines subroutine)
+
+    * if an entry matches the expected format (i.e. FBti[0-9]{7}) it checks that it is valid in Chado and warns if not,
+    * otherwise, if it matches the general format of an FBid, warns that it is not the type of FBid expected for that field,
+    * otherwise, if it matches the valid *symbol* of the FBid type expected (i.e. someone entered an insertion symbol instead of an id by mistake), warns that a symbol has been entered, and provides the valid FBti number for that symbol, so that it can easily be entered instead,
+    * otherwise, warns that it is not a valid FBid format.
+
+Cross-checks with other fields:
+
+    * sub 'plingc_merge_check' - no !c in entire proforma if MA1g is filled in
+
+    * sub 'rename_merge_check' -  MA1c and MA1g must not both contain data
+
+
+Cross-checks with other fields
+
+   * subroutine 'cross_check_harv_style_symbol_rename_merge_fields' - see MA1f.txt for details of what this subroutine does.
+
+
+### Related fields:
+
+* GA10 fields
+
+### Comments:
+
+
+
+### Status:
+
+doc: checked that doc reflects what has been implemented
+
+
+
+### Updated:
+
+gm151001.

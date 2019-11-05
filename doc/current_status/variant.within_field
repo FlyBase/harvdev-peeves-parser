@@ -1,0 +1,21 @@
+! GENOTYPE VARIANT PROFORMA                 Version 23: 13 Jan 2010
+!
+! AB1h. FlyBase genotype variant ID (FBba) :FULL
+! AB1a.  Genotype variant symbol to use in FlyBase                 *I :FULL
+! AB1b.  Genotype variant symbol(s) used in reference              *i :FULL
+! AB1e.  Action - rename this genotype variant symbol                 :FULL
+! AB1f.  Action - merge these genotype variants (symbols)             :FULL
+! AB1g.  Is AB1a the current symbol of a genotype variant in FlyBase? :FULL
+! AB2a.  Action - genotype variant name to use in FlyBase          *e :FULL
+! AB2b.  Genotype variant name(s) used in reference                *Q :FULL
+! AB2c.  Action - replace this genotype variant name                  :BASIC ONLY
+! AB11a. Action - obsolete AB1a in FlyBase       TAKE CARE :FULL
+! AB11b. Action - dissociate AB1a from reference TAKE CARE :FULL
+! AB10.  Nickname                                            *U :FULL
+! AB8.   Is AB1a used/usable as a balancer? (y/n)            *u :FULL
+! AB3.   Culprit                *w :PARTIAL
+! AB9.   Progenitor chromosome  *u :FULL
+! AB5a.  Transposon insertions  *P :FULL
+! AB5b.  Non-insertion alleles  *S :FULL
+! AB6.   Miscellaneous comments *u :FULL
+! AB7.   Internal notes         *K :FULL

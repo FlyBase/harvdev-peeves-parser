@@ -1,0 +1,52 @@
+## ! MP19. Action - obsolete this multipub in FlyBase             TAKE CARE :
+
+### Multiple values allowed:
+
+No.
+
+### !c Applicable:
+
+No.
+
+### Inclusion essential:
+
+No.
+
+### Mandatorially has value:
+
+No.
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+The value must be blank or the single character 'y'.
+
+If the value is 'y':
+
+* MP18 must be left blank and
+* MP1 must contain a valid value and
+* MP2a must contain a valid value and
+* the miniref of the multipub held in Chado given by the value
+given in MP1 must be the same multipub abbreviation as the value
+given in MP2a.
+
+Peeves must emit a warning message if the value is 'y'.
+
+### Related fields:
+
+
+
+### Comments:
+
+This field is potentially dangerous, so the curator should always be
+informed when any data is given.
+
+### Updated:
+
+gm131204 (removed markdown formatting).
+gm151001 (added Dupl. for multiple field info).
+

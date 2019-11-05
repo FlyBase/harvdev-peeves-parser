@@ -1,0 +1,104 @@
+SOP for workflow of peeves software development.
+================================================
+
+A. Notes for curators
+=====================
+
+Make a JIRA ticket reporting the bug/improvement.
+
+PROJECT: Data capture
+COMPONENT: Peeves
+ASSIGNEE: Gillian
+
+1. Specifying the bug/improvement
+---------------------------------
+
+If your request is to add checking to a field that isn't currently checked, or is to add checking for a new field, please make a spec file for that field, detailing what needs to be checked as much as possible.
+
+- there is a template file (/Peeves/doc/spec_template.txt) which should be used as the starting point - make a copy and name it for the field being checked e.g. GA34a.txt
+- fill in the file as much as possible to specify what checks are required.
+- this file will end up as a plain text file in the Peeves/doc/specs folder, so please don't try to do any special markdown formatting - just typing is fine (!)
+- attach the filled in spec file to the JIRA ticket
+
+Otherwise, just detail the bug/specify the improvement as much as possible in the ticket.
+
+In both cases, it is helpful to include what you would like the Peeves error message to say.
+
+Please make a separate JIRA ticket for each proforma field or bug, rather than putting them in a single ticket, as its easier to track if each ticket contains one small item to be fixed/improved.
+
+2. Test curation records
+------------------------
+
+In all cases, it is helpful if you can attach test records to the JIRA ticket as generating these is a time-consuming part of the software development and testing.  Here are some basic guidelines which make the test records more useful.
+
+- do NOT use the qq naming system - it is more useful to see internal notes etc. marked with ?? in the peeves output and the qq naming system suppresses that.  So just call the records gm1, st1, st2 etc.
+
+- it is more helpful to make several small test records, with each one just testing one small aspect for the reported bug/improvement e.g. one record for testing the checking DO term + DOid, and a separate test record for testing checking of the DO evidence code
+
+- please write internal notes marked with ?? indicating what is being checked (these will then appear in the peeves output as they are marked with ?? which is useful when testing as it means its not always necessary to go back to the record)
+
+ eg. at the publication level '??this record has examples of mismatches between DO term name and ID' or '??this curation record should generate no errors??
+
+ eg. at the individual proforma level '??DOID:870 is a genuine ID - the term that goes with it is 'neuropathy' but 'neuropath' is not a valid term name' or '??this should generate an error as it is an invalid qualifer'
+
+- please make two kinds of test record:
+
+   - those containing no errors
+
+   - ones that do contain errors, to make sure that Peeves catches any mistakes.  Ideally there should be a test record containing an error for each check that is carried out on the field, so that all possibilities are checked.
+
+   - please put proformae containing errors and proformae containing no errors into separate test records (helps go through the peeves output more quickly).
+
+
+
+B. Notes for software developers
+=================================
+
+
+1. Once you have chosen a JIRA ticket to work on, change its Status to 'In Progress' so that everyone can see what is being worked on.
+
+2. Before doing anything, check that you are synched with the svn and that the different versions of Peeves are compatible:
+
+a. check the svn status of your local copy of Peeves (to make sure there aren't any left over changes that were not committed the last time) and do an svn update to make sure you are working on the current version.
+
+b. check that the dev, test and production versions of your local copy of Peeves are identical. If they are not, because there has been software development recently, make sure that the differences are what you expect, to avoid potential conflicts later when committing to the svn etc.
+
+3. Workflow for software development
+------------------------------------
+
+Development starts in dev peeves, with frequent commits to the svn as progress is made, and then once the code has been tested by the developer (using test records) and appears ok, it is moved up to test peeves, prior to being pushed up to production once testing is complete.  The test version may be advertised to curators for testing, or it may be pushed straight through to production if it is a small change and the initial testing by the developer is comprehensive.
+
+
+a. make a folder in Peeves/doc/records2text for the test records and download them from the JIRA ticket.  Don't forget to svn add them and then svn commit them.
+
+b. before doing any software development, change the version in dev/Peeves and add a comment indicating (with the JIRA ticket number) what this version is fixing/improving.
+
+c. either make or add to the relevant Peeves/doc/specs file as you go along, so that the spec is up-to-date wrt with what has been implemented and what is still to do.
+
+d. testing once code is in place in dev
+
+- test the relevant Peeves/doc/records2text records - to check that Peeves finds errors
+
+- test /archives/oldrecs folders to check that the changes have not had any unexpected effects on other fields
+
+- test as both 'Cambridge' and 'Harvard', especially if the changes may affect location-dependent code
+
+e. pushing code up from dev->test
+
+- commit changes in dev to the svn before pushing up to test so its easy to go back if there are problems.
+
+- diff Peeves/dev and Peeves/test to review the changes and to identify which files need copying from dev to test (FileMerge is useful for this).  Then simply copy (cp) changed files from dev to test, check with diff again and svn commit.  Remember to include the Peeves version and the JIRA ticket number in the svn commit message.
+
+- once code is in test, mark JIRA ticket as 'Resolved'
+
+- if necessary, send an email to curators requesting they use testPeeves and report any errors
+
+f. pushing code from test->production
+
+- can either decide to do this simultaneously with the dev->test push, or separately, if further testing is required by curators before the code goes into production
+
+- send an email pointing to the JIRA ticket and summarising changes, especially if not all checks requested have been implemented.
+
+- once in production, mark JIRA ticket as 'Closed'
+
+Updated: gm140109.

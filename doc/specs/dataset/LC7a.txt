@@ -1,0 +1,48 @@
+
+## ! LC7a. Types of additional data available [free text]  :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+* sub no_stamps
+
+
+### Related fields:
+
+
+
+### Comments:
+
+Note: DC-700 indicates that the values in this field can be either 'label(URL)' format or genuine free text wuthout URLs.
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160517.

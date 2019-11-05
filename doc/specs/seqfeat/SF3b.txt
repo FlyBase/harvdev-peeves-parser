@@ -1,0 +1,56 @@
+
+## ! SF3b. Species of derivation            :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+No (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* value must be a valid species abbreviation (checked by validate_species_abbreviation_field)
+
+Checks between fields:
+
+
+* must be filled in for new entries (sub check_filled_in_for_new_feature, test = 'yes'). (also see Status below).
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+The within field check currently only allows a valid species abbreviation, but curation manual also says 'May use "synthetic construct".' as well as saying it must be a valid species abbreviation so its possible the check is currently a bit too strict.
+
+Not yet implemented:
+
+Have not yet implemented the field cross-check 'avoid subequent use' (i.e. don't fill in for existing seqfeat), as the field is filled in by default in the proforma.  When switch over species checks to using chado organism table, see if can add check for existing seqfeats that species of seqfeat in chado must match species abbreviation in SF3b.
+
+### Updated:
+
+gm160717.

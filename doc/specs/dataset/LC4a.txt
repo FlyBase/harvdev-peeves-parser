@@ -1,0 +1,50 @@
+
+## ! LC4a. Species of derivation [CV]  :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field
+
+* sub 'validate_species_abbreviation_field' checks that the value is a valid species abbreviation.
+
+
+Checks between fields:
+
+* sub 'check_filled_in_for_new_feature' - must be filled in for new feature, and must not be filled in for existing feature
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+### Updated:
+
+gm160617.

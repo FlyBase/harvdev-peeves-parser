@@ -1,0 +1,11 @@
+! DATABASE PROFORMA Version 2: 16 Mar 2015
+!
+! DB1a. Symbol to use in FlyBase (db.name) :FULL
+! DB1g. Is DB1a the current symbol of a database in FlyBase? (y/n) :FULL
+! DB2a. Description (db.description) :FULL
+! DB2b. Action - change existing db.description? (blank/y) :FULL
+! DB3a. Database URL (db.url) :PARTIAL
+! DB3c. Action - change existing db.url? (blank/y) :FULL
+! DB3b. Accession URL (db.urlprefix) :PARTIAL
+! DB3d. Action - change existing db.urlprefix? (blank/y) :FULL
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

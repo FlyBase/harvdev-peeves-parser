@@ -1,0 +1,51 @@
+
+## !   MS7b.  Location of MS5a in database entry  :
+
+
+### Multiple values allowed:
+
+
+
+### !c Applicable:
+
+
+
+### Inclusion essential:
+
+
+
+### Mandatorially has value:
+
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Status:
+
+Only validate_stub implemented
+
+curation manual says !c not yet implemented for this field.
+
+
+### Updated:
+
+gm151001.

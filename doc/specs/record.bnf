@@ -1,0 +1,15 @@
+<record>             ::= <multipub_record> | <pub_record>
+
+<multipub_record>    ::= multipub.pro | multipub.pro <multipub_record>
+
+<pub_record>         ::= publn.pro | publn.pro <genetic_record>
+
+<genetic_record>     ::= <gene_allele_record> | <abs_bal_record> | <gene_allele_record> <abs_bal_record>
+
+<abs_bal_record>     ::= aberration.pro | aberration.pro <balancers>
+
+<balancers>          ::= balancer.pro | balancer.pro <balancers>
+
+<gene_allele_record> ::= gene.pro | gene.pro <alleles>
+
+<alleles>            ::= allele.pro | allele.pro <alleles>

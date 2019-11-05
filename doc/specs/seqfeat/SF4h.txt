@@ -1,0 +1,53 @@
+
+## !   SF4h. Orientation of feature in SF4a relative to the chromosome ("+"/"-")  :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+No (implemented) ??need to check with Kathleen whether !c implemented or applicable for this field (or will it automatically be corrected if !c genome location field SF4a??)- implemented as No for now.
+
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+Yes (implemented): SF4a -> SF4b, SF4h (see status below)
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'validate_cvterm_field' checks that the value is one of the allowed values for this field  - allowed values are stored in symtab.pl with type 'orientation'
+
+Checks between fields (for each duplication of the SF4a, SF4b, SF4h unit):
+
+
+  * SF4a must be filled in if SF4h is filled in (sub compare_duplicated_field_pairs)
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160113.

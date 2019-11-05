@@ -1,0 +1,38 @@
+! GENEGROUP PROFORMA     Version 5: 24 Mar 2015
+!
+! GG1h. FlyBase gene group ID (FBgg)  *z :FULL
+! GG1a. Gene group symbol                               *a :FULL
+! GG1b. Gene group symbol synonym(s)                    *i :FULL
+! GG1e. Action - rename this gene group symbol      :FULL
+! GG1f. Action - merge these gene groups (symbols)  :FULL # NOTE - this field has been removed from master.pro as merging not implemented in proforma parsing software. Have left checks in Peeves (would be hard to untangle as the merge field is a primary field) but added warning that is printed if field is filled in.
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :FULL
+! GG2a. Action - gene group name to use in FlyBase      *e :FULL
+! GG2b. Gene group name synonym(s)                      *V :FULL
+! GG2c. Action - rename this gene group name        :BASIC ONLY
+!
+! GG3a. Action - obsolete GG1a in FlyBase (y)        TAKE CARE :FULL
+! GG3b. Action - dissociate GG1a from reference (y)  TAKE CARE :FULL
+!
+! GG4.  Type of gene group [CV]  *t :FULL
+!
+! GG5.  Description of gene group  [free text]  *D :FULL
+!
+! GG6a. Key GO term(s) - Cellular Component (term ; ID)  *f :FULL
+! GG6b. Key GO term(s) - Molecular Function (term ; ID)  *F :FULL
+! GG6c. Key GO term(s) - Biological Process (term ; ID)  *d :FULL
+!
+! GG7a. Related gene group(s) in FB - parent (symbol)     *P :FULL
+! GG7c. Related gene group(s) in FB - undefined (symbol)  *U :FULL
+!
+! GG8a. Orthologous gene group accession (rpt. sect. for mult.)  *O :BASIC ONLY
+! GG8b. FlyBase database symbol (DB1a) for GG8a  *O :FULL
+! GG8c. Title for GG8a [free text]               *T :FULL
+! GG8d. Action - dissociate the accession specified in GG8a/GG8b from the gene group specified in GG1h/GG1a? (blank/y) :FULL
+!
+! GG9.  Other related external resource(s) ([title](URL)) *E :PARTIAL:DC-569
+!
+! GG10. Comments [free text]  *u :FULL
+!
+! GG11. Date gene group last reviewed (YYYYMMDD)  *y :FULL
+!
+! GG12. Internal notes  *W :FULL

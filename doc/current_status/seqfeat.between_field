@@ -1,0 +1,52 @@
+! SEQUENCE FEATURE/MAPPED ENTITIES PROFORMA    Version 5: 02 Jul 2014
+!
+! SF1f. Database ID for feature         :FULL
+! SF1a. Feature symbol to use in database    :FULL
+! SF1b. Symbol used in paper/source          :FULL
+! SF2a. Feature macromolecular category [CV] :FULL
+! SF2b. Feature description [CV]        :FULL
+!
+! SF1c. Action - rename this feature         :FULL
+! SF1g. Action - merge these features        :FULL
+! SF1h. Action - delete feature record ("y"/blank)   :NOT YET IMPLEMENTED
+! SF1i. Action - dissociate SF1f from FBrf ("y"/blank) :PARTIAL
+!
+! SF3a. From dataset/collection (symbol) :FULL
+! SF3c. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :FULL
+! SF3b. Species of derivation            :PARTIAL
+!
+! SF4a. Genomic location of feature (dupl for multiple) :FULL
+!   SF4b. Genome release number for entry in SF4a   :FULL
+!   SF4h. Orientation of feature in SF4a relative to the chromosome ("+"/"-")  :FULL
+! SF4d. Sequence accession (AC no. | gi no. | date)[dupl for multiple) :FULL
+!   SF4e. Location of start in accession entry  :FULL
+!   SF4f. Location of finish in accession entry :FULL
+! SF4g. Sequence of feature (nt or aa) :NA
+! SF4c. Comments concerning sequence or sequence location :NA
+!
+! SF5a. Associated gene(s)      :FULL
+!    SF5e. Confidence rating for gene call :FULL
+!    SF5f. Comments concerning gene call :FULL
+! SF5b. Associated allele       :NA
+! SF5g. Associated transcript   :NA
+! SF5c. Associated FBtp transgenic_transposon (symbol) :NA
+! SF5h. Associated FBmc engineered_construct (symbol) :NA
+! SF5d. Corresponding segment   :NA
+!
+! SF10a. Evidence/assay [CV] :NA
+!
+! SF11a. Bound moiety (FB symbol)   :NA
+! SF11b. Bound moiety (no FB symbol) :NA
+! SF11c. Comment concerning bound moiety :NA
+!
+! SF12. Linked to restriction fragment :NA
+!
+! SF20a. PCR template [CV] :NA
+! SF20b. Primer 1 sequence :NA
+! SF20c. Primer 2 sequence :NA
+! SF20d. Additional information, primers :NA
+!
+! SF6. Comments [free text]        :NA
+! SF7. Information on availability :NA
+! SF8. Internal notes              :NA
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

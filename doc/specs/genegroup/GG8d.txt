@@ -1,0 +1,59 @@
+
+##  ! GG8d. Action - dissociate the accession specified in GG8a/GG8b from the gene group specified in GG1h/GG1a? (blank/y) : 
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+Yes (Implemented): GG8a -> GG8b, GG8c, GG8d
+
+
+### Checks:
+
+Checks within field:
+
+* if GG8d is filled in, 'check_single_allowed_value' subroutine checks that the only allowed value is 'y'
+
+Checks between fields:
+
+* If GG8d is filled in, GG8a must be filled in
+
+* If GG8d is filled in, GG8b must be filled in
+
+* Since GG8d is a 'correction of existing data' field, it must not be filled in for:
+  * a completely new dataset
+  * a dataset merge (suspect using GG8d for a merge is not allowed since a merge involves making a new FBid, but need to check this with Kathleen ??)
+
+### Related fields:
+
+
+
+### Comments:
+
+Curation manual says 'Single OK. Multiple untested.' for the 'Multiple values allowed' section, but have implemented it as a single line field as the only allowed value is 'y'
+
+
+### Status:
+
+If GG8d is filled in, no checks are done to make sure that the accession (specified in GG8a and GG8b) is actually associated with the dataset (specified by GG1a) in chado.
+
+### Updated:
+
+gm151001.

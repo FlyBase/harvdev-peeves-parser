@@ -1,0 +1,56 @@
+
+## ! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'validate_sequence_change' checks format of each line:
+
+ * must begin with a SoftCV specified for the field in the subroutine
+   (Amino acid replacement: and Nucleotide substitution: for GA12a)
+ * must be of the format XNY, where
+    * X is the sequence before the change, N is the coordinate of the change, Y is the change.
+    * values allowed for X and Y for the field are specified in the subroutine (see also curation_manual for details)
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented: 
+
+'This field should only be used for classical alleles' - need to cross-check against values in GA8.
+
+
+### Updated:
+
+gm151001.

@@ -1,0 +1,95 @@
+## ! P13.  Language of publication [CV]                       *L :
+  
+### Multiple values allowed:
+
+No. (see status below).
+
+### !c Applicable:
+
+Yes if P22 contains a valid FBrf, no otherwise.
+
+### Inclusion of field essential for proforma checks:
+
+No.
+
+### Field mandatorially has value:
+
+Yes if P22 is 'new',
+No otherwise.
+
+
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+To be valid:
+
+* the value must be a valid term (i.e. does not have is_obsolete:
+true) from flybase_controlled_vocabulary.obo, and
+* the term must be in the 'language of publication' namespace.
+
+No value given in P13 may also appear as a value in P14.
+
+If !c is used:  
+
+* P22 must contain a valid FBrf and
+* the value given in P13 must be different from the value
+stored in Chado for the publication specified by the FBrf given in
+P22.
+
+If !c is not used:
+
+* if P22 contains a valid FBrf, either:
+    * the value given in P13 must be identical to the
+value stored in Chado for the publication specified by the FBrf given
+in P22 or
+    * P13 must contain a valid value and no value is
+stored in Chado for the publication specified by the FBrf given in
+P22;
+* if P22 is 'new':
+    * P13 must contain a valid value.
+
+### Error messages
+  
+If P22 is 'unattributed':  
+P13: Cannot contain data when P22 is 'unattributed'.  
+ 
+If P22 is 'new':  
+P13: Cannot change the URL of a new publication!  
+ 
+If wrong language CV term used:
+P13: Bad language 'Franco'  
+
+If P13 is blank:   
+P13: Can't omit language(s)  
+
+If pling-c and P22 is 'new':  
+P13: Can't change the languages list of a new publication  
+  
+If existing language in P13 retrieved from chado via FBrf:  
+P13: Trying to change <chado-language> to '<your-language>' but it isn't yet in Chado.  
+P13: Trying to change <chado-language> to the value (<your-language>) it already has in Chado.  
+P13: Trying to set <language> to '<your-language>' but it is '<chado-language>' in Chado.  
+
+### Related fields:
+
+P14
+
+### Comments:
+
+Although no default language is defined, the prototypical proforma is
+pre-filled with 'English'.
+
+### Status
+
+Multiple values allowed should be changed to Yes as that is what is implemented.
+
+### Updated:
+
+gm131204 (removed markdown formatting).
+gm151001 (added Dupl. for multiple field info).

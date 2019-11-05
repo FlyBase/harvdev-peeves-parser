@@ -1,0 +1,49 @@
+## ! AB7.   Internal notes         *K :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+sub 'no_stamps' checks that there are no stamps (so that the text still makes sense if any symbol changes in future)
+
+### Related fields:
+
+[A15]
+[G15]
+[GA14]
+[MA10]
+[MS11]
+[P19]
+[TE13]
+
+### Comments:
+
+
+### Status:
+
+
+
+### Updated:
+
+gm151001.
+

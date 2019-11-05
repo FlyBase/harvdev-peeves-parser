@@ -1,0 +1,47 @@
+
+## ! G38. Member of Generic Gene record (gene symbol) :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+### Checks:
+
+Checks within field:
+
+- sub check_valid_symbol_field checks that it is a valid gene symbol *in chado* (since there is a special FB analysis ref to make the generic gene record)
+
+- the gene entered in G38 must be annotated with a 'generic gene' SO term *in chado* (allowed values stored in symtab.pl) - a warning is issued if not
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm181003.

@@ -1,0 +1,56 @@
+
+## ! G37.  Member of Gene Group (symbol) *G :
+
+### Multiple values allowed:
+
+No (Implemented)
+[Note, a gene may actually be a member of more than one gene group, but the proforma parser is currently set up to only allow one entry in this field, so if a curator needs to add more than one gene group to the same reference+gene combination, each gene group must be added in a separate curation record, so have implemented single value only in this field].
+
+
+### !c Applicable:
+
+Yes (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field
+
+* check_valid_symbol_field does:
+
+   * check_for_duplicated_lines:
+
+    * warns if there is a blank line within the data
+    * warns if there are any duplicated values
+
+   * checks value is a valid symbol in chado/generated in the record of one of the following types: FBgg
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm161013.

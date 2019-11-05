@@ -1,0 +1,107 @@
+## ! P16.  Title                     *u :
+  
+### Multiple values allowed:
+
+No.
+
+### !c Applicable:
+
+Yes if P22 contains a valid FBrf, no otherwise.
+
+### Inclusion of field essential for proforma checks:
+
+No.
+
+### Field mandatorially has value:
+
+Yes if P22 is 'new', no otherwise.
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Allowed values:  
+  
+[title not yet available]  
+Some title.  
+Un titre Francaise. [ A French title. ] 
+The Book Title.
+
+### Checks:
+
+To be valid, the value must be a single line of :
+
+* text ending with any one character from .?! or
+* text enclosed within square brackets or
+* text ending with any one character from .?! followed by text
+enclosed within square brackets.
+
+If !c is used:
+
+* P22 must contain a valid FBrf and
+* the value given in P16 must be different from the value
+stored in Chado for the publication specified by the FBrf given in
+P22.
+
+If !c is not used:
+
+* if P22 contains a valid FBrf, either:  
+    * the value given in P16 must be identical to the value  
+stored in Chado for the publication specified by the FBrf given in
+P22 or  
+    * P16 must contain a valid value and no value is stored in
+Chado for the publication specified by the FBrf given in P22;  
+* if P22 is 'new':  
+    * P16 must a contain valid value.  
+* if P22 is 'unattributed':  
+    * P16 must remain blank.  
+    
+### Error messages:  
+  
+If P22 is 'unattributed':  
+P16: Cannot contain data when P22 is 'unattributed'.  
+    
+If 'new' in P22 and pling-c:  
+P16: Can't change the title of a new publication!  
+
+If P22 is a valid FBrf but you create no title:  
+P16: Can't omit title of publication without a valid FBrf in P22.  
+    
+If no title and pling-c:  
+P16: Not allowed to delete title of publication.  
+  
+Title formatting:  
+P16: Title '<Your Title>' doesn't end with '.', '?' or '!'.  
+P16: Title '<Your  
+Title.>' must be on a single line.  
+  
+If valid FBrf in P22 and pling-c and title NOT already in chado:  
+P16: Trying to change title of publication to '<Your Title.>' but a title isn't yet in Chado.  
+  
+If valid FBrf in P22 and pling-c and title already in chado:  
+P16: Trying to change title of publication to the value (<Your Title.>) it already has in Chado.  
+
+
+
+
+### Related fields:
+
+### Comments:
+
+A title enclosed within square brackets is either an English translation of
+the publication's non-English title or the string '[title not yet available]'.
+Foreign titles are entered  along with its English translation.  If
+only the translation is available, enclose it in [].  If a foreign
+title and translation are both available, put the foreign title first,
+followed by the translation in [].
+In the case that the publication is a book, authored (as opposed to
+edited) throughout by the same person or people, then enter the title
+of the book here. 
+Titles should always end with a full stop.
+
+
+### Updated:
+  
+gm131204 (removed markdown formatting).
+gm151001 (added Dupl. for multiple field info).

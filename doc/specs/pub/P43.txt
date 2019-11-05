@@ -1,0 +1,120 @@
+
+## ! P43.  Flag Disease for curation            DISEASE :
+
+### Multiple values allowed:
+
+Yes.
+Implemented
+
+### !c Applicable:
+
+Yes.
+See Checks below for details of what is implemented
+
+### Inclusion essential:
+
+No
+Implemented
+
+### Mandatorially has value:
+
+See Checks below for details of what is implemented
+
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+Checks done in validate_P43:
+
+Cross-checks with other fields:
+
+* If !c is used in P43
+
+   * P22 must contain a valid FBrf number (i.e. not 'new' or 'unattributed')
+     
+   * warns if there is no data already in chado (check only carried out if 'Where_running' is 'Cambridge')
+
+
+* P43 must be filled in, unless:
+
+   * curation record is a bibliographic record
+   * curation record is an edit record
+   * curation record is a user record
+   * curation record is a skim record
+   * curation record is an expression record
+
+   * publication is a review
+   * publication is a 'FlyBase analysis' record
+
+
+   * there is already disflag data in chado (extra check only carried out if 'Where_running' is 'Cambridge')
+
+
+Checks done in Peeves:
+
+* If there is a '::DONE' style disease flag in P43, there must be a filled in GA34a and/or GA34b field in the curation record.
+
+* If GA34a is filled in anywhere in the curation record, there must be a ::DONE' style disease flag in P43 (unless it is an edit record).
+
+* If GA34b is filled in anywhere in the curation record, there must be a ::DONE' style disease flag in P43 (unless it is an edit record).
+
+
+Checks within the field
+
+* If P43 contains data
+   * warns if there is a blank line within the data (check done in check_for_duplicated_lines)
+   * warns if there are any duplicated values (check done in check_for_duplicated_lines)
+   * each value must correspond to one of the currently allowed flags (see the list of 'P43_flag' entries in symtab.pl for the list of currently allowed values)
+
+
+   * If the record is a user record, only the value 'disease' is allowed.
+
+   * if either 'disease', 'diseaseHP' or 'noDOcur' are used, no other values may be given in the proforma.
+
+   * extra checks carried out if 'Where_running' is 'Cambridge':
+
+       * if either 'disease' or 'noDOcur' are used and there is no !c, warns if different flags already exist in chado for the FBrf
+
+       * if either 'disease' or 'noDOcur' already exist in chado for the FBrf, warns if P43 is filled in (with something other than just 'disease' or 'noDOcur') if !c is not being used
+
+
+* If P43 is empty
+
+  * if there is a !c and if 'Where_running' is 'Cambridge'
+     * warn that you cannot !c this field to nothing if there is harvflag data in chado, otherwise warn that you cannot !c a field that does not have data in chado.
+
+  * if there is no !c and if 'Where_running' is 'Cambridge'
+     * print a warning if there isn't already dis_flag data in chado
+
+
+
+# Checks done in crosscheck_P41_P43_P44 (see P41.txt)
+
+
+
+  
+### Related fields:
+
+
+
+### Comments:
+
+### Status:
+
+doc: checked and changed doc so that it reflects what has been implemented
+
+Known issue: if you !c to nothing for "unattributed" this does not generate an error message.  This is because the 'unattributed' subroutine (which kicks in before validate_P43) is only reporting an error if you try to !c data to a value.  If P22 is unattributed, the unattributed subroutine runs and it never gets to validate_P43 because its an either/or, so I can't see an easy way to code something in to catch this.  A record submitted in error like this would bounce with Kathleen, so its a pretty harmless bug.
+
+At the moment, Peeves only uses existing flag data in chado if it is running in Cambridge (as it uses a support scripts module to get the flag info from the database).  Should add the relevant sql query directly to Peeves so that this more sophisticated checking can be done everywhere.
+
+
+### Updated:
+
+gm191103.
+

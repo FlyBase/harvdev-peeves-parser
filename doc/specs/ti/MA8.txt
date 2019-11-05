@@ -1,0 +1,53 @@
+
+## ! MA8.  Phenotype (viable, fertile)            :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field (in validate_cvterm_field)
+
+
+* check_for_duplicated_lines:
+   * warns if there is a blank line within the data
+   * warns if there are any duplicated values
+
+* each value must be one of the allowed 'insertion_phenotype' values for this field (stored in symtab.pl) - currently 'viable' and 'fertile' are allowed.
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+All specs listed are implemented.
+
+
+### Updated:
+
+gm151001.

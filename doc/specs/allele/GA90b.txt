@@ -1,0 +1,72 @@
+
+## ! GA90b. Genomic location of lesion :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+Yes (Implemented): GA90a -> GA90b, GA90c, GA90d, GA90e, GA90f, GA90g, GA90h, GA90i, GA90j, GA90k
+
+
+### Checks:
+
+Checks within field
+
+* 'validate_sequence_location' checks that the general format of the sequence location is:
+
+ 	arm:x..y
+
+	where:
+
+	* 'arm' is a valid chromosomal arm (currently stored in symtab.pl)
+
+	* '..y' is optional (ie. if the sequence location is a single value rather than a range)
+
+    * for a range, y >= x (i.e. issue a warning if x > y)
+
+
+ * sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if GA90a is filled in (this is to make it easier to implement checking of fields that can be duplicated).
+
+* 'check_site_specific_field' warns if this is filled in by curators not in Harvard.
+
+Checks between fields (for each duplication of the GA90a-GA90k unit):
+
+  * GA90a must be filled in if GA90b is filled in (sub compare_duplicated_field_pairs) 
+  * GA90b must be filled in if GA90c is filled in (sub compare_duplicated_field_pairs) 
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+doc reflects what is implemented.
+
+
+
+* This field should only be filled in for Dmel alleles ??
+
+
+### Updated:
+
+gm151001.

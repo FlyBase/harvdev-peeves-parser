@@ -1,0 +1,63 @@
+! ABERRATION PROFORMA                    Version 60: 05 Mar 2014
+!
+! A1h.  FlyBase aberration ID (FBab) *z :FULL
+! A1a.  Aberration symbol to use in FlyBase                 *a :FULL
+! A1b.  Aberration symbol(s) used in reference              *i :FULL
+! A1e.  Action - rename this aberration symbol                 :FULL
+! A1f.  Action - merge these aberrations (symbols)             :FULL
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :FULL
+! A2a.  Action - aberration name to use in FlyBase          *e :NOT YET IMPLEMENTED
+! A2b.  Aberration name(s) used in reference                *Q :NA
+! A2c.  Action - replace this aberration name                  :PARTIAL
+! A27a. Action - obsolete A1a in FlyBase       TAKE CARE :NOT YET IMPLEMENTED
+! A27b. Action - dissociate A1a from reference TAKE CARE :PARTIAL
+! A4.   Mutagen [CV]                                     *o :NOT YET IMPLEMENTED
+! A6.   Progenitor genotype                              *O :NOT YET IMPLEMENTED
+! A22a. Notes on origin [SoftCV]                         *R :NA
+! A22b. Notes on origin [free text]                      *R :NA
+! A23.  Parent chromosome, for segregants                   :NOT YET IMPLEMENTED
+! A7a.  Complementation - genes completely deleted/disrupted by A1a *q :NOT YET IMPLEMENTED
+! A7c.  Complementation - genes NOT deleted/disrupted by A1a        *q :NOT YET IMPLEMENTED
+! A7e.  Complementation - genes partially deleted/disrupted by A1a  *q :NOT YET IMPLEMENTED
+! A7b.  Complementation - genes completely duplicated in A1a *q :NOT YET IMPLEMENTED
+! A7d.  Complementation - genes NOT duplicated in A1a        *q :NOT YET IMPLEMENTED
+! A7f.  Complementation - genes partially duplicated in A1a  *q :NOT YET IMPLEMENTED
+! A7x.  Complementation - comments [free text] *q :NA
+! A25a. Molecular data - genes completely deleted by A1a               :NOT YET IMPLEMENTED
+! A25c. Molecular data - genes NOT deleted/disrupted by A1a            :NOT YET IMPLEMENTED
+! A25e. Molecular data - genes partially deleted/disrupted by A1a      :NOT YET IMPLEMENTED
+! A25b. Molecular data - genes completely duplicated in A1a     :NOT YET IMPLEMENTED
+! A25d. Molecular data - genes NOT duplicated in A1a            :NOT YET IMPLEMENTED
+! A25f. Molecular data - genes partially duplicated in A1a      :NOT YET IMPLEMENTED
+! A25x. Molecular data - comments [free text]    :NA
+! A17.  Phenotype, not associated with specified alleles [free text] *p :NA
+! A19a. Phenotype, in combination with other abs [SoftCV]            *T :NA
+! A19b. Phenotype, in combination with other abs [free text]         *T :NA
+! A8a.  Breaks - cytological or progenitor break ranges  *B :NA
+! A9.   Class of aberration, relative to progenitor (SO_term ; ID) [CV] *C :FULL
+! A26.  Class of aberration, relative to wild type (SO_term ; ID) [CV]  *C :FULL
+! A18.  Comments about cytology               *c :NA
+! A29.  New cytological order of the chromosomal aberration :NOT YET IMPLEMENTED
+! A24a. Transposon insertion(s)               *P :NA
+! A24b. Non-insertion allele(s)               *S :NA
+! A14.  Miscellaneous comments                *u :NA
+! A90a. Location data for breakpoint number (dupl for multiple) :PARTIAL
+! A90b.    Genomic location of breakpoint                       :PARTIAL
+! A90c.    Genome release number for entry in A90a              :PARTIAL
+! A90h.    Linked to restriction fragment                       :PARTIAL
+! A90j.    Comments concerning sequence location                :PARTIAL
+! A91a. Deleted segment data for segment number (dupl for multiple) :FULL
+! A91b.    Cytological location of left end of segment              :PARTIAL
+! A91c.    Cytological location of right end of segment             :PARTIAL
+! A91d.    Estimated cytology                                       :FULL
+! A91e.    Observed cytology                                        :FULL
+! A92a. Duplicated segment data for segment number (dupl for multiple) :FULL
+! A92b.    Cytological location of left end of segment                 :PARTIAL
+! A92c.    Cytological location of right end of segment                :PARTIAL
+! A92d.    Estimated cytology                                          :FULL
+! A92e.    Observed cytology                                           :FULL
+! A21. A1a stated to be lost? *v :NA
+! A28.  Sequence accession number - seq cur only   :NA
+! A30. From dataset/collection (symbol) :FULL
+! A30a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :FULL
+! A15.  Internal notes                          *K :NA

@@ -1,0 +1,67 @@
+
+## ! P28.  PubMed Central ID  *m :
+
+### Multiple values allowed:
+
+No - Implemented (using 'single_line' in validate_P28)
+
+
+### !c Applicable:
+
+Yes - Implemented (in validate_P28)
+
+### Inclusion essential:
+
+No - Implemented
+
+### Mandatorially has value:
+
+No - Implemented (in validate_P28)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field (in validate_P28):
+
+- value in field must match the format PMC[0-9]{7,} i.e. PMC plus at least 7 digits, otherwise an error message is generated.
+
+Cross-checks with other fields
+
+- if 'P22' contains 'unattributed', P28 must NOT be filled in.
+
+- if !c is used in P28 (in validate_P28)
+
+   - if P22 contains an existing FBrf, checks against what is in chado using 'check_changes_with_chado'
+
+   - if P22 does not contain an existing FBrf (ie. its a new publication), warns that you can't !c data for a new publication.
+
+
+- if value in P1 is 'supplementary material', P28 must NOT be filled in.
+
+
+### Related fields:
+
+None.
+
+
+### Comments:
+
+Questions for Steven:
+
+- is the PMC[0-9]{7,} format correct - does the number ever start with a leading zero, if it doesn't then shuld change to PMC[1-9][0-9]{6,}
+
+
+### Status:
+
+Doc reflects what has been implemented.
+
+
+
+
+### Updated:
+
+gm151001.

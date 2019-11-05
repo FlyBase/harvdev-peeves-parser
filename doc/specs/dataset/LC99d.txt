@@ -1,0 +1,59 @@
+
+## ! LC99d. Action - dissociate accession in LC99a/LC99b from dataset in LC1f/LC1a? (y/blank)  :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+Yes (Implemented): LC99a -> LC99b, LC99c, LC99d
+
+
+### Checks:
+
+Checks within field:
+
+* if LC99d is filled in, 'check_single_allowed_value' subroutine checks that the only allowed value is 'y'
+
+Checks between fields:
+
+* If LC99d is filled in, LC99a must be filled in
+
+* If LC99d is filled in, LC99b must be filled in
+
+* Since LC99d is a 'correction of existing data' field, it must not be filled in for:
+  * a completely new dataset
+  * a dataset merge (suspect using LC99d for a merge is not allowed since a merge involves making a new FBid, but need to check this with Kathleen ??)
+
+### Related fields:
+
+
+
+### Comments:
+
+Curation manual says 'Single OK. Multiple untested.' for the 'Multiple values allowed' section, but have implemented it as a single line field as the only allowed value is 'y'
+
+
+### Status:
+
+If LC99d is filled in, no checks are done to make sure that the accession (specified in LC99a and LC99b) is actually associated with the dataset (specified by LC1a) in chado.
+
+### Updated:
+
+gm151001.

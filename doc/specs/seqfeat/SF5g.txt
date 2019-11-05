@@ -1,0 +1,47 @@
+
+## ! SF5g. Associated transcript   :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+No (implemented) ??need to check with Kathleen whether !c implemented - implemented as No for now.
+
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+### Checks:
+
+Checks within field:
+
+
+* sub 'check_valid_chado_symbol_field' checks that the value is a valid transcript symbol **in chado**.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm170927.

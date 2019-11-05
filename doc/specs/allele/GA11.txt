@@ -1,0 +1,58 @@
+
+## ! GA11.  Progenitor genotype                           *O :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field
+
+* check_valid_symbol_field does:
+
+   * check_for_duplicated_lines:
+
+    * warns if there is a blank line within the data
+    * warns if there are any duplicated values
+
+   * checks value is a valid symbol in chado/generated in the record of one of the following types: FBal, FBti, FBab, FBtp
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented:
+
+Where GA11 has value and GA10g value is an aberration,
+curator may or may not have explicitly entered value in A6.  If they did, then GA11 should
+equal that in A6.
+
+### Updated:
+
+gm151001.

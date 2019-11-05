@@ -1,0 +1,78 @@
+
+## ! F1a. Gene product symbol           :
+
+### Multiple values allowed:
+
+No (implemented - single_line in loop that processes field data)
+
+### !c Applicable:
+
+No (implemented - in validate_primary_proforma_field)
+
+### Inclusion essential:
+
+Yes (implemented)
+
+### Mandatorially has value:
+
+Yes (implemented - contains_data in loop that processes field data)
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+### Checks:
+
+Checks within field:
+
+  * sub validate_primary_proforma_field (see doc/specs/allele/GA1a.txt for details). Note, although the gene product identifier may contain a species prefix, species abbreviation checks are not carried out in validate_primary_proforma_field for this proformae as it can contain more than one type of object (FBtr or FBpp).  Any species abbreviation checking should thus be added to the format checking done at the end of the proforma using the 'type_gene_product' subroutine [note that this has not been added as of 2017.02.06].
+
+
+Checks within validate_primary_proforma_field:
+
+  * first checks for a trailing hash, and manually removes it to avoid this kind of error breaking lots of downstream checks (does not rely on dehash to do this as happens for other fields, but uses code at the top of validate_primary_proforma_field, presumably because being the primary symbol field, loads of other checks rely on it).
+
+  * report error if the same symbol is given in multiple different proformae within the same record (uses %x1a_symbols hash in validate_primary_proforma_field)
+
+
+Cross-checks with other fields (done after parsing of entire proforma):
+
+* sub 'cross_check_harv_style_symbol_rename_merge_fields' - see MA1f.txt for details.
+
+* If the gene product is new, being renamed or being merged:
+
+  * the format of the entry in F1a is checked (using sub type_gene_product):
+  
+     * it must match one of the following allowed formats:
+  
+       genesymbol-XR (FBtr)
+       genesymbol-XP (FBpp)
+       allelesymbolRA (FBtr)
+       allelesymbolPA (FBpp)
+    
+     * the 'genesymbol' or 'allelesymbol' portion of the symbol must be a valid FBgn or FBal (respectively) symbol in chado or generated in the record.
+     
+The following two checks are done at the end of proforma checking within expression.pl, rather than trying to add it to the 'cross_check_harv_style_symbol_rename_merge_fields' subroutine which is used for several different 'Harvard' style proformae:
+
+* If the gene product is being renamed, checks that the format of the new valid symbol in F1a matches the type of FBid in F1f (i.e. either genesymbol-XR or allelesymbolRA for a FBtr id, either genesymbol-XP or allelesymbolPA for a FBpp id).
+
+* If gene products are being merged:
+
+  * checks that the FBids in F1c (merge field) are all of one type (i.e. FBtr or FBpp) and prints an error message if not.
+  * checks that the format of the new valid symbol in F1a matches the type of the FBids (in F1c) which are being merged.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+ * cross-checking of species abbreviation in primary symbol field with other fields has not yet been implemented.
+
+### Updated:
+
+gm170206.

@@ -1,0 +1,79 @@
+
+## ! GG2c. Action - rename this gene group name        :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Cross-checks with other fields:
+
+* If GG2a and GG2c are both filled in, the value must not be the same
+
+*  'compare_field_pairs': If GG1f is filled in, GG2c must NOT be filled in (checked using proformae in records2test/GG2 - works for both unhashed and hashed proformae)
+
+* If GG2c is filled in, GG2a must be filled in (compare_field_pairs, pair_test = 'dependent')
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not implemented any of the following:
+
+* check that the value given in GG2c is really a valid fullname in chado.
+
+Cross-checks with other fields:
+
+  * checks done after parsing entire proforma
+    * if GG1e contains data, print an error message if GG2a is filled in without GG2c being filled in
+
+    * if GG1e contains data, print an error message if GG2c is filled in without GG2a being filled in
+
+    * if GG1e contains data, print the following if neither GG2a nor GG2c are filled in:
+
+"Neither GG2a nor GG2c are filled in, but GG1e is:
+ G1e.  Action - rename this gene symbol                       :<symbol>
+This is only allowed if you are trying to rename a gene's symbol without changing the full name"
+    
+
+    * If neither GG1f or GG1e are filled in, and GG2c is empty, then GG2a may only be filled in when GG1g is 'n', otherwise it prints the warning "You have filled in GG2a. for an existing gene '<symbol>', did you mean to put it in GG2b."
+
+    * If neither GG1f or GG1e are filled in, and GG2c is filled in, then GG2a must be filled in
+
+
+
+
+
+
+### Updated:
+
+gm151001.

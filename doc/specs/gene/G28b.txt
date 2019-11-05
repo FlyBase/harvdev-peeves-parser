@@ -1,0 +1,102 @@
+
+## ! G28b. Source for merge/identity of                      [SoftCV] *q :
+
+### Multiple values allowed:
+
+No
+Implemented (in validate_G28b) (see comment below)
+
+### !c Applicable:
+
+Yes
+Implemented (in validate_G28b)
+
+
+### Inclusion essential:
+
+No
+Implemented (in validate_G28b)
+
+### Mandatorially has value:
+
+No
+Implemented
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+Checks in validate_G28b
+
+* if the list of genes contains a @ an error is printed (and none of the other checks are done)
+
+* Checks that each line begins with a SoftCV of either "Source for merge of: " or "Source for identity of: ".  Two different error messages can be produced:
+  * Warning if missed the space after the : but the SoftCV is otherwise fine
+  * Warning if the beginning of line does not match either SoftCV at all
+
+* Checks that there is more than one symbol after the SoftCV prefix
+
+* For 'Source for identity of: ', checks that there are two symbols after the SoftCV prefix
+
+
+Checks done after whole proforma read (cross checks with other fields): 
+
+* if G28b is filled in:
+
+  * warns if there are any duplicated symbols in a line (uses check_for_duplicated_lines to check)
+
+  * for 'Source for identity':
+
+     * warns if the symbol in G1a does not appear in the list in G28b
+
+     * warns if G1e is empty
+
+     * if G1e contains data, warns if the symbol in G1e does not appear in the list in G28b
+
+
+   * for 'Source for merge':
+
+      * warns if G1f is empty
+
+      * if G1f contains data, warns if the genes listed in G28b 'Source for merge line: ' do not match those listed in the G1f line (they do not have to be in the same order)
+
+
+
+* if G1e is filled in:
+
+   * warns if there is no 'Source for identity line: ' at all in G28b
+
+   * warns if the string after 'Source for ' is not identity e.g. if 'Source for merge of: ' was written in error instead
+
+
+* if G1f is filled in:
+
+   * warns if there is no 'Source for merge line: ' at all in G28b
+
+   * warns if the string after 'Source for ' is not merge e.g. if 'Source for identity of: ' was written in error instead
+
+    
+
+### Related fields:
+
+
+
+### Comments:
+
+Status of Multiple values allowed check:
+ * a warning is printed if more than one line is put in the G28b field.  NOTE that checks within validate_G28b are still carried out in this situation, but the cross-checks with other fields are not carried out (have not been able to figure out why, [gm131216]).
+
+
+### Status:
+
+doc: updated doc so that it reflects what has been implemented
+
+
+
+### Updated:
+
+gm151001.

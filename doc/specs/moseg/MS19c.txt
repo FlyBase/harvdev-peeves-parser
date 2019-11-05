@@ -1,0 +1,58 @@
+
+## ! MS19c. Isolate of (generic natTE) :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+Checks within field:
+
+'check_valid_symbol_field' checks:
+
+* must be a valid natural transposon symbol (either in chado or made in record)
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+Turns out that current parsing of this field in the proforma parsing software is broken, and it makes a record bounce if filled in.  From DOC-117 its not clear whether this field is still needed, so for now, kept checks in place, but in addition, Peeves prints a warning message if the field is filled in saying that it must not be used.
+
+doc reflects what is implementeed
+
+Not yet implemented
+
+* MS19c must be filled in for MS16 of type natural_transposon_isolate_named
+
+
+### Updated:
+
+gm170131.

@@ -1,0 +1,57 @@
+
+## ! TO10. Species of tool (organism.abbreviation)        :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No - see 'Cross-checks done after parsing the entire proforma' below.
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field (Implemented in validate_species_abbreviation_field):
+
+* The value must be a valid species abbreviation in chado.
+
+
+Cross-checks done after parsing the entire proforma:
+
+
+* Must be filled in for a new experimental tool or a tool merge (implemented using 'get_object_status')
+
+* Must NOT be filled in for an existing experimental tool (including experimental tool being renamed) (implemented using 'get_object_status')
+
+
+### Error messages:
+
+  
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+
+### Updated:
+
+gm171115.

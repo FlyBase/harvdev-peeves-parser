@@ -1,0 +1,78 @@
+
+## ! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+
+### Multiple values allowed:
+
+Yes, each on new line
+
+### !c Applicable:
+
+No
+
+### Inclusion essential:
+
+No
+
+### Mandatorially has value:
+
+No
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+See phenotype_GI_CV_fields.txt for details.
+
+Note, list of allowed qualifier 'types' for phenotype manifest lines (in both GA17 and GA28b, GA29b) is now specified using a list of allowed namespeces in symtab.pl in the @phenotype_manifest_qualifiers array (it no longer uses the Proforma field comment present in FBcv.obo).
+
+
+withs  
+drivers have valid symbols  
+  
+### Error messages
+  
+If pling-c:  
+Can't use !c in this field  
+  
+If missing or an empty line among the others:  
+Missing phenotype in '<phenotype>'  
+  
+Compound terms disallowed:  
+  Compounding anatomy and cell component terms using ' & ' is no longer allowed ('<you entry & next ontology>')  
+  
+GO biological cell cycle branch process no longer valid here:    
+  Valid GO biological process (cell cycle) but term no longer required ('<you entry & next ontology>')  
+  
+If a non-allowed item:  
+won't validate  
+
+### Related fields:
+
+G28b, G29b have similar requirements and essentially use the same checking code.  
+GA17  
+GA28b  
+GA29b  
+
+
+### Comments:
+
+   Ticket #581, #621 (Add FBdv terms)  
+   Ticket #594 (Enhanced error message)  
+   Ticket #599 (Body parts with commas)  
+   Ticket #596, 597, #620 (Suggests spec. needs enhancing)  
+DC-137 JIRA ticket fixed to disallow ontology from the GO 'cell cycle' branch. Simply won't check.  
+Could put in a 'no longer allowed' message for the cell cycle entry.   
+
+
+### Status:
+
+
+
+### Updated:
+
+gm131204 (removed markdown formatting and tweaked to add reference to phenotype_GI_CV_fields.txt file).
+gm151001 (added Dupl. for multiple field info).
+gm160119 (added list of allowed qualifier 'types' info)

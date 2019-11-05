@@ -1,0 +1,53 @@
+
+## ! SF5d. Corresponding segment   :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+
+* sub 'check_valid_chado_symbol_field' checks that the value is a valid segment symbol (i.e. symbol whose type is FBms) **in chado**.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+This field is not yet implemented in the proforma parsing software. Checks described above are in place, but in addition, Peeves prints a warning message saying that the field must not be used (because the parsing is not implemented) if:
+
+a. the field is filled in
+or
+b. the field is !c'd
+
+### Updated:
+
+gm170927.

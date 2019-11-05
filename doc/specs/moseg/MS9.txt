@@ -1,0 +1,44 @@
+
+## ! MS9.  Segments in order | orientation :
+
+### Multiple values allowed:
+
+
+
+### !c Applicable:
+
+
+
+### Inclusion essential:
+
+
+
+### Mandatorially has value:
+
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+Only validate_stub implemented
+
+!c not implemented in parser code yet
+
+### Updated:
+
+gm151001.

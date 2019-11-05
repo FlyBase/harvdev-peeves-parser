@@ -1,0 +1,61 @@
+
+## ! GA30c. Encoded experimental tool (FBto symbol) :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* check_valid_symbol_field checks that the values are a valid tool symbol either in chado or generated in the record.
+
+Cross-checks between fields:
+
+* if GA30c is filled in
+
+- either the allele must be associated with a 'construct' (in GA10a)
+
+- or, the allele must be associated with either a 'regular insertion' or a 'TI insertion' (in GA10c/GA10e) AND GA30f must be filled in
+
+(The checks use sub 'get_allele_type' to work out what type of allele is in GA1a based on how GA10a, GA10c, GA10e are filled in).
+
+
+* Usually only one of GA30c and GA30d are filled in, so a warning is issued if both are filled in.
+
+* For new 'construct' alleles (i.e. GA10a filled in), where the parent gene has a 'common_tool_uses' in chado, Peeves warns if neither of GA30c or GA30d are filled in.
+
+### Related fields:
+
+
+
+### Comments:
+
+Some of the between fields cross-checks are not carried out for .edit records, to prevent false-positives (e.g. when adding information to already existing alleles that was missed in the original curation).
+
+
+### Status:
+
+### Updated:
+
+gm180412.

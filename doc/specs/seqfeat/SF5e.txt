@@ -1,0 +1,54 @@
+
+## !    SF5e. Confidence rating for gene call :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+Yes (implemented): SF5a -> SF5e, SF5f AND SF5e -> SF5f
+
+
+### Checks:
+
+
+Checks within field:
+
+* validate_cvterm_field checks that the valus is one of the allowed values for this field (H, M, L) which are stored in symtab.pl.
+
+
+Checks between fields:
+
+* If SF5e is filled in, SF5a must be filled in
+
+* If SF5e is filled in, SF5f must be filled in
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm180913.

@@ -1,0 +1,66 @@
+
+## ! HH8a. Dmel gene(s) implicated (repeat for multiple) :
+
+### Multiple values allowed:
+
+No (implemented)
+
+
+### !c Applicable:
+
+Yes (implemented) (check with Kathleen)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+Yes (Implemented): HH8a -> HH8c
+
+
+### Checks:
+
+Checks within field:
+
+validate_Dmel_gene subroutine checks:
+
+* must be a valid gene symbol *in chado* (so a gene made in the same record does not count)
+
+   * must be a Dmel gene
+
+
+
+
+Checks between fields:
+
+
+* If HH8c is filled in, HH8a must be filled in.
+
+* Must NOT be filled in for 'parent entity'
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+NOTE: the check for 'must be a Dmel gene' is implicated in a hacky way just using the symbol given - it should eventually be replaced with a test that looks up the organism info from chado.
+
+NOTE: 'parent entity' cross-check only uses HH2a field at the moment, ideally, should look up value in chado if HH2a is empty
+
+
+### Updated:
+
+gm151001.

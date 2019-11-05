@@ -1,0 +1,67 @@
+## ! MP17. Type of multipub [CV]                        :
+
+### Multiple values allowed:
+
+No.
+
+### !c Applicable:
+
+Yes if MP1 contains valid data, otherwise no.
+
+### Inclusion essential:
+
+Yes.
+
+### Mandatorially has value:
+
+Yes.
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+To be valid:
+
+* The value must be a valid term (i.e. does not have is_obsolete:
+true) from flybase_controlled_vocabulary.obo and
+* the value must be in the pub_type namespace and
+* the value must be taken from a restricted list.  The only valid
+terms as of 2008-12-08 are 'compendium', 'book' and 'journal'.
+
+If !c is used:  
+
+* MP1 must contain a valid value and
+* the value given in MP17 must be different from the value
+stored in Chado for the multipub specified by the value given in
+MP1.
+
+If !c is not used:
+
+* if MP1 contains a valid value, either:
+    * the value given in MP17 must be identical to the value
+stored in Chado for the multipub specified by the value given in
+MP1 or
+    * MP17 must contain a valid value and no value is stored in
+Chado for the multipub specified by the value given in MP1;
+* if MP1 does not contain a valid value, either:
+    * MP17 must be empty or
+    * MP17 must a contain valid value.
+
+### Related fields:
+
+
+### Comments:
+
+The term 'compendium' was invented as a catch-all class for those
+multi-publications which were loaded into Chado without being properly
+classified.  The term 'compendium' may also be used for
+multi-publications which are neither books nor journals.  Further
+terms will be added as they become necessary.
+
+### Updated:
+
+gm131204 (removed markdown formatting).
+gm151001 (added Dupl. for multiple field info).

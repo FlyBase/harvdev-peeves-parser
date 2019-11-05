@@ -1,0 +1,45 @@
+
+## `! G19a. Gene order/orientation from molecular mapping [SoftCV] *s :`
+
+### Multiple values allowed:
+
+Yes
+
+### !c Applicable:
+
+Yes
+
+### Inclusion essential:
+
+No
+
+### Mandatorially has value:
+
+No
+
+### Checks:
+
+List of valid gene symbols (either pre-existing or defined in curation record)
+each suffixed with one of +, - or ? and separated either by a single space or the string
+" = ".
+
+Must be prefixed by one of two SoftCV terms:
+' Gene order: In direction of increasing cytology: '
+'Gene order: Overall orientation not stated: '
+(Note the trailing space after the second : in each of the above.)
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+PROFORMA FIELD OBSOLETED
+
+### Updated:
+
+gm131204 (doc for this field moved here from gene.checks.pro).

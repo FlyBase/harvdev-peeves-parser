@@ -1,0 +1,56 @@
+
+## ! A1g.  Is A1a the current symbol of an aberration in FlyBase? :
+
+### Multiple values allowed:
+
+No
+Implemented (this will get caught by the call to 'check_y_or_n' in 'cross_check_1a_1g'
+
+### !c Applicable:
+
+No
+Implemented (in validate_x1g)
+
+### Inclusion essential:
+
+Yes
+Implemented
+
+### Mandatorially has value:
+
+Yes
+Implemented (in validate_x1g)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+  * sub 'cross_check_1a_1g' checks the following:
+
+     * If the value given in A1g is 'y', the value given in A1a must be held in Chado as a current valid symbol of type FBab.
+
+     * If the value given in A1g is 'n', the value given in A1a must not be held in Chado as a current valid symbol of type FBab.
+
+     * it also checks that the value in A1g is either 'y' or 'n' by calling 'check_y_or_n'
+
+
+  * sub 'cross_check_x1e_x1g' checks that if A1e is filled in, A1g is 'n'
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+doc: updated to reflect what has been implemented
+
+
+### Updated:
+
+gm151001.

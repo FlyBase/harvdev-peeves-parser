@@ -1,0 +1,131 @@
+## ! P3.   Volume number             *y :
+  
+### Multiple values allowed:
+
+No.
+
+### !c Applicable:
+
+Yes if P22 contains a valid FBrf, no otherwise.
+
+### Inclusion of field essential for proforma checks:
+
+No.
+
+### Field mandatorially has value:
+
+Yes if P22 is 'new' and P1 contains either
+'paper' or  
+'review' or  
+see Comments, below, otherwise no.  
+  
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Allowed values:  
+  
+2 (chapter number, for book)  
+2 (journal volume)  
+978 (journal volume)  
+XXVI (journal volume)  
+1951/1952 (date range instead)  
+--- other 'strange' things ---  
+  
+### Checks:
+
+If !c is used:
+
+* P22 must contain a valid FBrf and
+* the value given in P3 must be different from the value
+stored in Chado for the publication specified by the FBrf given in
+P22.
+
+If !c is not used:
+
+* if P22 contains a valid FBrf, either:
+    * the value given in P3 must be identical to the value
+stored in Chado for the publication specified by the FBrf given in
+P22 or
+    * no value is stored in Chado for the publication specified by the
+FBrf given in P22;
+* if P22 is 'new':  
+    * P3 must a contain valid value.  
+* if P22 is 'unattributed':  
+    * P3 must remain blank.  
+
+
+### Error messages:  
+  
+If P22 is 'unattributed':  
+P3: Cannot contain data when P22 is 'unattributed'.  
+
+If pling-c and P22 is 'new':  
+P3: : can't change the volume designation of a new publication!  
+
+If no volume and pling-c:  
+P3: Do you really want to delete the volume designation?  
+  
+If volume goes over more than one line:  
+P3: Must not have newlines in volume designation '<3  
+3>'.  
+  
+If volume value is extracted from chado for this FBrf:  
+P3:  Trying to change <chado-volume> to '<your-vol>' but it isn't yet in Chado.  
+P3:  Trying to change <chado-volume> to the value (<your-vol>) it already has in Chado.  
+P3:  Trying to set <chado-volume> to '<your-vol>' but it is '<chado-vol>' in Chado.  
+
+
+  
+
+### Related fields:
+
+P4
+
+### Comments:
+
+In the case where the 'Journal' is an edited book with individually
+contributed chapters use the chapter number in this field.
+For publications whose dates are given as a range the syntax should be
+n1/n2 where n1 and n2 are the years, i.e. 1951/1952. 
+  
+The value is essentially uncheckable other than for consistency with
+data held in Chado.  
+
+List of publication types (P1) that are associated with a volume:  
+	abstract  
+	autobiography  
+	bibliographic list  
+	biography  
+	book review  
+	conference report  
+	editorial  
+	erratum  
+	film  
+	interview  
+	letter  
+	meeting report  
+	news article  
+	note  
+	obituary  
+	paper  
+	patent  
+	poem  
+	poster  
+ 	retraction  
+	review  
+	spoof  
+	stock list  
+	supplementary material  
+	tactile diagram  
+	teaching note  
+
+
+### Updated:
+
+
+gm131204 (removed markdown formatting).
+gm151001 (added Dupl. for multiple field info).
+
+

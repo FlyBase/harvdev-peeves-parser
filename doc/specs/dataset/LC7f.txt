@@ -1,0 +1,56 @@
+
+## ! LC7f. Associated files, archived at ftp site [SoftCV]  :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented:
+
+Checks within field:
+
+Valid format is:
+
+Four components separated by semi-colons: file path, file type, file size and file description. Value type and value separated by colons. The value for description may be left blank.
+For example:
+File path: ftp://ftp.flybase.org/flybase/associated_files/MachiBase.embryo.Plus.wig ; File type: wig ; File size: 3.5 MB ; File description: plus
+
+Similar (but not identical) in format to P38
+
+### Updated:
+
+gm160518.

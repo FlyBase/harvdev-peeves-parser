@@ -1,0 +1,54 @@
+
+## ! LC6g. Dataset title  :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+sub 'no_stamps' checks that there are no stamps.
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented:
+
+Checks between fields:
+
+- make check to cope with (look at pub checks): A new title supplied for a dataset with an existing (non-null) title is ignored unless curator used "!c" - will need to know where lives: synonym of type "fullname" or "title" and also help with sql query.
+
+Have put code in that should work (marked with ## at end of proforma checks), but will need to add a $prepared_queries{'chado_dataset_title'} to chado.pl and test properly once have correct query and this is in production database.
+
+### Updated:
+
+gm160517.

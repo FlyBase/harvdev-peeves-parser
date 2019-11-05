@@ -1,0 +1,43 @@
+
+## ! MS1e.  Type of DNA_segment [CV]              :
+
+### Multiple values allowed:
+
+
+
+### !c Applicable:
+
+
+
+### Inclusion essential:
+
+
+
+### Mandatorially has value:
+
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Only validate_stub implemented - need reliable way of getting up-to-date list of allowed values for this field (at least one value given 'restr_segment' is not a valid cvterm in the cvterm table in chado)
+
+### Updated;
+
+gm151001.

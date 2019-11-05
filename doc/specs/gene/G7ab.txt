@@ -1,0 +1,58 @@
+
+## ! G7a.  Genetic map position - gene(s) mapped left of G1a  *b :
+## ! G7b.  Genetic map position - gene(s) mapped right of G1a *b :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+
+* check_valid_symbol_field does:
+
+   * check_for_duplicated_lines:
+
+    * warns if there is a blank line within the data
+    * warns if there are any duplicated values
+
+   * checks value is a valid symbol of a FBgn or FBti in chado/generated in the record
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+doc: updated so that it reflects what has been implemented
+
+
+### Updated:
+
+gm151001.

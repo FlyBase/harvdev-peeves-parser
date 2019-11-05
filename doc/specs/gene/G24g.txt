@@ -1,0 +1,48 @@
+
+## ! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+Implemented as No - but see DC-532, is allowed under some circumstances
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+Checks within field (in validate_G24g):
+
+* A date in the format yearmonthday (YYYYMMDD), e.g. '20070731'.
+
+* This field is only for use by the GO curator.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Note yet implemented - DC-532: Add a check to ensure that G24g. GO DATEs are only added via FBrf0216433, also impacts on !c
+
+### Updated:
+
+gm151001.

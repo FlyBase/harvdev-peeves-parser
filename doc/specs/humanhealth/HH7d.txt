@@ -1,0 +1,64 @@
+
+## !     HH7d. Orthologous Dmel gene(s) [usu. DIOPT] :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+
+### !c Applicable:
+
+Yes (Implemented) (check with Kathleen)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+Yes (Implemented): HH7e -> HH7d, HH7c
+
+
+### Checks:
+
+Checks within fields:
+
+validate_Dmel_gene subroutine checks:
+
+* must be a valid gene symbol *in chado* (so a gene made in the same record does not count)
+
+   * must be a Dmel gene
+
+Checks between fields:
+
+
+* If HH7d is filled in, HH7e must be filled in
+
+* Must NOT be filled in for 'parent entity'
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+NOTE: the check for 'must be a Dmel gene' is implicated in a hacky way just using the symbol given - it should eventually be replaced with a test that looks up the organism info from chado.
+
+NOTE: 'parent entity' cross-check only uses HH2a field at the moment, ideally, should look up value in chado if HH2a is empty
+
+### Updated:
+
+gm151001.

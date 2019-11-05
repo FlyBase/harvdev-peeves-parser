@@ -1,0 +1,35 @@
+! NATURAL TRANSPOSON PROFORMA                        Version 8: 11 Dec 2014
+!
+! TE1f. ID for gen.natTE (FBte or "new")       :FULL
+! TE1a. gen.natTE symbol to use in database    :FULL
+! TE1b. gen.natTE symbol used in reference     :FULL
+! TE3.  Species                                :FULL
+!
+! TE1c. Action - rename this gen.natTE symbol    :FULL
+! TE1g. Action - merge these gen.natTE(s) (FBte) :FULL
+! TE1h. Action - delete gen.natTE record ("y"/blank)   :FULL
+! TE1i. Action - dissociate TE1f from FBrf ("y"/blank) :FULL
+!
+! TE4a. Transposon type [CV]                :PARTIAL
+! TE4b. Length of complete element, bp      :FULL
+! TE4c. Terminal repeat length, bp          :FULL
+! TE4d. Target site duplication, bp         :FULL
+! TE4e. Target site sequence (if consensus) :BASIC ONLY
+!
+! TE5a. Number of copies in sequenced genome (dupl for multiple) :FULL
+!   TE5b. Description of sequenced genome   :FULL
+! TE5c. Number of copies in reported genome (dupl for multiple)  :FULL
+!   TE5d. Description of reported genome(s) :FULL
+!
+! TE6a. Reference sequence for complete element :NOT YET IMPLEMENTED
+! TE6b. Accession(s) for gen.natTE          :NOT YET IMPLEMENTED
+! TE6c. Accession(s) for flanking sequence      :NOT YET IMPLEMENTED
+! TE7.  Phylogenetic range  :NOT YET IMPLEMENTED
+! TE8.  Component gene(s)   :FULL
+!
+! TE9.  Named isolates        :NOT YET IMPLEMENTED
+! TE10. Engineered constructs :NOT YET IMPLEMENTED
+! TE11. Other variants        :NOT YET IMPLEMENTED
+!
+! TE12. Comments            :FULL
+! TE13. Internal comments   :FULL

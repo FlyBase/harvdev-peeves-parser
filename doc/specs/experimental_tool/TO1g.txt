@@ -1,0 +1,65 @@
+
+## ! TO1g. Action - merge these experimental tools (FBto) :
+
+### Multiple values allowed:
+
+Yes (separated by returns)
+Implemented (in validate_merge_using_ids)
+
+### !c Applicable:
+
+No
+Implemented (in validate_merge_using_ids)
+
+
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No
+Implemented (in validate_merge_using_ids)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+  * sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if TO1g is filled in
+
+  * checks in validate_merge_using_ids - see MA1g.txt for details
+
+Cross-checks with other fields:
+
+    * sub 'plingc_merge_check' - no !c in entire proforma if TO1g is filled in
+
+    * sub 'rename_merge_check' -  TO1c and TO1g must not both contain data
+
+Cross-checks with other fields
+
+   * subroutine 'cross_check_harv_style_symbol_rename_merge_fields' - see MA1f.txt for details of what this subroutine does.
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm171114.

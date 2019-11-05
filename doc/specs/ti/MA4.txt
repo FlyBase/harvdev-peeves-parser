@@ -1,0 +1,84 @@
+
+## ! MA4.  Symbol of inserted transposon          :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+uses 'check_valid_symbol_field' which:
+
+ * check_for_duplicated_lines:
+    * warns if there is a blank line within the data
+    * warns if there are any duplicated values
+
+ * each value must be a valid construct (FBtp) or natTE (FBte) symbol (either in chado, or generated in record)
+
+
+Cross-checks with other fields:
+
+* the value in MA4 must match:
+  * the 'inserted element' part of the symbol in MA1a.
+
+
+* the value in MA4 is checked against the 'inserted element' part of the symbol in MA1a
+
+  * if they match each other, no error message is printed
+  * otherwise
+     * if the value in MA4 matches a list of approved shorthands for natural TEs (e.g. 'P' for 'P-element', 'H' for 'hobo'), an error message is printed saying eg. 'MA4: You have used the shorthand 'P', but you need to fill in the full natural transposon symbol in this field, did you mean 'P-element' instead ?'
+     * else, an error message saying that the symbol in MA4 does not match the 'inserted element' part of the symbol in MA1a is printed
+
+  * Note that there are no explicit checks of the validity of the symbol in MA4, but because of the checking against what is in the 'inserted element' part of the symbol in MA1a, the following are implicitly checked (since they are checked as part of the format checking of the MA1a symbol using 'check_insertion_symbol_format').
+
+  (* value in MA4 must be the valid symbol (either in chado or made in the record) of:
+
+    * either a transgenic construct (FBtp) (if the 'inserted element' part of the symbol in MA1a matches m/(.+\[.+\])$/ )
+
+    * or a natural transposable element (FBte) (if the 'inserted element' part of the symbol in MA1a matches m/.+\{\}$/ )
+   )
+
+* MA4 must be filled in for a completely new insertion (ie. if MA1f is 'new' and MA1g is empty).
+
+* for a simple proforma that adds information to an existing insertion or a rename of an existing insertion (i.e. MA1f is an FBid), if MA4 is filled in, !c must be used.
+
+* for a merge of insertions (i.e. MA1g is filled in), if MA4 is filled in, print a message indicating that MA4 cannot be filled in for a merge (with a suggestion that 'if you are trying to simultaneously merge insertions and change the inserted element, please separate these actions into two different curation records').
+
+* If MA4 is empty, but MA1c is filled in (ie. it is a rename)
+  * check whether the inserted element portion of the symbols in MA1a and MA1c are the same.
+    * if they are different (i.e. the element in the insertion is being changed), print an error message saying "You have changed the 'inserted element' portion of the insertion symbol, but have not filled in the MA4 field to also change the inserted element". (Note that other permutations of errors for this rare type of rename are caught by other checks above).
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+
+### Updated:
+
+gm151001.

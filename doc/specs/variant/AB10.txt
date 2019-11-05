@@ -1,0 +1,49 @@
+
+## ! AB10.  Nickname                                            *U :
+
+### Multiple values allowed:
+
+Yes (Implemented by returns)
+
+
+### !c Applicable:
+
+Yes (Implemented by returns)
+
+### Inclusion essential:
+
+No (Implemented by returns)
+
+### Mandatorially has value:
+
+No (Implemented by returns)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field: validate_synonym_field
+
+  * uses 'check_for_duplicated'_lines to check that there are no duplicated synonyms and no empty lines
+
+  * warns if the synonym is composed entirely of punctuation character(s).
+  * warns if the field is filled in for a 'user' or 'auto' curation record.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+doc reflects what is implemented
+
+### Updated:
+
+gm170420.

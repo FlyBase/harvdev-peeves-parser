@@ -1,0 +1,53 @@
+## ! MP2b. Multipub full name                        *u :
+
+### Multiple values allowed:
+
+No.
+
+### !c Applicable:
+
+Yes if MP1 contains valid data, otherwise no.
+
+### Inclusion essential:
+
+No.
+
+### Mandatorially has value:
+
+Yes if MP3 contains 'y', otherwise no.
+
+### Checks:
+
+If !c is used:  
+
+* MP1 must contain a valid value and
+* the value given in MP2b must be different from the value
+stored in Chado for the multipub specified by the value given in
+MP1.
+
+If !c is not used:
+
+* if MP1 contains a valid value, either:
+    * the value given in MP2b must be identical to the value
+stored in Chado for the multipub specified by the value given in
+MP1 or
+    * MP2b must contain a valid value and no value is stored in
+Chado for the multipub specified by the value given in MP1;
+* if MP1 does not contain a valid value, either:
+    * MP2b must be empty or
+    * MP2b must a contain valid value.
+
+### Related fields:
+
+
+### Comments:
+
+### Status:
+
+PROFORMA FIELD OBSOLETED
+
+
+### Updated:
+
+gm131204 (removed markdown formatting).
+

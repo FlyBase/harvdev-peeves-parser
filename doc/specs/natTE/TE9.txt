@@ -1,0 +1,50 @@
+
+## ! TE9.  Named isolates        :
+
+### Multiple values allowed:
+
+
+
+### !c Applicable:
+
+
+
+### Inclusion essential:
+
+
+
+### Mandatorially has value:
+
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+Not implemented any checks - just validate_stub subroutine, for the reasons below.
+
+Not clear whether this is still supposed to be curated into.
+
+Following sql adapted from field mapping table gives no rows:
+
+select fo.name, pub.uniquename from feature fo, feature f, feature_relationship fr, cvterm cvt, feature_relationship_pub frp, pub where fo.feature_id=fr.object_id and f.feature_id=fr.subject_id and fr.type_id=cvt.cvterm_id and frp.feature_relationship_id=fr.feature_relationship_id and pub.pub_id=frp.pub_id and cvt.name='isolate_of' and f.is_obsolete='f';
+
+Need to figure out whether we should still have this field, and where the data live in the db if we are supposed to keep curating it.
+
+### Updated:
+
+gm151001.

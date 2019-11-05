@@ -1,0 +1,60 @@
+
+## ! MA21c. Insertion into natTE (identified, in FB)             :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+
+### Inclusion essential:
+
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field, using 'check_valid_symbol_field':
+
+* check_for_duplicated_lines:
+   * warns if there is a blank line within the data
+   * warns if there are any duplicated values
+
+* checks value is a valid symbol of a natural transposon in chado/generated in the record
+
+Cross-checks between fields:
+
+* MA21c and MA21f must not both be filled in.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not implemented yet:
+
+Cross-checks between fields:
+
+* MA21d should only be filled in if either MA21c or MA21f is filled in.
+
+### Updated:
+
+gm151001.

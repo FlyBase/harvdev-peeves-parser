@@ -1,0 +1,42 @@
+
+## ! MS18b. Junction restriction sites | position :
+
+### Multiple values allowed:
+
+
+
+### !c Applicable:
+
+
+
+### Inclusion essential:
+
+
+
+### Mandatorially has value:
+
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+Only validate_stub implemented - curation manual does not provide enough detail of field format to implement checking.
+
+### Updated:
+
+gm151001.

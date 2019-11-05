@@ -1,0 +1,53 @@
+
+## ! MA24. Arose in multiple insertion line ("y"/"p"/blank) :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+Checks within field (in validate_MA24):
+
+* check_for_duplicated_lines:
+   * warns if there is a blank line within the data
+   * warns if there are any duplicated values
+
+
+* value must be one of the values allowed for this field (stored in symtab.pl), currently 'y' and p' are allowed.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+doc reflects what is implemented.
+
+
+### Updated:
+
+gm151001.

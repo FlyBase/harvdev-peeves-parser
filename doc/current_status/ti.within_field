@@ -1,0 +1,64 @@
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :FULL
+! MA1a. Insertion symbol to use in database    :FULL
+! MA1b. Symbol used in reference               :FULL
+! MA27. Insertion category [CV]                :FULL
+! MA4.  Symbol of inserted transposon          :FULL
+! MA20. Species of host genome                 :FULL
+!
+! MA1c. Action - rename this insertion symbol    :FULL
+! MA1g. Action - merge these insertion(s) (FBti) :FULL
+! MA1h. Action - delete insertion record ("y"/blank)   :FULL
+! MA1i. Action - dissociate MA1f from FBrf ("y"/blank) :FULL
+!
+! MA1d. Other synonym(s) for insertion symbol  :FULL
+! MA1e. Silent synonym(s) for insertion symbol :FULL
+! MA22. Line id associated with insertion      :FULL
+!
+! MA5a. Chromosomal location of insert                     :FULL
+! MA5c. Cytological location of insert (in situ)           :FULL
+! MA5e. Cytological location (inferred from sequence)      :FULL
+!   MA5f. Genomic release number for data reported in MA5e :FULL
+! MA5d. Insertion maps to/near gene                        :FULL
+!
+! MA7.  Associated chromosomal aberration      :FULL
+! MA14. Associated balancer                    :FULL
+! MA12. Consequent allele(s)                   :FULL
+!
+! MA8.  Phenotype (viable, fertile)            :FULL
+!
+! MA21a. Genomic location of insertion                     :FULL
+!   MA21b. Genome release number for entry in MA21a        :FULL
+! MA21e. Comments concerning genomic location              :FULL
+! MA6.   Orientation of insert relative to chromosome      :FULL
+!
+! MA21c. Insertion into natTE (identified, in FB)             :FULL
+! MA21f. Insertion into other TE or repeat region ("y"/blank) :FULL
+! MA21d. Distance from insertion site to end of natTE/repeat  :FULL
+!
+! MA19a. Accession for insertion flanking sequence (dupl for multiple) :BASIC ONLY
+!   MA19b. Insertion site accession type (5', 3', b)                   :FULL
+!   MA19c. Position of first base of target sequence in accession      :FULL
+!   MA19d. First base of unique sequence in accession if in natTE      :FULL
+!   MA19e. Accession invalidation or assessment                        :FULL
+! MA26.  Accession for this instance of natTE                          :NOT YET IMPLEMENTED
+!
+! MA23a. Insertion-affected gene reported (dupl for multiple) :FULL
+!   MA23b. Affected gene criteria [CV]                        :FULL
+!   MA23c. Comment, affected gene criteria [free text]        :FULL
+!   MA23g. Orientation relative to affected gene              :FULL
+!
+! MA15a. FBti progenitor (via transposition) at distinct location :FULL
+! MA15b. FBti progenitor (via recombination) at distinct location :FULL
+! MA15c. Replaced FBti progenitor, recombination substrate        :FULL
+! MA15d. Modified FBti progenitor (in situ)                       :FULL
+!
+! MA24. Arose in multiple insertion line ("y"/"p"/blank) :FULL
+! MA18. Co-isolated insertion(s)                         :FULL
+!
+! MA16. Information on availability      :FULL
+! MA30. From dataset/collection (symbol) :FULL
+!   MA30a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :FULL
+! MA9.  Comments [free text]             :FULL
+! MA10. Internal notes                   :FULL

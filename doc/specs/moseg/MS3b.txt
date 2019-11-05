@@ -1,0 +1,57 @@
+
+## ! MS3b. Other synonym(s) for segment symbol  :
+
+### Multiple values allowed:
+
+Yes
+Implemented
+
+### !c Applicable:
+
+Yes (Implemented)
+
+
+
+### Inclusion essential:
+
+No
+Implemented
+
+### Mandatorially has value:
+
+No
+Implemented
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'validate_synonym_field' (called in elsif loop for field):
+
+  * uses 'check_for_duplicated'_lines to check that there are no duplicated synonyms and no empty lines
+  * warns if the synonym is composed entirely of punctuation character(s).
+
+  * warns if the field is filled in for a 'user' or 'auto' curation record.
+
+
+
+### Related fields:
+
+
+
+### Status:
+
+All listed specs are implemented.
+
+### Comments:
+
+
+
+### Updated:
+
+gm170420.

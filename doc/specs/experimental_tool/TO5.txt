@@ -1,0 +1,52 @@
+
+## ! TO5.   Description of experimental tool [free text]            :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'check_stamped_free_text'
+
+Checks between field:
+
+* must be filled in for a new tool and not otherwise (sub check_filled_in_for_new_feature, test = 'only')
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm171114.

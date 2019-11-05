@@ -1,0 +1,859 @@
+# Version history
+#
+our $Peeves_version = "1.0.0";	# 2007-04-27 by pcl23	Beta period officially declared over.
+our $Peeves_version = "1.0.1";	# 2007-05-03 by pcl23	?? checking in all proformae.
+our $Peeves_version = "1.0.2";	# 2007-05-22 by pcl23	Major overhaul of G2? and G28b checking
+our $Peeves_version = "1.0.3";	# 2007-08-07 by pcl23	Various small changes.
+our $Peeves_version = "1.0.4";	# 2007-08-10 by pcl23	P32/G24f/A28 stubs added.  MP1 MP2a checking.
+our $Peeves_version = "1.0.5";	# 2007-10-02 by pcl23	Sundry fixes.
+our $Peeves_version = "1.0.6";	# 2007-10-02 by pcl23	Config information put into symbol table.
+our $Peeves_version = "1.0.7";	# 2007-10-11 by pcl23	Added more genomic clones to G25.
+our $Peeves_version = "1.0.8";	# 2007-10-12 by pcl23	Several balancer.pro fields added.
+our $Peeves_version = "1.0.9";	# 2007-11-08 by pcl23	G24f required if G24[abc] have data.
+our $Peeves_version = "1.0.10";	# 2007-11-13 by pcl23	Check for multiple data in *1e fields.
+our $Peeves_version = "1.0.11";	# 2007-11-13 by pcl23	Preliminary Cam/Harv localization.
+our $Peeves_version = "1.0.12";	# 2007-11-20 by pcl23	Fix P21 bug; MP2[ab] report; unimp. proformae reports.
+our $Peeves_version = "1.0.13";	# 2007-12-06 by pcl23	Add GA10ce checks; minor tidying and fixes throughout.
+our $Peeves_version = "1.0.14";	# 2007-12-17 by pcl23	MP8 checking.  Re-write languages checking for P1[34]
+our $Peeves_version = "1.0.15";	# 2008-01-22 by pcl23	Make check_presence more informative; enhance G10[ab]
+our $Peeves_version = "1.0.16";	# 2008-01-25 by pcl23	Use Peeves.cfg for configuration variables.
+our $Peeves_version = "1.0.17";	# 2008-01-30 by pcl23	Sundry bug fixes.
+our $Peeves_version = "1.0.18";	# 2008-02-21 by pcl23	Clean up non-UTF-8 handling.
+our $Peeves_version = "1.0.19";	# 2008-02-27 by pcl23	Count number of errors in GA10[ace] fields.
+our $Peeves_version = "1.0.20";	# 2008-03-20 by pcl23	Sundry changes.
+our $Peeves_version = "1.0.21";	# 2008-04-16 by pcl23	Disable G20[b-i] checking.
+our $Peeves_version = "1.0.22";	# 2008-05-21 by pcl23	P12 changed to surname\tinitials.
+our $Peeves_version = "1.0.23";	# 2008-05-29 by pcl23	P40, P41 and MP11 checking.
+our $Peeves_version = "1.0.24";	# 2008-06-02 by pcl23	P16 mandatory for FBrf-less publications.
+our $Peeves_version = "1.0.25";	# 2008-06-13 by pcl23	Add new proforma header parsing to Peeves.pl
+our $Peeves_version = "1.0.26";	# 2008-06-18 by pcl23	New GO codes (ticket #651)
+our $Peeves_version = "1.0.27";	# 2008-07-01 by pcl23	Reduce "inclusion essential" lists.
+our $Peeves_version = "1.0.28";	# 2008-08-21 by pcl23	Bug fix greeks in G24 fields.
+#
+# Bump subversion because real start made on portability to Harvard curation.
+#
+our $Peeves_version = "1.1.0";	# 2008-09-02 by pcl23	Skim/edit etc handling.  Skeleton TI/moseg/natTE handling.
+#
+# Bump subversion.
+#
+our $Peeves_version = "1.2.0";	# 2008-10-03 by pcl23	prod/test/dev versions; G20? gone; old TI/natTE/moseg removal
+our $Peeves_version = "1.2.1";	# 2008-10-07 by pcl23	Location-dependent code improved --- classify_file().
+our $Peeves_version = "1.2.2";	# 2008-10-08 by pcl23	1st cut at Harvard config.  Extra field in curator.cfg
+our $Peeves_version = "1.2.3";	# 2008-10-20 by pcl23	Implement new P40/P41 spec.
+our $Peeves_version = "1.2.4";	# 2008-10-28 by pcl23	Record type processing, G34 outline, A20a removal
+our $Peeves_version = "1.2.5";	# 2008-10-29 by pcl23	G34 completed, re-write hashlist counts, sundry bug fixes
+our $Peeves_version = "1.2.6";	# 2008-11-07 by pcl23	2-column curcfg removed.
+our $Peeves_version = "1.2.7";	# 2008-11-20 by pcl23	X1h tests, MP redundant fields chopped, many other changes
+our $Peeves_version = "1.2.8";	# 2008-11-27 by pcl23	Full G1h tests, sundry P/MP fixes.
+our $Peeves_version = "1.2.9";	# 2008-12-04 by pcl23	Full {GA,A,AB}1h test.  Doc overhaul. CV fix in GA2[9][ab]
+our $Peeves_version = "1.2.10";	# 2009-03-20 by pcl23	Add new_transg to valid P40 flags.
+our $Peeves_version = "1.2.11";	# 2010-02-07 by hif22 Merge all code in test and production where different (test and dev were the same)
+
+# Bump subversion because hif22 took over
+
+our $Peeves_version = "1.3.0";	# 2010-02-19 by hif22	Fixed JIRA tickets DC
+	1. DC-9 Pling c was reported erroneously and is no longer
+	2. DC-26 erroneous reporting of G1a, G1b not filled in for .user files message no longer generated for this file type
+	3. DC-4 scary message for G31a so that you are warned about removing items from chado
+	4. DC-7 Two antibodies separated by \n may be polyclonal\nmonoclonal. New warning emitted if two antibodies, and a second warning if both monoclonal.
+	5. DC-17 More than one Source for statement G28b now emitted as a warning.
+
+our $Peeves_version = "1.3.1";	# 2010-03-04 by hif22	Fixed JIRA tickets DC
+    # Tidied up message for polyclona/monoclonal (while informative as ever there is only one line)
+	# DC-13 erroneous G1b/G2b not called for .edit, .user or if G31b is 'y'
+	# DC-54 added to allele.pl valid_symbol ($qualifier, 'clone_qualifier') and next;
+	# DC-33 dangerous GA1h fix 'leak' dealt with
+	# warn that incomplete dehashing  results in no further testing (add: please fix record and retest)
+	# added (for testing) ignore ?? for q(q) test records so that same numbers of files pass/fail
+
+our $Peeves_version = "1.3.2";	# start March 4 2010 end March 18 2010 > test until Haiyan ready
+	# DC-17 gene polyclonal\nmonoclonal (or vv) allowed without comment
+	# DC-116 publication P22 can be new and cannot be blank
+	# DC-114 proforma items still checked but 'Invalid proforma field' warning given.
+	# DC-113 changes to valid SoftCV fixes
+	# DC-112 valid P40/41 flags
+	
+Peeves Version 1.3.3 # March 19-March 29 2010
+==========================
+DC-107 allele.pl: no ampersand allowed in GA17,28b, 29b 
+DC-18 publication.pl: complain if an FBrf accidentally entered in P21
+DC-119 publication.pl If P22='unattributed' emits errors if any field other than P13/19 filled in
+DC-120 publication.pl P2 code rejigged to use P2 (abbrev) checks instead of P21 (id) checks
+DC-116: Make P22 entry mandatory; allow 'new' as valid entry in P22
+
+Peeves Version 1.3.4 # May 28 2010
+==========================
+DC-117 multipub.pl: MP3 obsoleted by MP1. Checks have been added: "MP3. Invalid proforma field"; "MP1 not allowed to be blank. It must be new or a valid multipub ID" 
+DC-127 publication.pl: P2: Missing data - must have multipub abbreviation false errors now checked against the list of multipub-dependent items listed in Peeves P2 specifications
+DC-129 allele.pl: GA21a: You state for dpp[14] 'Complements: dpp[15B]', but have not curated the reciprocal statement - this error now gone
+
+our $Peeves_version = "1.3.5";# Start July 9 2010, to fix P2 multipub_abbrev checks
+our $Peeves_version = "1.3.6";# August 27th 2010 in production - rollover symtab.pl to fix invalid flags in pub
+our $Peeves_version = "1.3.7"; # August 27th 2010 in test - DC-22 G2b and G1b Gene name peeved if monoclonal/polyclonal misentered, with all gene names. Rolled out September 9th, 2010. ALL in test rolled over.
+our $Peeves_version = "1.3.8"; # Fixed problem with P2 in publication.pl when there was no multipub needed or in chado and 'personal communication to FlyBase' mis-entered into P2. Rolled out September 9th, 2010
+our $Peeves_version = "1.3.9"; DC-146: Sian's broken G1a/G1h fixed by adding back the code in tools.pl
+our $Peeves_version = "1.3.10"; # ti.pl Nov 26 Rolled back DC-57 new code (to no change)
+# DC-40 ti.pl MA20 fixed
+# DC-137 alleles.pl Found the one line of code to comment out to negate cell cycle descendant GO entries - GA17, 28b, 29b should have no entries for one kind of ontology only, of three ontologies
+our $Peeves_version = "1.3.11"; # start work Nov 29 2010 
+# gm urgent fixes. Shout once per record if ?? found ANYWHERE at all in the record (between lines)
+our $Peeves_version = "1.3.12"; # start work Jan 21 2011 (gm)
+1. bug in validate_P42 subroutine (was reporting "P42: must not have data in a biblio record." when the P42 field was empty - now only reports if P42 actually filled in in a .bibl record)
+2. changes to valid P41 flags to match changes agreed by curators (added neur_exp, removed marker)
+3. changes to P40 flags to include noGOcur - ticket DC-172
+our $Peeves_version = "1.3.13";# commented out 'new_gene' flag in symtab.pl as i
+t is no longer a valid camflag - DC-178
+our $Peeves_version = "1.3.14"; # March 15 2011, ff gm updates, P12 line - no commas in authors 
+our $Peeves_version = "1.3.15"; # 24th October 2011, added validate_G24g [gm]
+our $Peeves_version = "1.3.16"; # Fixed complaint about FlyBase: preceding GO term as genearted by the GO helper tool Dec 19 2011 hif
+Peeves 1.3.17 Dec 22 2011 removed FlyBase: from GO terms aka Paul did for UniProt as more robust method"
+
+
+our $Peeves_version = "1.3.18"; #  Changes to allow expression curation checking implemented. [dos]
+
+# Should probably have bumped subversion to 1.4 as gm119 now responsible for peeves.
+
+our $Peeves_version = "1.3.19"; #  Removing absolute filepath code. This will make it easier when making changes to Peeves (having the absolute filepath code had previously caused confusion as it forced Peeves to use the Peeves.cfg file in the same directory as the "Peeves" script, even if you specified a different one on the command line).
+
+our $Peeves_version = "1.3.20"; #  Adding code to cope with P43 disease flag (and add disease as allowed value for P41) - DC-304
+
+# changes for 1.3.20:
+# added code to cope with new P43 disease flag (see DC-304)
+# added disease as an allowed value for P41
+
+
+our $Peeves_version = "1.3.21"; #  Adding code to cope with P44 field - DC-304
+# changes for 1.3.21:
+# - added code to cope with P44 field
+
+our $Peeves_version = "1.3.22"; #  Adding code to cross-check values in P41, P43 and P44 - DC-304
+our $Peeves_version = "1.3.23"; #  Adding code so that P43 and P41 not compulsory for expression proformae
+our $Peeves_version = "1.3.24"; #  DC-306 - code for new G35 field
+our $Peeves_version = "1.3.25"; #  fixing bug in P43/P44 cross-checks - see DC-304 for details
+our $Peeves_version = "1.3.26"; #  adding new GO provenances - see DC-328 for details, and adding new evidence codes - see DC-297 for details
+our $Peeves_version = "1.3.27"; #  new subroutine - classify_curator added to Peeves.  This will allow specific checking and/or error messages based on the type of curator e.g. GO vs camcur, for those cases where a particular type of curation is only done by the GO curator. Used as part of fix for DC-297, to prevent GO curator getting a subset of evidence code warnings. Also used to warn if a non-GO curator uses the noGOcur flag - se DC-180
+our $Peeves_version = "1.3.28"; #  Tweaking of GO evidence code checking for ISS and IEA and fixing of DC-262
+our $Peeves_version = "1.3.29"; #  fix for DC-185 to allow "X[1] complements Y[2]" type statements in GA21
+our $Peeves_version = "1.3.30"; #  record types now fully distinguished by location
+our $Peeves_version = "1.3.31"; #  Adding check for non-ascii characters
+
+# Work done in December 2013:
+# Note, forgot to implement versions when did changes at beginning of December 2013 - they are documented in JIRA, but there is no increment in Peeves_version number in the Peeves file.
+# The changes were implementing checking of camcur disease curation fields (GA34a,b,c) as alluded to in the NOTE in the v1.3.32 comment below
+our $Peeves_version = "1.3.32"; #  sorting G2a/G2c cross-checks with G1f/G1f, setting x2c to only allow a single value, standardising error message when !c in field that cannot be !c'd, disallowing hashing in x1e/x1f fields (NOTE, forgot to increase version number for previous changes which added camcur disease curation checks and did some GO tweaks consequent on that).
+our $Peeves_version = "1.3.33"; #  DC-425 (make generic check_allowed_characters subroutine) and dependent tickets
+our $Peeves_version = "1.3.34"; #  DC-228 - implement checks for A29 field
+our $Peeves_version = "1.3.35"; #  DC-402 - add check_allowed_characters to MA1a and MS1a fields
+our $Peeves_version = "1.3.36"; #  DC-56 - G1e/G1f vs G28b cross-checks
+our $Peeves_version = "1.3.37"; #  DC-23 - fixing Peeves so that 'Where_running' => 'IU' works
+our $Peeves_version = "1.3.38"; #  DC-426 - hooking support_scripts modules into Peeves (when running in Cambridge), plus sub-tasks DC-428 (P41 field checking) and DC-427 (P43 field checking)
+our $Peeves_version = "1.3.39"; #  DC-300, GA21: Peeves not reporting empty line before filled in data - using check_for_duplicated_lines to report this kind of error
+
+# Work done week of Peeves work in in Jan 2014 (bumped subversion to 1.4)
+our $Peeves_version = "1.4.0"; #  DC-22, enhancing existing fix for this ticket (check that antibody info (monoclonal or polyclonal) hasn't been put in G1b/G2b in error). The enhanced check now uses symtab.pl to get the current antibody values to check for, and checks each symbol in a list in G1b/G2b (previously it only checked the case where there was a single value in G1b/G2b).
+our $Peeves_version = "1.4.1"; # DC-421 replacing redundant code for x1e fields with single validate_x1e subroutine - validate_x1e subroutine added, validate_G1e, validate_GA1e, validate_A1e and validate_AB1e all replaced.
+our $Peeves_version = "1.4.2"; # DC-421 replacing redundant code for x1f fields with single validate_x1f subroutine.
+our $Peeves_version = "1.4.3"; # replacing redundant code in validate_x1f with check_for_duplicated_lines. Also had to make change to rename_merge_check to maintain a useful error message after introducing check_for_duplicated_lines into validate_x1f (using check_for_duplicated_lines does not preserve order of items within a field as it uses a hash, so rename_merge_check now uses entire proforma field+contents in the error message, as this recapitulates exactly what appears in the proforma)
+our $Peeves_version = "1.4.4"; # replacing redundant code in G28b checking with check_for_duplicated_lines so that its standardised
+our $Peeves_version = "1.4.5"; # DC-420 - replacing redundant code for x2a fields with single validate_x2a suroutine
+our $Peeves_version = "1.4.6"; # DC-424 - replacing redundant code for x2c fields with single validate_x2c suroutine
+our $Peeves_version = "1.4.7"; # adding Peeves global '$standard_symbol_mapping' variable to replace duplicated code in several similar subroutines
+our $Peeves_version = "1.4.8"; # adding AB2a values to check_allowed_characters subrtouine
+our $Peeves_version = "1.4.9"; # tweak to P41 and P43 (fix bug spotted in fb_2014_02_EP3 upload, where it was failing to warn if tried to !c these fields to a new value but there was nothing in chado).
+our $Peeves_version = "1.4.10"; # DC-433 - improving P43/GA34 cross-check so that it includes GA34b as well as GA34a
+our $Peeves_version = "1.4.11"; # DC-447 - taking out redundancy in peeves code - make generic validate_x1g
+our $Peeves_version = "1.4.12"; # DC-419 - making a direct x1e and x1g crosscheck to catch a potentially nasty error
+our $Peeves_version = "1.4.13"; # DC-55 - new check, no !c in proformae with merge action fields filled in
+
+==========================
+
+# Work done in week of Peeves work starting 24th Feb 2014
+our $Peeves_version = "1.4.16"; # DC-382 Removing unwanted code for false-positive message (previously just commented out). Also tidying up comments in the 'First pass: Check for newly instantiated and invalidated symbols.' section of Peeves, so that it is clearer what is going on in this section.
+## starting work on implementing checking of insertion fields, so bumped subversion to 1.5
+our $Peeves_version = "1.5.1.1"; # Adding check for duplicated insertion symbol in more than one proforma (DC-434 sub-tasks, add peeves checking to insertion proforma fields.)
+our $Peeves_version = "1.5.2.1"; # DC-437: implement checking for MA1c - added basic checking for this rename field (validate_rename and no_hashes_in_proforma). Note: renamed tools.pl validate_x1e to validate_rename as can be used to validate harvcur style proformae as well as camcur.
+our $Peeves_version = "1.5.3"; # DC-438: implement checking for MA1g - making validate_merge_using_ids subroutine to do some basic merge field checks.
+our $Peeves_version = "1.5.4"; # DC-55: uncommenting plingc_merge_check for insertion proforma as relevant fields now being validated
+our $Peeves_version = "1.5.5"; # DC-434: adding peeves checking to insertion fields - making generic 'validate_primary_FBid_field' subroutine to do basic checks of x1f field of harvard-style proformae
+our $Peeves_version = "1.5.6"; # creating generic subroutines to replace repeated code: a. 'single_line' subroutine to test whether field data is on a single line and issue a warning if not and b. 'contains_data' subroutine to test whether a field contains data and issue a warning if it is empty.
+our $Peeves_version = "1.5.7.1"; # DC-434: implementing cross-checking of MA1f, MA1a, MA1c and MA1g fields. 1. basic cross-checking between MA1f, MA1a, MA1c and MA1g done in ti.pl
+our $Peeves_version = "1.5.7.2"; # DC-341: implementing cross-checking of MA1f, MA1a, MA1c and MA1g fields. 2. adding check that MA27 is filled in when MA1f is 'new' (added to cross-checking between MA1f, MA1a, MA1c and MA1g in ti.pl). Also added some basic checks for MA27.
+our $Peeves_version = "1.5.7.3"; # converting cross-checking between MA1f, MA1a, MA1c and MA1g in ti.pl into generic subroutine (cross_check_harv_style_symbol_rename_merge_fields) that can be used by any harvcur-style proforma.
+our $Peeves_version = "1.5.8"; # adding syntax checking for symbol in MA1a (DC-400), MA4 checks (DC-436), added FBte to the list of %chadotypes (feature types whose symbols and ids Peeves asks chado about).
+our $Peeves_version = "1.5.9"; # DC-458 - adding cross_check_harv_style_symbol_rename_merge_fields to natTE.pl
+our $Peeves_version = "1.5.10"; # adding cross-checking of MS1f, MS1a, MS1c and MS1g fields for moseg.pro (note limited to features of type FBtp at the moment)
+our $Peeves_version = "1.5.11"; # adding checks for free text stamped fields to ti, moseg and natTE proformae
+our $Peeves_version = "1.5.12"; # adding allowed natTE shortcuts for MA1a symbol format checking and MA1a to MA4 cross-checks (prevents false-positives and adds more helpful error message in case where filled in short-cut in MA4 (instead of full natTE symbol) by mistake)
+
+==========================
+
+# 15.4.2014 - adding checks for new publication proforma fields as relatively simple.
+our $Peeves_version = "1.5.13"; # DC-471 - add Peeves checks for new PMCID field (P28)
+our $Peeves_version = "1.5.14"; # DC-472 - add Peeves checks for new PMCID field (P34)
+
+==========================
+# 28.4.2014 - work done in Peeves week of fb_2014_04
+our $Peeves_version = "1.5.15"; # Renaming two subroutines in symtab.pl to try to prevent confusion.  Changes were: valid_chado_symbol -> valid_chado_symbol_used_in_cross_check_FBid_symbol (this one has a bug in, so it was misleading it being called 'valid_chado_symbol' as it does not correctly check whether or not a symbol of a given type is valid in chado) and valid_chado_symbol_v2 -> valid_chado_symbol (since this one DOES correctly check whether or not a symbol of a given type is valid in chado).
+our $Peeves_version = "1.5.16"; # DC-429: Add a comment to look for associated insertions when doing construct renames or merges.
+our $Peeves_version = "1.5.17"; # DC-467: Get Peeves to accept GO 'with' evidence in stamps
+our $Peeves_version = "1.5.18"; # DC-480: Remove 'Invalid proforma field' errors by adding 'validate_stub' to relevant fields.
+our $Peeves_version = "1.5.19"; # DC-305: Add warning if camcur fill in GA90 fields (as usually only filled in by harvcur)
+our $Peeves_version = "1.5.20"; # Removing/tidying code for obsolete fields so that I can close DC-414
+our $Peeves_version = "1.5.21"; # DC-14: Improving error message for 'invalid' PubMed IDs
+our $Peeves_version = "1.5.22"; # DC-475: add checks to warn when have a blank line at the start of a synonym/symbol field (using check_for_duplicated_lines to do this). v.1.5.22 completes this for synonym fields - made  generic validate_synonym_field subroutine that includes a call to check_for_duplicated_lines.
+our $Peeves_version = "1.5.23"; # DC-441: implement checking for MA8
+our $Peeves_version = "1.5.24"; # DC-466: bug in checking validity of symbols in @@ - new 'valid_symbol_of_list_of_types' subroutine replaces buggy 'valid_symbol_of_any_type'.
+our $Peeves_version = "1.5.25"; # DC-445 (implement checks for MA15 fields). Made new generic 'check_field_containing_valid_symbols' subroutine as part of the fix.
+our $Peeves_version = "1.5.26"; # Removing stub subroutines from ti.pl and checking relevant fields with validate_stub instead, to remove distracting messages from terminal output.
+our $Peeves_version = "1.5.27"; # Adding validate_synonym_field to checking for relevant ti (MA1d, MA1e) and moseg (MS1b, MS3b, MS3d) proforma fields
+our $Peeves_version = "1.5.28"; # Adding check_field_containing_valid_symbols to checking for relevant ti (MA5d - this fixes DC-439, MA21c, MA18) and moseg (MS19a, MS20, MS4h) proforma fields.
+==========================
+
+# 22.5.2014 - fixing bug spotted while doing regular Peeves check during epicycle
+our $Peeves_version = "1.5.29"; # Fixing bug in check_allowed_characters list for TE1a, so that it allows \ (fixed by changing order of allowed characters !)
+==========================
+# 28.5.2014
+our $Peeves_version = "1.5.30"; # Adding more 'drivers' to 'is_a_driver' subroutine in allele.pl to prevent false-positive messages
+# 29.5.2014
+our $Peeves_version = "1.5.31"; # Adding 'Scer\FLP1' to the list in the 'is_a_driver' subroutine in allele.pl to prevent false-positive messages
+# 11.6.2014
+our $Peeves_version = "1.5.32"; # Adding 'Hsim\VP16' to the list in the 'is_a_driver' subroutine in allele.pl to prevent false-positive messages
+
+==========================
+# 23.6.2014-27.6.2014 - work done in Peeves week of fb_2014_05
+our $Peeves_version = "1.5.33"; # Converting $valid_natTE_shorthand in ti.pl to entries in symtab.pl that can be accessed via valid_symbol
+our $Peeves_version = "1.5.34"; # converting checking of inserted element format in ti.pl to generic subroutines in tools.pl (check_insertion_symbol_format, check_natTE_end) so that they can be used in other fields where the format of an inserted element or a transgenic construct needs to be checked.
+our $Peeves_version = "1.5.35"; # converting checking of inserted element format in GA10c and GA10e to use the generic check_insertion_symbol_format subroutine.
+our $Peeves_version = "1.5.36"; # creating and implementing generic check_construct_symbol_format subroutine to use in checking of constructs in MS1a and GA10a.
+our $Peeves_version = "1.5.37"; # converting @GA10c_list and @GA10e_list to list of list format as for @GA10a_list, now that multiple values are allowed in GA10c and GA10e.
+our $Peeves_version = "1.5.38"; # DC-489 - make generic 'check_filled_in_for_new_feature' subroutine and testing using MA20 field.
+our $Peeves_version = "1.5.39"; # DC-363 - G30 must be filled in for new gene (used check_filled_in_for_new_feature subroutine (see DC-489)
+our $Peeves_version = "1.5.40"; # DC-489 - adding check_filled_in_for_new_feature subroutine to single value MA, MS, TE, A proforma fields
+our $Peeves_version = "1.5.41"; # adding %field_specific_checks hash and generic process_field_data subroutine so can reduce code redundancy (subroutine does the common basic checks required for a field, including converting the data into a format that can be a. passed on to another subroutine (using the %field_specific_checks hash) for field-specific checking,  b. returned, so that it can be stored for checks that have to happen once the entire proforma is parsed.
+our $Peeves_version = "1.5.42"; # DC-502: converting validate_<field> subroutines in process_field_data + %field_specific_checks format
+# 30.6.2014-4.7.2014 second peeves week in fb_2014_05
+our $Peeves_version = "1.5.42.1"; # converting check_valid_symbol_field so it can be called directly from %field_specific_checks (part of DC-502)
+our $Peeves_version = "1.5.43"; # adding compare_pairs_of_data subroutine and tweaking compare_field_pairs so comparisons can now be done between single pairs of data within a hashed pair of fields, as well as the whole hashed list
+our $Peeves_version = "1.5.44"; # DC-340: add check that MS16 filled in when MS1f = new. Also converting checking of MS4a, MS14, MS16 and MS21 to process_field_data + %field_specific_checks format
+our $Peeves_version = "1.5.45"; # converting checking of MA27 to process_field_data + %field_specific_checks format (part of DC-502) and updating DC-434 cross check (MA27 must be filled in when MA1f = new) to reflect this
+our $Peeves_version = "1.5.46"; # converting checking of AB5b to process_field_data + %field_specific_checks format (part of DC-502) and fixing bug in AB5b checking (DC-488)
+our $Peeves_version = "1.5.47"; # DC-444 - implement checks for MA5f
+our $Peeves_version = "1.5.48"; # fixing bug in regular expression that captures plingc information, so that it copes for proformae with more than once space between ! and field code, and if more than one character is inserted by mistake in the plingc slot.  Also added very general elsif after last field check to capture any fields that are malformed and don't fit field-specific loops (should also report if there are any bugs with the regular expressions in the field-specific loops.  Converted the <proforma>.pl scripts for the following proformae: publication, multipub, gene, allele, aberration, balancer, ti, moseg, natTE, expression, which was all the existing <proforma>.pl scripts at the time.
+our $Peeves_version = "1.5.49"; # Adding check_genome_release check to appropriate fields
+our $Peeves_version = "1.5.50"; # converting more ti.pl field checks to process_field_data + %field_specific_checks format (part of DC-502)
+our $Peeves_version = "1.5.51"; # converting more moseg.pl field checks to process_field_data + %field_specific_checks format (part of DC-502)
+our $Peeves_version = "1.5.52"; # converting more natTE.pl field checks to process_field_data + %field_specific_checks format (part of DC-502)
+our $Peeves_version = "1.5.53"; # converting more balancer.pl field checks to process_field_data + %field_specific_checks format (part of DC-502)
+our $Peeves_version = "1.5.54"; # converting more allele.pl field checks to process_field_data + %field_specific_checks format (part of DC-502)
+our $Peeves_version = "1.5.55"; # converting more gene.pl field checks to process_field_data + %field_specific_checks format (part of DC-502)
+our $Peeves_version = "1.5.56"; # converting validate_x2a subroutine to process_field_data + %field_specific_checks format (part of DC-502) and renamed to validate_new_full_name
+our $Peeves_version = "1.5.57"; # converting validate_x2c subroutine to process_field_data + %field_specific_checks format (part of DC-502) and renamed to validate_existing_full_name
+our $Peeves_version = "1.5.58"; # DC-496: implementing validate_sequence_location subroutine (generic subroutine to check sequence location format)
+our $Peeves_version = "1.5.59"; # DC-434: implementing checking for MA5a (check for chromosomal location ie. value can be whole chromosome (eg. 2) or chromosome arm (2R)
+our $Peeves_version = "1.5.60"; # making a generic validate_cytological_location subroutine, tested via G10a and G10b checking
+our $Peeves_version = "1.5.61"; # converting checking of "Action - obsolete X in FlyBase" fields into a generic validate_obsolete subroutine to remove redundant code (part of DC-420)
+our $Peeves_version = "1.5.62"; # adding checking for TE8 field
+our $Peeves_version = "1.5.63"; # converting validate_TE4a to process_field_data + %field_specific_checks format (part of DC-502)
+# 29.7.2014 - ectopic quick peeves work
+our $Peeves_version = "1.5.64"; # DC-511: add Peeves check for resurrected A21 field
+==========================
+# 4.9.2014 - adding validate_stub for new gene proforma field (G37)
+our $Peeves_version = "1.5.67"; # Add new gene proforma field (G37) to fields checked by validate_stub
+# 1.10.2014
+our $Peeves_version = "1.5.68"; # Fixing part of G2a checking to prevent an annoying terminal error message
+==========================
+# 4.11.2014 - and 6.11.2014
+our $Peeves_version = "1.5.69"; # Changing name of GO ontology file (see DC-250) and adding gene_group as an allowed camflag (see DC-538) ...
+==========================
+# 21.11.2014-28.11.2014 - work done in Peeves week of fb_2015_01
+## starting work on implementing checking of gene group fields, so bumped subversion to 1.6
+our $Peeves_version = "1.6.1"; # Adding gene group proforma to types of proformae that Peeves understands and adding gene_group.pl to get basic framework for adding gene group checking ...
+our $Peeves_version = "1.6.2"; # Adding checking of GG1b and GG2b (part of DC-393) ...
+our $Peeves_version = "1.6.3"; # Adding checking of GG3a (part of DC-393) ...
+our $Peeves_version = "1.6.4"; # Adding checking of free text gene group fields (part of DC-393) ...
+our $Peeves_version = "1.6.5"; # Adding basic checking of GG2a and GG2c gene group fields (part of DC-393) ...
+our $Peeves_version = "1.6.6"; # Adding basic checking of GG1g gene group field (part of DC-393) ...
+our $Peeves_version = "1.6.7"; # Adding generic validate_ontology_term_id_field and check_ontology_term_id_pair subroutines for checking GG6[abc] fields in gene group proformat (part of DC-393) ...
+our $Peeves_version = "1.6.8"; # Converting do_term_id_check in GA34a checking into generic check_ontology_term_id_pair check (part of DC-420) ...
+our $Peeves_version = "1.6.9"; # Adding validate_date_field subroutine and GG11 checking (part of DC-393) ...
+our $Peeves_version = "1.6.10"; # Adding basic checks for GG5 (part of DC-393) ...
+our $Peeves_version = "1.6.11"; # Making generic validate_ontology_term_field for checking GG4 (part of DC-393) ...
+our $Peeves_version = "1.6.12"; # Converting specific CV term field checking to use generic validate_ontology_term_field instead where appropriate (part of DC-420), renaming generic sub to validate_cvterm_field as more appropriate (can use it for any cv term, even if its not in an ontology) ...
+our $Peeves_version = "1.6.13"; # Making generic validate_dissociate for checking GG3b (part of DC-393) and replacing existing field-specific subroutines with it where appropriate (part of DC-420)...
+our $Peeves_version = "1.6.14"; # Making sure that fields in proformae that can duplicate fields all have '$can_dup{$2} or check_dups' so that no error is printed for fields which are allowed to be duplicated
+our $Peeves_version = "1.6.15"; # Changing valid_symbol subroutine and %chadotypes hash in symtab.pl to extend the functionality of valid_symbol so that it can check the validity of symbols of things that are are not stored in the feature table in the database (e.g. dataset information is in library, genegroup will be in group).
+our $Peeves_version = "1.6.16"; # Adding basic checking for GG1e (part of DC-393)
+our $Peeves_version = "1.6.17"; # Adding basic checking for GG1f (part of DC-393)
+our $Peeves_version = "1.6.18"; # Adding check_presence and some cross-checks for GG1e and GG1f fields (part of DC-393)
+our $Peeves_version = "1.6.19"; # Tweak to compare_pairs_of_data to allow 'dependent' test (if field 1 is filled in, field 2 must be filled in) and used to check 'If GG1f is filled in, GG2a must be filled in'
+our $Peeves_version = "1.6.20"; # adding 'If GG2c is filled in, GG2a must be filled in' (part of DC-393)
+our $Peeves_version = "1.6.21"; # adding relevant gene group fields to pre-instantiation field list (part of DC-393)
+our $Peeves_version = "1.6.22"; # adding more checking for GG1a (part of DC-393)
+our $Peeves_version = "1.6.23"; # adding  checking for GG7a, GG7c and GG7d fields (part of DC-393)
+our $Peeves_version = "1.6.24"; # adding basic checks for GG1h (part of DC-393)
+our $Peeves_version = "1.6.25"; # adding GG8 fields to validate_stub to prevent invalid proforma field messages
+our $Peeves_version = "1.6.26"; # fixing false-positive bug in validate_primary_FBid_field in tools.pl (DC-526)
+our $Peeves_version = "1.6.27"; # adding checking for P45 field (DC-544)
+our $Peeves_version = "1.6.28"; # adding cross-checks for GA2a/GA2c and GA1e/GA1f (DC-517)
+our $Peeves_version = "1.6.29"; # adding checks for G37 field (DC-394)
+our $Peeves_version = "1.6.30"; # adding checks for MA5e field (DC-434)
+our $Peeves_version = "1.6.31"; # adding checks for MA5c field (DC-442)
+our $Peeves_version = "1.6.32"; # Fixing line in validate_primary_FBid_field so that it does not generate a deprecated warning in the terminal, and fixing typo in Peeves (had GG7b insteead of GG7c) ...
+==========================
+# 8.12.2014
+our $Peeves_version = "1.6.33"; # Remove code for natTE proforma 'name' fields (DC-550)
+# 11.12.2014
+our $Peeves_version = "1.6.34"; # Add warning message that 'Associated with: ' is no no longer valid to use in SoftCV Notes on Origin field (DC-554)
+# 12.12.2014
+our $Peeves_version = "1.6.35"; # add Peeves message when curators use a subcellular FBbt term that is eventually going to be turned into a GO term (DC-547)
+==========================
+# 3.2.2015-26.2.2015 - work done on Peeves in fb_2015_02 (did two weeks of development work in total).
+our $Peeves_version = "1.6.36"; # DC-487: Warn against using GO terms in the go_check subsets.
+our $Peeves_version = "1.6.37"; # DC-456: Check that records with dm_gen::DONE have a Harvard disease flag.
+our $Peeves_version = "1.6.38"; # DC-134: Bugs in Peeves checking of P30 field. Also converted checking of P30, P31, P32 fields to process_field_format and added generic compare_pub_fbrf_containing_fields subroutine.
+our $Peeves_version = "1.6.39.1"; # DC-494: Add Peeves check for GA90a-k fields - basic non-field specific checks in for all the fields.
+our $Peeves_version = "1.6.39.2"; # DC-494: Add Peeves check for GA90a-k fields - adding code to cope with 'dupl for multiple fields'.
+our $Peeves_version = "1.6.39.3"; # DC-494: Add Peeves check for GA90a-k fields - adding code to check GA90a format, plus a generic 'check_site_specific_field' subroutine (which prints an error if the field is filled in by the wrong curators)
+our $Peeves_version = "1.6.39.4"; # DC-494: Add Peeves check for GA90a-k fields - adding code to check that the same value is not present in more than one GA90a field in a single proforma.
+our $Peeves_version = "1.6.39.5"; # DC-494: Add Peeves check for GA90a-k fields - making generic validate_sequence_change subroutine (modified existing allele checking code) to add to appropriate GA90 fields (and to replace existing allele code).
+our $Peeves_version = "1.6.39.6"; # DC-494: Add Peeves check for GA90a-k fields - adding formatting checks for GA90k, GA90i, GA90j.
+our $Peeves_version = "1.7.0"; # Bumping subversion to 1.7 as Peeves can now cope with checking 'dupl for multiple' fields (fields which can occur more than once in the same proforma).
+our $Peeves_version = "1.7.1.1"; # Adding checks for 'dupl for multiple' fields: A90 fields
+our $Peeves_version = "1.7.1.2"; # Adding checks for 'dupl for multiple' fields: A91 fields (DC-215)
+our $Peeves_version = "1.7.1.3"; # Adding checks for 'dupl for multiple' fields: A92 fields (DC-215) and MA23 fields
+our $Peeves_version = "1.7.1.4"; # Adding checks for 'dupl for multiple' fields: MA19 fields
+our $Peeves_version = "1.7.1.5"; # Sorting out MA21a and MA21b checking
+our $Peeves_version = "1.7.1.6"; # Adding checks for 'dupl for multiple' fields: TE5 fields
+our $Peeves_version = "1.7.1.7"; # Adding checks for 'dupl for multiple' fields: final tweaks for A91 and A92 fields
+our $Peeves_version = "1.7.1.8"; # Adding checks for 'dupl for multiple' fields: GG8 fields
+our $Peeves_version = "1.7.1.9"; # DC-572: fixing bug in regex of sub validate_sequence_location
+our $Peeves_version = "1.7.2"; # DC-572: fixing bug in regex of sub validate_sequence_location
+our $Peeves_version = "1.7.3"; # Adding checking for more natTE proforma fields (DC-450)
+our $Peeves_version = "1.7.3.1"; # Adding checking for more natTE proforma fields (DC-450): converting validate_TE5c to generic 'validate_approximate_number' subroutine, and adding this checks to several similar fields
+our $Peeves_version = "1.7.3.2"; # Adding checking for more natTE proforma fields (DC-450): converting checking of TE8 to use generic 'check_valid_symbol_field' subroutine
+our $Peeves_version = "1.7.3.3"; # Adding checking for more natTE proforma fields (DC-450): converting stub 'validate_TEnn' subroutines to the generic 'validate_stub' for natTE fields which have no curation manual information (so no specs to implement checks).
+our $Peeves_version = "1.7.3.4"; # Adding checking for more natTE proforma fields (DC-450): implementing basic checks for TE4e.
+our $Peeves_version = "1.7.3.5"; # Adding basic checking for more natTE proforma fields (DC-450): implementing basic checks for TE4a.
+our $Peeves_version = "1.7.4"; # DC-465, new cross-check between MA1a, MA1c, MA4 
+our $Peeves_version = "1.7.5"; # converting checking of insertion fields to use process_field_data and generic subroutines where possible
+our $Peeves_version = "1.7.5.1"; # converting MA4 field checking to process_field_data format
+our $Peeves_version = "1.7.5.2"; # converting MA24 field checking to process_field_data format
+our $Peeves_version = "1.7.5.3"; # converting MA5a field checking to use generic subroutine (validate_cvterm_field)
+our $Peeves_version = "1.7.6"; # Correcting lists of dupl for multiple fields
+our $Peeves_version = "1.7.8"; # Implementing checks for MA21d
+our $Peeves_version = "1.7.9"; # Implementing checks for MA21f
+our $Peeves_version = "1.7.10"; # converting checking of balancer fields to use process_field_data and generic subroutines where possible: AB3 and AB8 fields
+our $Peeves_version = "1.7.11"; # converting checking of aberration field checking to use process_field_data and generic subroutines where possible.
+our $Peeves_version = "1.7.11.1"; # converting A9/A26 checking to use generic subroutine (validate_cvterm_field)
+our $Peeves_version = "1.7.11.2"; # basic checks for A28
+our $Peeves_version = "1.7.12"; # converting checking of allele fields to use process_field_data and generic subroutines where possible.
+our $Peeves_version = "1.7.12.1"; # converting checking of GA33 field
+our $Peeves_version = "1.7.12.2"; # converting checking of GA31 field
+our $Peeves_version = "1.7.13"; # converting checking of gene fields to use process_field_data and generic subroutines where possible.
+our $Peeves_version = "1.7.13.1"; # converting checking of G30 field to use use generic subroutine (validate_cvterm_field)
+our $Peeves_version = "1.7.13.2"; # converting checking of G27 field 
+our $Peeves_version = "1.7.13.3"; # converting checking of G14a field 
+our $Peeves_version = "1.7.13.4"; # converting checking of G33 field
+our $Peeves_version = "1.7.13.5"; # basic checks for G5 and G6.
+our $Peeves_version = "1.7.14"; # converting checking of moseg fields to use process_field_data and generic subroutines where possible.
+our $Peeves_version = "1.7.14.1"; # converting MS16 to generic subroutine (validate_cvterm_field)
+our $Peeves_version = "1.7.14.2"; # converting MS4a to generic subroutine (validate_cvterm_field)
+our $Peeves_version = "1.7.14.3"; # converting MS21 to generic subroutine (check_valid_symbol_field)
+our $Peeves_version = "1.7.14.4"; # removing stub validate_field subroutines for MS14
+our $Peeves_version = "1.7.14.5"; # removing stub validate_x subroutines for several moseg fields, and converting to use generic validate_stub
+our $Peeves_version = "1.7.14.6"; # Adding checking for free text moseg.pro fields
+our $Peeves_version = "1.7.14.7"; # Adding checking for more moseg.pro fields that can use eixisting generic subroutines
+our $Peeves_version = "1.7.14.8"; # Adding more stubs/comments for moseg fields
+our $Peeves_version = "1.7.15"; # Removing unused stub field check from expression.pl
+our $Peeves_version = "1.7.16"; # Adding Peeves checks for expression fields: F13, F14, F17
+our $Peeves_version = "1.7.17"; # Making validate_stub less annoying so that it does not report stub-ness in output file (continues to warn in terminal).
+our $Peeves_version = "1.7.18"; # converting checking of expression fields to use process_field_data and generic subroutines where possible.
+our $Peeves_version = "1.7.18.1"; # converting F12 to process_field_data and generic subroutine format (validate_cvterm_field)
+our $Peeves_version = "1.7.19"; # adding checking for G91 and G91a
+our $Peeves_version = "1.7.19.2"; # adding checking for GA91 and GA91a
+our $Peeves_version = "1.7.19.3"; # adding checking for A30 and A30a
+our $Peeves_version = "1.7.19.4"; # adding checking for MS30 and MS30a, MA30 and MA30a
+our $Peeves_version = "1.7.19.5"; # adding checking for F91 and F91a
+our $Peeves_version = "1.7.20"; # adding checking of dataset proforma
+# 13.3.2015
+our $Peeves_version = "1.7.21"; # updating curator ids (adding ga, mc, removing st)
+# 14.3.2015
+our $Peeves_version = "1.7.22.1"; # Adding check_non_utf8 and check_non_ascii into process_field_data (DC-420 - removing redundancy)
+our $Peeves_version = "1.7.22.2"; # Adding check_non_utf8 and check_non_ascii into validate_stub (DC-420 - removing redundancy)
+our $Peeves_version = "1.7.22.3"; # Adding double_query into process_field_data (DC-420 - removing redundancy)
+our $Peeves_version = "1.7.22.4"; # Adding double_query into validate_stub (DC-420 - removing redundancy)
+# 15.3.2015
+our $Peeves_version = "1.7.22.5"; # Converting no_stamps to process_field_data + %field_specific_checks format.
+our $Peeves_version = "1.7.22.6"; # Converting check_stamped_free_text to process_field_data + %field_specific_checks format.
+# 25.3.2015
+our $Peeves_version = "1.7.23"; # Adding appropriate !c allowed y/n checks to expression.pl (based on DC-576)
+
+# 8.4.2015 - ectopic tidying
+our $Peeves_version = "1.7.24"; # Removing checking for GG7d field as it is not currently in the master proforma (and parsing code has not yet been written) (see DOC-41)
+# 10.4.2015 - gene groups now in production chado
+our $Peeves_version = "1.7.25"; # Uncommenting relevant gene group based lines now that gene groups are in production chado and fixing subsequent bug found in symtab.pl.
+# 24.4.2015
+our $Peeves_version = "1.7.26"; # DC-583: Fixing valid_symbol so it does not store data from chado for ARGS features (was previously storing incorrect info)
+our $Peeves_version = "1.7.27"; # Adding cross_check_1a_1g to gene group proforma (had to remove subroutine prototyping to get it to work and do not understand why (see DC-585 for details) ...)
+our $Peeves_version = "1.7.28"; # Adding get_object_status subroutine to make it easier to perform field cross-checks which depend on the status (new,existing,rename or merge) of the object in the proforma.
+# 27.4.2015
+our $Peeves_version = "1.7.29.1"; # Adding checking to cope with TI{} transgenic insertions: basic code for allowing TI as the 'end' of a construct symbol.
+our $Peeves_version = "1.7.29.2"; # Adding checking to cope with TI{} transgenic insertions: adding temporary error messages for TI-style constructs/insertions, to prevent loading them before the proforma parsing code is ready.
+our $Peeves_version = "1.7.29.3"; # Adding checking to cope with TI{} transgenic insertions: adding checks for MA27 (also fixing !c to No for MA27)
+our $Peeves_version = "1.7.29.4"; # Adding checking to cope with TI{} transgenic insertions: adding checks for MS16
+our $Peeves_version = "1.7.29.5"; # Adding checking to cope with TI{} transgenic insertions: adding checks for MS4a
+our $Peeves_version = "1.7.29.6"; # Adding checking to cope with TI{} transgenic insertions: adding checks for MS21
+our $Peeves_version = "1.7.30"; # Adding checking for MA21e field
+# 1.5.2015
+our $Peeves_version = "1.7.31"; # Fixing small bug in reporting of errors for P11 fields
+# 15.5.2015
+our $Peeves_version = "1.7.32"; # Adding 'Hsap\RELA' (p65) to the list of allowed drivers (used in the split GAL4 system)
+# 27.5.2015
+our $Peeves_version = "1.7.33"; # Temporary addition of warning if !c G37 (while details of how to plingc this data correctly in the database are still being worked out - see DB-254).
+# 10.6.2015
+our $Peeves_version = "1.7.34"; # Adding new curator info
+our $Peeves_version = "1.7.35"; # Changing GG11 checking to allow !c
+# 2.7.2015
+our $Peeves_version = "1.7.36"; # !c now allowed in G37. so removing temporary error message
+# 18.8.2015
+our $Peeves_version = "1.7.37"; # Adding temporary message to warn when F10 filled in. Parsing of field is being updated (see DC-603), so no data should be submitted for this for the moment.
+# 22.9.2015
+our $Peeves_version = "1.7.38"; # Update Peeves to cope with new 'cvterm ; id' format in F10 (see DC-603).
+# 29.9.2015
+our $Peeves_version = "1.7.39"; # Fixing bug in checking of MA21f field (fix is in check_single_allowed_value subroutine).
+our $Peeves_version = "1.7.40"; # Adding checking for LC99d field (DC-613).
+our $Peeves_version = "1.7.41"; # Adding checking for GG8d field (DC-613).
+our $Peeves_version = "1.7.42"; # GG2a must be filled in for new gene groups (DC-610).
+our $Peeves_version = "1.8.0"; # Adding checking for HH.pro: adding basic skeleton to Peeves and symtab.pl
+our $Peeves_version = "1.8.1"; # Adding checking for HH.pro: Adding humanhealth.pl and basic within field checks for first tranch of HH fields
+# 30.9.2015
+our $Peeves_version = "1.8.2"; # Adding checking for HH.pro: Adding more basic field checks for HH fields
+# 1.10.2015
+our $Peeves_version = "1.8.3"; # Adding cross-checking between HH2a and other fields
+# 10.11.2015
+our $Peeves_version = "1.8.4"; # Making error message more friendly for F10 (see DC-634)
+our $Peeves_version = "1.8.5"; # Fixing bug in P42 (DC-636)
+# 11.11.2015
+our $Peeves_version = "1.8.6.1"; # Improving checks for args records (DC-633): removing annoying A1h message
+# 12.11.2015
+our $Peeves_version = "1.8.6.2"; # Improving checks for args records (DC-633): P2 no longer inclusion essential
+our $Peeves_version = "1.8.6.3"; # Improving checks for args records (DC-633): suppressing check that either A1b and/or A2b must be filled in for cases where not appropriate (harvcur records, except skim, user records, edit records)
+our $Peeves_version = "1.8.7.1"; # Minor dataset-related Peeves tweeks (DC-639): adding more harvard file 'types' to allowed list
+our $Peeves_version = "1.8.7.2"; # Minor dataset-related Peeves tweeks (DC-639): adding 'dataset' as an allowed Harvard triage flag
+our $Peeves_version = "1.8.8.1"; # relaxing requirements for harvcur record names in Peeves (DC-624): allowing non-standard 'types' in filename
+our $Peeves_version = "1.8.8.2"; # relaxing requirements for harvcur record names in Peeves (DC-624): adding warning if 'curator' and 'type' portions of a harvcur record name look to be swapped around.
+our $Peeves_version = "1.8.9"; # fix for "Use of implicit split to @_ is deprecated" error in tools.pl (DC-640)
+# 18.11.2015
+our $Peeves_version = "1.8.10.1"; # fix for DC-646 - was not coping when term name in F10 is valid in both FBbt and GO ontologies, 1. basic fix by swapping order of tests so GO tested first
+our $Peeves_version = "1.8.10.2"; # fix for DC-646 - was not coping when term name in F10 is valid in both FBbt and GO ontologies, 2. spiffier fix for cases so suggests uses GO id instead of FBbt id for cases where term name is valid in both FBbt and GO cellular component
+# 21.11.2015
+our $Peeves_version = "1.8.11.1"; # Adding interaction proforma checking: basic template
+our $Peeves_version = "1.8.11.2"; # Adding interaction proforma checking: adding checking for free text fields
+# 28.11.2105
+our $Peeves_version = "1.8.11.3"; # Adding interaction proforma checking: finishing adding checking for free text fields
+our $Peeves_version = "1.8.11.4"; # Adding interaction proforma checking: adding checking for simple valid symbol fields
+# 1.12.2015
+our $Peeves_version = "1.8.11.5"; # Adding interaction proforma checking: adding warning for fields that are not yet implemented in proforma parsing
+# 6.12.2015
+our $Peeves_version = "1.8.11.6"; # Adding interaction proforma checking: adding warning for IN1h
+our $Peeves_version = "1.8.11.7"; # Adding interaction proforma checking: adding 'basic only' checks for IN7d
+our $Peeves_version = "1.8.11.8"; # Adding interaction proforma checking: attemping full syntax checking for IN7d
+# 12.12.2015
+our $Peeves_version = "1.8.11.9"; # tweaking validate_and_crosscheck_IN7d so it can be used to check both IN7c and IN7d, adding checking for IN7c
+# 13.12.2015
+our $Peeves_version = "1.8.11.10"; # Adding interaction proforma checking: adding checking for IN6
+# 17.12.2015
+our $Peeves_version = "1.8.11.11"; # Tweak to process_field data and adding trim_leading_return to remove false-positive messages for fields where curators are in the habit of starting with a leading return (and its safe to do so)
+# 30.12.2015
+our $Peeves_version = "1.8.11.12"; # Adding interaction proforma checking: adding syntax checks for IN6 and cross-checks with IN7c and IN7d
+# 1.1.2016
+our $Peeves_version = "1.8.12"; # Adding generic process_ontology_file subroutine which can cope with terms with multiple is_a parents
+our $Peeves_version = "1.8.13.1"; # Adding interaction proforma checking: adding basic processing and storing of psi-mi ontology
+our $Peeves_version = "1.8.13.2"; # Adding interaction proforma checking: adding checking for IN3
+our $Peeves_version = "1.8.13.3"; # Adding interaction proforma checking: adding last bit of checking for IN3
+our $Peeves_version = "1.8.13.4"; # Adding interaction proforma checking: adding checking for IN2b
+our $Peeves_version = "1.8.13.5"; # Adding interaction proforma checking: adding more checking for 'role' sub-field of IN6
+# 4.1.2016
+our $Peeves_version = "1.8.13.6"; # Tidying and finishing off recent interaction.pro additions and making error messages clearer ...
+# 5.1.2016
+our $Peeves_version = "1.8.14"; # Extending $standard_symbol_mapping and tweaking validate_obsolete and validate_dissociate) to fix bug in checking of IN1h
+our $Peeves_version = "1.8.15"; # Adding checking for HH5d and HH14d (DC-658)
+our $Peeves_version = "1.8.16"; # Updating !c status for LC7c, LC8a and LC8b to Yes as per DOC-109
+our $Peeves_version = "1.8.17"; # Attempting to move TAP_check and related subroutines to tools.pl so that it can be re-used to check identical IN5b field
+our $Peeves_version = "1.8.18"; # Fixing bug in IN6 and improving reporting of errors in IN7cd so that IN6 - IN7cd cross-checking works correctly
+our $Peeves_version = "1.8.19"; # Adding TAP_check to IN5b field
+our $Peeves_version = "1.9.0"; # Initial attempt at species.pro checking - basic field checks and some within field checks
+# 7.1.2016
+our $Peeves_version = "1.9.1"; # Adding check for duplicated organism (SP1a+SP1b combination) in same curation record
+our $Peeves_version = "1.9.2"; # Adding cross-checks between SP1a, SP1b and SP1g
+# 8.1.2016
+our $Peeves_version = "1.9.3"; # Adding cross-checks for SP2 (and squashing one bug in check_changes_with_chado)
+our $Peeves_version = "1.9.4"; # Adding checks against chado for SP4
+our $Peeves_version = "1.9.5"; # Adding checks against chado for SP6
+our $Peeves_version = "1.9.6"; # Adding within field checking for SP6
+our $Peeves_version = "1.9.7"; # Adding within field checking for fields that should contain a valid chado database name: GG8b, HH5b, HH14b, LC7c, LC99b, LC8a
+our $Peeves_version = "1.9.8"; # Converting within field checks for G35 to check database portion of value against chado database name
+# 9.1.2016
+our $Peeves_version = "1.10"; # Adding checking for the database proforma.
+our $Peeves_version = "1.11.0"; # Adding basic template for the seqfeat proforma, plus adding some of recently added proformae to basic field format checks within Peeves itself.
+# 10.1.2016
+our $Peeves_version = "1.11.1"; # Adding checks for SF1f, SF1a, SF1c, SF1g, altering various places in symtab.pl and tools.pl to cope with SFids having more than 7 digits
+our $Peeves_version = "1.11.2"; # Adding checks for SF1b, SF1h, SF1i
+our $Peeves_version = "1.11.3"; # Adding checks for seqfeat fields that contain valid symbols
+our $Peeves_version = "1.11.4"; # Adding checks for seqfeat fields that softSV terms that are specified in symtab.pl
+# 11.1.2016
+our $Peeves_version = "1.11.5"; # Small tweaks to species.pro fields
+# 12.1.2016
+our $Peeves_version = "1.11.6"; # More small tweaks to species.pro fields and accompanying doc
+# 13.1.2016
+our $Peeves_version = "1.11.7"; # Adding checks for seqfeat.pro free text fields
+our $Peeves_version = "1.11.8"; # Adding checks for SF4a, SF4b, SF4h
+our $Peeves_version = "1.11.9"; # Adding checks for SF4d, SF4e, SF4f
+our $Peeves_version = "1.11.10"; # Adding basic only checks for SF4g, SF12, SF20b, SF20c
+our $Peeves_version = "1.11.11"; # Adding checks for seqfeat CV fields
+our $Peeves_version = "1.11.12"; # Adding checks for SF3b
+our $Peeves_version = "1.11.13"; # Adding checks for SF11a, SF11b
+# 17.1.2016
+our $Peeves_version = "1.11.14"; # Fix for DC-664: IN7c checking: 'coordination/seq' sub-field is allowed to be empty
+# 18.1.2016
+our $Peeves_version = "1.12"; # Changing ga and ar curators type to 'GOCUR' as that is more appropriate than 'CAMCUR'
+our $Peeves_version = "1.12.1"; # Fix for DC-600: allowed ::DONE suffix for gene_group flag in P40
+our $Peeves_version = "1.12.2"; # Adding lists of allowed qualifier namespaces for phenotypic class and phenotype manifest in CV term fields (to remove dependence on 'Proforma comment' in obo files - see DC-108)
+# 23.1.2016
+our $Peeves_version = "1.12.3"; # Converting FBbt obo file processing to use process_ontology_file subroutine ...
+our $Peeves_version = "1.12.4"; # Converting FBdv obo file processing to use process_ontology_file subroutine ...
+our $Peeves_version = "1.12.5"; # Small tweak to obo file processing ...
+our $Peeves_version = "1.12.5.2"; # Small tweak to obo file processing ...
+# 24.1.2016
+our $Peeves_version = "1.12.6"; # Fix for DC-665: TAP checking: subtle bug in qualifier checking
+our $Peeves_version = "1.12.7"; # Converting FBcv obo file processing to use process_ontology_file subroutine, plus resulting changes to field checking due to this change.
+our $Peeves_version = "1.12.8"; # Removing special requirement for 'Proforma field' comment processing in FBcv obo processing as Peeves no longer uses these comments in the obo file.
+# 26.1.2016
+our $Peeves_version = "1.12.9"; # Small fix for checking of TAP lines
+our $Peeves_version = "1.12.10"; # Tweaks to process_ontology_file and associated code so Peeves can cope if default namespace of an ontology file changes.
+our $Peeves_version = "1.12.11"; # Tweaking check_ontology_term_id_pair and CV checking code so that id type of each ontology is prefixed on each namespace.
+# 27.1.2016
+our $Peeves_version = "1.12.12"; # More changes to CV checking code to make sure that id type of each ontology that is processed by process_ontology_file is prefixed onto the namespace.
+# 28.1.2016
+our $Peeves_version = "1.12.13"; # Adding Aiofe to list of curators
+# 5.2.2016
+our $Peeves_version = "1.12.14"; # Adding '.thin' and '.phen' to list of camcur curation record types - for pilot to see whether splitting curation of 'things' and 'phenotypes' is more efficient during curation training or even in longer term.
+# 11.2.2016
+our $Peeves_version = "1.12.14.1"; # Setting '.thin' record type to EDIT to stop false-positive error messages for synonyms
+# 14.2.2016
+our $Peeves_version = "1.12.15.1"; # Converting DO processing to use process_ontology_file and consequent changes to check_ontology_term_id_pair
+our $Peeves_version = "1.12.15.2"; # Converting GO processing to use process_ontology_file and consequent changes to process_ontology_file and check_ontology_term_id_pair
+# 15.2.2016
+our $Peeves_version = "1.12.15.3"; # Final tweaks to finish off changing GO term processing to use process_ontology_file and check_ontology_term_id_pair
+# 16.2.2016
+our $Peeves_version = "1.12.15.4"; # Converting SO term processing to use process_ontology_file and consequent changes to field checks
+# 17.2.2016
+our $Peeves_version = "1.12.15.5"; # More tweaks for changing SO term processing to use process_ontology_file (still a work in progress)
+# 18.2.2o06
+our $Peeves_version = "1.12.15.6"; # More changes to process_ontology_file (always store 'default' namespace) and get_all_descendents_of (robustifying storing of obo id as well as term)
+# 19.2.2016
+our $Peeves_version = "1.12.15.7"; # More changes consequent on changing SO obo processing to use process_ontology_file (fixing workaround for foreign SO terms and fixing checking of A9 and A26)
+# 20.2.2016
+our $Peeves_version = "1.12.15.8"; # Enhancing checking of A9 and A26 so that SO term must be a child of 'chromosome_structure_variation'
+our $Peeves_version = "1.12.15.9"; # Enhancing checking of TE4a so that SO term must be a child of 'transposable_element'
+our $Peeves_version = "1.12.15.10"; # Enhancing checking of F2 so that SO term must be a child of 'synthetic_sequence'
+our $Peeves_version = "1.12.15.11"; # Tiny tweak to error message for GO term ; id checking when in wrong namespace
+# 25.2.2016
+our $Peeves_version = "1.12.15.12"; # Tweak to make check_ontology_term_id_pair error messages more user friendly ...
+our $Peeves_version = "1.12.16"; # Fix for DC-72 (warn when use GI-types that are not valid for manual curation i.e. 'suppressor', 'enhancer' etc)
+# 5.3.2016
+our $Peeves_version = "1.12.17"; # Small tweaks to various fields/doc for plingc, multiple values allowed, based on looking at proforma parsing code.
+our $Peeves_version = "1.12.18"; # Altering check_stamps and valid_symbol_of_list_of_types so that check_stamps specifies allowed FBid-types for stamps explicitly, rather than valid_symbol_of_list_of_types implicitly grabbing information from chadotypes hash (were starting to be too many exceptions to exclude in valid_symbol_of_list_of_types as checking of more FlyBase FBid types added to Peeves).
+our $Peeves_version = "1.12.19"; # Adding valid_chado_symbol_of_list_of_types
+our $Peeves_version = "1.12.20"; # Replacing delete_symbol, set_symbol call pairs with call to valid_chado_symbol where possible.
+# 6.3.2016
+our $Peeves_version = "1.12.21.1"; # Converting more expression.pro fields to process_field_data and field_specific_checks format - F11, F11a, F11b
+our $Peeves_version = "1.12.22"; # Making F1a checking more standardised ...
+our $Peeves_version = "1.12.23"; # Adding type_gene_product subroutine to tools.pl
+our $Peeves_version = "1.12.24"; # Adding queries for humanhealth, cell_line and strain valid symbol and id to chado.pl and symtab.pl
+# 7.3.2016
+our $Peeves_version = "1.12.25"; # Adding within field format checking for IN5a
+# 9.3.2016
+our $Peeves_version = "1.12.26"; # Adding FBhh id and valid name processing and checking (DC-623)
+our $Peeves_version = "1.12.27"; # Small tweaks to error messages for FBhh id and valid name processing and checking (DC-623)
+our $Peeves_version = "1.12.28"; # Adding FBcl back as a type of symbol allowed in stamps
+# 10.3.2016
+our $Peeves_version = "1.12.29"; # Adding check that PROFORMA line begins with a !
+# 18.3.2016
+our $Peeves_version = "1.12.30"; # Changing validation of primary proforma field to use validate_primary_proforma_field where possible
+our $Peeves_version = "1.12.31"; # Adding cross_check_FBid_symbol checking to GG1h
+# 21.3.2016
+our $Peeves_version = "1.12.32"; # Adding cell_line as valid P411 value (DC-686)
+our $Peeves_version = "1.12.33"; # Changing phen record_type so that it cross-checks disease flag and allele DO curation fields correctly
+# 27.3.2016
+our $Peeves_version = "1.12.34.1"; # Changing valid_chado_symbol_of_list_of_types so behaves like valid_symbol_of_list_of_types in terms of returned values
+our $Peeves_version = "1.12.34.2"; # Adding field name numbering to standard_symbol_mapping data structure where required for those proformae that do not follow the standard system used for 'Harvard' style proformae. 
+our $Peeves_version = "1.12.34.3"; # Changing 'id' part of standard_symbol_mapping data structure and code that uses it so it can cope if multiple FBid types are allowed in the same proforma (e.g. expression). 
+our $Peeves_version = "1.12.35"; # Changing expression.pro to use standard modules for checking of various fields 
+# 28.3.2016
+our $Peeves_version = "1.12.35.2"; # More changing expression.pro to use standard modules for checking of various fields 
+our $Peeves_version = "1.12.36"; # Attempting to add pre-instantion for expression.pro (DC-663) 
+# 30.3.2016
+our $Peeves_version = "1.12.37"; # Tidying code and error messages for recent updates to expression.pro checking
+# 31.3.2016
+our $Peeves_version = "1.13"; # Adding checking of cellline.pro
+our $Peeves_version = "1.13.1"; # Adding checking of cellline.pro: basic skeleton
+our $Peeves_version = "1.13.2"; # Adding checking of cellline.pro: primary proforma fields
+our $Peeves_version = "1.14"; # Adding temporary warning for dataset fields
+# 1.4.2016
+our $Peeves_version = "1.15.1"; # Fixing nasty bug in cellline checking (see DC-691)
+our $Peeves_version = "1.15.2"; # Making sure non-implemented cell-line fields do not give a false-positive invalid field message
+# 4.4.2016
+our $Peeves_version = "1.15.3"; # Fixing another bug in cell-line basic field checking (DC-691)
+our $Peeves_version = "1.15.4"; # Implementing checking of TC1b
+# 5.4.2016
+our $Peeves_version = "1.15.5"; # Bug fix: fixing it so that phen records do not do an A1b/A2b cross-check for synonyms
+# 10.5.2016
+our $Peeves_version = "1.15.6"; # small enhancements to interaction checking (part of DC-685)
+# week of peeves work 16.5.2016-20.5.2016
+our $Peeves_version = "1.16"; # Changes for new metadata proforma implementation
+our $Peeves_version = "1.16.1"; # Deleting fields that are not in the new proforma implementation
+our $Peeves_version = "1.16.2"; # Making changes required for existing fields in the new proforma implementation
+our $Peeves_version = "1.16.3"; # Small tweaks (mostly doc) for fields that are not changing in new implementation (part of DC-697) ...
+our $Peeves_version = "1.16.4"; # New dataset proforma implementation: adding new fields (part of DC-697) : fields that can contain a valid dataset symbol (simple cases)
+our $Peeves_version = "1.16.5"; # New dataset proforma implementation: adding new fields (part of DC-697) : key GO term fields (LC13a, LC13b, LC13c)
+our $Peeves_version = "1.16.6"; # New dataset proforma implementation: adding new fields (part of DC-697) : simple CV term fields (LC4j, LC4k)
+our $Peeves_version = "1.16.7"; # New dataset proforma implementation: adding new fields (part of DC-697) : other species field (LC4i)
+our $Peeves_version = "1.16.8"; # New dataset proforma implementation: adding new fields (part of DC-697) : adding LC12c and cross-checks with LC12a, LC12b
+our $Peeves_version = "1.16.9"; # New dataset proforma implementation: Adding new free text fields (part of DC-697) and making sure stamp vs no-stamp is correct for all free text fields in proforma (see DC-700)
+our $Peeves_version = "1.16.10"; # New dataset proforma implementation: adding new fields (part of DC-697) : fields that use new dataset CV terms in FBcv
+our $Peeves_version = "1.16.11"; # New dataset proforma implementation: Fixing stamp vs no-stamp for remaining 'free text' fields
+our $Peeves_version = "1.16.12"; # New dataset proforma implementation: adding new fields (part of DC-697) : LC2b
+our $Peeves_version = "1.16.13"; # New dataset proforma implementation: tidying validate_ontology_term_id_field and validate_ontology_term_id_field_specifying_allowed_type back into a single subroutine after implementing LC2b
+our $Peeves_version = "1.16.14"; # New dataset proforma implementation: adding new fields (part of DC-697) : LC11m
+our $Peeves_version = "1.16.15"; # New dataset proforma implementation: adding new fields (part of DC-697) : LC14a, LC14b
+our $Peeves_version = "1.16.16"; # New dataset proforma implementation: adding new fields (part of DC-697) : LC3e, LC11j, LC7f
+our $Peeves_version = "1.16.17"; # New dataset proforma implementation: Change to existing field: LC12a
+our $Peeves_version = "1.16.18"; # Enhancements to existing dataset fields that were not already fully checked (LC4e, LC12b, LC4h)
+our $Peeves_version = "1.16.19"; # New dataset proforma implementation: adding new fields (part of DC-697) : adding FBmc to allowed types for LC12a
+our $Peeves_version = "1.16.20.1"; # New dataset proforma implementation: adding new fields (part of DC-697) : basic checks for LC13d
+our $Peeves_version = "1.16.21"; # Adding TAP check for LC4g
+our $Peeves_version = "1.16.22"; # robustifying LC2a/LC2b cross-check (part of DC-697)
+our $Peeves_version = "1.16.23"; # Changing validate_sequence_change so that stop codon is represented by 'term' instead of a '@' (for DC-674)
+our $Peeves_version = "1.16.24"; # Adding more checking for IN1d and IN1f (related to DC-685)
+# 23.5.2016
+our $Peeves_version = "1.16.25"; # New dataset proforma implementation: adding checking for LC13d (hopefully a temporary hack) (part of DC-697)
+# 31.5.2016
+our $Peeves_version = "1.16.26"; # Adding two new curators
+our $Peeves_version = "1.16.27"; # Adding checking for gene summary fields
+# 2.6.2016
+our $Peeves_version = "1.16.28"; # Fixing bug in gene.pl
+# 14.6.2016
+our $Peeves_version = "1.16.29"; # temporary hack to warn if merging/obsoleting a feature that will cause a problem with the dataset retrofit
+# 15.6.2016
+our $Peeves_version = "1.16.30"; # Updating allowed values for SF2b (see DOC-134)
+# 16.6.2016
+our $Peeves_version = "1.16.31"; # tweaking temporary dataset retrofit hack for merging/obsoletes to exclude warnings for genes, as they can still be loaded
+# 6.7.2016
+our $Peeves_version = "1.16.32"; # tweaking MA15b/MA15c cross-check to remove false-positive messages for ones made by phiC31
+# 15.7.2016
+our $Peeves_version = "1.16.33"; # tweaking checking of interacting alleles in {} for GA2[89][ab] so that it complains if put allele of same gene in
+our $Peeves_version = "1.16.34"; # tweaking error message for species.pro - it now only issues a warning if a non-Cambridge curator fills in a species.pro.  This is to make sure that any species.pro are submitted through the epicycle process in Cambridge, where we have added some additional 'between record' checks to prevent potential clashes of species information getting into the database.
+# 17.7.2016
+our $Peeves_version = "1.17.1"; # species checking: renaming validate_species subroutine to validate_species_abbreviation_field
+our $Peeves_version = "1.17.2"; # species checking: switching species abbreviation checking to use chado and not obo file (changing valid_symbol calls with type 'species abbreviation' to type 'chado_species_abbreviation' where no 'Drosophilid' issue)
+our $Peeves_version = "1.17.3"; # species checking: Adding chado query and symtab.pl loop for taxgroup checking against chado
+our $Peeves_version = "1.17.4"; # Removing code for checking G18 and G22 (obsolete fields)
+our $Peeves_version = "1.17.5"; # species checking: Changes to validate_G26 so uses chado species information
+our $Peeves_version = "1.17.6"; # species checking: Changes to validate_GA289ab so uses chado species information
+our $Peeves_version = "1.17.7"; # removing FBsp_symbols subroutine and hard-coded species calls now takes all species information from chado
+# 18.7.2016
+our $Peeves_version = "1.17.8"; # adding end-around so can cope with species abbreviations in chado that have sgml greek symbols in them.
+our $Peeves_version = "1.17.9"; # tweaking error messages in GA28/GA29 species checks so clearer.
+# 20.7.2016
+our $Peeves_version = "1.17.10"; # Adding 'pheno_chem' and 'pheno_anat' to allowed P40 flags
+# 9.8.2016
+our $Peeves_version = "1.17.11"; # Adding new curator id (pu)
+# 22.8.2016
+our $Peeves_version = "1.17.12"; # Tweak to to add 'P' as valid species abbreviation since it is used in the P\T symbol.
+# 30.8.2016
+our $Peeves_version = "1.17.13"; # Tweak to to allow non-ASCII in G39d field
+# 13.10.2016
+our $Peeves_version = "1.17.14"; # Correction to G37 checking (single value only allowed)
+# 2.11.2016
+our $Peeves_version = "1.17.15"; # Adding P1\cre to list of allowed drivers
+# 18.11.2016
+our $Peeves_version = "1.17.16"; # (Re-)allowing GOcur as P40 flag
+# 21.12.2016
+our $Peeves_version = "1.17.17"; # Adding 3 new curator abbreviations
+# 12.1.2017
+our $Peeves_version = "1.17.18"; # Adding valid fullname starcode (*e) to G2c error message for gene renames (to make it clearer)
+# week of peeves work 23.1.2017-27.1.2017
+our $Peeves_version = "1.17.19"; # fixing plingc checking for SF4g and SF5a (DC-747)
+our $Peeves_version = "1.17.20"; # allowing '-' in GA21 (DC-745)
+our $Peeves_version = "1.17.21"; # Adding more allowed harvcur record types (DC-727)
+our $Peeves_version = "1.17.22"; # Adding check that GG7a is not the same as GG1a (DC-749), plus similar cross-checks for GG7c/GG1a, GG7a/GG7c
+our $Peeves_version = "1.17.23.1"; # Attempting to improve TAP statement checking: coping with variable number of spaces within statement (where it is allowed by parser)
+our $Peeves_version = "1.17.23.2"; # Attempting to improve TAP statement checking: attempting to cope with anatomy parts with && and qualifiers
+our $Peeves_version = "1.17.23.3"; # Attempting to improve TAP statement checking: converting new anatomy portion check to TAPas_portion_check sub so can use same code to check subcellular portion
+our $Peeves_version = "1.17.23.4"; # Attempting to improve TAP statement checking: converting check of subcellular portion to use TAPas_portion_check sub
+our $Peeves_version = "1.17.23.5"; # Attempting to improve TAP statement checking: working on temporal portion checking (DC-634) # should have said DC-638 here instead of DC-634
+our $Peeves_version = "1.17.23.6"; # Attempting to improve TAP statement checking: allowing >2 &&of (DC-750)
+our $Peeves_version = "1.17.23.7"; # Attempting to improve TAP statement checking: sorting field-specific requirement for <e> to be filled in (DC-751)
+our $Peeves_version = "1.17.23.8"; # Attempting to improve TAP statement checking: allowing stage X,Y shorthand in temporal qualifiers (DC-638)
+our $Peeves_version = "1.17.23.9"; # Attempting to improve TAP statement checking: trying to cope properly with -- format in anatomy/subcellular portions
+our $Peeves_version = "1.17.24"; # suppress (with ) error message for edit records (DC-740)
+our $Peeves_version = "1.17.25"; # changed how $g_pub_type is set: is now set within validate_P22 for existing pubs and only overwritten in validate_P1 if it is a new pub/change for existing one (change required to allow filtering of triage checking by publication type to fix DC-748)
+our $Peeves_version = "1.17.26"; # tweaking checking for P34 (PubMed abstract) field (DC-472)
+our $Peeves_version = "1.17.27"; # tweaking checking for P26 (PMID) and P11d (DOI) fields (DC-264)
+our $Peeves_version = "1.17.28"; # Adding checking for TC1d (DC-752)
+our $Peeves_version = "1.17.29"; # Adding checks for remaining cell-line fields
+our $Peeves_version = "1.17.30"; # tweak to prevent false-positive for supplemental material for P26 and P11d
+# 30.1.2017-3.2.2017 (carrying on Peeves for another week as got my eye in)
+our $Peeves_version = "1.17.31"; # fixing checking for TC5a (turns out requires FBti not symbol) (see DC-756)
+our $Peeves_version = "1.17.32"; # Adding between field cross-checks for HH1g (DC-692)
+our $Peeves_version = "1.17.33"; # Adding warning not to use G24 fields (as moving to Protein2GO)
+our $Peeves_version = "1.17.34"; # Adding warning if a synonym field just consists of punctuation (DC-742)
+our $Peeves_version = "1.17.35"; # Adding check for mis-placed CV term/SoftCV lines in nearby free text fields (DC-739, DC-654)
+our $Peeves_version = "1.17.36"; # Tweaking TAPas_portion_check so that children of FBbt term 'cell component' are allowed in the <s> part of a TAP statement as well as GO:cc terms
+our $Peeves_version = "1.17.37"; # add checks that fields required for new construct alleles are filled in (DC-601)
+our $Peeves_version = "1.17.38"; # 'REMINDER for construct merge' message can be removed for FBtp (DC-746)
+our $Peeves_version = "1.17.39"; # MS19c: make peeves say this should not be filled in (DC-648)
+our $Peeves_version = "1.17.40.1"; # Tidying code that does gene field cross-checks for renames/merges (includes fixing DC-423)
+our $Peeves_version = "1.17.40.2"; # Tidying code that does gene field cross-checks for renames/merges (includes fixing DC-423) (finished)
+our $Peeves_version = "1.17.40.3"; # Tidying code that does gene field cross-checks for renames/merges (includes fixing DC-423) (few more tidying tweaks and doc updates)
+our $Peeves_version = "1.17.41"; # Add check that valid symbol is in x1b list when plingc x1b for pub = unattributed (DC-388)
+our $Peeves_version = "1.17.41.1"; # Add check that valid symbol is in x1b list when plingc x1b for pub = unattributed (DC-388): 1. first working version
+our $Peeves_version = "1.17.41.2"; # Add check that valid symbol is in x1b list when plingc x1b for pub = unattributed (DC-388): 2. converting first working version to generic subroutine for tools.pl
+our $Peeves_version = "1.17.41.3"; # Add check that valid symbol is in x1b list when plingc x1b for pub = unattributed (DC-388): 3. adding generic check to relevant proformae
+our $Peeves_version = "1.17.42"; # Removing 'at least one of x1b and/or x2b must be filled in' cross-checks as curation policy has changed since originally implemented
+our $Peeves_version = "1.17.43"; # Removing x1b and x2b from list of inclusion essential fields as no longer needed for cross-checks (will also fix DC-531)
+our $Peeves_version = "1.17.44.1"; # Working on subroutines that parse primary symbol fields: 1. using validate_TE1a as a test for an enhanced subroutine that will work for all primary symbol fields.
+our $Peeves_version = "1.17.44.2"; # Working on subroutines that parse primary symbol fields: 2. converting validate_primary_proforma_field to the enhanced code in validate_TE1a from v.1.17.44.1.
+our $Peeves_version = "1.17.44.3"; # Working on subroutines that parse primary symbol fields: 3. converting genegroup and balancer proforma to use validate_primary_proforma_field
+our $Peeves_version = "1.17.44.4"; # Working on subroutines that parse primary symbol fields: 4. converting aberration proforma to use validate_primary_proforma_field
+our $Peeves_version = "1.17.44.5"; # Working on subroutines that parse primary symbol fields: 5. converting gene proforma to use validate_primary_proforma_field
+our $Peeves_version = "1.17.44.6"; # Working on subroutines that parse primary symbol fields: 6. converting remaining proformae (except allele) to use validate_primary_proforma_field
+# 6.2.2017
+our $Peeves_version = "1.17.45"; # Tweak to TE3/TE1a species abbreviation cross-check
+our $Peeves_version = "1.17.46"; # converting allele proforma to use validate_primary_proforma_field
+# 8.2.2017
+our $Peeves_version = "1.17.47"; # tweak to MS14 checking
+our $Peeves_version = "1.17.48"; # trying to suppress 'Unescaped left brace in regex is deprecated' terminal message seen by Silvie
+# 9.2.2017
+our $Peeves_version = "1.17.49"; # Adding new curator id
+our $Peeves_version = "1.17.50"; # Tweak to validate_primary_proforma_field to prevent false-positive when allele symbol malformed
+# 13.2.2017
+our $Peeves_version = "1.17.51"; # Updating allowed softCVs for notes on origin fields
+# 8.3.2017
+our $Peeves_version = "1.17.52"; # Adding checking for new proforma field MS19d (see PDEV-95)
+our $Peeves_version = "1.17.53"; # Adding checking for new proforma field MS19e (see PDEV-97)
+our $Peeves_version = "1.17.54"; # Adding checking for new proforma field SF5h (see DOC-142)
+our $Peeves_version = "1.17.55"; # Adding warning for proforma field SF5d (is not implemented, see DOC-142)
+# 20.4.2017
+our $Peeves_version = "1.17.56"; # Tweaks to finish implementing checking of PubTator 'auto' files
+# 21.4.2017
+our $Peeves_version = "1.17.57"; # Tightening checking of MS19a field (must be valid symbol *in chado*)
+# 30.5.2017
+our $Peeves_version = "1.17.58"; # Updating allowed values in SP5
+# 19.6.2017
+our $Peeves_version = "1.17.59"; # Fixing bug in TAP statement <s> checking - updating so only allowed GO:CC in this portion of TAP statement
+# 30.6.2017
+our $Peeves_version = "1.17.60"; # tiny tweak to improve clarity of error message
+# 20.9.2017
+our $Peeves_version = "1.17.61"; # removing dataset warning messages as revamp of implementation in database is complete
+our $Peeves_version = "1.17.62"; # fixing checking for LC4j and LC4k as was not caught up with the latest specs
+# 21.9.2017
+our $Peeves_version = "1.17.63"; # removing more dataset freeze warnings that didn't catch in 1.17.61 fix
+our $Peeves_version = "1.17.64"; # tightening up requirements (symbol must be *in* chado) for symbol-containing fields in seqfeat.pro (DC-787)
+# 13.11.2107
+our $Peeves_version = "1.17.65"; # Allow broader CV term usage for "reagent collection" datasets. (DC-792)
+# 14.11.2017
+our $Peeves_version = "1.18.1"; # Implementing checks for experimental tools (DC-783): adding tool proforma checks
+# 15.11.2017
+our $Peeves_version = "1.18.2"; # Implementing checks for experimental tools (DC-783): fixing bugs after implementing tool proforma checks
+our $Peeves_version = "1.18.3"; # Implementing checks for experimental tools (DC-783): tweaking checking of TO10 field (it must be filled in whenever TO1f = 'new')
+# 19.11.2017
+our $Peeves_version = "1.18.4"; # Implementing checks for experimental tools (DC-783): Adding checks for new allele fields.
+# 27.11.2017
+our $Peeves_version = "1.18.5"; # Fixing bug in LC2b checking (DC-794).
+# 28.11.2017
+our $Peeves_version = "1.18.6"; # Implementing checks for experimental tools (DC-783): Adding checks for new moseg.pro fields.
+our $Peeves_version = "1.18.7"; # Implementing checks for experimental tools (DC-783): Adding checks for new gene field.
+# 7.2.2018-8.2.2018
+our $Peeves_version = "1.18.8"; # relax checking of LC6a, LC6e, LC6f fields (DC-806)
+our $Peeves_version = "1.19"; # add checking for diseaseHP flag (DC-800)
+# 11.4.2018-13.4.2018
+our $Peeves_version = "1.20.1"; # converting MS23 field number to MS24 (field number changed during parser implementation to avoid potential clash with obsolete field)
+our $Peeves_version = "1.20.2"; # removing old GA30 field so cannot submit records containing old tags by mistake
+our $Peeves_version = "1.20.3.1"; # Adding cross-checks for new GA30a-f fields: GA30e
+our $Peeves_version = "1.20.3.2"; # Adding cross-checks for new GA30a-f fields (DC-783): making new get_allele_type subroutine and adding cross-checks for GA30a-f
+our $Peeves_version = "1.20.3.3"; # Adding cross-checks for new GA30a-f fields (DC-783): GA3Oc/GA30d - usually only one of these filled in
+our $Peeves_version = "1.20.3.4"; # Adding cross-checks for new GA30a-f fields (DC-783): GA3Oc/GA30d - add warning if both these fields empty for new construct alleles of 'tool genes'
+our $Peeves_version = "1.20.3.5"; # Adding cross-checks for new GA30a-f fields (DC-783): Relaxing some of the constraints for edit records (so don't get false-positives)
+our $Peeves_version = "1.20.3.6"; # Adding cross-checks for new GA30a-f fields (DC-783): bug fix
+our $Peeves_version = "1.20.4"; # Tidying
+our $Peeves_version = "1.20.5"; # Adding field-crosschecks for TO7c (DC-783)
+our $Peeves_version = "1.20.6"; # Removing special-cases for 'T:' where no longer applicable or converting to 'Tag:' as appropriate (DC-783)
+our $Peeves_version = "1.21"; # Adding new curator and removing those who have left
+# 16.4.2018
+our $Peeves_version = "1.22"; # Fixing perl version-specific bug
+# 2.5.2018
+our $Peeves_version = "1.23"; # Fixing bug in checking of MS24
+# 23.5.2018
+our $Peeves_version = "1.24"; # Allowing '::DONE' in P42
+# 19.6.2018
+our $Peeves_version = "1.25.1"; # Add Peeves check for new P46 (Graphical Abstract) field: basic checks only (DC-816)
+our $Peeves_version = "1.26"; # Making GG1f an 'obsolete field' in Peeves
+our $Peeves_version = "1.26"; # add error message if gene group merge field (GG1f) filled in (DC-814)
+# 3.7.2018
+our $Peeves_version = "1.27"; # Finishing adding within field checking for GA35, so that it is ready for when FBcv terms exist (this also means that Peeves complains if curators try to fill it in now).
+our $Peeves_version = "1.28"; # Fixing bug in DC-828 (making TAP statement parsing cope with multiple spaces in qualified anatomy portion)
+# 13.9.2018
+our $Peeves_version = "1.29"; # Update SF5a, SF5e, SF5f checking as form dupl for multiple set (DC-833)
+our $Peeves_version = "1.30"; # Update allowed values in SF2b (DC-831)
+# 26.9.2018
+our $Peeves_version = "1.31"; # Adding new curator id
+# 3.10.2018
+our $Peeves_version = "1.33"; # Adding checking for G38 field (see PDEV-112)
+# 10.10.2018
+our $Peeves_version = "1.34"; # Updating allowed triage flags
+# 12.10.2018
+our $Peeves_version = "1.35"; # Temporary end-around to prevent error warnings for 'pert_exp' in user records until checkbox can be removed from FTYP tool
+# 13.10.2018
+our $Peeves_version = "1.36"; # Added check_stamps_with_ids and checking to <note> portion of TAP statement (so can check FBid:symbol pairs in stamps for automatically generated TAP expression statements for split-GAL4 combinations).
+# 15.10.2018
+our $Peeves_version = "1.36.1"; # Fixed small bug in check_stamps_with_ids ....
+# 22.10.2018
+our $Peeves_version = "1.36.2"; # Adding 'non-modified' as an allowed genetic interaction type in GI controlled lines (see DOC-166)
+# 12.11.2018
+our $Peeves_version = "1.37"; # Updating curator type info
+# 15.11.2018
+our $Peeves_version = "1.38"; # Fixing tiny reporting bug in P22 checking
+# 30.11.2018
+our $Peeves_version = "1.39"; # removing 'partially' from allowed pheno class qualifiers (still allowed to qualify suppressible)
+# 6.2.2018 - 8.2.2018
+our $Peeves_version = "1.40.1"; # Adding sgml to utf8 conversion subroutine (for DC-808)
+our $Peeves_version = "1.40.2"; # altering feature_id_from_symbol prepared sql query so looks at synonym table (for DC-808)
+our $Peeves_version = "1.40.3"; # altering symbtab.pl subroutine to cope with new sgml-ised symbol lookup (for DC-808)
+our $Peeves_version = "1.40.4"; # altering other prepared sql queries to look at synonym table (for DC-808)
+our $Peeves_version = "1.40.5"; # removing spell greek and other greekarounds (for DC-808)
+our $Peeves_version = "1.40.6"; # converting x_symbol_from_id sql queries to work with sgml format for uniquename tests (for DC-808)
+our $Peeves_version = "1.40.7"; # more work on DC-808 (coping with special case of FBcl)
+our $Peeves_version = "2.0"; # Bumping version as Peeves now copes with greek symbols and super/subscripts in valid symbols properly (DC-808)
+# 21.2.2019
+our $Peeves_version = "2.1"; # Changing (with ) reg-exp in allele subroutines for GA17, GA56, GA289ab to cope when cv term has () in it
+# 5.9.2019
+# rolled dev back to 2.0 so can do more easy fixes (2.1 fix needs lots of testing before can push it forward)
+our $Peeves_version = "2.0.1"; # Adding hintto error message for malformed proforma field (so easier to find problem and fix in common case)
+# 31.5.2019
+our $Peeves_version = "2.0.2"; # Adding new curator info
+# 20.6.2019
+our $Peeves_version = "2.0.3"; # Adding diseaseF flag as allowed value in P41 (DC-858)
+# 27.6.2019
+our $Peeves_version = "2.0.4"; # Adding temporary warning that submission of DO curation is not allowed until DB-569 has been completed
+our $Peeves_version = "2.1"; # Adding Peeves checks for GA36 (PDEV-124)
+# 3.7.2019
+our $Peeves_version = "2.2"; # Update Peeves checks for GA34a (DB-573)
+# 18.7.2019
+our $Peeves_version = "2.3"; # Removing temporary warning that submission of DO curation is not allowed as DB-569 has been completed
+our $Peeves_version = "2.4"; # Adding DO as an expected filename type for HarvCur curation
+# 28.8.2019
+our $Peeves_version = "2.5"; # Removing code for obsolete HH.pro fields (HDIS-26)
+# 3.11.2019
+our $Peeves_version = "2.6"; # Removing constraints on flags that HarvCur can use in P43 (to prevent false-positives for 'DO' curation records)

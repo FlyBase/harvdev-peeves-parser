@@ -1,0 +1,52 @@
+
+## ! IN1d.  Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :n
+
+### Multiple values allowed:
+
+No (Implemented in validate_x1g)
+
+### !c Applicable:
+
+No (Implemented in validate_x1g)
+
+
+### Inclusion essential:
+
+Yes (Implemented)
+
+
+### Mandatorially has value:
+
+Yes (Implemented in validate_x1g)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Cross-checks with other fields:
+
+  * sub 'cross_check_1a_1g' checks the following:
+
+     * If the value given in IN1d is 'y', the value given in IN1f must be held in Chado as a current valid uniquename in the interaction table.
+
+     * If the value given in IN1d is 'n', the value given in IN1f must not be held in Chado as a current valid uniquename in the interaction table.
+
+### Related fields:
+
+
+
+### Comments:
+
+Re-used 'Cambridge' style cross-checks for equivalent fields to cross-check IN1d and IN1f.  Gave interaction a fake chadotypes entry with FBid type 'FBin' so that could slot it into the existing code in valid_symbol for other FBid types.  Had to make a special case, since the id actually begins with an FBrf number, to avoid polluting the FBrf part of the symbol table and to store the interaction id in their own slot for checking.
+
+### Status:
+
+
+
+### Updated:
+
+gm160520.

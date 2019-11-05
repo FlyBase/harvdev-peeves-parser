@@ -1,0 +1,81 @@
+
+## ! MS4a. Description [CV]                        :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+checks within field (in validate_cvterm_field):
+
+* check_for_duplicated_lines:
+   * warns if there is a blank line within the data
+   * warns if there are any duplicated values
+
+* checks that the value is one allowed for this field (values stored in symtab.pl)
+
+
+Cross-checks done after parsing the entire proforma:
+
+
+* If MS4a is filled in:
+
+  * If the symbol in MS1a looks like an FBtp symbol (checked using check_construct_symbol_format to return a value for nat_te_end)
+     * if the symbol in MS1a is a TI-style FBtp construct, warns that MS4a must not be filled in.
+     * if the symbol in MS1a is a regular transposable-element based FBtp construct, the value in MS4a must be one of the values allowed for FBtp constructs
+
+  * If the symbol in MS1a does not look like an FBtp symbol
+     * the value in MS4a must NOT be one of the values that is ONLY allowed for FBtp type features
+
+
+* If MS4a is NOT filled in:
+
+   * if the proforma is for a new recombinant construct, unless the construct is a TI-style FBtp construct, warns that MS4a MUST be filled in in this circumstance.
+
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+This field is filled in by default, so the checks implemented above have to cope with that (note that the curman says MS4a  should NOT be filled in for an existing insertion (including insertions being renamed or merged), but since it is filled in by default, have not implemented that)
+
+
+Not yet implemented:
+
+- the cross-checks between fields does not use the FBid in MS1f (for existing constructs or renames), or MS1g (for merges) to grab precisely which kind of recombinant construct is in the proforma, so does not check that the value in MS4a is exactly a correct one for proformae containing a FBmc or FBms (it just checks that the value in MS4a is not one of the ones that is only allowed for FBtp).
+
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm151001.

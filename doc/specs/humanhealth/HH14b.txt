@@ -1,0 +1,58 @@
+
+## !      HH14b. External link to BDSC - FB database ID (DB1a) :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+Yes (Implemented): HH14a -> HH14b, HH14c, HH14d
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if HH14b is filled in (this is to make it easier to implement checking of fields that can be duplicated).
+
+* check_single_allowed_value checks that the value is always 'BDSC_HD' (there is also a check in symtatb.pl that this is still a valid database name in chado in case this changes in the database).
+
+
+Checks between fields:
+
+* If HH14a is filled in, HH14b must be filled in (and vice versa)
+
+* If HH14d is filled in, HH14b must be filled in
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160108.
+

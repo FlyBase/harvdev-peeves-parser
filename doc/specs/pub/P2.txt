@@ -1,0 +1,145 @@
+## ! P2.   Parent multipub abbreviation      *w :
+
+
+### Multiple values allowed:
+
+No.
+Implemented (in validate_P2, using 'single_line' subroutine)
+
+
+
+### !c Applicable:
+
+Yes if P2 contains valid FBrf, otherwise no.
+
+
+### Inclusion of field essential for proforma checks:
+
+No (Implemented)
+
+
+
+### Field mandatorially has value:
+
+No if P22 contains 'unattributed'.  
+Otherwise, yes, for certain publication types (see **Comments** sections
+below).
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Allowed values:
+
+A publication abbreviation as stored in chado eg. 'Nature'
+
+### Checks:
+
+To be valid:  
+  
+* The value must be a valid multipub abbreviation in Chado  
+  
+If !c is used:   
+  
+* P22 must contain a valid FBrf, AND  
+* the value given in P2 must be different from the value  
+stored in Chado for the publication specified by the value given in  
+P22, AND  
+* P2 must not be blank  
+
+Peeves must emit a warning message if !c is used in this field:   
+"Are you sure you want to change the parent multipub of <value_in_P22> in chado?"
+
+If !c is not used:
+
+* if P22 contains a valid FBrf, either:  
+	* the value given in P2 must be identical to the value
+stored in Chado for the publication specified by the FBrf given in  
+P22 or  
+	* P2 must contain a valid value and no value is stored in
+Chado for the publication specified by the FBrf given in P22;
+  
+* if P22 contains the value 'new':  
+	* P2 must a contain valid value if publication_type given in P1 is in the list given in Comments section.
+  
+* if P22 contains the value 'unattributed':  
+	* P2 must be blank.  
+
+### Error messages:
+
+If P22 is unattributed:  
+P2: Cannot contain data when P22 is 'unattributed'.  
+  
+If pling-c'd:  
+P2: Can't change a multipub abbreviation without an FBrf in P22  
+  
+If pling-c'd and no multipub abbreviation given:  
+P2:  Can't delete a multipub abbreviation  
+  
+If pling-c'd and a multipub (valid) abbreviation given:  
+P2: Are you sure you want to change the multipub of FBrf0123456 in chado?  
+  
+If pling-c'd and the given valid multipub is the same as what is already in chado:  
+P2: Cannot use !c here, as '<abbreviation-from-chado>' is already the multipub of FBrf0123456 in chado.  
+  
+If multipub abbreviation is blank:  
+then if P22 is a valid FBrf:  
+P2: Missing data --- perhaps you mean to put <abbreviation-from-chado>  
+  
+or if P22 is not a valid FBrf and multipub abbreviation is blank and pubtype (P1) is on the list given under comments:  
+P2:  Missing data - must have a multipub abbreviation.  
+ 
+If P22 is new, P2 is filled in erroneously and P1 contains eg paper ie something that needs a multipub abbreviation:  
+P2:  'hello_not-Nature' is not a valid multipub abbreviation in Chado for pubtype 'paper'
+
+
+### Related fields:
+
+P22  
+MP2a
+
+
+### Comments:
+
+List of publication types that are associated with a multipub:  
+	abstract  
+	autobiography  
+	bibliographic list  
+	biography  
+	book review  
+	conference report  
+	DNA/RNA sequence record  
+	editorial  
+	erratum  
+	film  
+	interview  
+	letter  
+	meeting report  
+	news article  
+	note  
+	obituary  
+	paper  
+	patent  
+	poem  
+	poster  
+	protein sequence record  
+ 	retraction  
+	review  
+	species list  
+	spoof  
+	stock list  
+	supplementary material  
+	tactile diagram  
+	teaching note  
+	thesis  
+  
+
+### Updated:
+
+sm100319/hf100421 for _`pub_master.pro`_ Version 41:  16 Mar 2010  
+
+gm131204 (removed markdown formatting).
+gm151001 (added Dupl. for multiple field info).
+gm151112 (changed 'Inclusion essential' to No)

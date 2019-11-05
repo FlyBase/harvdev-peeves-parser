@@ -1,0 +1,57 @@
+
+## ! IN2a. Interaction description (free text)     :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+### Inclusion essential:
+
+Yes (Implemented)
+
+### Mandatorially has value:
+
+Yes (Implemented)
+
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+### Checks:
+
+Checks within field:
+
+*  Value must be one of 'protein-protein', 'RNA-protein', 'RNA-RNA' (set in symtab.pl as 'IN2a_value') (validity checked by sub validate_cvterm_field)
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented:
+
+Checks between field:
+
+If IN2a is 'protein-protein' the feature in the <symbol> sub-field of each IN6 line should be of 'gene-XP' type (i.e. FBpp)
+
+If IN2a is 'RNA-protein' the feature in the <symbol> sub-field of each IN6 line should be of 'gene-XR' type (i.e. FBtr)
+
+If IN2a is 'RNA-RNA' the feature in the <symbol> sub-field of each IN6 line should be of 'gene-XR' type (i.e. FBtr)
+
+
+### Updated:
+
+gm160510.

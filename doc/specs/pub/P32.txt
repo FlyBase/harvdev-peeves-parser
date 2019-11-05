@@ -1,0 +1,71 @@
+## ! P32.  Action - make this/these FBrf(s) secondary IDs of P22 *N :
+
+### Multiple values allowed:
+
+Yes, each on a separate line
+
+### !c Applicable:
+
+No. (Implemented)
+
+### Inclusion of field essential for proforma checks:
+
+No. (Implemented)
+
+### Field mandatorially has value:
+
+No. (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Allowed values:
+
+Standard FBrf{7 digits} format.
+
+### Checks:
+
+
+Checks within field
+
+* check_valid_symbol_field does:
+
+   * check_for_duplicated_lines:
+
+    * warns if there is a blank line within the data
+    * warns if there are any duplicated values
+
+   * checks value is a valid FBrf in chado
+
+
+Checks between fields
+
+* sub compare_pub_fbrf_containing_fields (in publication.pl) is used to check:
+
+    * No value in P32 can be the same as that in P22 
+    * No value in P30 can be the same as any value in P32
+    * No value in P31 can be the same as any value in P32
+
+* P32 must not be filled in unless P22 contains a valid FBrf number in chado
+
+
+### Related or dependant fields:
+
+
+### Comments:
+
+
+
+### Status:
+
+Not implemented yet:
+
+If P32 contains a value or values, P39 must be left blank.
+
+
+### Updated:
+
+gm151001.
+

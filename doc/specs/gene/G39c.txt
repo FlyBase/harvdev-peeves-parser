@@ -1,0 +1,61 @@
+
+## ! G39c. Gene summary - Date stamp (y, n, or YYYYMDD) :
+
+### Multiple values allowed:
+
+No (implemented) (Note, is implemented in both basic process_field_data line and also in validate_G24f line, so could get two messages for same error at the moment but hard to implement all checks otherwise).
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+### Checks:
+
+within validate_G24f:
+
+* if the field is empty, a warning is issed, saying:
+
+          "Default value of 'y' removed from gene summary date field!  " .
+	       "Any gene summary data will be recorded with new date. "
+
+* If the field is filled in with anything other than 'y' or 'n'
+
+    * the value is checked to see if it is a valid date not later than the current date, using the 'bad_iso_date' subroutine
+
+    * if the curator is not a GO curator, a warning is printed "WARNING: Non-gene summary curators don't usually put anything other than 'y' or 'n' in this field, did you mean to put xxxxxx" [figured printing this message for non-GO curators would be OK as likely to be GO curator submitting proforma.]
+
+
+Checks between fields:
+
+Must be filled in if G39a. is filled in.
+
+Must be filled in if G39b. is filled in with 'n'
+
+
+### Related fields:
+
+
+
+### Comments:
+
+Re-used validate_G24f to check within field values. 
+
+### Status:
+
+
+
+### Updated:
+
+gm160531.

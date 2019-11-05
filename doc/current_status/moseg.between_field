@@ -1,0 +1,60 @@
+! MOLECULAR SEGMENT AND CONSTRUCT PROFORMA           Version 29: 16 June 2014
+!
+! MS1f. Database ID for segment (FBid or "new") :PARTIAL
+! MS1a. Segment symbol to use in database       :PARTIAL:DC-497
+! MS1b. Symbol used in paper                    :FULL
+! MS16. Segment category (type of entity) [CV]  :PARTIAL
+!
+! MS4a. Description [CV]                        :PARTIAL
+! MS21. Transposon class (generic)              :FULL
+! MS14. Uses [CV]                               :FULL
+! MS22. Localized function [CV]      :NA
+!
+! MS1c. Action - replace this segment symbol :PARTIAL
+! MS1g. Action - merge these segments (FBid) :PARTIAL
+! MS1h. Action - delete segment record  ("y"/blank)    :NOT YET IMPLEMENTED
+! MS1i. Action - dissociate MS1f from FBrf ("y"/blank) :PARTIAL
+!
+! MS3b. Other synonym(s) for segment symbol  :NA
+! MS3d. Silent synonym(s) for segment symbol :NA
+!
+! MS19a. Progenitor construct (symbol) :NA
+! MS19b. Progenitor(s) (other - free text) :NA
+! MS19c. Isolate of (generic natTE) :NOT YET IMPLEMENTED(field not implemented in proforma parser)
+! MS19d. Progenitor genomic or cDNA clone (symbol) :FULL
+! MS19e. Associated gene (symbol) :FULL
+! MS20.  Related constructs    :NA
+!
+! MS18a. Cloning sites [CV]    :NA
+! MS4b.  Length in kb          :NA
+!
+! MS4h.  Component allele(s)          :NA
+! MS4g.  Component features [CV]      :NA
+! MS17.  Transcript (expression data) :NA
+!
+! MS1e.  Type of DNA_segment [CV]              :NA
+! MS4e.  Component segment source (species)    :NA
+! MS5a.  Original left end (in + orientation)  :NA
+! MS5b.  Original right end (in + orientation) :NA
+!
+! MS7a.  AC no. | gi no. | date | D or ND      :NA
+!   MS7b.  Location of MS5a in database entry  :NOT YET IMPLEMENTED
+!   MS7c.  Location of MS5b in database entry  :NOT YET IMPLEMENTED
+! MS7e.  Comparable segment, sequenced strain  :NA
+! MS12.  Sequence :NA
+!
+! MS9.  Segments in order | orientation :NA
+!
+! MS18b. Junction restriction sites | position :NA
+!
+! MS30. From dataset/collection (symbol) :FULL
+!   MS30a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :FULL
+! MS10b. General comments :NA
+! MS11.  Internal notes   :NA
+! MS14a. Tagged with experimental tool (FBto symbol)        :NOT YET IMPLEMENTED
+! MS14b. Other experimental tools carried (FBto symbol)     :NA
+! MS14c. Encoded experimental tool (FBto symbol)  :NOT YET IMPLEMENTED
+! MS14d. Encoded experimental tool [CV]           :NOT YET IMPLEMENTED
+! MS14e. Regulatory region(s) present (symbol)  :NOT YET IMPLEMENTED
+! MS15. Moseg description [free text] :NA
+! MS24. Marker allele(s) carried (symbol) :NA

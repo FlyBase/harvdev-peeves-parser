@@ -1,0 +1,55 @@
+## P44.  Disease(s) relevant to FBrf      [free text] :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+
+### !c Applicable:
+
+Yes if P22 contains valid data (i.e. a valid FBrf), otherwise no (implemented).
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+Checks within field:
+
+* sub 'no_stamps' checks that there are no stamps (so that the text still makes sense if any symbol changes in future)
+
+
+Checks between fields:
+
+* Checks done in crosscheck_P41_P43_P44 (see P41.txt)
+
+
+
+
+### Related fields:
+
+
+### Comments:
+
+
+Unusually for a publication proforma field, if !c is not used any value given is added to those which may already be present in Chado.
+
+### Status:
+
+
+
+
+### Updated:
+
+gm151001.

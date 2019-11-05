@@ -1,0 +1,75 @@
+
+## ! SF4a. Genomic location of feature (dupl for multiple) :
+
+### Multiple values allowed:
+
+No (implemented)
+
+
+### !c Applicable:
+
+Yes (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+Yes (implemented): SF4a -> SF4b, SF4h (see status below)
+
+### Checks:
+
+
+Checks within field:
+
+* 'validate_sequence_location' checks that the general format of the sequence location is:
+
+ 	arm:x..y
+
+	where:
+
+	* 'arm' is a valid chromosomal arm (currently stored in symtab.pl)
+
+	* '..y' is optional (ie. if the sequence location is a single value rather than a range)
+
+    * for a range, y >= x (i.e. issue a warning if x > y)
+
+
+ * sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if SF4a is filled in (this is to make it easier to implement checking of fields that can be duplicated).
+
+
+Checks between fields (for each duplication of the SF4a, SF4b, SF4h unit):
+
+  * SF4a must be filled in for a new sequence feature 
+
+  * SF4a must be filled in if SF4b is filled in and vice versa (sub compare_duplicated_field_pairs) 
+  * SF4a must be filled in if SF4h is filled in (sub compare_duplicated_field_pairs)
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Have implemented as Dupl for multiple - but double check with Gil that this is the case - similar fields in insertion.pro (?) no longer dupl. for multiple as multiple sequence locations for a single feature was problematic (but maybe it doesn't apply for seq feat as e.g. clones can have multiple locations on GBrowse?).
+
+If it turns out to be not dupl for multiple:
+
+- should simply cross-check against new status to just use check_filled_in_for_new_feature
+- can remove no_hashes_in proforma from checking of all 3 fields (SF4a, SF4b, SF4h)
+
+### Updated:
+
+gm160304.

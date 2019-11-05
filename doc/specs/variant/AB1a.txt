@@ -1,0 +1,53 @@
+
+## ! AB1a.  Genotype variant symbol to use in FlyBase                 *I :
+
+### Multiple values allowed:
+
+No (Implemented: 'single_line' subroutine in loop where the field is identified)
+
+### !c Applicable:
+
+No (Implemented: in validate_primary_proforma_field)
+
+### Inclusion essential:
+
+Yes (Implemented)
+
+### Mandatorially has value:
+
+Yes (Implemented: 'contains_data' subroutine in loop where the field is identified)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+  *  sub validate_primary_proforma_field (see doc/specs/allele/GA1a.txt for details)
+
+
+Checks between fields:
+
+  * sub 'cross_check_1a_1g' checks the following:
+
+     * If the value given in AB1g is 'y', the value given in AB1a must be held in Chado as a current valid symbol of type FBba.
+
+     * If the value given in AB1g is 'n', the value given in AB1a must not be held in Chado as a current valid symbol of type FBba.
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm170206.

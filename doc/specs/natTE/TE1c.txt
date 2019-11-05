@@ -1,0 +1,66 @@
+
+## ! TE1c. Action - rename this gen.natTE symbol    :
+
+### Multiple values allowed:
+
+No
+Implemented (in validate_rename)
+
+
+### !c Applicable:
+
+No
+Implemented (in validate_rename)
+
+
+### Inclusion essential:
+
+No
+Implemented
+
+
+### Mandatorially has value:
+
+No
+Implemented (in validate_rename)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+Cross-checks within field
+
+  * the data must either be empty or be a single valid symbol of a insertion which exists
+in Chado. (in validate_rename)
+
+  * sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if TE1c is filled in
+
+Cross-checks with other fields:
+
+  * symbol in TE1c cannot be the same as in TE1a (in validate_rename and cross_check_harv_style_symbol_rename_merge_fields)
+
+Cross-checks with other fields
+
+   * subroutine 'cross_check_harv_style_symbol_rename_merge_fields' - see MA1f.txt for details of what this subroutine does.
+   
+   * 'rename_merge_check' checks that TE1c and TE1g do not both contain data.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+### Updated:
+
+gm160110.

@@ -1,0 +1,54 @@
+
+## ! LC12c. Action - delete the dataset-feature relationship specified in LC12a/LC12b (y/blank)  :
+
+### Multiple values allowed:
+
+No (implemented)
+
+
+### !c Applicable:
+
+No (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+Yes (Implemented): LC12a -> LC12b, LC12c
+
+
+### Checks:
+
+Checks within field:
+
+- sub check_single_allowed_value checks that any value corresponds to 'y'
+
+Checks between fields:
+
+* If LC12c is filled in, LC12a must be filled in. (sub compare_duplicated_field_pairs)
+* If LC12c is filled in, LC12b must be filled in. (sub compare_duplicated_field_pairs)
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160516.

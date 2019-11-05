@@ -1,0 +1,57 @@
+
+## ! MA19a. Accession for insertion flanking sequence (dupl for multiple) :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+Should be Yes, but does not appear to work (see PDEV-60) so for now have implemented as No
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+Yes (Implemented): MA19a -> MA19b, MA19c, MA19d, MA19e
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if A91b is filled in (this is to make it easier to implement checking of fields that can be duplicated).
+
+Checks between fields:
+
+* The same value must not be present in more than one MA19a field in a single proforma (sub check_for_duplicated_field_values)
+
+
+ * MA19a must be filled in if any of MA19[b-e] are filled in (sub compare_duplicated_field_pairs)
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+Not yet implemented:
+
+* checks on format of accession
+
+
+### Updated:
+
+gm151001.

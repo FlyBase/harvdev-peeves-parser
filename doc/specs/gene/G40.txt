@@ -1,0 +1,56 @@
+
+## ! G40. Commonly used as experimental tool [CV] :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'validate_cvterm_field' checks it is a valid FBcv term from the 'experimental_tool_descriptor' namespace
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+Not yet implemented:
+
+* within field checks:
+
+- should possibly limit to a subset of the total FBcv tool terms (will probably add a 'common use' subset to the CV terms which can be used in this field so that Peeves will be able to check that only this subset is used in this field)
+
+* field cross-checks:
+
+- should usually only be filled in for non-drosophilid genes
+
+### Updated:
+
+gm171128.

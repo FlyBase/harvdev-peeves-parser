@@ -1,0 +1,50 @@
+
+## ! HH7a. Human gene(s) implicated (FB symbol, Hsap\xxx) :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented) (check with Kathleen)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* each value must be a valid FBgn with species 'Hsap' in *chado* (ie. one created within record is not allowed)
+
+Checks between fields:
+
+* Must NOT be filled in for 'parent entity'
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+NOTE: 'parent entity' cross-check only uses HH2a field at the moment, ideally, should look up value in chado if HH2a is empty
+
+
+### Updated:
+
+gm151001.

@@ -1,0 +1,51 @@
+
+## ! TC5c. Sex ("male" or "female")  :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* validate_cvterm_field sub checks that any value is a valid term for this field (values are stored in symtab.pl, only 'male' or 'female' are allowed).
+
+
+Checks between fields:
+
+* If TC5d is filled in TC5c must be filled in.  (sub compare_field_pairs)
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+I think I got the TC5d/TC5c dependency right - it looks as though TC5d is not compulsory if TC5c is filled in (so I think TC5c can be filled in without filling in TC5d).
+
+### Updated:
+
+gm170127.

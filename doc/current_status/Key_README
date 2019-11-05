@@ -1,0 +1,56 @@
+There is a *.within_field and a *.between_field file for each proforma
+
+Each file contains the proforma fields, which are filled in with a SUMMARY of the level of checking that Peeves currently does for that field.
+
+(If you want to see the full details of what have been implemented for each field, you should look in the appropriate file in the subfolders of doc/specs).
+
+
+For fields where the checking is not yet complete (i.e. the field is not filled in with 'FULL') or it is known that theere is a bug, if there is a JIRA ticket indicating the problem/issue that is listed as well.
+
+*.within_field file
+
+indicates the level of 'within' field checks (ie. checks that don't depend on the value of data in other fields) that are currently implemented.  This includes data format checks, checks on whether !c, multiple lines etc. are allowed.
+
+Each proforma field can contain one of the following:
+
+NOT YET IMPLEMENTED
+
+BASIC ONLY - this indicates that only the following checks (which are common to all fields) are carried out:
+
+- basic sanity checks:
+   - 'Inclusion of proforma field essential ?' check 
+   - 'Field must be filled in under all circustances ?' check
+
+- basic format checks (carried out by process_field_data subroutine)
+   - 'multiple values allowed ?' check
+   - '!c Applicable ?' check
+   - utf8 format
+   - ascii format (if appropriate)
+   - no leading/trailing spaces at ends of lines
+   - proforma hashing is correct (if appropriate)
+   - warns if ?? present in the field
+
+So BASIC ONLY means that no field-specific format checks are implemented.
+
+PARTIAL
+FULL
+
+
+These last two indicate that in addition to the 'BASIC ONLY' checks, some additional field-specific format checks are implemented, with PARTIAL indicating that not everything that has been specified as required for the field has been implemented.
+
+*.between_field file
+
+indicates the level of field cross-checking (i.e. checks that depend on the values/presence of data in multiple fields) thar are currently implemented.
+
+Each proforma field can contain one of the following:
+
+NA
+(ie. not applicable, when there are no cross-checks required for the field)
+
+NOT YET IMPLEMENTED
+
+PARTIAL
+FULL
+
+These last two indicate that some cross-checking with other fields is implemented for this field, with PARTIAL indicating that not everything that has been specified as required for the field has been implemented.
+

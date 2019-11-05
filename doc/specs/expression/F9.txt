@@ -1,0 +1,45 @@
+
+## ! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+sub TAP_check checks the syntax of the field (for details see docs/specs/TAP_statement.txt).
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+### Updated:
+
+gm170126.

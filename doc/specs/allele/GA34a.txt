@@ -1,0 +1,179 @@
+
+## ! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+
+
+### Multiple values allowed:
+
+Yes
+
+### !c Applicable:
+
+Yes
+Implemented: sub 'changes' in validate_GA34a
+
+### Inclusion essential:
+
+No
+
+### Mandatorially has value:
+
+No
+Implemented
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Hashing allowed:
+
+Yes
+Implemented (and checked proforma parsing code works for hashed proformae).
+
+### Checks:
+
+Implemented as of 131206:
+
+sub 'set_provenance' - checks provenance
+  * only FlyBase is allowed, although this is enforced implicitly rather than explicitly producing an 'invalid provenance' style message (I think its because the regular expression would be too difficult to do the check explicitly - I copied the prototype used for checking G24[abc])
+
+sub 'check_qualifier' - checks qualifier
+
+ * only defined set is allowed, although this is enforced implicitly rather than explicitly producing an 'invalid qualifier' message (for similar reasons as provenance above)
+
+ * error message is printed if no qualifier is present (as it is compulsory for DO annotation lines)
+
+
+sub 'check_ontology_term_id_pair' - checks DO term and id pair, checking:
+
+ * term is a valid DO term.
+ * id is valid DO id.
+ * term and id match each other.
+
+sub 'do_do_evidence' - checks evidence code and any associated data after the code
+
+ * allowed evidence codes are:
+
+
+     * CEC
+     * CEA
+     * modeled
+
+ * if evidence is CEC or CEA
+    * if qualifier is not either 'model of' or 'DOES not model', a warning is issued stating that the evidence cannot be used in combination with that qualifier
+    * if there is info after evidence code, it must start with 'with'
+
+
+ * if evidence is 'modeled'
+
+    * if qualifier is either 'model of' or 'DOES not model', a warning is issued stating that the evidence cannot be used in combination with that qualifier
+    * must be 'by' info after evidence code
+
+  * TEMPORARY additional warning while we get used to the changes in evidence codes and qualifiers (will be removed once we've got used to the new system)
+
+     * if evidence code is one of the 'old' allowed values (inferred from mutant phenotype|IMP|in combination|IC) a warning is issued stating that the code is no longer valid, and suggesting that 'CEA' or 'CEC' is used instead.
+
+
+'do_do_evidence' uses the 'check_evidence_data' subroutine to check the information after the evidence code (see outline below).
+
+
+-----------------------------------------------------------------------------------------------------
+
+Outline of 'check_evidence_data' subroutine structure and checks.
+-----------------------------------------------------------------
+
+* data after the evidence code is stored in $ev_data.  Initially this includes the "ev_suffix" (eg. either 'with' or 'by').
+  * checks that the $ev_suffix is correct for the particular evidence code (uses info stored in symtab.pl to do this)
+    * if not, a warning is printed and no other checks are done
+    * uses sub 'check_stamps' to check for basic formatting errors in any @@ e.g. odd number, empty stamps etc.
+    * if it is correct, the $ev_suffix is removed from $ev_data, which is processed as follows:
+      * $ev_data is separated into one or more $db_group by splitting on ', '
+      * each $db_group must be in one of two formats:
+        * either symbols in @@
+        * or 'database_abbreviation:identifier' or (for symbols) database_abbreviation:<symbol>; database_abbreviation:<ID_for_that_symbol> 
+
+      * if it is @@ format:
+        * checks that anything in @@ is a valid symbol of the appropriate type (gene for GO, allele for DO)
+
+
+      * if it is database_abbreviation format:
+       * each $db_group is separated into one or more $db_object by splitting on '; ' 
+       * each $db_object is separated into $db (database_abbreviation) and $object (either symbol or identifier) by splitting on ':'
+       * checks that $db is valid (i.e. its a listed database in GO_dbxrefs) and prints a warning if not
+       * if $db is either 'FLYBASE' or 'FB' a number of checks happen as detailed below, otherwise no further checks happen
+         * for each $db_group
+             * if 'FLYBASE' or 'FB' are seen more than once, a warning is issued as the format is wrong (there must be one of each in each in the e.g. 'FLYBASE:dpp; FB:FBgn0000490' pair) (uses the $seen_flybase and $seen_fb variables to check this)
+             * if the 'FB' is placed before the 'FLYBASE' a warning is issued (uses the $fb_before_flybase variable to check this)
+             * if the $db_group is a FLYBASE:X; FB:Y pair
+                * if both the FLYBASE and FB bits are correctly present
+                   * warns if the symbol after FLYBASE is not valid (either in chado or made in the record)
+                   * warns if the ID after FB is not a valid chado id
+                   * warns if the symbol and ID do not match each other
+                * else, warns that either the FLYBASE or FB bit is missing
+
+EXAMPLES (once $ev_suffix is removed)
+
+EXAMPLE 1. IGI with FLYBASE:dpp; FB:FBgn0000490
+
+$ev_data = 'FLYBASE:dpp; FB:FBgn0000490'
+	$db_group = 'FLYBASE:dpp; FB:FBgn0000490'
+		$db_object = 'FLYBASE:dpp'
+			$db = 'FLYBASE', $object = 'dpp'
+
+		$db_object = 'FB:FBgn0000490'
+			$db = 'FB', $object = 'FBgn0000490'
+
+
+EXAMPLE 2. ISS with HGNC_gene:ECE1; HGNC:3146, UniProtKB:Q64264
+
+$ev_data = 'HGNC_gene:ECE1; HGNC:3146, UniProtKB:Q64264'
+	$db_group = 'HGNC_gene:ECE1; HGNC:3146'
+		$db_object = 'HGNC_gene:ECE1'
+			$db = 'HGNC_gene', $object = 'ECE1'
+
+		$db_object = 'HGNC:3146'
+			$db = 'HGNC', $object = '3146'
+
+
+	$db_group = 'UniProtKB:Q64264'
+		$db_object = 'UniProtKB:Q64264'
+			$db = 'UniProtKB', $object = 'Q64264'
+
+EXAMPLE 3.  IGI with @dpp@, @wg@
+
+$ev_data = 'IGI with @dpp@, @wg@'
+	$db_group = '@dpp@'
+
+	$db_group = '@wg@'
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+
+
+Checks done in Peeves:
+
+* If there is a '::DONE' style disease flag in P43, there must be a filled in GA34a and/or GA34b field in the curation record.
+
+* If GA34a is filled in anywhere in the curation record, there must be a ::DONE' style disease flag in P43 (unless it is an edit record).
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+doc: reflects what is implemented.
+
+* There is a bug in the section that checks FLYBASE:X; FB:Y pairs in 'check_evidence_data', when the symbol X is a renamed symbol - if you inadvertantly put in a valid FBid but typo in the gene symbol to another symbol that is also in the proforma (e.g. put in Z when you meant X), then even though the renamed symbol and id do not match (as the id belongs to the gene being renamed to X) it does not give a warning.  I can't easily see how to fix this, but since we are moving to use symbols in @@ for GO as well as already using it for DO for FlyBase symbols we shouldn't encounter this in the future as we generally won't be using this section of the subroutine. Plus, I think any mismatches that slip through would be caught be integrity checks in harvard once the data is in the database. gm140429.
+
+
+### Updated:
+
+gm190703.

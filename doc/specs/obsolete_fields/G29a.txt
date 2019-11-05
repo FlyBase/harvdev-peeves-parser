@@ -1,0 +1,52 @@
+
+## ! G29a. Functional complementation/gain of function    [SoftCV] *q :
+
+### Multiple values allowed:
+
+Yes
+
+### !c Applicable:
+
+Yes
+
+### Inclusion essential:
+
+No
+
+### Mandatorially has value:
+
+No
+
+### Checks:
+
+Must be a SoftCV prefix followed by prefix-specific thing.
+
+If SoftCV prefix used is one of these three:
+    Functionally complements:
+    Does not functionally complement:
+    Partially functionally complements:
+
+then the : is followed by a gene symbol that is either already valid or specified as new in that curation record.
+
+If SoftCV prefix used is one of these two:
+    Gain of function effect when expressed in: 
+    No gain of function effect when expressed in: 
+
+then the : is followed by the relevant species in the format T.castaneum, which must be verified against contents of FBsp.obo.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+PROFORMA FIELD OBSOLETED
+
+
+### Updated:
+
+gm131204 (doc for this field moved here from gene.checks.pro).

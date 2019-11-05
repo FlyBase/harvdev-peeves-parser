@@ -1,0 +1,58 @@
+
+## !   MA19c. Position of first base of target sequence in accession      :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+Yes (Implemented): MA19a -> MA19b, MA19c, MA19d, MA19e
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if MA19b is filled in (this is to make it easier to implement checking of fields that can be duplicated).
+
+* sub 'check_positive_integer' checks that the field contains a positive integer.
+
+
+Checks between fields:
+
+
+
+ * MA19a must be filled in if MA19c is filled in (sub compare_duplicated_field_pairs)
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm151001.

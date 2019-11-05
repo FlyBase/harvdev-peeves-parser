@@ -1,0 +1,72 @@
+
+## ! IN7d. Isoform-specific participant(s) with role in interaction ( <link to>  <description>  <role> unspecified role <note> ) :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field (sub validate_and_crosscheck_IN7cd):
+
+- report an error if the line does not match the basic '<link to>  <description>  <role>  <note>' format
+
+- report an error if any of the <link to>, <description> or <role> sub-fields are empty (NB, no error is reported if <note> is empty, as that is optional).
+
+- information in the <link to> subfield must be a valid FBtr or FBpp symbol, either in chado or generated in record.
+
+- 'check_allowed_characters' sub ensures that information in the <description> sub-field matches a limited set of characters - ' is not allowed, so this is not included in the list (**NOTE: may have set this too strict - if get too many false positives, can change set so more characters allowed or change how the check works if its no helpful as is).
+
+
+- if there is any <note> sub-field information, it is checked as follows:
+
+  - sub trim_space_from_ends checks for superfluous white-space at beginning/end of sub-field info
+  - check_stamps checks validity of symbols in stamps
+
+- information in the <role> sub-field:
+
+  - must be a valid PSI-MI term or an error is printed.
+  - if it is a valid PSI-MI term, but does not match one of the commonly used terms listed below, a warning message is printed indicating that the term used is not commonly used for this field:
+
+           unspecified role
+
+  
+
+Between fields:
+
+- <link to> sub-field symbol should be present in the <symbol> sub-field of at least one of the IN6 lines in the proforma
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+### Updated:
+
+gm160104.

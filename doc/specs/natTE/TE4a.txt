@@ -1,0 +1,61 @@
+
+## ! TE4a. Transposon type [CV]                :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* validate_ontology_term_id_field subroutine checks that:
+
+  * each line has the format <term ; id> and is a child of the SO term 'transposable_element' (or the term itself).
+
+  * in detail, it uses 'check_ontology_term_id_pair' to check that:
+
+    * term is valid and from the particular namespace required for the field.
+    * id is valid and from the particular namespace required for the field.
+    * term and id match each other.
+    * term is not flagged with 'do_not_annotate' or 'do_not_manually_annotate' type flags
+
+
+Cross-checks done after parsing the entire proforma:
+
+* Must be filled in for a new insertion (checked using check_filled_in_for_new_feature subroutine).
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160617.

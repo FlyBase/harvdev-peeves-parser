@@ -1,0 +1,49 @@
+
+## ! GG9.  Other related external resource(s) (title (URL))  *E :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+
+### !c Applicable:
+
+Yes (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+* sub 'no_stamps' checks that there are no stamps (so that the text still makes sense if any symbol changes in future)
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented: does not check the format 'title in square brackets, followed by the full URL in parentheses.' i.e. [DB title](url) see DC-569
+
+
+### Updated:
+
+gm151001.

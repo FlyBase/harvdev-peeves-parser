@@ -1,0 +1,45 @@
+
+## ! G10b. Cytological map position, if details unspecified   *c :
+
+### Multiple values allowed:
+
+Yes (separated by returns)
+
+
+### !c Applicable:
+
+Yes
+
+### Inclusion essential:
+
+No
+
+### Mandatorially has value:
+
+No
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Same as for G10a.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm131202 (doc for this field moved here from gene.checks.pro).
+gm151001 (added Dupl. for multiple field info).

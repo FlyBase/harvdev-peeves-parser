@@ -1,0 +1,77 @@
+
+## ! IN1f. Database ID for interaction  :
+
+### Multiple values allowed:
+
+No (Implemented, single_line in loop that processes field)
+
+### !c Applicable:
+
+No (Implemented in validate_IN1f)
+
+
+### Inclusion essential:
+
+Yes (Implemented)
+
+
+### Mandatorially has value:
+
+Yes (Implemented, contains_data in loop that processes field)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+ * in loop that processes field, checks that the value in P22 is a current FBrf (else warns that cannot use interaction proforma for a new publication) (will actually also print this message if use 'unattributed' in P22).
+
+Checks within validate_IN1f:
+
+  * first checks for a trailing hash, and manually removes it to avoid this kind of error breaking lots of downstream checks (does not rely on dehash to do this as happens for other fields, but uses code at the top of validate_primary_proforma_field, presumably because being the primary symbol field, loads of other checks rely on it).
+
+  * report error if the same symbol is given in multiple different proformae within the same record (uses %x1a_symbols hash
+
+According to the specs, the id is supposed to have the following syntax:
+
+<pub ID>-<integer>.<interaction assay abbreviation>.<detection assay abbreviation>
+
+so validate_IN1f also does the following checks:
+
+  * reports if the first part of the id does not match the FBrf given in P22
+
+  * reports if the second part of the id is not a positive integer (technically it will complain if you put a letter or other character such as ^, % etc. instead of a number.  If you put something like "1.2" it won't complain since it will split out the "1" from the ".2" when testing).
+
+
+Cross-checks with other fields:
+
+  * sub 'cross_check_1a_1g' checks the following:
+
+     * If the value given in IN1d is 'y', the value given in IN1f must be held in Chado as a current valid uniquename in the interaction table.
+
+     * If the value given in IN1d is 'n', the value given in IN1f must not be held in Chado as a current valid uniquename in the interaction table.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+Re-used 'Cambridge' style cross-checks for equivalent fields to cross-check IN1d and IN1f.  Gave interaction a fake chadotypes entry with FBid type 'FBin' so that could slot it into the existing code in valid_symbol for other FBid types.  Had to make a special case, since the id actually begins with an FBrf number, to avoid polluting the FBrf part of the symbol table and to store the interaction id in their own slot for checking.
+
+### Status:
+
+I have not implemented checks for the <interaction assay abbreviation>.<detection assay abbreviation> portion.
+
+Have not yet added IN1f to the pre-instantiation as want to do more tests (plus rename and merge fields not yet implemented and was not sure of impact).
+
+### Updated:
+
+gm160520.

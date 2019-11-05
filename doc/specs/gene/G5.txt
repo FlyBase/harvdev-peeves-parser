@@ -1,0 +1,77 @@
+
+## ! G5.   Genetic map position if by recombination mapping   *b :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+
+Checks between fields:
+
+* G5 must be filled in if G6 must be filled in.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented:
+
+Formatting checks within field:
+
+
+These are the checks that should be implemented:Note: This applies to Dmel only.
+When there is any value in this filled it will minimally be one of 
+1-
+2-
+3-
+4-
+[I need to be able to do reg expressions for the next bit - I can't, so
+I made it up and gave examples]
+characters immediately following the - will be '(n1-9).(n1-9)' (which may be followed by a -- for range then another '(n1-9).(n1-9)')
+e.g.
+*b 2-50.1
+*b 3-89--90
+May include L and R - check for other letter usage before doing anything
+
+@@@ pcl The format is fairly easy.  We need to add Y- to the list of permissible prefices.
+Each component in a range is then a floating point number x in the range 0<=x<67 for 1-,
+0<=x<108 for 2-, -1<=x<104 for 3- and may only be 0 for 4-.  Further information can be
+found at http://flybase.bio.indiana.edu/maps/lk/cytotable.txt or its up to date
+equivalent.  The L/R proviso is trickier, and needs further work to specify what's really
+permissible. @@@
+
+NOTE: may be able to use code currently in validate_G7ab to help with the regular expression [gm131213]
+
+Checks between fields:
+
+* If G6 is filled in, G5 must only contain a single value.
+
+### Updated:
+
+gm151001.

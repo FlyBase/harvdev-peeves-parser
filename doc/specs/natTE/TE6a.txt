@@ -1,0 +1,46 @@
+
+## ! TE6a. Reference sequence for complete element :
+
+### Multiple values allowed:
+
+
+
+### !c Applicable:
+
+
+
+### Inclusion essential:
+
+
+
+### Mandatorially has value:
+
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not implemented any checks - just validate_stub subroutine, for the reasons below.
+
+
+Field mapping table says that this field is not stored in chado yet.  Need to find out the implementation status of this field.  Should be removed from master proforma until parsing and storage of data is implemented.
+
+### Updated:
+
+gm151001.

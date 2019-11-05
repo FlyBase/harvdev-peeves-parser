@@ -1,0 +1,47 @@
+
+## ! SF5c. Associated FBtp transgenic_transposon (symbol) :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+### Checks:
+
+Checks within field:
+
+
+* sub 'check_valid_chado_symbol_field' checks that the value is a valid construct symbol (i.e. symbol of type FBtp) **in chado**.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160927.

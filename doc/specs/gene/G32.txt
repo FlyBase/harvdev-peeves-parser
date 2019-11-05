@@ -1,0 +1,50 @@
+
+## ! G32.  Newly assigned annotation ID (CG/CR number) TAKE CARE :
+
+### Multiple values allowed:
+
+No
+
+### !c Applicable:
+
+No
+
+### Inclusion essential:
+
+No
+
+### Mandatorially has value:
+
+No
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+- if G32. is filled in the value must match the regex  C(G|R)[0-9]{5}
+
+- if G32. is filled in, then the value in G32. must NOT also be in G1f.
+
+- if G32. is filled in, G1f. must also be filled in
+
+(there are possibly more, but I can't think of them right now)
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm131204 (doc for this field moved here from gene.checks.pro).
+gm151001 (added Dupl. for multiple field info).

@@ -1,0 +1,52 @@
+## ! MP6.  Year of publication, if MP17 = book       *t :
+
+### Multiple values allowed:
+
+No.
+
+### !c Applicable:
+
+Yes if MP1 contains valid data, otherwise no.
+
+### Inclusion essential:
+
+No.
+
+### Mandatorially has value:
+
+Yes if the value given in MP3 is 'y' and MP17 contains 'book', otherwise no.
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+If a value is given, it must be a four-digit year not later than the
+present year.
+
+If !c is used:  
+
+* MP1 must contain a valid value and
+* the value given in MP6 must be different from the value stored in Chado for the multipub specified by the value given in MP1.
+
+If !c is not used:
+
+* if MP1 contains a valid value, either:
+    * the value given in MP6 must be identical to the value stored in Chado for the multipub specified by the value given in MP1 or
+    * MP6 must contain a valid value and no value is stored in Chado for the multipub specified by the value given in MP1;
+* if MP1 does not contain a valid value, either:
+    * MP6 must be empty or
+    * MP6 must a contain valid value.
+
+### Related fields:
+
+
+### Comments:
+
+### Updated:
+
+gm131204 (removed markdown formatting).
+gm151001 (added Dupl. for multiple field info).
+

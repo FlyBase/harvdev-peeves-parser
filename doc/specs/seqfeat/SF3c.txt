@@ -1,0 +1,51 @@
+
+## ! SF3c. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+No (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* any value must be a valid 'relationship_to_dataset' term (allowed values stored in symtab.pl, note that they are a subset of the current 'library_featureprop type' terms in chado)
+
+Checks between fields:
+
+* If SF3a is filled in, SF3c must be filled in and vice versa.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160519.

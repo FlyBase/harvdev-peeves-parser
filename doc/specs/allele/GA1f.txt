@@ -1,0 +1,70 @@
+
+## ! GA1f.  Action - merge these alleles (symbols)                 :
+
+### Multiple values allowed:
+
+Yes (separated by returns)
+Implemented (in validate_x1f)
+
+### !c Applicable:
+
+No
+Implemented (in validate_x1f)
+
+### Inclusion essential:
+
+No
+Implemented
+
+### Mandatorially has value:
+
+No
+Implemented (in validate_x1f)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field
+
+  * sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if G1e is filled in
+
+  * checks in validate_x1f:
+    * if field contains data, each entry in list must be separated by returns
+    * each entry in list must be a valid allele symbol in Chado
+    * there must be at least two entries (i.e. allele symbols) in the list
+    * there must not be any duplications in the list (checked using check_for_duplicated_lines subroutine)
+
+Cross-checks with other fields
+
+  * checks done after parsing entire proforma
+
+    * 'cross_check_FBid_symbol' (check when x1h filled in)
+
+    * sub 'rename_merge_check' -  GA1e and GA1f must not both contain data
+
+    * sub 'plingc_merge_check' - no !c in proforma if GA1f is filled in
+
+
+    * If GA1f is filled in, GA2c must not be filled in (compare_field_pairs, pair_test = 'single')
+
+
+### Related fields:
+
+
+
+### Comments:
+
+'validate_x1f' subroutine still uses dehash, despite the fact that 'no_hashes_in_proforma' has been added to the basic field checks (before validate_G1e is called).  The dehash is necessary for later cross-checks in the gene proforma (cross-checking G1f data with other fields (G32)), so this should be left in the validate_x1f subroutine.
+
+
+### Status:
+
+
+
+### Updated:
+
+gm151001.

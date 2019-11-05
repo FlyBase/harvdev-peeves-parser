@@ -1,0 +1,75 @@
+## ! G25.  Relationship to clone                         [SoftCV] *s :
+
+### Multiple values allowed:
+
+Yes
+
+### !c Applicable:
+
+Yes if G1a contains valid data and G1g contains 'y', otherwise no.
+
+### Inclusion essential:
+
+No.
+
+### Mandatorially has value:
+
+No.
+
+### Checks:
+
+To be valid, each value must either begin with
+
+* Identified with: followed by a space character followed immediately by text which matches one of the following Perl regular expressions:
+    * /^Nfly-[0-9]{3}$/ or
+    * /^UUGC[0-9]{4}$/ or
+    * /^ESG01[0-9]{1,2}[a-d]\.(B7|B21|E7|E21|TE)(\.[1-5])?_[A-H][0-9]{2}$/ or
+    * /^bs[0-9]{2}[a-h][0-9]{2}$/ or
+    * /^(AA|AF|AI|EK)[0-9]{6}$/ or
+    * /^(AM|AT|CK|EC|EN|EP|FI|GH|GM|HL|IP|LP|LD|RE|RH|RT|SD|UT)[0-9]{5}$/
+* or one of Maps to clone: and Does not map to clone: followed by a space character followed immediately by text which matches one of the following Perl regular expressions:
+    * /^(BACH|BACN|BACR|CH221-|CH223-)[0-9]{2}[A-P][0-9]{2}$/ or 
+    * /^DS0\d{4}$/ or
+    * /^DY\d+$/ or
+    * /^[RN]\d\d-\d\d$/
+
+If !c is used:
+
+* G1a must contain a valid value and G1g must contain 'y'
+* the value(s) given in G25 must be different from the value(s)
+stored in Chado for the gene specified by the value given in
+G1a.
+
+If !c is not used:
+
+* if G1a contains a valid value and G1g contains 'y',
+either:
+    * the value(s) given in G25 must be identical to the
+value(s) stored in Chado for the gene specified by the value given
+in G1a or
+    * G25 must contain one or more valid values and no value is
+stored in Chado for the gene specified by the value given in
+G1a;
+* if G1a does not contain a valid value or G1g does not
+contain 'y', either:
+    * G25 must be empty or
+    * G25 must contain one or more valid values.
+
+### Related fields:
+
+### Comments:
+
+The regular expressions given match the great majority of legitimate
+clone names but not all.  Some values which match a regular expression
+are invalid names for clones.  Inevitably, Peeves must be expected to
+generate false positives and false negatives.  Nonetheless, experience
+has shown that it almost always produces the correct output when
+validating the G25 field
+
+### Status:
+
+
+
+### Updated:
+
+gm131204 (removed markdown formatting).

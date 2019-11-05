@@ -1,0 +1,226 @@
+Renaming fields
+===============
+
+The gene renaming fields are the following.
+
+! G1a.  Gene symbol to use in database                      *a :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge genes                                   :
+! G1g.  Is G1a the valid symbol of a gene in FlyBase?          :
+! G31a. Action - delete gene              - TAKE CARE :
+! G31b. Action - dissociate G1a from FBrf - TAKE CARE :
+
+
+Parsing rules
+=============
+
+The parsing rules are:
+
+a) G1a must always contain a syntactically correct gene symbol.  It
+must not be empty.
+
+b)  G1e must either be empty, or contain a single symbol which must
+exist as a valid gene symbol in Chado.
+
+c) G1f must either be empty or contain a list of at least two gene
+symbols, all different and given one per line, all of which must exist
+as valid gene symbols in Chado.
+
+d)  G1g must contain either y or n.  Its value will be used as a
+data-consistency check on the value given in G1a.
+
+e)  G31a must be blank or contain the single value y.
+
+f)  G31b must be blank or contain the single value y.
+
+g)  At least one of G1e and G1f must be blank.
+
+    - if both are blank, neither a rename nor a merge occurs.
+
+      - if G1a contains a symbol which is a valid gene symbol in Chado
+        the data in the rest of the curation record is used to modify
+        (i.e., augment, alter or remove) data already present in
+        Chado.  In this case, G1g must contain the value y.
+
+      - if G1a does not contain a symbol which is a valid gene symbol
+        in Chado the data in the rest of the curation record is used
+        to specify the data for a newly created gene record.  In this
+        case, G1g must contain the value n.
+
+    - if G1e has a value, the gene with the symbol given in G1e is
+      renamed to the value given in G1a (which must not be the valid
+      symbol of a gene already in Chado).  In this case, G1g must
+      contain the value n.
+
+    - if G1f contains data, all of the genes with the symbols given in
+      G1f are merged into a single gene which will have for its valid
+      symbol the value given in G1a.  In this case, G1g may contain
+      either y or n.  If G1g is y, the value given in G1a must be the
+      valid symbol of a gene already in Chado and this symbol must
+      appear in the list in G1f.  If G1g is n, the value in G1a must
+      not be the valid symbol of a gene already in Chado.
+
+h)  If G31a contains the value y, G1g must also be y and G1a must
+contain a symbol which is the valid symbol of a gene which is already
+in Chado.  All other fields in this proforma, including the
+non-renaming fields, must be blank.
+
+i)  If G31b contains the value y, G1g must also be y and G1a must
+contain a symbol which is the valid symbol of a gene which is already
+in Chado.  All other fields in this proforma, including the
+non-renaming fields, must be blank.
+
+
+Notes for Haiyan and Peeves
+===========================
+
+A new FBgn will need to be allocated whenever G1f contains a list of
+symbols, or whenever G1g contains the value n.  This rule presupposes
+all the other validity conditions are met for the symbols which appear
+in the proforma.
+
+In the case of G1f containing no data and G1g having the value n, the
+gene type (SO information) must be specified in G30.
+
+Peeves will always generate a warning message whenever the data in
+G31a or G31b is y.
+
+
+Examples
+========
+
+1. Create a record for a completely new gene, with symbol NG1
+-------------------------------------------------------------
+
+
+! G1a.  Gene symbol to use in database                      *a :NG1
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge genes                                   :
+! G1g.  Is G1a the valid symbol of a gene in FlyBase?          :n
+! G31a. Action - delete gene              - TAKE CARE :
+! G31b. Action - dissociate G1a from FBrf - TAKE CARE :
+
+In the fullness of time, Harvard will allocate a new FBgn for this
+gene.  The valid symbol for this gene will be NG1 and the data for
+this gene will be set to that specified by the remainder of the
+proforma.
+
+
+
+2. Modify the data pertaining to an existing gene
+-------------------------------------------------
+
+
+! G1a.  Gene symbol to use in database                      *a :EG1
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge genes                                   :
+! G1g.  Is G1a the valid symbol of a gene in FlyBase?          :y
+! G31a. Action - delete gene              - TAKE CARE :
+! G31b. Action - dissociate G1a from FBrf - TAKE CARE :
+
+The existing gene with valid symbol EG1 will retain the same FBgn and
+valid symbol (i.e., EG1) but its data will be modified in the manner
+specified by the remainder of the proforma.
+
+
+
+3. Rename an existing gene
+--------------------------
+
+
+! G1a.  Gene symbol to use in database                      *a :NG2
+! G1e.  Action - rename this gene symbol                       :EG2
+! G1f.  Action - merge genes                                   :
+! G1g.  Is G1a the valid symbol of a gene in FlyBase?          :n
+! G31a. Action - delete gene              - TAKE CARE :
+! G31b. Action - dissociate G1a from FBrf - TAKE CARE :
+
+The existing gene with valid symbol EG2 will retain the same FBgn but
+its valid symbol will become NG2.  EG2 will become an invalid symbol
+for this gene and its data will be modified in the manner specified by
+the remainder of the proforma.
+
+
+
+4. Merge existing genes into an existing gene
+---------------------------------------------
+
+! G1a.  Gene symbol to use in database                      *a :MG1
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge genes                                   :MG1
+MG2
+MG3
+! G1g.  Is G1a the valid symbol of a gene in FlyBase?          :y
+! G31a. Action - delete gene              - TAKE CARE :
+! G31b. Action - dissociate G1a from FBrf - TAKE CARE :
+
+All the data for each of the genes specified in G1f, which must be
+valid symbols of gene present in Chado, will be merged into one gene
+record which will be given the name MG1.  A new FBgn will be allocated
+by Harvard and associated with the gene record just created.  The FBgn
+previously associated with MG1, MG2 and MG3 will become invalid
+uniquenames for the new gene record.  The symbols MG2 and MG3 will
+become invalid symbols for the new gene record.
+
+
+
+5. Merge existing genes into one record, giving the result a new symbol
+-----------------------------------------------------------------------
+
+! G1a.  Gene symbol to use in database                      *a :NG3
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge genes                                   :MG4
+MG5
+MG6
+! G1g.  Is G1a the valid symbol of a gene in FlyBase?          :n
+! G31a. Action - delete gene              - TAKE CARE :
+! G31b. Action - dissociate G1a from FBrf - TAKE CARE :
+
+The data pertaining to the existing genes MG4, MG5 and MG6 will be
+merged together.  The resulting gene will be given a new symbol NG3
+and Harvard will allocate it an FBgn in the fullness of time.  MG4,
+MG5 and MG6 will all become invalid symbols for NG3.  The FBgn
+previously associated with MG4, MG5 and MG6 will all become invalid
+uniquenames for the new gene record.
+
+
+
+6. Delete all data pertaining to a gene
+---------------------------------------
+
+! G1a.  Gene symbol to use in database                      *a :EG3
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge genes                                   :
+! G1g.  Is G1a the valid symbol of a gene in FlyBase?          :y
+! G31a. Action - delete gene              - TAKE CARE :y
+! G31b. Action - dissociate G1a from FBrf - TAKE CARE :
+
+All data pertaining to the existing gene with valid symbol EG3,
+including its symbol, its FBgn and any relationships with any other
+object, will be deleted from Chado.
+
+
+
+7. Dissociate a gene from a publication
+---------------------------------------
+
+! G1a.  Gene symbol to use in database                      *a :EG4
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge genes                                   :
+! G1g.  Is G1a the valid symbol of a gene in FlyBase?          :y
+! G31a. Action - delete gene              - TAKE CARE :
+! G31b. Action - dissociate G1a from FBrf - TAKE CARE :y
+
+The curation record in which this proforma appears must specify a
+valid FBrf in P22.  All data for the gene with valid symbol EG4 which
+is attributed to that specific FBrf (and only that data which is so
+attributed) will be deleted from Chado.
+
+
+
+Invalid proformae
+-----------------
+
+Other than the 7 forms given above, all other forms of the data for
+these six proforma field must generate an error condition and must not
+initiate any changes in the contents of Chado.

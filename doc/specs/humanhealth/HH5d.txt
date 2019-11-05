@@ -1,0 +1,66 @@
+
+## !      HH5d. Action - dissociate accession specified in HH5a/HH5b from this human health model (blank/y) :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+Yes (Implemented): HH5a -> HH5b, HH5c, HH5d
+
+
+### Checks:
+
+Checks within field:
+
+* if HH5d is filled in, 'check_single_allowed_value' subroutine checks that the only allowed value is 'y'
+
+Checks between fields:
+
+* If HH5d is filled in, HH5a must be filled in
+
+* If HH5d is filled in, HH5b must be filled in
+
+
+### Related fields:
+
+
+
+### Comments:
+
+Curation manual details (currently only attached to DC-658, not yet in manual for real) says 'Single OK. Multiple untested.' for the 'Multiple values allowed' section, but have implemented it as a single line field as the only allowed value is 'y'
+
+
+### Status:
+
+If HH5d is filled in, no checks are done to make sure that the accession (specified in HH5a and HH5b) is actually associated with the human health model (specified by HH1f) in chado.
+
+Not yet implemented:
+
+* Since HH5d is a 'correction of existing data' field, it must not be filled in for:
+  * a completely new humanhealth model
+  * (humanhealth does not have a merge field, so no need to test for that case)
+
+(need to work out how to test HH1f field against chado first before can attempt to add this check. When implementing this check, see if can use the existing get_object_status if feed it an empty value in the '$merge' argument, since the HH proforma doesn't have a merge field - it looks as though this should work).
+
+
+
+### Updated:
+
+gm160105.

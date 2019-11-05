@@ -1,0 +1,45 @@
+
+## ! A28.  Sequence accession number - seq cur only   :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+* 'check_site_specific_field' warns if this is filled in by curators not in Harvard.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+No format checking implemented - need to check whether this field should still be in proforma, or removed as harvcur no longer doing accession curation (and we can use a fbxxxx_yy_EPz.accession.tsv file to add/remove accession numbers to/from features).
+
+### Updated:
+
+gm160304.

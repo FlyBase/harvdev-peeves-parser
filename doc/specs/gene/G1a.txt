@@ -1,0 +1,113 @@
+## ! G1a.  Gene symbol to use in FlyBase                       *a :
+
+### Multiple values allowed:
+
+No.
+Implemented ('single_line' subroutine in loop where the field is identified)
+
+### !c Applicable:
+
+No.
+Implemented (in validate_primary_proforma_field)
+
+### Inclusion essential:
+
+Yes.
+Implemented
+
+### Mandatorially has value:
+
+Yes.
+Implemented ('contains_data' subroutine in loop where the field is identified)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+Checks within field:
+
+  *  sub validate_primary_proforma_field (see doc/specs/allele/GA1a.txt for details)
+
+
+Checks between fields:
+
+  * sub 'cross_check_1a_1g' checks the following:
+
+     * If the value given in G1g is 'y', the value given in G1a must be held in Chado as a current valid symbol of type FBgn.
+
+     * If the value given in G1g is 'n', the value given in G1a must not be held in Chado as a current valid symbol of type FBgn.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+Paul had written out the character set in BNF, and it seemed a shame to remove it, so I have put it here.  I am not sure whether it is actually correct mind, particularly the information about <superscript> and <subscript>
+
+To be valid, the value must be a <qualified-symbol> as defined by
+the following BNF, where the term <species-prefix> is defined
+informally as any one synonym of type 'EXACT FBabbreviation' appearing
+in fly_taxonomy.obo with the sole exception of the synonym Dmel.
+
+_(Informally: a symbol may only contain letters of either case,
+digits, characters from the following set: . : - ( )' and Greek
+symbols.  Superscripts, enclosed in [ ] brackets, and subscripts,
+enclosed in [[ ]] brackets, are allowed in gene symbols.  If
+G1a is for a species other than Dmel then the species prefix
+must be valid in_ fly_taxonomy.obo _.)_
+
+-------------------------
+
+<digit> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+
+<roman-letter> ::= a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z
+
+<greek-letter> ::= a | b | g | d | e | z | ee | th | i | k | l | m | n | x | o | p | r | s | t | u | ph | kh | ps | oh | A | B | G | D | E | Z | EE | TH | I | K | L | M | N | X | O | P | R | S | T | U | PH | KH | PS | OH
+
+<greek-entity> ::= &<greek-letter>gr;
+
+<alphanumeric> ::= <roman-letter> | <greek-entity> | <digit>
+
+<punctuation> ::= . | : | - | '
+
+<word> ::= <alphanumeric> | <word><alphanumeric> | <word><punctuation>
+
+<term> ::= <word> | <word>(<word>)
+
+<superscript> ::= [<symbol>]
+
+<subscript> ::= [[<symbol>]]
+
+<symbol> ::= <term> | <symbol><superscript> | <symbol><subscript>
+
+<qualified-symbol> ::= <symbol> | <species-prefix>\\<symbol>
+
+-------------------------
+
+
+There are further constraints on valid gene symbols, for tags and
+fusion genes for instance, which are not captured by the BNF given
+above.  Unfortunately, it is extremely difficult to give them a formal
+definition as they depend on vagaries of the history of genetic
+nomenclature.  In consequence, Peeves will necessarily produce both
+false positives and false negatives.  In practice, these have proved
+to be relatively rare occurrences.
+
+
+### Status:
+
+doc: checked and changed doc so that it reflects what has been implemented
+
+
+
+### Updated:
+
+gm170203.
+
+

@@ -1,0 +1,60 @@
+
+## ! HH1g. Sub-datatype [disease, health-related process] :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* must be one of allowed CV terms for this field
+
+Checks between fields:
+
+
+* If HH1f is 'new' (i.e. brand new human health reports or merges)
+
+    * HH1g must be filled in
+    * HH1g must not be !c
+
+* If HH1f contains an FBhh id (i.e. existing report/rename)
+
+    * HH1g must NOT be filled in, unless HH1g is being !c-ed
+    * If HH1g is being !c-ed, cannot be !c-ed to nothing
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+[NB: cross-checking is in place to cope with FBhh merges, even though at the moment there is no merge field in the proforma, so it should still work if/when a merge field is implemented (code currently assumes it will have the field designation HH3b, so if that is not the case the cross-checking code will need updating to use the actual field designation used for a merge]
+
+
+### Updated:
+
+gm170130.

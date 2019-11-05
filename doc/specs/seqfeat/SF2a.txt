@@ -1,0 +1,57 @@
+
+## ! SF2a. Feature macromolecular category [CV] :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* value must be one of the 'CV' terms (stored in symtab.pl) allowed in this field:
+
+DNA
+RNA
+polypeptide
+
+Checks between fields:
+
+* must be filled in for new entries, avoid subsequent use (sub check_filled_in_for_new_feature, test = 'only')
+
+
+### Related fields:
+
+
+
+### Comments:
+
+Note from Kathleen in PDEV-18: Can !c SF2a as its implemented similar to G30.
+
+### Status:
+
+
+
+### Updated:
+
+gm160113.

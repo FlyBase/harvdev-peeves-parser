@@ -1,0 +1,54 @@
+
+## ! P46.  Graphical Abstract, archived at ftp site :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+### Checks:
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not-yet implemented:
+
+
+Checks within field:
+
+* field should be separable into two components using '/' as the split character
+
+* Should check that filename is not already in chado (associated with *any* FBrf, not just the one in P22)
+
+Checks between fields:
+
+* first part of relative filepath should match the parent journal abbreviation (given either in P2 or in chado), with spaces/periods replaced with an underscore
+
+
+### Updated:
+
+gm180619.

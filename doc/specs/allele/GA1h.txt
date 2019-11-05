@@ -1,0 +1,67 @@
+
+## ! GA1h. FlyBase allele ID (FBal) *z :
+
+### Multiple values allowed:
+
+No
+Implemented (using 'single_line' subroutine)
+
+### !c Applicable:
+
+No
+Implemented
+
+### Inclusion essential:
+
+No
+Implemented
+
+### Mandatorially has value:
+
+Yes if the record is of type user, otherwise no.
+Implemented (in validate_GA1h)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Within validate_GA1h:
+
+* 'FBid_list_check' subroutine checks basic format of value given i.e. it must be an FBid of the expected type (i.e FBal[0-9]{7}) (note that this subroutine allows the value 'new' in addition to FBid format, so an additional check is also performed in 'cross_check_FBid_symbol' to prevent 'new' in this field - not worked out the details yet)
+
+* 'cross_check_FBid_symbol' checks that the value in GA1h must exist in Chado as a valid FBid (uniquename) (there is no check for correct 'type' of uniquename here, that is done in the basic 'FBid_list_check' format check described above).
+
+
+* If this field is filled in in a non-user record, issue a warning as curators don't normally fill this field in.
+
+Cross-checks with other fields:
+
+* 'cross_check_FBid_symbol' subroutine does a lot of field cross-checking and validity checks of field values - see the gene/G1h.txt specs file for details.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+validate_GA1h is set up differently from the other validate_x1h subroutines, with a '$GA1h_ng' variable being present in validate_GA1h, with no equivalent in the other comparable subroutines.
+
+$GA1h_ng is incremented if there are multiple lines in GA1h and if that is the case (i.e. $GA1h_ng is true) then it prevents the cross_check_FBid_symbol being run (to prevent it running when the id field is to broken).  This was presumably done in response to DC-33. However, can't see any reason that this would only be needed for GA1a vs the other x1h fields, so should have been implemented across the board in the same way for all x1h fields.  The comments in ticket DC-33 imply that there was originally a nasty subtle bug in the code, so before changing this in any way (i.e. either adding $GA1h_ng or equivalent to other x1h fields, need to figure out and document exactly what cross_check_FBid_symbol is going first). gm140228.
+
+
+
+
+### Updated:
+
+gm160318.

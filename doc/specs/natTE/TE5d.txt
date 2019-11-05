@@ -1,0 +1,55 @@
+
+## !   TE5d. Description of reported genome(s) :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+
+### !c Applicable:
+
+No (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+Yes (Implemented): TE5c -> TE5d
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if TE5a is filled in (this is to make it easier to implement checking of fields that can be duplicated).
+
+* 'check_stamped_free_text'
+
+Checks between fields:
+
+ * TE5c must be filled in if TE5d is filled in (sub compare_duplicated_field_pairs)
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm151001.

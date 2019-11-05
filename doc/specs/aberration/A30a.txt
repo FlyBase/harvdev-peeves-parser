@@ -1,0 +1,59 @@
+
+## ! A30a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* in sub validate_cvterm_field:
+
+  * check_for_duplicated_lines:
+    * warns if there is a blank line within the data
+    * warns if there are any duplicated values
+
+   * any value must be a valid 'relationship_to_dataset' term (allowed values stored in symtab.pl, note that they are a subset of the current 'library_featureprop type' terms in chado)
+
+Checks between fields:
+
+* A30 must be filled in if A30a is filled in (and vice versa) (sub compare_field_pairs)
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160519.

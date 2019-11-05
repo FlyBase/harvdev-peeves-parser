@@ -1,0 +1,59 @@
+
+## ! GG6c. Key GO term(s) - Biological Process (term ; ID)  *d :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+* validate_ontology_term_id_field subroutine checks that:
+
+  * each line has the format <term ; id>
+
+  * uses 'check_ontology_term_id_pair' to check that:
+      * term is valid and from the particular GO namespace required for the field.
+      * id is valid and from the particular GO namespace required for the field.
+      * term and id match each other.
+      * term is not flagged with 'gocheck_do_not_annotate' or 'gocheck_do_not_manually_annotate'
+
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented:
+
+* If GG1g=n, then GG6c will normally be filled in.
+[May be able to use check_filled_in_for_new_feature for this - has a test of 'advised' already, but that might need tweaking, as at the moment the 'advised' style text is only used if the style of the proforma is opposite to that of the curator - so need to check that removing site-specific checking wouldn't break what is currently implemented (looks ok)]
+
+### Updated:
+
+gm151001.

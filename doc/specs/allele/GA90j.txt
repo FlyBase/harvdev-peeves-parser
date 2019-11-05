@@ -1,0 +1,59 @@
+
+## ! GA90j. Comments concerning sequence location :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+Yes (Implemented): GA90a -> GA90b, GA90c, GA90d, GA90e, GA90f, GA90g, GA90h, GA90i, GA90j, GA90k
+
+
+### Checks:
+
+Checks within field:
+
+ * sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if GA90j is filled in (this is to make it easier to implement checking of fields that can be duplicated).
+
+* 'check_site_specific_field' warns if this is filled in by curators not in Harvard.
+
+* 'check_stamped_free_text'
+
+Checks between fields (for each duplication of the GA90a-GA90k unit):
+
+ * GA90a must be filled in if GA90j is filled in (sub compare_duplicated_field_pairs)
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented:
+
+* This field should only be filled in for Dmel alleles ??
+
+### Updated:
+
+gm151001.

@@ -1,0 +1,62 @@
+
+## ! HH3a. Action - rename this disease (HH1b is rename)  :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field
+
+
+  * sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if HH3a is filled in
+
+
+* Value must be a valid humanhealth name in chado (in validate_rename)
+
+
+Cross-checks with other fields:
+
+   * subroutine 'cross_check_harv_style_symbol_rename_merge_fields' - see MA1f.txt for details of what this subroutine does. Note, that for HH, the merge field is not yet implemented or in the proforma.  The proforma parsing software has 'HH3b' as a place holder for that field, so made a dummy empty @HH3b_list array so that I could re-use the common 'cross_check_harv_style_symbol_rename_merge_fields' subroutine to cross-check HH3a, HH1f and HH1b
+
+
+  * name in HH1b cannot be the same as in HH3a (in validate_rename)
+
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+### Updated:
+
+gm160309.

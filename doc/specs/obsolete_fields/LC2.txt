@@ -1,0 +1,51 @@
+
+## ! LC2.  Type of dataset [CV] :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+Checks between fields:
+
+* sub 'check_filled_in_for_new_feature' - must be filled in for new feature, and must not be filled in for existing feature
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented:
+
+Checks within field: cv term that ends up in library.type_id. See if can get it out of chado to store in symtab.pl (looks like stored as cv_id = '15' name 'library type'), then implement checking using validate_cvterm subroutine.
+
+
+
+
+### Updated:
+
+gm151001.

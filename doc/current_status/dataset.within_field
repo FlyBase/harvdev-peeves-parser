@@ -1,0 +1,73 @@
+! DATASET/COLLECTION PROFORMA   Version 4.4   09 Feb 2016
+!
+! LC1f. Database ID for dataset  :FULL
+! LC1a. Symbol                   :FULL
+! LC1b. Symbol used in paper/source  :FULL
+! LC1d. Nickname [for labels]        :FULL
+!
+! LC6g. Dataset title  :FULL
+! LC6a. Description [free text]  :FULL
+! LC2a. Type of dataset entity [CV term ; ID]  :FULL
+! LC2b. Type of dataset data [CV term ; ID]    :FULL
+! LC3. Dataset belongs_to this project  :FULL
+!
+! LC14a. Dataset assay/collection is assay_of this biosample  :FULL
+! LC14b. Dataset result is analysis_of  :FULL
+! LC14c. Dataset uses_reagent  :FULL
+! LC14d. Dataset technical_reference_is  :FULL
+! LC14e. Dataset biological_reference_is  :FULL
+! LC14f. Dataset replaced_by  :FULL
+! LC14g. Dataset genome_reference_is  :FULL
+! LC14h. Reference FlyBase gene model annotation set [free text]  :PARTIAL
+! LC3a. Action - rename this dataset symbol    :FULL
+! LC3b. Action - merge these datasets      :FULL
+! LC3c. Action - delete dataset record [y/blank]   :FULL
+! LC3d. Action - dissociate LC1f from FBrf [y/blank]  :FULL
+! LC3e. Action - dissociate LC1f from this dataset  :FULL
+!
+! LC13a. Key GO term(s) - Cellular Component [CV term ; ID]  :FULL
+! LC13b. Key GO term(s) - Molecular Function [CV term ; ID]  :FULL
+! LC13c. Key GO term(s) - Biological Process [CV term ; ID]  :FULL
+! LC13d. Key SO term(s) [CV term ; ID]  :PARTIAL:partial because want to implement robust check to cope with so.obo vs chado SO inconsistency
+! LC4a. Species of derivation [CV]  :FULL
+! LC4i. Other species of interest [CV]  :FULL
+! LC4h. Strain used [symbol]    :PARTIAL:only partial because checking of strain proformae not yet implemented
+! LC4b. Strain used [free text]  :FULL
+! LC4f. Genotype used [free text]  :BASIC ONLY
+! LC4g. Stage and tissue (<e>  <t>  <a>  <s>  <note>)  :FULL
+!
+! LC4j. Tissue of interest [CV]  :FULL
+! LC4k. Stage of interest [CV]   :FULL
+! LC4e. Cell line used [symbol]  :FULL
+!
+! LC12a. Experimental entity [FBid]  :FULL
+! LC12b. Type of experimental entity [CV]  :FULL
+! LC12c. Action - delete the dataset-feature relationship specified in LC12a/LC12b (y/blank)  :FULL
+!
+! LC6d. Dataset/collection members stored in database [Y/N]  :FULL
+! LC6e. Number of entities in dataset/collection [if LC6d is N]   :FULL
+! LC6f. Comment on number of entities in dataset/collection [free text]  :FULL
+!
+! LC11m. Experimental protocol - dataset [CV term ; ID]  :FULL
+! LC11j. Experimental protocol - data analysis is secondary analysis (y/blank)  :FULL
+! LC11a. Experimental protocol, source isolation and prep [free text]  :FULL
+! LC6b. Experimental protocol, dataset/collection preparation [free text]  :FULL
+! LC11c. Experimental protocol, mode of assay [free text]  :FULL
+! LC11e. Experimental protocol, data analysis [free text]  :FULL
+!
+! LC7a. Types of additional data available [free text]  :FULL
+! LC7f. Associated files, archived at ftp site [SoftCV]  :BASIC ONLY
+! LC7c. Additional data at [database name]  :FULL
+! LC99a. DataSet Accession Number [dbxref.accession]  :BASIC ONLY
+! LC99b. Database name [database name]  :FULL
+! LC99c. DataSet title [free text]  :FULL
+! LC99d. Action - dissociate accession in LC99a/LC99b from dataset in LC1f/LC1a? (y/blank)  :FULL
+!
+! LC8a. Created by [database name]        :FULL
+! LC8c. Created by [free text]      :FULL
+! LC8b. Available from [database name]    :FULL
+! LC8d. Available from [free text]  :FULL
+!
+! LC9. Additional comments  :FULL
+! LC9a. Structured table [SoftCV]  :BASIC ONLY
+! LC10. Internal notes      :FULL

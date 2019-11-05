@@ -1,0 +1,56 @@
+
+## ! TO6b. FlyBase database symbol (DB1a) for accession in TO6a     :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+Yes (Implemented): TO6a -> TO6b, TO6c, TO6d
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if TO6b is filled in (this is to make it easier to implement checking of fields that can be duplicated).
+
+* sub validate_cvterm_field checks that the value is a valid database name in chado.
+
+
+Checks between fields:
+
+* If TO6a is filled in TO6b must be filled in (and vice versa)
+
+* If TO6d is filled in, TO6b must be filled in
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+### Updated:
+
+gm171114.

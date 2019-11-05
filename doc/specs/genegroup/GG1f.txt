@@ -1,0 +1,80 @@
+
+## ! G1f.  Action - merge these genes (symbols)                   :
+
+### Multiple values allowed:
+
+Yes (separated by returns)
+Implemented (in validate_x1f)
+
+
+### !c Applicable:
+
+No
+Implemented (in validate_x1f)
+
+### Inclusion essential:
+
+No
+Implemented
+
+### Mandatorially has value:
+
+No
+Implemented (in validate_x1f)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+
+Checks within field
+
+  * sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if G1e is filled in
+
+  * checks in validate_x1f:
+    * if field contains data, each entry in list must be separated by returns
+    * each entry in list must be a valid gene group symbol in Chado
+    * there must be at least two entries (i.e. gene group symbols) in the list
+    * there must not be any duplications in the list (checked using check_for_duplicated_lines subroutine)
+
+Cross-checks with other fields
+
+  * checks done after parsing entire proforma
+
+    * 'cross_check_FBid_symbol' (check when x1h filled in) (not implemented yet)
+
+    * If GG1f is filled in, GG2a must be filled in (checked using proformae in records2test/GG2 - works for both unhashed and hashed proformae)
+
+    *  'compare_field_pairs': If GG1f is filled in, GG2c must NOT be filled in (checked using proformae in records2test/GG2 - works for both unhashed and hashed proformae)
+
+    * sub 'rename_merge_check' -  G1e and G1f must not both contain data
+
+    * sub 'plingc_merge_check' - no !c in proforma if G1f is filled in
+
+
+
+    
+### Related fields:
+
+
+
+### Comments:
+
+
+ # NOTE - this field has been removed from master.pro as merging not implemented in proforma parsing software. Have left checks in Peeves (would be hard to untangle as the merge field is a primary field) but added warning that is printed if field is filled in.
+
+
+'validate_x1f' subroutine still uses dehash, despite the fact that 'no_hashes_in_proforma' has been added to the basic field checks (before validate_G1e is called).  The dehash is necessary for later cross-checks in the gene proforma (cross-checking G1f data with other fields (GG2 using compare_field_pairs)), so this should be left in the validate_x1f subroutine (the alternative is to turn validate_x1f to something which is called via process_field_data, in which case the dehash can probably be taken out as there is already a dehash in process_field_data, but would need to check
+
+### Status:
+
+doc: checked that doc reflects what has been implemented
+
+
+### Updated:
+
+gm151001.

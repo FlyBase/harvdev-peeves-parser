@@ -1,0 +1,73 @@
+
+## ! MS1a. Segment symbol to use in database       :
+
+### Multiple values allowed:
+
+No (Implemented: 'single_line' subroutine in loop where the field is identified)
+
+### !c Applicable:
+
+No (Implemented: in validate_primary_proforma_field)
+
+### Inclusion essential:
+
+Yes (Implemented)
+
+### Mandatorially has value:
+
+Yes (Implemented: 'contains_data' subroutine in loop where the field is identified)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+Checks within field:
+
+  *  sub validate_primary_proforma_field (see doc/specs/allele/GA1a.txt for details)
+
+Cross-checks with other fields (done after parsing of entire proforma):
+
+  * subroutine 'cross_check_harv_style_symbol_rename_merge_fields' - see MA1f.txt for details of what this subroutine does.
+
+  * the format of the symbol in MA1a is checked using the subroutine 'check_construct_symbol_format' (this is done at the end of the proforma so that the parts of the symbol can be compared with entries in other inter-related fields - these checks are detailed in the doc file of the relevant fields).  The subroutine returns the following values to allow checking with the inter-related fields: full symbol of nat_te that is the origin of the ends of the construct.
+
+  * cross-checks with MS16 - see MS16.txt for details.
+
+Details of subroutines used:
+
+  * 'check_construct_symbol_format' does the following
+
+    * checks that the symbol contains only those characters allowed for an insertion (see %mapping_table at the top of check_allowed_characters in tools.pl for current list of allowed characters). At the moment the entire symbol is checked.
+    
+    * checks that any greek symbols are not malformed
+
+    * checks for basic construct format - regular expression is =~ /^([^{}]{1,})\{([^{}]{1,})\}$/
+
+    * uses the 'check_natTE_end' subroutine to check the symbol that indicates the transposable element ends in the construct
+
+    * returns the full symbol of the  nat_te that is the origin of the ends of the construct (which can be used to check values in inter-related fields)
+
+
+### Related fields:
+
+
+
+### Comments:
+
+At the moment, the 'check_construct_symbol_format' symbol is run on all entries, in MS1a, not just those that are new or rename of existing symbol.  This makes the logic easier and avoids repeating code in the cross-checks between different fields, but if it turns out to generate too many false-positives messages this might need changing.
+
+
+### Status:
+
+
+
+NOTE: at the moment, Peeves only knows about FBtp and not about the other types of feature (FBmc or FBms) which can be put in a moseg.pro, so if a proforma contains information about an FBmc or FBms, there will be both false-positive and missing error messages.
+
+
+### Updated:
+
+gm170206.

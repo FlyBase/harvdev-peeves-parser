@@ -1,0 +1,60 @@
+
+## ! TE1b. gen.natTE symbol used in reference     :
+
+### Multiple values allowed:
+
+Yes
+Implemented
+
+### !c Applicable:
+
+Yes
+Implemented (in elsif loop for field)
+
+
+### Inclusion essential:
+
+Yes
+Implemented
+
+### Mandatorially has value:
+
+No - see below
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+Checks within field:
+
+* sub 'validate_synonym_field' (called in elsif loop for field):
+
+  * uses 'check_for_duplicated'_lines to check that there are no duplicated synonyms and no empty lines
+
+  * warns if the synonym is composed entirely of punctuation character(s).
+
+  * warns if the field is filled in for a 'user' or 'auto' curation record.
+
+Checks between field:
+
+* sub 'check_unattributed_synonym_correction' checks that the valid symbol is in the symbol synonym field when !c-ing that field or the 'unattributed' pub (this is required, else the object ends up with no valid symbol in chado!)
+
+
+
+### Related fields:
+
+
+### Status:
+
+
+### Comments:
+
+
+
+### Updated:
+
+gm170420.

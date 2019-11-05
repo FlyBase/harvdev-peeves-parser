@@ -1,0 +1,56 @@
+
+## !      HH14c. External link to BDSC - title/description of specific page :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+Yes (Implemented): HH14a -> HH14b, HH14c, HH14c
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if HH14c is filled in (this is to make it easier to implement checking of fields that can be duplicated).
+
+
+Checks between fields:
+
+
+* If HH14c is filled in, HH14a must be filled in
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+No within field format checks implemented
+
+
+### Updated:
+
+gm160105.

@@ -1,0 +1,68 @@
+! ALLELE PROFORMA                        Version 62: 27 Jun 2019
+!
+! GA1h. FlyBase allele ID (FBal) *z :FULL
+! GA1a.  Allele symbol to use in FlyBase                        *A :FULL
+! GA1b.  Allele symbol(s) used in reference                     *i :FULL
+! GA1e.  Action - rename this allele symbol                        :FULL
+! GA1f.  Action - merge these alleles (symbols)                    :FULL
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :FULL
+! GA2a.  Action - allele name to use in FlyBase                 *e :FULL
+! GA2b.  Allele name(s) used in reference                       *V :NA
+! GA2c.  Action - rename this allele name                          :FULL
+! GA31.  Etymology                                              *u :NA
+! GA32a. Action - obsolete GA1a in FlyBase (y)         TAKE CARE :NOT YET IMPLEMENTED
+! GA32b. Action - dissociate GA1a from reference (y)   TAKE CARE :PARTIAL
+! GA4.   Allele class [CV]                                  *k :NA
+! GA35.  Transgenic product class [CV]     :NOT YET IMPLEMENTED
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :NA
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :NA
+! GA7a.  Phenotype [free text]                            *k :NA
+! GA28a. Genetic interaction (class, effect) [CV]           *S :FULL
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :FULL
+! GA28c. Genetic interaction [free text]                    *S :NA
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :FULL
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :FULL
+! GA29c. Xenogenetic interaction [free text]              *j :NA
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :NA
+! GA22.  Interallelic complementation or rescue data [free text] *Q :NA
+! GA10a. Associated construct                                *I :PARTIAL:DC-497
+! GA10b. Construct symbol(s) used in reference               *L :NOT YET IMPLEMENTED
+! GA10c. Associated insertion - G1a is outwith insert      *G :PARTIAL:DC-577,DC-497
+! GA10d. Insertion symbol(s) used in reference             *N :NOT YET IMPLEMENTED
+! GA10e. Associated insertion - G1a is inside insert    *G :PARTIAL:DC-577,DC-497
+! GA10f. Insertion symbol(s) used in reference          *N :NOT YET IMPLEMENTED
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :NA
+! GA8.   Mutagen [CV]                                  *o :PARTIAL
+! GA36. Allele/construct is associated with disease? (y or blank) :NA
+! GA11.  Progenitor genotype                           *O :NOT YET IMPLEMENTED
+! GA23a. Notes on origin [SoftCV]                      *R :NA
+! GA23b. Notes on origin [free text]                   *R :NA
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :NOT YET IMPLEMENTED
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :FULL
+! GA30a. Tagged with experimental tool (FBto symbol)        :FULL
+! GA30b. Other experimental tools carried (FBto symbol)     :FULL
+! GA30c. Encoded experimental tool (FBto symbol)  :FULL
+! GA30d. Encoded experimental tool [CV]           :FULL
+! GA30e. Regulatory region(s) present (symbol)  :FULL
+! GA30f. Propagate uses from construct ? (n or blank)  :FULL
+! GA35. Transgenic product class [CV] :NOT YET IMPLEMENTED
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :FULL
+! GA34b. DO - Human disease model comment                     *p :FULL
+! GA34c. DO - Human disease model internal note               *w :NA
+! GA13.  Miscellaneous comments                        *u :NA
+! GA20.  GA1a stated to be lost?                         *v :NA
+! GA33.  Sequence accession number - seq cur only             :NA
+! GA90a. Allele to which GA90b-k apply [dupl for multiple] :PARTIAL
+! GA90k. Molecular nature (type) of lesion :PARTIAL
+! GA90b. Genomic location of lesion :PARTIAL
+! GA90c. Genome release number for entry in GA90b :PARTIAL
+! GA90i. Orientation relative to chromosome (+/-) :PARTIAL
+! GA90d. NA change "C to T" (location in GA90b) :PARTIAL
+! GA90e. Reported NA change :PARTIAL
+! GA90f. Reported PR change           :PARTIAL
+! GA90g. Computed PR change (derived) :PARTIAL
+! GA90h. Linked to restriction fragment :PARTIAL
+! GA90j. Comments concerning sequence location :PARTIAL
+! GA91. From dataset/collection (symbol) :FULL
+! GA91a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :FULL
+! GA14.  Internal notes  *W :NA

@@ -1,0 +1,55 @@
+## ! P21.  Parent multipub ID               *W :
+
+### Multiple values allowed:
+
+No.
+
+### !c Applicable:
+
+Yes if P22 contains data, otherwise no.
+
+### Inclusion essential:
+
+Yes.
+
+### Mandatorially has value:
+
+In some circumstances.  See validation of the P2 field for details.
+
+### Checks:
+
+See validation of the P2 field for the checks that are required for this field in conjuction with those for P22 and P2.
+
+### Error messages
+
+If present:  
+P21: Invalid proforma field.  
+  
+If you have multiple values:
+P21:  Can not have multiple data <wot u put>  
+  
+If you have multiple values:
+P21: You seem to have an FBrf in the multipub ID field
+
+### Related fields:
+
+[P22][P22], [P2][P2] and [MP1][MP1].
+
+### Comments:
+
+When the 'FBmp' uniquename type is introduced into Chado the value
+required in P21 will change appropriately.
+
+The cross-check between P21, P2 and P22 is being
+re-evaluated and may be replaced by a much simpler check in future.
+If the simpler check is adopted the P21 field may be removed
+from the publication proforma.
+
+### Status:
+
+PROFORMA FIELD OBSOLETED
+
+### Updated:
+
+gm131204 (removed markdown formatting).
+

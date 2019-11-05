@@ -1,0 +1,70 @@
+
+## ! GA10b. Construct symbol(s) used in reference             *L :
+
+### Multiple values allowed:
+
+Yes
+Implemented
+
+
+### !c Applicable:
+
+No
+Implemented (in elsif loop for field)
+
+### Inclusion essential:
+
+No
+Implemented
+
+### Mandatorially has value:
+
+No
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+Checks within field:
+
+* sub 'validate_synonym_field' (called in elsif loop for field):
+
+  * uses 'check_for_duplicated'_lines to check that there are no duplicated synonyms and no empty lines
+
+  * warns if the synonym is composed entirely of punctuation character(s).
+
+  * warns if the field is filled in for a 'user' or 'auto' curation record.
+
+
+Cross-checks between fields: [not yet implemented]
+
+* If GA10a contains more than one value, GA10b must NOT be filled in.
+
+* If GA10b is filled in, GA10a must be filled in.
+
+* See Status section of GA1b.txt for description of bug in cross-checking between GA1b, GA2b and GA10 fields [gm140501]
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+See comments above for what is not yet implemented.
+
+
+
+
+
+### Updated:
+
+gm170420.

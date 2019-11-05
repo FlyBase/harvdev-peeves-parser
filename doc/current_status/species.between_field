@@ -1,0 +1,10 @@
+! SPECIES PROFORMA     Version 3:  18 Dec 2015
+! SP1a. Genus to use in FlyBase (organism.genus)     :PARTIAL
+! SP1b. Species to use in FlyBase (organism.species) :PARTIAL
+! SP1g. Is SP1a+SP1b already in FlyBase? (y/n) :FULL
+! SP2. Abbreviation to use in FlyBase (organism.abbreviation) :FULL
+! SP3a. Common name (organism.common_name) :FULL
+! SP3b. Action - change existing organism.common_name? (blank/y) :FULL
+! SP4. Taxon ID :FULL
+! SP5. Taxgroup [SoftCV] :NOT YET IMPLEMENTED
+! SP6. Official database for species :FULL

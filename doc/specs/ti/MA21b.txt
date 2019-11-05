@@ -1,0 +1,55 @@
+
+## !   MA21b. Genome release number for entry in MA21a        :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+?? Have implemented as No (need to check with Kathleen ??)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+checks within field
+
+* must be the number of the current genome release (stored in symtab.pl).
+
+
+Cross-checks with other fields
+
+* if MA21b is filled in, MA21a must be filled in
+
+
+
+### Related fields:
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented: 
+
+* This field should only be filled in for insertions into the Dmel genome ??
+
+
+
+### Updated:
+
+gm151001.

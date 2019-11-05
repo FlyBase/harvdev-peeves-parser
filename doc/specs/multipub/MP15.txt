@@ -1,0 +1,59 @@
+## ! MP15. ISSN/ISBN                                 *I :
+
+### Multiple values allowed:
+
+Yes.  Each value must be on a separate line.
+
+### !c Applicable:
+
+Yes if MP17 contains either 'book' or 'journal', otherwise no.
+
+### Inclusion essential:
+
+No.
+
+### Mandatorially has value:
+
+Yes if MP3 contains 'y' and MP17 contains either 'book' or
+'journal', otherwise no.
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+To be valid:
+
+* if MP17 contains 'book', any value given must be a syntactically correct International Standard Book Number (ISBN) (see http://en.wikipedia.org/wiki/ISBN), also known as an ISBN-13.  An ISBN-13 contains 13 decimal digits, the last of which must match the checksum calculated according to the standard algorithm given here: http://en.wikipedia.org/wiki/ISBN#Check_digit_in_ISBN-13.  If a 10-character ISBN-10 is given, Peeves must check it for syntactic correctness according to the algorithm given here: http://en.wikipedia.org/wiki/ISBN#Check_digit_in_ISBN-10 and, if it passes the check, issue a warning which contains the corresponding ISBN-13;
+* if MP17 contains 'journal', any value given must be a syntactically correct International Standard Serial Number (ISSN), see http://en.wikipedia.org/wiki/International_Standard_Serial_Number;
+* if MP17 contains any other value, this field must be left empty.
+
+If !c is used:  
+
+* MP1 must contain a valid value and
+* the value(s) given in MP15 must be different from the value(s) stored in Chado for the multipub specified by the value given in MP1.
+
+If !c is not used:
+
+* if MP1 contains a valid value, either:
+    * the value(s) given in MP15 must be identical to the value(s) stored in Chado for the multipub specified by the value given in MP1 or
+    * MP15 must contain one or more valid values and no value is stored in Chado for the multipub specified by the value given in MP1;
+* if MP1 does not contain a valid value, either:
+    * MP15 must be empty or
+    * MP15 must contain one or more valid values.
+
+### Related fields:
+
+
+### Comments:
+
+Multiple ISBN values may be used, for example, for the hardback and softback printings of the same book.
+
+Multiple ISSN values may be used, for example, for the electronic and print versions of the same journal.
+
+### Updated:
+
+gm131204 (removed markdown formatting).
+gm151001 (added Dupl. for multiple field info).

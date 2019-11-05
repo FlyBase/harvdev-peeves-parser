@@ -1,0 +1,53 @@
+! HUMAN HEALTH MODEL PROFORMA   Version 2.1:  23 Aug 2019
+!
+! HH1f. Database ID for disease or health issue  :FULL
+! HH1b. Full name to use in database  :FULL
+! HH1e. Additional synonyms (free text)   :NA
+!
+! HH1g. Sub-datatype [disease, health-related process] :FULL
+! HH2a. Category [parent entity, sub-entity, specific entity, group entity] :PARTIAL:DC-620
+! HH2b. Parent entity (if HH2a = sub-entity)  :PARTIAL:DC-621
+!
+! HH2c. OMIM phenotype number :NA
+! HH2d. DOID  :NA
+!
+! HH3a. Action - rename this disease (HH1b is rename)  :FULL
+! HH3c. Action - delete disease record ("y"/blank)  :NOT YET IMPLEMENTED
+! HH3d. Action - dissociate HH1f from FBrf ("y"/blank)  :PARTIAL
+!
+! HH15. Overview of Drosophila model (free text)  :NA
+!
+! HH4h. Description of process (free text) :NA
+! HH4a. Description/Symptoms and phenotype (free text)  :NA
+! HH4b. Description/Genetics (free text)  :NA
+! HH4c. Description/Cellular phenotype and pathology (free text)  :NA
+! HH4g. Description/Molecular information (free text)  :NA
+!
+! HH4f. Related human health entity :NA
+!
+! HH5a. External link - accession number (repeat for multiple ) :FULL
+!      HH5b. External link - FB database ID (DB1a) :FULL
+!      HH5c. External link - title/description of specific accession :FULL
+!      HH5d. Action - dissociate accession specified in HH5a/HH5b from this human health model (blank/y) :PARTIAL
+!
+! HH6c. Ordered list of OMIM phenotype entries (sep. by returns) :NOT YET IMPLEMENTED
+!
+! HH7a. Human gene(s) implicated (FB symbol, Hsap\xxx) :PARTIAL
+! HH7e. Human gene(s) implicated (HGNC accession number) :PARTIAL
+!     HH7d. Orthologous Dmel gene(s) [usu. DIOPT] :PARTIAL
+!     HH7c. Comments on orthologs (free text) :PARTIAL
+!     HH7f. Action - dissociate accession specified in HH7e from this human health model (blank/y) :NOT YET IMPLEMENTED
+! HH7b. Other mammalian genes used  (in FB as transgene) :PARTIAL
+!
+! HH8a. Dmel gene(s) implicated (repeat for multiple) :PARTIAL
+!      HH8c. Comments on orthologs (free text) :PARTIAL
+!      HH8d. Action - dissociate gene specified in HH8a from this human health model (blank/y) :NOT YET IMPLEMENTED
+! HH8e. Synthetic gene(s) used (symbol used by FB) :PARTIAL
+!
+! HH14a. External link to BDSC - page ID (repeat for multiple) :FULL
+!      HH14b. External link to BDSC - FB database ID (DB1a) :FULL
+!      HH14c. External link to BDSC - title/description of specific page :FULL
+!      HH14d. Action - dissociate accession specified in HH14a/HH14b from this human health model (blank/y) :PARTIAL
+!
+! HH20. Internal notes :NA
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

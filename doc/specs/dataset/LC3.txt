@@ -1,0 +1,60 @@
+
+## ! LC3. Dataset belongs_to this project  :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* check_valid_symbol_field does:
+
+   * check_for_duplicated_lines:
+
+    * warns if there is a blank line within the data
+    * warns if there are any duplicated values
+
+   * checks value is a valid  dataset/collection (i.e. FBlc) symbol in chado/generated in the record
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented: 
+
+Cross-checks between fields:
+
+- The value in LC3 must not be the same as the value in LC1a (cannot just use compare_field_pairs as multiple values are allowed in LC3 - use compare_pub_fbrf_containing_fields as a template to make generic subroutine)
+
+
+- The value in LC3 must be of type "project" or "result" only.
+
+### Updated:
+
+gm160518.

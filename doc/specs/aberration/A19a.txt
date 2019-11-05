@@ -1,0 +1,48 @@
+
+## ! A19a. Phenotype, in combination with other abs [SoftCV]            *T :
+
+### Multiple values allowed:
+
+Yes
+
+### !c Applicable:
+
+Yes
+
+### Inclusion essential:
+
+No
+
+### Mandatorially has value:
+
+No
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Must begin with SoftCV:
+
+Inferred to overlap with:
+
+e.g.
+Inferred to overlap with: @Df(1)17-25@.
+
+That which follows the : must both be surrounded by @@ and be a valid FBab symbol.
+Additionally, the whole line must end in a '.'.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Updated:
+
+gm131202 (doc for this field moved here from aberration.checks.pro).
+gm151001 (added Dupl. for multiple field info).

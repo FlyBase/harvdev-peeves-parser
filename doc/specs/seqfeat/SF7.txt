@@ -1,0 +1,48 @@
+
+## ! SF7. Information on availability :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+### Checks:
+
+Checks within field:
+
+- sub check_stamped_free_text
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+At the moment the field is just checked using the 'check_stamped_free_text' subroutine, but I wonder if it should be made more like other 'Information on availability' fields, where the only allowed value is 'Stated to be lost.' - need to check with Gil
+
+
+
+### Updated:
+
+gm160304.
