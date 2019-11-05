@@ -1,0 +1,66 @@
+OBO CHECKING LOG
+
+Filename: go-basic.obo
+DATESTAMP: 
+version:2019-10-07
+OK for retrofit: y
+OK for loading to chado: y
+OK for using on website: ?
+Comments:New GO moved to trunk
+
+Filename: fly_anatomy.obo
+DATESTAMP: 
+data-version: 2019-09-05
+CVS version number:
+OK for retrofit: y
+OK for loading to chado: y
+OK for using on website: y
+Comments: 2019-09-05 version of fbbt moved to trunk
+
+Filename: fly_development.obo
+DATESTAMP: 21:10:2019 12:49
+CVS version number: 
+OK for retrofit? y
+OK for loading to chado? y
+OK for using on website? y
+Comments: new fly_development.obo moved to trunk
+
+Filename: flybase_controlled_vocabulary.obo
+DATESTAMP: date:  11:07:2019 15:52
+CVS version number:
+OK for retrofit: y
+OK for loading to chado: y
+OK for using on website: y
+Comments: Moving new fbcv to trunk
+
+Filename: so.obo
+DATESTAMP: 
+CVS version number: 
+OK for retrofit?
+OK for loading to chado?
+OK for using on website?
+Comments:
+
+Filename: doid.obo
+DATESTAMP: 16:09:2019 07:28
+data-version: releases/2019-09-16
+OK for retrofit: y
+OK for loading to chado: y
+OK for using on website: y
+Comments: moving new doid.obo to trunk
+
+Filename: flybase_stock_vocabulary.obo
+DATESTAMP: 03:05:2018 10:31
+data-version: 2018-05-03
+OK for retrofit: y
+OK for loading to chado: y
+OK for using on website: ?
+Comments:
+
+Filename: psi-mi.obo
+DATESTAMP: 20:08:2015 13:02
+CVS version number: 2.5.5
+OK for retrofit?
+OK for loading to chado?
+OK for using on website?
+Comments: Just added psi-mi.obo v2.5.5 to this log for the first time. 150820gds.
