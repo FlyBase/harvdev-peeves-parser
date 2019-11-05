@@ -1,0 +1,100 @@
+## ! P38.  Associated file, deposited to archive                *K :
+
+### Multiple values allowed:
+
+Yes.
+
+### !c Applicable:
+
+Yes.
+
+### Inclusion essential:
+
+No.
+
+### Mandatorially has value:
+
+No.
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Each value must:
+
+* conform to the BNF specification for a <file> and
+* both of the <f-type> values appearing in each <file> must be identical and
+* each <date-stamp> value must adhere to the standard calendrical rules and
+* each <date-stamp> must specify a date not later than the current date.
+
+--------------------------------
+
+<lower-case-letter> ::= a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z
+
+<upper-case-letter> ::= A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z
+
+<letter> ::= <upper-case-letter> | <lower-case-letter>
+
+<alphabetics> ::= <letter> | <alphabetics><letter>
+
+<f-type> ::= <lower-case-letter> | <f-type><lower-case-letter>
+
+<non-zero-digit> :== 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+
+<digit> ::= 0 | <non-zero-digit>
+
+<integer> ::= <non-zero-digit> | <integer><digit>
+
+<day> ::= <non-zero-digit> | 1<digit> | 2<digit> | 30 | 31
+
+<month> ::= <non-zero-digit> | 10 | 11 | 12
+
+<year> ::= <non-zero-digit><digit><digit><digit>
+
+<date-stamp> ::= <year>.<month>.<day>
+
+<file> ::= File date: <date-stamp>  ; File size: <integer> ; File format: <f-type> ; File name: <alphabetics>.<date-stamp>-<integer>.<f-type>
+
+--------------------------------
+
+No one <file> may appear more than once.
+
+e.g. File date: 2003.12.17 ; File size: 225792 ; File format: xls ; File name: Luschnig.2003.12.17-2.xls
+
+
+If !c is used:
+
+* P22 must contain a valid value and
+* the value(s) given in P38 must be different from the value(s)
+stored in Chado for the publication specified by the value given in
+P22.
+
+If !c is not used:
+
+* if P22 contains a valid value, either:
+    * the value(s) given in P38 must be identical to the
+value(s) stored in Chado for the publication specified by the value given
+in P22 or
+    * P38 must contain one or more valid values and no value is
+stored in Chado for the publication specified by the value given in
+P22;
+* if P22 does not contain a valid value, either:
+    * P38 must be empty or
+    * P38 must contain one or more valid values.
+
+### Related fields:
+
+### Comments:
+
+The first <date-stamp> specifies when the file was uploaded to the
+FlyBase ftp server.  The second <date-stamp> specifies when the
+file was created by its originator.
+
+### Updated:
+
+gm131204 (removed markdown formatting).
+gm151001 (added Dupl. for multiple field info).
+

@@ -1,0 +1,562 @@
+= General specs for ontology term contents of proforma fields  GA56., GA17., GA28a., GA28b., GA29a., GA29b. =
+
+Note the following specs are in both plain English and BNF.
+
+Quick note on BNF used:
+
+The specs are in extended BNF as defined here:
+http://cui.unige.ch/db-research/Enseignement/analyseinfo/AboutBNF.html
+with the following additions
+1. text strings are all in double quotes
+2. ontology terms are defined by the intersection of ID, namespace (NS), subset (S), and ancestor term (A) using a string whose syntax is defined by the following BNF:
+
+<valid ontology term> ::= "<ID:"<id>["+NS:"<namespace>]["+S:"<subset>]["-S:"<subset>]["+A:"<ancestor>]">"
+
+'+S' means use terms from this subset
+'-S' means DO NOT use terms from this subset
+e.g.:- 
+<ID:FBcv+NS:phenotypic_class+S:camcur>
+<ID:GO+NS:biological_process+A:cell cycle>
+Where a subset is to be avoided, this is marked with '-S' e.g.- 
+<ID:FBbt-S:deprecated>
+
+== <Phenotypic class statement> ==
+
+In English:
+
+* A <Phenotypic class statement> = a term from the FBcv namespace 'phenotypic class' and subset='camcur' followed by zero to any number of <Phenotypic class qualifier>.
+ * The <Phenotypic class qualifier> term(s) are separated from the
+first 'phenotypic class' term and each other by ' | '. 
+ * A <Phenotypic class qualifier> is any term from FBdv or any term from FBcv subset='camcur' from the following namespaces: dominance_qualifier; environmental_qualifier; genotype_to_phenotype_relation; homeotic; sex_qualifier.
+
+In BNF
+
+<Phenotypic class statement> ::= <PC>{" | "<PCQ>}
+<Phenotypic class> ::= <PC> ::= <ID:FBcv+NS:phenotypic_class+S:camcur>
+<Phenotypic class qualifier> ::= <PCQ> ::= <ID:FBcv+NS:dominance_qualifier+S:camcur> | <ID:FBcv+NS:clone_qualifier+S:camcur> | <ID:FBcv+NS:environmental_qualifier+S:camcur> | <ID:FBcv+NS:intensity_qualifier+S:camcur> | <ID:FBcv+NS:genotype_to_phenotype_relation+S:camcur> | <ID:FBcv+NS:homeotic+S:camcur> | <ID:FBcv+NS:sex_qualifier+S:camcur> | <ID:FBdv+NS:default>
+;
+
+== <Phenotype manifest in> ==
+
+In English
+
+* <Phenotype manifest in> =  An <anatomy> term, which may optionally be combined with a second anatomy term using an '&'.  This is followed zero or more <anatomy qualifier> terms. The <anatomy qualifier> term(s) are separated from the
+<anatomy> terms and each other by ' | '.
+* An <anatomy> term is either a term from FBbt, or from GO namespace=cell_component or a term which is a child of the term 'cell cycle' from GO, namespace=biological process.  Terms from FBbt subset:deprecated should not be used.
+* An anatomy qualifier may be any term from Fbdv, or any term from FBcv subset='camcur' from the following namespaces: environmental_qualifier; genotype_to_phenotype_relation; sex_qualifier; structural_qualifier; spatial_qualifier; clone_qualifier; intensity_qualifier.
+
+In BNF
+
+<Phenotype manifest in> ::= <A>{" & "<A>}{" | "<AQ>}
+<Anatomy> ::= <A> ::= <ID:FBbt-S:deprecated> | <ID:GO+NS:cellular_component> | <ID:GO+NS:biological_process+A:cell cycle>
+<Anatomy qualifier> ::= <AQ> ::= <ID:FBcv+NS:environmental_qualifier+S:camcur> | <ID:FBcv+NS:genotype_to_phenotype_relation+S:camcur> | <ID:FBcv+NS:sex_qualifier+S:camcur> | <ID:FBcv+NS:structural_qualifier+S:camcur> | <ID:FBcv+NS:spatial_qualifier+S:camcur>
+<ID:FBcv+NS:clone_qualifier+S:camcur>
+;
+
+== <Genetic interaction sub-statement> ==
+
+In English 
+
+A <Genetic interaction sub-statement> consists of a <Genetic interaction type>, which is either the string "UI", the string "non-modified" or a term from FBcv subset=camcur, namespace=genetic_interaction_type, followed by zero or more <Genetic interaction type qualifier> terms. The <Genetic interaction type qualifier> terms are separated from the <Genetic interaction type> term and from each other by ' | '.
+
+The type of <genetic interaction type qualifier> allowed depends on the type of <Genetic interaction type> chosen:
+Terms from FBcv subset=camcur with namespace=genotype_to_phenotype_relation,clone_qualifier or sex_qualifier may be used as a qualifier for any genetic interaction type;
+The term 'partially' may only be used as a qualifier for the genetic interaction type=suppressible;
+Terms from FBcv subset=camcur namespace=environmental_qualifier may only be used as a qualifier for the genetic interaction types: suppressible, enhanceable or UI.
+
+In BNF
+
+<Genetic interaction sub-statement> ::= <GIT>{" | "<GITQ1>} | <GIT2>{" | "<GITQ2>} | <GIT3>{" | "<GITQ3>}
+<Genetic interaction type> ::= <GIT> ::= "UI"|"non-modified"|<ID:FBcv+NS:genetic_interaction_type+S:camcur>
+<Genetic interaction type qualifier> ::= <GITQ>:: <ID:FBcv+NS:genotype_to_phenotype_relation+S:camcur> | <ID:FBcv+NS:sex_qualifier+S:camcur> | <ID:FBcv+NS:environmental_qualifier+S:camcur>
+<GIT2> ::= "suppressible"
+<GIT3> ::= "suppressible"|"enhanceable"|"UI"
+<GITQ1> ::= <ID:FBcv+NS:genotype_to_phenotype_relation+S:camcur> | <ID:FBcv+NS:sex_qualifier+S:camcur> | <ID:FBcv+NS:clone_qualifier+S:camcur>
+<GITQ2> ::= "partially"
+<GITQ3> ::= <ID:FBcv+NS:environmental_qualifier+S:camcur>
+;
+
+#
+
+-------------------------------------------------------------------------
+
+! GA56. Phenotypic | dominance class [bipartite CV]    *k :
+
+ Format is:
+(with gene1[allele2]) <Phenotypic class statement> { gene2[allele1] }
+
+(Note: <Phenotypic class statement> defined above)
+where
+"(with gene1[allele2]) " is optional.
+
+gene1[allele2] may actually be a deficiency/other aberration that
+disrupts gene1 rather than an allele; however if it is an allele it
+must be an allele of the same gene of which GA1a is an allele, not be
+the same allele as is given in GA1a, and it must be represented as a
+GA1a in its own right in this curation record.
+
+There may be more than one thing in the (with ) section - separated by ", " or by "/"
+(heterozygotes at a locus being separated by a /, while combinations at distinct loci
+(e.g.  engineered things, duplications, etc) are separated by a ,).
+
+If there is a statement in the allele.pro with GA1a. = "gene1[allele1]"  :
+
+(with gene1[allele2]) <Phenotypic class statement> { gene2[allele1] }
+
+then there must also be a statement in the allele.pro with GA1a. = "gene1[allele2]"  :
+
+(with gene1[allele1]) <Phenotypic class statement> { gene2[allele1] }
+
+i.e. the statement should be identical, *except* that "gene1[allele1]"
+and "gene1[allele2]" are flipped around in their positions between
+GA1a. and being within the "(with )" bit.
+
+Of course, this gets more complicated if there is more than one thing
+in the "gene1[allele2]" bit, but perhaps we should get the basic check
+in first and then worry about the more complex ones.
+
+
+" { gene2[allele1] }" is optional. gene2[allele1] is usually a GAL4/GAL80/tetR driver.  There
+can be two or more alleles in the {}, separated by ", ", when 2 drivers are used
+simultaneously.
+
+In rare cases (but ONLY for descendents of the variegation node of FBcv) gene2[allele1] is
+not a GAL4 driver but some other FBobject (FBab, Fbal, FBti, FBba).  All things listed
+must either be a valid symbol for relevant FB object type, or instantiated in this
+curation record.
+
+For non-descendents of varigation node, all the alleles within the { } should match
+
+^Scer\\GAL(4|80).*
+
+or
+
+^Tn10\\TetR.*
+
+or .*\[.*T:Scer\\GAL(4|80).*\]
+
+or .*\[.*T:Tn10\\TetR.*\]
+
+COMMENTS: The GAL4/GAL80/TetR rules is a hack to be done better later.
+
+
+-------------------------------------------------------------------------
+
+## ! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+
+Format is:
+(with gene1[allele2]) <Phenotype manifest in> { gene2[allele1] }
+(Note: <Phenotype manifest in> defined above)
+where
+"(with gene1[allele2]) " is optional.
+
+gene1[allele2] may actually be a deficiency/other aberration that
+disrupts gene1 rather than an allele; however if it is an allele it
+must be an allele of the same gene of which GA1a is an allele, not be
+the same allele as is given in GA1a, and it must be represented as a
+GA1a in its own right in this curation record.
+
+There may be more than one thing in the (with ) section - separated by ", " or by "/"
+(heterozygotes at a locus being separated by a /, while combinations at distinct loci
+(e.g.  engineered things, duplications, etc) are separated by a ,).
+
+
+If there is a statement in the allele.pro with GA1a. = "gene1[allele1]"  :
+
+(with gene1[allele2]) <Phenotype manifest in> { gene2[allele1] }
+
+then there must also be a statement in the allele.pro with GA1a. = "gene1[allele2]"  :
+
+(with gene1[allele1]) <Phenotype manifest in> { gene2[allele1] }
+
+i.e. the statementa should be identical, *except* that "gene1[allele1]"
+and "gene1[allele2]" are flipped around in their positions between
+GA1a. and being within the "(with )" bit.
+
+Of course, this gets more complicated if there is more than one thing
+in the "gene1[allele2]" bit, but perhaps we should get the basic check
+in first and then worry about the more complex ones.
+
+
+" { gene2[allele1] }" is optional.
+
+gene2[allele1] is usually a GAL4/GAL80/tetR driver. There can be two or more alleles in the {},
+separated by ", ", when 2 drivers are used simultaneously. All things listed must either
+be a valid allele symbol, or be instantiated in this curation record.
+
+All the alleles within the { } should match
+
+^Scer\\GAL(4|80).*
+
+or
+
+^Tn10\\TetR.*
+
+or .*\[.*T:Scer\\GAL(4|80).*\]
+
+or .*\[.*T:Tn10\\TetR.*\]
+
+
+gene2[allele1] is always an FBal (cf. GA56)
+
+
+
+COMMENTS: The GAL4/GAL80/TetR rules is a hack to be done better later.
+
+-------------------------------------------------------------------------
+
+! GA28a. Genetic interaction  [CV, class, effect]      *S :
+
+CHECKS: Format is this:
+
+(with gene1[allele2]) <Phenotypic class statement> { gene2[allele1] }, <Genetic interaction sub-statement> { interacting alleles }
+(Note: <Phenotypic class statement> and <Genetic interaction sub-statement> defined above)
+
+Detailed explanation of format.
+
+NOTE: The beginning part of the format:
+
+"(with gene1[allele2]) <Phenotypic class statement> { gene2[allele1] }"
+
+is basically similar to what you would write in GA56., and the rest of
+the line in GA28a. is extra stuff on top of that. However, the
+specification for the "(with gene1[allele2]) <Phenotypic class statement> { gene2[allele1] }"
+section in GA28a. is not *absolutely* identical to
+that in GA56. so have specified each bit again below (and have written
+where it is identical to checks in GA56. and where it is not)
+
+
+1. "(with gene1[allele2]) " is optional
+
+**The spec here is IDENTICAL to what is checked in GA56.**
+
+gene1[allele2] may actually be a deficiency/other aberration that
+disrupts gene1 rather than an allele; however if it is an allele it
+must be an allele of the same gene of which GA1a is an allele, not be
+the same allele as is given in GA1a, and it must be represented as a
+GA1a in its own right in this curation record.
+
+There may be more than one thing in the (with ) section - separated by
+", " or by "/" (heterozygotes at a locus being separated by a /, while
+combinations at distinct loci (e.g.  engineered things, duplications,
+etc) are separated by a ,).
+
+For cases where there is an FBal in the (with ) section, Peeves should
+check
+for symmetry in the statements in different allele.pro.
+
+i.e.
+
+If there is a statement in the allele.pro with GA1a. =
+"gene1[allele1]"  :
+
+(with gene1[allele2]) <Phenotypic class statement> { gene2[allele1] }, <Genetic interaction sub-statement> { interacting alleles }
+
+then there must also be a statement in the allele.pro with GA1a. = "gene1[allele2]"  :
+
+(with gene1[allele1]) <Phenotypic class statement> { gene2[allele1] }, <Genetic interaction sub-statement> { interacting alleles }
+
+
+i.e. the statements should be identical, *except* that "gene1[allele1]"
+and "gene1[allele2]" are flipped around in their positions between
+GA1a. and being within the "(with )" bit.
+
+Of course, this gets more complicated if there is more than one thing
+in the "gene1[allele2]" bit, but perhaps we should get the basic check
+in first and then worry about the more complex ones.
+
+
+2. "<Phenotypic class statement>" is optional
+
+
+3. "{ gene2[allele1] }, " is optional
+
+**The spec here DIFFERS from that in GA56.**
+
+NOTE: for now we have a strict implementation similar to that for GA56,
+which only allows GAL4/GAL80. This will be turned off once curators
+lean the new system, but for now will give Peeves warinings for every
+'triple' interaction.
+
+"gene2[allele1]" must be a valid symbol of type FBal, FBab or FBba (or
+a new thing of one of those types made in the curation record). If it
+is an FBal, it must NOT be an allele of the same gene of which GA1a is
+an allele.
+
+There can be two or more things in the {} - separated by ", " or by "/"
+(heterozygotes at a locus being separated by a /, while combinations at
+distinct loci (e.g.  engineered things, duplications, etc) are separated by a ',').
+
+
+
+4. Notes on the "optional"-ity of the 3 sections above.
+
+a. if any combination of "(with gene1[allele2]) ", "<Phenotypic class statement>" or " {
+gene2[allele1] }" are present, then the last bit that is present should
+be separated from the <Genetic interaction sub-statement> by ", ". However,
+if none of them are present, then the line should start at <Genetic interaction sub-statement>.
+
+i.e. these are legal:
+
+<Genetic interaction sub-statement> { interacting alleles }
+
+(with gene1[allele2]), <Genetic interaction sub-statement> { interacting alleles }
+<Phenotypic class statement>, <Genetic interaction sub-statement> { interacting alleles }
+{ gene2[allele1] }, <Genetic interaction sub-statement> { interacting alleles }
+
+
+(with gene1[allele2]) <Phenotypic class statement>, <Genetic interaction sub-statement> { interacting alleles }
+(with gene1[allele2]) { gene2[allele1] }, <Genetic interaction sub-statement> { interacting alleles }
+<Phenotypic class statement> { gene2[allele1] }, <Genetic interaction sub-statement> { interacting alleles }
+
+(with gene1[allele2]) <Phenotypic class statement> { gene2[allele1] }, <Genetic interaction sub-statement> { interacting alleles }
+
+EXTRA SPECIES CHECK (not so high priority as format checks above):
+
+for GA28a. (and same for GA18b.) -
+
+
+- if the allele in GA1a. is NOT a drosophilid species, then
+GA28a./GA28b. should not be filled in (the data belongs in GA29a./GA29b.
+instead)
+
+
+- else, if the allele in GA1a. IS a drosophilid species, then each
+allele in the 'gene2[allele1]' or 'interacting
+alleles' portions that does not match any of the following regular
+expressions:
+
+^Scer\\GAL(4|80).*
+
+or
+
+^Tn10\\TetR.*
+
+or .*\[.*T:Scer\\GAL(4|80).*\]
+
+or .*\[.*T:Tn10\\TetR.*\]
+
+
+must be the same species as the allele in GA1a.
+
+-------------------------------------------------------------------------
+## ! GA28b. Genetic interaction (anatomy, effect) [CV]       *S :
+
+Genetic interaction between two or more genes.  The general format of the data is:  
+(with gene1[allele2]) <phenotype > { gene2[allele1] }, <genetic interaction qualifier> { interacting alleles }  
+where each portion may have complicated substructure, described below, and some of them may be optional.  
+  
+The difference between GA28[ab] and GA29[ab]a is that the former must test to see whether  
+  -  at least one of gene2[allele1] is the same species as the allele in GA1a  
+  -  and must not have data for non-Drosophilid genes.   
+  
+The difference between GA28/9a and GA28/9b is that the  
+	former's phenotype describes the phenotypic class  
+	and the latter the body type --- the same relationship as there is between GA56 and GA17  
+    
+Syntax: Partial BNF, where ::= is the definition operator and || the alternation operator, for the data field is:
+ <allele_list>    ::= <allele> || '<allele_list>, <allele>' || '<allele_list>/<allele>'
+ <qualifier_list> ::= <qualifier> || '<qualifier_list> | <qualifier>'
+ <phenotype>      ::= <phen_class_term> || '<phen_class_term> | <qualifier_list>'
+ <with_list>      ::= '(with <allele_list>) '
+ <wp_prefix>      ::= <with_list> || <phenotype> || <with_list><phenotype>
+ <git_prefix>     ::= '{ <allele_list>}' || <wp_prefix> || <wp_prefix> { <allele_list> }'
+ <qualified_git>  ::= <genetic_interaction_qualifier> || '<genetic_interaction_qualifier> | <qualifier>'
+ <gi_data>        ::= '<qualified_git> { <allele_list>}' || '<git_prefix>, <qualified_git> { <allele_list> }'
+
+CHECKS: Format is this:
+
+(with gene1[allele2]) <Phenotype manifest in> { gene2[allele1] }, <Genetic interaction sub-statement> { interacting alleles }
+(Note: <Phenotype manifest in> and <Genetic interaction sub-statement> defined above)
+
+Detailed explanation of format.
+
+NOTE: The beginning part of the format:
+
+"(with gene1[allele2]) <Phenotype manifest in> { gene2[allele1] }"
+
+is basically similar to what you would write in GA17., and the rest of
+the line in GA28b. is extra stuff on top of that. However, the
+specification for the "(with gene1[allele2]) <Phenotype manifest in> {
+gene2[allele1] }" section in GA28b. is not *absolutely* identical to
+that in GA17. so have specified each bit again below (and have written
+where it is identical to checks in GA17. and where it is not)
+
+
+1. "(with gene1[allele2]) " is optional
+
+**The spec here is IDENTICAL to what is checked in GA17.**
+
+gene1[allele2] may actually be a deficiency/other aberration that
+disrupts gene1 rather than an allele; however if it is an allele it
+must be an allele of the same gene of which GA1a is an allele, not be
+the same allele as is given in GA1a, and it must be represented as a
+GA1a in its own right in this curation record.
+
+There may be more than one thing in the (with ) section - separated by
+", " or by "/" (heterozygotes at a locus being separated by a /, while
+combinations at distinct loci (e.g.  engineered things, duplications,
+etc) are separated by a ,).
+
+For cases where there is an FBal in the (with ) section, Peeves should
+check
+for symmetry in the statements in different allele.pro.
+
+i.e.
+
+If there is a statement in the allele.pro with GA1a. = "gene1[allele1]"  :
+
+(with gene1[allele2]) <Phenotype manifest in> { gene2[allele1] }, <Genetic interaction sub-statement> { interacting alleles }
+
+then there must also be a statement in the allele.pro with GA1a. = "gene1[allele2]"  :
+
+(with gene1[allele1]) <Phenotype manifest in> { gene2[allele1] }, <Genetic interaction sub-statement> { interacting alleles }
+
+
+i.e. the statements should be identical, *except* that "gene1[allele1]"
+and "gene1[allele2]" are flipped around in their positions between
+GA1a. and being within the "(with )" bit.
+
+Of course, this gets more complicated if there is more than one thing
+in the "gene1[allele2]" bit, but perhaps we should get the basic check
+in first and then worry about the more complex ones.
+
+
+
+2. "<Phenotype manifest in> " is NOT optional, it must always be present
+
+3. "{ gene2[allele1] }, " is optional
+
+**The spec here DIFFERS from that in GA17.**
+
+NOTE: for now we have a strict implementation similar to that for GA17,
+which only allows GAL4/GAL80. This will be turned off once curators
+lean the new system, but for now will give Peeves warinings for every
+'triple' interaction.
+
+"gene2[allele1]" must be a valid symbol of type FBal, FBab or FBba (or
+a new thing of one of those types made in the curation record). If it
+is an FBal, it must NOT be an allele of the same gene of which GA1a is
+an allele.
+
+There can be two or more things in the {} - separated by ", " or by "/"
+(heterozygotes at a locus being separated by a /, while combinations at
+distinct loci (e.g.  engineered things, duplications, etc) are separated by a ',').
+
+
+4. Notes on the "optional"-ity of the 3 sections above.
+
+a. if any combination of "(with gene1[allele2]) ", "<Phenotype manifest in>" or " {
+gene2[allele1] }" are present, then the last bit that is present should
+be separated from the <Genetic interaction sub-statement> by ", ". However,
+if none of them are present, then the line should start at <<Genetic interaction sub-statement>.
+
+i.e. these are legal in GA28b:
+
+<Phenotype manifest in>, <Genetic interaction sub-statement> { interacting alleles }
+
+(with gene1[allele2]) <Phenotype manifest in>, <Genetic interaction sub-statement> { interacting alleles }
+<Phenotype manifest in> { gene2[allele1] }, <Genetic interaction sub-statement> { interacting alleles }
+
+(with gene1[allele2]) <Phenotype manifest in> { gene2[allele1] }, <Genetic interaction sub-statement> { interacting alleles }
+
+
+these are NOT legal in GA28b, since they have no <Phenotype manifest in> bit (contrast with GA28a where they are legal) :
+
+<Genetic interaction sub-statement> { interacting alleles }
+(with gene1[allele2]), <Genetic interaction sub-statement> { interacting alleles }
+{ gene2[allele1] }, <Genetic interaction sub-statement> { interacting alleles }
+(with gene1[allele2]) { gene2[allele1] }, <Genetic interaction sub-statement> { interacting alleles }
+
+EXTRA SPECIES CHECK (not so high priority as format checks above):
+
+for GA28b., 
+
+- if the allele in GA1a. is NOT a drosophilid species, then
+GA28a./GA28b. should not be filled in (the data belongs in GA29a./GA29b.
+instead)
+
+
+- else, if the allele in GA1a. IS a drosophilid species, then each
+allele in the 'gene2[allele1]' or 'interacting
+alleles' portions that does not match any of the following regular
+expressions:
+
+^Scer\\GAL(4|80).*
+
+or
+
+^Tn10\\TetR.*
+
+or .*\[.*T:Scer\\GAL(4|80).*\]
+
+or .*\[.*T:Tn10\\TetR.*\]
+
+
+must be the same species as the allele in GA1a.
+
+-------------------------------------------------------------------------
+
+! GA29a. Xenogenetic interaction [CV, class, effect]   *j :
+
+CHECKS: Exactly the same as for GA28a, except that the 'EXTRA SPECIES
+CHECK' is different, and is as follows:
+
+EXTRA SPECIES CHECK (not so high priority as format checks above):
+
+for GA29a.,
+
+if the allele in GA1a. IS NOT a drosophilid species, no species check
+is needed for GA29a.
+
+- else, if the allele in GA1a. IS a drosophilid species, at least one
+allele in the 'gene2[allele1]' or 'interacting
+alleles' portions that does not match any of the following regular
+expressions:
+
+^Scer\\GAL(4|80).*
+
+or
+
+^Tn10\\TetR.*
+
+or .*\[.*T:Scer\\GAL(4|80).*\]
+
+or .*\[.*T:Tn10\\TetR.*\]
+
+
+must be a different species from the allele in GA1a.
+
+-------------------------------------------------------------------------
+
+! GA29b. Xenogenetic interaction [CV, anatomy, effect] *j :
+
+CHECKS: Exactly the same as for GA28b, except that the 'EXTRA SPECIES
+CHECK' is different, and is as follows:
+
+EXTRA SPECIES CHECK (not so high priority as format checks above):
+
+for GA29b., 
+
+if the allele in GA1a. IS NOT a drosophilid species, no species check
+is needed for GA29b.
+
+- else, if the allele in GA1a. IS a drosophilid species, at least one
+allele in the 'gene2[allele1]' or 'interacting
+alleles' portions that does not match any of the following regular
+expressions:
+
+^Scer\\GAL(4|80).*
+
+or
+
+^Tn10\\TetR.*
+
+or .*\[.*T:Scer\\GAL(4|80).*\]
+
+or .*\[.*T:Tn10\\TetR.*\]
+
+
+must be a different species from the allele in GA1a.
+
+-------------------------------------------------------------------------

@@ -1,0 +1,44 @@
+
+## ! IN2b. Interaction type (Termlink MI CV) :physical association
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+### Inclusion essential:
+
+Yes (Implemented)
+
+### Mandatorially has value:
+
+Yes (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+### Checks:
+
+Checks within field:
+
+- only the single term 'physical association' is allowed.  Peeves also double-checks that 'physical association' is still a valid psi-mi term and warns if not.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160101.

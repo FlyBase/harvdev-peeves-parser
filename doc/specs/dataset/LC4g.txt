@@ -1,0 +1,53 @@
+
+## ! LC4g. Stage and tissue (<e>  <t>  <a>  <s>  <note>)  :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+sub TAP_check checks the syntax of the field (for details see docs/specs/TAP_statement.txt).
+
+Note that for dataset, the 'experimental assays' (<e>) slot is not used.
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Checks within field:
+
+
+
+### Updated:
+
+gm170126.

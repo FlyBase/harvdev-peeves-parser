@@ -1,0 +1,68 @@
+## ! P1.   Type of publication [CV]  *T :
+
+
+### Multiple values allowed:
+
+No.
+Implemented (using 'single_line' subroutine in validate_P1)
+
+
+### !c Applicable:
+
+Yes if P22 contains valid FBrf, otherwise no.
+
+### Inclusion of field essential for proforma checks:
+
+No.
+
+### Field mandatorially has value:
+
+No if P22 contains valid FBrf, otherwise yes for certain publication types (see [list][list] under Comments).
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+To be valid:
+
+* The value must be a valid term (i.e. does not have is_obsolete: true)
+from flybase_controlled_vocabulary.obo and
+* the value must be in the 'pub_type' namespace and
+* the value must not be either 'compendium' or 'journal'.
+
+If !c is used:
+
+* P22 must contain a valid FBrf and
+* the value given in P1 must be different from the value
+stored in Chado for the publication specified by the value given in
+P22.
+
+If !c is not used:
+
+* if P22 contains a valid FBrf, either:
+    * the value given in P1 must be identical to the value
+stored in Chado for the publication specified by the value given in
+P22 or
+    * P1 must contain a valid value and no value is stored in
+Chado for the publication specified by the value given in P22;
+* if P22 is 'new', P1 must a contain valid value.  
+* if P22 is 'unattributed', P1 must be empty  
+
+### Related fields:
+
+P22
+MP17
+
+### Comments:
+
+### Status:
+
+Spec not checked to see what has been implemented, unless explicitly stated so above.
+
+### Updated:
+
+gm151001.
+

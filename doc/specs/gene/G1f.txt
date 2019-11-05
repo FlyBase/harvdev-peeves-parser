@@ -1,0 +1,94 @@
+
+## ! G1f.  Action - merge these genes (symbols)                   :
+
+### Multiple values allowed:
+
+Yes (separated by returns)
+Implemented (in validate_x1f)
+
+
+### !c Applicable:
+
+No
+Implemented (in validate_x1f)
+
+### Inclusion essential:
+
+No
+Implemented
+
+### Mandatorially has value:
+
+No
+Implemented (in validate_x1f)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+
+Checks within field
+
+  * sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if G1e is filled in
+
+  * checks in validate_x1f:
+    * if field contains data, each entry in list must be separated by returns
+    * each entry in list must be a valid gene symbol in Chado
+    * there must be at least two entries (i.e. gene symbols) in the list
+    * there must not be any duplications in the list (checked using check_for_duplicated_lines subroutine)
+
+Cross-checks with other fields
+
+  * checks done after parsing entire proforma
+
+    * 'cross_check_FBid_symbol' (check when x1h filled in)
+
+    * If G1f is filled in, G2a must be filled in (compare_field_pairs, pair_test = 'dependent')
+
+    * If G1f is filled in, G2c must NOT be filled in (compare_field_pairs, pair_test = 'single')
+
+    * sub 'rename_merge_check' -  G1e and G1f must not both contain data
+
+    * sub 'plingc_merge_check' - no !c in proforma if G1f is filled in
+
+
+    * If G32 field is present in the proforma, G1f field must be present in proforma (to make sure that the following check is definitely carried out I guess ?)
+
+    * If G32 is filled in (checking first that it has a single value so that the cross-checking code works), the same value must not be in G1f
+
+
+
+    * if G1f is filled in:
+
+       * warns if there is no 'Source for merge line: ' at all in G28b
+
+       * warns if the string after 'Source for ' is not merge e.g. if 'Source for identity of: ' was written in error instead
+
+    * if G28b is filled in:
+
+       * for 'Source for merge':
+
+          * warns if G1f is empty
+
+          * if G1f contains data, warns if the genes listed in G28b 'Source for merge line: ' do not match those listed in the G1f line (they do not have to be in the same order)
+
+    
+### Related fields:
+
+
+
+### Comments:
+
+'validate_x1f' subroutine still uses dehash, despite the fact that 'no_hashes_in_proforma' has been added to the basic field checks (before validate_G1e is called).  The dehash is necessary for later cross-checks in the gene proforma (cross-checking G1f data with other fields (G32)), so this should be left in the validate_x1f subroutine.
+
+### Status:
+
+
+
+### Updated:
+
+gm170201.

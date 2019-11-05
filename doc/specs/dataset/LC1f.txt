@@ -1,0 +1,71 @@
+
+## ! LC1f. Database ID for dataset  :new
+
+### Multiple values allowed:
+
+No
+Implemented (in validate_primary_FBid_field)
+
+
+### !c Applicable:
+
+No
+Implemented (in validate_primary_FBid_field)
+
+### Inclusion essential:
+
+Yes
+Implemented
+
+
+### Mandatorially has value:
+
+Yes
+Implemented (in validate_primary_FBid_field - checks both for whether the entire field is empty, and also whether individual values in a hashed list are empty)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+in 'validate_primary_FBid_field':
+
+* each entry must either be the string 'new' or an FBid number of the type expected for the proforma (ie. FBlc)
+
+* if the entry is an FBlc number, it must be valid in chado.
+
+
+
+Cross-checks with other fields:
+
+in 'validate_primary_FBid_field':
+
+* The number of entries in the list in LC1f must match the number of entries in the LC1a field
+
+
+Cross-checks done after parsing the entire proforma:
+
+sub 'cross_check_harv_style_symbol_rename_merge_fields' - see MA1f.txt for details.
+
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm151001.

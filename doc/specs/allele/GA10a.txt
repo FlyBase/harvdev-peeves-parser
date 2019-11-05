@@ -1,0 +1,118 @@
+
+## ! GA10a. Associated construct                              *I :
+
+### Multiple values allowed:
+
+Yes (Implemented in validate_GA10a)
+
+### !c Applicable:
+
+Yes (Implemented in validate_GA10a)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented in validate_GA10a)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Check in Peeves after first-pass check for newly instantiated and invalidated symbols:
+
+* if the construct is marked as 'NEW:' but it is already a valid FBtp in chado, then issue an error message.
+
+* if the construct symbol has not been marked as instantiated in the record (i.e. it did not have a 'NEW:' prefix in the GA10a field or there is not a moseg proforma for it) and it is not a valid FBtp symbol in chado, then issue an error message.
+
+Checks in validate_GA10a
+
+* if the construct is created new in the record (i.e. either has 'NEW:' prefix in GA10a or made in moseg proforma)
+
+  * uses 'check_construct_symbol_format' subroutine to check the construct symbol format (see moseg/MS1a.txt for details of subroutine)
+
+* if the construct is a new FBtp TI{xxx} construct made in the GA10a field using the 'NEW:' prefix, it warns that a new TI{xxx} construct should be made in a moseg.pro instead (so that the appropriate comment can be added) and that this usually happens under the general FlyBase analysis reference FBrf0105495.
+
+
+* if the construct is already in chado
+
+  * warns if the allele in GA1a is new: "Did you intend to associate an existing construct with a new allele?"
+  * warns if the allele in GA1a is not already associated with the FBtp in chado.
+
+
+
+Checks between fields (done at end of proforma parsing)
+
+ * If it is a new transgenic construct allele (new allele for which GA10a is filled in), GA8 must be filled in.
+ * If it is a new transgenic construct allele (new allele for which GA10a is filled in), GA12b must be filled in.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+validate_GA10a does cross-checking with values in GA1a - in most cases of cross-checks like this, they are done at the end of the proforma (in case of odd order of fields) rather than within a subroutine that checks a single field.  Not sure why there is a difference.
+
+Also, the for loop that goes through the entries in GA10a does not use $hash_entries "in case of hash list mismatch" rather than the general case where the check is only done once the hashing is OK.
+
+Might be worth standardising this with other fields and making this an end of proforma cross-check at some point.
+
+
+
+---------------------------------------------------------------------------------------------------
+
+Worked out previously (when looking at synonym field cross-checking) some info about how the various GA10 values are being stored.  Pasting below in case it is useful if try to standardise the checking of this field:
+
+I think it is because for GA10[ce], the storage/checking of their data in @GA10c_list etc. is done via a reference to @GA10c_list i.e.:
+
+	    double_query ($file, $2, $3) or validate_GA10ce ($2, $1, $3, \@GA10c_list);
+	    double_query ($file, $2, $3) or validate_GA10ce ($2, $1, $3, \@GA10e_list);
+
+whereas for GA10a, it is not done via a reference, but directly.
+
+I think that using the reference is causing the values $#GA10c_list and $#GA10e_list (whcih are used in the cross-check with GA1b and GA2b) to be 0 when there is nothing in the fields (whereas $#GA1b_list and $#GA2b_list have a value of -1 when there is nothing in the fields, which corresponds to the value expected for a null array (which makes sense since if these fields are empty, @GA1b_list and @GA2b_list are assigned ()   ).  So I think that the bug is with GA10c_list and GA10e_list - at the point at which they are used in the cross-check with GA1b and GA2b, if the fields are empty, "print STDERR Dumper (@GA10c_list);" gives $VAR1 = ''; instead of nothing.
+
+
+I think that the difference is happening within the validate_GA10ce subroutine and I think it may be the call to dehash:
+
+    @{$list_ref} = dehash ($file, $code, $hash_entries, $insert_list);	# Save for post-checks.
+
+that is doing it:
+
+before the dehash, "print STDERR Dumper ($list_ref);" gives:
+$VAR1 = [];
+
+after the dehash, "print STDERR Dumper ($list_ref);" gives:
+$VAR1 = [
+          ''
+        ];
+
+so that is why when the cross-check with GA1b and GA2b happens, "print STDERR Dumper (@GA10c_list);" gives:
+
+$VAR1 = '';
+
+It is possible that it will be completely safe to just assign the stuff into @GA10c_list and @GA10e_list directly instead of referencing, which should hopefully fix the problem in the cross-checks, but this is very complicated in terms of how these GA10 fields interact with other fields and its at the limits of my understanding of referencing etc. so am leaving well alone for now. gm140501.
+
+---------------------------------------------------------------------------------------------------
+
+
+
+### Status:
+
+
+doc reflects what has been implemented.
+
+Not yet implemented:
+
+If a curator makes a new construct in GA10a marked with 'NEW:' and also puts in an moseg proforma for that construct, this 'double-flagging' of a new construct generates no error message, and it should as it causes the record to bounce on parsing.   (see DC-497 for details)
+
+### Updated:
+
+gm170201.

@@ -1,0 +1,44 @@
+
+## ! TC5b. Karotype (free text)      :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field: 
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm170127.

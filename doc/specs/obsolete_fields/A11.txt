@@ -1,0 +1,44 @@
+
+## ! A11.  New order of A8b segments             *N :
+
+### Multiple values allowed:
+
+Yes
+
+### !c Applicable:
+
+Yes
+
+### Inclusion essential:
+
+No
+
+### Mandatorially has value:
+
+No
+
+### Checks:
+
+- format of line should be:
+
+[0-9]{1,}[+-?]( [|;] [0-9]{1,}[+-?]){1,}
+
+If there are n entries in A8b there must be n pairs in A11.
+
+### Related fields:
+
+
+
+### Comments:
+
+this field is used in conjunction with A8b. to write out a
+nice new order, so will need a good specification for that aspect of
+parsing.
+
+### Status:
+
+PROFORMA FIELD OBSOLETED
+
+### Updated:
+
+gm131202 (doc for this field moved here from aberration.checks.pro).

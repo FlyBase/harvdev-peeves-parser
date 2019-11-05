@@ -1,0 +1,47 @@
+
+## ! F10. Used as bodypart marker for (term ; ID) [CV] :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* sub validate_F10 checks that each line is a 'term ; ID' pair from either the FBbt ('fly anatomy') or 'GO cellular_component' CV
+
+* In addition, warnings are issued if the term name is valid in both GO cellular_component and FBbt, in this case suggesting that the curator use the GO id version rather than the FBbt one.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+- Not very pretty solution as had to do specific 'validate_F10' subroutine rather than generic one, but should work.
+
+### Updated:
+
+gm151118.

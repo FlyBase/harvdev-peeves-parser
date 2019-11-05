@@ -1,0 +1,64 @@
+
+## ! HH7b. Other mammalian genes used  (in FB as transgene) :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented) (check with Kathleen)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* must be a valid gene symbol *in chado* (so a gene made in the same record does not count)
+
+   * must NOT be a Dmel gene
+
+Checks between fields:
+
+* Must NOT be filled in for 'parent entity'
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+NOTE: 'parent entity' cross-check only uses HH2a field at the moment, ideally, should look up value in chado if HH2a is empty
+
+
+Not yet implemented:
+
+Checks within field:
+
+
+- need to replace 'must NOT be a Dmel gene' with 'must be a mammalian gene' - this needs to wait until this info is actually in chado
+
+
+### Updated:
+
+gm151001.

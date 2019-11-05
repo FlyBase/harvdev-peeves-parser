@@ -1,0 +1,55 @@
+
+## ! MA5e. Cytological location (inferred from sequence)      :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+* validate_cytological_location checks that any value is cytology in standard format (either single value or range)
+
+Cross-checks between fields:
+
+* If MA5e is filled in, MA5f must be filled in (and vice versa) - compare_field_pairs
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+
+Not implemented yet:
+
+Cross-checks between fields
+
+* Should only be filled in for Dmel insertions.
+
+
+### Updated:
+
+gm151001.

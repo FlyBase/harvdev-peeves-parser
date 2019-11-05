@@ -1,0 +1,49 @@
+## ! MP18. Action - make this/these multipub ID(s) secondary IDs of MP1  *N :
+
+### Multiple values allowed:
+
+Yes, each on a separate line
+
+### !c Applicable:
+
+No.
+
+### Inclusion essential:
+
+No.
+
+### Mandatorially has value:
+
+No.
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+To be valid:
+
+* Each value, if given, must be an integer greater than zero and
+* Each value, if given, must match the multipub_id of a valid
+multipub already in Chado.
+
+If MP18 contains a value or values, MP19 must be left blank.
+
+MP1 must contain the multipub_id of a valid multipub already
+in Chado and the value given in MP1 must not be the same as any
+value given in MP18.
+
+### Related fields:
+
+
+### Comments:
+
+When the FBmp uniquename type is introduced into Chado the data
+required in MP18 will change appropriately.
+
+### Updated:
+
+gm131204 (removed markdown formatting).
+gm151001 (added Dupl. for multiple field info).

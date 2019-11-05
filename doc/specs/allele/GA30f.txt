@@ -1,0 +1,60 @@
+
+## ! GA30f. Propagate uses from construct ? (n or blank)  :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'check_single_allowed_value' checks that the only allowed value is 'n'
+
+Cross-checsks with other fields:
+
+* If GA30f is filled in, either GA10c or GA10e must be filled in (the check use sub 'get_allele_type' to work out what type of allele is in GA1a based on how GA10a, GA10c, GA10e are filled in)
+
+* If GA30a is filled in for an allele associated with a 'regular insertion' (in GA10c/GA10e), GA30f must be filled in.
+
+* If GA30b is filled in for an allele associated with a 'regular insertion' (in GA10c/GA10e), GA30f must be filled in.
+
+* If GA30c is filled in for an allele associated with either a 'regular insertion' or a 'TI insertion' (in GA10c/GA10e), GA30f must be filled in.
+
+* If GA30d is filled in for an allele associated with either a 'regular insertion' or a 'TI insertion' (in GA10c/GA10e), GA30f must be filled in.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+### Updated:
+
+gm180412.

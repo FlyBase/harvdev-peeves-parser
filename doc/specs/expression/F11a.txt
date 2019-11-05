@@ -1,0 +1,48 @@
+
+## !     F11a. Is subset of wild-type gene expression pattern (y/n) :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+No (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+### Checks:
+
+Checks within field:
+
+- if it is filled in, value must either by 'y' or 'n' (sub validate_cvterm_field)
+
+Checks between fields:
+
+- if F11a is filled in, F11 must be filled in.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160305

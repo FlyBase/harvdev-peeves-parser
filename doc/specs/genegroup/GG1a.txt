@@ -1,0 +1,55 @@
+
+## ! GG1a. Gene group symbol                               *a :
+
+
+### Multiple values allowed:
+
+No (Implemented: 'single_line' subroutine in loop where the field is identified)
+
+### !c Applicable:
+
+No (Implemented: in validate_primary_proforma_field)
+
+### Inclusion essential:
+
+Yes (Implemented)
+
+### Mandatorially has value:
+
+Yes (Implemented: 'contains_data' subroutine in loop where the field is identified)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+  *  sub validate_primary_proforma_field (see doc/specs/allele/GA1a.txt for details)
+
+Checks between fields:
+
+  * sub 'cross_check_1a_1g' checks the following:
+
+     * If the value given in GG1g is 'y', the value given in GG1a must be held in Chado as a current valid symbol of type FBgg.
+
+     * If the value given in GG1g is 'n', the value given in GG1a must not be held in Chado as a current valid symbol of type FBgg.
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+See DC-585 for issues I had with getting cross_check_1a_1g to work.
+
+### Status:
+
+
+
+### Updated:
+
+gm170206.

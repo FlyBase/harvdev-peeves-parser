@@ -1,0 +1,52 @@
+
+## ! F3.  Gene product type [CV]        :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+No (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+Yes (implemented, contains_data in loop that processes field)
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+### Checks:
+
+
+Checks between fields:
+
+- allowed SO term id pair depends on the type of gene product in F1a, so format checking of value in the field is done during between field cross-checks, rather than as a within field check.
+
+  * if the gene product is an FBtr, the 'SO term id' pair must be a child of 'transcript' (or the term itself)
+
+  * if the gene product is an FBpp, the 'SO term id' pair must be a child of 'protein' (or the term itself) (in practise at the moment this means just 'protein' is allowed).
+
+- F3 must be filled in for new gene products and for gene product merges.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Although expression curation manual says that this field is required (inclusion essential) and must be filled in (mandatorially has value), from looking at the parser code and from examples of successfully parsed records, I don't think that really is the case - I think it is only really needed for cases where F1f is 'new' i.e. brand new/merged gene products, which is what I have implemented to prevent false positive messages.
+
+### Updated:
+
+gm160330.

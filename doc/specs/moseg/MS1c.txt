@@ -1,0 +1,66 @@
+
+## ! MS1c. Action - replace this segment symbol :
+
+### Multiple values allowed:
+
+No
+Implemented (in validate_rename)
+
+### !c Applicable:
+
+No
+Implemented (in validate_rename)
+
+
+### Inclusion essential:
+
+No
+Implemented
+
+### Mandatorially has value:
+
+No
+Implemented (in validate_rename)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+Cross-checks within field
+
+  * the data must either be empty or be a single valid symbol of a construct which exists
+in Chado. (in validate_rename)
+
+  * sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if MS1c is filled in
+
+  * if MS1c is filled in (and the symbol is a valid FBtp in chado), a reminder message is printed - reminding the curator that any insertions of the construct being renamed need to be renamed in a separate curation record (this check is done after the entire proforma has been parsed so that its easy to only perform the check if the hashing is correct, to prevent confusing reminder messages).
+
+Cross-checks with other fields:
+
+  * symbol in MS1c cannot be the same as in MS1a (in validate_rename and cross_check_harv_style_symbol_rename_merge_fields)
+
+Cross-checks with other fields
+
+   * subroutine 'cross_check_harv_style_symbol_rename_merge_fields' - see MA1f.txt for details of what this subroutine does.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+doc: checked and changed doc so that it reflects what has been implemented
+
+NOTE: at the moment, Peeves only knows about FBtp and not about the other types of feature (FBmc or FBms) which can be put in a moseg.pro, so if a proforma contains information about an FBmc or FBms, there will be both false-positive and missing error messages.
+
+### Updated:
+
+gm151001.

@@ -1,0 +1,69 @@
+
+## ! AB1e.  Action - rename this genotype variant symbol                 :
+
+### Multiple values allowed:
+
+No
+Implemented (in validate_rename)
+
+### !c Applicable:
+
+No
+Implemented (in validate_rename)
+
+### Inclusion essential:
+
+Yes
+Implemented (not sure why this is different from other 'cam' proformae, gm131210)
+
+### Mandatorially has value:
+
+No
+Implemented (in validate_rename)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+Checks within field
+
+  * the data must either be empty or be a single valid symbol of a genotype variant which exists in Chado (in validate_rename)
+
+  * sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if AB1e is filled in
+
+
+Cross-checks with other fields
+
+  * symbol in AB1e cannot be the same as in AB1a (in validate_rename)
+
+
+  * checks done after parsing entire proforma
+
+    * 'cross_check_FBid_symbol' (check when x1h filled in)
+
+    * sub 'rename_merge_check' -  AB1e and AB1f must not both contain data
+
+
+  * sub 'cross_check_x1e_x1g' checks that if AB1e is filled in, AB1g is 'n'
+
+### Related fields:
+
+
+
+### Comments:
+
+'validate_rename' subroutine still uses dehash despite presence of 'no_hashes_in_proforma' in basic field checks, but left for now and may well be advantageous/necessary to keep it, for same reasons as given in G1e.txt
+
+
+### Status:
+
+doc: checked that doc reflects what has been implemented
+
+
+### Updated:
+
+gm151001.

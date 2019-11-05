@@ -1,0 +1,45 @@
+
+## ! G39a. Gene summary - description  [free text] :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+### Checks:
+
+Checks within field:
+
+ * sub 'check_stamped_free_text' checks that entries flanked by @@ are valid symbols of any FBid type (either existing already in chado or instantiated in the curation record).
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160531.

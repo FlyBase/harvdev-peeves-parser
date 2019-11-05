@@ -1,0 +1,911 @@
+
+PLEASE PUT ALL FIXED BUGS IN THIS FILE
+
+================================================================================
+1)  Bug in cytolocation checking (G10a, G10b, G11).  Peeves complains
+    sm78: G10b: Invalid cytological map position '85F14--85F15'
+    but each of those end points are valid cytolocs according to symtab.pl
+
+
+Fixed.
+
+pcl23  2006-01-18
+================================================================================
+2)  ':' not allowed in free text field. Peeves mistakenly thinks it is a soft CV 
+Details (from ds762):
+	This:
+		! GA12b. Molecular modifications (wrt GA11)   [free text] *s :This mutation 		(nucleotide substitution: A104T) creates an ectopic AUG at +103 bp.
+	Gave error message:
+		GA12a: Invalid SoftCV prefix 'This mutation (nucleotide substitution:' in 'This mutation (nucleotide substitution: A104T) creates an ectopic AUG at +103 bp.'
+	Note - Peeves seems to think line = G12a
+
+djs93  2006-01-18
+
+Actually a curation error and Peeves is blameless in this instance.  The record reads:
+
+! GA12a. Nucleotide/amino acid changes (wrt GA11) [SoftCV]*s :Nucleotide substitution: A104T.
+This mutation (nucleotide substitution: A104T) creates an ectopic AUG at +103 bp.
+
+and second line is missing its "! GA12b".
+
+pcl23  2006-01-18
+
+(gm070512 - took the liberty of moving this one to fixed list as the curation record is now perfect).
+================================================================================
+3)  Peeves not coping with # proforma when multiple GA1a.
+Details (from ds791).
+Proforma has
+! GA1a. Allele symbol to use in database               *A :Scer\GAL4[sd-SG29.1] # Scer\GAL4[ap-md544] # Scer\GAL4[en-e16E]
+! GA10e. Associated insertion - G1a is inside insert   *G :P{GawB}sd[SG29.1] # P{GawB}ap[md544] # P{en2.4-GAL4}e16E
+! GA10f. Name in paper for insertion                   *N :sd-Gal4 # ap-Gal4 # en-Gal4
+Peeves says: ds791: 
+GA10e: Wrong number of entries in hash list.  Found 3, expected 1. 
+ds791: GA10f: Wrong number of entries in hash list.  Found 3, expected 1.
+
+Further example in ds796 Again GA10 fields implicated.  In this case other multi # GA1a
+mpt triggering Peeves error reports.
+
+djs93  2006-01-18
+
+
+This particular bug is now fixed.  GA1a now notes the number of symbols in its hash list
+and the correct value is used in subsequent GA fields.  Peeves detects if both of a GA1a
+and its preceding G1a have a hash list and issues an appropriate report.
+
+GA1a processing is still rudimentary and, in particular, makes no attempt to validate the
+symbols it is given.
+
+pcl23  2006-01-18
+================================================================================
+4) P11a pages can legitimately have letters in them, such as this one:
+rs968: P11a: Bad character 'R' in page range 'R588--R590'.
+
+However, Peeves forbids them so that it can detect genuine typos.  Perhaps it should allow
+a common prefix ('R' in the example) for a page range but issue a warning in the cases of
+a single page and where the prefix differs at each end of the range.
+
+
+pcl23  2006-01-19
+
+Sounds a good idea - Pete
+
+Implemented for the special case where the prefix is a single letter of either case.
+
+pcl23 070223
+
+================================================================================
+5) Peeves not parsing species correctly for tags in G1a.
+
+gm14238: G1a: Invalid species T:Zzzz
+gm14238: G1a: Invalid species T:Uuuu
+gm14238: G1a: Invalid species T:Adeno5
+
+Here is e-mail correspondence about this subject:
+
+On Fri, 2007-01-19 at 10:34 +0000, Paul Leyland wrote:
+> Peeves is making several complaints along these lines:
+> 
+> gm14238: G1a: Invalid species T:Zzzz
+> gm14238: G1a: Invalid species T:Adeno5
+> sm83: G1a: Invalid species N::Mmus
+> 
+> The code for checking validity of gene symbols is known to be incomplete
+> so reports like these are unsurprising.
+> 
+> The original data for these three lines are
+> 
+> ! G1a.  Gene symbol to use in database                     *a :T:Zzzz\AU5
+> ! G1a.  Gene symbol to use in database                     *a :T:Adeno5\E1a
+> ! G1a.  Gene symbol to use in database                     *a :N::Mmus\Notch1
+> 
+> I can guess how such things could be processed but would welcome
+> guidance.
+
+
+here is guidance (not necessary just relating to species checking, !!
+
+- symbols with "::" (fusions) should be treated differently from those
+with "T:" so your guess isn't quite right.
+
+here's what I *think* you should do.
+
+1. if the symbol in G1a. contains "::"
+
+a. split on the :: (there can be more than one ::), e.g. in your
+example:
+
+N::Mmus\Notch1
+
+you would get "N" and "Mmus\Notch1"
+
+- each of these should either already be a valid gene symbol in chado or
+a G1a. made in the curation record.
+- and if the split bit contains a "\" then the bit before the \ should
+be a valid wotnot in Fbsp.obo - i.e. in "Mmus\Notch1", "Mmus" must be
+valid.
+
+b. this part may be related to your species question !!
+
+
+I *think* that the reason you need to look at species, is to see if
+certain other fields should be filled in.
+
+I am not sure what the overall species of these :: beasts should be, but
+I am sure ! that they should be treated as non-drosophild from the point
+of view of which G20 fields should be filled in.
+
+
+2. if the symbol starts with "T:" i.e. tags
+
+- chop off the "T:"
+- the rest of the symbol should be checked as normal for symbol/species
+validit - i.e. if the split bit contains a "\" then the bit before the \
+should be a valid wotnot in Fbsp.obo
+
+- again, I'm not sure what species the tag gene should end up with in
+chado - probably the species of the bit after "T:" has been taken off -
+and that can be used to store whether or not it is drosophilid for
+checking the G20 fields
+
+gm 070122
+
+
+Fixed for tags.  Fusion genes and anything else containing stuff
+before the first \ in a symbol will continue to draw complaints about
+invalid species for the time being.
+
+pcl23 070122
+
+================================================================================
+6) A26. wrong aberration field specification:
+
+I got this:
+
+gm14176: Required proforma field A26 missing.
+
+
+cos /usr/local/doc/aberration.checks.pro
+
+says this:
+
+! A26. Type of aberration relative to wild-type  [CV]  *C :
+
+MULTIPLE VALUES ALLOWED?: n
+PROPAGATIONS: none
+!c APPLICABLE: y
+INCLUSION ESSENTIAL?: y
+MANDATORIALLY HAS VALUE: yes for new aberrations (A1g is n) otherwise no.
+CANDIDATE FOR SPLITTING?: n
+
+
+i.e. it says "INCLUSION ESSENTIAL?: y" I think that the specification is wrong and this
+field should be "INCLUSION ESSENTIAL?: n"
+
+gm 070122
+
+Fixed in spec and in Peeves.
+
+pcl23 070122
+
+================================================================================
+7) sm67: G25: Unrecognized format for cDNA clone name 'DmA15-12zap' 
+
+As far as I can tell from the paper and from NCBI, this really is a cDNA
+clone and this is the only given name (ie no synonyms).  Granted, it
+may not be in a 'standard format', though I don't know what the list
+of standard formats looks like in the Peeves spec.  Not sure what to
+suggest here.
+
+sjm49.  070122.
+
+
+
+sm070518 - FBgencur states:
+"Clone symbols from the major sequencing centres (BDGP, EDGP) mentioned
+in papers can be recognised using the following key, although authors
+may use other symbols if the clones are from their own screen (you
+should record these clones as well...)" 
+So, we should continue to add non-standard cDNA clone names to G25 and, having double-checked it, then ignore the consequent Peeves error.  Once the new clone name is in Chado (after the next literature update), Peeves will be aware of it and not complain again.  We decided that the Peeves check for this field should not be made less stringent as the majority of cDNA clones entered in G25 fit the standard format, and we want to know when we make a simple typo or paste-o error.  Paul also noted that "if a new class of clone names becomes apparent,
+it is straightforward to augment a regexp within Peeves so that class is
+recognized."
+================================================================================
+8) I don't understand this particular error message:
+
+rs962: G1f: 'l(3)05203' is not a valid gene symbol
+
+l(3)05203 is a valid gene symbol.  I tried repasting this in case there was a subtle
+difference that I couldn't see but the error message came back.
+
+rs468 070122.
+
+
+Peeves bug (wasn't checking validity of GA1f or G1f properly).  Now believed to be fixed.
+
+pcl23 070122
+
+================================================================================
+9) ran script Friday - seems to be bug that duplicates lines:
+
+Processing st58
+
+st58: Found another P11c.  An earlier one had
+''.
+This has
+''
+Continuing to parse, using this one.
+
+st58: Found another P11d.  An earlier one had
+''.
+This has
+''
+Continuing to parse, using this one.
+
+! P11a. Page range              *z :
+! P11b. URL                     *R :
+! P11c. accession number           :
+! P11d. DOI                        :
+! P11c. accession number           :
+! P11d. DOI                        :
+
+sjm41 070122
+
+Bug in profmung.pl, now fixed.    Sorry about that 8-(
+pcl23 070122
+
+================================================================================
+13) GA1e. invalid symbol error.
+
+I am getting this:
+
+gm14178: GA1e: wge[&Dgr;BAH] is not a valid allele symbol in Chado
+
+I filled in the proforma thusly:
+
+
+! GA1a. Allele symbol to use in database               *A :wge[&Dgr;BAH.Scer\UAS.T:Zzzz\FLAG]
+! GA1b. Complete symbol for GA1a in paper (if different)  *i :
+! GA1e.  Action - rename this allele symbol                   :wge[&Dgr;BAH]
+! GA1f.  Action - merge alleles                               :
+! GA1g.  Is GA1a the valid symbol of an allele in FlyBase?    :n
+
+
+i.e. its a rename of wge[&Dgr;BAH] to wge[&Dgr;BAH.Scer\UAS.T:Zzzz\FLAG]
+
+I checked and it is in chado:
+
+fb_2006_01_18=> select * from feature where uniquename = 'FBal0190525';
+ feature_id | dbxref_id | organism_id |     name      | uniquename  | residues | seqlen | md5checksum | type_id | is_analysis |      timeaccessioned       |      timelastmodified      | is_obsolete 
+------------+-----------+-------------+---------------+-------------+----------+--------+-------------+---------+-------------+----------------------------+----------------------------+-------------
+   23212619 |           |           1 | wge[DeltaBAH] | FBal0190525 |          |        |             |     219 | f           | 2006-08-22 21:40:31.173603 | 2006-08-22 21:40:31.173603 | f
+
+
+two possibilities occur to me as reason for error:
+
+1. you haven't implemented this check fully yet - can't tell from buglist - but the fact I
+   am getting an error suggests that you are trying to check for symbol validitiy !!
+
+2. its a greek thing - I put "wge[&Dgr;BAH]" and feature has "wge[DeltaBAH]" - on the web
+   pages it comes out as a proper greek delta, so I dont know if the problem is with the
+   db or how you are checking - if the name in the "feature " table is always the non-sgml
+   version, then maybe you need to go to the synonym table to get teh sgml version ?? -
+   maybe you are doing that already, or maybe what I just wrote is complete rubbish !!!
+
+gm 23.1.2007
+
+Problem with greeks indeed.  Sometimes Chado has them spelled out and sometimes the proper
+symbol is used.  I'll review and see what can be done.
+
+pcl23 070123
+
+Many of the greeks problems believed to be fixed.
+
+pcl23 070130
+
+
+================================================================================
+16) A perhaps related error message to the one above is this one (which I also have several times on records
+that previously had a clean bill of health):
+
+sm71: P4: Can't omit issue number without valid data in P22
+
+I seem to get this message for papers I curated ahead of the biblio
+list (so they lack FBrfs) and for which issue numbers don't exist (a
+volume no. and page range are all that are provided).
+
+
+steven 070129 
+
+note added by gillian 070129 - there seem to be several publication fields now giving this
+type of error:
+
+gm14254: P3: Can't omit volume designation without valid data in P22
+
+gm14254: P4: Can't omit issue number without valid data in P22
+
+gm14254: P11a: Can't omit the page range without valid data in P22
+
+as mentioned in the previous bug , it looks to me like the publication module of peeves
+has gone back to an older version - I wasn;t getting these kind of errors before.
+
+
+sm070518 - this appears to have been fixed, so I moved this bug report to bugsfixed.txt
+================================================================================
+17) gillian 070129. This is not a bug, it is a request to tweak the error
+message if possible.
+
+I got this:
+
+gm14290: G1a: Missing data
+
+It might make it easier for these fields where we forget to put
+anything in, if we had the whole line to copy and hit find e.g.
+
+gm14290: G1a: Empty field
+! G1a.  Gene symbol to use in database                      *a :
+
+I think that this is definitely true for the G|A|AB|BA 1a. fields, not
+sure if true for any others ?
+
+
+Changed.
+
+
+pcl23 070129
+================================================================================
+18) gillian 070129. peeves still not coping v. well in SoftCV field if curator puts in
+completely blank line. I would very much like to be allowed to continue to put blank lines
+in to separate out lines of text in SoftCV/free text fields - I find it really helps in
+reading the curation when it is done - both to chekc it makes sense (!) and to use it
+e.g. to add CV body part terms, so would it be possible to make peeves just ignore a line
+that consists just of a return in a SoftCV field ??
+
+here is the actual example, it gives a not v. helpful error message since it is looking at
+an empty line as it just contains a return.
+
+gm14301: GA23a: I think you omitted the space after the SoftCV prefix in ''
+
+gm14301: GA23a: Invalid SoftCV prefix '' in ''
+
+this must be where the problem is as it was the only filled in GA23a.
+
+! GA23a. Notes on origin [SoftCV]                      *R :Induced on: A @Pros26[1]@ chromosome.
+
+Selected as: a suppressor of the dominant temperature sensitive lethality of @Pros26[1]@.
+! GA23b. Notes on origin [free text]                   *R :
+
+
+Fixed for GA23a, GA12a, GA, GB28b, G29a though there may be others elsewhere that need
+similar fixes.
+
+pcl23 070129
+
+================================================================================
+19) gillian 070129. This is not a bug, it is a request to tweak the error
+message if possible.
+
+gm14299: A19a: invalid data 'Df(2L)OK371&Dgr;'.  It should be '@abs_symbol@.
+
+this was a bit hard to understand.
+
+I had filled in:
+
+! A19a. Phenotype in combination with other abs [SoftCV]    *T :Inferred to overlap with: Df(2L)OK371&Dgr;
+
+and it should have been:
+
+! A19a. Phenotype in combination with other abs [SoftCV]    *T :Inferred to overlap with: @Df(2L)OK371&Dgr;@.
+
+we would like if possible for the error message to include the WHOLE wrong line,
+i.e. 'Inferred to overlap with: Df(2L)OK371&Dgr;' as its easier to find the wrong message
+(I had that aberration symbol in 8 other places apart from the error). and think maybe it
+should say something like this:
+
+gm14299: A19a: symbol in SoftCV without @@. You wrote 'Inferred to overlap with:
+Df(2L)OK371&Dgr;' but it should be 'Inferred to overlap with: @Df(2L)OK371&Dgr;@.'
+
+
+Fixed.  Several small changes rolled in, including more sensible treatment of lines that
+are missing a terminal full-stop but are otherwise ok and checking to see whether a
+stampless-symbol is a valid aberration symbol or not.
+
+
+pcl23 070129
+
+
+================================================================================
+20) gillian 070129.
+
+an interesting one.
+
+I got this:
+
+gm14254: Required proforma field P2 missing.
+
+because I had ?? in the line:
+
+gm14254: P2: Not checking this field because of ?? in 'The Brown Daily Herald Online Edition??need a multipub.pro for this as follows:
+The Brown Daily Herald Online Edition
+http://www.browndailyherald.com
+1995-
+??'
+
+
+would be better if the "Required proforma field P2 missing." message didn't happen in this
+case - as it took me a while to figure out the problem - is it possible to do this -
+sorry, this bug report probably doesn't make much sense !
+
+
+Peeves bug.  Will be fixed as part of a general renovation of publication.pl
+
+pcl23 070129
+
+Fixed.   pcl23 070221
+
+================================================================================
+24. A1a. not checking symbol validity.
+
+the crib at the top says that A1a. is "F" i.e. being fully checked - but this isn't true:
+
+gm14229
+
+but I had this (have left it in proforma to aid debugging):
+
+! A1a. Aberration symbol to use in database           *a :In(3R)Payne
+
+'In(3R)Payne' is not a valid FBab symbol, so this should have got an
+invalid symbol bounce BUT I didn't get one.
+
+gm 070207.
+
+gm070521 - this is now fixed.
+================================================================================
+25. Check for duplicated records.
+
+For one of my records, rs972 (now corrected), I had accidentally
+entered the same gene twice.  I was alerted to this by Peeves because I
+hadn't stated what the paper called the gene, so I had
+rs972: No data in either G1b or G2b for 'BacA\p35'
+rs972: No data in either G1b or G2b for 'BacA\p35'
+
+Dailyparse used to give an error message when this occurred.  Can Peeves?
+
+Ruth 070209.
+
+Gillian also has an error like this (not corrected so useful for when check is implemented):
+
+the record is gm14272
+
+it has this twice:
+
+! G1a.  Gene symbol to use in database                      *a :bxPRE
+
+but no message telling me about the error.
+
+gillian 070213. still no message about this error.
+
+rs070810 - this is now definitely fixed.
+
+================================================================================
+33. gm070220.
+
+summat funny with G7a/b checking:
+
+gm14301: : Junk (G7a) found between ! and .
+
+gm14301: : Junk (G7b) found between ! and .
+
+gm14295: : Junk (G7a) found between ! and .
+
+gm14295: : Junk (G7b) found between ! and .
+
+(not sure what it means or if I genuinly made an error !)
+
+
+Peeves bug, now fixed.   pcl23 20070220
+
+================================================================================
+34. GA21 fields. gm070220.
+
+34a. 
+
+tweak to error message:
+
+gm14294: GA21: You state that kdn[PG129-R1] complements kdn[PC64], but have not curated the reciprocal statement
+
+since the statement in the allele.pro is this:
+
+Complements: kdn[PG129-R1]
+
+
+could the error message say something like this instead (easier to copy
+and paste bits into missing reciprocal allele.pro (otherwise we have to
+go to background menus or type !!)
+
+
+gm14294: GA21: You state in kdn[PC64] 'Complements: kdn[PG129-R1]', but have not curated the reciprocal statement
+
+?? or something approaching better english than mine !!
+
+
+(and similar for Fails to complement: and Partially complements: )
+
+
+pcl23 070220  --- changed.
+
+
+34b.
+
+ah, it seems not to be checking the GA21 properly, as I have this:
+
+! GA1a.  Allele symbol to use in database                  *A :kdn[PG129-R1]
+! GA21.  Interallelic complementation data (structured) [SoftCV]*Q :Complements: kdn[PC64]
+
+! GA1a.  Allele symbol to use in database                  *A :kdn[PC64]
+! GA21.  Interallelic complementation data (structured) [SoftCV]*Q :Fails to complement: kdn[PG129]
+Fails to complement: kdn[KG04873]
+Complements: kdn[PG129-R1]
+Complements: kdn[KG04873-R1]
+
+so I do have the reciprocation.
+
+perhaps the problem is the ordering in kdn[PC64] - i.e. perhaps its the multiple lines in there vs the single line in kdn[PG129-R1]
+
+
+Peeves bug, not handling multiple lines properly.  Fixed.
+
+pcl23 070220
+
+================================================================================
+36. !c error message gm070220.
+
+gm14203: GA21: can't use !c
+
+to
+
+gm14203: GA21: can't use !c in this field
+
+(brill that its checking - I have a few records like this where I did
+!c before we realised we couldn't, so now I won't have to grep for them
+as I know peeves is checking)
+
+
+pcl23 070220 ---- changed.
+
+
+================================================================================
+37. Use of stamps in free text. rs070220.
+
+Is it possible for Peeves to alert us to double sets of stamps @@ in
+free text as this is usually the result of a pasto?  In my record,
+rs909, I had the text @@Hand[ko] where I have missed putting the
+symbol within the stamps.  This is a fairly common error so it would
+be good if it could be checked.
+
+Ruth
+
+
+pcl23 070220  ---- functionality added.
+================================================================================
+44. enhanced spec for GA28a., GA28b., GA29a. and GA29b.
+
+The spec for GA28a., GA28b., GA29a. and GA29b. in allele.checks.pro has now been updated to
+include coping with lines with two sets of {} and also with qualified
+interactions such as 'suppressible | partially' - Peeves needs to be
+updated so that it follows this new spec so that the proformae created
+for the flush and reload can be checked before reloading. gm070410.
+
+Done.  pcl23 070411
+
+================================================================================
+45. change to spec for GA21. - this spec has just been changed (made
+simpler actually! ) so Peeves needs updating to match. gm070410.
+
+
+Done.  pcl23 070411
+
+================================================================================
+46. change to spec for GA4. this spec has just been changed (made
+simpler actually! ) so Peeves needs updating to match. gm070410.
+
+Done.   pcl23 070411
+
+================================================================================
+15) A new error I have this morning (for records that had passed the Peeves checks previously) is this (eg.):
+
+sm97: P11a: Can't omit the page range without valid data in P22
+
+I get this message for my records of 'supplementary material' where there an FBrf doesn't
+exist and I've given a URL (instead of a page range).  Ruth and I agree that Peeves
+shouldn't require a page range to be given where a URL has been stated.
+
+steven 070129
+
+note added by Gillian 070129, something has gone a bit odd with the P11[abcd]. fields -
+its no longer following the nice rules we have in publn.checks.pro:
+
+COMMENTS: also need a check between the 4 P11 fields. The check is this. For new publications (ie. P22 not filled in):
+
+ - at least one of the P11 (a-d) fields must be filled in.
+ - if P11a is filled in, both P11b. and P11c. must be empty
+ - if P11c. is filled in, both P11a and P11b. must be empty
+
+it did appear to be following these rules before, so its like the script has reverted to an older version of the publication module.
+
+This is still not working correctly - Pete 070213.
+
+
+sm070518 - this appears to have been fixed, so I moved this bug report to bugsfixed.txt
+================================================================================
+50. If Chado has only a family name and no initials for any author of a
+publication (most commonly seen when only the first author is known)
+Peeves warns:
+
+Use of uninitialized value in join or string at /usr/local/Peeves/publication.pl line 1230, <PRO_FILE> chunk 54.
+
+when processing P12.  This is harmless but unsightly and should be
+fixed ITFOT.
+
+pcl23 070502
+
+Fixed some time ago.  pcl23 071114
+================================================================================
+52. Hi Paul,
+
+I am getting error messages like this for GA32a:
+
+Processing gm14367
+
+gm14367: GA32a: To be or not to be, that is the question?
+
+
+This message is a *tad* opaque, especially considering it is for a field
+marked in the proforma with 'TAKE CARE':
+
+! GA32a. Action - delete allele             - TAKE CARE :
+
+I would personally prefer it if the message said something more obvious,
+like:
+
+gm14367: GA32a: Do you *really* want to delete 'slo[821-993.S942A.T:Sjap\GST]' from the database?
+
+so that it more closely matches the similar nice message for the GA32b.
+field, and also lists the allele symbol so that it is easy for the
+curator to decide whether they really did mean to fill in this field.
+
+(The same applies to the equivalent fields G31a., A27a. and AB11a.).
+
+I realise I'm having a slight sense of humour failure here (!!) and
+perhaps the other curators will disagree with me, but I'd rather have a
+scary 'error' message for this field as it is a scary field to be filled
+in, so that we don't end up deleting things from the database by
+mistake !
+
+Gillian
+
+added by gm 070517 - I actually think that this is quite important for
+when we check the records immediately prior to shipping to harvard for
+MI4.
+
+ADDED BY STEVEN 070518
+
+I have the same message for sm174, and I agree 100% with Gillian on
+this one.  The Peeves comment should use the 'Do you *really* want to
+delete...' format.
+
+Changed some time ago.  pcl23 071114
+
+================================================================================
+58. spec for G28b - urgent
+
+If G28b is filled in then Peeves should check to see that EITHER G1e or G1f has been filled in.  Otherwise no merge/rename will occur and it is quite likely that curators will remember to fill in G28b without and forget the other, more important, fields.
+
+Ruth 070517.
+
+rs070810 - this is now fixed with Peeves clever enough to recommend whether it is G1e or G1f to be filled in.
+================================================================================
+63. Integrity of fields in gene proforma: Peeves checks some and not others - urgent.
+
+I noticed during checking that Peeves sometimes didn't mind if some of
+the fields were malformed.  I decided to check this systematically by
+deleting the colon from every field of the gene proforma in
+~rs468/peeves_test/rs0019.
+
+Peeves gives an error message for the following fields:
+G1a, G1b, G1e, G1f, G1g, G30, G2b, G20a
+The nature of the error message for these fields is:
+ Required proforma field G1a missing.
+
+It also gives an error message for G30, G25, G19a, G28b and G29a of the following more informative nature:
+Invalid proforma field  G25.  Relationship to clone                         [SoftCV]*s Identified with: D1358
+
+No error is reported for the following fields:
+G2a, G2b, G2c, G27, G31a, G31b, G20b, G20c, G20d, G20e, G20f, G20g,
+G20h, G10a, G10b, G11, G25, G19a, G19b, G12a, G12b, G14a, G14b, G28a,
+G29b, G18, G22, G24a, G24b, G24c, G24e, G15.
+
+Now, I realise that many of the fields that produce no error are those that are
+not absolutely required by Peeves to be included in the gene proforma.  However,
+in my test case I have put data into ALL fields.  So my question is this, would
+data in fields that have no colon make it into chado?
+
+Ruth 070518.
+
+Such data would NOT be loaded into Chado.
+
+Check added for omitted leading ! or absence of a colon in anything
+that looks like it may be a proforma field.
+
+pcl23 070522
+================================================================================
+62. G2a checking.  Think this should be checked before the update or
+    we may end up with genes with more than one official name so I'm
+    going to call it urgent.
+
+I've made a very simple record to test G2a checking in
+rs468/peeves_test/done/G2a.  At the moment Peeves lets you enter fill
+G2a with either the current valid gene name or a completely different
+gene names.  Curators may easily accidentally add a name to G2a when
+they are aiming for the G2b synonym field.
+
+Spec: if G2c. is not filled in, Peeves should only allow G2a to be
+filled in when G1g. is n, otherwise it should say something like:
+
+"You have filled in G2a. for an existing gene '<symbol>', did you mean to put it in G2b."
+
+(An aside to help us think about this: Where curators want to add a
+gene name, where previously only a symbol was used, they can use G2c.)
+
+Ruth 070517.
+
+
+Believed fixed.
+
+pcl23 070522
+================================================================================
+71. G28b stamps issue - could be urgent
+
+At the moment, Peeves is allowing the use of stamps in G28b.  See
+~rs468/peeves_test/done/G28b/rs0014 CG32269 gene proforma.
+
+I think Peeves should check for this as I'm worried that if curators
+accidentally used stamps in this field, then after the merge/rename the symbols
+in the stamps would automatically become the new symbol leading to a nonsensical
+statement, such as Source for merge of: CG32269 CG32269
+
+Could this happen?
+
+Ruth 070521.
+
+Fixed.
+
+pcl23 070521
+
+================================================================================
+72. G28b integrity - urgent
+
+At the moment, Peeves does not complain if only one symbol is entered in G28b or
+that two or more symbols are separated by a return instead of a white space.
+
+See ~rs468/peeves_test/done/G28b/rs0014
+proformae CG32251 and CG32260.
+
+I think we need to look for this error or again, we could end up with nonsensical statements on the web.
+
+Ruth 070521.
+
+I don't understand the "only one symbol" portion.  Peeves complains
+
+pl0014: G28b: You need more than just one symbol 'CG32260'
+
+
+Peeves does complain about having symbols split over two or more lines.  It just
+doesn't complain with a comprehensible message.  The complaints are:
+
+pl0014: G28b: You need more than just one symbol 'CG32251'
+
+pl0014: G28b: Invalid SoftCV prefix 'CG32252'
+
+pl0014: G2a: Missing data when G1f has data 'CG32251 CG32252' and G1g is n
+
+pl0014: Mismatch between G1f data (CG32251 CG32252) and G28b data (CG32251)
+
+pcl23 070810
+
+================================================================================
+76. G2 spec - urgent
+
+I have put all of these cases into ~rs468/peeves_test/rs0020 so they can be tested once the spec is changed.  At the moment, Peeves is not finding any of them.
+
+1. When G2c is filled in, G2a must also be filled in.
+2. When G1e is filled in, G2c must be filled in, and therefore G2a must be filled in too.
+3. When G1f is filled in and Glg is marked y, G2c must NOT be filled in.
+4. When G1f is filled in and G1g is marked n, G2c must be filled in, and therefore G2a must be filled in too.
+
+Ruth 070521.
+
+Believed fixed (to a subtly different spec which was thrashed out
+after Ruth's material above.)
+
+
+pcl23 070522
+================================================================================
+77. spec for G1f
+
+When G1f is filled in and Glg is marked y, G2a must be filled in, but G2c must NOT be filled in. 
+
+When G1f is filled in and Glg is marked n, BOTH G2a and G2c must be filled in.
+
+Ruth 070522
+
+Checked a Peeves run on this and it is fixed. rs070810.
+================================================================================
+79. A rule for G27.  Etymology
+
+Can we make stamps in this field illegal please?  This will actually help to
+prevent curators from using this field when they mean to use another.
+
+rs 070726
+
+Fixed.
+
+pcl23 070810
+================================================================================
+80.
+
+spotted this one in e-mails about bib problms for milestone 4.
+
+*U FBrf0199314
+
+has a newline in the title:
+
+*u Supplemental Data. Anterograde Jelly belly and Alk receptor tyrosine kinase signaling
+mediates retinal axon targeting in Drosophila.
+
+
+I think that this should have been caught by Peeves.
+
+the spec for this field says:
+
+! P16. Title of publication (excl. part-title)   *u :
+
+
+MULTIPLE VALUES ALLOWED?: n
+PROPAGATIONS: none
+!c APPLICABLE: y if P22 filled in, n if P22 not filled in
+INCLUSION ESSENTIAL?: n
+MANDATORIALLY HAS VALUE: n
+CANDIDATE FOR SPLITTING?: n
+
+
+my understanding of what "MULTIPLE VALUES ALLOWED?: n" means is that this means
+that all the data in that field should be on a single line i.e. no
+returns/newlines/whatever the correct computer term is for a return.
+
+Anwyays, the bottom line is that the title info for a pub should always be on a
+single line (since there is a separate field for if it has a part number and
+title (! P17).
+
+So could you investigate whether peeves is catching these errors and make it so
+it does.
+
+It might be that Peeves does find this already and it just wasn't spotted when
+it came in from a curation record (rs1093).
+
+gm070726
+
+Fixed.   pcl23 070810
+================================================================================
+90. Wrong input for the field P32
+
+! P32. FBrf to be merged into P22. *N :personal communication to FlyBase
+
+Found when loading fb_2007_04.EP5
+
+Haiyan 071115
+
+Not a Peeves bug.  Record wrongly submitted to Harvard despite Peeves
+issuing a report.
+
+pcl23 071116
+
+================================================================

@@ -1,0 +1,55 @@
+
+## ! TC4a. Parental cell line (valid cell line symbol) :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+No (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* check_valid_symbol_field sub checks that any value is a valid cell line symbol
+
+Checks between fields:
+
+
+Checks between fields:
+
+* If TC4a is filled in TC4b must be filled in (and vice versa) (sub compare_field_pairs)
+
+* The value in TC4a must not be the same as the value in TC1a (sub compare_field_pairs)
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm170127.

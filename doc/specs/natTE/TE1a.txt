@@ -1,0 +1,51 @@
+
+## ! TE1a. gen.natTE symbol to use in database    :
+
+### Multiple values allowed:
+
+No (Implemented: 'single_line' subroutine in loop where the field is identified)
+
+### !c Applicable:
+
+No (Implemented: in validate_primary_proforma_field)
+
+### Inclusion essential:
+
+Yes (Implemented)
+
+### Mandatorially has value:
+
+Yes (Implemented: 'contains_data' subroutine in loop where the field is identified)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+  *  sub validate_primary_proforma_field (see doc/specs/allele/GA1a.txt for details)
+
+Cross-checks with other fields:
+
+  * subroutine 'cross_check_harv_style_symbol_rename_merge_fields' - see MA1f.txt for details of what this subroutine does.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+doc: checked and changed doc so that it reflects what has been implemented
+
+### Updated:
+
+gm170206.

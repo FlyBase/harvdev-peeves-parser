@@ -1,0 +1,61 @@
+
+## ! TO2c.  Action - rename this experimental tool name             :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Cross-checks within field:
+
+* sub 'validate_existing_full_name'
+
+Cross-checks between fields:
+
+* If TO2c is filled in, TO2a must be filled in (compare_field_pairs, pair_test = 'dependent')
+
+* If TO2c and TO2a are both filled in, they must not be the same value  (compare_field_pairs, pair_test = 'not same')
+
+* If TO1g (merge field) is filled in, TO2c must not be filled in (compare_field_pairs, pair_test = 'single')
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+
+### Status:
+
+
+Not yet implemented:
+
+* there is no check that the value given in TO2c is really a valid fullname in chado. should make a generic subroutine that can be checked at the end of the proforma - currently this check against chado is only done in gene.pl in amongst all the complex cross-checks
+
+
+
+### Updated:
+
+gm171114.

@@ -1,0 +1,60 @@
+
+## ! HH1f. Database ID for disease or health issue  :
+
+### Multiple values allowed:
+
+No
+Implemented (in validate_primary_FBid_field)
+
+### !c Applicable:
+
+No
+Implemented (in validate_primary_FBid_field)
+
+### Inclusion essential:
+
+Yes (Implemented)
+
+### Mandatorially has value:
+
+Yes
+Not Implemented
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+Checks within field:
+
+in 'validate_primary_FBid_field':
+
+* each entry must either be the string 'new' or an FBid number of the type expected for the proforma (FBhh)
+
+* if the entry is an FBhh number, it must be valid in chado.
+
+
+
+Cross-checks with other fields:
+
+
+* The number of entries in the list in HH1f must match the number of entries in the HH1b (primary proforma) field (sub 'validate_primary_FBid_field')
+
+
+
+   * subroutine 'cross_check_harv_style_symbol_rename_merge_fields' - see MA1f.txt for details of what this subroutine does. Note, that for HH, the merge field is not yet implemented or in the proforma.  The proforma parsing software has 'HH3b' as a place holder for that field, so made a dummy empty @HH3b_list array so that I could re-use the common 'cross_check_harv_style_symbol_rename_merge_fields' subroutine to cross-check HH3a, HH1f and HH1b
+
+
+### Comments:
+
+
+
+### Status:
+
+
+### Updated:
+
+gm160309.

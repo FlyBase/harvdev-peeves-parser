@@ -1,0 +1,73 @@
+
+## ! IN6.  List of interactors (FB symbol or ids), role (Termlink MI CV), qualifier ( <symbol>  <ID_as_reported>  <role>  <qual/note> ) :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+No (implemented)
+
+
+### Inclusion essential:
+
+Yes (Implemented)
+
+### Mandatorially has value:
+
+Yes (not yet implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field (sub validate_IN6):
+
+- report an error if the line does not match the basic '<symbol>  <ID_as_reported>  <role>  <qual/note>' format
+
+- report an error if any of the <symbol>, <ID_as_reported> or <role> sub-fields are empty (NB, no error is reported if <qual/note> is empty, as that is optional).
+
+- information in the <symbol> subfield must be a valid FBtr or FBpp symbol, either in chado or generated in record.
+
+- sub trim_space_from_ends checks for superfluous white-space at beginning/end of the <ID_as_reported> sub-field
+
+- if there is any <note> sub-field information, it is checked as follows:
+
+  - sub trim_space_from_ends checks for superfluous white-space at beginning/end of sub-field info
+  - check_stamps checks validity of symbols in stamps
+  
+- the <role> must be a valid PSI-MI CV term that is a child of either 'experimental role' or 'biological role'.
+  
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+Not yet implemented:
+
+Within field
+
+
+
+- should the max number of lines be two, and if role = 'self' max number of lines = 1 ? 
+
+
+Between fields:
+
+- could add a cross-check with IN2a so that if description is RNA-protein there must be an -XR symbol and an -XP symbol, whereas if the description is protein-protein, all symbols must be -XP
+### Updated:
+
+gm160104.

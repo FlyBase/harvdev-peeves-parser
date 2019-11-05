@@ -1,0 +1,51 @@
+
+## ! LC6a. Description [free text]  :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+ * sub 'check_stamped_free_text' checks that entries flanked by @@ are valid symbols of any FBid type (either existing already in chado or instantiated in the curation record).
+
+
+### Related fields:
+
+
+
+### Comments:
+
+Note: data from this field ends up as a single libraryprop in chado, so specs for proforma parsing will say 'Single' in the equivalent to 'Multiple values allowed', but because this text can contain paragraphs, it is implemented as 'Multiple values allowed : Yes' in Peeves, since for Peeves 'Single' means a single line.
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm180207.

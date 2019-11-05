@@ -1,0 +1,59 @@
+
+## ! A92e.    Observed cytology                                           :n
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented) (see below)
+
+
+### Dupl. for multiple field:
+
+Yes (Implemented): A92a -> A92b, A92c, A92d, A92e
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if A92e is filled in (this is to make it easier to implement checking of fields that can be duplicated).
+
+* sub 'validate_cvterm_field' checks that the value is either 'y' or 'n' (only 'y or n' terms are allowed).  Using this subroutine instead of 'check_y_or_n' subroutine because need to go through process_field_data to store values for checks between fields.
+
+Checks between fields:
+
+
+ * A92a must be filled in if A92e is filled in (and vice versa) (sub compare_duplicated_field_pairs)
+
+ * A92d must be filled in if A92e is filled in (and vice versa) AND they must not contain the same value (sub compare_duplicated_field_pairs)
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+* This field should only be filled in for Dmel alleles ??
+
+
+
+### Updated:
+
+gm151001.

@@ -1,0 +1,61 @@
+
+## ! P45.  Publication is NOT about Drosophila? (y)  *q :
+
+
+### Multiple values allowed:
+
+No (Implemented in validate_P45)
+
+### !c Applicable:
+
+Yes (Implemented  - see details below)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+Checks done in validate_P45:
+
+* Only valid entry is 'y'.
+
+* If filled in, a warning message is always produced as this field should be used rarely.
+
+Cross-checks with other fields:
+
+
+* Cannot be filled in if P22 is 'unattributed'
+
+* If !c is used in P45
+
+   * P22 must be a valid FBrf number
+
+     
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm151001.

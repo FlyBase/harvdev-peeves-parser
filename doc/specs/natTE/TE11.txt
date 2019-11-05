@@ -1,0 +1,59 @@
+
+## ! TE11. Other variants        :
+
+### Multiple values allowed:
+
+
+
+### !c Applicable:
+
+
+
+### Inclusion essential:
+
+
+
+### Mandatorially has value:
+
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+Not implemented any checks - just validate_stub subroutine, for the reasons below.
+
+Not clear whether this is still supposed to be curated into - cannot see where this is on web page.
+
+
+Following sql adapted from field mapping table gives 26 rows:
+
+select fo.name as variant_symbol, fo.uniquename as variant_id, f.name as parent_symbol, f.uniquename as parent_id, pub.uniquename from feature fo, feature f, feature_relationship fr, cvterm cvt, feature_relationship_pub frp, pub where fo.feature_id=fr.subject_id and fo.is_obsolete='f' and f.feature_id=fr.object_id and fr.type_id=cvt.cvterm_id and frp.feature_relationship_id=fr.feature_relationship_id and pub.pub_id=frp.pub_id and cvt.name='alleleof' and f.is_obsolete='f' and f.uniquename like'FBte%';
+
+These are 'alleles' (at least they are FBal) in the database.  Presumably these are remnants from when natTE were stored in db as genes, and we had made some alleles of these.
+There are cases where an insertion has gone into a natTE in the genome.
+Example: FBal0095857 and associated insertion FBti0013462.
+There are also cases where one of these FBal is associated with an FBtp
+Example: FBal0144792 is associated with FBtp0016846
+
+
+Need to figure out whether should still have this field, and what to do with existing data in db.
+
+
+### Updated:
+
+gm151001.

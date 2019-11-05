@@ -1,0 +1,55 @@
+
+## ! LC3e. Action - dissociate LC1f from this dataset  :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+No (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+ * Value must be an existing FBlc symbol *in chado* (since the whole field it is performing a function similar to !c i.e. removing existing relationships between datasets in the database)
+
+Cross-checks between fields:
+
+
+ * If LC3e is filled in, LC1a must be an existing dataset (or a dataset being renamed) (since the whole field it is performing a function similar to !c i.e. removing existing relationships between datasets in the database).
+
+ * LC3e and LC1a must not contain the same value.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160518.

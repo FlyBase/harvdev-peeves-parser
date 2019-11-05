@@ -1,0 +1,55 @@
+
+## ! DB1a. Symbol to use in FlyBase (db.name) :
+
+### Multiple values allowed:
+
+No (Implemented: 'single_line' subroutine in loop where the field is identified)
+
+### !c Applicable:
+
+No (Implemented: in validate_primary_proforma_field)
+
+### Inclusion essential:
+
+Yes (Implemented)
+
+### Mandatorially has value:
+
+Yes (Implemented: 'contains_data' subroutine in loop where the field is identified)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+### Checks:
+
+Checks within field:
+
+  *  sub validate_primary_proforma_field (see doc/specs/allele/GA1a.txt for details)
+
+Checks between fields:
+
+- If DB1g is 'y' then DB1a must be a valid database name in chado.
+
+- If DB1g is 'n' then DB1a must NOT be a valid database name in chado.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Need to test implemented checks.
+
+Would be better to fix potential bug in cross_check_1a_1g and then convert cross-checking to use that and replace existing cross-checking.
+
+
+
+
+### Updated:
+
+gm170206.

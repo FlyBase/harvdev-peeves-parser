@@ -1,0 +1,69 @@
+README for svn/flybase-cam/Peeves
+
+1. Directory structure and description of items
+===============================================
+
+README:			this file
+
+
+a. folders containing Peeves code:
+----------------------------------
+
+There are 3 versions of Peeves in current use, each in their own folder:
+
+dev:			development-in-progress version of Peeves, where initial software development takes place
+test:			intermediate version of Peeves, ready for test use by curators
+production:		the stable tested release of Peeves, used by curators to check their curation records
+
+(branches:		branch of Peeves code used by DOS to implement code for expression curation, not in current use)
+
+
+b. other folders:
+-----------------
+
+doc:			documentation (see docREADME in doc folder for more details of what is in this folder)
+
+records2text:	folder containing archive of test records used to test Peeves. Organised into sub-folders, named either for the field/JIRA ticket number/new subroutine being checked, to try to make it easier to identify the relevant folder when developing new code.
+
+
+
+
+2. Running Peeves
+==================
+
+The basic structure of each Peeves code folder (ie. dev, test, production) and how to run the different Peeves versions they contain is the same.
+
+The program named 'Peeves' in each folder is the script that checks curation records for errors.  Other files named xxxxx.pl (e.g. allele.pl, tools.pl) in the same folder are called by the main Peeves script as it runs.
+
+Peeves requires two config files as arguments:
+
+$ perl Peeves Peeves.cfg curator.cfg
+
+
+a. Peeves.cfg
+
+The Peeves.cfg files defines paths required by the software and variables needed to connect to chado.
+
+A template Peeves.cfg_template file (which contains examples and comments explaining what each variable is) is located in each Peeves code folder. Make a local Peeves.cfg copy (not under svn control) in each Peeves code folder, using the Peeves.cfg_template file in that folder as a template.
+
+eg. use production/Peeves.cfg_template to make a local production/Peeves.cfg file
+eg. use test/Peeves.cfg_template to make a local test/Peeves.cfg file
+
+It is useful to make a separate Peeves.cfg file for each version of Peeves so that testing and development can be done without interfering with checking of curation records using production Peeves.  The key difference in each case is the value of the 'Peeves_path' variable as this defines which folder containing the Peeves modules is used when Peeves is run.  To help keep track of which Peeves version it is the config file for, Cambridge stores each local config file in the Peeves code folder for that version (ie. production/Peeves.cfg, test/Peeves.cfg, dev/Peeves.cfg).
+
+It is generally sufficient to have a single Peeves.cfg file for each version of Peeves as the variables will generally be the same at a given site for a single type of curation regardless of which curator at that site is running Peeves (an exception is Cambridge, where both 'Cambridge' and 'Harvard' style curation is carried out, so we have two separate files in the production folder: production/Peeves.cfg for checking 'Cambridge' curation records and production/Peeves_harv.cfg for checking 'Harvard' (expression) curation records).
+
+
+b. curator.cfg
+
+The curator.cfg file specifies which curation records Peeves should check, by specifying the folder where the records are and which curator(s) records should be checked.
+
+If Peeves is going to be used by multiple curators, it often makes sense for each curator to have their own curator.cfg file which they own, so that they can easily edit it to point Peeves at different folders (often useful during curation or during testing of Peeves software development).
+
+A curator.cfg_template file in the production folder details the format required in the file and has examples.  Each curator can use this as template to make their own local curator.cfg file.
+
+The same curator.cfg file can generally be used when running any version of Peeves as it simply points to the records to be checked.
+
+
+
+Updated gm140109.

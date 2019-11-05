@@ -1,0 +1,48 @@
+## ! MP3.  Is this a new multipub record? (y/n)         :
+
+### Multiple values allowed:
+
+No.
+
+### !c Applicable:
+
+No.
+
+### Inclusion essential:
+
+Yes.
+
+### Mandatorially has value:
+
+Yes.
+
+### Checks:
+
+To be valid, the value must be either 'n' or 'y'.
+
+If the value is 'n', MP1a must contain a valid multipub_id.
+
+If the value is 'y':
+
+* MP1a must be empty and
+* the value given in MP2a must not be present as the multipub
+abbreviation of any multipub held in Chado and
+* if a value is given in MP2b, it must not be present as the
+multipub full name of any multipub held in Chado.
+
+### Related fields:
+
+
+### Comments:
+
+The prototypical proforma is pre-filled with 'y'.
+
+### Status:
+
+PROFORMA FIELD OBSOLETED
+
+
+### Updated:
+
+gm131204 (removed markdown formatting).
+

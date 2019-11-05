@@ -1,0 +1,74 @@
+## ! P40.  Flag Cambridge for curation [SoftCV]  CAMCUR :
+
+### Multiple values allowed:
+
+Yes.
+Implemented
+
+### !c Applicable:
+
+Yes
+See Checks below for details of what is implemented
+
+### Inclusion essential:
+
+No
+Implemented
+
+### Mandatorially has value:
+
+No.
+Implemented
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks done in validate_P40
+
+Cross-checks with other fields:
+
+* If !c is used in P40
+
+    * P22 must contain a valid FBrf number (i.e. not 'new' or 'unattributed')
+
+     * warns if there is no data already in chado (check only carried out if 'Where_running' is 'Cambridge')
+
+
+Checks within the field (in validate_triage_flags)
+
+* If P40 contains data
+   * warns if there is a blank line within the data (check done in check_for_duplicated_lines)
+   * warns if there are any duplicated values (check done in check_for_duplicated_lines)
+   * each value must correspond to one of the currently allowed flags (see the list of 'P40_flag' entries in symtab.pl for the list of currently allowed values)
+   * if 'noGOcur' is given, warns that this flag should only be used by a GO curator
+
+   * if 'nocur' is given, no other values may be given in the proforma field
+
+   * extra checks carried out if 'Where_running' is 'Cambridge':
+
+       * if 'nocur' is given and there is no !c, warns if different flags already exist in chado for the FBrf
+
+       * if 'nocur' already exists in chado for the FBrf, warns if P40 is filled in (with something other than just 'nocur') if !c is not being used
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+doc: checked and changed doc so that it reflects what has been implemented
+
+Known issue: if you !c to nothing for "unattributed" this does not generate an error message.  This is because the 'unattributed' subroutine (which kicks in before validate_P40) is only reporting an error if you try to !c data to a value.  If P22 is unattributed, the unattributed subroutine runs and it never gets to validate_P43 because its an either/or, so I can't see an easy way to code something in to catch this.  A record submitted in error like this would bounce with Kathleen, so its a pretty harmless bug.
+
+
+### Updated:
+
+gm151001.
+

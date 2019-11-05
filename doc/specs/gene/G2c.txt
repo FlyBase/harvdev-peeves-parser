@@ -1,0 +1,75 @@
+
+## ! G2c.  Action - replace this/these gene name(s)               :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+
+### !c Applicable:
+
+No (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (i.e. it does not always have to be filled in), but see 'Cross-checks with other fields' below for what happens when other renaming/merging fields are filled in.
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+Cross-checks with other fields
+
+  * checks done after parsing entire proforma
+
+    * If G2c is filled in:
+
+       * print an error if the symbol given in G1e (if filled in) or G1a (if G1e not filled in) does not have a valid fullname in chado
+
+       * if the symbol given in G1e (if filled in) or G1a (if G1e not filled in) does have a valid fullname in chado, print an error if the value in G2c does not match that valid chado fullname
+
+
+    * If G2c is filled in, G2a must be filled in (compare_field_pairs, pair_test = 'dependent')
+
+    * If G2c and G2a are both filled in, they must not be the same value  (compare_field_pairs, pair_test = 'not same')
+
+
+    * for gene renames (i.e. G1e contains data): 
+       * print an error message if G2a is filled in without G2c being filled in (for those genes that have a fullname in chado).
+
+       * if neither G2a nor G2c are filled in:
+
+          * if the gene in G1e has a fullname in chado, print an error message that this is only allowed 'if you are trying to rename a gene's symbol without changing the full name'
+
+          * if the gene in G1e does not have a fullname in chado, print an error message reminding the curator to fill in G2a if they want to name the gene.
+
+    * for gene merges (ie. G1f contains data): 
+
+       * G2c must NOT be filled in (compare_field_pairs, pair_test = 'single')
+       * G2a must be filled in (compare_field_pairs, pair_test = 'dependent')
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm170131.

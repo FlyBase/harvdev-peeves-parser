@@ -1,0 +1,49 @@
+
+## ! LC14h. Reference FlyBase gene model annotation set [free text]  :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+sub 'no_stamps' checks that there are no stamps (so that the text still makes sense if any symbol changes in future)
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented: This field contains 'the accepted name for FlyBase annotation sets: e.g., Dmel R6.01, Dsim R2.01, Dyak R1.04' so it might be possible to make a regular expression to check the field values against <species abbreivation> <R><number> or some such
+
+### Updated:
+
+gm160517.

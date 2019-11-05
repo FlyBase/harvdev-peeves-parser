@@ -1,0 +1,58 @@
+
+## ! GA2c.  Action - replace this/these allele name(s)             :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+Cross-checks between fields:
+
+* If GA2c is filled in, GA2a must be filled in (compare_field_pairs, pair_test = 'dependent')
+
+* If GA2c and GA2a are both filled in, they must not be the same value  (compare_field_pairs, pair_test = 'not same')
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+
+### Status:
+
+doc: checked that doc reflects what has been implemented
+
+Not yet implemented:
+
+* similar to G2c, there is no check that the value given in GA2c is really a valid fullname in chado.
+
+
+
+
+### Updated:
+
+gm151001.

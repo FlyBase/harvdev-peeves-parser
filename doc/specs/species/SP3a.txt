@@ -1,0 +1,60 @@
+
+## ! SP3a. Common name (organism.common_name) :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+
+### !c Applicable:
+
+No (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+- sub no_stamps checks that there there are no stamps
+
+Checks between fields:
+
+- If SP3b is filled in, SP3a must be filled in.
+
+- If SP3a is filled in for an existing organism, sub check_changes_with_chado carries out the following checks against the SP3a (common name) data already in chado:
+
+   - if the data is being changed (i.e. SP3b is filled in)
+     - warns if there isn't already data in chado
+     - warns if trying to change data to the value already in chado
+
+   - if the data is being added (ie SP3b not filled in)
+     - warns if the data in SP3a is not identical to what is already in chado (suggests that perhaps the curator was trying to change existing data)
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+### Updated:
+
+gm160112.

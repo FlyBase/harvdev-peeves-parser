@@ -1,0 +1,116 @@
+
+## ! MA1f. Database ID for insertion (FBti)       :
+
+### Multiple values allowed:
+
+No
+Implemented (in validate_primary_FBid_field)
+
+
+### !c Applicable:
+
+No
+Implemented (in validate_primary_FBid_field)
+
+### Inclusion essential:
+
+Yes
+Implemented
+
+
+### Mandatorially has value:
+
+Yes
+Implemented (in validate_primary_FBid_field - checks both for whether the entire field is empty, and also whether individual values in a hashed list are empty)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+in 'validate_primary_FBid_field':
+
+* each entry must either be the string 'new' or an FBid number of the type expected for the proforma (ie. FBti)
+
+* if the entry is an FBti number, it must be valid in chado.
+
+
+
+Cross-checks with other fields:
+
+in 'validate_primary_FBid_field':
+
+* The number of entries in the list in MA1f must match the number of entries in the MA1a field
+
+
+Cross-checks done after parsing the entire proforma:
+
+1. in 'cross_check_harv_style_symbol_rename_merge_fields':
+
+
+* If the primary FBid field (MA1f) contains an FBid number
+
+  * merge field (MA1g) must be empty
+
+  * if the rename field (MA1c) is filled in
+
+    * the FBid number (from chado) of the symbol in the rename field (MA1c) must match the FBid number given in the primary FBid field (MA1f)
+
+    * the value in the primary symbol field (MA1a) must NOT be a valid symbol in chado
+
+    * the value in the primary symbol field (MA1a) and in the rename field (MA1c) must not be the same
+
+  * if the rename field (MA1c) is empty (i.e. not a rename, just adding info for an existing FBti)
+
+     * the value in the primary symbol field (MA1a) must be a valid symbol in chado
+
+     * the FBid number (from chado) of the symbol in the primary symbol field (MA1a) must match the FBid number given in the primary FBid field (MA1f) (this check is only run if the previous check passes, so that a single error does not generate multiple error messages)
+
+
+ * If the primary FBid field (MA1f) contains 'new'
+
+    * rename field (MA1c) must be empty
+
+    * if the merge field (MA1g) is filled in
+
+      * if the value in the primary symbol field (MA1a) is a valid symbol in chado (it doesn't have to be), then its FBid number (from chado) must match one of the entries in the merge field (MA1g)
+
+    * if the merge field (MA1g) is empty (i.e. its a brand new insertion)
+
+      * the value in the primary symbol field (MA1a) must NOT be a current symbol in chado
+
+
+
+
+
+2. Other cross-checks (in ti.pl):
+
+ * If MA1f contains 'new'
+
+   * MA27 must be filled in
+
+
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+Cross-checks that still need implementing:
+
+    * have not yet tested interactions between MA1a and GA10 fields - need to check that various combinations of filling in GA10 fields and insertion proforma (both correct and incorrect) do the right thing in terms of producing (or not) error messages.
+
+
+### Updated:
+
+gm151001.

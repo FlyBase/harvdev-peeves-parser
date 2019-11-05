@@ -1,0 +1,48 @@
+
+## ! TO4.   Experimental tool uses [CV]                             :
+
+### Multiple values allowed:
+
+Yes
+
+### !c Applicable:
+
+Yes
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+### Checks:
+
+Checks within field:
+
+* validate_cvterm_field sub checks that any value is a valid FBcv term that is a child of 'experimental_tool_descriptor'
+
+Checks between field:
+
+* should usually be filled in for a brand new tool - have set the message to 'advised' rather than 'must be filled in' to cope with the (hopefully rare once initial tools retrofit done) case where waiting on FBcv update, so can get a new tool in and hooked up to the relevant alleles and/or transgenic constructs without having to wait for the FBcv update.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm171114.

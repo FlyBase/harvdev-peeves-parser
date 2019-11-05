@@ -1,0 +1,68 @@
+
+## ! P34.  PubMed abstract    *X :
+
+### Multiple values allowed:
+
+See question in Comments below.
+
+### !c Applicable:
+
+Yes - Implemented in validate_P34
+
+### Inclusion essential:
+
+No - Implemented
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+Checks within field:
+
+- check_non_utf8 called in elsif loop for field checks for non_utf8 characters
+
+
+
+
+
+Cross-checks with other fields:
+
+
+The following is implemented as a check after the whole proforma has been parsed:
+
+- if it is a new publication, and the publication type is one of the following list (stored in symtab.pl as 'needs_pubmed_abstract'), P34 must be filled in:
+
+* paper
+* review
+* note
+* letter
+
+
+### Related fields:
+
+
+
+### Comments:
+
+Question for Steven:
+
+- there is currently no check to enforce a single line of text - I can add this if the abstract text always consists of a very long single line, but if it might contain more than one paragraph then I shouldn't add it.
+
+
+### Status:
+
+Doc reflects what has been implemented.
+
+### Updated:
+
+gm170127.

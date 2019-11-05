@@ -1,0 +1,58 @@
+
+## ! A8a.  Breaks - cytological or progenitor break ranges  *B :
+
+### Multiple values allowed:
+
+
+
+### !c Applicable:
+
+Ought to be, but has not been implemented (see DC-398)
+
+### Inclusion essential:
+
+No
+
+### Mandatorially has value:
+
+No
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+- each breakpoint is given after the fields starting "1: " "2: " etc.,
+- each breakpoint must be in the following normal cytological format (similar to G10a.):
+
+CHECKS: Values should correspond to known cytological locations which
+are listed in camgenes.xml section headed <!-- Cytological bands,
+subdivisions, divisions, heterochromatin, telomeres, centromeres --> a
+lookup file could be generated.  Each statement must either be a known
+cytological location or a range between two known cytological locations
+separated by a -.
+
+NB NB NB as well as the above, a break can be given as an FBti symbol,
+in which case it must already exists as a valid FBti symbol or it must
+be made so in this curation record
+
+NB NB NB as well as the above, a break can be given as [] NB NB NB
+these should stay as square brackets and not be turned into
+superscripts on parsing.
+
+### Related fields:
+
+
+
+### Comments:
+
+NB NB NB As described in curation_manual we used to use the "PROGENITOR
+BREAKS" system - if we still need to be able to do this  - will have to be
+built into the chado loading specification and Peeves checking (no idea whether this was implemented in chado proforma parsing ?)
+
+### Updated:
+
+gm131202 (doc for this field moved here from aberration.checks.pro with some tweaking).
+gm151001 (added Dupl. for multiple field info).

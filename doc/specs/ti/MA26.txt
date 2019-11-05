@@ -1,0 +1,41 @@
+
+## ! MA26.  Accession for this instance of natTE                          :
+
+### Multiple values allowed:
+
+
+
+### !c Applicable:
+
+
+
+### Inclusion essential:
+
+
+
+### Mandatorially has value:
+
+
+
+### Dupl. for multiple field:
+
+
+
+### Checks:
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+curation manual states "This field is not currently used for literature curation." so no checking implemented until status of field established.
+
+### Updated:
+
+gm151001.

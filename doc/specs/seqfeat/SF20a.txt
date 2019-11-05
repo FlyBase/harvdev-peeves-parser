@@ -1,0 +1,43 @@
+
+## ! SF20a. PCR template [CV] :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+### Checks:
+
+* validate_cvterm_field checks that the value is one allowed for this field (stored in symtab.pl)
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160304.

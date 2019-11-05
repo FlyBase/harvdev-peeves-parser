@@ -1,0 +1,53 @@
+# Template for a Peeves.cfg file for production Peeves.  Make a copy of this template file (not under svn control) 
+# in the Peeves/production folder so that you can edit the Peeves.cfg copy to contain the correct variables for
+# your local use.
+
+# This file contains Peeves configuration variables and will be parsed by the Perl compiler.  It must take the
+# form of the declaration and initialization of a global hash called %Peeves_config, where the keys are the
+# names of config variables and the values are their initialized values.  Note that subsequent code is at
+# liberty to change the values and to add additional keys.
+
+# Variables are:
+
+# Where_running --- a string which must be 'Cambridge' or 'Harvard' or 'IU' and is used to select
+# locality-dependent behaviour.
+
+# Peeves_path --- an absolute path to the directory in the filesystem where the Peeves code proper will be
+# found.
+
+# Ontology_path --- an absolute path to the directory in the filesystem where all the ontologies will be
+# found.
+
+# Chado_user --- the PostgreSQL user (NOT a system username) to be used when querying a Chado instance.
+# Chado_pass --- the PostgreSQL password for Chado_user.
+# Chado_host --- the fully qualified domain name of the PostgreSQL server holding the Chado instance.
+# Chado_port --- the port number on which the PostgreSQL server is listening.
+
+# Chado_db and Chado_query --- it is assumed that a small database exists on Chado_host which contains the
+# name of the current production instance database.  The instance changes frequently (at least once per
+# epicycle) and yet this configuration file ought not to require attention very often, if at all.  The small
+# database is to be kept up to date by whatever process(es) create new instances.  The name of the small
+# database is given by Chado_db and the query necessary to return the name of the current Chado instance is
+# held in Chado_query.  It may need tailoring to specific circumstances but it is assumed that it always
+# returns precisely one instance name.  Specifically, the first column of the first row of any results from
+# the query will be used.
+
+our %Peeves_config = (
+		      'Where_running'  => 'Cambridge',
+		      'Peeves_path'    => '/Peeves/production',
+		      'Ontology_path'  => '/curfiles/ontologies',
+		      'Chado_user'     => 'peeves',
+		      'Chado_pass'     => 'FBpeeves',
+		      'Chado_host'     => 'oscar.gen.cam.ac.uk',
+		      'Chado_port'     => '5432',
+		      'Chado_db'       => 'fbadmin',
+		      'Chado_query'    => "SELECT name FROM chado WHERE type='production' AND current='t';",
+
+# Optional variables (used in locality-dependent code).  Only uncomment each variable in the
+# Peeves.cfg file that you make from this template if it is needed in your location.
+
+# The 'Module_path' variable below is only required if 'Where_running' is set to Cambridge
+
+#		      'Module_path' => "/net/heidi/export/scripts/support_scripts/script_modules",
+
+		      );

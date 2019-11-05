@@ -1,0 +1,54 @@
+
+## ! TC1d. Species of source [CV]               :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented) - see 'Cross-checks done after parsing the entire proforma' below.
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+### Checks:
+
+Checks within field (Implemented in validate_species_abbreviation_field):
+
+* The value must be a valid drosophilid species abbreviation.
+
+Cross-checks done after parsing the entire proforma:
+
+* check_filled_in_for_new_feature :
+
+  * Must be filled in for a new cell-line
+
+  * Must NOT be filled in for an existing cell-line (including cell-lines being renamed or merged).
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+NB: Cell line merging is not yet implemented. Once they are, it is possible that cross-check of TC1d with the status of the cell-line (ie. new/merge/rename/existing) will need changing.
+
+
+### Updated:
+
+gm170127.

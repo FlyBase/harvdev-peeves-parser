@@ -1,0 +1,58 @@
+
+## ! SF1b. Symbol used in paper/source          :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+
+Checks within field:
+
+* sub 'validate_synonym_field' (called in elsif loop for field):
+
+  * uses 'check_for_duplicated'_lines to check that there are no duplicated synonyms and no empty lines
+
+  * warns if the synonym is composed entirely of punctuation character(s).
+
+  * warns if the field is filled in for a 'user' or 'auto' curation record.
+
+Checks between field:
+
+* sub 'check_unattributed_synonym_correction' checks that the valid symbol is in the symbol synonym field when !c-ing that field or the 'unattributed' pub (this is required, else the object ends up with no valid symbol in chado!)
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm170420.

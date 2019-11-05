@@ -1,0 +1,1431 @@
+#!/usr/bin/perl -w
+
+our $Peeves_version = "2.6"; # Removing constraints on flags that HarvCur can use in P43 (to prevent false-positives for 'DO' curation records)
+
+=head2 Version
+
+See Peeves/doc/VERSION for details
+
+=cut
+
+
+# binmode STDIN, ":utf8" ; binmode STDOUT, ":utf8" ; binmode STDERR, ":utf8" ;
+#
+#  Many programs would want to set UTF-8 on stdin, stdout and stderr, as in the preceding, deliberately
+#  commented line.  Peeves, however, specifically wants to read the raw bytes so as to pick up the common
+#  error of using Latin-1 encoding.  See tools.pl/check_non_utf8() for details.
+
+use strict;
+use DBI;
+
+use Encode;
+
+# Read config data and run preliminary critical checks.
+
+$#ARGV == 1 or die "Usage: $0 Peeves_config curators_config\n";
+
+our %Peeves_config;
+my $pcfg = shift;
+unless (my $cfg = do $pcfg)
+{
+    die "Couldn't read $pcfg: $!" unless defined $cfg;
+    die "Couldn't parse $pcfg: $@" if $@;
+    die "Couldn't run $pcfg" unless $cfg;
+}
+$Peeves_config{'Chado_user'} or die "$0: No Chado config data in $pcfg\n";#report name this script if dying
+
+# A small amount of Peeves is necessarily location-dependent.  A Peeves_config variable must be included in
+# $pcfg so that location-dependent code can be isolated into a few subs.
+
+defined $Peeves_config{'Where_running'} or die "$0: Where_running not defined in $pcfg\n";
+
+my $IDL_TEST_RUN = 0;
+if (defined $Peeves_config{"IDL_TEST_RUN"}) {
+   $IDL_TEST_RUN = 1;
+}
+
+$Peeves_config{'Where_running'} eq 'Cambridge' or
+    $Peeves_config{'Where_running'} eq 'Harvard' or
+    $Peeves_config{'Where_running'} eq 'IU' or
+    die "We're the Elawi - Peeves is not running in Cambridge, Harvard or IU:  \$Peeves_config{'Where_running'} is '$Peeves_config{'Where_running'}'";
+
+# These are the only ones of which the news has come to Harvard, and there may be many others but they haven't
+# been discarvard. (http://en.wikipedia.org/wiki/The_Elements_%28song%29)
+
+# useful for debugging, put inside location-dependent loop in case any of the other sites
+# do not have the Data perl module installed. gm131217.
+if ($Peeves_config{'Where_running'} eq 'Cambridge') {
+
+	use Data::Dumper;
+	$Data::Dumper::Sortkeys = 1;
+}
+
+sub classify_file($$$$)			### Warning --- this sub is seriously location dependent!
+{
+    my ($where, $curator, $cur_abbr, $file) = @_;
+    $cur_abbr = '(?:' . $cur_abbr . ')';			# Make regexp patterns safe.
+
+    if ($where eq 'Cambridge')
+    {
+	if (my ($base, $undef, $extension) = ($file =~ /^($cur_abbr\d+)(\.([a-zA-Z]+))?$/))
+	{
+	    defined $extension and return valid_symbol ($extension, 'crec_type');
+	    return valid_symbol ('full', 'crec_type');
+	}
+	return 0;						# Unknown record type.
+    }
+    elsif ($where eq 'Harvard')
+    {
+	my @chunks = split (/\./, $file);
+	$#chunks == 3 or return 0;				# Wrong format, which is stuff.curator.type.YYMMDD
+
+# Test that the curator abbreviation is correct - do not process the file if it is not
+# (because it won't be attributed properly to a curator in chado if it is loaded named as is).
+	unless ($chunks[1] =~ /^$cur_abbr$/) {
+# Print a warning if it looks like the 'curator' and 'type' chunks are swapped around
+		if (valid_symbol ($chunks[1], 'hrec_type')) {
+			report ($file, "IGNORING FILE: You may have swapped the 'curator' and 'type' portions in this filename - rename the file and run Peeves again to check it.");
+		}
+		return 0;
+	}
+
+	$chunks[3] =~ /^\d{6}$/ or return 0;			# Must be a date in YYMMDD format
+
+	# return the file type if it is known
+	valid_symbol ($chunks[2], 'hrec_type') and return valid_symbol ($chunks[2], 'hrec_type');
+
+	# report a warning that this is an unknown file type
+	report ($file, "WARNING: '%s' is not a standard curation record type - Peeves will still check the file, but you might want to check whether it is named correctly", $chunks[2]);
+	# but set a default so that the file is still checked
+	return valid_symbol ('full', 'hrec_type');
+
+    }
+    elsif ($where eq 'IU')	# The same as for Cambridge right now.  Need not be the same in future.
+    {
+	if (my ($base, $undef, $extension) = ($file =~ /^($cur_abbr\d+)(\.([a-zA-Z]+))?$/))
+	{
+	    defined $extension and return valid_symbol ($extension, 'crec_type');
+	    return valid_symbol ('full', 'crec_type');
+	}
+	return 0;						# Unknown record type.
+    }
+    else
+    {
+	die "We're the Elawi.  \$where is $where\n";
+    }
+}
+
+sub classify_curator ($$)			### Warning --- this sub is seriously location dependent!
+{
+
+# This subroutine uses code taken in large part from classify_file, but since that
+# subroutine is such a core part of peeves, thought it was safer to make a new separate
+# (somewhat repetitive) subroutine rather than potentially causing unforeseen bugs by
+# altering classify_file
+# I re-included most of the checks on the filename format that were present in classify_file, 
+# although these are a bit redundant at the moment (as classify_curator is only called if
+# classify_file is successful, so the filename has already been checked once and must match
+# the standard filename format for the relevant site), as I figured this might allow more
+# flexible use of the classify_curator subroutine in the future. gm130118.
+
+
+	my ($where, $file) = @_;
+
+    if ($where eq 'Cambridge')
+	{
+
+		if (my ($curator, $undef, $extension) = ($file =~ /^(.+?)\d+(\.([a-zA-Z]+))?$/))
+		{
+	    return valid_symbol ($curator, 'cur_type');
+		}
+		return 0;						# Unknown curator type.
+
+	}
+    elsif ($where eq 'Harvard')
+    {
+	my @chunks = split (/\./, $file);
+	$#chunks == 3 or return 0;				# Wrong format, so don't try to assign curator type
+	return valid_symbol ($chunks[1], 'cur_type');
+    }
+    
+    elsif ($where eq 'IU')	# The same as for Cambridge right now.  Need not be the same in future.
+	{
+
+		if (my ($curator, $undef, $extension) = ($file =~ /^(.+?)\d+(\.([a-zA-Z]+))?$/))
+		{
+	    return valid_symbol ($curator, 'cur_type');
+		}
+		return 0;						# Unknown curator type.
+
+	}
+
+
+}
+
+# An extremely simple finite state machine is used to constrain, rather loosely, what type of proforma may
+# follow other types.  The %fsm hash is keyed by proforma type (lifted directly from the text of the proforma)
+# and its values are regexps which match allowable types for the immediately following proforma.
+
+my $tmn = 'TRANSPOSON INSERTION|MOLECULAR SEGMENT AND CONSTRUCT|NATURAL TRANSPOSON|GENEPRODUCT ATTRIBUTES/EXPRESSION|GENEGROUP|DATASET/COLLECTION|HUMAN HEALTH MODEL|INTERACTION|SEQUENCE FEATURE/MAPPED ENTITIES|CULTURED CELL LINE|EXPERIMENTAL TOOL';	# For brevity below. DOS:Added expression proforma name to end of this list. Although unlikely to ever actually be used after these, this should allow Peeves to accept Expression Proformae.'
+
+our %fsm = ('MULTIPUBLICATION'                => 'MULTIPUBLICATION',
+	    'PUBLICATION'                     => "SPECIES|DATABASE|GENE|ABERRATION|$tmn",
+	    'GENE'                            => "GENE|ALLELE|ABERRATION|$tmn",
+	    'ALLELE'                          => "GENE|ALLELE|ABERRATION|$tmn",
+	    'ABERRATION'                      => "ABERRATION|GENOTYPE VARIANT|$tmn",
+	    'GENOTYPE VARIANT'                => "ABERRATION|GENOTYPE VARIANT|$tmn",
+	    'TRANSPOSON INSERTION'            => $tmn,
+	    'MOLECULAR SEGMENT AND CONSTRUCT' => $tmn,
+	    'NATURAL TRANSPOSON'              => $tmn,
+	    'GENEGROUP'              => $tmn,
+		'GENEPRODUCT ATTRIBUTES/EXPRESSION'=> $tmn,
+		'DATASET/COLLECTION'=> $tmn,
+		'HUMAN HEALTH MODEL' => $tmn,
+		'INTERACTION' => $tmn,
+		'SPECIES' => 'SPECIES',
+		'DATABASE' => 'DATABASE',
+		'SEQUENCE FEATURE/MAPPED ENTITIES' => $tmn,
+		'CULTURED CELL LINE' => $tmn,
+		'EXPERIMENTAL TOOL' => $tmn,
+	    );
+our $want_next;
+
+
+require "$Peeves_config{'Peeves_path'}/multipub.pl";
+require "$Peeves_config{'Peeves_path'}/publication.pl";
+require "$Peeves_config{'Peeves_path'}/gene.pl";
+require "$Peeves_config{'Peeves_path'}/allele.pl";
+require "$Peeves_config{'Peeves_path'}/aberration.pl";
+require "$Peeves_config{'Peeves_path'}/balancer.pl";
+require "$Peeves_config{'Peeves_path'}/ti.pl";
+require "$Peeves_config{'Peeves_path'}/moseg.pl";
+require "$Peeves_config{'Peeves_path'}/natTE.pl";
+require "$Peeves_config{'Peeves_path'}/tools.pl";
+require "$Peeves_config{'Peeves_path'}/chado.pl";
+require "$Peeves_config{'Peeves_path'}/symtab.pl";
+require "$Peeves_config{'Peeves_path'}/expression.pl"; # Added by DOS
+require "$Peeves_config{'Peeves_path'}/genegroup.pl";
+require "$Peeves_config{'Peeves_path'}/dataset.pl";
+require "$Peeves_config{'Peeves_path'}/humanhealth.pl";
+require "$Peeves_config{'Peeves_path'}/interaction.pl";
+require "$Peeves_config{'Peeves_path'}/species.pl";
+require "$Peeves_config{'Peeves_path'}/database.pl";
+require "$Peeves_config{'Peeves_path'}/seqfeat.pl";
+require "$Peeves_config{'Peeves_path'}/cellline.pl";
+require "$Peeves_config{'Peeves_path'}/experimental_tool.pl";
+
+
+if ($Peeves_config{'Where_running'} eq 'Cambridge') {
+
+	require "$Peeves_config{'Module_path'}/Get_cam_unparsed.pm";
+	require "$Peeves_config{'Module_path'}/Get_flag_data.pm"; 
+}
+
+# standard_symbol_mapping containing the expected id type (eg. FBgn) and standard
+# text representation (eg. gene) for different types of symbol. Symbol type is keyed
+# to a single letter prefix based on the proforma field prefix (eg. 'G' for gene).
+# Useful for common subroutines in tools.pl which perform the same checks on identical
+# fields from different proformae (e.g validate_x1e which checks G1e, GA1e, A1e, AB1e).
+our $standard_symbol_mapping = {
+
+	'G' => {
+		id => ['FBgn'],
+		type => 'gene',
+		style => 'Cambridge',
+		species_prefix => '1',
+	},
+	'GA' => {
+		id => ['FBal'],
+		type => 'allele',
+		style => 'Cambridge',
+		species_prefix => '1',
+	},
+	'A' => {
+		id => ['FBab'],
+		type => 'aberration',
+		style => 'Cambridge',
+		species_prefix => '1',
+	},
+	'AB' => {
+		id => ['FBba'],
+		type => 'balancer',
+		style => 'Cambridge',
+		species_prefix => '1',
+	},
+	'MA' => {
+		id => ['FBti'],
+		type => 'insertion',
+		style => 'Harvard',
+	},
+	'MS' => {
+		id => ['FBtp'],
+		type => 'construct',
+		style => 'Harvard',
+	},
+	'TE' => {
+		id => ['FBte'],
+		type => 'natural transposon',
+		style => 'Harvard',
+		species_prefix => '1',
+	},
+	'F' => {
+		id => ['FBpp', 'FBtr'],
+		type => 'gene product',
+		style => 'Harvard',
+# the following fields must be specified for the expression.pro, because they do not follow the
+# 'standard' numbering pattern used for 'Harvard' style proformae		
+		rename_field => '1b',
+		merge_field => '1c',
+	},
+
+	'GG' => {
+		id => ['FBgg'],
+		type => 'gene group',
+		style => 'Cambridge',
+	},
+
+	'P' => {
+		id => ['FBrf'],
+		type => 'publication',
+		style => 'Cambridge',
+		primary_field => '22',
+	},
+	'LC' => {
+		id => ['FBlc'],
+		type => 'dataset',
+		style => 'Harvard',
+# the following fields must be specified for the dataset.pro, because they do not follow the
+# 'standard' numbering pattern used for 'Harvard' style proformae		
+		rename_field => '3a',
+		merge_field => '3b',
+	},
+	'HH' => {
+		id => ['FBhh'],
+		type => 'human health model',
+		style => 'Harvard',
+# the following fields must be specified for the HH.pro, because they do not follow the
+# 'standard' numbering pattern used for 'Harvard' style proformae		
+		primary_field => '1b', # HH.pro does not have a primary 'symbol' field, only primary 'name' in HH1b
+		rename_field => '3a',
+		merge_field => '3b', # merge field does not actually exist for HH, but have put as HH3b as this field code is in the proforma parsing software as a placeholder for when the merge field is implemented, so should be safe to use as a placeholder for merge data which will always be empty for now.
+	},
+	'IN' => {
+#		id => ['FBin'], # FBig id is not the appropriate ID here as it groups many different specific interactions together so need to work out which if any type to use - there may not be a FBid type for individual interactions
+		type => 'interaction',
+		style => 'uniquename_only',
+		primary_field => '1f',
+	},
+
+	'SP' => {
+		type => 'species',
+
+
+	},
+	
+	'DB' => {
+		id => ['chado database name'],
+		type => 'database',
+
+	},
+	'SF' => {
+		id => ['FBsf'],
+		type => 'sequence feature',
+		style => 'Harvard',
+
+	},	
+	'TC' => {
+		id => ['FBtc'],
+		type => 'cell line',
+		style => 'Harvard',
+# the following fields must be specified for the cellline.pro, because they do not follow the
+# 'standard' numbering pattern used for 'Harvard' style proformae		
+		rename_field => '1e',
+
+	},
+	'TO' => {
+		id => ['FBto'],
+		type => 'experimental tool',
+		style => 'Harvard',
+
+	},	
+};
+
+
+our %field_specific_checks = (
+
+# gene proforma
+	'G1b' => \&validate_synonym_field,
+	'G2a' => \&validate_new_full_name,
+	'G2b' => \&validate_synonym_field,
+	'G2c' => \&validate_existing_full_name,
+	'G5' => '', # need to add field-specific checks for format
+	'G6' => '', # need to add field-specific checks for format
+	'G7a' => \&check_valid_symbol_field,
+	'G7b' => \&check_valid_symbol_field,
+	'G8' => \&check_stamped_free_text,
+	'G24e' => \&no_stamps,
+	'G27' => \&no_stamps,
+	'G28a' => \&check_stamped_free_text,
+	'G30' => \&validate_ontology_term_id_field,
+	'G34' => \&validate_cvterm_field,
+	'G37' => \&check_valid_symbol_field,
+	'G33' => '', # will add field-specific check when implement checking of accession format, if this field is still required for curation
+
+	'G91' => \&check_valid_symbol_field,
+	'G91a' => \&validate_cvterm_field,
+	'G14a' => \&check_stamped_free_text,
+	'G15' => \&no_stamps,
+
+	'G39a' => \&check_stamped_free_text,
+	'G39b'  => \&validate_cvterm_field,
+	'G39c' => '', # using validate_G24f within gene.pl to check this field for now.
+	'G39d' => \&no_stamps,
+	'G40' => \&validate_cvterm_field,
+	'G38' => \&check_valid_chado_symbol_field,
+
+# allele proforma
+	'GA1b' => \&validate_synonym_field,
+	'GA2a' => \&validate_new_full_name,
+	'GA2b' => \&validate_synonym_field,
+	'GA2c' => \&validate_existing_full_name,
+	'GA4' => \&validate_cvterm_field,
+	'GA7a' => \&check_stamped_free_text,
+	'GA28c' => \&check_stamped_free_text,
+	'GA29c' => \&check_stamped_free_text,
+	'GA22' => \&check_stamped_free_text,
+	'GA8' => \&validate_cvterm_field,
+	'GA36' => \&check_single_allowed_value,
+	'GA10b' => \&validate_synonym_field,
+	'GA10d' => \&validate_synonym_field,
+	'GA10f' => \&validate_synonym_field,
+	'GA11' => \&check_valid_symbol_field,
+	'GA23b' => \&check_stamped_free_text,
+	'GA12a' => \&validate_sequence_change,
+	'GA12b' => \&check_stamped_free_text,
+	'GA20' => \&check_single_allowed_value,
+
+	'GA30a' => \&check_valid_symbol_field,
+	'GA30b' => \&check_valid_symbol_field,
+	'GA30c' => \&check_valid_symbol_field,
+	'GA30d' => \&validate_cvterm_field,
+	'GA30e' => \&check_valid_symbol_field,
+	'GA30f' => \&check_single_allowed_value,
+
+	'GA35' => \&validate_cvterm_field, # FBcv terms not in obo file yet
+
+	'GA33' => \&validate_GA33,
+	'GA34b' => \&check_stamped_free_text,
+	'GA34c' => \&no_stamps,	
+	'GA90a' => \&validate_GA90a,
+	'GA90b' => \&validate_sequence_location,
+	'GA90c' => \&check_genome_release,
+	'GA90d' => \&validate_sequence_change,
+	'GA90e' => \&validate_sequence_change,
+	'GA90f' => \&validate_sequence_change,
+	'GA90g' => '', # have not implemented field-specific checks as may not be a manually curated field
+	'GA90h' => '', # same checks required in A90h, will add field-specific check once implemented
+	'GA90i' => \&validate_cvterm_field,
+	'GA90j' => \&check_stamped_free_text,
+	'GA90k' => \&validate_cvterm_field,
+
+	'GA31' => \&no_stamps,
+	'GA33' => '', # will add field-specific check when implement checking of accession format, if this field is still required for curation
+
+	'GA91' => \&check_valid_symbol_field,
+	'GA91a' => \&validate_cvterm_field,
+	'GA13' => \&check_stamped_free_text,
+	'GA14' => \&no_stamps,
+
+
+# aberration proforma
+	'A1b' => \&validate_synonym_field,
+	'A2a' => \&validate_new_full_name,
+	'A2b' => \&validate_synonym_field,
+	'A2c' => \&validate_existing_full_name,
+	'A9' => \&validate_A9_26,
+	'A26' => \&validate_A9_26,
+	'A4' => \&validate_cvterm_field,
+	'A6' => \&check_valid_symbol_field,
+	'A23' => \&check_valid_symbol_field,
+	'A7a' => \&check_valid_symbol_field,
+	'A7b' => \&check_valid_symbol_field,
+	'A7c' => \&check_valid_symbol_field,
+	'A7d' => \&check_valid_symbol_field,
+	'A7e' => \&check_valid_symbol_field,
+	'A7f' => \&check_valid_symbol_field,
+ 	'A7x' => \&check_stamped_free_text,
+ 	'A22b' => \&check_stamped_free_text,
+ 	'A25a' => \&check_valid_symbol_field,
+	'A25b' => \&check_valid_symbol_field,
+	'A25c' => \&check_valid_symbol_field,
+	'A25d' => \&check_valid_symbol_field,
+	'A25e' => \&check_valid_symbol_field,
+	'A25f' => \&check_valid_symbol_field,
+ 	'A25x' => \&check_stamped_free_text,
+ 	'A17' => \&check_stamped_free_text,
+ 	'A18' => \&check_stamped_free_text,
+	'A24a' => \&check_valid_symbol_field,
+	'A24b' => \&validate_A24b, #  cannot just use check_valid_symbol_field as allele symbols with [*], [-] or [+] also allowed, should probably try to expand check_valid_symbol_field so that it allows these extra symbols for A24b and AB5b
+
+	'A90a' => \&check_positive_integer,
+	'A90b' => \&validate_sequence_location,
+	'A90c' => \&check_genome_release,
+	'A90h' => '', # same checks required in GA90h, will add field-specific check once implemented
+	'A90j' => \&check_stamped_free_text,
+
+	'A91a' => \&check_positive_integer,
+	'A91b' => \&validate_cvterm_field, # using validate_cvterm_field to check this field instead of validate_cytological_location, because it should contain just a single cytological band NOT a range (which is what validate_cytological_location checks).
+	'A91c' => \&validate_cvterm_field, # as above.
+	'A91d' => \&validate_cvterm_field, # using validate_cvterm_field to check this field instead of 'check_y_or_n' so that can use process_field_data format (and thus store data for later checks between fields once the entire proforma is parsed).
+	'A91e' => \&validate_cvterm_field, # as above.
+
+
+	'A92a' => \&check_positive_integer,
+	'A92b' => \&validate_cvterm_field, # using validate_cvterm_field to check this field instead of validate_cytological_location, because it should contain just a single cytological band NOT a range (which is what validate_cytological_location checks).
+	'A92c' => \&validate_cvterm_field, # as above.
+	'A92d' => \&validate_cvterm_field, # using validate_cvterm_field to check this field instead of 'check_y_or_n' so that can use process_field_data format (and thus store data for later checks between fields once the entire proforma is parsed).
+	'A92e' => \&validate_cvterm_field, # as above.
+
+
+	'A21' => \&check_single_allowed_value,
+
+	'A30' => \&check_valid_symbol_field,
+	'A30a' => \&validate_cvterm_field,
+ 
+ 	'A14' => \&check_stamped_free_text,
+	'A15' => \&no_stamps,
+
+# balancer proforma
+	'AB1b' => \&validate_synonym_field,
+	'AB2a' => \&validate_new_full_name,
+	'AB2b' => \&validate_synonym_field,
+	'AB2c' => \&validate_existing_full_name,
+	'AB3' => \&no_stamps,
+	'AB5a' => \&check_valid_symbol_field,
+	'AB5b' => \&validate_AB5b, #  cannot just use check_valid_symbol_field as allele symbols with [*], [-] or [+] also allowed, should probably try to expand check_valid_symbol_field so that it allows these extra symbols for A24b and AB5b
+	'AB6' => \&check_stamped_free_text,
+	'AB7' => \&no_stamps,
+	'AB8' => \&validate_cvterm_field,
+	'AB9' => \&check_valid_symbol_field,
+	'AB10' => \&validate_synonym_field,
+
+	'A28' => '', # will add field-specific check when implement checking of accession format, if this field is still required for curation
+
+
+# insertion proforma
+	'MA1b' => \&validate_synonym_field,
+	'MA1d' => \&validate_synonym_field,
+	'MA1e' => \&validate_synonym_field,
+
+	'MA4' => \&check_valid_symbol_field,
+
+	'MA5a' => \&validate_cvterm_field,
+	'MA5c' => \&validate_cytological_location,
+	'MA5d' => \&check_valid_symbol_field,
+	'MA5e' => \&validate_cytological_location,
+	'MA5f' => \&check_genome_release,
+
+	'MA7' => \&check_valid_symbol_field,
+	'MA8' => \&validate_cvterm_field,
+	'MA12' => \&check_valid_symbol_field,
+	'MA14' => \&check_valid_symbol_field,
+
+	'MA15a' => \&check_valid_symbol_field,
+	'MA15b' => \&check_valid_symbol_field,
+	'MA15c' => \&check_valid_symbol_field,
+	'MA15d' => \&check_valid_symbol_field,
+	'MA16' => \&check_single_allowed_value,
+	'MA18' => \&check_valid_symbol_field,
+	'MA20' => \&validate_species_abbreviation_field,
+	'MA21a' => \&validate_sequence_location,
+	'MA21b' => \&check_genome_release,
+	'MA21e' => \&check_stamped_free_text,
+	'MA6' => \&validate_cvterm_field,
+	'MA21c' => \&check_valid_symbol_field,
+	'MA21f' => \&check_single_allowed_value,
+	'MA21d' => \&check_positive_integer,
+	'MA22' => \&validate_synonym_field,
+
+	'MA19a' => '', # will add field-specific check when implement checking of accession format
+	'MA19b' => \&validate_cvterm_field,
+	'MA19c' => \&check_positive_integer,
+	'MA19d' => \&check_positive_integer,
+	'MA19e' => \&validate_cvterm_field,
+
+	'MA23a' => \&check_valid_symbol_field,
+	'MA23b' => \&validate_cvterm_field,
+	'MA23c' => \&check_stamped_free_text,
+	'MA23g' => \&validate_cvterm_field,
+
+	'MA24' => \&validate_cvterm_field,
+	'MA27' => \&validate_cvterm_field,
+
+	'MA30' => \&check_valid_symbol_field,
+	'MA30a' => \&validate_cvterm_field,
+	'MA9' => \&check_stamped_free_text,
+	'MA10' => \&no_stamps,
+
+# moseg proforma
+	'MS1b' => \&validate_synonym_field,
+	'MS3b' => \&validate_synonym_field,
+	'MS3d' => \&validate_synonym_field,
+	'MS4a' => \&validate_cvterm_field,
+	'MS4b' => \&check_positive_integer,
+	'MS4h' => \&check_valid_symbol_field,
+	'MS14' => '', # will add field-specific check once have reliable way of getting up-to-date list of allowed values for this field
+	'MS16' => \&validate_cvterm_field,
+	'MS19a' => \&check_valid_chado_symbol_field,
+	'MS19b' => \&check_stamped_free_text,
+	'MS19c' => \&check_valid_symbol_field,
+	'MS19d' => \&check_valid_symbol_field,
+	'MS19e' => \&check_valid_symbol_field,
+	'MS20' => \&check_valid_symbol_field,
+	'MS21' => \&check_valid_symbol_field,
+
+	'MS5a' => '',
+	'MS5b' => '',
+
+	'MS30' => \&check_valid_symbol_field,
+	'MS30a' => \&validate_cvterm_field,
+
+	'MS10b' => \&check_stamped_free_text,
+	'MS11' => \&no_stamps,
+
+	'MS14a' => \&check_valid_symbol_field,
+	'MS14b' => \&check_valid_symbol_field,
+	'MS14c' => \&check_valid_symbol_field,
+	'MS14d' => \&validate_cvterm_field,
+	'MS14e' => \&check_valid_symbol_field,
+
+	'MS15' => \&check_stamped_free_text,
+	'MS24' => \&check_valid_symbol_field,
+
+
+# natTE proforma
+	'TE1b' => \&validate_synonym_field,
+	'TE3' => \&validate_species_abbreviation_field,
+	'TE4a' => \&validate_ontology_term_id_field,
+	'TE4b' => \&validate_approximate_number,
+	'TE4c' => \&validate_approximate_number,
+	'TE4d' => \&validate_approximate_number,
+	'TE4e' => '', # will add field-specific checks when have better spec for format allowed in field
+	'TE5a' => \&check_positive_integer,
+	'TE5b' => \&check_stamped_free_text,
+	'TE5c' => \&validate_approximate_number,
+	'TE5d' => \&check_stamped_free_text,
+
+	'TE8' => \&check_valid_symbol_field,
+	'TE12' => \&check_stamped_free_text,
+	'TE13' => \&no_stamps,
+
+# gene group proforma
+
+	'GG1b' => \&validate_synonym_field,
+	'GG2a' => \&validate_new_full_name,
+	'GG2b' => \&validate_synonym_field,
+	'GG2c' => \&validate_existing_full_name,
+	'GG4' => \&validate_cvterm_field,
+	'GG5' => \&check_stamped_free_text,
+	'GG6a' => \&validate_ontology_term_id_field,
+	'GG6b' => \&validate_ontology_term_id_field,
+	'GG6c' => \&validate_ontology_term_id_field,
+	'GG7a' => \&check_valid_symbol_field,
+	'GG7c' => \&check_valid_symbol_field,
+	'GG8a' => '', # will add field-specific check if convert check_allowed_characters to process_field_data format, or when write a subroutine to do better checking of accession formatting
+	'GG8b' => \&validate_cvterm_field,
+	'GG8c' => \&check_stamped_free_text,
+	'GG8d' => \&check_single_allowed_value,
+	'GG9' => \&no_stamps,
+	'GG10' => \&check_stamped_free_text,
+	'GG11' => \&validate_date_field,
+	'GG12' => \&no_stamps,
+
+# publication proforma
+
+	'P19' => \&no_stamps,
+
+	'P30' => \&check_valid_symbol_field,
+	'P31' => \&check_valid_symbol_field,
+	'P32' => \&check_valid_symbol_field,
+	
+	'P44' => \&no_stamps,
+	'P46' => '', # will add field-specific checks later
+
+# expression proforma
+
+
+	'F2' => \&check_single_allowed_value,
+	'F3' => '', # blank as format checking is done during between field cross-checks
+	'F4' => \&validate_synonym_field,
+	'F17' => \&check_valid_symbol_field,
+	'F10' => \&validate_F10,
+	'F12'=> \&validate_cvterm_field,
+	'F11' => \&check_valid_symbol_field,	
+	'F11a'=> \&validate_cvterm_field,
+	'F11b'=> \&validate_cvterm_field,
+	'F13' => \&check_stamped_free_text,
+	'F14' => \&no_stamps,
+	'F15' => \&check_stamped_free_text,
+	'F91' => \&check_valid_symbol_field,
+	'F91a' => \&validate_cvterm_field,
+
+# dataset proforma
+
+	'LC1b' => \&validate_synonym_field,
+	'LC1d' => \&validate_synonym_field,
+	'LC6g' => \&no_stamps,
+	'LC3' => \&check_valid_symbol_field,
+	'LC14a' => \&validate_correct_dataset_entity_type,
+	'LC14c' => \&validate_correct_dataset_entity_type,
+	'LC13a' => \&validate_ontology_term_id_field,
+	'LC13b' => \&validate_ontology_term_id_field,
+	'LC13c' => \&validate_ontology_term_id_field,
+	'LC13d' => \&validate_LC13d,
+	'LC4i' => \&validate_species_abbreviation_field,
+	'LC4j' => \&validate_ontology_term_id_field,
+	'LC4k' => \&validate_ontology_term_id_field,
+
+	'LC14b' => \&check_valid_symbol_field,
+	'LC14d' => \&check_valid_symbol_field,
+	'LC14e' => \&check_valid_symbol_field,
+	'LC14f' => \&check_valid_symbol_field,
+	'LC14g' => \&check_valid_symbol_field,
+	'LC14h' => \&no_stamps,
+	'LC3e' => \&check_valid_chado_symbol_field,
+	'LC4a' => \&validate_species_abbreviation_field,
+	'LC6d' => \&validate_cvterm_field,
+	'LC6e' => \&check_positive_integer,
+
+# will add field-specific checks later
+	'LC12b' => \&validate_cvterm_field,
+	'LC12c' => \&check_single_allowed_value,
+	'LC4b' => \&no_stamps,
+	'LC4e' => \&check_valid_symbol_field,
+	'LC12a' => \&check_valid_uniquename_field,
+	'LC4f' => '',
+	'LC4g' => '',
+	'LC4h' => \&check_valid_symbol_field,
+	'LC6a' => \&check_stamped_free_text,
+	'LC2a' => \&validate_ontology_term_id_field,
+	'LC2b' => '', # format of field is checked at end of proforma parsing as allowed values dependent on the 'entity type' of the dataset
+	'LC6b' => \&check_stamped_free_text,
+	'LC6f' => \&no_stamps,
+	'LC11m' => '', # format of field is checked at end of proforma parsing as allowed values dependent on the 'entity type' of the dataset
+	'LC11j' => \&check_single_allowed_value,
+	'LC7a' => \&no_stamps,
+	'LC7f' => '', # will add field specific check later
+	'LC7c' => \&validate_cvterm_field,
+	'LC8a' => \&validate_cvterm_field,
+	'LC8b' => \&validate_cvterm_field,
+	'LC8c' => \&no_stamps,
+	'LC8d' => \&no_stamps,
+	'LC9' => \&check_stamped_free_text,
+	'LC9a' => \&check_stamped_free_text,
+	'LC10' => \&no_stamps,
+	'LC11a' => \&check_stamped_free_text,
+	'LC11c' => \&check_stamped_free_text,
+	'LC11e' => \&check_stamped_free_text,
+	'LC99a' => '',
+	'LC99b' => \&validate_cvterm_field,
+	'LC99c' => \&check_stamped_free_text,
+	'LC99d' => \&check_single_allowed_value,
+	
+# human health proforma
+	'HH1g' => \&validate_cvterm_field,
+	'HH1e' => \&validate_synonym_field,
+	'HH2a' => \&validate_cvterm_field,
+	'HH2b' => '', # will add field specific check later
+	'HH2c' => '',
+	'HH2d' => '',
+	'HH7a' => \&validate_HH7a,
+	'HH7e' => '',
+	'HH7d' => \&validate_Dmel_gene,
+	'HH7c' => \&check_stamped_free_text,
+	'HH7b' => \&validate_nonDmel_gene,
+
+	'HH8a' => \&validate_Dmel_gene,
+	'HH8c' => \&check_stamped_free_text,
+	'HH8e' => \&validate_nonDmel_gene,
+
+	'HH15' => \&check_stamped_free_text,
+	'HH4h' => \&check_stamped_free_text,
+	'HH4a' => \&check_stamped_free_text,
+	'HH4b' => \&check_stamped_free_text,
+	'HH4c' => \&check_stamped_free_text,
+	'HH4f' => '',
+	'HH5a' => '',
+	'HH5b' => \&validate_cvterm_field,
+	'HH5c' => \&check_stamped_free_text,
+	'HH5d' => \&check_single_allowed_value,
+	'HH4g' => \&check_stamped_free_text,
+	'HH14a' => '',
+	'HH14b' => \&check_single_allowed_value,
+	'HH14c' => '',
+	'HH14d' => \&check_single_allowed_value,
+	'HH20' => \&no_stamps,
+
+	'IN2a' => \&validate_cvterm_field,
+	'IN2b' => \&check_single_allowed_value,
+	'IN3' => \&validate_cvterm_field,
+	'IN4' => \&check_valid_symbol_field,
+	'IN5a' => \&check_valid_symbol_field,
+	'IN5d' => \&check_stamped_free_text,
+	'IN5e' => \&check_stamped_free_text,
+	'IN6' => '', # deliberately NOT checking syntax of IN6 at point of process_field_data - cross-checking between fields need to use *part* of each line, so better to check validity (and get this part) at the same time as do cross-checks - at the end of checking each proforma.
+	'IN7b' => \&check_stamped_free_text,
+	'IN7c' => '', # deliberately NOT checking syntax of IN7c at point of process_field_data - cross-checking between fields need to use *part* of each line, so better to check validity (and get this part) at the same time as do cross-checks - at the end of checking each proforma.
+	'IN7d' => '', # deliberately NOT checking syntax of IN7d at point of process_field_data - cross-checking between fields need to use *part* of each line, so better to check validity (and get this part) at the same time as do cross-checks - at the end of checking each proforma.
+	'IN8a' => \&check_stamped_free_text,
+	'IN8b' => \&no_stamps,
+
+
+# species
+
+	'SP1a' => \&validate_primary_species_field,
+	'SP1b' => \&validate_primary_species_field,
+	'SP1g' => '', # syntax of field is checked during cross-checks with SP1a and SP1b
+	'SP2' => \&validate_primary_species_field,
+	'SP3a' => \&no_stamps,
+	'SP3b' => \&check_single_allowed_value,
+	'SP4' => \&check_positive_integer,
+	'SP5' => \&validate_cvterm_field,
+	'SP6' => \&validate_cvterm_field,
+	
+# database
+
+	'DB1g' => '', # syntax of field is checked during cross-checks with DB1a
+	'DB2a' =>  \&no_stamps,
+	'DB2b' => \&check_single_allowed_value,
+	'DB3a' => \&no_stamps,
+	'DB3c' => \&check_single_allowed_value,
+	'DB3b' => \&no_stamps,
+	'DB3d' => \&check_single_allowed_value,
+	
+# sequence feature
+
+	'SF1b' => \&validate_synonym_field,
+	'SF2a' => \&validate_cvterm_field,
+	'SF2b' => \&validate_cvterm_field,
+	'SF3a' => \&check_valid_chado_symbol_field,
+	'SF3c' => \&validate_cvterm_field,
+	'SF3b' => \&validate_species_abbreviation_field,
+	'SF4a' => \&validate_sequence_location,
+	'SF4b' => \&check_genome_release,
+	'SF4c' => \&check_stamped_free_text,
+	'SF4d' => '', # field-specific checks not implemented yet
+	'SF4e' => \&check_positive_integer,
+	'SF4f' => \&check_positive_integer,
+	'SF4g' => '', # will add field specific check later
+	'SF4h' => \&validate_cvterm_field,
+	'SF5a' => \&check_valid_chado_symbol_field,
+	'SF5e' => \&validate_cvterm_field,
+	'SF5f' => \&check_stamped_free_text,
+	'SF5b' => \&check_valid_chado_symbol_field,
+	'SF5g' => \&check_valid_chado_symbol_field,
+	'SF5c' => \&check_valid_chado_symbol_field,
+	'SF5h' => \&check_valid_chado_symbol_field,
+	'SF5d' => \&check_valid_chado_symbol_field,
+	'SF10a' => \&validate_cvterm_field,
+	'SF11a' => \&check_valid_chado_symbol_field,
+	'SF11b' => \&check_stamped_free_text,
+	'SF11c' => \&check_stamped_free_text,
+	'SF12' => '', # will add field specific check later
+	'SF20a' => \&validate_cvterm_field,
+	'SF20b' => '', # will add field specific check later
+	'SF20c' => '', # will add field specific check later
+	'SF20d' => \&check_stamped_free_text,
+	'SF6' => \&check_stamped_free_text,
+	'SF8' => \&no_stamps,
+	'SF7' => \&check_stamped_free_text,
+
+# cell line
+	'TC1j' => \&validate_TC1j,
+	'TC1b' => \&validate_synonym_field,
+	'TC1c' => \&validate_synonym_field,
+	'TC1d' => \&validate_species_abbreviation_field,
+	'TC2a' => \&no_stamps,
+	'TC2b' => \&no_stamps,
+	'TC2c' => \&no_stamps,
+	'TC2d' => \&validate_cvterm_field,
+	'TC2e' => \&validate_cvterm_field,
+	'TC3a' => \&no_stamps,
+	'TC4a' => \&check_valid_symbol_field,
+	'TC4b' => \&validate_cvterm_field,
+	'TC5a' => \&check_valid_uniquename_field,
+	'TC5b' => \&no_stamps,
+	'TC5c' => \&validate_cvterm_field,
+	'TC5d' => \&check_stamped_free_text,
+	'TC8' => \&check_valid_symbol_field,
+	'TC9' => \&check_stamped_free_text,
+	'TC10' => \&no_stamps,
+
+# experimental tool
+
+	'TO1b' => \&validate_synonym_field,
+	'TO2a' => \&validate_new_full_name,
+	'TO2b' => \&validate_synonym_field,
+	'TO2c' => \&validate_existing_full_name,
+	'TO4' => \&validate_cvterm_field,
+	'TO5' => \&check_stamped_free_text,
+	'TO6a' => '',
+	'TO6b' => \&validate_cvterm_field,
+	'TO6c' => \&check_stamped_free_text,
+	'TO6d' => \&check_single_allowed_value,
+	'TO7a' => \&check_valid_symbol_field,
+	'TO7b' => \&check_valid_symbol_field,
+	'TO7c' => \&check_valid_symbol_field,
+	'TO8' => \&check_stamped_free_text,
+	'TO9' => \&no_stamps,
+	'TO10' => \&validate_species_abbreviation_field,
+
+);
+
+## add comment detailing Peeves version being used
+print "\nUsing Peeves version $Peeves_version in $Peeves_config{'Peeves_path'}\n\n";
+
+print "Started " . (scalar localtime) ."\n\n";
+
+# Added EXPRESSION to despatch table. DOS
+
+my %despatch_table = ('MULTIPUBLICATION'                => \&do_multipub_proforma,
+		      'PUBLICATION'                     => \&do_publication_proforma,
+		      'GENE'                            => \&do_gene_proforma,
+		      'ALLELE'                          => \&do_allele_proforma,
+		      'GENEPRODUCT ATTRIBUTES/EXPRESSION' => \&do_expression_proforma,
+		      'ABERRATION'                      => \&do_aberration_proforma,
+		      'GENOTYPE VARIANT'                => \&do_balancer_proforma,
+		      'TRANSPOSON INSERTION'            => \&do_TI_proforma,
+		      'MOLECULAR SEGMENT AND CONSTRUCT' => \&do_moseg_proforma,
+		      'NATURAL TRANSPOSON'              => \&do_natTE_proforma,
+		      'GENEGROUP'              => \&do_genegroup_proforma,
+		      'DATASET/COLLECTION'              => \&do_dataset_proforma,
+		      'HUMAN HEALTH MODEL'              => \&do_humanhealth_proforma,
+		      'INTERACTION'              => \&do_interaction_proforma,
+		      'SPECIES'              => \&do_species_proforma,
+		      'DATABASE'              => \&do_database_proforma,
+		      'SEQUENCE FEATURE/MAPPED ENTITIES'              => \&do_seqfeat_proforma,
+		      'CULTURED CELL LINE'              => \&do_cellline_proforma,
+				'EXPERIMENTAL TOOL' => \&do_experimental_tool_proforma,
+		     );
+
+my %not_checked = (
+
+# None as of V 1.1.0
+
+		   );
+
+#  Data structures for the pre-instantiation/invalidation of symbols phase.
+
+# Proforma fields which may instantiate one or more symbols
+my %good_symbol = (
+ 		   'G1a'   => 'FBgn',
+		   'GA1a'  => 'FBal',
+		   'A1a'   => 'FBab',
+		   'AB1a'  => 'FBba',
+		   'GA10a' => 'FBtp',
+		   'GA10c' => 'FBti',
+		   'GA10e' => 'FBti',
+		   'MA1a'  => 'FBti',
+		   'TE1a'  => 'FBte',
+		   'MS1a'  => 'FBtp',
+		   'GG1a'  => 'FBgg',
+		   'LC1a'   => 'FBlc',
+		   'HH1b'  => 'FBhh', # FBhh do not have a 'valid symbol' proforma field - only name, so the primary 'symbol' field appears to be HH1b
+#			'IN1f' => 'FBin', # FBig id is not appropriate here as it groups many different specific interactions together so could use a made up 'FBin' so could fit into existing code in valid_symbol and chado_types but did not get time to test it sufficiently, so have not added pre-instatiation yet
+			'SF1a' => 'FBsf',
+			'F1a' => 'MULTI:gene product',
+			'TC1a' => 'FBtc',
+			'TO1a' => 'FBto',
+		  );
+
+# Proforma fields which may invalidate one or more symbols.
+my %bad_symbol = (
+		  'G1e'   => 'FBgn',
+		  'G1f'   => 'FBgn',
+		  'G31a'  => 'FBgn',
+		  'GA1e'  => 'FBal',
+		  'GA1f'  => 'FBal',
+		  'GA32a' => 'FBal',
+		  'A1e'   => 'FBab',
+		  'A1f'   => 'FBab',
+		  'A27a'  => 'FBab',
+		  'AB1e'  => 'FBba',
+		  'AB1f'  => 'FBba',
+		  'AB11a' => 'FBba',
+		  'TE1c'  => 'FBte',
+		  'TE1g'  => 'FBte',
+		  'TE1h'  => 'FBte',
+		  'MS1c'  => 'FBtp',
+		  'MS1g'  => 'FBtp',
+		  'MS1h'  => 'FBtp',
+		  'MA1c'  => 'FBti',
+		  'MA1g'  => 'FBti',
+		  'MA1h'  => 'FBti',
+		  'GG1e'  => 'FBgg',
+		  'GG1f'  => 'FBgg',
+		  'LC3a'  => 'FBlc',
+		  'LC3b'  => 'FBlc',
+		  'HH3a'  => 'FBhh', # FBhh do not have a 'valid symbol' proforma field - only name, so used the 'name' rename field here
+#			'IN1c' => '??', # FBig id is not appropriate here as it groups many different specific interactions together so need to work out which if any type to use - there may not be a FBid type for individual interactions. Commented out as field not implemented in proforma parsing yet.
+#			'IN1g' => '??', # FBig id is not appropriate here as it groups many different specific interactions together so need to work out which if any type to use - there may not be a FBid type for individual interactions Commented out as field not implemented in proforma parsing yet.
+			'SF1c' => 'FBsf',
+			'SF1g' => 'FBsf',
+			'F1b' => 'MULTI:gene product',
+			'F1c' => 'MULTI:gene product',
+			'TC1e' => 'FBtc',
+			'TC1g' => 'FBtc',
+			'TO1c' => 'FBto',
+			'TO1g' => 'FBto',
+
+			
+		 );
+
+our %prepared_queries;				# Will have been set up by init_chado()
+our $report_text = '';
+our $num_records = 0;				# No records checked yet.
+our $clean_record = 1;				# Nothing wrong with the curation record --- yet!
+our $qq=0;     # Set to 1 if record prefixed qq and then ignore ?? to do correct reporting of pass and fail numbers
+our $num_reports = 0;				# No reports made --- yet!
+our %new_symbols = ();				# List of symbols instantiated or invalidated by this record.
+
+my %curators = ();				# Curators' paths to records.
+my @clean_files = ();				# List of records with no reported errors (per curator)
+my @dirty_files = ();				# List of records with at least one reported error (per curator)
+my @clean_qq_files=();	     # For testing, all records have a ?? but this results in a dirty_files entry. For records prefixed qq only
+my @ignored_files = ();				# List of files which don't look like records (per curator)
+my @cant_open = ();				# List of unreadable files (per curator)
+
+# Read curators' details.
+
+my $ccfg = shift;
+
+open (CUR_CFG, $ccfg) or die "$0: Can't open curators' configuration file $ccfg\n"; 
+while (<CUR_CFG>)
+{
+    next if /^\s*$/ or /^\#/;			# Commentary lines
+    if (/^\s*(\S+)\s+(\S+)\s+(\S+)\s+$/)
+    {
+	exists $curators{$1} and die "$0: More than one line of config data for $1 in $ccfg\n";
+	$curators{$1} = [$2, $3];
+    }
+    else
+    {
+	die "$0: bad curators' config data in $ccfg\n";
+    }
+}
+close (CUR_CFG);
+
+# Find out whether Chado is awake before getting too deep into the parsing process.  Note that the init_chado
+# function can die.
+
+init_chado ();			# If it were done when 'tis done, then 'twere well It were done quickly.
+
+# Load the symbol table with static data and with symbols held in standard ontology files.
+
+init_symbol_table ($Peeves_version, $pcfg, $ccfg);
+
+# That's about all we can do which is independent of the curators' data.  From here on, we parse each
+# curator's data separately.  Also from here on in, we're not allowed to die until all the data has been
+# parsed; warn, on the other hand, is permissible.
+
+ CURATOR:
+    foreach my $curator (keys %curators)
+{
+    my ($full_name, $dir) = (getpwnam ($curator))[6..7];
+    
+    unless (defined $dir)
+    {
+	warn "Can't find curator username $curator!  Skipping ...\n";
+	next CURATOR;
+    }
+
+    $curators{$curator}[1] =~ s+~(.*)+$dir/$1+;		# Convert ~user to full path to user's home directory.
+    $curators{$curator}[1] =~ s+//+/+g;			# Rip out consecutive '/' chars
+    unless (opendir (BASEDIR, $curators{$curator}[1]))
+    {
+	warn "Can't change directory to curator $curators{$curator}[1]!  Skipping curator $curator...\n";
+	next CURATOR;
+    }
+
+    @clean_files = ();
+    @clean_qq_files = ();
+    @ignored_files = ();
+    @cant_open = ();
+
+    $report_text = '';
+    $num_records = $num_reports = 0;
+
+  CURATION_RECORD:
+#    foreach my $file (readdir BASEDIR)						# Random order
+#    foreach my $file (split (/\n/, `/bin/ls -rt $curators{$curator}`))		# Least recently changed first.
+#    foreach my $file (split (/\n/, `/bin/ls -t $curators{$curator}`))		# Most recently changed first.
+    foreach my $file (sort							# Decreasing numerical order
+		      {
+			  my ($la, $lb) = ($a, $b);	# Copies because the args must not be altered.
+			  $la =~ y/[0-9]//cd;		# Preserve only digits.
+			  $la or $la = 0;		# Force '' to be numeric.
+			  $lb =~ y/[0-9]//cd;		# Preserve only digits.
+			  $lb or $lb = 0;		# Force '' to be numeric.
+			  $lb <=> $la;			# Decreasing order.
+		      }
+		      readdir BASEDIR)
+    {
+	next CURATION_RECORD if  $file =~ /^\./;	# Not interested in hidden dot-files.
+	
+	
+	if($file=~/^qq?/){
+		$qq=1;
+	     print "$file is a TEST record curator qq ($curators{$curator}[1]) so ignoring ??\n"; # so that gene.pl etc don't set $clean_record to 0 for ??
+    }
+
+	if(not $IDL_TEST_RUN){
+	if (my $f_type = classify_file($Peeves_config{'Where_running'}, $curator, $curators{$curator}[0], $file))
+	{
+	    set_symbol ($file, 'record_type', $f_type);
+		my $c_type = classify_curator ($Peeves_config{'Where_running'}, $file);
+	    set_symbol ($file, 'curator_type', $c_type);
+        print("ctype= $c_type, ftype= $f_type");
+	}
+	else
+	{	#if(!$file=~/qq/){
+	    push @ignored_files, $file;
+	    next CURATION_RECORD;
+	    #}
+	}
+	}
+	else{
+		set_symbol ($file, 'record_type', 'EDIT');
+	    set_symbol ($file, 'curator_type', 'HARVARD');
+	}
+	unless (open (PRO_FILE, "$curators{$curator}[1]/$file"))
+	{
+	    push @cant_open, $file;
+	    next CURATION_RECORD;
+	}
+	
+	$num_records++;
+	$clean_record = 1;					# Nothing wrong with the curation record --- yet!
+	our %x1a_symbols = ();					# For detecting duplicate proformae in a record
+	$report_text .= "\nProcessing $file\n\n";
+
+# First pass: Check for newly instantiated and invalidated symbols.
+
+	$/ = "\n!";					# Proforma field by proforma field.
+
+	%new_symbols = ();				# List of symbols instantiated or invalidated by this record.
+	my %GA10_symbols = ();				# List of symbols in GA10[ace] without 'NEW:' prefix, ie. claimed to:
+										# either a. already be in Chado, or b. be instantiated later in a MA1a/MS1a field
+
+	while (<PRO_FILE>) {
+		my ($pling_c, $code, $symlist) = (/^(c?) (\w{3,5})\. .*?:(.*)\n!/s); # looks at empty and filled in fields.  Left it like this in case the 'First pass' section is used again in the future for counting !c.
+                     	    
+		$symlist or next;
+		if (exists $good_symbol{$code}) {
+			my $type = $good_symbol{$code};
+
+# Several symbols can appear in a single proforma field: either as a hash list or one symbol per
+# line and, in principle, in both forms so split $symlist on both separators.
+
+			foreach my $symbol (split (/\n| \# /, $symlist)) {
+
+# New symbols of all types are created in the *1a fields.  For the curators' convenience, FBtp and FBti may
+# also be instantiated in the GA10[ace] fields, as well as in MS1a and MA1a.  For Peeves' convenience, any
+# such symbols instantiated in the GA10[ace] fields must be flagged with a preceding 'NEW:' and
+# these symbols must not already exist in Chado.
+
+# Special treatment for GA10[ace] fields because symbol(s) may also appear in MA1a/MS1a fields later on in record
+				if ($code =~ /^GA10[ace]/) {
+					if ($symbol =~ s/^NEW://) {
+						delete_symbol ($symbol, $type);			# Flush from symbol table, then
+					if (my $FBid = valid_symbol ($symbol, $type)) {	# ask Chado's opinion.
+						report ($file, "%s: NEW:'%s' is not new and Chado knows it as %s", $code, $symbol, $FBid);
+						next;			# Don't instantiate, leave as in Chado.
+					}
+					set_symbol ($symbol, $type, "good_$symbol");	# Instantiate it, with value having "good_" prefix (so that it can be
+                                                                    # identified as a new symbol instantiated in the record).
+					} else {
+
+# Can't check these yet because they may be instantiated by a later MA1a or MS1a as well as being in Chado.
+
+						$GA10_symbols{$symbol}{$type} = $code;
+					}
+				} else {
+
+# test whether field is one which allows multiple_types - have to use $good_symbol{$code} NOT $type
+# to prevent possible bleed-through for hashed proformae if there is a gene product symbol that fails basic
+# format checks
+
+					if ($good_symbol{$code} eq 'MULTI:gene product') {
+					
+						my ($product_type, undef, undef) = &type_gene_product($symbol, '1');
+						# only reset type if it matches basic format requirements for FBtr or FBpp
+						# so if it fails, the set_symbol below will use a type of 'MULTI:gene product'
+						# which might turn out to be useful
+						if ($product_type) {
+							$type = $product_type;
+						} else {
+							$type = $good_symbol{$code};
+						}
+					}
+# Instantiate it (with value having "good_" prefix, so that it can be identified as a new symbol instantiated in the record) ONLY if it is not already in Chado. ie. only brand new symbols get a good_ prefix.
+					unless (valid_symbol ($symbol, $type)) {
+						set_symbol ($symbol, $type, "good_$symbol");
+					}
+				}
+				$new_symbols{$symbol} = $type;
+			}
+		} elsif (exists $bad_symbol{$code}) {
+			my $type = $bad_symbol{$code};
+
+			foreach my $symbol (split (/\n| \# /, $symlist)) {
+
+# test whether field is one which allows multiple_types - have to use $bad_symbol{$code} NOT $type
+# to prevent possible bleed-through for hashed proformae if there is a gene product symbol that fails basic
+# format checks
+				if ($bad_symbol{$code} eq 'MULTI:gene product') {
+					
+					my ($product_type, undef, undef) = &type_gene_product($symbol, '1');
+						# only reset type if it matches basic format requirements for FBtr or FBpp
+						# so if it fails, the set_symbol below will use a type of 'gene_product_field'
+						# which might turn out to be useful
+					if ($product_type) {
+						$type = $product_type;
+					} else {
+						$type = $bad_symbol{$code};
+					}
+				}
+# Careful when merging a list of symbols, as a valid symbol may appear in the list, all other
+# members of which are invalidated.  Unless the curator has done something very silly and put the
+# 1a field after the merging field, the valid symbol will have been processed already.  Even if
+# they have been playing silly buggers this code will still work.
+
+				unless (exists $new_symbols{$symbol} and $new_symbols{$symbol} eq $type) {
+					invalidate_symbol ($symbol, $type);
+					$new_symbols{$symbol} = 0;
+				}
+			}
+		}
+	}
+
+# Now we can check anything stashed away in %GA10_symbols for validity
+
+	foreach my $symbol (keys %GA10_symbols) {
+		foreach my $type (keys %{$GA10_symbols{$symbol}}) {
+			valid_symbol ($symbol, $type) or
+		    report ($file, "%s claims that %s is an existing %s symbol, " . "but Chado has never heard of it.", $GA10_symbols{$symbol}{$type}, $symbol, $type);
+		}
+	}
+
+
+# Second pass: in-depth validation.
+
+	seek (PRO_FILE, 0, 0);				# Rewind to beginning of file.
+	$/ = "!!!!!!\n";				# Slurp each proforma
+
+# Clear out a set of global variables for communicating between different proformae.
+
+	our $g_FBrf = '';		# Publication ID: from P22 to (G31b, GA32b, A27b, AB11b)
+	our $g_pub_type = '';		# Publication type: from P1 to (*[12]b, GA10[a-h])
+	our $g_num_syms = 0;		# Number of symbols in hash list: from G to GA and A to AB
+	our @g_assoc_aberr = ();	# Associated aberration: from GA10g to A4 and A6
+	our %GA21_hash = ();		# Cross-reference complemented / complementing alleles in different GA21
+
+	our $g_GA34a_count = 0; # count of number of filled in GA34a fields
+	our $g_GA34b_count = 0; # count of number of filled in GA34b fields
+	our $g_P43_flags = ''; # sum of P43 flags in record (plus those already in chado if 'Where_running' is set to Cambridge)
+
+
+	$want_next = 'PUBLICATION|MULTIPUBLICATION';			# Reset FSM.
+
+	while (my $proforma = <PRO_FILE>)
+	{
+		my $qq_found=0; # apparently curators add these anywhere in the proforma or between proformae - gm119 urgent Nov 29
+# Check for deleted newlines.
+
+# The initial if() is *very* important.  The embedded rewriting loop is very expensive and must be avoided
+# wherever possible, even at the cost of an admittedly inelegant pre-test.  Without it, the code will run at
+# least a hundred times more slowly.
+
+	    if ($proforma =~ /[^\n]!.? [AGMPT]/)
+	    {
+			while ($proforma =~ s/(.+[^\n])(!c? (G|A|MP|P|GA|MA|AB|MS|TE)\d+[a-z]?\. .*)/$1\n$2/s)
+			{
+				report ($file, 
+					join ("\n",
+					  ('It looks like you may have deleted a line break between',
+					   '...%s',
+					   'and',
+					   '%s...',
+					   'so I\'m assuming you meant to have one there and carrying on, hoping for the best.'
+					   )),
+					substr ($1, -30),
+					substr ($2, 0, 30));
+			}
+	    }
+
+# Check for possibly deleted leading ! or terminal : but if this generates too many false positives, we may
+# have to switch it off.
+
+	    my @proforma_lines = split (/\n/, $proforma);
+	    foreach (grep /^!c? (G|A|MP|P|GA|MA|AB|MS|TE|DB|LC|GG|HH|IN|SP|DB|SF|TC|TO)\d+[a-z]?\.[^:]+$/, @proforma_lines)
+	    {
+		report ($file, "Possibly missing colon in '%s'", $_);
+	    }
+	    foreach (grep /^c? (G|A|MP|P|GA|MA|AB|MS|TE|DB|LC|GG|HH|IN|SP|DB|SF|TC|TO)\d+[a-z]?\./, @proforma_lines)
+	    {
+		report ($file, "Possibly missing ! in '%s'", $_);
+	    }
+
+	    unless($qq){ #don't bother with this check for a qq test record or it will never pass Peeves
+	    if (grep /\?\?/, @proforma_lines)
+	    {# ?? anywhere even between proformae warning - gm119 urgent Nov 29 - can be anywhere on any line
+	    	report ($file, "WARNING: found ?? within this record") unless ($qq_found);
+	    	$qq_found = 1;
+	    }
+	}
+
+
+# See if we can find the start of a proforma, despite everything the curators (admittedly inadvertently) do to
+# try to confuse us.  Insist on the word PROFORMA and a Version on the same line.
+
+	    next if $proforma !~ /.+\sPROFORMA\s.+Version/;
+
+# check that the PROFORMA line begins with a !
+		foreach my $line (@proforma_lines) {
+			if ($line =~ m/^[^!].*\sPROFORMA\s.+Version/) {
+					report ($file, "You have missed the ! at the beginning of the PROFORMA line:\n%s\n", $line);
+
+			}
+		}
+
+# Lose anything up to and including the newline immediately before PROFORMA.
+
+	    $proforma =~ s/(.*\n)*?(.*?PROFORMA.*)/$2/s;
+	    my ($header, $type, $vers, $body) = ($proforma =~ /(.*?)([A-Z][A-Z\s.,\/]*?[A-Z])(\s*PROFORMA.*?\n)(.*)/s);  # Edited regex to allow forward slashes in proforma names.  This allows proper parsing of Expression proformae - and could also be useful for Library proforamae in future.
+
+# Ignore the proforma version for the moment, but capture it in case we subsequently decide to use it, perhaps
+# to emit different error messages.  We used to check $header, as that's the portion which is most often
+# mangled by accident, but it produced too many false positives.  Review the situation later.
+#
+#    $header eq '! ' or report ($file, "Strange stuff '%s' before the proforma type specification", $header);
+
+# See whether !c is used anywhere in the proforma so that certain checks may be relaxed.  After the next
+# statement, the symbol 'proforma_type' will be a valid symbol of type 'change' if and only if a !c appears.
+
+	    set_symbol ('proforma_type', 'change', 0 + $proforma =~ /\n!c /);
+
+# Choose a parser sub based on the type of the proforma, feeding it the name of the file from which it was
+# read and the body of the proforma itself.  Prepend a "!\n" to the body to avoid a nasty bug when all blank
+# comments have been stripped from the proforma.
+
+	    if ($type =~ /$want_next/ and exists $despatch_table{$type})
+	    {
+		&{$despatch_table{$type}}($file, "!\n$body");
+	    }
+	    elsif (exists $not_checked{$type})
+	    {
+		&{$not_checked{$type}}($file, $type, "!\n$body");
+	    }
+	    else
+	    {
+		report ($file, "Found proforma of unexpected type '%s' (and expected to see %s)",
+			$type, $want_next);
+	    }
+
+# A .bibl record may contain either an arbitrary number of multipub proformae or a single pub proforma.
+
+	    if (valid_symbol ($file, 'record_type') eq 'BIBL' and $want_next ne 'MULTIPUBLICATION')
+	    {
+		$want_next = 'no more proformae for a .bibl record';
+	    }
+	}
+
+# A set of checks that can only be performed when the entire record has been parsed because they rely on data
+# occurring in two or more separate proformae which need have no particular textual ordering.
+
+
+
+
+# Check that GA34a data has been entered in the record if there is a '::DONE' P43 (disease)
+# flag for this reference (either in P43 in the record itself, plus if 'Where_running' is Cambridge
+# chado is also checked).
+#  
+# Reciprocally, check that if GA34a data filled in, P43 contains a ::DONE flag  - either in the
+# record itself, or already in chado (if 'Where_running' is Cambridge).
+
+my $done_count = 0;
+
+
+foreach my $flag (split (/\n/, $g_P43_flags)) {
+
+	if ($flag =~ m|::DONE$|) {
+		$done_count++;
+	}
+}
+
+if ($done_count) {
+
+	if ($g_GA34a_count || $g_GA34b_count) {
+	} else {
+		report ($file, "There is a '::DONE' flag in the P43 field, but you have not entered any disease data into either GA34a and/or GA34b.  Please check the P43, GA34a and GA34b fields.");
+
+	}
+} else {
+
+	if ($g_GA34a_count || $g_GA34b_count) {
+
+		unless (valid_symbol ($file, 'record_type') eq 'EDIT') {
+			report ($file, "You have entered disease data in either GA34a and/or GA34b, but there is no '::DONE' flag in P43.  Please check the P43 field (you may need to add a ::DONE flag and !c the field).");
+		}
+	}
+}
+
+# Forget all about the symbols instantiated or invalidated in this record.  All of them have FBid types and so
+# their values in Chado will be read again (or not, as the case may be) should they occur in other records.
+# Inter-record reconciliation is not part of Peeves' remit.
+
+	foreach my $symbol (keys %new_symbols)
+	{
+	    delete_chado_symbols ($symbol);	# It became necessary to destroy the village in order to save it.
+	}
+	if ($clean_record)			# Passed all checks?    # there is nothing to report (see tools.pl sub report)
+	{
+	    push @clean_files, $file; 
+	}
+	else
+	{                                                                      
+	    push @dirty_files, $file;
+	}
+	close (PRO_FILE);
+    }
+
+# Give a summary about the various files in the curator's directory.
+
+    if ($num_records)
+    {
+	$report_text .= sprintf ("I checked %d file%s.\n", $num_records, $num_records == 1 ? '' : 's');
+	$report_text .= summarize_files (\@clean_files,   "These files passed all the checks");
+	$report_text .= summarize_files (\@dirty_files,   "These files failed at least one check");
+	$report_text .= summarize_files (\@cant_open,     "Could not read these files");
+	$report_text .= summarize_files (\@ignored_files, "Ignoring these files");
+	$report_text .= "\n\nI came to this conclusion by consulting " . valid_symbol ('Chado_instance', '_Peeves_');
+	$report_text .= " stored on " . valid_symbol ('Chado_host', '_Peeves_') . "\n\n";
+	$report_text .= "I used these ontologies:\n" . valid_symbol ('Ontologies', '_Peeves_');
+    }
+    else
+    {
+	$report_text .= summarize_files (\@cant_open,     "Could not read these files");
+	$report_text .= summarize_files (\@ignored_files, "Ignoring these files");
+	$report_text .= "\n\nNo files were checked, so not much for me to do, really.  Oh well.\n";
+    }
+	
+    print $report_text;
+
+	print "\n\nFinished " . (scalar localtime) ."\n\n";
+
+    closedir (BASEDIR);
+}
+
+close_down_chado();
+
+# That's all folks!

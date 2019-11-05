@@ -1,0 +1,64 @@
+
+## ! HH2a. Category [parent entity, sub-entity, specific entity, group entity] :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+
+### !c Applicable:
+
+Yes (Implemented) (check with Kathleen)
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (see below)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* Value must be one of the allowed CV terms
+
+Checks between fields:
+
+* Many other fields are cross-checked against HH2a data as they are only allowed to be filled in for some categories of human health reports.  These are listed in the relevant spec file.  Note at the moment this checking only uses the HH2a field data, but ideally, should look up value in chado if HH2a is empty.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented:
+
+
+Checks between fields:
+
+* HH2a must be filled in if HH1f is 'new' 
+
+* HH2a can also be filled in when HH1f has an FBhh id, but in this case, HH2a must be !c 
+
+* HH2a must be filled in if HH1g is filled in with a !c
+
+
+
+
+
+### Updated:
+
+gm151001.

@@ -1,0 +1,31 @@
+! EXPERIMENTAL TOOL PROFORMA                       Version 4:  31 Oct 2017
+!
+! TO1f. Database ID for experimental tool (FBto)       :FULL
+! TO1a. Experimental tool symbol to use in database    :FULL
+! TO1b.  Experimental tool symbol synonym(s)           :FULL
+! TO10. Species of tool (organism.abbreviation)        :FULL
+!
+! TO1c. Action - rename this experimental tool symbol  :FULL
+! TO1g. Action - merge these experimental tools (FBto) :FULL
+! TO1h. Action - obsolete TO1a in FlyBase (y/blank)       :FULL
+! TO1i. Action - dissociate TO1a from reference (y/blank) :FULL
+!
+! TO2a.  Action - experimental tool name to use in FlyBase       :FULL
+! TO2b.  Experimental tool name synonym(s)                       :FULL
+! TO2c.  Action - rename this experimental tool name             :BASIC ONLY
+!
+! TO4.   Experimental tool uses [CV]                             :FULL
+! TO5.   Description of experimental tool [free text]            :FULL
+!
+! TO6a. Accession number for tool (dupl section for multiple)    :BASIC ONLY
+! TO6b. FlyBase database symbol (DB1a) for accession in TO6a     :FULL
+! TO6c. Title for TO6a (if desired) [free text]                  :FULL
+! TO6d. Action - dissociate accession in TO6a/TO6b from tool in TO1a? (blank/y) :FULL
+!
+! TO7a. Compatible tools(s) (symbol) :FULL
+! TO7b. Other related tools(s) (symbol) :FULL
+! TO7c. Gene of origin (symbol)   :FULL
+!
+! TO8.  Comments [free text] :FULL
+! TO9.  Internal notes       :FULL
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

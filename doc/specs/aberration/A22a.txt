@@ -1,0 +1,44 @@
+
+## ! A22a. Notes on origin [SoftCV]                         *R :
+
+### Multiple values allowed:
+
+Yes
+
+### !c Applicable:
+
+Yes
+
+### Inclusion essential:
+
+No
+
+### Mandatorially has value:
+
+No
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+- 1 SoftCV prefix exists specifically for this field:
+Separable from:
+
+and every line must begin with this.
+
+Any stamps in the remainder of the line must be checked for validity in the standard manner.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Updated:
+
+gm170213.

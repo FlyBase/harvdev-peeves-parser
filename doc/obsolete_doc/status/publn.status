@@ -1,0 +1,245 @@
+      Status of Peeves checking for publication proforma fields.
+      ==========================================================
+
+
+! PUBLICATION PROFORMA                   Version 35:  28 Oct 2008
+---------------------------------------------------------------------------
+
+! P22. Publication FBrf            *U :
+
+   Fully checked.
+!c Fully checked against Chado.
+   No known bugs.
+   No known false positives.
+---------------------------------------------------------------------------
+
+! P32. FBrf to be merged into P22. *N :
+
+   Fully checked.
+!c Not allowed, and checked as such.
+   No known bugs.
+   No known false positives.
+---------------------------------------------------------------------------
+
+! P39. Delete this FBrf from the bibliography   TAKE CARE :
+
+   Fully checked.
+!c Not allowed, and checked as such.
+   No known bugs.
+   No known false positives, but a warning is always produced.
+---------------------------------------------------------------------------
+
+! P1.  Type of publication  [CV] *T :paper
+
+   Fully checked.
+!c Fully checked against Chado.
+   No known bugs.
+   No known false positives.
+---------------------------------------------------------------------------
+
+! P21. Journal etc unique ID *W/*U              :
+
+---------------------------------------------------------------------------
+
+! P2.  Journal etc abbreviation           *w/*s :
+
+   Fully checked.
+!c Fully checked against Chado.
+   No known bugs.
+   No known false positives.
+---------------------------------------------------------------------------
+
+! P12. Author(s)              *a-r :
+
+   Fully checked.
+!c Fully checked.
+   No known bugs.
+   No known false positives.
+---------------------------------------------------------------------------
+
+! P10. Year of publication      *t :
+
+   Fully checked.
+!c Fully checked against Chado.
+   No known bugs.
+   False positives: complains about publication dates earlier than 1990,
+                    that date being chosen to pick up many typos at the
+                    cost of a relatively small number of false positives.
+---------------------------------------------------------------------------
+
+! P16. Title of publication (excl. part-title)   *u :
+
+   Fully checked.
+!c Fully checked.
+   No known bugs.
+   No known false positives.
+---------------------------------------------------------------------------
+
+! P3.  Volume designation       *y :
+
+   Fully checked.
+!c Fully checked against Chado.
+   No known bugs.
+   No known false positives.
+---------------------------------------------------------------------------
+
+! P4.  Issue number             *Y :
+
+   Fully checked.
+!c Fully checked against Chado.
+   No known bugs.
+   No known false positives.
+---------------------------------------------------------------------------
+
+! P11a. Page range              *z :
+
+   Fully checked.
+!c Fully checked against Chado.
+   No known bugs.
+   False positives: complains about non-numerics even though these might be
+                    legitimate.
+---------------------------------------------------------------------------
+
+! P11d. DOI                        :
+
+   Barely checked.
+     Only (superfluous whitespace; bad UTF-8)
+!c Partially checked.
+     Only (deletion forbidden; can't change new publication)
+   No known bugs.
+   No known false positives.
+---------------------------------------------------------------------------
+
+! P11b. URL                     *R :
+
+   Fully checked.
+!c Fully checked.
+   No known bugs.
+   No known false positives.
+---------------------------------------------------------------------------
+
+! P11c. accession number           :
+
+   Barely checked.
+     Only (pub_type, superfluous whitespace; bad UTF-8)
+!c Partially checked.
+     Only (deletion forbidden; can't change new publication)
+   No known bugs.
+   No known false positives.
+---------------------------------------------------------------------------
+
+! P13. Language(s) of paper [CV]                 *L :English
+
+---------------------------------------------------------------------------
+
+! P14. Additional language(s) of abstract(s) [CV]*A :
+
+---------------------------------------------------------------------------
+
+! P25. Biosis ID                *B :
+
+   Fully checked.
+!c Fully checked.
+   No known bugs.
+   No known false positives.
+---------------------------------------------------------------------------
+
+! P26. Medline ID               *M :
+
+   Fully checked.
+!c Fully checked.
+   No known bugs.
+   No known false positives.
+---------------------------------------------------------------------------
+
+! P27. Zoo Record ID            *Q :
+
+   Fully checked.
+!c Fully checked.
+   No known bugs.
+   No known false positives.
+---------------------------------------------------------------------------
+
+! P29. ISBN if P1=book          *I :
+
+   Fully checked.
+!c Fully checked.
+   No known bugs.
+   No known false positives.
+---------------------------------------------------------------------------
+
+! P33. Conference abstract text *D :
+
+   Fully checked.
+!c Check for changing new publication.
+   No known bugs.
+   No known false positives.
+---------------------------------------------------------------------------
+
+! P23. Text of personal communication      *F :
+
+   Fully checked.
+!c Check for changing new publication.
+   No known bugs.
+   No known false positives.
+---------------------------------------------------------------------------
+
+! P18. Associated text                     *G :
+
+   Fully checked.
+!c Check for changing new publication.
+   No known bugs.
+   No known false positives.
+---------------------------------------------------------------------------
+
+! P38. File deposited to archive           *K :
+
+   Fully checked.
+!c Can't check change against Chado for more than one file.
+   No known bugs.
+   False positive: warning emitted if !c is used with more than one file.
+---------------------------------------------------------------------------
+
+! P30. Also published as (FBrf)            *C :
+
+   NO CHECKS
+---------------------------------------------------------------------------
+
+! P31. Related publication (FBrf)          *E :
+
+   Fully checked.
+!c Fully checked.
+   No known bugs.
+   No known false positives.
+---------------------------------------------------------------------------
+
+! P40. Flag Cambridge for curation      CAMCUR (SoftCV) :
+
+   Fully checked.
+!c Check for changing new publication.
+   No known bugs.
+   No known false positives.
+---------------------------------------------------------------------------
+
+! P41. Flag-anything for Harvard       HARVCUR (SoftCV) :
+
+   Fully checked.
+!c Check for changing new publication.
+   No known bugs.
+   No known false positives.
+---------------------------------------------------------------------------
+
+! P19. Internal notes                      *H :
+
+   Fully checked.
+!c Check for changing new publication.
+   No known bugs.
+   No known false positives.
+---------------------------------------------------------------------------
+
+! P15. Offprint available? *J :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+=================================
+Last modification 081204 by pcl23

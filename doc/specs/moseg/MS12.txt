@@ -1,0 +1,43 @@
+
+## ! MS12.  Sequence :
+
+### Multiple values allowed:
+
+
+
+### !c Applicable:
+
+
+
+### Inclusion essential:
+
+
+
+### Mandatorially has value:
+
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Only validate_stub implemented.
+
+### Updated:
+
+gm151001.

@@ -1,0 +1,50 @@
+
+## ! HH2d. DOID  :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+
+### !c Applicable:
+
+Yes (Implemented) (check with Kathleen)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented:
+
+* Value(s) must have the format:
+
+DOID:nnnnn
+
+### Updated:
+
+gm151001.

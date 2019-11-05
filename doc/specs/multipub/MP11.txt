@@ -1,0 +1,80 @@
+
+## ! MP11. Editor(s), if MP17 = book              *a-*b :
+
+### Multiple values allowed:
+
+Yes, each on a separate line.
+
+### !c Applicable:
+
+Yes if MP1 contains valid data, otherwise no.
+
+### Inclusion essential:
+
+No.
+
+### Mandatorially has value:
+
+Yes if the value given in MP3 is 'y' and MP17 contains 'book', otherwise no.
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+A valid value consists of an arbitrary string of characters, followed by
+a TAB character, followed either by the string '?.' or an arbitrary
+number of repetitions of two-character strings each consisting of an
+uppercase Roman letter followed by a dot (aka full-stop, aka period).
+
+The string before the TAB character denotes the editor's family name.
+Although it is not strictly illegal for the family name to contain
+dot-characters, Peeves must generate a warning message in this case.
+
+The string after the TAB character is the list of initials of the given
+names of that editor.  If no initial is available for the editor, the
+string '?.' must be used.
+
+If !c is used:  
+
+* MP1 must contain a valid value and
+* the value(s) given in MP11 must be different from the value(s)
+stored in Chado for the multipub specified by the value given in
+MP1.
+
+If !c is not used:
+
+* if MP1 contains a valid value, either:
+    * the value(s) given in MP11 must be identical to the
+value(s) stored in Chado for the multipub specified by the value given
+in MP1 or
+    * MP11 must contain one or more valid values and no value is
+stored in Chado for the multipub specified by the value given in
+MP1;
+* if MP1 does not contain a valid value, either:
+    * MP11 must be empty or
+    * MP11 must contain one or more valid values.
+
+### Related fields:
+
+[P12][P12].
+
+### Comments:
+
+An editor need not be a known human individual.  Examples include
+corporate persons and Anonymous.
+
+The Peeves warning when the family name contains a dot-character is to
+pick up the common error of reversing the order of family name and
+initials.  A family name may legitimately contain a dot-character,
+especially if it is a corporate person named by an abbreviation such
+as "N.A.S.A." though in practice the dots are frequently omitted for
+such cases.
+
+### Updated:
+
+gm131204 (removed markdown formatting).
+gm151001 (added Dupl. for multiple field info).
+

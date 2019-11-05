@@ -1,0 +1,99 @@
+
+## ! IN7c. Subregion(s) of participant(s) with role in interaction ( <link to>  <description> region <role> unspecified role <coordinates/seq>  <note> ) :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field (sub validate_and_crosscheck_IN7cd):
+
+- report an error if the line does not match the basic '<link to>  <description>  <role>  <coordinates/seq>  <note>' format
+
+- report an error if any of the <link to>, <description> or <role> sub-fields are empty (NB, no error is reported if <coordinates/seq> or <note> is empty, as they are optional).
+
+- information in the <link to> subfield must be a valid FBtr or FBpp symbol, either in chado or generated in record.
+
+- 'check_allowed_characters' sub ensures that information in the <description> sub-field matches a limited set of characters - ' is not allowed, so this is not included in the list (**NOTE: may have set this too strict - if get too many false positives, can change set so more characters allowed or change how the check works if its no helpful as is).
+
+
+- if there is any <note> sub-field information, it is checked as follows:
+
+  - sub trim_space_from_ends checks for superfluous white-space at beginning/end of sub-field info
+  - check_stamps checks validity of symbols in stamps
+
+- information in the <role> sub-field:
+
+  - must be a valid PSI-MI term or an error is printed.
+  - if it is a valid PSI-MI term, but does not match one of the commonly used terms listed below, a warning message is printed indicating that the term used is not commonly used for this field:
+
+           sufficient binding region
+           necessary binding region
+           mutation disrupting interaction
+           mutation decreasing interaction
+           mutation increasing interaction
+           enzyme target
+           unspecified role
+
+  
+Between fields:
+
+- <link to> sub-field symbol should be present in the <symbol> sub-field of at least one of the IN6 lines in the proforma
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+Not yet implemented:
+
+Within field
+
+
+- syntax of <coordinates/seq> sub-field should be as follows:
+
+	1) start with 'nt', then a space, then a natural number. e.g., nt 253
+	2) start with 'nt', then a space, then a two natural numbers separated by a dash '-'. e.g., nt 1-131
+	3) start with 'aa', then a space, then a natural number. e.g., aa 356
+	4) start with 'aa', then a space, then a two natural numbers separated by a dash '-'. e.g., aa 400-652
+	5) an RNA sequence represented by a string of uppercase letters. Only A, C, G and U are allowed.
+	6) a polypeptide sequence represented by a string of uppercase letters. No need to restrict letters allowed (want some flexibility here).
+
+
+
+
+
+
+
+### Updated:
+
+gm160117.

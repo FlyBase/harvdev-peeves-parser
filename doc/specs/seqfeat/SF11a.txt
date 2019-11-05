@@ -1,0 +1,49 @@
+
+## ! SF11a. Bound moiety (FB symbol)   :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+
+* sub 'check_valid_chado_symbol_field' checks that the value is a valid symbol of type FBpp **in chado** (see status below for additional checks that should be implemented).
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Curation manual says 'current valid FB gene-XP symbol' so within field check ought to really be slightly more strict as gene-XP is presumably a subset of all valid FBpp.
+
+### Updated:
+
+gm170927.

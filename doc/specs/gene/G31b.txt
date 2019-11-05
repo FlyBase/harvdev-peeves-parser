@@ -1,0 +1,52 @@
+
+## ! G31b. Action - dissociate G1a from reference   TAKE CARE :
+
+### Multiple values allowed:
+
+No
+
+### !c Applicable:
+
+No
+
+### Inclusion essential:
+
+No
+
+### Mandatorially has value:
+
+No
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Must be blank or the single value y.
+
+If G31b is y, all the following conditions must hold:
+   - the value in G1a must be the symbol of a gene already present in Chado;
+   - G1g must be y;
+   - P22 must be the FBrf of a publication existing in Chado;
+   - all other proforma fields must be blank.
+
+Peeves must emit a warning message if the data is y.
+
+### Related fields:
+
+
+
+### Comments:
+
+COMMENTS: This field is potentially dangerous, so the curator should always be warned if it is non-blank.
+
+### Status:
+
+
+
+### Updated:
+
+gm131204 (doc for this field moved here from gene.checks.pro).
+gm151001 (added Dupl. for multiple field info).

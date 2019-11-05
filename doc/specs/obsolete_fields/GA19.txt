@@ -1,0 +1,49 @@
+
+## ! GA19.  Assay mode [CV]                               *k :
+
+### Multiple values allowed:
+
+Yes
+
+### !c Applicable:
+
+Yes
+
+### Inclusion essential:
+
+No
+
+### Mandatorially has value:
+
+No
+
+### Checks:
+
+Must be a valid value present in flybase_controlled_vocabulary.obo under 'allele
+assay method' node FBcv:0000606, or a code number from the following table that translates
+into such a term.
+
+1 "In transgenic Drosophila (intraspecific)"
+2 "Whole-organism transient assay (intraspecific)"
+3 "Drosophila cell culture"
+5 "In transgenic Drosophila (allele of one drosophilid species in genome of another drosophilid)"
+6 "Whole-organism transient assay (allele from one drosophilid species assayed in another drosophilid)"
+7 "In transgenic Drosophila (allele of foreign species in genome of drosophilid)"
+8 "Whole-organism transient assay (allele of foreign species assayed in drosophilid)"
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+PROFORMA FIELD OBSOLETED
+
+
+### Updated:
+
+gm131204 (doc for this field moved here from allele.checks.pro).

@@ -1,0 +1,52 @@
+
+## ! HH1e. Additional synonyms (free text)   :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+Yes (check with Kathleen) (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+Checks within field:
+
+* sub 'validate_synonym_field' (called via process_field_data):
+
+  * uses 'check_for_duplicated'_lines to check that there are no duplicated synonyms and no empty lines
+  * warns if the synonym is composed entirely of punctuation character(s).
+
+  * warns if the field is filled in for a 'user' or 'auto' curation record.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm170420.

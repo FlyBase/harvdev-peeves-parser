@@ -1,0 +1,55 @@
+
+## ! TC1b. Symbol used in paper/source (free text) :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+No (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'validate_synonym_field'
+
+  * uses 'check_for_duplicated'_lines to check that there are no duplicated synonyms and no empty lines
+
+  * warns if the synonym is composed entirely of punctuation character(s).
+
+  * warns if the field is filled in for a 'user' or 'auto' curation record.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Have implemented '!c Applicable' as No as indicated in curation manual - if !c is implemented for this field, this will need changing. - At that point, amy also need to add check_unattributed_synonym_correction checks at end of proforma checking (similar to other proformae)
+
+
+
+### Updated:
+
+gm170420.

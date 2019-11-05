@@ -1,0 +1,50 @@
+
+## ! AB2c.  Action - replace this/these genotype variant name(s)         :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented, but see Status below for additional checks that should be added)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+doc: checked that doc reflects what has been implemented
+
+Not yet implemented:
+
+* similar to G2c, there is no check that the value given in AB2c is really a valid fullname in chado.
+
+* there is no cross-check of AB2a with AB2c - need to add something that takes into account whether or not the allele is new (AB1g) and whether or not rename/merge fields (AB1e/AB1f) are filled in. [gm131211]
+
+### Updated:
+
+gm151001.

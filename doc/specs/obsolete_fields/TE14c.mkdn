@@ -1,0 +1,34 @@
+
+## ! TE14c.  Database gen.natTE name(s) to replace  :
+
+### Multiple values allowed:
+
+
+
+### !c Applicable:
+
+
+
+### Inclusion essential:
+
+
+
+### Mandatorially has value:
+
+
+
+### Checks:
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Updated:
+
+pl081208

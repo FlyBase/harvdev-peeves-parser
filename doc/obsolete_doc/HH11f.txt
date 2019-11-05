@@ -1,0 +1,51 @@
+
+## ! HH11f. Mammalian transgenics, perturbations and treatments (free text) :
+
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented) (check with Kathleen)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+ * sub 'check_stamped_free_text' checks that entries flanked by @@ are valid symbols of any FBid type (either existing already in chado or instantiated in the curation record).
+
+Checks between fields:
+
+* Must NOT be filled in for 'parent entity'
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+NOTE: 'parent entity' cross-check only uses HH2a field at the moment, ideally, should look up value in chado if HH2a is empty
+
+
+### Updated:
+
+gm151001.

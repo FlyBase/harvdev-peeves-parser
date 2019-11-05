@@ -1,0 +1,54 @@
+
+## `! GA4.   Allele class [CV]                                *k :`
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+
+
+### !c Applicable:
+
+Yes (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+checks within field (in validate_cvterm_field):
+
+* check_for_duplicated_lines:
+   * warns if there is a blank line within the data
+   * warns if there are any duplicated values
+
+* each value must match a value from the descendents of the 'allele morphy class' node of
+flybase_controlled_vocabulary.obo (and the term must not have is_obsolete = true).
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+doc: doc reflects what has been implemented
+
+
+
+
+### Updated:
+
+gm151001.

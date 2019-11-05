@@ -1,0 +1,57 @@
+
+## ! TO6c. Title for TO6a (if desired) [free text]                  :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+Yes (Implemented): TO6a -> TO6b, TO6c, TO6d
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if TO6c is filled in (this is to make it easier to implement checking of fields that can be duplicated).
+
+
+* sub check_stamped_free_text
+
+
+Checks between fields:
+
+
+* If TO6c is filled in, TO6a must be filled in
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm171114.

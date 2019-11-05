@@ -1,0 +1,386 @@
+## G24a, G24b and G24c evidence codes and data specifications.
+
+In what follows, a GO:ID is defined as the characters GO: followed by seven decimal digits.  To be valid data for the G24 fields, a GO:ID must occur in the Id:  field of a valid term from gene_ontology.obo.
+
+--------------------------------------------------------
+### IC - inferred by curator
+
+MANDATORIALLY HAS VALUE AFTER CODE: ' from ' followed by at least one GO:ID in format
+GO:0000000
+
+Muliple GO:IDs should be separated by pipes.
+
+e.g. IC from GO:1234567|GO:7654321
+
+Unless the publication is an internal reference (i.e. *T = FlyBase analysis)...
+
+   Each GO:ID(s) following the ' from ' should also appear again (at least once more) in any of G24[abc] lines within the same gene record of the same report in front of an experimental evidence code. The experimental evidence codes are currently IDA, IEP, IPI, IGI, IMP.
+
+e.g. gene record with lines:
+
+*d some GO process ; GO:1234567 | IMP
+*d some other GO process ; GO:7654321 | IC from GO:1234567
+would be valid because GO:1234567 has been assigned with IMP in another line.
+
+BUT
+
+*d some GO process ; GO:1234567 | NAS
+*d some other GO process ; GO:7654321 | IC from GO:1234567
+wouldn't be ok because NAS is not an experimental evidence code 
+
+BUT
+
+*d some GO process ; GO:1234567 | IMP
+*d some other GO process ; GO:7654321 | IC from GO:4545454
+also not ok because GO:4545454 does not appear in the the gene record.	
+
+Both types of error could be reported with the same error report along the lines of:
+
+Incorrect use of IC; 'GO:1234567' must be assigned to the gene with experimental evidence.
+
+
+--------------------------------------------------------
+IGC - inferred from genomic context
+
+OPTIONALLY HAS VALUE AFTER CODE: ' with ' followed by at least one database identifier;
+multiple database identifiers that refer to the same object (usually a gene) are separated
+by semicolons; multiple database identifiers that refer to different object are separated
+by commas. The general format of the identifier is database_abbreviation:uniqueID.
+
+--------------------------------------------------
+ISS - inferred from sequence or structural similarity
+
+MANDATORIALLY HAS VALUE AFTER CODE: ' with ' followed by at least one database identifier;
+multiple database identifiers that refer to the same object (usually a gene) are separated
+by semicolons; multiple database identifiers that refer to different object are separated
+by commas. The general format of the identifier is database_abbreviation:uniqueID
+
+Note, technically GO allows exceptions without 'with' for ISS, but as it is an exception to
+the normal rule, Peeves is set to make with mandatory for ISS.
+
+If no ' with ' and database identifier is entered error report is:
+
+Must have 'with ' data after the 'ISS' evidence code in '<whole GO line minus provenance>'
+(if you cannot provide a database identifier, consider using the ISM evidence code instead).
+
+
+Specification for checks of database identifier after the 'with ':
+
+Note the following equally applies to ISA, ISM and ISO. I am not sure to what extent these
+checks are implemented...?
+
+(gm130129 - check of the databases after the with is implemented in the same way for all evidence codes - using the check_go_databases subroutine, so the comments I've made below about what is/is not implemented applies to ALL evidence codes that have been specified as MANDATORIALLY HAS VALUE AFTER CODE: ' with ')
+
+e.g.    ISS with FLYBASE:scb; FB:FBgn0003328
+        ISS with FLYBASE:Brd; FB:FBgn0000216, FLYBASE:m4; FB:FBgn0002629, FLYBASE:Tom; FB:FBgn0026320
+        ISS with HUGO:ARF1; OMIM:103180
+
+1. If the database identifiers are internal (ie FLYBASE: or FB:)...
+   For each pair of identifiers...
+
+a.   Check that both symbol and FBgn IDs have been included (in format FLYBASE:<valid gene
+   symbol>; FB:<corresponding valid FBgn>)
+
+   Check that symbol and FBgn refer to the same gene.
+   Check that symbol is a currently valid symbol.
+
+(gm&st130129 - a. above is implemented, except that Greek symbols are not dealt with properly - valid symbols with a &bgr;-style Greeks are reported as false positive errors).
+
+b.   If possible, check that the gene after the ' with ' also appears in the database with
+   the same GO:ID/GO:term assigned by experimental evidence.
+
+   i.e.
+
+   *d Notch signaling pathway ; GO:0007219 | ISS with FLYBASE:Brd; FB:FBgn0000216,
+    FLYBASE:m4; FB:FBgn0002629, FLYBASE:m6; FB:FBgn0002632
+
+   is valid only if
+
+   *d Notch signaling pathway ; GO:0007219 | [IEP|IDA|IPI|IMP|IGI] appears in any other
+    gene record for FLYBASE:Brd AND FLYBASE:m4 AND FLYBASE:m6
+
+   Now I would check this in genes_go (I guess I should also look in unparsed records)
+   where I find:
+
+   *a Brd
+   *E FBrf0123097 == rf021015.e == gm7396.h == Lai et al., 2000, Development 127(2): 291--306
+   *d Notch signaling pathway ; GO:0007219 | inferred from mutant phenotype
+
+   *a m4
+   *E FBrf0123097 == rf021015.e == gm7396.h == Lai et al., 2000, Development 127(2): 291--306
+   *d Notch signaling pathway ; GO:0007219 | inferred from mutant phenotype
+
+   *a m6
+   *E FBrf0131793 == rf020715.e == Swiss-Prot Project Members, 2000.10.1, UniProt: O97179
+   *H No GO data. rf020715
+
+   Brd and m4 are assigned to GO:0007219 by IMP but m6 isn't so m6 is not valid for ISS.
+   Report error:
+
+   Invalid use of ISS; GO:0007219 is not assigned to FLYBASE:m6 with experimental evidence
+   (In this case it isn't assigned to GO:0007219 at all!)
+
+(gm130129 - ** b. above is NOT implemented**).
+
+2. If the database identifiers are external to FlyBase...
+
+   For other databases it is not practical to enforce the requirement for both symbol and
+   geneID. Sometimes the identifer will not be for a gene and there may only be a single
+   appropriate ID.
+
+a.   However we can check that the database identifier is valid...
+
+   The general format of the identifier is database_abbreviation:uniqueID.  The
+   database_abbreviation must be identical to one those contained in an abbreviation line
+   within http://www.geneontology.org/doc/GO.xrf_abbs
+
+   e.g. 
+   *f plasma membrane ; GO:0005886 | ISS with MGD:Gpm6a; MGI:MGI:107671
+   is ok because following appear in the abbreviation fields of
+   http://www.geneontology.org/doc/GO.xrf_abbs file
+   abbreviation: MGD
+   abbreviation: MGI
+
+(gm&st130129 - a. above is implemented)
+
+b.   What follows the colon is harder to check. In theory there should be enough info in the
+   http://www.geneontology.org/doc/GO.xrf_abbs file to make rules but in info in that file
+   is not always correct. For example the mouse case above, seems to be out of date as the
+   example URL provided for MGI is invalid. Clearly, it would be good to get this updated
+   and improve out checks in future but it is too much work to get chase all these dbs for
+   current info at present. I think it is also beyond our scope at present to check the
+   specified object exists in the external database.
+
+(gm130129 - ** b. above is NOT implemented**)
+
+--------------------------------------------------
+ISM - inferred from sequence model
+
+OPTIONALLY HAS VALUE AFTER CODE: ' with ' followed by at least one database identifier;
+multiple database identifiers that refer to the same object (usually a gene) are separated
+by semicolons; multiple database identifiers that refer to different object are separated
+by commas. The general format of the identifier is database_abbreviation:uniqueID.
+--------------------------------------------------
+ISA - inferred from sequence alignment
+
+MANDATORIALLY HAS VALUE AFTER CODE: ' with ' followed by at least one database identifier;
+multiple database identifiers that refer to the same object (usually a gene) are separated
+by semicolons; multiple database identifiers that refer to different object are separated
+by commas. The general format of the identifier is database_abbreviation:uniqueID
+
+If no ' with ' and database identifier is entered error report is:
+
+Must have 'with ' data after the 'ISA' evidence code in '<whole GO line minus provenance>'
+(if you cannot provide a database identifier, consider using the ISM evidence code instead).
+
+--------------------------------------------------
+ISO - inferred from sequence orthology
+
+MANDATORIALLY HAS VALUE AFTER CODE: ' with ' followed by at least one database identifier;
+multiple database identifiers that refer to the same object (usually a gene) are separated
+by semicolons; multiple database identifiers that refer to different object are separated
+by commas. The general format of the identifier is database_abbreviation:uniqueID
+
+If no ' with ' and database identifier is entered error report is:
+
+Must have 'with ' data after the 'ISO' evidence code in '<whole GO line minus provenance>'
+(if you cannot provide a database identifier, consider using the ISM evidence code instead).
+
+
+--------------------------------------------------
+EXP - inferred from experiment
+
+MANDATORIALLY HAS VALUE AFTER CODE:no value
+i.e. EXP must not be used with ' with ' or ' from '
+
+ADDITIONAL INFO FOR EXP: EXP must only be assigned by external data sources; i.e. provenance must not be FlyBase. If code is EXP AND provenance is FlyBase then report error:
+
+Incorrect use of EXP; add provenance flag or use an alternative experimental evidence code.
+
+--------------------------------------------------
+
+IPI - inferred from physical interaction
+
+MANDATORIALLY HAS VALUE AFTER CODE: ' with ' followed by at least one database identifier;
+multiple database identifiers that refer to the same object (usually a gene) are separated
+by semicolons; multiple database identifiers that refer to different object are separated
+by commas. The general format of the identifier is database_abbreviation:uniqueID.
+
+If the database identifiers are internal (ie FLYBASE: or FB:)...
+   For each pair of identifiers...
+
+      Check that both symbol and FBgn IDs have been included (in format FLYBASE:<valid
+      gene symbol>; FB:<corresponding valid FBgn>)
+
+      Check that symbol and FBgn refer to the same gene
+      Check that symbol is valid symbol and not a synonym
+
+Check format of the database identifier...
+
+database_abbreviation must be identical to one those contained in an abbreviation line
+within http://www.geneontology.org/doc/GO.xrf_abbs
+
+If no ' with ' and database identifier is entered error report is:
+
+Must have 'with ' data after the 'IPI' evidence code in '<whole GO line minus provenance>'
+
+--------------------------------------------------
+IGI - inferred from genetic interaction
+
+MANDATORIALLY HAS VALUE AFTER CODE: ' with ' followed by at least one database identifier;
+multiple database identifiers that refer to the same object (usually a gene) are separated
+by semicolons; multiple database identifiers that refer to different object are separated
+by commas. The general format of the identifier is database_abbreviation:uniqueID.
+
+Note that ' with ' isn't mandatory for IGI according GO but all exisiting FlyBase IGI
+annotations (838 in current ga_file) use ' with ' and we agreed this is a good check to
+have.
+
+If the database identifiers are internal (ie FLYBASE: or FB:)...
+   For each pair of identifiers...
+
+      Check that both symbol and FBgn IDs have been included (in format FLYBASE:<valid
+      gene symbol>; FB:<corresponding valid FBgn>)
+
+      Check that symbol and FBgn refer to the same gene
+      Check that symbol is valid symbol and not a synonym
+
+Check format of the database identifier...
+
+database_abbreviation must be identical to one those contained in an abbreviation line
+within http://www.geneontology.org/doc/GO.xrf_abbs
+
+If no ' with ' and database identifier is entered error report is:
+
+Must have 'with ' data after the 'IGI' evidence code in '<whole GO line minus provenance>'
+
+
+--------------------------------------------------
+IEA - inferred from electronic annotation
+
+MANDATORIALLY HAS VALUE AFTER CODE: ' with ' followed by at least one database identifier;
+multiple database identifiers that refer to the same object (usually a gene) are separated
+by semicolons; multiple database identifiers that refer to different object are separated
+by commas. The general format of the identifier is database_abbreviation:uniqueID.
+
+e.g.	IEA with FLYBASE:scb; FB:FBgn0003328
+	IEA with InterPro:IPR000001
+
+If the database identifiers are internal (ie FLYBASE: or FB:)...
+   For each pair of identifiers...
+
+      Check that both symbol and FBgn IDs have been included (in format FLYBASE:<valid
+      gene symbol>; FB:<corresponding valid FBgn>)
+
+      Check that symbol and FBgn refer to the same gene
+      Check that symbol is valid symbol and not a synonym
+
+If the database identifiers are external to FlyBase...
+
+   Check format of the database identifier...
+
+   database_abbreviation must be identical to one those contained in an abbreviation line
+   within http://www.geneontology.org/doc/GO.xrf_abbs
+
+This code should usually not be used in manual curation, so if it is used, a warning message is issued, as follows:
+
+The 'IEA' evidence code should not be used in regular literature curation, did you put the wrong evidence in '<whole GO line minus provenance>' ?
+
+--------------------------------------------------
+ND - no biological data available
+
+MANDATORIALLY HAS VALUE AFTER CODE:no value
+i.e. ND must not be used with ' with ' or ' from '
+
+ADDITIONAL INFO FOR ND: ND must only be assigned based on FBrf0159398
+i.e. if *U is not FBrf0159398 then report error
+Incorrect use of ND; ND must only be assigned from the internal GO reference FBrf0159398
+--------------------------------------------------
+RCA - inferred from reviewed computational analysis
+
+MANDATORIALLY HAS VALUE AFTER CODE:no value
+i.e. RCA must not be used with ' with ' or ' from '
+--------------------------------------------------
+NAS - non-traceable author statement
+
+MANDATORIALLY HAS VALUE AFTER CODE:no value
+i.e. NAS must not be used with ' with ' or ' from '
+--------------------------------------------------
+TAS - traceable author statement
+
+MANDATORIALLY HAS VALUE AFTER CODE:no value
+i.e. TAS must not be used with ' with ' or ' from '
+--------------------------------------------------
+IMP - inferred from mutant phenotype
+
+MANDATORIALLY HAS VALUE AFTER CODE:no value
+i.e. IMP must not be used with ' with ' or ' from '
+--------------------------------------------------
+IDA - inferred from direct assay
+
+MANDATORIALLY HAS VALUE AFTER CODE:no value
+i.e. IDA must not be used with ' with ' or ' from '
+--------------------------------------------------
+IEP - inferred from expression pattern
+
+MANDATORIALLY HAS VALUE AFTER CODE:no value
+i.e. IEP must not be used with ' with ' or ' from '
+IEP - inferred from expression pattern
+
+MANDATORIALLY HAS VALUE AFTER CODE:no value
+i.e. IEP must not be used with ' with ' or ' from '
+
+IEP should only be used in GO annotation with biological process (G24c line), so a check has also been added to warn if it is used in G24a or G24b.
+
+The warning lines issued are:
+
+G24a: Invalid use of IEP evidence code in '<whole GO line - provenance>'
+IEP can only be used with biological process terms. If the location of a gene product has been determined you should use IDA.
+
+G24b: Invalid use of IEP evidence code  '<whole GO line - provenance>'
+IEP can only be used with biological process terms. Molecular function cannot be inferred directly from where a gene product is expressed.
+
+--------------------------------------------------
+
+
+
+IKR - inferred from key residues
+
+MANDATORIALLY HAS NOT QUALIFIER BEFORE GO TERM: IKR can only used to make negated annotations so the qualify NOT must be present. If NOT is absent Peeves should warn that the IKR evidence code qualifier cannot be used without the NOT qualifier.
+
+OPTIONALLY HAS VALUE AFTER CODE: ' with ' followed by at least one database identifier; multiple database identifiers that refer to the same object are separated by semicolons; multiple database identifiers that refer to different object are separated by commas. The general format of the identifier is database_abbreviation:uniqueID.
+
+--------------------------------------------------
+
+IBA - inferred from biological ancestor
+
+MANDATORIALLY HAS VALUE AFTER CODE: ' with ' followed by at least one database identifier; multiple database identifiers that refer to the same object are separated by semicolons; multiple database identifiers that refer to different object are separated by commas. The general format of the identifier is database_abbreviation:uniqueID.
+
+ADDITIONAL INFO FOR IBA: IBA should not used in regular literature curation so a warning is also included to that effect, this warning is not seen by the GO curator (as the GO curator does add G annotations with this evidence code).
+
+--------------------------------------------------
+
+IBD - inferred from biological descendant
+
+MANDATORIALLY HAS VALUE AFTER CODE: ' with ' followed by at least one database identifier; multiple database identifiers that refer to the same object are separated by semicolons; multiple database identifiers that refer to different object are separated by commas. The general format of the identifier is database_abbreviation:uniqueID.
+
+ADDITIONAL INFO FOR IBD: IBD should not used in regular literature curation so a warning is also included to that effect, this warning is not seen by the GO curator (as the GO curator does add G annotations with this evidence code).
+
+--------------------------------------------------
+IRD - inferred from rapid divergence
+
+MANDATORIALLY HAS NOT QUALIFIER BEFORE GO TERM: IRD can only used to make negated annotations so the qualify NOT must be present. If NOT is absent Peeves should warn that the IRD evidence code qualifier cannot be used without the NOT qualifier.
+
+MANDATORIALLY HAS VALUE AFTER CODE: ' with ' followed by at least one database identifier; multiple database identifiers that refer to the same object are separated by semicolons; multiple database identifiers that refer to different object are separated by commas. The general format of the identifier is database_abbreviation:uniqueID.
+
+ADDITIONAL INFO FOR IRD: IRD should not used in regular literature curation so a warning is also included to that effect, this warning is not seen by the GO curator (as the GO curator does add G annotations with this evidence code).
+
+--------------------------------------------------
+
+
+
+### Status
+
+### Updated:
+
+gm131204 - evidence code doc in G24table.mkdn replaced with corresponding text from gene.checks.pro (as that was more up-to-date), and file renamed to G24_evidence_codes.txt

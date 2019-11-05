@@ -1,0 +1,57 @@
+
+## ! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :y
+
+### Multiple values allowed:
+
+No (Implemented in validate_x1g)
+
+### !c Applicable:
+
+No (Implemented in validate_x1g)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+Yes (Implemented in validate_x1g)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Cross-checks with other fields:
+
+  * sub 'cross_check_x1e_x1g' checks that if GG1e is filled in, GG1g is 'n'
+
+
+
+  * sub 'cross_check_1a_1g' checks the following:
+
+     * If the value given in GG1g is 'y', the value given in GG1a must be held in Chado as a current valid symbol of type FBgg.
+
+     * If the value given in GG1g is 'n', the value given in GG1a must not be held in Chado as a current valid symbol of type FBgg.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+See DC-585 for issues I had with getting cross_check_1a_1g to work.
+
+
+### Status:
+
+
+### Updated:
+
+gm151001.

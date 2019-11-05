@@ -1,0 +1,59 @@
+## ! P25.  BIOSIS ID                *B :
+
+### Multiple values allowed:
+
+No.
+
+### !c Applicable:
+
+Yes if P22 contains valid data, otherwise no.
+
+### Inclusion essential:
+
+No.
+
+### Mandatorially has value:
+
+No.
+
+### Checks:
+
+If a value is given, it must consist of the string 'PREV' followed by
+12 decimal digits.
+
+If !c is used:
+
+* P22 must contain a valid value and
+* the value given in P25 must be different from the value
+stored in Chado for the publication specified by the value given in
+P22.
+
+If !c is not used:
+
+* if P22 contains a valid value, either:
+    * the value given in P25 must be identical to the value
+stored in Chado for the publication specified by the value given in
+P22 or
+    * P25 must contain a valid value and no value is stored in
+Chado for the publication specified by the value given in P22;
+* if P22 does not contain a valid value, either:
+    * P25 must be empty or
+    * P25 must a contain valid value.
+
+### Related fields:
+
+[P26][P26] and [P27][P27].
+
+### Comments:
+
+The first four digits of a BIOSIS_ID form a year-code.
+
+Further information about BIOSIS Previews (BPRVW, http://images.isiknowledge.com/help/BIOSIS/hs_icodes.html) may be found at http://www.thomsonreuters.com/products_services/scientific/BIOSIS.
+
+### Status:
+
+PROFORMA FIELD OBSOLETED
+
+### Updated:
+
+gm131204 (removed markdown formatting).

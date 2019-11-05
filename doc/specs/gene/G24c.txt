@@ -1,0 +1,86 @@
+
+## ! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+
+### Multiple values allowed:
+
+Yes (separated by returns)
+Implemented
+
+### !c Applicable:
+
+Yes
+Implemented (in validate_G24abc)
+
+### Inclusion essential:
+
+No
+Implemented
+
+### Mandatorially has value:
+
+No
+Implemented (in validate_G24abc)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+This field will be of the format
+
+   <provenance>:<qualifier><GO_term> ; <GO_ID_number> | <evidence_code><evidence_data>
+
+where
+
+<provenance> is optional
+
+<qualifier> may only be one of the following strings:
+   ''
+   'NOT '
+
+<GO_term> corresponds to a current, valid, non-obsolete 'name:' in gene_ontology.obo for
+which 'namespace: biological_process' appears;
+
+<GO_ID_number> corresponds to a current, valid, non-obsolete 'id:' in gene_ontology.obo
+for which 'namespace: biological_process' appears;
+
+
+sub 'set_provenance' - checks provenance (see doc/specs/allele/GA34a.txt for more details on this subroutine)
+
+sub 'check_qualifier' - checks qualifier (see doc/specs/allele/GA34a.txt for more details on this subroutine)
+
+
+sub 'check_ontology_term_id_pair' - checks GO term and id pair, checking:
+
+    * term is valid and from the particular GO namespace required for the field.
+    * id is valid and from the particular GO namespace required for the field.
+    * term and id match each other.
+    * term is not flagged with 'gocheck_do_not_annotate' or 'gocheck_do_not_manually_annotate'
+    * if the term and/or id are valid in GO, but not from the expected namespace, an error message indicates that this is the case (in case the curator has put the line in the wrong field by mistake).
+
+sub 'do_go_evidence' - checks evidence code and any associated data after the code. Details for allowed values and syntax requirement for <evidence_code> and <evidence_data> are given in the G24_evidence_codes.txt file.
+
+'do_go_evidence' uses the 'check_evidence_data' subroutine to check the information after the evidence code (see doc/specs/allele/GA34a.txt for more details on the 'check_evidence_data' subroutine). Note that 'inferred by curator|IC' is not currently checked using this generic subroutine, but is treated as a special case as it has GO ids after the evidence code, rather than database objects.
+
+### Related fields:
+
+G24a
+G24b
+
+### Status:
+
+List of checks carried out above is not yet complete - there are other checks carried out.
+
+* There is a bug in the section that checks FLYBASE:X; FB:Y pairs in 'check_evidence_data', when the symbol X is a renamed symbol - if you inadvertantly put in a valid FBid but typo in the gene symbol to another symbol that is also in the proforma (e.g. put in Z when you meant X), then even though the renamed symbol and id do not match (as the id belongs to the gene being renamed to X) it does not give a warning.  I can't easily see how to fix this, but since we are moving to use symbols in @@ for GO as well as already using it for DO for FlyBase symbols we shouldn't encounter this in the future as we generally won't be using this section of the subroutine. Plus, I think any mismatches that slip through would be caught be integrity checks in harvard once the data is in the database. gm140429.
+
+
+
+### Comments:
+
+
+
+### Updated:
+
+gm160214.

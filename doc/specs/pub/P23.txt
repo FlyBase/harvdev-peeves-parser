@@ -1,0 +1,73 @@
+## ! P23.  Text of personal communication *F :
+
+### Multiple values allowed:
+
+No.
+
+### !c Applicable:
+
+Yes if P22 contains valid data, otherwise no.
+
+### Inclusion essential:
+
+Yes if P1 contains the value 'personal communication to FlyBase'
+and P22 does not contain a value, otherwise no.
+
+### Mandatorially has value:
+
+Yes if P1 contains the value 'personal communication to FlyBase'
+and P22 does not contain a value, otherwise no.
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+The value may consist of an arbitrary amount of text, including layout
+such as multiple lines and paragraphs, subject to the following
+restriction:
+
+* no line within the value may begin with either '! P' or '!c P'
+followed by one or two digits, followed by zero or one lower-case
+letter, followed by a dot character.
+
+If !c is used:
+
+* P22 must contain a valid value and
+* the value given in P23 must be different from the value stored
+in Chado for the publication specified by the P22 value and
+* the publication type stored in Chado for the publication specified
+by the P22 value must be 'personal communication to FlyBase'.
+
+If !c is not used and P23 contains a value:
+
+* if P22 contains a valid value:
+    * the value given in P23 must be identical to the value
+stored in Chado for the publication specified by the P22 value
+and
+   * the publication type stored in Chado for the publication
+specified by the P22 value must be 'personal communication to
+FlyBase';
+* if P22 does not contain a value, P1 must contain
+  'personal communication to FlyBase'.
+
+Check done after the whole proforma has been parsed:
+
+If it is a new personal communication, checks that at least one of P18 and P23 are filled in.
+
+### Related fields:
+
+
+### Comments:
+
+The restriction on the starts of lines within the value imposed above
+is to remove any ambiguity as to where the text of a personal
+communication ends and a subsequent proforma field begins.
+
+### Updated:
+
+gm131204 (removed markdown formatting).
+gm151001 (added Dupl. for multiple field info).
+gm170127 (added P18/P23 new pc info)

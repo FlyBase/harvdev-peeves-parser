@@ -1,0 +1,146 @@
+# Code to parse <PROFORMA NAME> proformae
+
+use strict;
+# A set of global variables for communicating between different proformae.
+
+our (%fsm, $want_next); # Global variables for finite state machine (defines what proforma expected next)
+our ($chado, %prepared_queries); # Global variables for communication with Chado.
+our %x1a_symbols;						# Hash for detecting duplicate proformae in a record
+our $g_FBrf;							# Publication ID from P22 (if valid FBrf number)
+
+our $change_count = 0; # count of number of !c lines in the proforma, peeves global as needs to be seen by changes in tools.pl,
+
+
+my ($file, $proforma);
+my %proforma_fields;		# Keep track of the latest entry seen for each code
+my %dup_proforma_fields; # keep track of full picture for fields that can be duplicated within a proforma
+my @inclusion_essential = qw (<add field codes here separated by space>);			# Fields which must be present in the proforma
+my %can_dup = ('<field code>' => 1, '<field code>' => 1,
+	       );		# Fields which may be duplicated in a proforma.
+
+# These two variables need to be declared here (and not within do_<PROFORMA NAME>_proforma)
+# if there are any field-specific subroutines (at the bottom of this file) for this particular proforma.
+my $hash_entries;						# Number of elements in hash list.
+my $primary_symbol_list;						# Reference to dehashed data from primary symbol field
+
+sub do_<PROFORMA NAME>_proforma ($$)
+{
+# Process a <PROFORMA NAME> proforma, the text of which is in the second argument, which has been read from the file
+# named in the first argument.
+
+    ($file, $proforma) = @_;
+    %proforma_fields = ();
+	%dup_proforma_fields = ();
+
+# The primary proforma field (that which contains the valid symbol) defines the number of expected symbols in a hash list.
+
+    $proforma =~ /!.? <add primary proforma field code here>\..*? :(.*)/;		# Get data, if any
+    {
+	no warnings;				# split in scalar context raises deprecation warning.
+	$hash_entries = split / \# /, $1;		# Count number of symbols in primary proforma field
+    }
+
+    $primary_symbol_list = ['Missing_primary_symbol_data'];	# Set a default so that other checks don't fail with undef value.
+# only require line below if species abbreviation is included primary symbol
+#	my $primary_species_list = ['Missing_primary_symbol_data'];	# Set a default so that other checks don't fail with undef value.
+
+	$change_count = 0;
+
+
+
+# the arrays below store data returned by process_field_data (or equivalent),
+# so are dehashed, but have NOT been split on \n
+# since they are only required within  the do_<PROFORMA NAME>_proforma subroutine,
+# no need to declare at the top of the file. e.g.
+#	my @MA4_list = ();
+#   etc.
+
+FIELD:
+    foreach my $field (split (/\n!/, $proforma))
+    {
+	if ($field =~ /^(.*?)\s+(<primary proforma field code>)\..*? :(.*)/s)
+	{
+	    my ($change, $code, $data) = ($1, $2, $3);
+
+	    check_dups ($file, $code, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
+	    check_non_utf8 ($file, $2, $3);
+	    check_non_ascii ($file, $2, $3);
+
+# If the primary proforma field does not pass the basic test that it
+# is not empty AND contains a single line of data
+# return and do not try to check the remaining fields.
+# The $want_next variable is set to that expected next after this
+# proforma type, to make sure that the next proforma will be checked
+# (this is technically only required for those proformae that have
+# child proformae nested under them e.g. gene->allele, aberration->balancer
+# but put it in all primary profomra fields, in case the $want_next
+# requirements for others change at a later date, to be safe).
+
+		unless (contains_data ($file, $code, $data, $proforma_fields{$code}) && single_line ($file, $code, $data, $proforma_fields{$code})) {
+			$want_next = $fsm{'<NAME OF PROFORMA>'};
+			return;
+		}
+
+		($primary_symbol_list, $primary_species_list) = validate_primary_proforma_field ($file, $code, $change, $g_num_syms, $data, \%proforma_fields);
+
+# OR - if no species abbreviation in symbol
+#		($primary_symbol_list, undef) = validate_primary_proforma_field ($file, $code, $change, $hash_entries, $data, \%proforma_fields);
+
+	}
+	
+	elsif ($field =~ /^(.*?)\s+(<field>)\..*? :(.*)/s)
+	{
+		# if no fields in the proforma can be duplicated, convert '$can_dup{$2} ? 1 : 0' to '0'
+		# do not need to call check_non_utf8, check_non_ascii as long as use process_field_data
+		# do not need to call double_query here as long as use process_field_data
+	    check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
+		# remove '@<field>_list =' if don't need to store field data for end of proforma checking
+		# convert '@<field>_list =' to 'push @<field>_list,' if it is a field that can be duplicated within a proforma
+		@<field>_list = process_field_data ($file, $hash_entries, $1, <'1' if !c allowed, '0' if !c not allowed>, $2, $3, \%proforma_fields, <'0' if multiple lines allowed in field, '1' if single line allowed in field>);
+	}
+
+
+# fields that are not checked at all yet - validate_stub used to prevent false-positive
+# 'Invalid proforma field' message.  Remember to take field codes out of second set of ()
+# if checking for the field is implemented.
+#	elsif ($field =~ /^(.*?)\s+(??insert field code here??)\..*? :(.*)/s)
+#	{
+#		check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
+#	    check_non_utf8 ($file, $2, $3);
+#	    check_non_ascii ($file, $2, $3);
+#	    double_query ($file, $2, $3) or validate_stub ($file, $1, $2, $3);
+#	}
+
+	elsif ($field =~ /^(.*?)\s+<add code prefix for proforma type e.g. MA here>(.+?)\..*?:(.*)$/s)
+	{
+	    report ($file, "Invalid proforma field\n!%s", $field);
+	} elsif ($field =~ /.*<add code prefix for proforma type e.g. MA here>.*/s) {
+
+		unless ($field =~ /END OF RECORD FOR THIS PUBLICATION/s) {
+		    report ($file, "Malformed proforma field  (message tripped in <add name of script here>.pl).\nThis is often caused by the line of !!! before the PROFORMA line below ending with a space (here is a line to help find that case):\n!!!!!!! \n!\n(if that does not work and you think there is nothing wrong with this line let Gillian know as it might indicate a bug with the format of the field-specific regular expressions in Peeves):\n'!%s'", $field);
+		}
+	}
+    }
+
+### Start of tests that can only be done after parsing the entire proforma. ###
+
+    check_presence ($file, \%proforma_fields, \@inclusion_essential, $primary_symbol_list);
+
+
+
+
+### End of tests that can only be done after parsing the entire proforma. ###
+
+# The following line must always be at the bottom of the do proforma subroutine
+
+    $want_next = $fsm{'<NAME OF PROFORMA>'};
+}
+
+### add any proforma field-specific subroutines here (or better still add to or use
+### generic subroutines in tools.pl
+
+
+
+
+
+1;				# Standard boilerplate.

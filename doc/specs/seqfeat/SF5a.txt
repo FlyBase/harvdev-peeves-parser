@@ -1,0 +1,56 @@
+
+## ! SF5a. Associated gene(s)      :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+Yes (implemented): SF5a -> SF5e, SF5f AND SF5e -> SF5f
+
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'check_valid_chado_symbol_field' checks that the value is a valid gene symbol **in chado**.
+
+
+Checks between fields:
+
+* If SF5e is filled in, SF5a must be filled in
+
+* If SF5f is filled in, SF5a must be filled in
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm180913.

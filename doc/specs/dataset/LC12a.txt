@@ -1,0 +1,58 @@
+
+## ! LC12a. Experimental entity [FB gene symbol] :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+Yes (Implemented): LC12a -> LC12b, LC12c
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if LC12a is filled in (this is to make it easier to implement checking of fields that can be duplicated).
+
+* value must be a valid uniquename in chado for any of the following types of feature: FBgn, FBal, FBab, FBti, FBtp, FBcl, FBsf, FBtr, FBpp, FBmc
+
+
+
+
+Checks between fields:
+
+* LC12b must be filled in if LC12a is filled in (and vice versa) (sub compare_duplicated_field_pairs)
+
+* If LC12c is filled in, LC12a must be filled in. (sub compare_duplicated_field_pairs)
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160519.

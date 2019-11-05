@@ -1,0 +1,77 @@
+
+## ! A1a.  Aberration symbol to use in FlyBase                 *a :
+
+### Multiple values allowed:
+
+No (Implemented: 'single_line' subroutine in loop where the field is identified)
+
+### !c Applicable:
+
+No (Implemented: in validate_primary_proforma_field)
+
+### Inclusion essential:
+
+Yes (Implemented)
+
+### Mandatorially has value:
+
+Yes (Implemented: 'contains_data' subroutine in loop where the field is identified)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+  *  sub validate_primary_proforma_field (see doc/specs/allele/GA1a.txt for details)
+
+Checks between fields:
+
+  * sub 'cross_check_1a_1g' checks the following:
+
+     * If the value given in A1g is 'y', the value given in A1a must be held in Chado as a current valid symbol of type FBab.
+
+     * If the value given in A1g is 'n', the value given in A1a must not be held in Chado as a current valid symbol of type FBab.
+
+### Related fields:
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented:
+
+check that symbol is a 'proper' aberration format: it should always have a () in it with
+something in and something before and something after the () bit.
+i.e. aberration symbols begin with one of the following
+Ab(
+C(
+DS(
+LS(
+In(
+Df(
+Dp(
+T(
+Tp(
+Int(
+F(
+R(
+Ts(
+
+
+
+doc: checked and changed doc so that it reflects what has been implemented
+
+### Updated:
+
+gm170206.

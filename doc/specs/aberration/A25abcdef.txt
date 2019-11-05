@@ -1,0 +1,56 @@
+
+## ! A25a. Molecular data - genes completely deleted by A1a               :
+## ! A25b. Molecular data - genes completely duplicated in A1a     :
+## ! A25c. Molecular data - genes NOT deleted/disrupted by A1a            :
+## ! A25d. Molecular data - genes NOT duplicated in A1a            :
+## ! A25e. Molecular data - genes partially deleted/disrupted by A1a      :
+## ! A25f. Molecular data - genes partially duplicated in A1a      :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+
+### !c Applicable:
+
+Yes (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field, using'check_valid_symbol_field':
+
+* check_for_duplicated_lines:
+   * warns if there is a blank line within the data
+   * warns if there are any duplicated values
+
+
+* Each value must be a valid gene symbol (either already in the database or generated in the
+curation record.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+doc reflects what is implemented
+
+### Updated:
+
+gm151001.

@@ -1,0 +1,60 @@
+
+## ! HH2b. Parent entity (if HH2a = sub-entity)  :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+
+### !c Applicable:
+
+Yes (Implemented) (check with Kathleen)
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks between fields:
+
+* HH2b must only be filled in for 'sub-entity'
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+NOTE: 'sub-entity' cross-check only uses HH2a field at the moment, ideally, should look up value in chado if HH2a is empty
+
+
+Not yet implemented:
+
+Checks within field:
+
+* value(s) must be a valid FBhh id
+
+Checks between fields (see DC-621)
+
+* HH2b must be filled in if 'HH1f' is 'new' and HH2a is 'sub-entity'
+
+* HH2b can be filled in if 'HH1f' contains an FBhh id, but in this case, HH2b must be !c (ought to also include check that HH2b/equivalent place in chado is 'sub-entity' for complete checking)
+
+### Updated:
+
+gm151001.

@@ -1,0 +1,50 @@
+
+## !   MA5f. Genomic release number for data reported in MA5e :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+checks within field
+
+* sub 'check_genome_release' checks that the value matches the current genome release (stored in symtab.pl).
+
+
+Cross-checks with other fields
+
+* If MA5e is filled in, MA5f must be filled in (and vice versa) - compare_field_pairs
+
+
+### Related fields:
+
+
+### Comments:
+
+
+
+### Status:
+
+doc reflects what is implemented
+
+### Updated:
+
+gm151001.

@@ -1,0 +1,63 @@
+
+## ! SP1a. Genus to use in FlyBase (organism.genus)     :
+
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+No (implemented)
+
+
+### Inclusion essential:
+
+Yes (implemented)
+
+
+### Mandatorially has value:
+
+Yes (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+
+- sub check_allowed_characters (within validate_primary_species_field) checks that the value only contains allowed characters from the set 'a-zA-Z'
+
+Checks between fields:
+
+- An error message is printed if the same organism is present more than once in the same curation record (i.e. when more than one proforma have the same value in both SP1a and SP1b).
+
+Checks between fields:
+
+- If SP1g = 'n', the combination of 'SP1a' (organism.genus) plus 'SP1b' (organism.species) (i.e. the unique key in organism) must NOT already be in chado
+
+- If SP1g = 'y', the combination of 'SP1a' (organism.genus) plus 'SP1b' (organism.species) (i.e. the unique key in organism) MUST already be in chado
+
+See SP2.txt for details of cross-checks with SP2.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160107.

@@ -1,0 +1,104 @@
+Spec for checking of TAP_statements.
+
+These may be entered in any of the following fields:
+
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+! IN5b. Stage and tissue ( <e> <t> <a> <s> <note> ) :
+! LC4g. Stage and tissue (<e> <t> <a> <s> <note>) :
+
+
+For details of the spec for each field (!c, multiple values etc), see the field-specific doc in the relevant sub-folder of doc/specs
+
+TAP_check subroutine does the following:
+
+* checks that the basic format of the line is:
+
+<e>(.*)<t>(.*)<a>(.*)<s>(.*)<note>(.*)
+
+i.e. that <e>, <t>, <a>, <s>, <note> delimiters are all present
+
+Prints an error message if not.
+
+The check can cope with empty slots (ie. when there is no space between two delimiters) and also with variable spacing between the delimiter and the information in the slot (since this is allowed by the proforma parser)
+
+* if it passes the basic format check, the statement is split into chunks, one for each of the <e>, <t>, <a>, <s> delimiters and the following checks are done.
+
+<e> assay
+
+* If this slot is filled in check, that it is a valid assay term, print an error if not
+
+* If it is not filled in, issue a warning that it is compulsory (F9 only)
+
+
+<t> temporal
+
+
+* first, the statement is split into chunks, by splitting on '&&' (and) and then on '--' (range)
+
+* if there is a range statement (--) with more than two entries, i.e. 1--2--3 n error message is printed.
+
+* then, each split chunk is split into 'term' plus any 'qualifiers' (split on ' | ')
+
+* then each "'term' plus 'qualifiers'" pair is checked as follows:
+
+  * first the term is checked to see if it is a valid FBdv term and an error is printed if not.
+
+     * If the term is a valid FBdv term, the 'qualifiers' section is split into individual qualifiers (split on ' & ') and each is checked to see if it is a valid FBcv term from the 'sex-qualifier' namespace (this is the only one allowed for temporal qualifiers in this case) and an error is printed if not.
+
+     * If the term is not a valid FBdv term, it is checked to see if it is a valid shortcut (e.g. E, P, O etc.)
+
+        * If it is, the 'qualifiers' section is split into individual qualifiers (split on ' & ') and each is checked to check that they are either:
+
+          * a valid FBcv term from the 'sex-qualifier' namespace.
+           or
+          * a valid qualifier allowed for that shortcut (hard-coded in Peeves). This latter checking:
+             * can cope with a qualifier range statement (i.e '-' or ',') e.g. 'stage X-Y' or 'stage X,Y'
+             * checks that X is smaller than Y
+
+
+    * If the term is neither a valid FBdv term/valid shortcut, an error is printed.
+        * In this case, the qualifiers are split into individual qualifiers (split on ' & ') and checked to see if they are a valid FBcv term from the 'sex-qualifier' namespace.
+
+<a> anatomy and <s> subcellular
+
+Checking for these two sections is the same (carried out by TAPas_portion_check subroutine), except that:
+
+term for <a> should be from the FBbt ontology
+term for <s> should be from the GO:cellular component ontology
+
+* first, the statement is split into chunks, by splitting on '&&' and on '&&of'
+
+* then, each split chunk is split into 'term' plus any 'qualifiers' (split on ' | ')
+
+* then each "'term' plus 'qualifiers'" pair is checked as follows:
+
+term:
+    * The term is checked to see that it is a valid term in the appropriate ontology (<a> = FBbt, <s> = GO:cc). This checking:
+
+        * can cope with a range statement (--), including the requirement that the second part of the range is just a number shortcut, not the whole term printed out i.e. 'larval abdominal segment 4--10' is valid 'larval abdominal segment 4--larval abdominal segment 10' is not.
+
+
+qualifiers:
+
+* the 'qualifiers' section is split into individual qualifiers (split on ' & ') and each is tested to check it is one from one of the allowed namespaces in FBcv (list of allowed namespaces stored in Peeves).
+
+The allowed namespaces are currently set to: 'spatial_qualifier', 'temporal_qualifier', 'expression_qualifier', embryonic_pattern_qualifier' (this does not quite tally with exp_cur_manual - so need to double check with expression curators).
+
+
+<note> :
+
+ - this is free text, which is checked using either:
+
+* check_stamps (IN5b and LC4g)
+
+* check_stamps_with_ids (F9) - this is to allow checking of FBid:symbol pairs in @@ in TAP statements for automatically generated proformae containing split-GAL4 expression data.
+
+
+Not yet implemented:
+
+
+
+* The assay terms are only checked for overall validity - DC-637 suggests improvements for more nuanced checking based on either which field the TAP statement is in and/or whether the gene product is a transcript/polypeptide.
+
+
+gm181013.

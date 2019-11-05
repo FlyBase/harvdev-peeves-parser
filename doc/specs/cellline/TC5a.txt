@@ -1,0 +1,47 @@
+
+## ! TC5a. Integrated construct insertion (FBti symbol) :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+No (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* check_valid_uniquename_field sub checks that any value is a valid FBti number
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm170130.

@@ -1,0 +1,55 @@
+
+## ! HH1b. Full name to use in database  :
+
+### Multiple values allowed:
+
+No (Implemented: 'single_line' subroutine in loop where the field is identified)
+
+### !c Applicable:
+
+No (Implemented: in validate_primary_proforma_field)
+
+### Inclusion essential:
+
+Yes (Implemented)
+
+### Mandatorially has value:
+
+Yes (Implemented: 'contains_data' subroutine in loop where the field is identified)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+  *  sub validate_primary_proforma_field (see doc/specs/allele/GA1a.txt for details)
+
+* I think that the check for validity of the name in this field (either valid FBhh name in chado/generated in record) should be happening as part of the cross_check_harv_style_symbol_rename_merge_fields subroutine below.
+
+Checks between field:
+
+* report error if the same symbol is given in multiple different proformae within the same record (uses %x1a_symbols hash in validate_primary_proforma_field)
+
+
+   * subroutine 'cross_check_harv_style_symbol_rename_merge_fields' - see MA1f.txt for details of what this subroutine does. Note, that for HH, the merge field is not yet implemented or in the proforma.  The proforma parsing software has 'HH3b' as a place holder for that field, so made a dummy empty @HH3b_list array so that I could re-use the common 'cross_check_harv_style_symbol_rename_merge_fields' subroutine to cross-check HH3a, HH1f and HH1b
+
+
+### Related fields:
+
+
+
+### Comments:
+
+NOTE: humanhealth proforma does not have a 1a (valid symbol) field, which is normally the primary proforma field, but instead the primary proforma field has been set as HH1b, which is the valid name to use in the database.
+
+### Status:
+
+Need to check that cross_check_harv_style_symbol_rename_merge_fields does do the necessary 'within' field checking that this is either a valid FBhh name in chado/made in this record
+
+### Updated:
+
+gm170206.

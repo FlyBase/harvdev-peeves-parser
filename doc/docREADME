@@ -1,0 +1,24 @@
+README for svn/flybase-cam/Peeves/doc
+
+Directory structure and description of items
+=============================================
+
+
+folders
+-------
+
+obsolete_doc:	folder containing doc that is no longer being maintained, but which it might be useful to keep at least in the short-term (will delete once all useful info moved to current doc files).
+
+specs:			folder containing detailed specification of checks required for each proforma field.  Organised into sub-folders, one for each proforma. Each proforma field has its own file (named for the field) within the appropriate sub-folder (there are a few exceptions where it made more sense to have a single specification file covering more than one field).  Each file indicates whether or not it has been recently checked to see whether the specification has actually been implemented or not.
+
+
+
+files
+-----
+
+docREADME:							this file
+peeves_software_development.sop:	SOP for workflow of peeves software development
+spec_template.txt:					template file for making a Peeves specification file for a proforma field
+VERSION:							Version history (copy of each 'our $Peeves_version' line plus its associated comment since Peeves went live)
+
+Updated gm140109.

@@ -1,0 +1,61 @@
+
+## ! TO2a.  Action - experimental tool name to use in FlyBase       :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+No (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field
+
+  * checks done in validate_new_full_name
+
+    * sub 'check_allowed_characters' makes sure the symbol only contains characters from an allowed set (see %mapping_table at the top of check_allowed_characters in tools.pl for current list of allowed characters)
+
+    * check that any greek symbols are not malformed
+
+Cross-checks between fields:
+
+* If TO1g (merge field) is filled in, TO2c must not be filled in (compare_field_pairs, pair_test = 'single')
+
+* If TO2c is filled in, TO2a must be filled in (compare_field_pairs, pair_test = 'dependent')
+
+* If TO2c and TO2a are both filled in, they must not be the same value  (compare_field_pairs, pair_test = 'not same')
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm171114.

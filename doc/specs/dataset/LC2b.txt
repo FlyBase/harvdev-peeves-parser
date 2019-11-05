@@ -1,0 +1,71 @@
+
+## ! LC2b. Type of dataset data [CV]    :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+
+### !c Applicable:
+
+Yes (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+
+Cross-checks done after parsing the entire proforma:
+
+(because allowed value depends on value in LC2a field (or equivalent in chado, which is library.type_id)
+
+* validate_ontology_term_id_field subroutine checks that:
+
+  * each line has the format <term ; id> and is from the 'dataset_entity_type' namespace of FBcv
+
+  * in detail, it uses 'check_ontology_term_id_pair' to check that:
+
+    * term is valid and from the particular namespace required for the field.
+    * id is valid and from the particular namespace required for the field.
+    * term and id match each other.
+    * term is not flagged with 'do_not_annotate' or 'do_not_manually_annotate' type flags
+
+
+Allowed namespace depends on the 'entity type' of the dataset (value in LC2a (for new/merged datasets) or library.type_id in chado (for renamed/existing datasets), as follows:
+
+dataset entity type (LC2a)	namespace allowed in LC2b
+project						project_type
+biosample					biosample_type
+assay						assay_type
+result						result_type
+reagent collection			reagent_collection_type
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160518.

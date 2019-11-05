@@ -1,0 +1,45 @@
+
+## ! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+
+### Multiple values allowed:
+
+Yes
+
+### !c Applicable:
+
+No
+
+### Inclusion essential:
+
+No
+
+### Mandatorially has value:
+
+No
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+See phenotype_GI_CV_fields.txt for details.
+
+Note, list of allowed qualifier 'types' for phenotypic class lines (in both GA56 and GA28a, GA29a) is now specified using a list of allowed namespeces in symtab.pl in the @phenotypic_class_qualifiers array (it no longer uses the Proforma field comment present in FBcv.obo).
+
+
+
+### Related fields:
+
+GA17
+
+### Comments:
+
+
+
+### Updated:
+
+gm131204 (doc for this field moved here from allele.checks.pro and added reference to phenotype_GI_CV_fields.txt file).
+gm151001 (added Dupl. for multiple field info).
+gm160118 (added list of allowed qualifier 'types' info)

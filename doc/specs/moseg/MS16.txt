@@ -1,0 +1,71 @@
+
+## ! MS16. Segment category (type of entity) [CV]  :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No - see 'Cross-checks done after parsing the entire proforma' below.
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+checks within field (in validate_cvterm_field):
+
+* check_for_duplicated_lines:
+   * warns if there is a blank line within the data
+   * warns if there are any duplicated values
+
+* checks that the value is one allowed for this field (values stored in symtab.pl)
+
+
+Cross-checks done after parsing the entire proforma:
+
+* If MS16 is filled in:
+
+  * If the symbol in MS1a looks like an FBtp symbol (checked using check_construct_symbol_format to return a value for nat_te_end)
+     * the value in MS16 must be one of the allowed values for FBtp type features ('transgenic_transposon', 'natural_transposon_isolate_named' or 'DNA_segment')
+     * if the symbol in MS1a is a TI-style FBtp, the value in MS16 must be the one allowed for that type of FBtp ('DNA_segment')
+  * If the symbol in MS1a does not look like an FBtp symbol
+     * the value in MS16 must NOT be one of the values that is ONLY allowed for FBtp type features ('transgenic_transposon', 'natural_transposon_isolate_named')
+
+* If MS16 is NOT filled in:
+
+   * if the proforma is for a new construct or a construct merge, warns that MS16 MUST be filled in in this circumstance.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented:
+
+- the cross-checks between fields does not use the FBid in MS1f (for existing constructs or renames), or MS1g (for merges) to grab precisely which kind of recombinant construct is in the proforma, so does not check that the value in MS16 is exactly a correct one for proformae containing a FBmc or FBms (it just checks that the value in MS16 is not one of the ones that is only allowed for FBtp).
+
+
+
+### Updated:
+
+gm151001.

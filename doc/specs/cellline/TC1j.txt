@@ -1,0 +1,55 @@
+
+## ! TC1j. Use this for FB ID (FBtc ID) :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+No (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field
+
+* The value in TC1j must *not* be a valid FBtc id (because TC1j is only supposed to be filled in the first time a cell-line entry goes into the database - I think) (sub validate_TC1j)
+
+* The value in TC1j must match the format FBtc9[0-9]{6}   (these ids start with 9)
+
+Checks between fields
+
+* TC1j must only be filled in for brand new cell lines (sub check_filled_in_for_new_feature)
+
+* If TC1j is filled in, the symbol in TC1a must not be a valid cell-line symbol *in chado* (because TC1j is only supposed to be filled in the first time a cell-line entry goes into the database - I think)
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm170130

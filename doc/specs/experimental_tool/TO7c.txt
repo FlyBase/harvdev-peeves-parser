@@ -1,0 +1,49 @@
+
+## ! TO7c. Gene of origin (symbol)   :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+### Checks:
+
+Checks within field:
+
+* check_valid_symbol_field sub checks that any value is a valid gene symbol (either in chado or generated in record)
+
+Cross-checks:
+
+* checks that the gene filled in in TO7c has 'common_tool_uses' filled in in chado, and warns if not, so that the appropriate action (suggested in error message) can be taken.
+
+### Related fields:
+
+
+
+### Comments:
+
+Implemented as single line field (so can only associate tool with one gene of origin) - its possible there may be cases where would want multiple, but not encountered any yet so hope this stays as is.
+
+### Status:
+
+
+
+
+### Updated:
+
+gm180412.

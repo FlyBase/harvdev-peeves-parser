@@ -1,0 +1,57 @@
+
+## ! P27.  ZooRec ID                *Q :
+
+### Multiple values allowed:
+
+No.
+
+### !c Applicable:
+
+Yes if P22 contains valid data, otherwise no.
+
+### Inclusion essential:
+
+No.
+
+### Mandatorially has value:
+
+No.
+
+### Checks:
+
+If a value is given, it must consist of one or more decimal digits.
+
+If !c is used:
+
+* P22 must contain a valid value and
+* the value given in P27 must be different from the value
+stored in Chado for the publication specified by the value given in
+P22.
+
+If !c is not used:
+
+* if P22 contains a valid value, either:
+    * the value given in P27 must be identical to the value
+stored in Chado for the publication specified by the value given in
+P22 or
+    * P27 must contain a valid value and no value is stored in
+Chado for the publication specified by the value given in P22;
+* if P22 does not contain a valid value, either:
+    * P27 must be empty or
+    * P27 must a contain valid value.
+
+### Related fields:
+
+[P25][P25] and [P26][P26].
+
+### Comments:
+
+Further information about Zoological Record may be found at http://images.isiknowledge.com/help/ZOOREC/h_index.html.
+
+### Status:
+
+PROFORMA FIELD OBSOLETED
+
+### Updated:
+
+gm131204 (removed markdown formatting).

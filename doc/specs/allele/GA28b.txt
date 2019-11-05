@@ -1,0 +1,85 @@
+
+## ! GA28b. Genetic interaction (anatomy, effect) [CV]       *S :
+
+### Multiple values allowed:
+
+Yes on newlines
+
+### !c Applicable:
+
+No
+
+### Inclusion essential:
+
+No
+
+### Mandatorially has value:
+
+No
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+See phenotype_GI_CV_fields.txt for details.
+    
+
+ Note, list of allowed qualifier 'types' for phenotype manifest lines (in both GA17 and GA28b, GA29b) is now specified using a list of allowed namespeces in symtab.pl in the @phenotype_manifest_qualifiers array (it no longer uses the Proforma field comment present in FBcv.obo).
+
+Other checks:  
+  
+withs    
+drivers have valid symbols  
+do_phen_bodytype  
+do_phen_class  
+   
+			
+### Error messages
+  
+Syntax:  
+I think you may have omitted the final ' }' in '<one_line_of_interaction_data>', so I'm adding one and carrying on, hoping for the best.  
+I think you may have missed a space before the final } in '<one_line_of_interaction_data>', so I'm inserting one and carrying on, hoping for the best.  
+Note: Peeves does NOT change the file: this is for checking.  
+I can't find the interacting_alleles in '<one_line_of_interaction_data>' --- did you omit that data, or a curly bracket or a space perhaps?  
+  
+If pling-c:  
+can't use !c in this field  
+  
+can't have data '<interaction_list>' for a non-drosophilid species <spps> in GA1a.  Perhaps you should have put it in GA29.  
+		
+If missing or an empty line among the others:  
+Missing phenotype in '<phenotype>'  
+  
+Compound terms disallowed:  
+  Compounding anatomy and cell component terms using ' & ' is no longer allowed ('<you entry & next ontology>')  
+  
+GO biological cell cycle branch process no longer valid here:    
+  Valid GO biological process (cell cycle) but term no longer required ('<you entry & next ontology>')  
+  
+If a non-allowed item:  
+won't validate  
+  
+### Related fields:
+  
+GA17 
+GA28b 
+GA29b
+
+### Comments:
+
+   Ticket #581, #621 (Add FBdv terms)  
+   Ticket #594 (Enhanced error message)  
+   Ticket #599 (Body parts with commas)  
+   Ticket #596, #597, #620 (Suggests spec. needs enhancing)  
+DC-137 JIRA ticket fixed to disallow ontology from the GO 'cell cycle' branch. Simply won't check.  
+Could put in a 'no longer allowed' message for the cell cycle entry.  
+
+
+### Updated:
+
+gm131204 (removed markdown formatting and tweaked to include reference to phenotype_GI_CV_fields.txt).
+gm151001 (added Dupl. for multiple field info).
+gm160119 (added list of allowed qualifier 'types' info)

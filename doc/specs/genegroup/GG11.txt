@@ -1,0 +1,46 @@
+
+## ! GG11. Date gene group last reviewed (YYYYMMDD)  *y :
+
+### Multiple values allowed:
+
+No (implemented)
+
+
+### !c Applicable:
+
+Yes (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+* bad_iso_date subroutine checks that this is in valid YYYYMMDD format
+
+### Related fields:
+
+G24g
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm151001.

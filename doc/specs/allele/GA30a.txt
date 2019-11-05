@@ -1,0 +1,60 @@
+
+## ! GA30a. Tagged with experimental tool (FBto symbol)        :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* check_valid_symbol_field checks that the values are a valid tool symbol either in chado or generated in the record.
+
+Checks between fields:
+
+
+* if GA30a is filled in
+
+ - either the allele must be associated with a 'construct' (in GA10a)
+
+ - or, the allele must be associated with a 'TI insertion' (in GA10c/GA10e)
+
+ - or, the allele must be associated with a 'regular insertion' (in GA10c/GA10e) AND GA30f must be filled in
+
+(The check uses sub 'get_allele_type' to work out what type of allele is in GA1a based on how GA10a, GA10c, GA10e are filled in).
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+Some of the between fields cross-checks are not carried out for .edit records, to prevent false-positives (e.g. when adding information to already existing alleles that was missed in the original curation).
+
+### Status:
+
+
+### Updated:
+
+gm180412.

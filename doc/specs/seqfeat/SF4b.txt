@@ -1,0 +1,56 @@
+
+## !   SF4b. Genome release number for entry in SF4a   :
+
+### Multiple values allowed:
+
+No (implemented)
+
+
+### !c Applicable:
+
+No (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+Yes (implemented): SF4a -> SF4b, SF4h (see status in SF4a.txt)
+
+
+### Checks:
+
+Checks within field:
+
+* must be the number of the current genome release (stored in symtab.pl).
+
+ * sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if SF4b is filled in (this is to make it easier to implement checking of fields that can be duplicated).
+
+
+Checks between fields (for each duplication of the SF4a, SF4b, SF4h unit):
+
+
+  * SF4a must be filled in if SF4b is filled in and vice versa (sub compare_duplicated_field_pairs)
+  
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160113.

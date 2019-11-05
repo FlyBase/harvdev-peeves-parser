@@ -1,0 +1,47 @@
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1h.  FlyBase gene ID (FBgn) *z :FULL
+! G1a.  Gene symbol to use in FlyBase                       *a :FULL
+! G1b.  Gene symbol(s) used in reference                    *i :FULL
+! G1e.  Action - rename this gene symbol                       :FULL
+! G1f.  Action - merge these genes (symbols)                   :FULL
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :FULL
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :PARTIAL
+! G2a.  Action - gene name to use in FlyBase                *e :FULL
+! G2b.  Gene name(s) used in reference                      *V :NA
+! G2c.  Action - rename this gene name                         :FULL
+! G27.  Etymology                                           *u :FULL
+! G31a. Action - obsolete G1a in FlyBase (y)       TAKE CARE :FULL
+! G31b. Action - dissociate G1a from reference (y) TAKE CARE :FULL
+! G28b. Source for merge/identity of                      [SoftCV] *q :FULL
+! G28a. Relationship to other genes - comments         [free text] *q :FULL
+! G37.  Member of Gene Group (symbol) *G :FULL
+! G5.   Genetic map position if by recombination mapping   *b :BASIC ONLY
+! G6.   Genetic map position - error, if reported          *b :BASIC ONLY
+! G7a.  Genetic map position - gene(s) mapped left of G1a  *b :FULL
+! G7b.  Genetic map position - gene(s) mapped right of G1a *b :FULL
+! G8.   Genetic map position - comments                    *B :FULL
+! G10a. Cytological map position, Dmel ONLY - chromosome in situ   *c :FULL
+! G10b. Cytological map position, Dmel ONLY - details unspecified  *c :FULL
+! G11.  Cytological map position - comments               [SoftCV] *D :FULL
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :PARTIAL:DC-532
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :FULL
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :FULL
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :FULL
+! G24e. GO - GO-specific internal note                      *H :FULL
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :FULL
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :FULL
+! G14a. Miscellaneous comments                              *u :FULL
+! G26.  Tag/Foreign gene summary information             *u :FULL
+! G35.  Reference database ID for foreign sequence          :PARTIAL
+! G32.  Newly assigned annotation ID (CG/CR number) TAKE CARE :PARTIAL
+! G33.  Sequence accession number - seq cur only                :BASIC ONLY
+! G91.  From dataset/collection (symbol) :FULL
+! G91a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :FULL
+! G39a. Gene summary - description  [free text] :FULL
+! G39b. Gene summary - enough information ? (y/n) :FULL
+! G39c. Gene summary - Date stamp (y, n, or YYYYMDD) :FULL
+! G39d. Gene summary - specific internal note :FULL
+! G38. Member of Generic Gene record (gene symbol) :FULL
+! G15.  Internal notes  *W :FULL
+! G40. Commonly used as experimental tool [CV] :PARTIAL

@@ -1,0 +1,41 @@
+
+## ! A19b. Phenotype, in combination with other abs [free text]         *T :
+
+### Multiple values allowed:
+
+n/a - free text
+
+### !c Applicable:
+
+Yes
+
+### Inclusion essential:
+
+No
+
+### Mandatorially has value:
+
+No
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+free text field, so whatever is normal for that (checking things in @@ etc.)
+          Must not start with "Inferred to overlap with:"
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Updated:
+
+gm131202 (doc for this field moved here from aberration.checks.pro).
+gm151001 (added Dupl. for multiple field info).

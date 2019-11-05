@@ -1,0 +1,59 @@
+
+## ! HH5a. External link - accession number (repeat for multiple ) :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+Yes (Implemented): HH5a -> HH5b, HH5c, HH5d
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if HH5a is filled in (this is to make it easier to implement checking of fields that can be duplicated).
+
+Checks between fields:
+
+* If HH5a is filled in HH5b must be filled in (and vice versa)
+
+* If HH5c is filled in, HH5a must be filled in
+
+* If HH5d is filled in, HH5a must be filled in
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented: any format checking for values in field
+
+
+### Updated:
+
+gm160105.

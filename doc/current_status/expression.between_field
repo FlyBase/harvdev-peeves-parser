@@ -1,0 +1,36 @@
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :FULL
+! F1a. Gene product symbol           :FULL
+! F3.  Gene product type [CV]        :FULL
+! F2.  Sequence attribute [CV]	     :FULL
+!
+! F1b. Action - rename this gene product (symbol)      :FULL
+! F1c. Action - merge these products(s) (symbols or FB#s) :FULL
+! F1d. Action - delete gene product record ("y"/blank) :NOT YET IMPLEMENTED
+! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :PARTIAL
+!
+! F4. Names(s) used in paper [free text] :FULL
+! F6. FlyExpress image number(s) (FBim)  :NA
+!
+! F5. Molecule size(s) (wb, nb, sa)      :NA
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :NA
+!
+! F15. General expression comment [free text] :NA
+!
+! F10. Used as bodypart marker for [CV] :NA
+! F11. Expression pattern ascribed to (gene symbol) :FULL
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :FULL
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :FULL
+!
+! F12. Antibody reported (monoclonal, polyclonal) :FULL
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :NOT YET IMPLEMENTED
+!     F16b. Sequence coordinates for F16a   :NOT YET IMPLEMENTED
+!     F16c. Description of F16a [free text] :NOT YET IMPLEMENTED
+! F17. Alleles or genotypes used :NA
+!
+! F13. Comment  [free text]       :NA
+! F14. Internal note  [free text] :NA
+! F91. From dataset/collection (symbol) :FULL
+! F91a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :FULL

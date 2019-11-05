@@ -1,0 +1,51 @@
+
+## ! A26.  Class of aberration, relative to wild type (SO_term ; ID) [CV]  *C :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No - see 'Cross-checks done after parsing the entire proforma' below.
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field (in validate_A9_26):
+
+* value must either be a valid SO term which is a child of 'chromosome_structure_variation' (or the term itself) or valid shortcut allowed for this field
+
+Cross-checks done after parsing the entire proforma:
+
+* Must be filled in for a new aberration (checked using check_filled_in_for_new_feature subroutine).
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+doc reflects what has been implemented
+
+
+### Updated:
+
+gm160221.

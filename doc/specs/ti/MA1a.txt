@@ -1,0 +1,105 @@
+
+## ! MA1a. Insertion symbol to use in database    :
+
+### Multiple values allowed:
+
+No (Implemented: 'single_line' subroutine in loop where the field is identified)
+
+### !c Applicable:
+
+No (Implemented: in validate_primary_proforma_field)
+
+### Inclusion essential:
+
+Yes (Implemented)
+
+### Mandatorially has value:
+
+Yes (Implemented: 'contains_data' subroutine in loop where the field is identified)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within validate_primary_proforma_field:
+
+  * sub validate_primary_proforma_field (see doc/specs/allele/GA1a.txt for details). Note, although the insertion identifier may contain a species prefix if it is of gene[allele] format, species abbreviation checks are not carried out in validate_primary_proforma_field for the insertion proformae - because a. the species prefix is not at the beginning of the insertion symbol and b. detailed format checking of the symbol is done at the end of the proforma in the 'check_insertion_symbol_format subroutine (so any species abbreviation checking should be done there) [species checking has not been implemetned as of 2017.02.06].
+
+
+Cross-checks with other fields (done after parsing of entire proforma):
+
+  * subroutine 'cross_check_harv_style_symbol_rename_merge_fields' - see MA1f.txt for details of what this subroutine does.
+
+  * the format of the symbol in MA1a is checked using the subroutine 'check_insertion_symbol_format' (this is done at the end of the proforma so that the parts of the symbol can be compared with entries in other inter-related fields - these checks are detailed in the doc file of the relevant fields).  The subroutine returns the following values to allow checking with the inter-related fields: 'inserted element' and 'identifier' portions of the symbol and the 'full symbol of inserted element'
+
+   * If MA4 is empty, but MA1c is filled in (ie. it is a rename)
+    * check whether the inserted element portion of the symbols in MA1a and MA1c are the same.
+     * if they are different (i.e. the element in the insertion is being changed), print an error message saying "You have changed the 'inserted element' portion of the insertion symbol, but have not filled in the MA4 field to also change the inserted element". (Note that other permutations of errors for this rare type of rename are caught by other checks involving MA1a and MA4).
+
+
+   * the value in MA27 and the 'type' of insertion in MA1a must match - if the insertion symbol in MA1a is a TI-style insertion, MA27 can only contain 'TI_insertion', if the symbol in MA1a is a regular transposable element-based insertion, MA27 can only contain a valid CV term *other than* 'TI_insertion'.
+
+
+Details of subroutines used:
+
+  * 'check_insertion_symbol_format' does the following
+
+    * checks that the symbol contains only those characters allowed for an insertion (see %mapping_table at the top of check_allowed_characters in tools.pl for current list of allowed characters). At the moment the entire symbol is checked.
+    
+    * checks that any greek symbols are not malformed
+
+    * then tries to split the symbol into an 'inserted element' part (matches '([^{}]{1,}\{[^{}]{0,}\})' ) plus 'identifier' part (matches '(.*)'). Complete regular expression is m/^([^{}]{1,}\{[^{}]{0,}\})(.*)$/ ) :
+      e.g. P{lacW}1282, 'inserted element' = P{lacW}, 'identifier' = 1282
+      e.g. gypsy{}y[2], 'inserted element' = gypsy{}, 'identifier' = y[2]
+
+      * if there is no 'inserted element' part - print a warning that the symbol is malformed and don't try to do any other checks
+
+      * if there is an 'inserted element' part,
+     
+
+        * if there is no identifier (i.e. there is nothing after the '}') print a warning
+        * if there is an identifier:
+          * if the identifier matches the basic syntax of an allele (i.e m/(.+\[.+\])$/ )
+            * the identifier must be a valid allele symbol (either already in chado or made in the record) [NOTE, if this turns out to generate too many false positives for existing insertions, it could be restricted so that it is not run if MA1f = FBid and MA1c is empty, gm140306]
+
+
+          * if the insertion symbol looks like the insertion of a natTE (matches m/.+\{\}$/)
+            * remove the trailing {} from the 'inserted element'
+            * check the symbol of the inserted element using the 'check_natTE_end' subroutine
+
+          * else (in which case the insertion symbol should be the insertion of an FBtp)
+            * report an error if the 'inserted element' is not a valid FBtp (either already in chado or generated in the record)
+
+          * in both cases, returns the 'inserted element', 'identifier' and 'full symbol of inserted element' (which can be used to check values in inter-related fields)
+
+  * 'check_natTE_end' checks the 'nat_te' symbol used to indicate either the inserted natTE (for insertions of natural transposons) or the origin of the ends of an FBtp construct
+
+    * if the 'nat_te' symbol used is a valid FBte, checks whether a valid shorthand is available, and indicates what it is if so (e.g. indicates that you can use 'P' for 'P-element', 'PBac' for Tni\piggyBac)
+
+    * if the 'nat_te' symbol is not a valid FBte
+      * if a valid shorthand has been used, checks that the full symbol of that FBte stored in Peeves is still valid, and warns if not (to keep shorthand/full symbol pairs in Peeves in sync with chado).
+      * if the symbol used is not a valid shorthand, issues a warning that the nat_te symbol used is not valid.
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+At the moment, the 'check_insertion_symbol_format' symbol is run on all entries, in MA1a, not just those that are new or rename of existing symbol.  This makes the logic easier and avoids repeating code in the cross-checks between different fields, but if it turns out to generate too many false-positives messages this might need changing.
+
+
+### Status:
+
+ * cross-checking of any species abbreviation of the gene[allele] portion of an insertion symbol with other fields has not yet been implemented.
+
+
+
+### Updated:
+
+gm170206.

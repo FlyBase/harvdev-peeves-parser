@@ -1,0 +1,69 @@
+## ! P30.  Also published as (FBrf)            *C :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+Yes if P22 contains a valid FBrf, otherwise no (Implemented)
+
+### Inclusion essential:
+
+No. (Implemented)
+
+### Mandatorially has value:
+
+No. (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field
+
+* check_valid_symbol_field does:
+
+   * check_for_duplicated_lines:
+
+    * warns if there is a blank line within the data
+    * warns if there are any duplicated values
+
+   * checks value is a valid FBrf in chado
+
+Checks between fields
+
+* sub compare_pub_fbrf_containing_fields (in publication.pl) is used to check:
+
+    * No value in P30 can be the same as that in P22 
+    * No value in P30 can be the same as any value in P31
+    * No value in P30 can be the same as any value in P32
+
+
+
+
+
+### Related fields:
+
+P31
+
+
+### Comments:
+
+Unusually for a publication proforma field, if !c is not used, any values given are added to those which may already be present in Chado.
+
+### Status:
+
+doc reflects what is implemented.
+
+Not implemented yet:
+
+* if !c is used, does not check the data in P30 against what is already in chado (ie. does not check that the values in P30 are be different from the value(s) stored in Chado for the publication specified by the value given in P22.)
+
+### Updated:
+
+gm151001.
+

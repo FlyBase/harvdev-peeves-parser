@@ -1,0 +1,56 @@
+
+## ! TE14b.  gen.natTE name used in reference       :
+
+### Multiple values allowed:
+
+Yes
+Implemented
+
+### !c Applicable:
+
+Yes
+Implemented (in elsif loop for field)
+
+
+### Inclusion essential:
+
+Yes
+Implemented
+
+
+### Mandatorially has value:
+
+No - see below
+
+### Checks:
+
+
+* sub 'validate_synonym_field' (called in elsif loop for field):
+
+  * uses 'check_for_duplicated'_lines to check that there are no duplicated synonyms and no empty lines
+
+Checks between field: [not yet implemented]
+
+If P1 does not contain any of the values
+
+* DNA/RNA sequence record
+* protein sequence record
+* FlyBase analysis
+
+One of TE1b and TE14b must contain a value.
+
+### Related fields:
+
+
+### Status:
+
+Checks between field not yet implemented, although data is stored when field is checked, so this could be added based on similar checking in gene.pl
+
+
+### Comments:
+
+
+
+### Updated:
+
+gm140501

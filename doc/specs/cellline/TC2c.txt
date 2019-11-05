@@ -1,0 +1,45 @@
+
+## ! TC2c. Source cross  (components in FB)   :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+### Checks:
+
+Checks within field:
+
+* no_stamps (as currently implemented as a free text field and does not look like stamps are used)
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented: in theory could split on ' x ' and check each thing is a valid FBal/FBab ?? 
+
+### Updated:
+
+gm170127.

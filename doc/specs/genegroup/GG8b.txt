@@ -1,0 +1,53 @@
+
+## ! GG8b. FlyBase database symbol (DB1a) for GG8a  *O :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+Yes (Implemented): GG8a -> GG8b, GG8c, GG8d
+
+
+### Checks:
+
+Checks within field:
+
+ * sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if GG8a is filled in (this is to make it easier to implement checking of fields that can be duplicated).
+
+* sub validate_cvterm_field checks that the value is a valid database name in chado.
+
+Checks between fields (for each duplication of the GG8a-GG8c unit):
+
+ * GG8a must be filled in if GG8b is filled in (and vice versa) (sub compare_duplicated_field_pairs)
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+### Updated:
+
+gm160108.

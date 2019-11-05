@@ -1,0 +1,99 @@
+
+## ! LC11m. Experimental protocol - dataset [CV term ; ID]  :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+Cross-checks done after parsing the entire proforma:
+
+(because allowed value depends on value in LC2a field (or equivalent in chado, which is library.type_id)
+
+* validate_ontology_term_id_field subroutine checks that:
+
+  * each line has the format <term ; id> and is from the 'dataset_entity_type' namespace of FBcv
+
+  * in detail, it uses 'check_ontology_term_id_pair' to check that:
+
+    * term is valid and from the particular namespace required for the field.
+    * id is valid and from the particular namespace required for the field.
+    * term and id match each other.
+    * term is not flagged with 'do_not_annotate' or 'do_not_manually_annotate' type flags
+
+
+Allowed namespace depends on the 'entity type' of the dataset (value in LC2a (for new/merged datasets) or library.type_id in chado (for renamed/existing datasets), as follows:
+
+dataset entity type (LC2a)	namespace allowed in LC2b
+project						**see below**
+biosample					biosample_attribute
+assay						assay_attribute
+result						result_attribute
+reagent collection			assay_attribute, biosample_attribute
+
+** If the dataset entity type is 'project', there is a list of allowed namespaces:
+
+"assay_attribute", "assay_type", "biosample_attribute", "biosample_type", "dataset_entity_type", "project_attribute", "project_type", "reagent_collection_type", "result_attribute", "result_type"
+
+This list is stored in the symbol table and can be accessed by using valid_symbol('project_protocol_types', 'allowed_type_list')
+
+The validate_ontology_term_id_field can't be used to check this field, because it can only cope with one (and in a few cases an alternative) allowed namespace.  So the check is done as follows:
+
+a. sub check_for_duplicated_lines:
+  * warns if there is a blank line within the data
+  * warns if there are any duplicated values
+  * splits data in LC11m into single lines
+
+b. sub summary_check_ontology_term_id_pair_of_list_of_types takes each of the lines in turn and:
+  * tests whether the line is completely correct for at least one of the list of allowed namespaces
+
+c. if the line failed the test in b.:
+
+  * if the basic format of the line is correct (i.e. term ; id) and it is a valid FBcv term (checked using summary_check_ontology_term_id_pair) an error message is printed indicating that the term is from the wrong namespace expected for the dataset entity type.
+
+  * if the basic format of the line is incorrect, validate_ontology_term_id_field is used with a namespace of 'FBcv:default' to produce error messages to show whether there is a term vs id mismatch etc.
+
+
+
+
+
+### Status:
+
+Not yet implemented: once the FBcv is updated so that there is not a loop problem in the one in chado (see DC-701), then processing of FBcv.obo by symtab.pl could be changed so that it stores descendents of 'dataset descriptor' and then a simple validate_ontology_term_id_field check could be done for 'project' datasets, using the namespace of 'FBcv:dataset descriptor'.  This will only work if:
+- project really can use everything under dataset descriptor and that will always be the case
+- will need to add 'subset: do_not_annotate' to the relevant parent terms which are not intended to be used in curation
+
+### Updated:
+
+gm171113

@@ -1,0 +1,101 @@
+
+## ! LC12b. Type of experimental entity [CV]  :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+
+### Dupl. for multiple field:
+
+Yes (Implemented): LC12a -> LC12b, LC12c
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if LC12a is filled in (this is to make it easier to implement checking of fields that can be duplicated).
+
+
+* value must be one of the following (stored as lookup in symtab.pl (type 'LC12b_value') as is only a subset of the existing library_featureprop type fields):
+
+allele_used 
+depletion_target 
+RNAi_target 
+ inhibitor_target 
+activator_target 
+antibody_target 
+bait_protein 
+bait_RNA 
+transgene_used 
+overexpressed_factor 
+ectopic_factor
+experimental_design
+
+
+Checks between fields:
+
+* LC12b must be filled in if LC12a is filled in (and vice versa) (sub compare_duplicated_field_pairs)
+* If LC12c is filled in, LC12b must be filled in. (sub compare_duplicated_field_pairs)
+
+
+### Related fields:
+
+
+
+### Comments:
+
+In the end I did not use a chado query to get *all* the library_featureprop type out of chado for this field, as it only accepts a subset. I have added the code I worked out that would do that below, in case I need it (or similar) for a future Peeves check:
+
+# in chado.pl
+
+	$prepared_queries{'library_featureprop_type'} = $chado->prepare ('SELECT cvterm.name
+								  FROM cvterm, cv
+								  WHERE cv.name = \'library_featureprop type\'
+								  AND cv.cv_id = cvterm.cv_id
+								  AND cvterm.is_obsolete = \'0\';');
+
+
+# in symtab.pl
+
+
+# ask chado for current list of values allowed in LC12b and store in symbol table
+
+	my $library_featureprop_type_list = chat_to_chado ('library_featureprop_type');
+
+	foreach my $value (@{$library_featureprop_type_list}) {
+
+		my ($prop) = @{$value};
+		warn "Got one: $prop\n";
+		set_symbol ($prop, 'chado_library_featureprop_type', '1');
+
+	}
+
+
+
+
+
+### Status:
+
+Could add a check to symtab.pl to double-check that the terms in the hard-coded lookup are still valid library_featureprop type in chado.
+
+
+### Updated:
+
+gm160519.

@@ -1,0 +1,45 @@
+
+## ! AB3.   Culprit                *w :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+
+### !c Applicable:
+
+Yes (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field
+
+* sub 'no_stamps' checks that there are no stamps (since this is a field for names)
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+### Updated:
+
+gm151001.

@@ -1,0 +1,56 @@
+## ! G17t. Abs or insertions that cause recessive PEV for G1a *n :
+
+### Multiple values allowed:
+
+Yes.
+
+### !c Applicable:
+
+Yes if G1a contains valid data and G1g contains 'y', otherwise no.
+
+### Inclusion essential:
+
+No.
+
+### Mandatorially has value:
+
+No.
+
+### Checks:
+
+To be valid, each value must be symbol of type FBab, FBba or FBti and either
+
+* a valid symbol which exists in Chado or
+* instantiated in the current record.
+
+If !c is used:
+
+* G1a must contain a valid value and G1g must contain 'y'
+* the value(s) given in G17t must be different from the value(s) stored in Chado for the gene specified by the value given in G1a.
+
+If !c is not used:
+
+* if G1a contains a valid value and G1g contains 'y',
+either:
+    * the value(s) given in G17t must be identical to the value(s) stored in Chado for the gene specified by the value given in G1a or
+    * G17t must contain one or more valid values and no value is stored in Chado for the gene specified by the value given in G1a;
+* if G1a does not contain a valid value or G1g does not contain 'y', either:
+    * G17t must be empty or
+    * G17t must contain one or more valid values.
+
+### Related fields:
+
+G17u
+G17v
+
+### Comments:
+
+### Status:
+
+PROFORMA FIELD OBSOLETED
+
+
+### Updated:
+
+gm131204 (removed markdown formatting).
+

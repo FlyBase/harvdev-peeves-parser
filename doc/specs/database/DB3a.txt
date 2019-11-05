@@ -1,0 +1,75 @@
+
+## ! DB3a. Database URL (db.url) :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+- sub no_stamps checks that there are no stamps within this field
+
+Checks between fields:
+
+- If DB3c is filled in, DB3a must be filled in.
+
+
+- sub check_changes_with_chado carries out the following checks between the data in the DB3a proforma field and any data which is already in chado for that field. The DB3c field is used to provide the 'change/add' information required for these cross-checks.
+
+   - if the data is being changed
+     - warns if there isn't already data in chado (prints a warning both when the proforma field is filled in and when it is empty)
+     - warns if trying to change data to the value already in chado
+
+   - if data is being added and there is already data for that field in chado
+     - warns if the data in the proforma field is not identical to what is already in chado (suggests that perhaps the curator was trying to change existing data)
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented:
+
+Checks within field - format should be valid url, i.e. start with:
+
+http://
+https://
+
+probably no spaces ??
+
+
+Need to test the implemented checks.
+
+### Updated:
+
+gm160109.

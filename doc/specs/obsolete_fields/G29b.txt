@@ -1,0 +1,51 @@
+## ! G29b. Functional complementation/gain of function [free text] *q :
+
+### Multiple values allowed:
+
+No.
+
+### !c Applicable:
+
+Yes if **G1a** contains valid data and **G1g** contains 'y', otherwise no.
+
+### Inclusion essential:
+
+No.
+
+### Mandatorially has value:
+
+No.
+
+### Checks:
+
+The value may consist of an arbitrary amount of text, including layout
+such as multiple lines and paragraphs, subject to the following
+restrictions:
+
+* any text delimited by @ characters must be a symbol of any FBid type which is either
+    * a valid symbol which exists in Chado or
+    * instantiated in the current record.
+* no line within the value may begin with either '! G' or '!c G' followed by one or two digits, followed by zero or one lower-case letter, followed by a dot character.
+
+### Related fields:
+
+G29a
+
+### Comments:
+
+Occasionally legitimate occurrences of text appearing between two @
+characters will be incorrectly reported as an error.  An example of
+such a false positive report would be when the value contains two or
+more email addresses.
+
+The second restriction imposed above is to remove any ambiguity as to
+where the data ends and a subsequent proforma field begins.
+
+### Status:
+
+PROFORMA FIELD OBSOLETED
+
+
+### Updated:
+
+gm131204 (removed markdown formatting).

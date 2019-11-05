@@ -1,0 +1,86 @@
+
+## ! LC13d. Key SO term(s) [CV term ; ID]  :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+
+### !c Applicable:
+
+Yes (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* validate_LC13d (separate subroutine required instead of just using validate_ontology_term_id_field) due to need for a work-around for some SO term problems.
+
+
+* first checks if the entire line matches one of the following commonly used term + id pairs (which pass the parser as they are in chado, but since they have a 'SO:' prefix directly attached to the accession in chado, they need to be written as 'SO:SO' in the proforma line to pass the parsing checks).
+
+
+1. Please accept a 'SO:SO:' prefix for these commonly used terms:
+
+pcr_product ; SO:SO:0000006
+chromosome_arm ; SO:SO:0000105
+exon ; SO:SO:0000147
+mRNA ; SO:SO:0000234
+protein ; SO:SO:0000358
+gene ; SO:SO:0000704
+
+2. Please accept a Chado SO term not in so.obo, as well as a 'SO:SO:' prefix for these:
+
+aberration_junction ; SO:SO:0000408
+oligonucleotide ; SO:SO:0000696
+nuclear_mitochondrial_pseudogene ; SO:SO:0001044
+golden_path_region ; SO:SO:0000688
+
+
+
+* then, if does not match the above, validate_ontology_term_id_field subroutine checks that:
+
+  * each line has the format <term ; id> and is from the 'SO:default' namespace of FBcv
+
+  * in detail, it uses 'check_ontology_term_id_pair' to check that:
+
+    * term is valid and from the particular namespace required for the field.
+    * id is valid and from the particular namespace required for the field.
+    * term and id match each other.
+    * term is not flagged with 'do_not_annotate' or 'do_not_manually_annotate' type flags
+
+
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Currently done a hacky workaround by hard-coding some allowed term+id lines that are allowed (and checking those first) before doing a check for valid SO terms.  Logic is used is similar to that for allowing shortcuts for common abberations in A9 and A26.  Robust solution (so that can cope with any discrepancy with between so.obo and chado, not just this hard-coded list of terms) is to get all the SO term + id information out of chado (as well as obo) and store this information in Peeves (possibly storing ones with SO: directly attached as part of the accession separately) and can then test and give error messages for various scenarios and make sure that if a term is in both so.obo and chado with 'SO:' directly attached as part of the accession, that the curator always uses that version in the record (as this is the one the parser accepts) - think I can see a way to do this, but ran out of time in this batch of coding time. [gm160523].
+
+
+### Updated:
+
+gm160523

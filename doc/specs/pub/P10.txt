@@ -1,0 +1,128 @@
+## ! P10.  Year, or date  (YYYY.M.D) if PC       *t :
+  
+
+### Multiple values allowed:
+
+No.
+
+### !c Applicable:
+
+Yes if P22 contains valid FBrf, otherwise no.
+
+### Inclusion of field essential for proforma checks:
+
+No.
+
+### Field mandatorially has value:
+
+Yes if P22 is 'new', otherwise no.
+  
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Allowed values:  
+  
+(examples)  
+For personal communications use the format 'year.month.day'.
+e.g. 1995.6.2  (NOT 1995.06.02)
+Otherwise 4 digit year
+2010
+
+### Checks:
+
+To be valid:
+
+* If the value given in P1 is 'personal communication to FlyBase'
+the value given in P10, if any, must be a date in the format
+_year.month.day_ and not later than the present date where:
+    * _Year_ must be four decimal digits;
+    * _Month_ must be an integer in the range 1 through 12 inclusive;
+    * _Day_ must be an integer in the range
+        * 1 through 31 inclusive if _month_ = 1,3,5,7,8,10 or 12 or
+        * 1 through 30 inclusive if _month_ = 4, 6, 9 or 11 or
+        * 1 through 29 if _month_ = 2 and _year_ is evenly divisible
+by 4 or
+        * 1 through 28 otherwise;
+* If the value given in P1 is not 'personal communication to
+FlyBase' the value given in P10, if any, must be a four-digit
+year not later than the present year.
+
+If !c is used:
+
+* P22 must contain a valid FBrf and
+* the value given in P10 must be different from the value
+stored in Chado for the publication specified by the FBrf given in
+P22.
+
+If !c is not used:
+
+* if P22 contains a valid FBrf, either:
+    * the value given in P10 must be identical to the value
+stored in Chado for the publication specified by the value given in
+P22 or
+    * P10 must contain a valid value and no value is stored in
+Chado for the publication specified by the FBrf given in P22;  
+* if P22 is 'new':  
+    * P10 must a contain valid value.  
+* if P22 is 'unattributed':  
+    * P10 must be left blank.  
+    
+### Error messages:  
+  
+If P22 is 'unattributed':  
+P10: Cannot contain data when P22 is 'unattributed'.  
+    
+If P22 is 'new' and pling-c:  
+P10: Not allowed to delete date of publication.  
+P10: Can't change the date of publication of a new publication!  
+  
+If P22 is valid FBrf and pling-c:  
+P10: Trying to change date of publication to <yourdate> but the date of publication isn't yet in Chado.   
+P10: Trying to change date of publication to the value (<yourdate>) it already has in Chado.   
+    
+If date already in chado:  
+P10: Trying to set date of publication to <yourdate> but it is <existing-date> in Chado.   
+  
+If P22 is 'new' and pub Type P1 is PC:  
+P10: Can't omit date for personal communication.  
+  
+If P22 is 'new' and pub Type P1 is PC:  
+P10: Can't omit date for personal communication.  
+  
+If P1 is personal communication and only year:  
+P10: Date is '2010' but P1 specifies a personal communication, which requires full YYYY.M.D date.  
+  
+Date checks (4 digit year):  
+P10: Implausible date xxx if before 1990  
+P10: Date xxx is in the future if after current year  
+  
+Date checks (YYYY.M.D):  
+P10: Date xxx is in the future if after current year or month or day of month  
+P10: Incomplete date specification xxx if YYYY.M (you forgot the day)  
+P10: Incorrect date specification 'xxx' if completely incorrect (not NNNN.NN.NN, no leading 0s)  
+P10: Incorrect month '2010.05.04' if extra leading 0's in month or day  
+P10: Incorrect month '2010.13.4' if month more than 12  
+P10: Incorrect month '2010.0.4' if month 0  
+P10: Incorrect day of month '1989' in 1989.5.04  if month 0  
+P10: Implausible year '1989' in 1989.5.4  if before 1990  
+
+
+### Related fields:
+
+MP6
+
+### Comments:
+
+The rule given above for leap-year calculation is incorrect for the
+year 2100.
+
+Peeves will generate a warning if the date given in P10 is
+earlier than 1990.1.1 or 1990 in an attempt to pick up common typos.
+
+### Updated:
+
+gm131204 (removed markdown formatting).
+gm151001 (added Dupl. for multiple field info).
+

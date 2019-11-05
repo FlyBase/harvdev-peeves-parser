@@ -1,0 +1,65 @@
+## ! P14.  Additional language(s) of abstract [CV]               *A :
+
+### Multiple values allowed:
+
+Yes, each on a separate line.
+
+### !c Applicable:
+
+Yes if P22 contains a value, no otherwise.
+
+### Inclusion essential:
+
+No.
+
+### Mandatorially has value:
+
+No.
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+To be valid:
+
+* Each value must be a valid term (i.e. does not have 'is_obsolete:
+true') from flybase_controlled_vocabulary.obo, and
+* the term must be in the 'language of publication' namespace.
+
+No value given in P14 may also appear as a value in P13.
+
+If !c is used:  
+
+* P22 must contain a valid value and
+* the value(s) given in P14 must be different from the value(s)
+stored in Chado for the publication specified by the value given in
+P22.
+
+If !c is not used:
+
+* if P22 contains a valid value, either:
+    * the value(s) given in P14 must be identical to the
+value(s) stored in Chado for the publication specified by the value given
+in P22 or
+    * P14 must contain one or more valid values and no value is
+stored in Chado for the publication specified by the value given in
+P22;
+* if P22 does not contain a valid value, either:
+    * P14 must be empty or
+    * P14 must contain one or more valid values.
+
+### Related fields:
+
+
+### Comments:
+
+The cross-check between P13 and P14 is to enforce the
+**additional** languages(s) of abstract criterion.
+
+### Updated:
+
+gm131204 (removed markdown formatting).
+gm151001 (added Dupl. for multiple field info).

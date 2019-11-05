@@ -1,0 +1,50 @@
+
+## ! TE10. Engineered constructs :
+
+### Multiple values allowed:
+
+
+
+### !c Applicable:
+
+
+
+### Inclusion essential:
+
+
+
+### Mandatorially has value:
+
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+Not implemented any checks - just validate_stub subroutine, for the reasons below.
+
+Not clear whether this is still supposed to be curated into.
+
+Following sql adapted from field mapping table gives 38 rows:
+
+select fo.name as variant_symbol, fo.uniquename as variant_id, f.name as parent_symbol, f.uniquename as parent_id, pub.uniquename from feature fo, feature f, feature_relationship fr, cvterm cvt, feature_relationship_pub frp, pub where fo.feature_id=fr.subject_id and fo.is_obsolete='f' and f.feature_id=fr.object_id and fr.type_id=cvt.cvterm_id and frp.feature_relationship_id=fr.feature_relationship_id and pub.pub_id=frp.pub_id and cvt.name='in_vitro_descendant_of' and f.is_obsolete='f' and f.uniquename like 'FBte%';
+
+All are FBtp - the information that they have an FBte progenitor is on the FBtp page, but not on the reciprocal FBte page.  Need to figure out whether should still have this field, and what to do with existing data in db.
+
+### Updated:
+
+gm151001.

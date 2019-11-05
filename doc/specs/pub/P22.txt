@@ -1,0 +1,121 @@
+## ! P22.  FlyBase reference ID (FBrf)      *U :
+  
+
+### Multiple values allowed:
+
+No.
+
+### !c Applicable:
+
+No.
+
+### Inclusion of field essential for proforma checks:
+
+Yes.
+
+### Field mandatorially has value:
+
+Yes.
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Allowed values:
+
+The value must be one of the following three strings:
+
+* unattributed
+* new
+* FBrf0{6 digits} 
+
+### Checks:
+
+If value is 'FBrf0{6 digits}' this must match the 'FBrf_id' of a valid publication already in Chado.  
+  
+If value is 'unattributed' then only fields P19 and P13 may be filled in. No other P proforma field may be filled in. 
+  
+If value is 'new' then you must add [**P1][P1], [P12][P12], [P19][P19], [P16][P16] and [P13][P13] at least (but see Error messages).  
+
+### Error messages:
+If P22 is missing:  
+*	Required proforma field P22 missing or malformed.  
+  
+If P22 has stamp:  
+*	P22: unwanted stamp in 'xyz@FBrf123@ '  
+  
+If P22 is pling-c'd:  
+*	P22: Can't change the FBrf of a publication! No more checks on P22.  
+  
+If P22 is blank:  
+*	P22 cannot be blank: must be 'new', 'unattributed' or 'FBrf0{6 digits}'  
+  
+If P22 contains a value that doesn't match any of the above:  
+*	P22: '<invalid_text_entered>' is not valid - must be 'new', 'unattributed' or 'FBrf0{6 digits}'.  
+  
+If P22 contains only digits:  
+*	P22: '123455' is not a FBrf. Did you mean 'FBrf01233455' perhaps?  
+  
+If FBrf has valid FBrf format but does not match an item in Chado:  
+*	P22: 'FBrf0123455' does not exist in Chado.  
+  
+If FBrf has valid format and matches a deprecated item in Chado:  
+*	P22: 'FBrf0123455'is marked as obsolete in Chado.  
+  
+####<a name=#P11a_P11d>P11a, P11d, P11b, P11c</a> 
+If P22 is filled in and P11a, P11b, P11c and P11d are not (or if one is missing):  
+*	None of P11a through P11d have any data.  
+  
+If P22 is filled in and P11a is filled in and (P11b or P11c) are not empty:  
+*	P11b/c: Must not have data (<data>) when P11a has data (<data>).  
+  
+If P22 is filled in and P11c is filled in and (P11a or P11b) are not empty:  
+*	P11a/b: Must not have data (<data>) when P11c has data (<data>).  
+  
+If P22 is filled in and P3 is empty:    
+*	P3: Must have data for a new publication of type '<pubtype>'.  
+  
+If P22 is filled in and P4 is empty:    
+*	P4: Must have data for a new publication of type '<pubtype>'.  
+  
+  
+### Related or dependant fields:
+If P22 is 'new' then you must add [P1][P1], [P12][P12], [P19][P19], [P16][P16] and [P13][P13], at least.  
+Also see:
+*	[P32][P32]
+*	[P39][P39]
+*	[P2][P2]
+*	[P10][P10]
+*	[P3][P3]
+*	[P4][P4]
+*	[P11a, P11d, P11b, P11c][P11a_P11d]
+*	[P14][P14]
+*	[P29][P29]
+*	[P33][P33]
+*	[P23][P23]
+*	[P18][P18]
+*	[P38][P38]
+*	[P30][P30]
+*	[P31][P31]
+*	[P40][P40]
+*	[P41][P41]
+
+
+### Comments:
+
+An 'FBrf_id' consists of the characters 'FBrf' immediately followed by seven
+decimal digits.
+
+### Status:
+
+*	Fully checked (includes no duplicate proforma line, no UTF8 characters (e.g. o-umlaut) and absence of stamps)
+*	!c Fully checked against Chado.
+*   No known bugs.
+*   No known false positives.
+
+### Updated:
+
+gm131204 (removed markdown formatting).
+gm151001 (added Dupl. for multiple field info).
+

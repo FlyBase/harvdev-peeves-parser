@@ -1,0 +1,12 @@
+version: "3.2"
+
+services:
+  peeves_parser:
+    build: .
+    image: peeves_parser:latest
+    volumes:
+      - type: bind
+        source: ../proforma
+        target: /proforma
+    network_mode: host
+

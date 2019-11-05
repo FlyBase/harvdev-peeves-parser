@@ -1,0 +1,61 @@
+
+## ! GA35. Transgenic product class [CV] :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+
+Checks within field:
+
+
+* sub 'validate_cvterm_field' checks that this is a valid FBcv term from the 'transgenic_product_class' namespace. Note, since these FBcv terms have not been added to the ontology yet, this means that if the field is filled in now by mistake, Peeves will complain.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+
+### Status:
+
+Not yet implemented:
+
+
+Checks between fields:
+
+* should only be filled in for transgenic construct alleles (i.e. GA10a)
+
+* GA4 (allele class) and GA35 should not both be filled in
+
+* must be filled in for a new transgenic construct alleles (i.e. GA10a)
+
+
+
+### Updated:
+
+gm180703.

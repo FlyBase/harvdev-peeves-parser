@@ -1,0 +1,58 @@
+
+## ! F1b. Action - rename this gene product (symbol)      :
+
+### Multiple values allowed:
+
+No (Implemented - in validate_rename)
+
+### !c Applicable:
+
+No (Implemented - in validate_rename)
+
+### Inclusion essential:
+
+No (Implemented - in validate_rename)
+
+### Mandatorially has value:
+
+No (Implemented - in validate_rename)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Cross-checks within field
+
+  * the data must either be empty or be a single valid symbol of a gene product (i.e. FBtr or FBpp) which exists in Chado. (in validate_rename)
+
+  * sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if F1b is filled in
+
+
+Cross-checks with other fields
+
+    * symbol in F1b cannot be the same as in F1a (in validate_rename and cross_check_harv_style_symbol_rename_merge_fields)
+    * sub 'rename_merge_check' -  F1b and F1c must not both contain data
+
+    * subroutine 'cross_check_harv_style_symbol_rename_merge_fields' - see MA1f.txt for details of what this subroutine does.
+
+The following check is done at the end of proforma checking within expression.pl, rather than trying to add it to the 'cross_check_harv_style_symbol_rename_merge_fields' subroutine which is used for several different 'Harvard' style proformae:
+
+* If the gene product is being renamed, checks that the format of the new valid symbol in F1a matches the type of FBid in F1f (i.e. either genesymbol-XR or allelesymbolRA for a FBtr id, either genesymbol-XP or allelesymbolPA for a FBpp id).
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+### Updated:
+
+gm160328.

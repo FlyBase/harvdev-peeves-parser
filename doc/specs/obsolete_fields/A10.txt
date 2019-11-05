@@ -1,0 +1,42 @@
+
+## ! A10.  Known new junction(s) of A8a sides    *N :
+
+### Multiple values allowed:
+
+Yes
+
+### !c Applicable:
+
+Yes
+
+### Inclusion essential:
+
+No
+
+### Mandatorially has value:
+
+No
+
+### Checks:
+
+Values are
+n[L|R]:n[L|R]
+where n is an integer >=1 and no n is allowed to be greater than the number of breaks in A8a.
+
+### Related fields:
+
+
+### Comments:
+
+This document does not discuss what should happen with this data - these fields
+are rarely used and what we should do with them when they are remains an open question
+.....  they are currently represented like this
+*N Junctions: 2L:4L
+
+### Status:
+
+PROFORMA FIELD OBSOLETED.
+
+### Updated:
+
+gm131202 (doc for this field moved here from aberration.checks.pro).

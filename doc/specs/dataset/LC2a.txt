@@ -1,0 +1,67 @@
+
+## ! LC2a. Type of dataset entity [CV]  :
+
+### Multiple values allowed:
+
+No (implemented)
+
+
+### !c Applicable:
+
+No (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* validate_ontology_term_id_field subroutine checks that:
+
+  * each line has the format <term ; id> and is from the 'dataset_entity_type' namespace of FBcv
+
+  * in detail, it uses 'check_ontology_term_id_pair' to check that:
+
+    * term is valid and from the particular namespace required for the field.
+    * id is valid and from the particular namespace required for the field.
+    * term and id match each other.
+    * term is not flagged with 'do_not_annotate' or 'do_not_manually_annotate' type flags
+
+
+
+Cross-checks done after parsing the entire proforma:
+
+- LC2a must be filled in if LC1f contains 'new' (i.e. is required for brand new datasets or dataset merges) and must NOT be filled in if LC1f contains an FBid (i.e. existing or renamed datasets).
+
+
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160517.

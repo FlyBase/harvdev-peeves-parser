@@ -1,0 +1,57 @@
+
+## !   MA23g. Orientation relative to affected gene              :
+
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+Yes (Implemented): MA23a -> MA23b, MA23c, MA23g
+
+
+### Checks:
+
+Checks within field:
+
+ * sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if MA23g is filled in (this is to make it easier to implement checking of fields that can be duplicated).
+
+* sub 'validate_cvterm_field' checks that the value is one of the allowed values for this field  - allowed values are stored in symtab.pl with type 'orientation'  '+' and '-') or type 'additional_orientation' (since technically 'p' and 'm' are also allowed in this field).
+
+
+Checks between fields:
+
+ * MA23a must be filled in if MA23g is filled in (sub compare_duplicated_field_pairs)
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160113.

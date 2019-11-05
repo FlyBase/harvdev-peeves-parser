@@ -1,0 +1,53 @@
+
+## ! SP5. Taxgroup [SoftCV] : 
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+- sub validate_cvterm_field checks that it is a valid term from the 'tax group' softCV (specified in symtab.pl) that describes what kind of group this organism belongs to (values mostly used for Peeves checks/derivations).
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented:
+
+Checks between fields:
+
+- if !c should already be data in chado that is different plus SP1a+SP1b should already be in chado
+- for existing SP1a+SP1b, should check that there isn't already data in chado if filled in
+
+
+### Updated:
+
+gm170530.

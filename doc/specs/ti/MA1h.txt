@@ -1,0 +1,58 @@
+
+## ! MA1h. Action - delete insertion record ("y"/blank)   :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field (validate_obsolete subroutine)
+
+* warns if hashes are present within the field (hashes are disallowed in the field itself to prevent a hashed proforma passing the checks where one value of 'y' is missed from a hashed list in an obsolete data field).
+
+* if filled in, value must be 'y'.
+
+
+* if the field is filled in with 'y' a warning is still given, since this is a potentially dangerous field.
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+Not yet implemented:
+
+* all other proforma fields must be blank.
+
+* the value in the primary symbol filed must already be in chado
+
+
+### Updated:
+
+gm151001.

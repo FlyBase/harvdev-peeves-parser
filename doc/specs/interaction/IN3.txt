@@ -1,0 +1,48 @@
+
+## ! IN3.  Interaction assay (Termlink MI CV)    :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+### Inclusion essential:
+
+Yes (Implemented)
+
+
+### Mandatorially has value:
+
+Yes (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+### Checks:
+
+Checks within field:
+
+- any values in this field must be a valid CV term from the psi-mi ontology.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+!c Applicable status is currently set to 'No' because !c of this field has not yet been implemented in the proforma parsing software.
+
+Note, took out additional requirement for value to be 'child of either the 'interaction detection method' or 'participant identification method' term.' as it was causing too many false-positives.
+
+### Updated:
+
+gm160510.

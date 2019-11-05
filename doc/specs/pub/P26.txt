@@ -1,0 +1,66 @@
+## ! P26.  PubMed ID                *M :
+
+### Multiple values allowed:
+
+No.
+
+### !c Applicable:
+
+Yes if P22 contains valid data, otherwise no.
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+Checks within validate_P26
+
+* Any value must consist of 8 digits (not starting with a leading zero), else a warning is issued
+
+
+* If !c is used:
+
+  * P22 must contain a valid value
+  * the value given in P26 must be different from the value stored in Chado for the publication specified by the value given in P22.
+
+If !c is not used:
+
+* if P22 contains a valid value, either:
+    * the value given in P26 must be identical to the value
+stored in Chado for the publication specified by the value given in
+P22 or
+    * P26 must contain a valid value and no value is stored in
+Chado for the publication specified by the value given in P22;
+
+
+The following is implemented as a check after the whole proforma has been parsed:
+
+- if it is a new publication and the publication type is a 'regular' publication (so *not* one of the 'not_regular_pub' types stored in symtab.pl) but isn't a 'supplementary material', P26 must be filled in.
+
+
+
+### Related fields:
+
+
+### Comments:
+
+A PubMed_ID is often called a 'PMID' (from a field name used in the
+PubMed database) or 'MEDLINE_ID' (from the name of an earlier
+database now incorporated into PubMed).
+
+Further information about PubMed and PMIDs may be found at http://www.ncbi.nlm.nih.gov/sites/entrez?db=pubmed
+
+### Updated:
+
+gm170127.

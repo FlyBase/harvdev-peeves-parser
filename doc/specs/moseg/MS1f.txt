@@ -1,0 +1,73 @@
+
+## ! MS1f. Database ID for segment (FBid or "new") :
+
+### Multiple values allowed:
+
+No.
+Implemented (in validate_primary_FBid_field)
+
+
+### !c Applicable:
+
+No.
+Implemented (in validate_primary_FBid_field)
+
+### Inclusion essential:
+
+Yes
+Implemented
+
+### Mandatorially has value:
+
+Yes
+Not Implemented
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+Checks within field:
+
+in 'validate_primary_FBid_field':
+
+* each entry must either be the string 'new' or an FBid number of the type expected for the proforma (at the moment this is limited to FBtp)
+
+* if the entry is an FBid number (currently limited to FBtp), it must be valid in chado.
+
+
+
+Cross-checks with other fields:
+
+in 'validate_primary_FBid_field':
+
+* The number of entries in the list in MS1f must match the number of entries in the MS1a field
+
+
+Cross-checks done after parsing the entire proforma:
+
+1. in 'cross_check_harv_style_symbol_rename_merge_fields' -  see MA1f.txt for details of what this subroutine does.
+
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+doc: checked that doc reflects what has been implemented
+
+
+NOTE: at the moment, Peeves only knows about FBtp and not about the other types of feature (FBmc or FBms) which can be put in a moseg.pro, so if a proforma contains information about an FBmc or FBms, there will be both false-positive and missing error messages.
+
+### Updated:
+
+gm151001.

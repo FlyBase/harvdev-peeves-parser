@@ -1,0 +1,98 @@
+
+## ! G1e.  Action - rename this gene symbol                       :
+
+### Multiple values allowed:
+
+No
+Implemented
+
+### !c Applicable:
+
+No
+Implemented
+
+### Inclusion essential:
+
+No
+Implemented
+
+### Mandatorially has value:
+
+No
+Implemented
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+
+Checks within field
+
+  * the data must either be empty or be a single valid symbol of a gene which exists
+in Chado. (in validate_rename)
+
+  * sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if G1e is filled in
+
+
+
+Cross-checks with other fields
+
+  * symbol in G1e cannot be the same as in G1a (in validate_rename)
+
+  * checks done after parsing entire proforma:
+
+    * 'cross_check_FBid_symbol' (check when x1h filled in)
+
+    * sub 'rename_merge_check' -  G1e and G1f must not both contain data
+
+    * sub 'cross_check_x1e_x1g' checks that if G1e is filled in, G1g is 'n'
+
+    * if G1e is filled in:
+
+       * print an error message if G2a is filled in without G2c being filled in (for those genes that have a fullname in chado).
+
+       * if neither G2a nor G2c are filled in:
+
+          * if the gene in G1e has a fullname in chado, print an error message that this is only allowed 'if you are trying to rename a gene's symbol without changing the full name'
+
+          * if the gene in G1e does not have a fullname in chado, print an error message reminding the curator to fill in G2a if they want to name the gene.
+
+
+       * warns if there is no 'Source for identity line: ' at all in G28b
+
+       * warns if the string after 'Source for ' is not identity e.g. if 'Source for merge of: ' was written in error instead
+
+    * if G28b is filled in:
+
+      * for 'Source for identity':
+
+         * warns if the symbol in G1a does not appear in the list in G28b
+
+         * warns if the symbol in G1e does not appear in the list in G28b
+
+         * warns if G1e is empty
+
+         * if G1e contains data, warns if the symbol in G1e does not appear in the list in G28b
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+'validate_rename' subroutine still uses dehash, and so can cope with and analyse hashed data in this field, despite the fact that there shouldn't ever be any hashes as the 'no_hashes_in_proforma' has been added to the basic field checks (before validate_rename is called).  Could possibly take the dehash ability out of validate_rename in the future, but it is doing no harm while there so left for now (and may actually be advantageous to leave it as it'll point out any errors if a curator does use a hashed proforma with G1e, so it might make it easier for them to split the data into non-hashed proformae in that case).
+
+
+### Status:
+
+
+
+### Updated:
+
+gm170201.

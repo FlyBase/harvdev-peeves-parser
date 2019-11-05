@@ -1,0 +1,48 @@
+
+## ! IN4.  Library/collection           :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* Entries must be a valid library/collection (FBlc) symbol (either already in chado or implemented in record)
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Note, !c is set to No as this has not been implemented in proforma parsing for this field, but eventually this may change, in which case will need to change Peeves check.
+
+### Updated:
+
+gm151128

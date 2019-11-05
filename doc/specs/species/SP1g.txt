@@ -1,0 +1,54 @@
+
+## ! SP1g. Is SP1a+SP1b already in FlyBase? (y/n) :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+Yes (Implemented)
+
+### Mandatorially has value:
+
+Yes (Implemented using contains_data)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+- the value must be either 'y' or 'n' (checked using check_y_or_n during cross-checks with SP1a and SP1b).
+
+
+Checks between fields:
+
+- If SP1g = 'n', the combination of 'SP1a' (organism.genus) plus 'SP1b' (organism.species) (i.e. the unique key in organism) must NOT already be in chado
+
+- If SP1g = 'y', the combination of 'SP1a' (organism.genus) plus 'SP1b' (organism.species) (i.e. the unique key in organism) MUST already be in chado
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+### Updated:
+
+gm160107.

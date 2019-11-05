@@ -1,0 +1,65 @@
+
+## ! GG2a. Action - gene group name to use in FlyBase      *e :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field
+
+  * checks done in validate_new_full_name
+
+    * sub 'check_allowed_characters' makes sure the symbol only contains characters from an allowed set (see %mapping_table at the top of check_allowed_characters in tools.pl for current list of allowed characters)
+
+    * check that any greek symbols are not malformed
+
+Cross-checks between fields:
+
+* If GG2a and GG2c are both filled in, the value must not be the same (compare_field_pairs, pair_test = 'not same')
+
+* If GG1f is filled in, GG2a must be filled in (compare_field_pairs, pair_test = 'dependent') (checked using proformae in records2test/GG2 - works for both unhashed and hashed proformae)
+
+* If GG2c is filled in, GG2a must be filled in (compare_field_pairs, pair_test = 'dependent')
+
+* GG2a must be filled in for new gene groups (sub check_filled_in_for_new_feature, test = 'yes')
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+See GG2c for cross-checks between fields which still need adding
+
+
+### Updated:
+
+gm151001.

@@ -1,0 +1,45 @@
+
+## ! TC2a. Source strain (soft CV)            :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+### Checks:
+
+Checks within field:
+
+* no_stamps (as currently implemented as a free text field and does not look like stamps are used)
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+PDEV-43 suggests that this field may eventually be replaced by a non-free text field for strain symbols/ids so for now have just implemented minimal 'no_stamps' checking.
+
+### Updated:
+
+gm170127.

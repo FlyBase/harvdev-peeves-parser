@@ -1,0 +1,63 @@
+## ! P29.  ISBN, if P1 = book       *I :
+
+### Multiple values allowed:
+
+Yes.
+
+### !c Applicable:
+
+Yes if P22 contains valid data, otherwise no.
+
+### Inclusion essential:
+
+No.
+
+### Mandatorially has value:
+
+Yes if P22 is left blank and P1 contains 'book', otherwise no.
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+If P1 contains 'book', any value given must be a syntactically correct International Standard Book Number (ISBN) (see http://en.wikipedia.org/wiki/ISBN), also known as an ISBN-13.  A syntactically correct ISBN-13 contains 13 decimal digits, the last of which must match the checksum calculated according to the standard algorithm given at http://en.wikipedia.org/wiki/ISBN#Check_digit_in_ISBN-13.  If a 10-character ISBN-10 is given, Peeves must check it for syntactic correctness using the algorithm given at http://en.wikipedia.org/wiki/ISBN#Check_digit_in_ISBN-10 and, if it passes the check, issue a warning which contains the corresponding ISBN-13.
+
+If P1 contains any other value, this field must be left empty
+and !c may not be used.
+
+If !c is used:
+
+* P22 must contain a valid value and
+* the value(s) given in P29 must be different from the value(s)
+stored in Chado for the publication specified by the value given in
+P22.
+
+If !c is not used:
+
+* if P22 contains a valid value, either:
+    * the value(s) given in P29 must be identical to the
+value(s) stored in Chado for the publication specified by the value given
+in P22 or
+    * P29 must contain one or more valid values and no value is
+stored in Chado for the publication specified by the value given in
+P22;
+* if P22 does not contain a valid value, either:
+    * P29 must be empty or
+    * P29 must contain one or more valid values.
+
+### Related fields:
+
+MP15
+
+### Comments:
+
+Multiple ISBN values may be used, for example, for the hardback and
+softback printings of the same book.
+
+### Updated:
+
+gm131204 (removed markdown formatting).
+gm151001 (added Dupl. for multiple field info).

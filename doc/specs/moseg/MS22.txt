@@ -1,0 +1,42 @@
+
+## ! MS22. Localized function [CV]      :
+
+### Multiple values allowed:
+
+
+
+### !c Applicable:
+
+
+
+### Inclusion essential:
+
+
+
+### Mandatorially has value:
+
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+Only validate_stub implemented - need reliable way of getting up-to-date list of allowed terms for this field before can implement checking.
+
+### Updated:
+
+gm151001.

@@ -1,0 +1,58 @@
+
+## ! LC4i. Other species of interest [CV]  :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+
+### !c Applicable:
+
+Yes (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+- sub validate_species_abbreviation_field checks:
+
+    - warns if the same value is given more than once (using check_for_duplicated_lines within subroutine)
+    - each value must be a valid species abbreviation.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented:
+
+Checks between fields:
+
+- if LC4a is filled in, any value in LC4i must not be the same
+
+- for an existing FBlc (where LC4a not filled in), any value in LC4i must not be the same as the 'species of derivation' of the dataset given in LC1a
+
+
+### Updated:
+
+gm160717.

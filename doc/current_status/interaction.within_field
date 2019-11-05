@@ -1,0 +1,42 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA             Version 2.7  02 Jul 2014
+!
+! THAT APPLY TO A SPECIFIC INTERACTION, PATHWAY OR OTHER EVENT
+!
+! IN1f. Database ID for interaction  :PARTIAL
+! IN1d.  Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :FULL
+!
+! IN1c. Action - rename this event   :NOT YET IMPLEMENTED:parsing of field not implemented in proforma loading software
+! IN1g. Action - merge these events  :NOT YET IMPLEMENTED:parsing of field not implemented in proforma loading software
+! IN1h. Action - delete event record ("y"/blank) :FULL
+! IN1i. Action - dissociate IN1f from FBrf ("y"/blank) :NOT YET IMPLEMENTED:parsing of field not implemented in proforma loading software
+!
+! IN2a. Interaction description (free text)     :FULL
+! IN2b. Interaction type (Termlink MI CV) :FULL
+! IN3.  Interaction assay (Termlink MI CV)    :FULL
+!
+! IN4.  Library/collection           :FULL
+!
+! IN5a. Cell line used               :FULL
+! IN5b. Stage and tissue ( <e> <t> <a> <s> <note> ) :FULL
+!
+! IN5d. Conditional dependencies     :PARTIAL
+! IN5e. Comments concerning source   :PARTIAL
+!
+! IN6.  List of interactors (FB symbol or ids), role (Termlink MI CV), qualifier ( <symbol>  <ID_as_reported>  <role>  <qual/note> ) :PARTIAL
+
+!
+! IN7a. Experimental entities supporting participants/interactors ( <link to>  <identifier>  <ID_as_reported>  <role>  <qual/note> ) :NOT YET IMPLEMENTED:parsing of field not implemented in proforma loading software
+
+!
+! IN7c. Subregion(s) of participant(s) with role in interaction ( <link to>  <description> region <role> unspecified role <coordinates/seq>  <note> ) :PARTIAL
+
+!
+! IN7d. Isoform-specific participant(s) with role in interaction ( <link to>  <description>  <role> unspecified role <note> ) :FULL
+
+!
+! IN7b. Comments concerning experimental data :FULL
+!
+! IN8a. Public comments   :FULL
+! IN8b. Internal comments :FULL
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

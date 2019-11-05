@@ -1,0 +1,52 @@
+
+## ! G10a. Cytological map position, if by chromosome in situ *c :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+validate_G10ab subroutine:
+
+* if the species of the gene in G1a is Dmel
+   * check that the value given is either be a valid cytological location or a range between two valid cytological locations separated by a --.
+
+* if the gene is not Dmel, print an error that the field must not be filled in for non-Dmel species.
+
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+doc: updated so that it reflects what has been implemented
+
+
+### Updated:
+
+gm151001.

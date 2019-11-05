@@ -1,0 +1,50 @@
+
+## ! G39b. Gene summary - enough information ? (y/n) :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'validate_cvterm_field' checks that the value is either 'y' or 'n' (only 'y or n' terms are allowed).  Using this subroutine instead of 'check_y_or_n' subroutine because need to go through process_field_data to store values for checks between fields.
+
+Checks between fields:
+
+If G39a is filled in, value in G39b must be 'y'
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160531.

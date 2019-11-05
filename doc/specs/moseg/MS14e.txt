@@ -1,0 +1,51 @@
+
+## ! MS14e. Regulatory region(s) present (symbol)  :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* check_valid_symbol_field checks that the values are a valid gene or tool symbol either in chado or generated in the record.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented:
+
+Cross-field checks:
+
+If end up having a moseg.pro field to replace current MS22 (localized function) with FBto terms, should probably add a check that this field is only filled in if that field is filled in for the appropriate type of construct (e.g. mis-expression type vector)
+
+
+### Updated:
+
+gm171128.

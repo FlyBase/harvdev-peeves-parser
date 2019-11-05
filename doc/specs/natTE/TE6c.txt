@@ -1,0 +1,45 @@
+
+## ! TE6c. Accession(s) for flanking sequence      :
+
+### Multiple values allowed:
+
+
+
+### !c Applicable:
+
+
+
+### Inclusion essential:
+
+
+
+### Mandatorially has value:
+
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status: 
+
+Not implemented any checks - just validate_stub subroutine, for the reasons below.
+
+No documentation in curation manual, so need specs before can implement Peeves checks.
+
+### Updated:
+
+gm151001.

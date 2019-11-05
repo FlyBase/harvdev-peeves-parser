@@ -1,0 +1,38 @@
+## ! GA14.  Internal notes  *W :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+sub 'no_stamps' checks that there are no stamps (so that the text still makes sense if any symbol changes in future)
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Updated:
+
+gm151001.
+

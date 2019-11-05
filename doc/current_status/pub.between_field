@@ -1,0 +1,35 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FULL
+! P45.  Publication is NOT about Drosophila? (y)      *q :FULL
+! P32.  Action - make this FBrf a secondary ID of P22 (FBrf)  *N :PARTIAL
+! P39.  Action - obsolete P22 in FlyBase (y)           TAKE CARE :PARTIAL
+! P1.   Type of publication [CV]  *T :FULL
+! P2.   Parent multipub abbreviation               *w :FULL
+! P12.  Author(s)                           *a-*b :FULL
+! P10.  Year (YYYY), or date (YYYY.M.D) if PC  *t :FULL
+! P16.  Title                                  *u :FULL
+! P3.   Volume number                          *y :FULL
+! P4.   Issue number                           *Y :FULL
+! P11a. Page range or article number               *z :FULL
+! P11d. DOI                                           :FULL
+! P11b. URL                                        *R :FULL
+! P11c. Sequence accession number                     :PARTIAL
+! P13.  Language of publication [CV]                          *L :PARTIAL
+! P14.  Additional language(s) of abstract [CV]               *A :PARTIAL
+! P26.  PubMed ID                *M :FULL
+! P28.  PubMed Central ID  *c :FULL
+! P29.  ISBN, if P1 = book       *I :FULL
+! P23.  Text of personal communication *F :PARTIAL
+! P18.  Miscellaneous comments                                  *G :PARTIAL
+! P38.  Associated file(s), archived at ftp site [SoftCV]    *K :FULL
+! P30.  Also published as (FBrf)            *C :FULL
+! P31.  Related publication(s) (FBrf)       *E :FULL
+! P34.  Abstract text    *X :PARTIAL:DC-472
+! P46.  Graphical Abstract, archived at ftp site :NOT YET IMPLEMENTED
+! P40.  Flag Cambridge for curation           CAMCUR :PARTIAL
+! P41.  Flag Harvard for curation            HARVCUR :PARTIAL
+! P42.  Flag Ontologists for curation           ONTO :PARTIAL
+! P43.  Flag Disease for curation            DISEASE :PARTIAL
+! P44.  Disease(s) relevant to FBrf      [free text] :PARTIAL
+! P19.  Internal notes                   *H :NA

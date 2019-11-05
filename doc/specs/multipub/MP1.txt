@@ -1,0 +1,69 @@
+## ! MP1.  FlyBase multipub ID                       *U :
+
+### Multiple values allowed:
+
+No.
+
+### !c Applicable:
+
+No.
+
+### Inclusion of field essential for proforma checks:
+
+Yes.
+
+### Field mandatorially has value:
+
+Yes.
+
+### Allowed values:
+
+* string 'new', or
+* 'multipub_id' consists of an integer greater than zero. 
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks
+
+For allowed values.  
+If a number then it matches the 'multipub_id' of a valid multipub already in Chado.
+
+If MP1 contains a value that doesn't match either of the above, Peeves should issue
+an error message of the type: 
+MP1: '<invalid_text_entered>' is not a valid entry
+
+If 'MP1 is left blank, then Peeves should issue an error message of the type: 
+MP1: Must have a value.
+
+### Error messages
+
+If pling-c:  
+MP1: Can't change the multipub_id of a multipub!  
+  
+If MP1 is blank:  
+MP1: Not allowed to be blank. It must be 'new' or a number.  
+  
+If MP1 is text but not 'new':  
+MP1: 'xxx' is not a valid multipub ID. It must be 'new' or a number.  
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+  
+When the FBmp uniquename type is introduced into Chado (see JIRA DB-32), the value
+required in MP1 will change appropriately.  
+  
+### Updated:  
+  
+gm131204 (removed markdown formatting).
+gm151001 (added Dupl. for multiple field info).
+
+

@@ -1,0 +1,48 @@
+
+## ! LC11j. Experimental protocol - data analysis is secondary analysis (y/blank)  :
+
+### Multiple values allowed:
+
+No (implemented)
+
+
+### !c Applicable:
+
+Yes (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+sub check_single_allowed_value checks that the only allowed value is 'y'
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160518

@@ -1,0 +1,56 @@
+
+## ! LC5.  Experimental protocol, vector (or common construct) :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field;
+
+Checks within field, using'check_valid_symbol_field':
+
+* check_for_duplicated_lines:
+   * warns if there is a blank line within the data
+   * warns if there are any duplicated values
+
+* Each value must be a valid FBmc symbol (either already in the database or generated in the
+curation record). NOTE curation manual says any value must be 'a feature with FBmc IDs of type "engineered_construct"', implying that not all FBmc are 'engineered_construct'.  I checked chado and there were just a few (10) non-obsolete FBmc that are not 'engineered_construct', but I think that they may be errors, so just implemented the simple 'must be a valid FBmc symbol' for now as already had code that could do that easily.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+See NOTE above.
+
+### Updated:
+
+gm151001.

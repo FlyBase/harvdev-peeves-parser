@@ -1,0 +1,100 @@
+
+## ! GA1a.  Allele symbol to use in FlyBase                     *A :
+
+### Multiple values allowed:
+
+No.
+Implemented ('single_line' subroutine in loop where the field is identified)
+
+### !c Applicable:
+
+No.
+Implemented (in validate_primary_proforma_field)
+
+### Inclusion essential:
+
+Yes.
+Implemented
+
+### Mandatorially has value:
+
+Yes.
+Implemented ('contains_data' subroutine in loop where the field is identified)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+
+
+1. sub validate_primary_proforma_field:
+
+   * checks there is no !c
+
+   * first checks for a trailing hash, and manually removes it to avoid this kind of error breaking lots of downstream checks (does not rely on dehash to do this as happens for other fields, presumably because being the primary symbol field, loads of other checks rely on it).
+
+   * checks for duplicated primary symbol in more than one proforma.  Each duplication of a symbol will generate an error (e.g.. 3 copies of dpp in G1a will generate 2 errors) so it is easy for the curator to see how many duplications there are (I think this latter sentence is correct ! [gm131212]).
+
+   * stores the symbol in an array reference so it can be returned for use in subsequent proforma field cross-checks.
+
+   * if it is a proforma type where the primary symbol contains a species prefix for non-Dmel:
+
+       * uses sub 'get_species_prefix_from_symbol' to get the species prefix, and:
+           * if the returned species prefix is '' warns that there is no prefix before \ in the symbol (e.g. for '\dpp')
+           * checks that the species prefix is a valid species abbreviation in chado
+           * stores the species prefix in an array reference so it can be returned for use in subsequent proforma field cross-checks.
+
+   * if the symbol is not already a valid symbol in chado for that proforma type, a set of basic syntax checks are carried out.
+
+    * If it is an allele the symbol is first tested to see if it matches the basic gene[allele] format, and an error is printed if not. If there is a superscript part, the superscript is then tested as follows:
+
+        * All potential species abbreviations (identified as that before the \) for each chunk of the superscript (i.e. the bits separated by . or ,) are found and checked that they are a valid species abbreviation in chado.  A warning is also issued if there is a missing species abbreviation in a chunk (e.g. \UAS)
+
+    * The following set of basic tests are then carried out for all types.  Note, if it is an allele symbol, these checks are carried out on the superscript portion of the symbol, not the whole symbol, since this allows checking of a more limited set of allowed characters in the superscript portion compared to the gene symbol portion:
+
+
+       * sub 'check_allowed_characters' makes sure the symbol only contains characters from an allowed set (see %mapping_table at the top of check_allowed_characters in tools.pl for current list of allowed characters).
+
+       * checks that any greek symbols are not malformed.
+
+       * check that there are no subscripts (separate check from check_allowed_characters' subroutine, as subscript is represented by a pair of [[ and ]] and check_allowed_characters checks each character singly).
+ 
+       * if it is a proforma type where the primary symbol does NOT contain a species prefix for non-Dmel, it prints a warning if there is no prefix before \ in the symbol (e.g. for '\XXXX').
+
+    * finally, the symbol and species prefix array refs are returned.
+
+
+2. Check for a mis-match between the 'gene' portion of the 'gene[allele]' allele symbol and the gene symbol given in G1a.
+
+Cross-checks with other fields:
+
+  * If the G1a field of the parent gene proforma contains hashes ( # ) then cannot also have hashes in GA1a 
+
+  * checks that the gene part of the symbol matches the gene symbol given in the G1a of the parent gene proforma (done in validate_GA1a)
+
+  * sub 'cross_check_1a_1g' checks the following:
+
+     * If the value given in GA1g is 'y', the value given in G1a must be held in Chado as a current valid symbol of type FBal.
+
+     * If the value given in GA1g is 'n', the value given in G1a must not be held in Chado as a current valid symbol of type FBal.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm170206.

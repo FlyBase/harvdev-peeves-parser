@@ -1,0 +1,51 @@
+
+## ! A2c.  Action - replace this/these aberration name(s)         :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+doc: checked that doc reflects what has been implemented
+
+Not implemented:
+
+* similar to G2c, there is no check that the value given in A2c is really a valid fullname in chado.
+
+* there is no cross-check of A2a with A2c - need to add something that takes into account whether or not the allele is new (A1g) and whether or not rename/merge fields (A1e/A1f) are filled in. [gm131211]
+
+
+### Updated:
+
+gm151001.

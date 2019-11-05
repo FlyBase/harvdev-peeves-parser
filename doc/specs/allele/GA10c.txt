@@ -1,0 +1,73 @@
+
+## ! GA10c. Associated insertion - G1a is outwith insert      *G :
+
+### Multiple values allowed:
+
+Yes (Implemented in validate_GA10ce)
+
+### !c Applicable:
+
+Yes (Implemented in validate_GA10ce)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented in validate_GA10ce)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Check in Peeves after first-pass check for newly instantiated and invalidated symbols:
+
+* if the insertion is marked as 'NEW:' but it is already a valid FBti in chado, then issue an error message.
+
+* if the insertion symbol has not been marked as instantiated in the record (i.e. it did not have a 'NEW:' prefix in the GA10c/GA10e field or there is not an insertion proforma for it) and it is not a valid FBti symbol in chado, then issue an error message.
+
+
+Checks in validate_GA10ce
+
+* if the insertion is created new in the record (i.e. either has 'NEW:' prefix in GA10c/GA10e or made in insertion proforma)
+
+  * uses 'check_insertion_symbol_format' subroutine to check the insertion symbol format (see ti/MA1a.txt for details of subroutine)
+
+  * for GA10c, issues a warning if the identifier portion of the insertion symbol does not match the allele symbol in GA1a
+
+* if the insertion is already in chado
+  * warns if the allele in GA1a is new: "Did you intend to associate an existing TI with a new allele?"
+  * warns if the allele in GA1a is not already associated with the FBti in chado.
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+validate_GA10ce does cross-checking with values in GA1a - in most cases of cross-checks like this, they are done at the end of the proforma (in case of odd order of fields) rather than within a subroutine that checks a single field.  Not sure why there is a difference.
+
+Also, the for loop that goes through the entries in GA10c/GA10e does not use $hash_entries "in case of hash list mismatch" rather than the general case where the check is only done once the hashing is OK.
+
+Might be worth standardising this with other fields and making this an end of proforma cross-check at some point.
+
+
+### Status:
+
+doc reflects what has been implemented.
+
+Not yet implemented:
+
+If a curator makes a new insertion in GA10c/GA10e marked with 'NEW:' and also puts in an insertion proforma for that insertion, this 'double-flagging' of a new insertion generates no error message, and it should as it causes the record to bounce on parsing.   (see DC-497 for details)
+
+
+### Updated:
+
+gm151001.

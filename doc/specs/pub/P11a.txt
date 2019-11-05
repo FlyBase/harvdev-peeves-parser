@@ -1,0 +1,174 @@
+## ! P11a. Page range or article number        *z :
+
+### Multiple values allowed:
+
+No.
+
+### !c Applicable:
+
+Yes if P22 contains a valid FBrf,  
+No otherwise.  
+  
+### Inclusion of field essential for proforma checks:
+
+No.
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Field mandatorially has value:
+
+Yes if P22 is 'new' and P1 contains either
+'paper' or
+'review' or  
+see Comments,   
+otherwise no.  
+
+### Allowed values:  
+  
+-------------------------
+
+<non-zero-digit> ::= 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+
+<digit> ::= 0 | <non-zero-digit>
+
+<integer> ::= <non-zero-digit> | <integer><digit>
+
+<number> ::= <integer><roman-numeral>
+
+<lower-case-letter> ::= a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z
+
+<upper-case-letter> ::= A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z
+
+<letter> ::= <upper-case-letter> | <lower-case-letter>
+
+<page> ::= <number> | <letter><integer>
+
+<page-range> ::= <number> | <page>--<page>
+
+-------------------------
+
+### Checks:
+
+To be valid, each value must be a <page-range> as defined by the
+following BNF, where the term <roman-numeral> is intentionally
+left undefined.
+
+If a value contains two <page>s :
+
+* if either <page> in <page-range> starts with a <letter>,
+both must start with the same <letter> and
+* the <number> or <integer> component of the first <page>
+must be numerically smaller than that of the second.
+
+If !c is used:  
+  
+* P22 must contain a valid FBrf and  
+	* the value given in P4 must be different from the value
+stored in Chado for the publication specified by the FBrf given in
+P22.
+
+If !c is not used:  
+  
+* if P22 contains a valid value, either:
+    * the value given in P11a must be identical to the value
+stored in Chado for the publication specified by the FBrf given in
+P22 or
+    * no value is stored in Chado for the publication specified by the
+FBrf given in P22;
+* if P22 is 'new':  
+    * P11a may a contain valid value.  
+* if P22 is 'unattributed':  
+    * P11a must remain blank.  
+  
+### Error messages:  
+  
+If P22 is 'unattributed':  
+P11a: Cannot contain data when P22 is 'unattributed'.  
+  
+If pling-c and P22 is 'new':  
+P11a: : can't change the page range of a new publication!  
+  
+If no page range and pling-c:  
+P11a: Do you really want to delete the page range?  
+  
+If you forget the double hyphen:
+P11a: page range '<1-4>' must have double hyphens.  
+  
+If there is a common prefix this is removed and the numbers examined:  
+P11a: Bad character '<^-0-9ivxlcdm ,p>' in page range '<s1--s4v>'.  
+    
+If you use p instead of pp:  
+P11a: Bad character 'p' in page range '<p1--4>'.  Did you mean 'pp'?  
+  
+Formatting of each of the two page numbers:  
+P11a: Leading zero in page number '01'.  
+P11a: page number is out of order (123 is not less than 123)  
+P11a: Non-numeric page number 'XX'  
+
+If existing pages retrieved from chado via FBrf:  
+P11a:  Trying to change <chado-pages> to '<your-pages>' but it isn't yet in Chado.  
+P11a:  Trying to change <chado-pages> to the value (<your-pages>) it already has in Chado.  
+P11a:  Trying to set <pages> to '<your-pages>' but it is '<chado-pages>' in Chado.  
+  
+If P11a data is empty:  
+None of P11a through P11d have any data.  
+  
+If P11a is not empty:  
+P11a: Must not have data (<data>) when P11b has data (<moredata>).  
+P11a: Must not have data (<data>) when P11c has data (<moredata>).  
+
+If P11c is not empty:
+P11a: Must not have data (<data>) when P11c has data (<moredata>).  
+
+
+
+### Related fields:
+
+P11b
+P11c
+P11d
+
+
+### Comments:
+
+The page numbering schemes used in actual publications are far more
+complex than the checks above would imply and false positives are
+occasionally to be expected when Peeves checks valid data.  The checks
+given above detect the great majority of errors encountered in
+practice but generate only relatively few false positives.  
+  
+List of publication types (P1) that may be associated with a page range:  
+	abstract  
+	autobiography  
+	bibliographic list  
+	biography  
+	book review  
+	conference report  
+	editorial  
+	erratum  
+	film  
+	interview  
+	letter  
+	meeting report  
+	news article  
+	note  
+	obituary  
+	paper  
+	poem  
+ 	retraction  
+	review  
+	spoof  
+	stock list  
+	supplementary material  
+	teaching note  
+
+
+
+### Updated:
+
+gm131204 (removed markdown formatting).
+gm151001 (added Dupl. for multiple field info).
+

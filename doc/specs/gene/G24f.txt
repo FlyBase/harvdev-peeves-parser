@@ -1,0 +1,81 @@
+## ! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :
+
+### Multiple values allowed:
+
+No.
+Implemented (in validate_G24f, using 'single_line' subroutine)
+
+### !c Applicable:
+
+Yes
+Implemented
+
+
+### Inclusion essential:
+
+No (unless other G24 fields are filled in in that proforma, in which case it temporarily becomes essential for that particular proforma)
+Implemented
+
+### Mandatorially has value:
+
+No.
+Implemented
+??check with Susan T. - see Q below??
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+within validate_G24f:
+
+* if the field is empty, a warning is issed, saying:
+
+          "Default value of 'y' removed from GO date field!  " .
+	       "Any GO data will be recorded with new date. "
+??Q to Susan T.: is the above check correct
+
+* If the field is filled in with anything other than 'y' or 'n'
+
+    * the value is checked to see if it is a valid date not later than the current date, using the 'bad_iso_date' subroutine
+
+    * if the curator is not a GO curator, a warning is printed "WARNING: Non-GO curators don't usually put anything other than 'y' or 'n' in this field, did you mean to put xxxxxx"
+
+
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+Updated doc to reflect what has been implemented.
+
+Check with Susan T. the following !c rules which were in the markdown version of the doc. Note that they are not implemented yet:
+
+If !c is used:
+
+* G1a must contain a valid value and G1g must contain 'y'
+* the value given in G24f must be different from the value stored in Chado for the gene specified by the value given in G1a.
+
+If !c is not used:
+
+* if G1a contains a valid value and G1g contains 'y', either:
+    * the value given in G24f must be identical to the value stored in Chado for the gene specified by the value given in G1a or
+    * G24f must contain a valid value and no value is stored in Chado for the gene specified by the value given in G1a;
+* if G1a does not contain a valid value or G1g does not contain 'y', either:
+    * G24f must be empty or
+    * G24f must contain a valid value .
+
+
+### Updated:
+
+gm151001.
+

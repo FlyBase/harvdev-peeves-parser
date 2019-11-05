@@ -1,0 +1,59 @@
+
+## ! SP4. Taxon ID :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+Yes (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+- sub check_positive_integer checks that the value is a whole number
+
+
+- sub check_changes_with_chado carries out the following checks against the SP4 (taxon ID) data already in chado:
+
+   - if the data is being changed (i.e. !c)
+     - warns if there isn't already data in chado (prints a warning both when SP4 is filled in and when it is empty)
+     - warns if trying to change data to the value already in chado
+
+   - if data is being added in SP4 (ie. no !c) and there is already data in chado
+     - warns if the data in SP4 is not identical to what is already in chado (suggests that perhaps the curator was trying to change existing data)
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160112.

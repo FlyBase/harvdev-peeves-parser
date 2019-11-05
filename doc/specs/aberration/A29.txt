@@ -1,0 +1,72 @@
+
+## ! A29.  New cytological order of the chromosomal aberration :
+
+### Multiple values allowed:
+
+No
+Implemented (in validate_A29)
+
+### !c Applicable:
+
+Yes
+Implemented
+
+### Inclusion essential:
+
+No
+Implemented
+
+### Mandatorially has value:
+
+No
+Implemented
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within validate_A29:
+
+* 'check_allowed_characters' sub - makes sure that the line contains only characters from an allowed set (see %mapping_table at the top of check_allowed_characters in tools.pl for current list of allowed characters).  This allowed set includes each character that can appear as part of a cytological location or telomere, plus the delimiters used in the cytological order format:'(' ')' '|' ';' and ' '
+
+### Hashing
+
+Yes
+Implemented - dehash has been added to the validate_A29 code, so it copes if this is done in a hashed proforma
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+doc reflects what has been implemented
+
+
+Not yet implemented:
+
+It would be good to check that this follows the standard format used to describe new cytological orders, but the regular expression would be pretty complicated so have not attempted it for now (!).  symtab.pl has entries for all allowed cytological locations (type 'cyto loc') and telomeres (type 'telomere').  There is already a 'cyto_check' subroutine which checks either a single location or range (although it expects range to be separated by -- and the new cytological order range is done by -) - so if could split the line up into individual bits, could use this to check the values.
+
+Probably need to do similar to G24 lines and check basic format is correct first, before trying to split the line into bits for more detailed checking
+
+I think this is what would need to be done to split the line up:
+
+* split into each chromosome first (split on '; ', I guess there must be between 2 to 5 chromosomes in the line)
+   * split into each chromosome segment (split on '|') (1 to many entries)
+       * split chromosome segment into L and R portion
+           * if its the first chromosome segment, L portion must be a left telomere
+           * if its the last chromosome segment, R portion must be a right telomere
+           * any other chromosome segments must be a valid 'cyto loc'
+   * there is the added complication of () sometimes being present - think can just get rid of em to check validity of each little bit, but might want to make a check for unbalanced () (could probably use similar to what is done in check_stamps for @@)
+
+
+### Updated:
+
+gm151001.

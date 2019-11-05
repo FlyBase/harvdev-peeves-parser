@@ -1,0 +1,56 @@
+
+## ! F2.  Sequence attribute [CV]	     :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+### Checks:
+
+Checks within field:
+
+- only allowed value is 'synthetic_sequence SO:0000351' (sub check_single_allowed_value defines this allowed value, plus checks that the term and id are still a valid SO term ; id pair)
+
+
+Checks between fields:
+
+
+* F2 must only be filled in if expression is from a transgene, i.e. gene product symbol has format of either allelesymbolRA (FBtr) or allelesymbolPA (FBpp)
+
+
+* F2 must be filled in for a transgene if F1f is 'new' (i.e. for new objects and merges)
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm170201.

@@ -1,0 +1,78 @@
+
+## ! G11.  Cytological map position - comments [SoftCV]       *D :
+
+### Multiple values allowed:
+
+Yes (separated by returns)
+**Not implemented ??- See Status below
+
+### !c Applicable:
+
+Yes
+Implemented (in validate_G11)
+
+### Inclusion essential:
+
+No
+Implemented
+
+### Mandatorially has value:
+
+No
+Implemented (in validate_G11)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Depends on value in field.
+
+The one SoftCV prefix is: "Location inferred from insertion in:" 
+
+If this SoftCV prefix is used then that which follows the : must be a valid FBal allele
+symbol, either previously curated and valid or instantiated in the curation record.
+
+Note: there's a complication for "Location inferred from insertion in:" - a curator can
+put the location in as follows if it clarifies multiple cytologies in G10
+
+e.g.
+
+Location 66B1--66B5 inferred from insertion in: pbl[09645]
+Location 66A20--66A22 inferred from insertion in: pbl[EP3415]
+
+this is OK, its just that Peeves will have to search for the string:
+"^Location (.+? )?inferred from insertion in: "
+where the (.+? ) thing is optional (hence the ? after the () ) and if
+it is there then it should match cytological format, i.e. the same
+checking as done on cytology in the G10 fields.
+
+If the softCV prefix is not used, this is a free text statement and the only check is that
+things flanked by @@ are either existing valid symbols of any FBid type or instantiated in
+the curation record.
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+doc: not yet finished checking whether what is written in Checks has been implemented
+
+Not yet implemented
+
+* I don't think that this will cope with multiple values, but need a test record to check
+
+
+### Updated:
+
+gm151001.

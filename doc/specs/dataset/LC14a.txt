@@ -1,0 +1,70 @@
+
+## ! LC14a. Dataset assay/collection is assay_of this biosample  :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+
+### !c Applicable:
+
+No (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+Must be a valid FBlc with the entity type 'biosample'
+
+* validate_correct_dataset_entity_type does:
+
+   * check_for_duplicated_lines:
+
+    * warns if there is a blank line within the data
+    * warns if there are any duplicated values
+
+   * checks each value is a valid dataset/collection (i.e. FBlc) symbol:
+	    * either in chado - in which case it checks that the entity type in chado matches the type required for this field
+
+	    * or generated in record - in which case it issues a warning that it cannot yet check that the the entity type in chado matches the type required for this field
+
+    * if the value is not a valid dataset/collection (i.e. FBlc) symbol (either in chado/generated in record), generates a warning message.
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented: 
+
+Cannot yet check that the entity type is correct if the value is a new dataset generated in the record, but does at least warn the curator that they need to check this manually.
+
+
+- Any value in LC14a must not be the same as the value in LC1a (cannot just use compare_field_pairs as multiple values are allowed in LC14a - use compare_pub_fbrf_containing_fields as a template to make generic subroutine)
+
+
+### Updated:
+
+gm160518.

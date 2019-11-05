@@ -1,0 +1,1313 @@
+
+Please go to the end of the file when adding new material and remember to sign and date
+your contribution.  Delimiting separate reports, etc, with a line of ==== characters will
+be helpful too.
+
+WHEN A BUG IS FIXED, PLEASE REMOVE IT FROM THIS LIST AND PUT IT ON bugsfixed.txt (Pete)
+
+Paul - some of the bugs on bugsfixed.txt still have points, such as:
+
+Fixed for tags.  Fusion genes and anything else containing stuff before
+the first \ in a symbol will continue to draw complaints about invalid
+species for the time being.
+
+so we may need to re-visit them at some point. Moving them to
+bugsfixed.txt was just a way of tidying up this list.
+
+
+================================================================================
+
+This first section documents all the individual proforma fields which have any kind
+checking at all by Peeves, even if it is only the most rudimentary.  Some proformae are
+totally ignored by Peeves; this is noted below.
+
+The code letter(s) at the start of the line are to be interpreted as follows.
+
+The first three describe the level of checking implemented, regardless of whether it is
+correctly implemented!
+
+F Full:         all data in the curation record itself are checked.
+P Partial:      important checks are implemented but not everything that needs to be.
+R Rudimentary:  only the barest minimum checks are made.
+
+Any of the above three can be qualified with either or both of these letters.
+
+B At least one bug is known to exist.
+C Changes (!c) data also checked against data held in Chado.
+
+    ! PUBLICATION PROFORMA                   Version 28:  04 Oct 2007
+    !
+FC  ! P22. Publication FBrf            *U :
+F   ! P32. FBrf to be merged into P22. *N :
+FC  ! P1.  Type of publication  [CV] *T :paper
+FCB ! P21. Journal etc unique ID *W/*U (starw.nice) :
+FC  ! P2.  Journal etc abbreviation           *w/*s :
+FC  ! P20. Series abbreviation      *S :
+FC  ! P3.  Volume designation       *y :
+FC  ! P4.  Issue number             *Y :
+FCB ! P11a. Page range              *z :
+FCB ! P11b. URL                     *R :
+RB  ! P11c. accession number           :
+RB  ! P11d. DOI                        :
+FC  ! P10. Year of publication      *t :
+FCB ! P12. Author(s)              *a-r :
+FC  ! P16. Title of publication (excl. part-title)   *u :
+FC  ! P17. Part-number and title                     *v :
+FC  ! P13. Language(s) of paper [CV]                 *L :English
+FC  ! P14. Additional language(s) of abstract(s) [CV]*A :
+FC  ! P8.  Publisher (if P1 = book)                  *x :
+FC  ! P24. Place of publication (if P1 = book)       *P :
+F   ! P25. Biosis ID                *B :
+F   ! P26. Medline ID               *M :
+F   ! P27. Zoo Record ID            *Q :
+F   ! P29. ISBN if P1=book          *I :
+F   ! P33. Conference abstract text *D :
+R   ! P30. Also published as (FBrf)            *C :
+F   ! P31. Related publication (FBrf)          *E :
+F   ! P23. Text of personal communication      *F :
+F   ! P18. Associated text                     *G :
+F   ! P19. Internal notes                      *H :
+PC  ! P38. File deposited to archive           *K :
+R   ! P39. Delete this FBrf from the bibliography   TAKE CARE :
+P   ! P40. Flag Cambridge for curation      CAMCUR :
+P   ! P41. Flag-anything for Harvard       HARVCUR :
+    !
+    ! GENE PROFORMA                          Version 44:  1 December 2006
+    !
+PB  ! G1a.  Gene symbol to use in database                      *a :
+F   ! G1b.  Gene symbol used in paper                           *i :
+P   ! G1e.  Action - rename this gene symbol                       :
+P   ! G1f.  Action - merge genes                                   :
+R   ! G1g.  Is G1a the valid symbol of a gene in FlyBase?          :y
+P   ! G30.  Gene category (if gene is new to FlyBase) [SO CV]   *t :
+P   ! G2a.  Gene name to use in database                        *e :
+F   ! G2b.  Gene name used in paper                             *V :
+P   ! G2c.  Database gene name(s) to replace                    *V :
+F   ! G27.  Etymology                                              :
+P   ! G31a. Action - delete gene              - TAKE CARE :
+P   ! G31b. Action - dissociate G1a from FBrf - TAKE CARE :
+F   ! G20a. G1a in title/abstract? Reviews - G1a significant subject? NSC :
+F   ! G20b. G1a wildtype expression in wildtype analysed?             NSC :
+F   ! G20c. G1a expression analysed in mutant/perturbed bckgrd?       NSC :
+F   ! G20d. G1a genome annotation analysed?                           NSC :
+F   ! G20e. G1a product physical interaction analysed?                NSC :
+F   ! G20f. G1a cis-regulatory elements characterized?                NSC :
+F   ! G20g. G1a gene model decorated - alleles/rescue frags/breaks?   NSC :
+F   ! G20h. G1a polymorphism data reported?                           NSC :
+F   ! G10a. Cytological map posn if by chromosome in situ      *c :
+F   ! G10b. Cytological map posn if details unspecified        *c :
+F   ! G11.  Comments on cytological map position [SoftCV]      *D :
+F   ! G25.  Relationship to clone                         [SoftCV]*s :
+F   ! G19a. Gene order/orientation from molecular mapping [SoftCV]*s :
+F   ! G19b. Comments, not allele-specific -- molecular         *s :
+F   ! G12a. Comments, not allele-specific - biological role    *r :
+F   ! G12b. Comments, not allele-specific -- mutants           *p :
+F   ! G14a. Comments, not allele-specific -- other             *u :
+F   ! G14b. Identification                                        :
+F   ! G28a. Comments -- relationship to other genes        [free text] *q :
+P   ! G28b. Source for merge/identity of                      [SoftCV] *q :
+F   ! G29a. Functional comp/gain of function -- structured [SoftCV] *q :
+F   ! G29b. Functional comp/gain of function            [free text] *q :
+P   ! G18.  Gene(s) stated to interact genetically with G1a    *p :
+P   ! G22.  Homologous gene in reference species of drosophilid*M :
+F   ! G24a. GO -- Cellular component | evidence [CV]           *f :
+F   ! G24b. GO -- Molecular function | evidence [CV]           *F :
+F   ! G24c. GO -- Biological process | evidence [CV]           *d :
+F   ! G24e. GO specific internal note                          *H :
+F   ! G15.  Internal notes  *W :
+    !
+    ! GENE PROFORMA MODULES                       Version 12: 6 July 2007
+    !
+F   ! G17t. Abs or mulspcons that cause recessive PEV for G1a  *n :
+F   ! G17u. Abs or mulspcons that cause no PEV for G1a         *n :
+F   ! G17v. Abs or mulspcons that cause dominant PEV for G1a   *n :
+R   ! G5.   Genetic map position if by recombination mapping   *b :
+R   ! G6.   Error in genetic map position (+/-) if reported    *b :
+F   ! G7a.  Gene(s) recomb-mapped to be left of G1a            *b :
+F   ! G7b.  Gene(s) recomb-mapped to be right of G1a           *b :
+F   ! G8.   Comments on genetic map position                   *B :
+F   ! G26.  Foreign gene/Tag summary information                  :
+F   ! G32.  Newly assigned annotation ID (CG/CR number) TAKE CARE :
+R   ! G33.  Accession number (TAKE CARE - sequence curation only) :
+    !
+    ! ALLELE PROFORMA                        Version 38: 7 December 2006
+    !
+P   ! GA1a.  Allele symbol to use in database                  *A :
+F   ! GA1b.  Allele symbol used in paper                       *i :
+P   ! GA1e.  Action - rename this allele symbol                   :
+P   ! GA1f.  Action - merge alleles                               :
+P   ! GA1g.  Is GA1a the valid symbol of an allele in FlyBase?    :y
+P   ! GA2a.  Allele name to use in database                    *e :
+F   ! GA2b.  Allele name used in paper                         *V :
+P   ! GA2c.  Database allele name(s) to replace                *V :
+F   ! GA31.  Etymology                                            :
+P   ! GA32a. Action - delete allele             - TAKE CARE :
+P   ! GA32b. Action - dissociate GA1a from FBrf - TAKE CARE :
+F   ! GA3.   Rank [CV]                                      *k :
+P   ! GA4.   Allele class [CV]                              *k :
+F   ! GA56.  Phenotypic | dominance class [bipartite CV]    *k :
+F   ! GA17.  Phenotype  [CV, body part(s) where manifest]   *k :
+F   ! GA7a.  Phenotype  [free text]                         *k :
+P   ! GA28a. Genetic interaction  [CV, class, effect]       *S :
+P   ! GA28b. Genetic interaction  [CV, anatomy, effect]     *S :
+F   ! GA28c. Genetic interaction  [free text]               *S :
+P   ! GA29a. Xenogenetic interaction [CV, class, effect]    *j :
+P   ! GA29b. Xenogenetic interaction [CV, anatomy, effect]  *j :
+F   ! GA29c. Xenogenetic interaction [free text]            *j :
+F   ! GA21.  Interallelic complementation data (structured) [SoftCV]*Q :
+F   ! GA22.  Interallelic complementation data (free text)          *Q :
+P   ! GA10a. Associated construct                              *I :
+P   ! GA10b. Name in paper for construct                       *L :
+P   ! GA10c. Associated insertion - G1a is outwith insert      *G :
+P   ! GA10d. Name in paper for insertion                       *N :
+P   ! GA10e. Associated insertion - G1a is inside insert   *G :
+P   ! GA10f. Name in paper for insertion                   *N :
+P   ! GA10g. Associated aberration / cytology +            *P/*C  :
+P   ! GA8.   Mutagen [CV]                                  *o :
+P   ! GA19.  Vehicle of assay [CV]                         *k :
+F   ! GA15.  Discoverer                                    *w :
+P   ! GA11.  Progenitor genotype                           *O :
+F   ! GA23a. Notes on origin [SoftCV]                      *R :
+F   ! GA23b. Notes on origin [free text]                   *R :
+F   ! GA12a. Nucleotide/amino acid changes (wrt GA11) [SoftCV]*s :
+F   ! GA12b. Molecular modifications (wrt GA11)   [free text] *s :
+F   ! GA30.  Tagged with                                       :
+F   ! GA13.  Comments not specific to one transcript/product*u :
+F   ! GA20.  Information on availability                    *v :
+F   ! GA14.  Internal notes  *W :
+    !
+    ! ABERRATION PROFORMA                    Version 35: 4 December 2006
+    !
+P   ! A1a.  Aberration symbol to use in database           *a :
+F   ! A1b.  Aberration symbol used in paper                *i :
+P   ! A1e.  Action - rename this aberration symbol            :
+P   ! A1f.  Action - merge aberrations                        :
+R   ! A1g.  Is A1a the valid symbol of an aberration in FlyBase? :y
+P   ! A2a.  Aberration name to use in database             *e :
+F   ! A2b.  Aberration name used in paper                  *Q :
+R   ! A2c.  Database aberration name(s) to replace         *Q :
+P   ! A27a. Action - delete aberration        - TAKE CARE :
+P   ! A27b. Action - dissociate A1a from FBrf - TAKE CARE :
+P   ! A4.   Mutagen  [CV]                                  *o :
+F   ! A16.  Discoverer                                     *w :
+R   ! A6.   Progenitor genotype                            *O :
+F   ! A22a. Notes on origin [SoftCV]                       *R :
+F   ! A22b. Notes on origin [free text]                    *R :
+F   ! A23.  Parent chromosome (for segregants - *Y)           :
+F   ! A7a. Genes removed or broken by the aberration (Df) in A1a (complementation)     *q :
+F   ! A7b. Genes fully duplicated in the Dp in A1a (complementation)     *q :
+F   ! A7c. Genes NOT removed or broken by the aberration (Df) in A1a (complementation) *q :
+F   ! A7d. Genes NOT included in the Dp in A1a (complementation)         *q :
+F   ! A7e. Genes partially disrupted by the Df in A1a (complementation) *q :
+F   ! A7f. Genes partially duplicated in the Dp in A1a (complementation)*q :
+F   ! A7x. Non-standard complementation data (free text, usually for A7e, A7f) *q :
+F   ! A17. Phenotype (not associated with specified alleles)    *p :
+F   ! A19a. Phenotype in combination with other abs [SoftCV]    *T :
+F   ! A19b. Phenotype in combination with other abs [free text] *T :
+F   ! A8a. Breaks: cytological or progen break ranges       *B :
+R   ! A8b. Segments: cytological ranges of ends *B :
+P   ! A9. Type of aberration relative to progenitor [CV]   *C :
+P   ! A10. Known new junction(s) of A8a sides *N :
+R   ! A11. New order of A8b segments          *N :
+F   ! A18. Comments about cytology            *c :
+P   ! A26. Type of aberration relative to wild-type  [CV]  *C :
+F   ! A24a. Transposon insertions             *P :
+F   ! A24b. Non-insert allele(s)              *S :
+F   ! A14. Other comments                     *u :
+F   ! A25a. Genes fully removed by the aberration (Df) in A1a (molecular) NSC               :
+F   ! A25b. Genes fully duplicated in the Dp in A1a (molecular)  NSC        :
+F   ! A25c. Genes NOT removed or broken by the aberration (Df) in A1a (molecular)  NSC      :
+F   ! A25d. Genes NOT included in the Dp in A1a (molecular) NSC             :
+F   ! A25e. Genes partially removed or broken by the aberration (Df) in A1a (molecular) NSC :
+F   ! A25f. Genes partially included in the Dp in A1a (molecular) NSC       :
+F   ! A25x. Molecular data (free text, usually for A25e, A25f) NSC :
+F   ! A20a. A1a polymorphism data reported?   *K :n
+F   ! A21. Information on availability        *v :
+F   ! A15. Internal notes                     *K :
+    !
+    ! GENOTYPE VARIANT PROFORMA                 Version 17: 5 December 2006
+    !
+P   ! AB1a.  Genotype variant symbol to use in database              *I :
+F   ! AB1b.  Genotype variant symbol used in paper                   *i :
+F   ! AB1e.  Action - rename this genotype variant symbol               :
+P   ! AB1f.  Action - merge genotype variants                           :
+P   ! AB1g.  Is AB1a the valid symbol of a genotype variant in FlyBase? :y
+P   ! AB2a.  Genotype variant name to use in database                *e :
+P   ! AB2b.  Genotype variant name used in paper                     *Q :
+P   ! AB2c.  Database genotype variant name(s) to replace            *Q :
+F   ! AB11a. Action - delete genotype variant   - TAKE CARE :
+P   ! AB11b. Action - dissociate AB1a from FBrf - TAKE CARE :
+F   ! AB10.  Nickname                                            *U :
+F   ! AB8.   Is AB1a used/usable as a balancer?                  *u :y
+F   ! AB3.   Culprit                *w :
+F   ! AB9.   Progenitor chromosome  *u :
+F   ! AB5a.  Transposon insertions  *P :
+F   ! AB5b.  Non-insert alleles     *S :
+F   ! AB6.   Comments               *u :
+F   ! AB7.   Internal notes         *K :
+    !
+    ! TE. NATURAL TRANSPOSON, GENERIC DATA (gen.natTE.pro) Version 3: 10 January 2007
+    !
+Not checked at all.
+    !
+    ! MS. MOLECULAR SEGMENT AND CONSTRUCT PROFORMA       Version 24: 11 January 2007
+    !
+Not checked at all.
+    !
+    ! MULTIPUBLICATION PROFORMA                   Version 3:  30th April 2007
+    !
+FC  ! MP1.   Reference unique ID                       *U :
+FC  ! MP2a.  Reference abbreviation                    *s :
+FC  ! MP2b.  Reference full name                       *u :
+F   ! MP3.   Is this a new multipub.master record? y/n?   :y
+FC  ! MP4.   Series/volume/part number within a series *v :
+FC  ! MP5a.  Series abbreviation                       *S :
+FC  ! MP5b.  Series full name                          *T :
+FC  ! MP6.   Date (range) of publication               *t :
+R   ! MP7.   Volume number                             *V :
+R   ! MP8.   Language                                  *L :English
+FC  ! MP9.   Publisher                                 *x :
+PC  ! MP10.  Place(s) of publication                   *P :
+R   ! MP11.  Editor(s) or author(s)                 *a-*r :
+R   ! MP12.  Number of pages                           *z :
+R   ! MP13.  Parent journal                            *w :
+R   ! MP14a. Parent journal series                     *Q :
+R   ! MP14b. Parent journal volume                     *y :
+R   ! MP14c. Parent journal issue                      *Y :
+F   ! MP15.  ISBN/ISSN                                 *I :
+F   ! MP16.  CODEN                                     *D :
+FC  ! MP17.  Reference type - P1 CV                   NSC :compendium
+R   ! MP18.  Multipub(s) to be merged into MP1.        *N :
+F   ! MP19.  Action - delete multipub  - TAKE CARE :
+    !
+    ! MA. TRANSPOSON INSERTION PROFORMA [ti.pro]      Version 22: 06 Dec 2006 
+    !
+Not checked at all.
+    !
+pcl23  2007-08-13
+
+================================================================================
+Bug list.
+
+10) rd5467: P23: Can't set the PC text of an existing publication,
+FBrf0108616.
+
+not trying to - need (legitimately) to add to previous curation, so _can_ have a pub.pro
+with this conjunction:
+
+! P22. Publication FBrf            *U :FBrf0108616
+! P1.  Type of publication  [CV] *T :personal communication to FlyBase
+! P23. Text of personal communication      *F :
+! P18. Associated text                     *G :
+
+rd120 070122
+
+
+May be a specification bug, but needs careful thought.  The check for
+P23 and P18 may need to be changed so that if data already exists in
+Chado and the publication type is a perscomm, the data in these two
+proforma fields may be absent (and no chXML will be generated from
+them).
+
+
+pcl23 070122
+
+note added by Gillian - as well as the specification being dodgy, the error message isn't
+helpful - it suggests (to me) that you have filled in the P23 field when you shouldn't
+have, whereas I think its complaining about the opposite situation.
+
+I looked at the specification and it seems to be correct, so I'm not sure why this error is cropping up.
+
+MANDATORIALLY HAS VALUE: y, if P1 = 'personal communication to
+FlyBase' and P22 is empty: otherwise must be empty.
+
+i.e. if its a new pc (P22 is not filled in and P1 = 'personal communication to FlyBase'),
+P23 must be filled in, if its not a new pc (i.e. P22 is filled in, and P1 = 'personal
+communication to FlyBase'), P23 must not be filled in.
+
+gm 2007.1.26
+
+
+Peeves bug --- wasn't checking for blank PC text.  Now fixed, with the
+useful side-effect that Peeves won't let you delete an existing PC text by using
+!c and an empty PC text.
+
+pcl23 070328
+
+================================================================================
+11) tweak to error message to make more user friendly.
+
+error message:
+
+gm14201: Found another GA1b.  An earlier one had
+' GA1b. Complete symbol for GA1a in paper              *i :'.
+This has
+' GA1b.  Allele symbol used in paper                       *i :'
+Continuing to parse, using this one.
+
+
+If it is trivial - could whatever is in the G1a. be added to this
+error report so that it is easy to find the proforma (not that easy
+when both the fields are empty as in the above case) - a bit like you
+did for the 'No data in either G1b or G2b for' error report.
+
+If it's not trivial, don't worry, hopefully this will be a rare error
+in the future (its only coming up now because of all the changing of
+the proforma fields I reckon).
+
+gm 23.1.2007
+
+================================================================================
+As Susan spotted, it is nice for *some* classes of publication to make the following pub
+fields compulsory for new references (i.e. no data in P22) - I *think* that the fields
+are: (apart from P1., P21. and P2. which we have to fill in anyway): P3., P4., one of the
+P11 fields - see the previous bug message, P10., P12.
+
+Here are the classes of publication (i.e. value in P1.) that should
+definitely NOT follow the above rules:
+
+personal communication to FlyBase
+FlyBase analysis
+computer file
+
+we think that it is probably easier to have a list of exceptions that shouldn't follow the
+rules, i.e. pc and FB analysis for starters and then just make everything else follow the
+rules.
+
+
+Done for P11.     pcl23 070411
+================================================================================
+27. IMPORTANT for MI4 - see note added 070510 + suggestion for error report tweak.
+
+Can the invalid gene symbol error in G18 be changed so that it includes the proforma line.
+
+I had this one:
+
+gm14237: G18: Invalid gene symbol '&ggr;-Tub23C' in '&ggr;-Tub23C'
+
+which was hard to find - as I had put '&ggr;-Tub23C' all over the
+place in the record (but couldn't do a global find and replace as some
+were needed in the G1b/GA1b fields).
+
+If the error said something like this instead it would be much easier to find:
+
+gm14237: G18: Invalid gene symbol '&ggr;-Tub23C' in '! G18.  Gene(s) stated to interact genetically with G1a    *p :&ggr;-Tub23C'
+
+gillian 070213
+
+
+note added by gillian, 070510: this check seems to be broken now - in
+gm13888 I have the following gene symbol (not valid) in G18, but am
+getting no error message at all - CG31369 - I have now fixed the
+curation record for MI4, but I still wasn't getting an error message -
+I think that this is important for MI4 as any invalid symbols will
+break Haiyan's loading software.
+
+I wonder if it is not coping because there is a whole list of genes
+and this isn't the first one - is it just checking the first gene in
+the list and then forgetting to check the rest.
+
+================================================================================
+28. peeves bug: P21 doesn't check for consistency with P2 (found by pam51)
+
+pcl23 070214
+
+================================================================================
+29. suggestion to tweak format of error report for GA28a, GA28b, GA29a, GA29b
+
+(added by gm070219)
+(curator votes appreciated as they may all disagree with me !!)
+Pete agrees!
+
+instead of having the incorrect line in '' - which requires careful
+mousing over to highlight and find, could we instead have it on a
+separate line i.e. instead of this:
+
+gm14301: GA28a: '+' is not a valid driver in '{ Pros&bgr;2[1]/+ }' from 'lethal | larval stage | dominant { Pros&bgr;2[1]/+ }, suppressible | partially { Pros25[SuDTS]/+ }'
+
+have this:
+
+gm14301: GA28a: '+' is not a valid driver in '{ Pros&bgr;2[1]/+ }' in the line:
+
+lethal | larval stage | dominant { Pros&bgr;2[1]/+ }, suppressible | partially { Pros25[SuDTS]/+ }
+
+(or something)
+
+
+Fixed.  pcl23 071114
+================================================================================
+30. not sure that Peeves is parsing the syntax of GA2[89][ab] correctly
+- its finding dodgy errors, which is good, but not really reporting
+what the problem is - may be impossible to improve due to complexity of
+the lines, but here are some examples:
+
+a. forgot the genetic interaction.
+
+gm14301: GA28a: Invalid genetic interaction qualifier 'lethal' in 'lethal | larval stage | dominant { Pros&bgr;2[1]/+ }'
+
+the actual line should be this:
+
+lethal | larval stage | dominant, UI { Pros&bgr;2[1]/+ }
+
+i.e. I forgot to put the UI in, but the error message suggests something else may be the problem.
+
+Is there any way around this (probably not !)
+
+
+pcl23 070219 --- not obviously!
+
+b. lost the last }
+
+gm14290: GA28b: Missing genetic interaction qualifier in 'ocellar triangle, UI { Gug[Eal15]/+'
+
+gm14290: GA28b: 'ocellar triangle' is not a valid allele in '{ ocellar triangle, UI { Gug[Eal15]/+ }' from 'ocellar triangle, UI { Gug[Eal15]/+'
+
+gm14290: GA28b: 'UI { Gug[Eal15]' is not a valid allele in '{ ocellar triangle, UI { Gug[Eal15]/+ }' from 'ocellar triangle, UI { Gug[Eal15]/+'
+
+these errors are due to a completely malformed line:
+
+ocellar triangle, UI { Gug[Eal15]/+
+
+it should be this:
+
+ocellar triangle, UI { Gug[Eal15]/+ }
+
+
+there should always be an even number of {} and the line should always
+end with }, so maybe there should be a simple check for this gross
+misformatting and if a line has this error, you don't do all the checks
+- since it makes the splitting of the line into garbage and reports
+errors that aren't true !
+
+
+pcl23 070219 --- One approach is to bung on a terminal } if there is
+an unmatched { and see what happens subsequently.  Peeves already
+employs this approach in several places.  I don't like abandoning and
+bailing out if there is a reasonable way to continue.
+
+================================================================================
+31. instead of where you put 'genetic interaction qualifier' in error
+messages, could you instead have 'genetic interaction type' - although
+technically 'suppressible', 'enhanceable' are called
+'genetic_interaction_qualifier' in the .obo file the curators don't
+think of them as qualifiers and the word 'qualifier' has a different
+meaning - so I at least got confused - again, we should see what the
+other curators think and go with the consensus.
+
+gillian 070219.
+
+pcl23 070219 --- makes no odds to me.  I just used the official terminology.
+
+
+pcl23 070328 --- changed, both in Peeves and the .obo.
+
+================================================================================
+32. 'partially'
+
+am getting lots of errors like this:
+
+gm14257: GA28b: Invalid qualifier 'partially' in 'ommatidium { Scer\GAL4[sev.PR] }, suppressible | partially { nito[dsRNA.Scer\UAS], Scer\GAL4[sev.PR] }'
+
+gm14257: GA28b: Invalid qualifier 'partially' in 'eye photoreceptor cell { Scer\GAL4[sev.PR] }, suppressible | partially { nito[dsRNA.Scer\UAS], Scer\GAL4[sev.PR] }'
+
+I think the problem is that in the .obo file it is this:
+
+[Term]
+id: FBcv:0000340
+name: partially
+namespace: intensity_qualifier
+comment: Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q.
+is_a: FBcv:0000811 ! qualitative qualifier
+
+
+but while it is not legal to write in GA28b.
+
+ommatidium | partially { Scer\GAL4[sev.PR] }, suppressible { nito[dsRNA.Scer\UAS], Scer\GAL4[sev.PR] }
+
+it ought to be legal to write this:
+
+ommatidium { Scer\GAL4[sev.PR] }, suppressible | partially { nito[dsRNA.Scer\UAS], Scer\GAL4[sev.PR] }
+
+so we'll have to think of a good spec for this as its not simply allowing 'partially' ANYWHERE in GA28b or GA29b
+
+gm070219.
+
+----
+This is still the case pm070328.
+
+The Partially qualifier - this is allowed for suppressible
+only. Peeves correctly flags enhanceable | partially, but also flags
+suppressible | partially. Is this intentional? From 'Re: additions to
+Peeves bug list' (sent 9th March) you said that this area of the CV
+was a little unstable. Has this been sorted out now? (as an example go
+to ~pam51/peeves_test and see GA28a and GA28b)
+
+pam51
+
+
+I thought this had been fixed.  Perhaps the recent crash reverted
+Peeves to an earlier version when you ran the test.  Please run the
+test again to see whether subsequent updating to the current version
+has fixed the problem.
+
+pcl23 070328
+
+================================================================================
+35. gm070220.
+
+this error could be nicer (i have 87 GA28b fields in the curation record so I couldn't actually find the error without knowing which allele its in !!)
+
+Processing gm14237
+
+gm14237: GA28b: 'visible' is not a valid body part
+
+gm14237: GA28b: 'visible' is not a valid body part
+
+gm14237: GA28b: 'visible' is not a valid body part
+
+gm14237: GA28b: 'visible' is not a valid body part
+
+
+something like:
+
+gm14237: GA28b: 'visible' is not a valid body part in '<allele symbol>'
+
+then at least you can go directly to the offending allele !!
+
+
+pcl23 070220 --- not as easy as it seems  8-(
+
+================================================================================
+40. correction to G2c. spec
+
+! G2c.  Database gene name(s) to replace                   *V :
+
+used to say as part of the check:
+
+CHECKS: If G2c contains at least one value, G1g must contain y.
+
+it now says:
+
+
+CHECKS: If G2c contains at least one value, G1g must contain y and G2a. must contain a single value
+
+my curation record gm14196 has the error where I filled in G2c. but
+forgot to fill in G2a. so might be useful for debugging,
+
+gillian 070227 (spotted by Haiyan) error still present 070517. figure
+this is important as Haiyan spotted it so it is presumably affecting
+her loading code somehow.
+
+
+071114 pcl23  --- Believe fixed some time ago, but not noted here  8-(
+
+Does the same requirement exist for the other *2c fields?
+
+
+================================================================================
+41. Invalid allele symbols
+
+Peeves isn't picking up when an allele symbol is used that doesn't
+correspond to an allele symbol in GA1a. It only picks up if an allele
+symbol isn't in cursyns (I've tried with Vps25[N55], which is a new
+allele I have made in another paper, and then with Vps25[3], which is
+found in cursyns but not in a proforma in my record)
+
+An example of this is in ~pam51/peeves_test/GA28aChecking/pm001 and the
+peeves output GA28aPeeves
+
+pm070328.
+
+
+Possible specification inadequacies.  The spec currently calls for
+this kind of check only for "(with )", not in either of the {} and
+Peeves implements it there.
+
+pcl23 070328
+
+================================================================================
+42. GAL4 drivers
+
+Two examples of forbidden lines are not being picked up:
+
+	a. when it is in the correct place but with no UAS, EP line
+	e.g. viable, suppressible { Vps25[2], Scer\GAL4[Act5C] }
+	
+	b. when it is in the wrong place, and with no UAS, EP line
+	e.g. viable { Scer\GAL4[Act5C] }, suppressible { Vps25[2], Scer\GAL4[Act5C] }
+
+Whereas when no other allele symbol is included, Peeves notices:
+
+pm001: GA28a: Can't find an allele in 'viable, suppressible { Scer\GAL4[Act5C], Scer\GAL4[Act5C] }' with the same species (Dmel) given in GA1a
+
+pm001: GA28a: Can't find an allele in 'viable, suppressible { Scer\GAL4[Act5C] }' with the same species (Dmel) given in GA1a
+
+I think we need to also flag the first two.
+
+pm070328.
+
+
+Not in the spec at all.
+
+pcl23 070328
+
+================================================================================
+43. Non-drivers in first { }
+
+pm002: GA28b: 'W[1]' is not a valid driver in '{ W[1] }' from 'chemosensory neuron { W[1] }, suppressible | partially { dpp[14] }'
+
+surely this should be allowed? I take it Peeves is flagging this, but
+that for loading this will be allowed? (we discussed Peeves flagging
+this in 'Re: another addition to the Peeves bug list')
+
+pm070328.
+
+
+We specifically agreed to flag this for the time being.  The code is
+already in Peeves not to flag it and it can be activated at short
+notice.
+
+pcl23 070328
+
+
+Activated   pcl23 070430
+
+================================================================================
+47.  Cross-checking of x1a and x1g retrieves only the first symbol
+     from Chado. It is possible for a single symbol to be valid in one
+     context and not another.  An example is Mctp.  The FBgn0053146
+     version is obsolete but FBgn0034389 is valid.
+
+pcl23 070417
+
+Believed fixed
+
+pcl23 070430
+
+================================================================================
+48.
+
+HI Paul,
+
+I have changed the spec in the various G/GA 1b. and 2b. fields of
+gene.checks.pro, allele.checks.pro, aberration.checks.pro,
+balacner.checks.pro so that they now say:
+
+CHECKS: No checks required if P1. is either 'DNA/RNA sequence record' or
+'protein
+sequence record' or 'FlyBase analysis'.  Otherwise G1b. must not be
+empty if G2b.  is empty.
+
+and
+
+CHECKS: No checks required if P1. is either 'DNA/RNA sequence record' or
+'protein
+sequence record' or 'FlyBase analysis'.  Otherwise G2b. must not be
+empty if G1b.  is empty.
+
+(etc.)
+
+i.e. I added 'FlyBase analysis' to the type of publications for which no
+check is required (before it just had the two types of sequence record -
+I just asked the other curators and they thought it was sensible to add
+'FlyBase analysis' to the list of exceptions) - hopefully this is an
+easy change to code as its just adding another pubtype as an exception !
+
+
+gm070417.
+
+
+Done.  Added same check to G20a also.   pcl23 070418
+================================================================================
+49.
+
+I've added this to the buglist. I appreciate that its hard to include
+info from the moseg.pro and ti.pro in the GA10 checks, but we do really
+need this part to be implemented for this check to work properly to make
+sure we don't end up with duplicate FBti for the same thing in chado, so
+if it is at all possible to get this implemented that would be fab - if
+it really isn't, then I think we should add dealing with GA10 errors as
+a topic at a curator meeting to make sure we interpret them properly so
+we don't do the wrong thing in our curation records in response to the
+error messages ! :)
+
+I am getting this error:
+
+Processing gm14302
+
+gm14302: GA10c claims that P{EP}jigr1[EP3354] is an existing FBti
+symbol, but Chado has never heard of it.
+
+this is an example where I have filled in a ti.pro with
+P{EP}jigr1[EP3354] in MA1a., so I am not supposed to write "NEW:" in
+GA10c. as I have included a ti.pro
+
+
+I think that the check could potentially be quite simple (in terms of
+logic !), like this:
+
+
+to get check of GA10c and GA10e to work
+
+- make a list "ti.list" of all symbols in MA1a. of ti.pro in record (do this always for each record just in case as you need to look at it)
+
+- if GA10c/GA10e is filled in:
+
+  - if it the value does not start with "NEW:"
+     -check it is in chado already
+         - if it is thats OK, move on
+
+         - if it isn't in chado already
+               - if it is in the "ti.list", then thats OK, move on
+               - if it isn't in the "ti.list", make peeves error XX below
+
+  - else, if the value does start with "NEW:"
+    - check it is in chado already, if it isn't, complain, otherwise move on
+
+
+
+1. peeves error XX as mentioned above
+
+the peeves error currently reads
+
+gm14302: GA10c claims that P{EP}jigr1[EP3354] is an existing FBti
+symbol, but Chado has never heard of it.
+
+
+could I suggest instead:
+
+'' symbol in GA10c is not in chado or a ti.pro in your record, did you
+forget to put 'NEW:' in front of the symbol ?
+
+or some such.
+
+
+For GA10a., do the same kind of logic, but instead compare it to a list
+of all symbol in MS1a. of moseg.pro in curation record.
+
+
+gm070427
+
+Believed fixed.  pcl23 070430
+================================================================================
+51. Spec for using G31b
+
+Where we fill G31b in, we should not be allowed to fill in any other part of the gene proforma except the symbol in G1a.
+
+At the moment, Peeves is asking me to fill in the G20 fields and G1b/G2b for Lim1 in rs1071.
+
+Ruth 070508 
+
+I second this - I have the same problem for sm157 and sm159.
+sm 070518.
+================================================================================
+53: gm070517
+
+peeves not coping with body part terms with , in them:
+
+! GA1a.  Allele symbol to use in database                  *A :nbs[1]
+! GA28b. Genetic interaction  [CV, anatomy, effect]     *S :chromosome, telomeric region, enhanceable { tefu[atm-6] }
+
+! GA1a.  Allele symbol to use in database                  *A :nbs[1]
+! GA28b. Genetic interaction  [CV, anatomy, effect]     *S :chromosome, telomeric region, enhanceable { tefu[atm-6] }
+
+I cannot see anything wrong with the line.
+
+Also, should check its coping for body part terms with () in them as that may interfere with the withs.
+
+================================================================================
+54: check for NEW: in GA10 fields does not tell you if you have done the
+same error (forgetting to put in NEW:) more than once, it would be nice
+if there was a count of the number of times you made the mistake - Paul
+is aware of this bug and hopes to get to it after milestone 4.
+
+gm070517.
+
+================================================================================
+55: checking for gene symbol validity in A7a/A7b/A7c/A7d/A7e/A7f and A25a/A25b/A25c/A25d/A25e/A25f fields
+
+record rd5601 threw Peeves errors like so
+
+"Processing rd5601
+
+ rd5601: G1g claims that Mpps is an existing gene symbol, but Chado has never heard of it.
+
+ rd5601: GA1g claims that Mpps[k16403] is an existing allele symbol, but Chado has never heard of it."
+
+BUT rd5601 also had
+! A7a. Genes removed or broken by the aberration (Df) in A1a (complementation)     *q :Mpps
+
+which was NOT reported as an error, and should have been
+
+rd070517.
+
+
+I can't reproduce this one and aberration.pl validate_A7() looks to do
+The Right Thing.  Someone please see whether its been fixed
+unknowingly.
+
+pcl23 071114
+================================================================================
+56. This is a low priority tweak for improved friendliness.
+
+For error messages such as st93: G1g: Missing data is would be great if you could report what was in G1a. I happen to have many gene proformae in this record which makes it harder to find. this would be analagous to the lovely error message where it is easy to find the affected proformae:
+
+st93: Found another G24a.  An earlier one had
+' G24a. GO -- Cellular component | evidence [CV]           *f :'
+and this one has
+' G24a. GO -- Cellular component | evidence [CV]           *f :UniProtKB:cellular_component ; GO:0005575 | ND'
+Continuing to validate, using this one.  If it helps,the previous G1a, GA1a or A1a contained 'Dpse\GA14218'
+
+st070517.
+================================================================================
+57. Suggestion for error report tweak.
+
+The curator has to fill in at least 2 gene symbols in G1f in order for records to be merged.  At the moment if the curator mistakenly only enters one symbol Peeves gives this error message:
+G1f: not enough gene symbols in 'bchs'
+where bchs is the only symbol filled in
+
+Something like this message would be more informative:
+'G1f: You have entered only the symbol 'bchs' here. G1f requires at least two symbols or no merge can occur.'
+
+Ruth 070517.
+================================================================================
+59. A little bug in Glg - not urgent.
+
+Peeves accepts any word starting with either n or y to be entered in G1g, providing they contain do not contain a further letter y or n.
+
+So Peeves allows the word 'yard' or 'never' but gives an error report for 'none' of the following variety: G1g: Wrong number of entries in hash list.  Found 2, expected 1. This is because it thinks the curator is trying to make a hashed proforma.
+
+Really only y or n should be allowed.
+
+Ruth 070517.
+
+This was a bug in a routine (tools.pl::check_y_or_n) which has been fixed.  Some
+fields are checked more than once and so sometimes more than one message will be
+produced for a single error.  G1g is a particular example in that it is
+cross-checked against several other fields.  Not much I can do about the
+multiple messages without putting in a great deal of effort re-writing, so I'd
+prefer to live with the situation for the moment.
+
+pcl23 070810
+
+================================================================================
+60. Suggestion for error report tweak.
+
+This is a general suggestion for missing or malformed lines.  In rs0006 which is
+a test file in peeves_test/done/Glg, I purposely removed the colon from one of
+the G1g lines.
+
+This is the error I got:
+'Required proforma field G1g missing.'
+
+It's quite difficult to work out what is going on from the message, especially
+as the G1g field is present but malformed.  If possible it would be helpful to
+indicate which proforma is affected.  Here is a suggested error message if this
+is possible:
+
+Required proforma field G1g missing or malformed.  If it helps, the previous G1a contains <gene symbol>.
+
+Ruth 070517.
+================================================================================
+61. SO terms.  Not urgent.
+
+I'm just wondering if there are any future plans to only allow a
+subset of SO terms to be filled in G30.  At the moment, Peeves seems
+to accept any valid term even if that term is PCR_product ;
+SO:0000006.
+
+Ruth 070517.
+================================================================================
+64. spec for G10a and G10b - not urgent.
+
+At the moment Peeves allows the following to be entered in these fields:
+91B-91C
+91B--C
+
+The correct format is 91B--91C.
+Can Peeves be made to check for the double dash and the inclusion of a number after the second dash?
+
+Ruth 070518.
+================================================================================
+65. Spec for G25 - suggestion, not urgent
+
+In my testing of G25, Peeves did not comment on my entering cDNA
+clones with the soft CV Maps to clone: or entering genomic clones with
+'Identified with'.  We may need to work out a more detailed spec that
+prevents curators from using the wrong CV.
+
+Ruth 070518.
+================================================================================
+66. G19a strictness - not urgent
+
+Peeves objects to the following line that I copied from FBgencur.txt as a test:
+Ant2+ = sesB+ Ant2+
+
+Peeves seems to think the = is supposed to be a gene symbol and gives this error message:
+G19a: '=' is missing '+', '-' or '?'
+= should be allowed in the context shown above.
+
+Ruth 070518.
+================================================================================
+67. G19a tweak/suggestion
+
+At the moment, Peeves checks that valid gene symbols are entered into G19a.  It
+would be good if it could check that one of the symbols entered in G19a matches
+the symbol in G1a, if this is possible.  This would prevent curators from
+pasting G19a lines into the wrong proforma.
+
+Ruth 070518.
+================================================================================
+68. Fusion genes -Tweak required.
+
+I realise this is a 'known problem', but I can't see it on the bug list.  Peeves
+is still having a hard time dealing with fusion genes involving foreign genes.
+That is, I get a 'invalid species error when I shouldn't.  For the record (and
+to give examples), these are my current false errors of this sort:
+
+sm163: G1a: Invalid species 'Abl::Hsap' in 'Abl::Hsap\ABL1::Hsap\BCR'
+sm153: G1a: Invalid species 'dos::Hsap' in 'dos::Hsap\GAB1'
+sm83: G1a: Invalid species 'N::Mmus' in 'N::Mmus\Notch1'
+================================================================================
+69. Genes of Dmel Natural TEs being flagged as non-Drosophilid genes - Tweak required.
+
+Again, this is a known problem but needs to be noted here for the record.
+Peeves (understandably) thinks that genes of the type Tirant\env (ie. the 'env'
+gene of the Dmel NatTE 'Tirant') are non-Drosophilid genes and so generates
+reports like these:
+
+sm68: G20a: must not have 'n' for non-drosophilid gene Tirant\env
+
+I have given Paul a list of Drosophilid and non-Drosophilid NatTEs that are in
+FB (see email 'RE: extra item for today's meeting agenda' sent 2nd May 2007)
+which will help Peeves identify these critters properly as Drosophilid genes.
+
+sm 070518.
+================================================================================
+70. Tweak to P4 and P11a error messages.
+
+
+sm138: P4: Not allowed to delete issue number.
+sm138: P11a: Not allowed to delete the page range.
+
+...but the publn.checks file seems to say I should be allowed to make
+these changes:
+
+! P4.  Issue number             *Y :
+MULTIPLE VALUES ALLOWED?: n
+PROPAGATIONS: none
+!c APPLICABLE: y if P22 filled in, n if P22 not filled in
+
+! P11a. Page range              *z :
+MULTIPLE VALUES ALLOWED?: n
+PROPAGATIONS: none
+!c APPLICABLE: y if P22 filled in, n if P22 not filled in
+
+I'm sure this check is a very good safety mechanism, so should probably
+stay.  The only thing I might suggest changing is the warning message
+itself.  That is, Peeves could say something like
+'Do you *really* want to delete the data in these fields' rather than
+'Not allowed to delete these fields' - that at least would cause me less
+distress and would be more accurate (because I AM allowed to delete
+these fields?)...
+
+sm070518.
+
+Fixed.
+
+pcl23 070810
+
+================================================================================
+73. G28b tweaks/suggestions
+
+Ideally, Peeves would check G28b in the following way:
+
+Symbols following 'Source for merge of:' should match the symbols entered in
+G1f.  Only symbols already in chado should be allowed.
+
+Symbols following 'Source for identity of:' should consist of one symbol already
+in chado and one symbol that is new to chado.  The symbol already in chado
+should match G1e and the symbol not in chado should match G1a.
+
+I'm not sure if the above are possible, sorry if they are not!
+
+Ruth 070521.
+
+
+The first portion is implemented.   pcl23 070522
+
+However, its not finding if we fill in G1f. and forget to fill in G28a. gm070827.
+
+I forgot to fill in G28b. in gm16551, even though I had filled in
+G1f. but got no error message telling me that. It would be nice if I
+had a message telling me that. gm070827.
+
+================================================================================
+74. G22 spec -  not urgent
+
+At the moment, Peeves allows the symbol in G22 to be the same as the symbol in
+G1a - see ~rs468/peeves_test/done/G22/rs0017 - 4EHP proforma This shouldn't be
+allowed: G22 should be unique from G1a.  Ideally, Peeves should be able to check
+that the gene symbol entered in G22 is from another drosophilid species to G1a
+but that may be difficult to implement.
+
+Ruth 070521.
+================================================================================
+75. G18 spec -  not urgent
+
+The gene symbol in entered in G18 should be the same species as that in G1a.  At
+the moment Peeves is allowing foreign genes to be entered in G22 - see
+~rs468/peeves_test/done/G18/rs0016 - CHIP proforma
+
+Also, Peeves does not complain if the symbol entered in G18 is the same as that
+in G1a.  G18 should be unique from G1a.
+
+Ruth 070521.
+================================================================================
+81. GA22. free text bug - not reporting invalid symbol in @@
+
+record number: gm16643
+
+free text:
+
+! GA22.  Interallelic complementation data (free text)          *Q :@tin@[-] embryos (@Df(3L)GC14@ homozygotes) expressing @tin[AB]@ can specify progenitors of all derivatives of the dorsal mesoderm (as assayed by marker gene expression).  At later stages, cardioblasts and all types of pericardial cells are present in these embryos, although the dorsal vessel appears discontinuous, the arrangement of cardioblasts and pericardial cells is irregular and lymph gland formation is impaired.
+
+
+problem: 'Df(3L)GC14' is not a valid symbol but I got no error message.
+
+perhaps it was because I had inadvertantly put in the GA21:
+
+! GA21.  Interallelic complementation data (structured) [SoftCV]*Q :Partially rescues: Df(3L)GC14
+
+which I *did* get an error message about.
+
+I have fixed the GA21. will see what happens about GA22. tomorrow.
+
+gm070822.
+
+================================================================================
+82. Empty symbol fields at the top of the proformae are generating different error messages:
+
+gm16585: G1a: Empty field
+! G1a.  Gene symbol to use in database                      *a :
+
+gm16585: GA1a: Missing data!
+
+it would be better if they were consistent - I prefer the G1a. one as
+it gives you the empty field so you can easily copy it and use that to
+find the empty proforma field in the record.
+
+gm070827.
+
+Looks to be identical to #56 above.  pcl23 071114
+================================================================================
+83. G1e. field. I put two gene symbols in G1e. by mistake (I had missed and had meant to put them in G1f.:
+
+! G1e.  Action - rename this gene symbol                       :CG11555
+anon-21Ca
+
+
+I got this error message:
+
+gm16553: G1e: CG11555
+anon-21Ca is not a valid gene symbol in Chado
+
+so its treating the following as a single symbol:
+
+'CG11555
+anon-21Ca'
+
+i.e. including the return.  However, as the spec says, this field
+should contain a single symbol so it should be tripping out on the
+presence of two symbols 'CG11555' and 'anon-21Ca'. I guess it doesn't
+matter as the error was found, but am worried that there may be other
+classes of error that might get through for this very important field.
+
+I have fixed the error in the above example since I did not want this
+error to go into loading.
+
+gm070827.
+
+Believed fixed (and for {GA,A,AB}1e too).  pcl23 071113
+================================================================================
+84.
+
+This error message is not very helpful, as I do not know which precise
+A1b. is wrong. It would be helpful if it printed out the wrong line:
+
+i.e. instead of:
+
+gm16550: A1b: Wrong number of entries in hash list.  Found 2, expected 3.
+
+
+it it had something like:
+
+gm16550: A1b: Wrong number of entries in hash list.  Found 2, expected 3.
+
+! A1b.  Aberration symbol used in paper                *i :Df(2R)nap1 # Df(2R)cn88b # 
+
+gm070827.
+================================================================================
+85. Peeves is not up to date with the latest proformae, as I am
+getting this error message for the G33. field in gmods.pro:
+
+gm16549: Invalid proforma field  G33.  Accession number (TAKE CARE - sequence curation only) :
+
+gm070827.
+
+
+Fixed.  (The field is recognized but otherwise ignored.  That comes later.)
+pcl23 071001
+
+================================================================================
+86. future enhancement for peeves to avoid duplication of curation effort !
+
+
+A. When we know how to reliably tell when an FBrf has been skimmed
+(i.e. we know how to code for a skim record number - it might end up
+being anythign with .skim) it would be excellent if peeves could be
+modified so that if there is a skim curation, the curators:
+
+- don't have to fill in any G20 fields (but is allowed to if they
+  want) (should already have been done in the skim)
+
+- don't have to fill in any synonym fields (but is allowed to if they
+  want) - i.e. G1b./G2b. and the similar fields for other proformae
+  (should already have been done in the skim)
+
+(I think we already have these checks turned off for FB analysis so
+hopefully this bit of code can be re-used)
+
+B. similarly, it would be marvellous if peeves could do similar to
+A. for a proforma with !c in it.
+
+i.e. within a *single* proforma, if peeves encounters a !c in any
+field in that proforma, then the curator doesn't have to (but is
+allowed to if they want) fill in any G20 fields or any synonym fields
+for that proforma (again, this data should already be in the db so its
+not sensible to have to fill it in again to avoid peeves errors which
+pile up and get confusing) - this is probably a lot harder to do, but
+figured it may as well go in as a wishlist type thing !!
+
+gm070927.
+
+================================================================================
+87. Failure to pick up empty P21 field. 
+
+I noticed this when fixing other Peeves errors for st408 - I had
+accidently omitted the unique journal ID 968 and Peeves had not
+whinged.
+
+
+Susan 071003
+
+Believed fixed.  Error message made more informative --- now suggests
+the value implied by the FBrf, if any.
+
+pcl23 071120
+================================================================
+88. Enhancement for checking GA28 and GA29 a and b fields.
+
+There was recently an error where a curator forgot to put some alleles
+in the {} corresponding to the interacting alleles:
+
+! GA28b. Genetic interaction  [CV, anatomy, effect]    *S :macrophage & 
+embryo, suppressible { Scer\GAL4[srp.Hemo] }
+macrophage & embryo, suppressible | partially { Scer\GAL4[srp.Hemo] }
+embryonic hemocyte, suppressible | partially { Scer\GAL4[srp.Hemo] }
+! GA29b. Xenogenetic interaction [CV, anatomy, effect] *j :macrophage & 
+embryo, suppressible { Scer\GAL4[srp.Hemo] }
+embryonic hemocyte, suppressible | partially { Scer\GAL4[srp.Hemo] }
+
+
+we could have an extra check that in the { } corresponding to the
+interacting alleles there should not just be GAL4 and GAL80
+alleles. There should be something other than a driver in the { }.
+
+I realise that the above spec is not detailed enough to explain
+exactly what I mean (!) but it will serve as a reminder to the
+curators - so that when it comes time to impleement this enhancement,
+we can write a proper specification for the extra check.
+
+gm071030.
+
+================================================================
+89. multipub.pro
+
+i got this:
+
+gm16882: MP3 claims 'Epigenetics.' given in MP2b is new but Chado already knows it as multipub_8248.
+
+becuase I wrote:
+
+! MP2a.  Reference abbreviation                    *s :Allis, Jenuwein, Reinberg, 2007
+! MP2b.  Reference full name                       *u :Epigenetics.
+! MP3.   Is this a new multipub.master record? y/n?   :y
+! MP4.   Series/volume/part number within a series *v :
+! MP5a.  Series abbreviation                       *S :
+! MP5b.  Series full name                          *T :
+! MP6.   Date (range) of publication               *t :2007
+! MP7.   Volume number                             *V :
+! MP8.   Language                                  *L :English
+! MP9.   Publisher                                 *x :Cold Spring Harbor Laboratory Press
+! MP10.  Place(s) of publication                   *P :Cold Spring Harbor, NY
+! MP11.  Editor(s) or author(s)                 *a-*r :C.D. Allis
+T. Jenuwein
+D. Reinberg
+! MP12.  Number of pages                           *z :512pp
+! MP13.  Parent journal                            *w :
+! MP14a. Parent journal series                     *Q :
+! MP14b. Parent journal volume                     *y :
+! MP14c. Parent journal issue                      *Y :
+! MP15.  ISBN/ISSN                                 *I :9780879697242
+
+
+
+it isn't multipub_8248:
+
+fb_2007_04_03=> select * from pub where uniquename = 'multipub_8248';
+ pub_id |    title     | volumetitle | volume | series_name | issue | pyear |   pages    |        miniref         | type_id | is_obsolete | publisher | pubplace |  uniquename   
+--------+--------------+-------------+--------+-------------+-------+-------+------------+------------------------+---------+-------------+-----------+----------+---------------
+ 164153 | Epigenetics. |             |        |             |       | 1998  | ix + 305pp | Chadwick, Cardew, 1998 |   57057 | f           |           |          | multipub_8248
+(1 row)
+
+
+they are different books with the same title.
+
+I'm not sure whether the check is doing the right thing or not as I am
+not very familiar with multipub.pro - MP2b. is "Full title of
+reference." so for books it might be that different ones will have the
+same title anyway. I'm not sure if I was supposed to do something
+different in my proforma ?
+
+Gillian 071107.
+
+I don't know what should be done either.  Perhaps leave Peeves
+somewhat as it is now, but change the wording so that it is explicitly
+a warning the multipub may not be new?  Then if the multipub is
+genuinely new but has the same title as an existing one, the warning
+could be explicitly ignored when the time comes for the record to be
+loaded.  That's what I just implemented anyway.
+
+pcl23 071114
+
+================================================================
+91. [Fill in bug title here]
+
+================================================================
+92. [Fill in bug title here]
+
+================================================================
+93. [Fill in bug title here]
+
+================================================================
+94. [Fill in bug title here]
+
+================================================================
+95. [Fill in bug title here]
+
+================================================================
+96. [Fill in bug title here]
+
+================================================================
+97. [Fill in bug title here]

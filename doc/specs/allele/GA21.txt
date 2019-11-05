@@ -1,0 +1,102 @@
+
+## ! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+
+### Multiple values allowed:
+
+Yes
+
+### !c Applicable:
+
+No
+
+### Inclusion essential:
+
+No
+
+### Mandatorially has value:
+
+No
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+SoftCV values that may be entered are
+
+Rescues: 
+Fails to rescue: 
+Partially rescues: 
+Complements: 
+Fails to complement: 
+Partially complements: 
+
+and each line must begin with one of the above phrases.
+
+These fields capture complementation/rescue relationships between alleles of the same
+gene.
+
+For these 3:
+
+Complements: 
+Fails to complement: 
+Partially complements: 
+
+the format is simply gene1[allele2]
+
+
+Where the allele identified in GA1a and gene1[allele2] position must be alleles of the same
+gene.
+
+For these 3:
+
+Rescues: 
+Fails to rescue: 
+Partially rescues: 
+
+
+For the Rescues/Fails to rescue/Partially rescues set of prefices, a
+'(with..)' statement may additionally be present.  The format for these is:
+
+(with gene1[allele4]) gene1[allele2]/gene1[allele3] { gene2[allele1] }
+
+"/gene1[allele3]" is optional.  "/gene1[allele3]" may actually be a
+deficiency or other aberration that disrupts gene1 rather than an allele.
+Further, gene1[allele3] can explicitly be a /+.  If "/gene1[allele3]" is
+an allele, it must be an allele of the same gene of which GA1a is an allele.
+
+"gene1[allele2]" may also actually be a deficiency/other aberration that disrupts gene1
+rather than an allele (whether it is present on its own or with gene1[allele3]), but if
+"/gene1[allele2]" is an allele, it must be an allele of the same gene of which GA1a is an
+allele.
+
+"gene1[allele2]" can also be either '+' or '-'
+
+" { gene2[allele1] }" is optional.  gene2[allele1] is a GAL4/GAL80/tetR driver.
+gene2[allele1] must be an allele of a gene other than that of which GA1a is an allele.
+There can actually be multiple GAL4/driver alleles in the {}, separated by ", ", when more
+than one driver is are used simultaneously.  "(with gene1[allele4]) " is optional,
+gene1[allele4] is usually another construct allele of gene1, like gene1[allele1] is.
+
+A further check for the Complements/Fails to complement/Partially
+complements is that the reciprocations are explicitly curated in the record.
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm131204 (doc for this field moved here from allele.checks.pro).
+gm151001 (added Dupl. for multiple field info).
+gm170123 added that gene1[allele2] can be + or - for rescues statements

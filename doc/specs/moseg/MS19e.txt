@@ -1,0 +1,54 @@
+
+## ! MS19e. Associated gene (symbol) :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+### Checks:
+
+Checcks within field:
+
+
+- any value must be a valid gene symbol in chado or record.
+
+Checks between fields:
+
+* MS19e must only be filled in for FBmc type constructs, so if MS19e is filled in:
+  * If MS16 is filled in it must contain 'engineered_construct' (otherwise an error is printed)
+  or
+  * If MS16 is not filled in, if MS1f is an FBtp or FBms id, an error is printed
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm170308.

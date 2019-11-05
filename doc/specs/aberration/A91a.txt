@@ -1,0 +1,57 @@
+
+## ! A91a. Deleted segment data for segment number (dupl for multiple) :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+Yes (Implemented): A91a -> A91b, A91c, A91d, A91e
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if A91a is filled in (this is to make it easier to implement checking of fields that can be duplicated).
+
+
+* sub 'check_positive_integer' checks that the field contains a positive integer.
+
+Checks between fields:
+
+* The same value must not be present in more than one A91a field in a single proforma (sub check_for_duplicated_field_values)
+
+ * A91a must be filled in if any of A91[b-e] are filled in (and vice versa) (sub compare_duplicated_field_pairs)
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+* This field should only be filled in for Dmel alleles ??
+
+
+### Updated:
+
+gm151001.

@@ -1,0 +1,59 @@
+
+## ! TO6d. Action - dissociate accession in TO6a/TO6b from tool in TO1a? (blank/y) :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+Yes (Implemented): TO6a -> TO6b, TO6c, TO6d
+
+
+### Checks:
+
+Checks within field:
+
+* if TO6d is filled in, 'check_single_allowed_value' subroutine checks that the only allowed value is 'y'
+
+Checks between fields:
+
+* If TO6d is filled in, TO6a must be filled in
+
+* If TO6d is filled in, TO6b must be filled in
+
+* Since TO6d is a 'correction of existing data' field, it must not be filled in for:
+  * a completely new experimental tool
+  * an experimental tool merge (suspect using TO6d for a merge is not allowed since a merge involves making a new FBid, but need to check this with Kathleen ??)
+
+### Related fields:
+
+
+
+### Comments:
+
+Curation manual says 'Single OK. Multiple untested.' for the 'Multiple values allowed' section, but have implemented it as a single line field as the only allowed value is 'y'
+
+
+### Status:
+
+If TO6d is filled in, no checks are done to make sure that the accession (specified in TO6a and TO6b) is actually associated with the experimental tool (specified by TO1a) in chado.
+
+### Updated:
+
+gm171114.

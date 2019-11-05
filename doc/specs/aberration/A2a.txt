@@ -1,0 +1,57 @@
+
+## ! A2a.  Action - aberration name to use in FlyBase          *e :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+### !c Applicable:
+
+No (Implemented)
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+
+### Mandatorially has value:
+
+Yes if either of A1e or A1f is not blank, otherwise no.
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+Checks within field
+
+  * checks done in validate_new_full_name
+
+    * sub 'check_allowed_characters' makes sure the symbol only contains characters from an allowed set (see %mapping_table at the top of check_allowed_characters in tools.pl for current list of allowed characters)
+
+    * check that any greek symbols are not malformed
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+doc: checked that doc reflects what has been implemented
+
+Not yet implemented:
+
+* there is no cross-check of A2a with A2c - need to add something that takes into account whether or not the allele is new (A1g) and whether or not rename/merge fields (A1e/A1f) are filled in. [gm131211]
+
+### Updated:
+
+gm151001.

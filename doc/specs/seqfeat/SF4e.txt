@@ -1,0 +1,57 @@
+
+## !   SF4e. Location of start in accession entry  :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+No (implemented) ??need to check with Kathleen whether !c implemented - implemented as No for now.
+
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+
+Yes (implemented) SF4d -> SF4e, SF4f
+
+### Checks:
+
+Checks within field:
+
+* sub 'check_positive_integer' checks that the field contains a positive integer.
+
+
+Checks between fields:
+
+ * sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if SF4e is filled in (this is to make it easier to implement checking of fields that can be duplicated).
+
+
+* If SF4e is filled in, SF4d must be filled in.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160113.

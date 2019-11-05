@@ -1,0 +1,60 @@
+
+## ! SP6. Official database for species :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+
+Checks within field:
+
+- the value must be a valid db.name in chado
+
+- sub check_changes_with_chado carries out the following checks against the SP6 (official database) data already in chado:
+
+   - if the data is being changed (i.e. !c)
+     - warns if there isn't already data in chado (prints a warning both when SP6 is filled in and when it is empty)
+     - warns if trying to change data to the value already in chado
+
+   - if data is being added in SP6 (ie. no !c) and there is already data in chado
+     - warns if the data in SP6 is not identical to what is already in chado (suggests that perhaps the curator was trying to change existing data)
+
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+### Status:
+
+
+
+### Updated:
+
+gm160111.

@@ -1,0 +1,47 @@
+
+## ! HH1c. OMIM phenotype symbol (internal comment) :
+
+### Multiple values allowed:
+
+No (Implemented) (check with Kathleen)
+
+### !c Applicable:
+
+Yes (Implemented) (check with Kathleen)
+
+### Inclusion essential:
+
+No (Implemented)
+
+### Mandatorially has value:
+
+No (Implemented)
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* sub 'no_stamps' checks that there are no stamps (so that the text still makes sense if any symbol changes in future)
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm151001.

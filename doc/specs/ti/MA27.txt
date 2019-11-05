@@ -1,0 +1,60 @@
+
+## ! MA27. Insertion category [CV]                :
+
+### Multiple values allowed:
+No (Implemented)
+
+
+### !c Applicable:
+No (Implemented) [NB, it turns out that although !c is implemented for MA27 in the proforma parsing code, !c has never actually been used in this field, and what is implemented will not actually change the feature.type of the insertion in chado (not sure what it will do), so !c of this field won't do what a curator might expect.  See PDEV-62 for details).  So have implemented Peeves to say !c is not allowed for this field. gm150427.]
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+Yes for new insertion, otherwise no.
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* validate_cvterm_field checks that the term is a valid CV term from of the correct type - allowed values are stored in symtab.pl with type 'insertion_category'
+
+
+
+Cross-checks between fields:
+
+ * MA27 must be filled in if MA1f contains 'new' (regardless of whether merge field is filled in).
+
+ * MA27 must be filled in for a new insertion (checked using check_filled_in_for_new_feature subroutine).
+
+ * the value in MA27 and the 'type' of insertion in MA1a must match - if the insertion symbol in MA1a is a TI-style insertion, MA27 can only contain 'TI_insertion', if the symbol in MA1a is a regular transposable element-based insertion, MA27 can only contain a valid CV term *other than* 'TI_insertion'.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+Note that this field is filled in by default in the proforma, so checks have to be implemented to cope with that.
+
+
+### Status:
+
+
+
+### Updated:
+
+gm151001.
+

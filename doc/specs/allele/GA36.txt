@@ -1,0 +1,47 @@
+
+## ! GA36. Allele/construct is associated with disease? (y or blank) :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field, 'check_single_allowed_value' checks:
+
+* any value corresponds to the single value ('y') allowed for this field
+
+### Related fields:
+
+
+
+### Comments:
+
+value ends up in chado in a featureprop with type_id 'disease_associated'
+
+### Status:
+
+
+
+### Updated:
+
+gm190627.

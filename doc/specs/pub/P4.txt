@@ -1,0 +1,120 @@
+## ! P4.   Issue number              *Y :
+  
+### Multiple values allowed:
+
+No.
+
+### !c Applicable:
+
+Yes if P22 contains a valid FBrf,  
+No otherwise.  
+  
+### Inclusion of field essential for proforma checks:
+
+No.
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Field mandatorially has value:
+
+Yes if P22 does not contain a value and P1 contains either  
+'paper' or  
+'review' or  
+see Comments below,
+  
+otherwise No.  
+  
+### Allowed values:  
+  
+123 [ i.e. Issue no. as given by journal (hard to check) ]
+
+### Checks:
+
+If !c is used:
+
+* P22 must contain a valid value and
+* the value given in P4 must be different from the value
+stored in Chado for the publication specified by the value given in
+P22.
+
+If !c is not used:
+
+* if P22 contains a valid FBrf, either:
+    * the value given in P4 must be identical to the value
+stored in Chado for the publication specified by the FBrf given in
+P22 or
+    * no value is stored in Chado for the publication specified by the
+FBrf given in P22;
+* if P22 is 'new':  
+    * P4 may a contain valid value.  
+* if P22 is 'unattributed':  
+    * P4 must remain blank.  
+
+### Error messages:  
+  
+If P22 is 'unattributed':  
+P4: Cannot contain data when P22 is 'unattributed'.  
+  
+If pling-c and P22 is 'new':  
+P4: : can't change the issue number of a new publication!  
+  
+If no volume and pling-c:  
+P4: Do you really want to delete the issue number?  
+  
+If volume goes over more than one line:  
+P4: Must not have newlines in issue number '<3  
+3>'.  
+  
+If volume value is extracted from chado for this FBrf:  
+P4:  Trying to change <chado-issue> to '<your-issue>' but it isn't yet in Chado.  
+P4:  Trying to change <chado-issue> to the value (<your-issue>) it already has in Chado.  
+P4:  Trying to set <issue> to '<your-issue>' but it is '<chado-issue>' in Chado.  
+  
+### Related fields:
+
+P3
+
+### Comments:
+
+Not every 'paper' and 'review' contain an issue number.  In such
+cases, Peeves will generate an incorrect report about the absence of
+required data. (An acceptable false Peeves error.)
+
+The value is essentially uncheckable other than for consistency with
+data held in Chado.
+
+List of publication types (P1) that may be associated with an issue:  
+	abstract  
+	autobiography  
+	bibliographic list  
+	biography  
+	book review  
+	conference report  
+	editorial  
+	erratum  
+	film  
+	interview  
+	letter  
+	meeting report  
+	news article  
+	note  
+	obituary  
+	paper  
+	patent  
+	poem  
+	poster  
+ 	retraction  
+	review  
+	spoof  
+	stock list  
+	supplementary material  
+	tactile diagram  
+	teaching note  
+
+### Updated:
+
+gm131204 (removed markdown formatting).
+gm151001 (added Dupl. for multiple field info).

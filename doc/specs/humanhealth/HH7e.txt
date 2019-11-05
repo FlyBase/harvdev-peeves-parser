@@ -1,0 +1,63 @@
+
+## ! HH7e. Human gene(s) implicated (HGNC accession number) :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+
+### !c Applicable:
+
+Yes (Implemented) (check with Kathleen)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+Yes (Implemented): HH7e -> HH7d, HH7c
+
+
+### Checks:
+
+
+Checks between fields:
+
+
+* If HH7d is filled in, HH7e must be filled in
+
+* If HH7c is filled in, HH7e must be filled in
+
+* Must NOT be filled in for 'parent entity'
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Not yet implemented:
+
+Checks within fields:
+
+* no format checking of data implemented yet
+
+NOTE: 'parent entity' cross-check only uses HH2a field at the moment, ideally, should look up value in chado if HH2a is empty
+
+
+### Updated:
+
+gm151001

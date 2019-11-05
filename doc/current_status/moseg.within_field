@@ -1,0 +1,60 @@
+! MOLECULAR SEGMENT AND CONSTRUCT PROFORMA           Version 29: 16 June 2014
+!
+! MS1f. Database ID for segment (FBid or "new") :PARTIAL
+! MS1a. Segment symbol to use in database       :PARTIAL
+! MS1b. Symbol used in paper                    :FULL
+! MS16. Segment category (type of entity) [CV]  :FULL
+!
+! MS4a. Description [CV]                        :FULL
+! MS21. Transposon class (generic)              :FULL
+! MS14. Uses [CV]                               :BASIC ONLY
+! MS22. Localized function [CV]      :NOT YET IMPLEMENTED
+!
+! MS1c. Action - replace this segment symbol :PARTIAL
+! MS1g. Action - merge these segments (FBid) :PARTIAL
+! MS1h. Action - delete segment record  ("y"/blank)    :FULL
+! MS1i. Action - dissociate MS1f from FBrf ("y"/blank) :FULL
+!
+! MS3b. Other synonym(s) for segment symbol  :FULL
+! MS3d. Silent synonym(s) for segment symbol :FULL
+!
+! MS19a. Progenitor construct (symbol) :FULL
+! MS19b. Progenitor(s) (other - free text) :FULL
+! MS19c. Isolate of (generic natTE) :(FULL checks are implemented but warning is issued if filled in, as field not implemented in proforma parser)
+! MS19d. Progenitor genomic or cDNA clone (symbol) :FULL
+! MS19e. Associated gene (symbol) :FULL
+! MS20.  Related constructs    :FULL
+!
+! MS18a. Cloning sites [CV]    :NOT YET IMPLEMENTED
+! MS4b.  Length in kb          :FULL
+!
+! MS4h.  Component allele(s)          :FULL
+! MS4g.  Component features [CV]      :NOT YET IMPLEMENTED
+! MS17.  Transcript (expression data) :NOT YET IMPLEMENTED
+!
+! MS1e.  Type of DNA_segment [CV]              :NOT YET IMPLEMENTED
+! MS4e.  Component segment source (species)    :NOT YET IMPLEMENTED
+! MS5a.  Original left end (in + orientation)  :BASIC ONLY
+! MS5b.  Original right end (in + orientation) :BASIC ONLY
+!
+! MS7a.  AC no. | gi no. | date | D or ND      :NOT YET IMPLEMENTED
+!   MS7b.  Location of MS5a in database entry  :NOT YET IMPLEMENTED
+!   MS7c.  Location of MS5b in database entry  :NOT YET IMPLEMENTED
+! MS7e.  Comparable segment, sequenced strain  :NOT YET IMPLEMENTED
+! MS12.  Sequence :NOT YET IMPLEMENTED
+!
+! MS9.  Segments in order | orientation :NOT YET IMPLEMENTED
+!
+! MS18b. Junction restriction sites | position :NOT YET IMPLEMENTED
+!
+! MS30. From dataset/collection (symbol) :FULL
+!   MS30a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :FULL
+! MS10b. General comments :FULL
+! MS11.  Internal notes   :FULL
+! MS14a. Tagged with experimental tool (FBto symbol)        :FULL
+! MS14b. Other experimental tools carried (FBto symbol)     :FULL
+! MS14c. Encoded experimental tool (FBto symbol)  :FULL
+! MS14d. Encoded experimental tool [CV]           :FULL
+! MS14e. Regulatory region(s) present (symbol)  :FULL
+! MS15. Moseg description [free text] :FULL
+! MS24. Marker allele(s) carried (symbol) :FULL
