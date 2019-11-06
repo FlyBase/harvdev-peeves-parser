@@ -31,9 +31,9 @@ sub init_chado ()		# Set up a connection to the current production instance of C
 # Then, having found out the current production instance, place its name into the config variable and open a
 # connection to that instance.
 
-    $Peeves_config{'Chado_instance'} = 'explore_chado';
+    #$Peeves_config{'Chado_instance'} = 'explore_chado';
 #    print "CURRENT CHADO is $current_chado\n";
-    our $chado = DBI->connect ("dbi:Pg:dbname=$Peeves_config{'Chado_instance'};" .
+    our $chado = DBI->connect ("dbi:Pg:dbname=$Peeves_config{'Chado_db'};" .
 			       "host=$Peeves_config{'Chado_host'};" .
 			       "port=$Peeves_config{'Chado_port'}",
 			       $Peeves_config{'Chado_user'},
