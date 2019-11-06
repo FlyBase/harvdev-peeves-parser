@@ -41,7 +41,11 @@ defined $Peeves_config{'Where_running'} or die "$0: Where_running not defined in
 
 my $IDL_TEST_RUN = 0;
 if (defined $Peeves_config{"IDL_TEST_RUN"}) {
-   $IDL_TEST_RUN = 1;
+    print "IDL_TEST_RUN is defined\n";
+    $IDL_TEST_RUN = 1;
+}
+else{
+	print "IDL_TEST_RUN NOT defined\n";
 }
 
 $Peeves_config{'Where_running'} eq 'Cambridge' or
@@ -1031,8 +1035,12 @@ init_symbol_table ($Peeves_version, $pcfg, $ccfg);
  CURATOR:
     foreach my $curator (keys %curators)
 {
-    my ($full_name, $dir) = (getpwnam ($curator))[6..7];
-    
+    my $full_name = 'tester';
+	my $dir = '/src';
+	if(not $IDL_TEST_RUN){
+        ($full_name, $dir) = (getpwnam ($curator))[6..7];
+	}
+
     unless (defined $dir)
     {
 	warn "Can't find curator username $curator!  Skipping ...\n";
@@ -1084,7 +1092,8 @@ init_symbol_table ($Peeves_version, $pcfg, $ccfg);
 	    set_symbol ($file, 'record_type', $f_type);
 		my $c_type = classify_curator ($Peeves_config{'Where_running'}, $file);
 	    set_symbol ($file, 'curator_type', $c_type);
-        print("ctype= $c_type, ftype= $f_type");
+        warn "ctype= $c_type, ftype= $f_type"
+		;
 	}
 	else
 	{	#if(!$file=~/qq/){
@@ -1094,11 +1103,13 @@ init_symbol_table ($Peeves_version, $pcfg, $ccfg);
 	}
 	}
 	else{
+        warn "Faked type and curator\n";
 		set_symbol ($file, 'record_type', 'EDIT');
 	    set_symbol ($file, 'curator_type', 'HARVARD');
 	}
 	unless (open (PRO_FILE, "$curators{$curator}[1]/$file"))
 	{
+		warn "Can't open file $file\n";
 	    push @cant_open, $file;
 	    next CURATION_RECORD;
 	}
