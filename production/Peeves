@@ -44,9 +44,6 @@ if (defined $Peeves_config{"IDL_TEST_RUN"}) {
     print "IDL_TEST_RUN is defined\n";
     $IDL_TEST_RUN = 1;
 }
-else{
-	print "IDL_TEST_RUN NOT defined\n";
-}
 
 $Peeves_config{'Where_running'} eq 'Cambridge' or
     $Peeves_config{'Where_running'} eq 'Harvard' or
@@ -1035,10 +1032,12 @@ init_symbol_table ($Peeves_version, $pcfg, $ccfg);
  CURATOR:
     foreach my $curator (keys %curators)
 {
-    my $full_name = 'tester';
-	my $dir = '/src';
-	if(not $IDL_TEST_RUN){
-        ($full_name, $dir) = (getpwnam ($curator))[6..7];
+    
+	
+    my ($full_name, $dir) = (getpwnam ($curator))[6..7];
+	if($IDL_TEST_RUN and not defined($dir)){
+        $full_name = 'tester';
+	    $dir = '/src';
 	}
 
     unless (defined $dir)
@@ -1086,7 +1085,6 @@ init_symbol_table ($Peeves_version, $pcfg, $ccfg);
 	     print "$file is a TEST record curator qq ($curators{$curator}[1]) so ignoring ??\n"; # so that gene.pl etc don't set $clean_record to 0 for ??
     }
 
-	if(not $IDL_TEST_RUN){
 	if (my $f_type = classify_file($Peeves_config{'Where_running'}, $curator, $curators{$curator}[0], $file))
 	{
 	    set_symbol ($file, 'record_type', $f_type);
@@ -1096,17 +1094,18 @@ init_symbol_table ($Peeves_version, $pcfg, $ccfg);
 		;
 	}
 	else
-	{	#if(!$file=~/qq/){
-	    push @ignored_files, $file;
-	    next CURATION_RECORD;
-	    #}
+	{
+		if(not $IDL_TEST_RUN){
+	        push @ignored_files, $file;
+	        next CURATION_RECORD;
+        }
+	    else{
+            warn "Faked type and curator\n";
+		    set_symbol ($file, 'record_type', 'EDIT');
+	        set_symbol ($file, 'curator_type', 'HARVARD');
+	    }
 	}
-	}
-	else{
-        warn "Faked type and curator\n";
-		set_symbol ($file, 'record_type', 'EDIT');
-	    set_symbol ($file, 'curator_type', 'HARVARD');
-	}
+	
 	unless (open (PRO_FILE, "$curators{$curator}[1]/$file"))
 	{
 		warn "Can't open file $file\n";
