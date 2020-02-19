@@ -631,6 +631,13 @@ compare_field_pairs ($file, $hash_entries, 'GA1f', \@GA1f_list, 'GA2c', \@GA2c_l
 
 compare_field_pairs ($file, $hash_entries, 'GA30c', \@GA30c_list, 'GA30d', \@GA30d_list, \%proforma_fields, 'single::(except in rare cases, which is usually some kind of sensor tool)', '');
 
+# check that if have filled in any of GA10 'synonym' fields, that the relevant 'valid symbol' field is filled in
+
+compare_field_pairs ($file, $hash_entries, 'GA10b', \@GA10b_list, 'GA10a', \@GA10a_list, \%proforma_fields, 'dependent', '');
+compare_field_pairs ($file, $hash_entries, 'GA10d', \@GA10d_list, 'GA10c', \@GA10c_list, \%proforma_fields, 'dependent', '');
+compare_field_pairs ($file, $hash_entries, 'GA10f', \@GA10f_list, 'GA10e', \@GA10e_list, \%proforma_fields, 'dependent', '');
+
+
 
 # if any of GA90[b-k] are filled in, GA90a must be filled in.
 compare_duplicated_field_pairs ($file, 'GA90b', \@GA90b_list, 'GA90a', \@GA90a_list, \%dup_proforma_fields, 'dependent', '');
@@ -874,6 +881,7 @@ sub is_a_driver ($)
 	    $_[0] =~ /^P1\\cre/ ||
 	    $_[0] =~ /^Hsim\\VP16/ ||
 	    $_[0] =~ /^Hsap\\RELA/ ||
+	    $_[0] =~ /^Spyo\\Cas9/ ||
 	    $_[0] =~ /^Dcr-2/
 # there were alleles that matched cases below . Will no longer have this kind of symbol once retrofit done
 # so commented out (will see if causes phen curators any problems as not sure that they ARE all drivers).

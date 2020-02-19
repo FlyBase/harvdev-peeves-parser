@@ -342,6 +342,11 @@ compare_field_pairs ($file, $hash_entries, 'GG1f', \@GG1f_list, 'GG2a', \@GG2a_l
 check_filled_in_for_new_feature ($file, 'GG4', $hash_entries, \@GG4_list, \@GG1g_list, \@GG1e_list, \@GG1f_list, \%proforma_fields, 'only');
 check_filled_in_for_new_feature ($file, 'GG2a', $hash_entries, \@GG2a_list, \@GG1g_list, \@GG1e_list, \@GG1f_list, \%proforma_fields, 'yes');
 
+# only run the test if the field contains a single line of data, to prevent confusing/repeated error messages
+if (exists $proforma_fields{'GG11'} && index ($proforma_fields{'GG11'}, "\n") == -1) {
+
+	check_filled_in_for_new_feature ($file, 'GG11', $hash_entries, \@GG11_list, \@GG1g_list, \@GG1e_list, \@GG1f_list, \%proforma_fields, 'yes');
+}
 # GG8 unit tests
 compare_duplicated_field_pairs ($file, 'GG8a', \@GG8a_list, 'GG8b', \@GG8b_list, \%dup_proforma_fields, 'pair::if either is filled in', '');
 compare_duplicated_field_pairs ($file, 'GG8a', \@GG8a_list, 'GG8c', \@GG8c_list, \%dup_proforma_fields, 'pair::if either is filled in', '');

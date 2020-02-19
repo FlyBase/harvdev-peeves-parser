@@ -529,7 +529,7 @@ FIELD:
 					if ($FBti_list[$i] eq 'new') {
 
 # MA4 must be filled in for a brand new insertion
-						unless ($MA1g_list[$i]) {
+						unless ($MA4_list[$i]) {
 	    					report ($file, "%s must be filled in for a new insertion:\n!%s", 'MA4', $proforma_fields{'MA1a'});
 						}
 
