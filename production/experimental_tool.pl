@@ -342,7 +342,7 @@ FIELD:
 
 # check that the gene is typically used as a tool
 					unless (defined $common_tool_uses && (scalar @{$common_tool_uses} > 0)) {
-						report ($file, "%s: '%s' does not have any 'common_tool_uses' in chado. Either this gene symbol should not be in this field, or you need to make a separate curation record (attributed under FBrf0199194) to add the relevant 'common use' to the gene (in G40), before you submit this curation record\n!%s!%s", 'TO7c', $TO7c_list[$i], $proforma_fields{'TO1a'}, $proforma_fields{'TO7c'});
+						report ($file, "%s: '%s' does not have any 'common_tool_uses' in chado. Either this gene symbol should not be in this field, or you need to make a separate curation record (attributed under FBrf0199194) to add the relevant 'common use' to the gene (in G40), before you submit this curation record\n!%s\n!%s", 'TO7c', $TO7c_list[$i], $proforma_fields{'TO1a'}, $proforma_fields{'TO7c'});
 					}
 				}
 

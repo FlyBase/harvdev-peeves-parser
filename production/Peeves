@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.6"; # Removing constraints on flags that HarvCur can use in P43 (to prevent false-positives for 'DO' curation records)
+our $Peeves_version = "2.9.0"; # making 'unexpected proforma type' messages more understandable (DC-878) and allowing multiple publications in same file if just use HH.pro
 
 =head2 Version
 
@@ -181,7 +181,7 @@ our %fsm = ('MULTIPUBLICATION'                => 'MULTIPUBLICATION',
 	    'GENEGROUP'              => $tmn,
 		'GENEPRODUCT ATTRIBUTES/EXPRESSION'=> $tmn,
 		'DATASET/COLLECTION'=> $tmn,
-		'HUMAN HEALTH MODEL' => $tmn,
+		'HUMAN HEALTH MODEL' => $tmn|PUBLICATION,
 		'INTERACTION' => $tmn,
 		'SPECIES' => 'SPECIES',
 		'DATABASE' => 'DATABASE',
@@ -1330,6 +1330,11 @@ init_symbol_table ($Peeves_version, $pcfg, $ccfg);
 
 	    if ($type =~ /$want_next/ and exists $despatch_table{$type})
 	    {
+			# reset every time you get to a PUBLICATION proforma, to prevent false-positives for records containing HH skim curation (multiple pubs with HH.pro in same record). Should probably clear out everything, but as only allowing multiple pubs for HH skim curation for now, this should be sufficient (and don't want to inadvertantly break checking for regular single pub records).
+	    	if ($type eq 'PUBLICATION') {
+	    		%x1a_symbols = ();
+	    		$g_FBrf = '';
+	    	}
 		&{$despatch_table{$type}}($file, "!\n$body");
 	    }
 	    elsif (exists $not_checked{$type})
@@ -1338,8 +1343,8 @@ init_symbol_table ($Peeves_version, $pcfg, $ccfg);
 	    }
 	    else
 	    {
-		report ($file, "Found proforma of unexpected type '%s' (and expected to see %s)",
-			$type, $want_next);
+		report ($file, "*CRITICAL ERROR* Found proforma of unexpected type '%s'. You may have missed out a 'parent' proforma (e.g. ALLELE needs to be under a GENE) or got proformae in the wrong order. This could have have VERY bad consequences when loading, please check and *DO NOT LOAD* this curation record until this message disappears.",
+			$type);
 	    }
 
 # A .bibl record may contain either an arbitrary number of multipub proformae or a single pub proforma.
