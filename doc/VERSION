@@ -857,3 +857,33 @@ our $Peeves_version = "2.4"; # Adding DO as an expected filename type for HarvCu
 our $Peeves_version = "2.5"; # Removing code for obsolete HH.pro fields (HDIS-26)
 # 3.11.2019
 our $Peeves_version = "2.6"; # Removing constraints on flags that HarvCur can use in P43 (to prevent false-positives for 'DO' curation records)
+# 12.11.2019
+our $Peeves_version = "2.7"; # Allowing Cas9 alleles as a driver in pheno/GI CV lines
+# 22.11.2019, 25.11.2019
+our $Peeves_version = "2.8"; # Adding new check for GG11 (DC-872)
+our $Peeves_version = "2.8.2"; # Adding new check for GG11 (DC-872)
+# 3.12.2019
+our $Peeves_version = "2.8.3"; # preventing annoying console warning when GG11 field absent from proforma (appeared after recent changes for GG11)
+# 16.1.2020
+our $Peeves_version = "2.8.4"; # new TAP statement assays (DC-874)
+# 3.2.2020
+our $Peeves_version = "2.8.5"; # adding check that if any of the GA10 'synonym' type fields are filled in, the corresponding 'valid symbol' type GA10 field is filled in
+our $Peeves_version = "2.8.6"; # adding missing return to error message
+# 4.2.2020
+our $Peeves_version = "2.8.7"; # fixing bug in MA4 checking
+# 18.2.2020
+our $Peeves_version = "2.9.0"; # making 'unexpected proforma type' messages more understandable (DC-878) and allowing multiple publications in same file if just use HH.pro
+# 20.2.2020
+our $Peeves_version = "2.9.1"; #  allowing multiple publications in same file if just use cell_line.pro
+our $Peeves_version = "2.10"; #  Update Peeves to accept "polyA_site" as a valid seq feature (DC-881)
+our $Peeves_version = "2.11"; #  SF4a check - allow for chr arm "mitochondrion_genome"  (DC-882)
+# 9.3.2020
+our $Peeves_version = "2.12"; #  Add two new terms to list of allowable SF2b values (DC-884)
+our $Peeves_version = "2.12.1"; #  Adding two more new terms to list of allowable SF2b values (DC-884)
+# 10.3.2020
+our $Peeves_version = "2.12.2"; #  relaxing constraints on {} checking for pheno_anat curation (preventing false-positives)
+# 26.3.2020
+our $Peeves_version = "2.13"; #  adding new curator ids
+# 16.4.2020
+our $Peeves_version = "2.14.1"; #  Adding warning for proformae that are only checked by new harvard python parser (see PDEV-146) ...
+our $Peeves_version = "2.14.2"; #  Adding python_parser_field_stub subroutine for fields that are only checked by new harvard python parser (see PDEV-146) ...
