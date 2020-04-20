@@ -1027,7 +1027,13 @@ init_symbol_table ($Peeves_version, $pcfg, $ccfg);
     foreach my $curator (keys %curators)
 {
     my ($full_name, $dir) = (getpwnam ($curator))[6..7];
-    
+   
+    if($IDL_TEST_RUN and not defined($dir)){		
+          $full_name = 'tester';		
+ 	  $dir = '/src';		
+     }
+
+ 
     unless (defined $dir)
     {
 	warn "Can't find curator username $curator!  Skipping ...\n";
@@ -1080,11 +1086,17 @@ init_symbol_table ($Peeves_version, $pcfg, $ccfg);
 	    set_symbol ($file, 'curator_type', $c_type);
 	}
 	else
-	{	#if(!$file=~/qq/){
-	    push @ignored_files, $file;
-	    next CURATION_RECORD;
-	    #}
-	}
+	{		 	
+            if(not $IDL_TEST_RUN){
+ 	        push @ignored_files, $file;
+ 	        next CURATION_RECORD;
+            }		
+ 	    else{		
+             warn "Faked type and curator\n";		
+ 		    set_symbol ($file, 'record_type', 'EDIT');		
+ 	        set_symbol ($file, 'curator_type', 'HARVARD');		
+ 	    }		
+ 	}
 	unless (open (PRO_FILE, "$curators{$curator}[1]/$file"))
 	{
 	    push @cant_open, $file;
