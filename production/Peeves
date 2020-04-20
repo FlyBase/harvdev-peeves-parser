@@ -39,6 +39,12 @@ $Peeves_config{'Chado_user'} or die "$0: No Chado config data in $pcfg\n";#repor
 
 defined $Peeves_config{'Where_running'} or die "$0: Where_running not defined in $pcfg\n";
 
+my $IDL_TEST_RUN = 0;		
+if (defined $Peeves_config{"IDL_TEST_RUN"}) {		
+    print "IDL_TEST_RUN is defined\n";		
+    $IDL_TEST_RUN = 1;		
+}
+
 $Peeves_config{'Where_running'} eq 'Cambridge' or
     $Peeves_config{'Where_running'} eq 'Harvard' or
     $Peeves_config{'Where_running'} eq 'IU' or
