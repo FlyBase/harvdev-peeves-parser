@@ -1003,6 +1003,8 @@ my $dv_short_qualifiers = {
 # in support scripts, except that only current curators are listed here.
 
     set_symbol ('al', 'cur_type', 'CAMCUR');
+    set_symbol ('am', 'cur_type', 'CAMCUR');
+    set_symbol ('ao', 'cur_type', 'CAMCUR');
     set_symbol ('cp', 'cur_type', 'CAMCUR');
     set_symbol ('gm', 'cur_type', 'CAMCUR');
     set_symbol ('sf', 'cur_type', 'CAMCUR');
@@ -7126,6 +7128,7 @@ my $dv_short_qualifiers = {
 
 # chromosome arms for Dmel (should maybe be replaced by query to chado to get current values if possible, especially when used as part of sequence location, although maybe only want a subset to be allowed in curation in which case having the subset here may be fine)
 
+# this is for the 'traditional' arms that can apply both to sequence location AND also arm location based on genetic mapping. A separate 'chromosome arm scaffold' lookup is used for arms just valid for sequence location
     set_symbol ('X', 'chromosome arm', 1);
     set_symbol ('Y', 'chromosome arm', 1);
     set_symbol ('2L', 'chromosome arm', 1);
@@ -7135,8 +7138,28 @@ my $dv_short_qualifiers = {
     set_symbol ('4', 'chromosome arm', 1);
 #    set_symbol ('', 'chromosome arm', 1);
 
+# this set is for the arms that are valid for sequence locations
 
-
+    set_symbol ('211000022278279', 'chromosome arm scaffold', 1);
+    set_symbol ('211000022278436', 'chromosome arm scaffold', 1);
+    set_symbol ('211000022278449', 'chromosome arm scaffold', 1);
+    set_symbol ('211000022278760', 'chromosome arm scaffold', 1);
+    set_symbol ('211000022279165', 'chromosome arm scaffold', 1);
+    set_symbol ('211000022279188', 'chromosome arm scaffold', 1);
+    set_symbol ('211000022279264', 'chromosome arm scaffold', 1);
+    set_symbol ('211000022279392', 'chromosome arm scaffold', 1);
+    set_symbol ('211000022279681', 'chromosome arm scaffold', 1);
+    set_symbol ('211000022280328', 'chromosome arm scaffold', 1);
+    set_symbol ('211000022280341', 'chromosome arm scaffold', 1);
+    set_symbol ('211000022280347', 'chromosome arm scaffold', 1);
+    set_symbol ('211000022280481', 'chromosome arm scaffold', 1);
+    set_symbol ('211000022280494', 'chromosome arm scaffold', 1);
+    set_symbol ('211000022280703', 'chromosome arm scaffold', 1);
+    set_symbol ('Unmapped_Scaffold_8_D1580_D1567', 'chromosome arm scaffold', 1);
+    set_symbol ('mitochondrion_genome', 'chromosome arm scaffold', 1);
+    set_symbol ('rDNA', 'chromosome arm scaffold', 1);
+    
+    
 # set allowed value for fields that only have a single allowed value
 # genome release number
 	set_symbol ('genome_release', 'current_value', '6');
@@ -7225,6 +7248,9 @@ my $dv_short_qualifiers = {
     set_symbol ('dt', 'assay', 'dissected tissue');
     set_symbol ('as', 'assay', 'antisense RNA probes');
     set_symbol ('ema', 'assay', 'expression microarray');
+    set_symbol ('rs', 'assay', 'RNA-seq');
+    set_symbol ('scrs', 'assay', 'single cell RNA-seq');
+    set_symbol ('vis', 'assay', 'virtual in situ hybridization');
 
 # Protein assays:
     set_symbol ('il', 'assay', 'immunolocalization');
@@ -7458,7 +7484,7 @@ my $dv_short_qualifiers = {
 
 # SO term if that turns out to be needed.
 
-	my @SF2b = ('enhancer', 'exon_junction', 'insulator', 'modified_RNA_base_feature', 'oligonucleotide', 'origin_of_replication', 'protein_binding_site', 'region', 'regulatory_region', 'RNAi_reagent', 'silencer', 'TF_binding_site', 'oligo', 'polypeptide_region');
+	my @SF2b = ('enhancer', 'exon_junction', 'insulator', 'modified_RNA_base_feature', 'oligonucleotide', 'origin_of_replication', 'protein_binding_site', 'region', 'regulatory_region', 'RNAi_reagent', 'silencer', 'TF_binding_site', 'oligo', 'polypeptide_region', 'polyA_site', 'repeat_region', 'satellite_DNA', 'transcription_start_site', 'experimental_result_region');
 
 	foreach my $term (@SF2b) {
 
