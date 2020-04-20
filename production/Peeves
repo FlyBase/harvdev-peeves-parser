@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.9.0"; # making 'unexpected proforma type' messages more understandable (DC-878) and allowing multiple publications in same file if just use HH.pro
+our $Peeves_version = "2.14.2"; #  Adding python_parser_field_stub subroutine for fields that are only checked by new harvard python parser (see PDEV-146) ...
 
 =head2 Version
 
@@ -39,10 +39,10 @@ $Peeves_config{'Chado_user'} or die "$0: No Chado config data in $pcfg\n";#repor
 
 defined $Peeves_config{'Where_running'} or die "$0: Where_running not defined in $pcfg\n";
 
-my $IDL_TEST_RUN = 0;
-if (defined $Peeves_config{"IDL_TEST_RUN"}) {
-    print "IDL_TEST_RUN is defined\n";
-    $IDL_TEST_RUN = 1;
+my $IDL_TEST_RUN = 0;		
+if (defined $Peeves_config{"IDL_TEST_RUN"}) {		
+    print "IDL_TEST_RUN is defined\n";		
+    $IDL_TEST_RUN = 1;		
 }
 
 $Peeves_config{'Where_running'} eq 'Cambridge' or
@@ -186,7 +186,7 @@ our %fsm = ('MULTIPUBLICATION'                => 'MULTIPUBLICATION',
 		'SPECIES' => 'SPECIES',
 		'DATABASE' => 'DATABASE',
 		'SEQUENCE FEATURE/MAPPED ENTITIES' => $tmn,
-		'CULTURED CELL LINE' => $tmn,
+		'CULTURED CELL LINE' => "$tmn|PUBLICATION",
 		'EXPERIMENTAL TOOL' => $tmn,
 	    );
 our $want_next;
@@ -908,12 +908,12 @@ my %despatch_table = ('MULTIPUBLICATION'                => \&do_multipub_proform
 		      'CULTURED CELL LINE'              => \&do_cellline_proforma,
 				'EXPERIMENTAL TOOL' => \&do_experimental_tool_proforma,
 		     );
-
+# hash for proforma that are not checked because the proforma is new and checking is being implemented in new Harvard python parser.
 my %not_checked = (
 
-# None as of V 1.1.0
+	'DISEASE IMPLICATED VARIANT' => '1',
 
-		   );
+);
 
 #  Data structures for the pre-instantiation/invalidation of symbols phase.
 
@@ -1032,14 +1032,14 @@ init_symbol_table ($Peeves_version, $pcfg, $ccfg);
  CURATOR:
     foreach my $curator (keys %curators)
 {
-    
-	
     my ($full_name, $dir) = (getpwnam ($curator))[6..7];
-	if($IDL_TEST_RUN and not defined($dir)){
-        $full_name = 'tester';
-	    $dir = '/src';
-	}
+   
+    if($IDL_TEST_RUN and not defined($dir)){		
+          $full_name = 'tester';		
+ 	  $dir = '/src';		
+     }
 
+ 
     unless (defined $dir)
     {
 	warn "Can't find curator username $curator!  Skipping ...\n";
@@ -1084,35 +1084,30 @@ init_symbol_table ($Peeves_version, $pcfg, $ccfg);
 		$qq=1;
 	     print "$file is a TEST record curator qq ($curators{$curator}[1]) so ignoring ??\n"; # so that gene.pl etc don't set $clean_record to 0 for ??
     }
-
+		
 	if (my $f_type = classify_file($Peeves_config{'Where_running'}, $curator, $curators{$curator}[0], $file))
 	{
 	    set_symbol ($file, 'record_type', $f_type);
 		my $c_type = classify_curator ($Peeves_config{'Where_running'}, $file);
 	    set_symbol ($file, 'curator_type', $c_type);
-        warn "ctype= $c_type, ftype= $f_type"
-		;
 	}
 	else
-	{
-		if(not $IDL_TEST_RUN){
-	        push @ignored_files, $file;
-	        next CURATION_RECORD;
-        }
-	    else{
-            warn "Faked type and curator\n";
-		    set_symbol ($file, 'record_type', 'EDIT');
-	        set_symbol ($file, 'curator_type', 'HARVARD');
-	    }
-	}
-	
+	{		 	
+            if(not $IDL_TEST_RUN){
+ 	        push @ignored_files, $file;
+ 	        next CURATION_RECORD;
+            }		
+ 	    else{		
+             warn "Faked type and curator\n";		
+ 		    set_symbol ($file, 'record_type', 'EDIT');		
+ 	        set_symbol ($file, 'curator_type', 'HARVARD');		
+ 	    }		
+ 	}
 	unless (open (PRO_FILE, "$curators{$curator}[1]/$file"))
 	{
-		warn "Can't open file $file\n";
 	    push @cant_open, $file;
 	    next CURATION_RECORD;
 	}
-	
 	$num_records++;
 	$clean_record = 1;					# Nothing wrong with the curation record --- yet!
 	our %x1a_symbols = ();					# For detecting duplicate proformae in a record
@@ -1313,6 +1308,7 @@ init_symbol_table ($Peeves_version, $pcfg, $ccfg);
 	    $proforma =~ s/(.*\n)*?(.*?PROFORMA.*)/$2/s;
 	    my ($header, $type, $vers, $body) = ($proforma =~ /(.*?)([A-Z][A-Z\s.,\/]*?[A-Z])(\s*PROFORMA.*?\n)(.*)/s);  # Edited regex to allow forward slashes in proforma names.  This allows proper parsing of Expression proformae - and could also be useful for Library proforamae in future.
 
+
 # Ignore the proforma version for the moment, but capture it in case we subsequently decide to use it, perhaps
 # to emit different error messages.  We used to check $header, as that's the portion which is most often
 # mangled by accident, but it produced too many false positives.  Review the situation later.
@@ -1330,7 +1326,7 @@ init_symbol_table ($Peeves_version, $pcfg, $ccfg);
 
 	    if ($type =~ /$want_next/ and exists $despatch_table{$type})
 	    {
-			# reset every time you get to a PUBLICATION proforma, to prevent false-positives for records containing HH skim curation (multiple pubs with HH.pro in same record). Should probably clear out everything, but as only allowing multiple pubs for HH skim curation for now, this should be sufficient (and don't want to inadvertantly break checking for regular single pub records).
+	    # reset every time you get to a PUBLICATION proforma, to prevent false-positives for records containing HH skim curation (multiple pubs with HH.pro in same record). Should probably clear out everything, but as only allowing multiple pubs for HH skim curation for now, this should be sufficient (and don't want to inadvertantly break checking for regular single pub records).
 	    	if ($type eq 'PUBLICATION') {
 	    		%x1a_symbols = ();
 	    		$g_FBrf = '';
@@ -1339,7 +1335,9 @@ init_symbol_table ($Peeves_version, $pcfg, $ccfg);
 	    }
 	    elsif (exists $not_checked{$type})
 	    {
-		&{$not_checked{$type}}($file, $type, "!\n$body");
+
+
+		report ($file, "Contains a %s PROFORMA. This proforma is not checked by Peeves, because it is parsed using the new Harvard python parser and checks have been implemented in that. So you should run this record through the new Harvard python parser before loading.", $type);
 	    }
 	    else
 	    {
