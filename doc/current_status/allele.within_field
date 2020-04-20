@@ -65,4 +65,7 @@
 ! GA90j. Comments concerning sequence location :FULL
 ! GA91. From dataset/collection (symbol) :FULL
 ! GA91a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :FULL
+! GA85.  Deliberate omission of FB DIV report associated with this allele (y/blank) :NA - python_parser_field_stub
+! GA81a. Disease-implicated change in this allele relative to human gene, primary (DIV1a) :NA - python_parser_field_stub
+! GA84b. Comment(s) concerning disease-implicated variant (allele specific) :NA - python_parser_field_stub
 ! GA14.  Internal notes  *W :FULL

@@ -578,6 +578,11 @@ FIELD:
 	    check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
 		@GA91a_list = process_field_data ($file, $hash_entries, $1, '0', $2, $3, \%proforma_fields, '1');
 	}
+	elsif ($field =~ /^(.*?)\s+(GA85|GA81a|GA84b)\..*? :(.*)/s)
+	{
+	    check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
+	    python_parser_field_stub ($file, $1, $2, $3, $proforma_fields{$2});
+	}
 	elsif ($field =~ /^(.*?) GA(.+?)\..*?:(.*)$/s)
 	{
 	    report ($file, "Invalid proforma field\n!%s", $field);
@@ -1215,7 +1220,12 @@ sub validate_GA56 ($$$)
 	    if ($driver)
 	    {
 		my $separator = valid_symbol ($phenotype, 'FBcv:modifier of variegation') ? ', |/' : ', ';
-		do_allele_list ($code, $driver, $separator, $phenotype, 0, $phenclass);
+		unless (is_a_driver($primary_symbol_list->[$i])) {
+			do_allele_list ($code, $driver, $separator, $phenotype, 0, $phenclass);
+		} else {
+			do_allele_list ($code, $driver, $separator, $phenotype, 1, $phenclass);
+		
+		}
 	    }
 	}
     }
@@ -1250,7 +1260,17 @@ sub validate_GA17 ($$$)
 	    }
 	    do_phen_bodytype ($code, $qualified_phenotype_list, $phenotype); #tells you you can't use ' & '
 
-	    $driver and do_allele_list ($code, $driver, ', ', '', 0, $phenotype);
+		if ($driver) {
+			unless (is_a_driver($primary_symbol_list->[$i])) {
+		
+				do_allele_list ($code, $driver, ', ', '', 0, $phenotype);
+			} else {
+			
+				do_allele_list ($code, $driver, ', ', '', 1, $phenotype);
+			
+			}
+		}
+
 	}
     }
 }

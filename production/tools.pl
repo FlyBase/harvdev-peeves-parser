@@ -228,12 +228,12 @@ sub trim_space_from_ends ($$$)
     defined $string or return '';	# Always return a valid string, even with undef input.
     if ($string =~ /^\s+/)
     {
-	#report ($file, "%s: superfluous leading whitespace in '%s'", $code, $string);
+	report ($file, "%s: superfluous leading whitespace in '%s'", $code, $string);
 	$string =~ s/^\s+//;
     }
     if ($string =~ /\s+$/)
     {
-	#report ($file, "%s: superfluous trailing whitespace in '%s'", $code, $string);
+	report ($file, "%s: superfluous trailing whitespace in '%s'", $code, $string);
 	$string =~ s/\s+$//;
     }
     return $string;
@@ -3320,7 +3320,7 @@ sub validate_sequence_location {
 	if (($arm, $min, $range, $max) = ($sequence_location =~ m/^([^:]{1,}):(\d{1,})(\.\.(\d{1,}))?$/)) {
 
 		# check chromosomal arm
-		unless (valid_symbol ($arm, 'chromosome arm')) {
+		unless (valid_symbol ($arm, 'chromosome arm') || valid_symbol ($arm, 'chromosome arm scaffold')) {
 
 			report ($file, "%s: Invalid chromosome arm '%s' in '%s'", $code, $arm, $sequence_location);
 
@@ -5449,6 +5449,33 @@ sub get_allele_type {
 
 
 	return $allele_type;
+}
+
+
+sub python_parser_field_stub {	
+# Subroutine for fields that are not checked by Peeves because they are only implemented
+# in the new Harvard python parser (and thus the checking is done in that).
+# Does very basic checks and also issues a warning if the field is filled in,
+# alerting curator that they need to run the record through the Harvard python parser for checking.
+
+# and to indicate that Peeves does not yet check the field in detail.
+	my ($file, $change, $code, $data, $context) = @_;
+	
+	changes ($file, $code, $change);
+
+# get rid of any lines that just contain returns, as probably mostly harmless	
+	$data = silent_trim_space($data);
+
+	if (defined $data && $data ne '') {
+
+# check for basic errors in character formatting		
+		check_non_utf8 ($file, $code, $data);
+		check_non_ascii ($file, $code, $data);
+#check for ??
+		double_query ($file, $code, $data);
+
+		report ($file, "%s: This field is not checked by Peeves, because it is parsed using the new Harvard python parser and checks have been implemented in that. So you should run this record through the new Harvard python parser before loading.\n! %s\n" , $code, $context);
+	}
 }
 
 1;					# Boilerplate
