@@ -228,12 +228,12 @@ sub trim_space_from_ends ($$$)
     defined $string or return '';	# Always return a valid string, even with undef input.
     if ($string =~ /^\s+/)
     {
-	report ($file, "%s: superfluous leading whitespace in '%s'", $code, $string);
+	# report ($file, "%s: superfluous leading whitespace in '%s'", $code, $string);
 	$string =~ s/^\s+//;
     }
     if ($string =~ /\s+$/)
     {
-	report ($file, "%s: superfluous trailing whitespace in '%s'", $code, $string);
+	# report ($file, "%s: superfluous trailing whitespace in '%s'", $code, $string);
 	$string =~ s/\s+$//;
     }
     return $string;
