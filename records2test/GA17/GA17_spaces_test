@@ -1,0 +1,71 @@
+
+Processing gm0007
+
+gm0007: P38: Not checking this field because of ?? in '??
+'
+
+gm0007: GA17: superfluous leading whitespace in ' leg'
+
+gm0007: GA17: superfluous trailing whitespace in 'wing '
+
+gm0007: GA17: superfluous leading whitespace in ' wing vein '
+
+gm0007: GA17: superfluous trailing whitespace in 'wing vein '
+
+gm0007: GA17: superfluous leading whitespace in ' eye | ectopic'
+
+gm0007: GA17: superfluous trailing whitespace in 'b1 motor neuron | maternal effect '
+
+gm0007: GA17: superfluous leading whitespace in ' direct flight muscle motor neuron | conditional ts '
+
+gm0007: GA17: superfluous trailing whitespace in 'direct flight muscle motor neuron | conditional ts '
+
+gm0007: GA17: superfluous trailing whitespace in 'adult head '
+
+gm0007: GA17: ' non-rescuable maternal effect' is not a valid qualifier in 'chaeta |  non-rescuable maternal effect | recessive'
+
+gm0007: GA17: 'recessive' is not a valid qualifier in 'chaeta |  non-rescuable maternal effect | recessive'
+
+gm0007: GA17: 'ectopic ' is not a valid qualifier in 'photoreceptor cell | ectopic  |  conditional cs'
+
+gm0007: GA17: ' conditional cs' is not a valid qualifier in 'photoreceptor cell | ectopic  |  conditional cs'
+
+gm0007: GA17: superfluous trailing whitespace in 'retina '
+
+gm0007: GA17: 'ommatidium{ Scer\GAL4[dpp.blk1] }' is not a valid body part.  Did you miss a space next to a {, a } or an & perhaps?
+
+gm0007: GA17: superfluous trailing whitespace in 'Scer\GAL4[dpp.blk1] '
+
+gm0007: GA17: superfluous leading whitespace in ' Scer\GAL4[dpp.blk1]'
+
+gm0007: GA17: 'synaptic vesicle {Scer\GAL4[yolk] }' is not a valid body part.  Did you miss a space next to a {, a } or an & perhaps?
+
+gm0007: GA17: 'intramembranous particle { Scer\GAL4[yolk]}' is not a valid body part.  Did you miss a space next to a {, a } or an & perhaps?
+
+gm0007: GA17: superfluous trailing whitespace in 'bw[2] '
+
+gm0007: GA17: You have a (with ) statement '(with bw[2] ) adult foregut precursor | maternal effect' without having the allele in it, 'bw[2]', in its own allele proforma
+
+gm0007: GA17: '( with bw[2]) embryonic proventriculus intermediate layer' is not a valid body part
+
+gm0007: GA17: superfluous leading whitespace in ' bw[2]'
+
+gm0007: GA17: You have a (with ) statement '(with  bw[2]) adult foregut precursor' without having the allele in it, 'bw[2]', in its own allele proforma
+
+gm0007: GA17: '(withbw[2] ) embryonic esophagus' is not a valid body part
+
+gm0007: GA17: '(with bw[2])proventriculus inner layer' is not a valid body part in '(with bw[2])proventriculus inner layer | supernumerary | maternal effect'
+
+gm0007: GA17: You have a (with ) statement '(with bw[2])  scolopale' without having the allele in it, 'bw[2]', in its own allele proforma
+
+gm0007: GA17: superfluous leading whitespace in ' scolopale'
+
+
+This file failed at least one check:	gm0007
+
+Ignoring these 10 files:
+
+GA17	GA17_spaces_test	gm0006%	gm0007%	oy	peeves.crib	peeves_test.cfg	peeves_test.cfg%	pub.crib	sent
+
+
+

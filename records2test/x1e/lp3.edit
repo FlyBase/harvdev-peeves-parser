@@ -1,0 +1,150 @@
+! PUBLICATION PROFORMA                   Version 41:  16 Mar 2010
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0189689
+! P2.   Parent multipub (abbreviation)      *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+! ABERRATION PROFORMA                    Version 58: 14 Feb 2013
+!
+! A1a.  Aberration symbol to use in FlyBase                 *a :In(2LR)CyO
+! A1b.  Aberration symbol(s) used in reference              *i :
+! A1e.  Action - rename this aberration symbol                 :
+! A1f.  Action - merge these aberrations (symbols)             :
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+! A2a.  Action - aberration name to use in FlyBase          *e :
+! A2b.  Aberration name(s) used in reference                *Q :
+! A2c.  Action - replace this aberration name                  :
+! A4.   Mutagen [CV]                                     *o :
+! A6.   Progenitor genotype                              *O :
+! A7a.  Complementation - genes completely deleted/disrupted by A1a *q :
+! A7c.  Complementation - genes NOT deleted/disrupted by A1a        *q :
+! A7e.  Complementation - genes partially deleted/disrupted by A1a  *q :
+! A7b.  Complementation - genes completely duplicated in A1a *q :
+! A7d.  Complementation - genes NOT duplicated in A1a        *q :
+! A7f.  Complementation - genes partially duplicated in A1a  *q :
+! A7x.  Complementation - comments [free text] *q :
+! A25a. Molecular data - genes completely deleted by A1a               :
+! A25c. Molecular data - genes NOT deleted/disrupted by A1a            :
+! A25e. Molecular data - genes partially deleted/disrupted by A1a      :
+! A25b. Molecular data - genes completely duplicated in A1a     :
+! A25d. Molecular data - genes NOT duplicated in A1a            :
+! A25f. Molecular data - genes partially duplicated in A1a      :
+! A25x. Molecular data - comments [free text]    :
+! A17.  Phenotype, not associated with specified alleles [free text] *p :
+! A19a. Phenotype, in combination with other abs [SoftCV]            *T :
+! A19b. Phenotype, in combination with other abs [free text]         *T :
+! A8a.  Breaks - cytological or progenitor break ranges  *B :
+! A9.   Class of aberration, relative to progenitor (SO_term ; ID) [CV] *C :
+! A26.  Class of aberration, relative to wild type (SO_term ; ID) [CV]  *C :
+! A18.  Comments about cytology               *c :
+! A24a. Transposon insertion(s)               *P :
+! A24b. Non-insertion allele(s)               *S :
+! A14.  Miscellaneous comments                *u :
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENOTYPE VARIANT DATA FOR THIS ABERRATION
+! Insert genotype variant proforma below.
+! GENOTYPE VARIANT PROFORMA                 Version 23: 13 Jan 2010
+!
+! AB1a.  Genotype variant symbol to use in FlyBase                 *I :CyO-y[+]
+! AB1b.  Genotype variant symbol(s) used in reference              *i :
+! AB1e.  Action - rename this genotype variant symbol                 :
+! AB1f.  Action - merge these genotype variants (symbols)             :
+! AB1g.  Is AB1a the current symbol of a genotype variant in FlyBase? :y
+! AB2a.  Action - genotype variant name to use in FlyBase          *e :
+! AB2b.  Genotype variant name(s) used in reference                *Q :
+! AB2c.  Action - replace this genotype variant name                  :
+! AB9.   Progenitor chromosome  *u :
+! AB5a.  Transposon insertions  *P :
+! AB5b.  Non-insertion alleles  *S :nAcR&agr;-30D[O]
+! AB6.   Miscellaneous comments *u :
+! AB7.   Internal notes         *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next genotype variant proforma below.
+! GENOTYPE VARIANT PROFORMA                 Version 23: 13 Jan 2010
+!
+! AB1a.  Genotype variant symbol to use in FlyBase                 *I :CyO-&Dgr;46G
+! AB1b.  Genotype variant symbol(s) used in reference              *i :
+! AB1e.  Action - rename this genotype variant symbol                 :
+! AB1f.  Action - merge these genotype variants (symbols)             :
+! AB1g.  Is AB1a the current symbol of a genotype variant in FlyBase? :y
+! AB2a.  Action - genotype variant name to use in FlyBase          *e :
+! AB2b.  Genotype variant name(s) used in reference                *Q :
+! AB2c.  Action - replace this genotype variant name                  :
+! AB9.   Progenitor chromosome  *u :
+! AB5a.  Transposon insertions  *P :
+! AB5b.  Non-insertion alleles  *S :nAcR&agr;-30D[O]
+! AB6.   Miscellaneous comments *u :
+! AB7.   Internal notes         *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next genotype variant proforma below.
+! GENOTYPE VARIANT PROFORMA                 Version 23: 13 Jan 2010
+!
+! AB1a.  Genotype variant symbol to use in FlyBase                 *I :CyO-&bgr;-actin
+! AB1b.  Genotype variant symbol(s) used in reference              *i :
+! AB1e.  Action - rename this genotype variant symbol                 :CyO&bgr;-actin
+! AB1f.  Action - merge these genotype variants (symbols)             :
+! AB1g.  Is AB1a the current symbol of a genotype variant in FlyBase? :n
+! AB2a.  Action - genotype variant name to use in FlyBase          *e :
+! AB2b.  Genotype variant name(s) used in reference                *Q :
+! AB2c.  Action - replace this genotype variant name                  :
+! AB9.   Progenitor chromosome  *u :
+! AB5a.  Transposon insertions  *P :
+! AB5b.  Non-insertion alleles  *S :nAcR&agr;-30D[O]
+! AB6.   Miscellaneous comments *u :
+! AB7.   Internal notes         *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next genotype variant proforma below.
+! GENOTYPE VARIANT PROFORMA                 Version 23: 13 Jan 2010
+!
+! AB1a.  Genotype variant symbol to use in FlyBase                 *I :CyO-&bgr;E3
+! AB1b.  Genotype variant symbol(s) used in reference              *i :
+! AB1e.  Action - rename this genotype variant symbol                 :CyO&bgr;E3
+! AB1f.  Action - merge these genotype variants (symbols)             :
+! AB1g.  Is AB1a the current symbol of a genotype variant in FlyBase? :n
+! AB2a.  Action - genotype variant name to use in FlyBase          *e :
+! AB2b.  Genotype variant name(s) used in reference                *Q :
+! AB2c.  Action - replace this genotype variant name                  :
+! AB9.   Progenitor chromosome  *u :
+! AB5a.  Transposon insertions  *P :
+! AB5b.  Non-insertion alleles  *S :nAcR&agr;-30D[O]
+! AB6.   Miscellaneous comments *u :
+! AB7.   Internal notes         *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next genotype variant proforma below.
+! GENOTYPE VARIANT PROFORMA                 Version 23: 13 Jan 2010
+!
+! AB1a.  Genotype variant symbol to use in FlyBase                 *I :CyO-vSb
+! AB1b.  Genotype variant symbol(s) used in reference              *i :
+! AB1e.  Action - rename this genotype variant symbol                 :In(2LR)O-vSa
+! AB1f.  Action - merge these genotype variants (symbols)             :
+! AB1g.  Is AB1a the current symbol of a genotype variant in FlyBase? :n
+! AB2a.  Action - genotype variant name to use in FlyBase          *e :CyO-variant b of Schnorrer
+! AB2b.  Genotype variant name(s) used in reference                *Q :
+! AB2c.  Action - replace this genotype variant name                  :
+! AB9.   Progenitor chromosome  *u :
+! AB5a.  Transposon insertions  *P :
+! AB5b.  Non-insertion alleles  *S :nAcR&agr;-30D[O]
+! AB6.   Miscellaneous comments *u :
+! AB7.   Internal notes         *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next genotype variant proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

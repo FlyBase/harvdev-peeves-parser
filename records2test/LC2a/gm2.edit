@@ -1,0 +1,75 @@
+! C1.  Curator ID  :gds
+! C2.  Date  :160510
+! C3.  Curator notes to self  :Test project record for Peeves checking.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+! P22.  FlyBase reference ID (FBrf) or new  *U :FBrf0217348
+! P2.   Parent multipub abbreviation               *w :Nat. Genet.
+! P19.  Internal notes                   *H :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! DATASET/COLLECTION PROFORMA   Version 4.4   09 Feb 2016
+!
+! LC1f. Database ID for dataset  :new
+! LC1a. Symbol                   :Fake_Furlong_BiTS_ChIP-Seq
+! LC1b. Symbol used in paper/source  :BiTS-ChIP
+! LC1d. Nickname [for labels]        :BiTS-ChIP-Seq
+! LC6g. Dataset title  :ChIP-Seq profiling of histone modifications in purified embryonic mesodermal cells.
+! LC6a. Description [free text]  :
+! LC2a. Type of dataset entity [CV]  :project ; FBcv:0003023
+! LC2b. Type of dataset data [CV]    :CAGE-Seq ; FBcv:0003051
+genome ; FBcv:0003031   
+cDNA library ; FBcv:0000001
+! LC14h. Reference FlyBase gene model annotation set [free text]  :
+! LC10. Internal notes      :??LC2a correctly filled in
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! DATASET/COLLECTION PROFORMA   Version 4.4   09 Feb 2016
+!
+! LC1f. Database ID for dataset  :FBlc0000023
+! LC1a. Symbol                   :blah
+! LC1b. Symbol used in paper/source  :blah
+! LC1d. Nickname [for labels]        :blah
+! LC3a. Action - rename this dataset symbol    :AF_cDNA
+! LC3b. Action - merge these datasets      :
+! LC6g. Dataset title  :here is some text
+! LC6a. Description [free text]  :
+! LC2a. Type of dataset entity [CV]  :
+! LC2b. Type of dataset data [CV]    :project ; FBcv:0003023
+! LC14h. Reference FlyBase gene model annotation set [free text]  :
+! LC10. Internal notes      :??biosample ; FBcv:0003024 should not be filled in
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! DATASET/COLLECTION PROFORMA   Version 4.4   09 Feb 2016
+!
+! LC1f. Database ID for dataset  :new
+! LC1a. Symbol                   :new_dataset
+! LC1b. Symbol used in paper/source  :
+! LC1d. Nickname [for labels]        :
+! LC6g. Dataset title  :ewfmogreogrjbfgbfk
+! LC3a. Action - rename this dataset symbol    :
+! LC3b. Action - merge these datasets      :merge
+of
+dataset
+! LC6a. Description [free text]  :
+! LC2a. Type of dataset entity [CV]  :
+! LC2b. Type of dataset data [CV]    :
+! LC14h. Reference FlyBase gene model annotation set [free text]  :
+! LC10. Internal notes      :??LC2a should be filled in
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! DATASET/COLLECTION PROFORMA   Version 4.4   09 Feb 2016
+!
+! LC1f. Database ID for dataset  :new
+! LC1a. Symbol                   :new_dataset2
+! LC1b. Symbol used in paper/source  :
+! LC1d. Nickname [for labels]        :
+! LC6g. Dataset title  :ewfmogreogrjbfgbfk
+! LC3a. Action - rename this dataset symbol    :
+! LC3b. Action - merge these datasets      :another
+merge
+! LC6a. Description [free text]  :
+! LC2a. Type of dataset entity [CV]  :reagent collection ; dhgf
+! LC2b. Type of dataset data [CV]    :
+! LC14h. Reference FlyBase gene model annotation set [free text]  :
+! LC10. Internal notes      :??no error for being filled in but id wrong
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!
+

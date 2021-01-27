@@ -1,0 +1,42 @@
+! PUBLICATION PROFORMA                   Version 40:  03 Mar 2010
+!
+! P22.  FlyBase reference ID (FBrf)      *U :FBrf0143253
+! P1.   Type of publication [CV]  *T :
+! P21.  Parent multipub (ID)                *W :8651
+! P40.  Flag Cambridge for curation           CAMCUR :merge
+split
+rename
+new_char
+new_gene
+new_al
+new_transg
+GOcur
+pheno
+orthologs
+! P41.  Flag Harvard for curation            HARVCUR :wt_exp
+pert_exp
+marker
+gene_model
+gene_model_nonmel
+phys_int
+cis_reg
+genom_feat
+cell_cult
+trans_assay
+RNAi
+! P19.  Internal notes                   *H :??Should get error for using 'GOcur' in P40 and 'cell_cult', 'trans_assay' and 'RNAi' in P41.  sm100309.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

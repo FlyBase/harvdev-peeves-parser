@@ -1,0 +1,88 @@
+! PUBLICATION PROFORMA                   Version 41:  16 Mar 2010
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0199194
+! P32.  Action - make this/these FBrf(s) secondary IDs of P22 *N :
+! P39.  Action - obsolete P22 in FlyBase               TAKE CARE :
+! P1.   Type of publication [CV]  *T :
+! P2.   Parent multipub (abbreviation)      *w :
+! P12.  Author(s)                   *a-*b :
+! P10.  Year or date (YYYY.M.D) if PC  *t :
+! P16.  Title                          *u :
+! P3.   Volume number                  *y :
+! P4.   Issue number                   *Y :
+! P11a. Page range or article number        *z :
+! P11d. DOI                                    :
+! P11b. URL                                 *R :
+! P11c. Sequence accession number              :
+! P13.  Language of publication [CV]                          *L :English
+! P14.  Additional language(s) of abstract [CV]               *A :
+! P26.  PubMed ID                *M :
+! P29.  ISBN, if P1 = book       *I :
+! P23.  Text of personal communication *F :
+! P18.  Miscellaneous comments                                  *G :
+! P38.  Associated file, archived at ftp site [SoftCV]       *K :
+! P30.  Also published as (FBrf)            *C :
+! P31.  Related publication (FBrf)          *E :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENE PROFORMA                          Version 66:  03 Mar 2010
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Hsap\MLF2
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :engineered_foreign_gene ; SO:0000281
+! G2a.  Action - gene name to use in FlyBase                *e :myeloid leukemia factor 2
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - replace this gene name                        :
+! G27.  Etymology                                           *u :
+! G31a. Action - obsolete G1a in FlyBase (y)       TAKE CARE :
+! G31b. Action - dissociate G1a from reference (y) TAKE CARE :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G5.   Genetic map position if by recombination mapping   *b :
+! G6.   Genetic map position - error, if reported          *b :
+! G7a.  Genetic map position - gene(s) mapped left of G1a  *b :
+! G7b.  Genetic map position - gene(s) mapped right of G1a *b :
+! G8.   Genetic map position - comments                    *B :
+! G10a. Cytological map position, if by chromosome in situ   *c :
+! G10b. Cytological map position, if details unspecified     *c :
+! G11.  Cytological map position - comments [SoftCV]         *D :
+! G22.  Orthologous gene in reference drosophilid species      *l :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G17t. Abs or insertions that cause recessive PEV for G1a   *n :
+! G17u. Abs or insertions that cause no PEV for G1a          *n :
+! G17v. Abs or insertions that cause dominant PEV for G1a    *n :
+! G26.  Foreign gene/Tag summary information             *u :Foreign sequence; species == Homo sapiens; gene == MLF2; HGNC:7126.
+! G32.  Newly assigned annotation ID (CG/CR number) TAKE CARE :
+! G33.  Sequence accession number - seq cur only                :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

@@ -1,0 +1,462 @@
+! C1. Curator ID:vfb
+! C2. Date:150803
+! C3. Curator notes to self:
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0217281
+! P2.   Parent multipub abbreviation               *w :Development
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Avic\GFP[E.lbe.K]RA
+! F3.  Sequence attribute [CV]	     :mRNA SO:0000234CG3769 
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351 
+!
+! F4. Names(s) used in paper [free text] :
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> de <t> embryonic stage 12--embryonic stage 16 <a> neuroblast NB5-6 of thorax <s>  <note> 
+!
+! F15. General expression comment [free text] :
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+! F91. From dataset/collection (symbol) :
+! F91a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Ecol\lacZ[lb.K]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+! F4. Names(s) used in paper [free text] :
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> de <t> embryonic stage 10--embryonic stage 15 <a> neuroblast NB5-6 of thorax <s>  <note> 
+!
+! F15. General expression comment [free text] :
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+! F91. From dataset/collection (symbol) :
+! F91a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :FBpp0110629
+! F1a. Gene product symbol           :kn-XP
+! F3.  Sequence attribute [CV]	     :protein SO:0000358   
+! F2.  Sequence attribute [CV]	     :
+!
+! F4. Names(s) used in paper [free text] :
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> il <t> embryonic stage 14--embryonic stage 16 <a> apterous-expressing neuron of the lateral cluster of the thorax | subset &&of embryonic mesothoracic segment <s>  <note> 
+<e> il <t> embryonic stage 14--embryonic stage 16 <a> apterous-expressing neuron of the lateral cluster of the thorax | subset &&of embryonic metathoracic segment <s>  <note> 
+!
+! F15. General expression comment [free text] :
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+! F91. From dataset/collection (symbol) :
+! F91a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :FBpp0110669
+! F1a. Gene product symbol           :eya-XP
+! F3.  Sequence attribute [CV]	     :protein SO:0000358 
+! F2.  Sequence attribute [CV]	     :
+!
+! F4. Names(s) used in paper [free text] :
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> il <t> embryonic stage 14--embryonic stage 17 <a> apterous-expressing neuron of the lateral cluster of the thorax <s>  <note> 
+!
+! F15. General expression comment [free text] :
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+! F91. From dataset/collection (symbol) :
+! F91a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :FBpp0110915
+! F1a. Gene product symbol           :FMRFa-XP
+! F3.  Sequence attribute [CV]	     :protein SO:0000358 
+! F2.  Sequence attribute [CV]	     :
+!
+! F4. Names(s) used in paper [free text] :
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> il <t> embryonic stage 17 <a> apterous-expressing neuron of the lateral cluster of the thorax Ap4 <s>  <note> 
+!
+! F15. General expression comment [free text] :
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+! F91. From dataset/collection (symbol) :
+! F91a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Avic\GFP[FMRFa.Tv]RA
+! F3.  Sequence attribute [CV]	     :mRNA SO:0000234CG3769 
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351 
+!
+! F4. Names(s) used in paper [free text] :
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> de <t> embryonic stage 17 <a> apterous-expressing neuron of the lateral cluster of the thorax Ap4 <s>  <note> 
+!
+! F15. General expression comment [free text] :
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+! F91. From dataset/collection (symbol) :
+! F91a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :FBpp0296994
+! F1a. Gene product symbol           :Nplp1-XP
+! F3.  Sequence attribute [CV]	     :protein SO:0000358 
+! F2.  Sequence attribute [CV]	     :
+!
+! F4. Names(s) used in paper [free text] :
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> il <t> embryonic stage 17 <a> apterous-expressing neuron of the lateral cluster of the thorax Ap1 <s>  <note> 
+!
+! F15. General expression comment [free text] :
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+! F91. From dataset/collection (symbol) :
+! F91a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :FBpp0090737
+! F1a. Gene product symbol           :cas-XP
+! F3.  Sequence attribute [CV]	     :protein SO:0000358 
+! F2.  Sequence attribute [CV]	     :
+!
+! F4. Names(s) used in paper [free text] :
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> il <t> embryonic stage 11--embryonic stage 13 <a> neuroblast NB5-6 of thorax | subset &&of embryonic mesothoracic segment <s>  <note> 
+<e> il <t> embryonic stage 11--embryonic stage 13 <a> neuroblast NB5-6 of thorax | subset &&of embryonic metathoracic segment <s>  <note> 
+!
+! F15. General expression comment [free text] :
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+! F91. From dataset/collection (symbol) :
+! F91a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :FBpp0110867
+! F1a. Gene product symbol           :grh-XP
+! F3.  Sequence attribute [CV]	     :protein SO:0000358 
+! F2.  Sequence attribute [CV]	     :
+!
+! F4. Names(s) used in paper [free text] :
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> il <t> embryonic stage 13 <a> neuroblast NB5-6 of thorax | subset &&of embryonic mesothoracic segment <s>  <note> 
+<e> il <t> embryonic stage 13 <a> neuroblast NB5-6 of thorax | subset &&of embryonic metathoracic segment <s>  <note> 
+!
+! F15. General expression comment [free text] :
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+! F91. From dataset/collection (symbol) :
+! F91a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :FBpp0090760
+! F1a. Gene product symbol           :dpn-XP
+! F3.  Sequence attribute [CV]	     :protein SO:0000358 
+! F2.  Sequence attribute [CV]	     :
+!
+! F4. Names(s) used in paper [free text] :
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> il <t> embryonic stage 11--embryonic stage 16 <a> neuroblast NB5-6 of thorax | subset &&of embryonic mesothoracic segment <s>  <note> 
+<e> il <t> embryonic stage 11--embryonic stage 16 <a> neuroblast NB5-6 of thorax | subset &&of embryonic metathoracic segment <s>  <note> 
+!
+! F15. General expression comment [free text] :
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+! F91. From dataset/collection (symbol) :
+! F91a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :FBpp0111194
+! F1a. Gene product symbol           :gsb-n-XP
+! F3.  Sequence attribute [CV]	     :protein SO:0000358 
+! F2.  Sequence attribute [CV]	     :
+!
+! F4. Names(s) used in paper [free text] :
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> il <t> embryonic stage 14 <a> neuroblast NB5-6 of thorax | subset &&of embryonic mesothoracic segment <s>  <note> 
+<e> il <t> embryonic stage 14 <a> neuroblast NB5-6 of thorax | subset &&of embryonic metathoracic segment <s>  <note> 
+!
+! F15. General expression comment [free text] :
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+! F91. From dataset/collection (symbol) :
+! F91a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Avic\GFP[E(spl)m8-HLH.H-Stinger]RA
+! F3.  Sequence attribute [CV]	     :mRNA SO:0000234CG3769 
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351 
+!
+! F4. Names(s) used in paper [free text] :
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> de <t> embryonic stage 10--embryonic stage 11 <a> neuroblast NB5-6 of thorax | faint & subset &&of embryonic mesothoracic segment <s>  <note> 
+<e> de <t> embryonic stage 10--embryonic stage 11 <a> neuroblast NB5-6 of thorax | faint & subset &&of embryonic metathoracic segment <s>  <note> 
+<e> de <t> embryonic stage 12--embryonic stage 15 <a> neuroblast NB5-6 of thorax | subset &&of embryonic mesothoracic segment <s>  <note> <s>  <note> 
+<e> de <t> embryonic stage 12--embryonic stage 15 <a> neuroblast NB5-6 of thorax | subset &&of embryonic metathoracic segment <s>  <note> <s>  <note> 
+!
+! F15. General expression comment [free text] :At embryonic stages 10 and 11 @Avic\GFP[E(spl)m8-HLH.H-Stinger]@ is very weakly expressed in neuroblasts NB5-6 of the embryonic meso-and metathorax. The expression increases towards stage 15.
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+! F91. From dataset/collection (symbol) :
+! F91a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :FBpp0090583
+! F1a. Gene product symbol           :N-XP
+! F3.  Sequence attribute [CV]	     :protein SO:0000358 
+! F2.  Sequence attribute [CV]	     :
+!
+! F4. Names(s) used in paper [free text] :
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> il <t> embryonic stage 12 <a> neuroblast NB5-6 of thorax ghfkhgfhdg | subset & faint & rubbish &&of embryonic mesothoracic segment <s>  <note> 
+<e> il <t> embryonic stage 13--embryonic stage 15 <a> neuroblast NB5-6 of thorax | subset &&of embryonic mesothoracic segment <s>  <note> 
+<e> il <t> embryonic stage 12 <a> neuroblast NB5-6 of thorax | subset & faint &&of embryonic metathoracic segment <s>  <note> 
+<e> il <t> embryonic stage 13--embryonic stage 15 <a> neuroblast NB5-6 of thorax | subset &&of embryonic metathoracic segment <s>  <note>
+!
+! F15. General expression comment [free text] :
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+! F91. From dataset/collection (symbol) :
+! F91a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :FBpp0307269
+! F1a. Gene product symbol           :Hey-XP
+! F3.  Sequence attribute [CV]	     :protein SO:0000358 
+! F2.  Sequence attribute [CV]	     :
+!
+! F4. Names(s) used in paper [free text] :
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> il <t> embryonic stage 13--embryonic stage 16 <a> somatic cell | subset &&of embryonic mesothoracic segment <s>  <note>
+<e> il <t> embryonic stage 13--embryonic stage 16 <a> somatic cell | subset &&of embryonic metathoracic segment <s>  <note>
+!
+! F15. General expression comment [free text] :In embryonic meso- and metathoracic segments @Hey@-protein is expressed in early postmitotic A-cells of the neuroblast NB5-6-lineage.
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+! F91. From dataset/collection (symbol) :
+! F91a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

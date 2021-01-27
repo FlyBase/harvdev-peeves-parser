@@ -1,0 +1,30 @@
+
+Processing gm0011
+
+gm0011: P38: Not checking this field because of ?? in '??
+'
+
+gm0011: GA14: Not checking this field because of ?? in 'This is checking that it is OK with the various flavours of driver. None of these lines should produce an error ??'
+
+gm0011: GA17: 'In(1)w[m4h]' is not a valid driver in '{ In(1)w[m4h] }' from 'head { In(1)w[m4h] }'
+
+gm0011: GA17: 'P{SUPor-P}KV0123' is not a valid driver in '{ P{SUPor-P}KV0123 }' from 'eye { P{SUPor-P}KV0123 }'
+
+gm0011: GA17: 'cnn[1]' is not a valid driver in '{ cnn[1] }' from 'leg { cnn[1] }'
+
+gm0011: GA17: superfluous leading whitespace in ' Scer\GAL4[2-097]'
+
+gm0011: GA17: 'Scer\GAL4[2-111]/Scer\GAL4[2-113]' is not a valid driver in '{ Scer\GAL4[2-111]/Scer\GAL4[2-113] }' from 'nucleus { Scer\GAL4[2-111]/Scer\GAL4[2-113] }'
+
+gm0011: GA17: 'Scer\GAL4[2-111]/+' is not a valid driver in '{ Scer\GAL4[2-111]/+ }' from 'sex comb | male { Scer\GAL4[2-111]/+ }'
+
+
+This file failed at least one check:	gm0011
+
+Ignoring these 13 files:
+
+GA17	GA17_curly_test	gm0006%	gm0007%	gm0008%	gm0009%	gm0010%	gm0011%	peeves.crib	peeves_test.cfg
+peeves_test.cfg%	pub.crib	sent
+
+
+

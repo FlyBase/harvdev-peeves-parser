@@ -1,0 +1,32 @@
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :new
+! P1.   Type of publication [CV]  *T :FlyBase analysis
+! P12.  Author(s)                           *a-*b :FlyBase curators
+! P10.  Year (YYYY), or date (YYYY.M.D) if PC  *t :2018-
+! P16.  Title                                  *u :Creation of generic gene records to represent families of identical or nearly identical genes in cases where the specific gene cannot be determined.
+! P13.  Language of publication [CV]                          *L :English
+! P18.  Miscellaneous comments                                  *G :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Hsp70
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :n
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :protein_coding_gene ; SO:0000010
+gene_group ; SO:0005855
+! G2a.  Action - gene name to use in FlyBase                *e :Heat-shock-protein-70
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :A generic gene record to represent the identical or nearly identical Hsp70 genes.
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!
+

@@ -1,0 +1,88 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 42:  01 Nov 2010
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0200758
+! P2.   Parent multipub (abbreviation)      *w :Dev. Biol.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P19.  Internal notes                   *H :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 50: 02 Mar 2010
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :sing[22]
+! GA1b.  Allele symbol(s) used in reference                     *i :sing[22]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA90a. Allele to which FA90b-k apply  [dupl for multiple] :sing[22]
+!   GA90k. Molecular nature (type) of  lesion:point_mutation
+!   GA90b. Genomic location of lesion               :X:16573484..16573484
+!   GA90c. Genome release number for entry in GA90b :5
+!   GA90i. Orientation relative to chromosome (+/-):+
+!   GA90d. NA change: "C to T"  (location in GA90b) :C16573484T
+!   GA90e. Reported NA change:
+!   GA90f. Reported PR change:A46V
+!   GA90g. Computed PR change (derived)   :A46V | sing-PA
+!   GA90h. Linked to restriction fragment :
+!   GA90j. Comments concerning sequence location:Site of nucleotide substitution in mutant inferred by FlyBase based on reported amino acid change.
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 50: 02 Mar 2010
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :sing[27]
+! GA1b.  Allele symbol(s) used in reference                     *i :sing[27]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA90a. Allele to which FA90b-k apply  [dupl for multiple] :sing[27]
+!   GA90k. Molecular nature (type) of  lesion:point_mutation
+!   GA90b. Genomic location of lesion               :X:16574043..16574043
+!   GA90c. Genome release number for entry in GA90b :5
+!   GA90i. Orientation relative to chromosome (+/-):+
+!   GA90d. NA change: "C to T"  (location in GA90b) :T16574043A
+!   GA90e. Reported NA change:
+!   GA90f. Reported PR change:L160@
+!   GA90g. Computed PR change (derived)   :L160@ | sing-PA
+!   GA90h. Linked to restriction fragment :
+!   GA90j. Comments concerning sequence location:Site of nucleotide substitution in mutant inferred by FlyBase based on reported amino acid change.
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 50: 02 Mar 2010
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :sing[23]
+! GA1b.  Allele symbol(s) used in reference                     *i :sing[23]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA90a. Allele to which FA90b-k apply  [dupl for multiple] :sing[23]
+!   GA90k. Molecular nature (type) of  lesion:point_mutation
+!   GA90b. Genomic location of lesion               :X:16573915..16573916
+!   GA90c. Genome release number for entry in GA90b :5
+!   GA90i. Orientation relative to chromosome (+/-):+
+!   GA90d. NA change: "C to T"  (location in GA90b) :
+!   GA90e. Reported NA change:
+!   GA90f. Reported PR change:W142@
+!   GA90g. Computed PR change (derived)   :W142@ | sing-PA
+!   GA90h. Linked to restriction fragment :
+!   GA90j. Comments concerning sequence location:G to A nucleotide change at the second or third position of the Trp codon leads to a nonsense mutation (exact site of mutation unspecified). Site of nucleotide substitution in mutant inferred by FlyBase base on reported amino acid change.
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 50: 02 Mar 2010
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :sing[+t2.524]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA90a. Allele to which FA90b-k apply  [dupl for multiple] :sing[+t2.524]
+!   GA90k. Molecular nature (type) of  lesion:rescue_fragment
+!   GA90b. Genomic location of lesion               :X:16572008..16574302
+!   GA90c. Genome release number for entry in GA90b :5
+!   GA90i. Orientation relative to chromosome (+/-):+
+!   GA90d. NA change: "C to T"  (location in GA90b) :
+!   GA90e. Reported NA change:
+!   GA90f. Reported PR change:
+!   GA90g. Computed PR change (derived)   :
+!   GA90h. Linked to restriction fragment :Restriction Fragment: NdeI - SfiI
+!   GA90j. Comments concerning sequence location:Reported as a 2.524 kb (restriction site) genomic fragment; The position of the restriction fragment on the reference sequence was inferred by a FlyBase curator.
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

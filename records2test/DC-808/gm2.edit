@@ -1,0 +1,161 @@
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0236089
+! P2.   Parent multipub abbreviation               *w :PLoS Genet.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :invalid symbols in sgml format
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENE PROFORMA                          Version 79:  3 Oct 2018
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :dpp
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 61: 4 Oct 2018
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :dpp[1]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA10a. Associated construct                                *I :
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 79:  3 Oct 2018
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Mp
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 61: 4 Oct 2018
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Mp[DeltaC12-25]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA10a. Associated construct                                *I :
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA14.  Internal notes  *W :??valid symbol is Mp[&Dgr;C12-25]
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 79:  3 Oct 2018
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :y
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 61: 4 Oct 2018
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :y[hb.718.Deltahb.&Dgr;hb.&Dgr;Kr+kni]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA10a. Associated construct                                *I :
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA14.  Internal notes  *W :valid symbol is y[hb.718.&Dgr;hb.&Dgr;hb.&Dgr;Kr+kni]
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! MOLECULAR SEGMENT AND CONSTRUCT PROFORMA           Version 31: 11 Apr 2018
+! MS1f. Database ID for segment (FBid or "new") :FBtp0089395
+! MS1a. Segment symbol to use in database       :P{UAS-2mit.RNAiinvalid}
+! MS1b. Symbol used in paper                    :
+! MS16. Segment category (type of entity) [CV]  :transgenic_transposable_element
+! MS4a. Description [CV]                        :transposon
+! MS21. Transposon class (generic)              :
+! MS14. Uses [CV]                               :
+! MS22. Localized function [CV]      :
+! MS1c. Action - replace this segment symbol :
+! MS1g. Action - merge these segments (FBid) :
+! MS24. Marker allele(s) carried (symbol) :
+! MS14a. Tagged with experimental tool (FBto symbol)        :
+! MS14b. Other experimental tools carried (FBto symbol)     :
+! MS14c. Encoded experimental tool (FBto symbol) :
+! MS14d. Encoded experimental tool [CV]          :
+! MS14e. Regulatory region(s) present (symbol) :
+! MS15. Moseg description [free text] :
+! MS19a. Progenitor construct (symbol) :
+! MS19b. Progenitor(s) (other - free text) :
+! MS10b. General comments :
+! MS11.  Internal notes   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! MOLECULAR SEGMENT AND CONSTRUCT PROFORMA           Version 31: 11 Apr 2018
+! MS1f. Database ID for segment (FBid or "new") :FBtp0093536
+! MS1a. Segment symbol to use in database       :PBac{hb-y.718.&Dgr;hb.DeltaKr+kni}
+! MS1b. Symbol used in paper                    :
+! MS16. Segment category (type of entity) [CV]  :transgenic_transposable_element
+! MS4a. Description [CV]                        :transposon
+! MS21. Transposon class (generic)              :
+! MS14. Uses [CV]                               :
+! MS22. Localized function [CV]      :
+! MS1c. Action - replace this segment symbol :
+! MS1g. Action - merge these segments (FBid) :
+! MS24. Marker allele(s) carried (symbol) :
+! MS14a. Tagged with experimental tool (FBto symbol)        :
+! MS14b. Other experimental tools carried (FBto symbol)     :
+! MS14c. Encoded experimental tool (FBto symbol) :
+! MS14d. Encoded experimental tool [CV]          :
+! MS14e. Regulatory region(s) present (symbol) :
+! MS15. Moseg description [free text] :
+! MS19a. Progenitor construct (symbol) :
+! MS19b. Progenitor(s) (other - free text) :
+! MS10b. General comments :
+! MS11.  Internal notes   :valid symbol is PBac{hb-y.718.&Dgr;hb.&Dgr;Kr+kni}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

@@ -1,0 +1,90 @@
+! PUBLICATION PROFORMA                   Version 45:  9 Apr 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0220990
+! P2.   Parent multipub abbreviation               *w :Genetics
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :noDOcur
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :??checking changed regex format (peeves v.1.5.48)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0152330
+! MA1a. Insertion symbol to use in database    :Mi{MIC}2mit[MI05471]
+! cMA1b. Symbol used in reference               :
+! cMA27. Insertion category [CV]                :synTE_insertion
+! cMA4.  Symbol of inserted transposon          :
+! cMA20. Species of host genome                 :
+!
+! cMA1c. Action - rename this insertion symbol    :
+! cMA1g. Action - merge these insertion(s) (FBti) :
+! cMA1h. Action - delete insertion record ("y"/blank)   :
+! cMA1i. Action - dissociate MA1f from FBrf ("y"/blank) :
+!
+! cMA1d. Other synonym(s) for insertion symbol  :
+! cMA1e. Silent synonym(s) for insertion symbol :
+! cMA22. Line id associated with insertion      :
+!
+! cMA5a. Chromosomal location of insert                     :
+! cMA5c. Cytological location of insert (in situ)           :
+! cMA5e. Cytological location (inferred from sequence)      :
+!   cMA5f. Genomic release number for data reported in MA5e :
+! cMA5d. Insertion maps to/near gene                        :
+!
+! cMA7.  Associated chromosomal aberration      :
+! cMA14. Associated balancer                    :
+! cMA12. Consequent allele(s)                   :
+!
+! cMA8.  Phenotype (viable, fertile)            :
+!
+! cMA21a. Genomic location of insertion                     :
+!   cMA21b. Genome release number for entry in MA21a        :
+! cMA21e. Comments concerning genomic location              :
+! cMA6.   Orientation of insert relative to chromosome      :
+!
+! cMA21c. Insertion into natTE (identified, in FB)             :
+! cMA21f. Insertion into other TE or repeat region ("y"/blank) :
+! cMA21d. Distance from insertion site to end of natTE/repeat  :
+!
+! dfMA19a. Accession for insertion flanking sequence (dupl for multiple) :
+!   cMA19b. Insertion site accession type (5', 3', b)                   :
+!   cMA19c. Position of first base of target sequence in accession      :
+!   cMA19d. First base of unique sequence in accession if in natTE      :
+!   cMA19e. Accession invalidation or assessment                        :
+! cMA26.  Accession for this instance of natTE                          :
+!
+! cMA23a. Insertion-affected gene reported (dupl for multiple) :
+!   cMA23b. Affected gene criteria [CV]                        :
+!   cMA23c. Comment, affected gene criteria [free text]        :
+!  c MA23g. Orientation relative to affected gene              :
+!
+! cMA15a. FBti progenitor (via transposition) at distinct location :
+! cMA15b. FBti progenitor (via recombination) at distinct location :
+! cMA15c. Replaced FBti progenitor, recombination substrate        :
+! cMA15d. Modified FBti progenitor (in situ)                       :
+!
+! cMA24. Arose in multiple insertion line ("y"/"p"/blank) :
+! c cMA18. Co-isolated insertion(s)                         :
+!
+! cMA16. Information on availability      :
+! cMA30. From dataset/collection (symbol) :
+!   cMA30a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+! cMA9.  Comments [free text]             :
+! cMA10. Internal notes                   :!c against edge of field code - should make errors
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

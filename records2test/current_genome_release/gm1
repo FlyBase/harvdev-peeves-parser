@@ -1,0 +1,51 @@
+! PUBLICATION PROFORMA                   Version 45:  9 Apr 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0220990
+! P2.   Parent multipub abbreviation               *w :Genetics
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :noDOcur
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0152330
+! MA1a. Insertion symbol to use in database    :Mi{MIC}2mit[MI05471]
+!df  hh MA1b. Symbol used in reference               :blah
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :
+! cMA20. Species of host genome                 :
+!
+!
+! MA5a. Chromosomal location of insert                     :
+! MA5c. Cytological location of insert (in situ)           :
+! MA5e. Cytological location (inferred from sequence)      :
+!   MA5f. Genomic release number for data reported in MA5e :5
+! MA5d. Insertion maps to/near gene                        :
+!
+!
+! MA21a. Genomic location of insertion                     :
+!   MA21b. Genome release number for entry in MA21a        :6
+! MA21e. Comments concerning genomic location              :
+! MA6.   Orientation of insert relative to chromosome      :
+!
+! MA16. Information on availability      :
+! MA9.  Comments [free text]             :
+! MA10. Internal notes                   :??multiple entries and MA5e not filled in
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

@@ -1,0 +1,253 @@
+! PUBLICATION PROFORMA                   Version 46:  20 Jun 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :new
+! P32.  Action - make this FBrf a secondary ID of P22 (FBrf)  *N :
+! P39.  Action - obsolete P22 in FlyBase (y)           TAKE CARE :
+! P1.   Type of publication [CV]  *T :personal communication from FlyBase
+! P2.   Parent multipub abbreviation               *w :
+! P12.  Author(s)                           *a-*b :authors	I.
+! P10.  Year (YYYY), or date (YYYY.M.D) if PC  *t :2014.11.25
+! P16.  Title                                  *u :
+! P3.   Volume number                          *y :
+! P4.   Issue number                           *Y :
+! P11a. Page range or article number               *z :
+! P11d. DOI                                           :
+! P11b. URL                                        *R :
+! P13.  Language of publication [CV]                          *L :English
+! P14.  Additional language(s) of abstract [CV]               *A :
+! P26.  PubMed ID                *M :
+! P23.  Text of personal communication *F :
+blah
+
+! P18.  Miscellaneous comments                                  *G :
+! P38.  Associated file(s), archived at ftp site [SoftCV]    *K :
+! P31.  Related publication(s) (FBrf)       *E :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+! ABERRATION PROFORMA                    Version 59: 05 Mar 2014
+!
+! A1h.  FlyBase aberration ID (FBab) *z :
+! A1a.  Aberration symbol to use in FlyBase                 *a :In(2LR)O
+! A1b.  Aberration symbol(s) used in reference              *i :
+! A1e.  Action - rename this aberration symbol                 :
+! A1f.  Action - merge these aberrations (symbols)             :
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+! A2a.  Action - aberration name to use in FlyBase          *e :
+! A2b.  Aberration name(s) used in reference                *Q :
+! A2c.  Action - replace this aberration name                  :
+! A27a. Action - obsolete A1a in FlyBase       TAKE CARE :
+! A27b. Action - dissociate A1a from reference TAKE CARE :y
+! A4.   Mutagen [CV]                                     *o :
+! A6.   Progenitor genotype                              *O :
+! A22a. Notes on origin [SoftCV]                         *R :
+! A22b. Notes on origin [free text]                      *R :
+! A23.  Parent chromosome, for segregants                   :
+! A7a.  Complementation - genes completely deleted/disrupted by A1a *q :
+! A7c.  Complementation - genes NOT deleted/disrupted by A1a        *q :
+! A7e.  Complementation - genes partially deleted/disrupted by A1a  *q :
+! A7b.  Complementation - genes completely duplicated in A1a *q :
+! A7d.  Complementation - genes NOT duplicated in A1a        *q :
+! A7f.  Complementation - genes partially duplicated in A1a  *q :
+! A7x.  Complementation - comments [free text] *q :
+! A25a. Molecular data - genes completely deleted by A1a               :
+! A25c. Molecular data - genes NOT deleted/disrupted by A1a            :
+! A25e. Molecular data - genes partially deleted/disrupted by A1a      :
+! A25b. Molecular data - genes completely duplicated in A1a     :
+! A25d. Molecular data - genes NOT duplicated in A1a            :
+! A25f. Molecular data - genes partially duplicated in A1a      :
+! A25x. Molecular data - comments [free text]    :
+! A17.  Phenotype, not associated with specified alleles [free text] *p :
+! A19a. Phenotype, in combination with other abs [SoftCV]            *T :
+! A19b. Phenotype, in combination with other abs [free text]         *T :
+! A8a.  Breaks - cytological or progenitor break ranges  *B :
+! A9.   Class of aberration, relative to progenitor (SO_term ; ID) [CV] *C :
+! A26.  Class of aberration, relative to wild type (SO_term ; ID) [CV]  *C :
+! A18.  Comments about cytology               *c :
+! A29.  New cytological order of the chromosomal aberration :
+! A24a. Transposon insertion(s)               *P :
+! A24b. Non-insertion allele(s)               *S :
+! A14.  Miscellaneous comments                *u :
+! A90a. Location data for breakpoint number (dupl for multiple) :
+! A90b.    Genomic location of breakpoint                       :
+! A90c.    Genome release number for entry in A90a              :
+! A90h.    Linked to restriction fragment                       :
+! A90j.    Comments concerning sequence location                :
+! A91a. Deleted segment data for segment number (dupl for multiple) :
+! A91b.    Cytological location of left end of segment              :
+! A91c.    Cytological location of right end of segment             :
+! A91d.    Estimated cytology                                       :y
+! A91e.    Observed cytology                                        :n
+! A92a. Duplicated segment data for segment number (dupl for multiple) :
+! A92b.    Cytological location of left end of segment                 :
+! A92c.    Cytological location of right end of segment                :
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+! A28.  Sequence accession number - seq cur only   :
+! A30. From dataset/collection (symbol) :
+! A30a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENOTYPE VARIANT DATA FOR THIS ABERRATION
+! Insert genotype variant proforma below.
+! GENOTYPE VARIANT PROFORMA                 Version 23: 13 Jan 2010
+!
+! AB1h. FlyBase genotype variant ID (FBba) :
+! AB1a.  Genotype variant symbol to use in FlyBase                 *I :CyO
+! AB1b.  Genotype variant symbol(s) used in reference              *i :CyO
+! AB1e.  Action - rename this genotype variant symbol                 :
+! AB1f.  Action - merge these genotype variants (symbols)             :
+! AB1g.  Is AB1a the current symbol of a genotype variant in FlyBase? :y
+! AB2a.  Action - genotype variant name to use in FlyBase          *e :
+! AB2b.  Genotype variant name(s) used in reference                *Q :
+! AB2c.  Action - replace this genotype variant name                  :
+! AB11a. Action - obsolete AB1a in FlyBase       TAKE CARE :
+! AB11b. Action - dissociate AB1a from reference TAKE CARE :y
+! AB10.  Nickname                                            *U :
+! AB8.   Is AB1a used/usable as a balancer? (y/n)            *u :y
+! AB3.   Culprit                *w :
+! AB9.   Progenitor chromosome  *u :
+! AB5a.  Transposon insertions  *P :
+! AB5b.  Non-insertion alleles  *S :
+! AB6.   Miscellaneous comments *u :
+! AB7.   Internal notes         *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next genotype variant proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! MOLECULAR SEGMENT AND CONSTRUCT PROFORMA           Version 29: 16 June 2014
+!
+! MS1f. Database ID for segment (FBid or "new") :new
+! MS1a. Segment symbol to use in database       :P{lacW}
+! MS1b. Symbol used in paper                    :
+! MS16. Segment category (type of entity) [CV]  :transgenic_transposable_element
+!
+! MS4a. Description [CV]                        :transposon
+! MS21. Transposon class (generic)              :
+! MS14. Uses [CV]                               :
+! MS22. Localized function [CV]      :
+!
+! MS1c. Action - replace this segment symbol :
+! MS1g. Action - merge these segments (FBid) :
+! MS1h. Action - delete segment record  ("y"/blank)    :
+! MS1i. Action - dissociate MS1f from FBrf ("y"/blank) :y
+!
+! MS3b. Other synonym(s) for segment symbol  :
+! MS3d. Silent synonym(s) for segment symbol :
+!
+! MS19a. Progenitor(s) (in FB) :
+! MS19b. Progenitor(s) (other) :
+! MS19c. Isolate of (generic natTE) :
+! MS20.  Related constructs    :
+!
+! MS18a. Cloning sites [CV]    :
+! MS4b.  Length in kb          :
+!
+! MS4h.  Component allele(s)          :
+! MS4g.  Component features [CV]      :
+! MS17.  Transcript (expression data) :
+!
+! MS1e.  Type of DNA_segment [CV]              :
+! MS4e.  Component segment source (species)    :
+! MS5a.  Original left end (in + orientation)  :
+! MS5b.  Original right end (in + orientation) :
+!
+! MS7a.  AC no. | gi no. | date | D or ND      :
+!   MS7b.  Location of MS5a in database entry  :
+!   MS7c.  Location of MS5b in database entry  :
+! MS7e.  Comparable segment, sequenced strain  :
+! MS12.  Sequence :
+!
+! MS9.  Segments in order | orientation :
+!
+! MS18b. Junction restriction sites | position :
+!
+! MS30. From dataset/collection (symbol) :
+!   MS30a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+! MS10b. General comments :
+! MS11.  Internal notes   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0013981 # FBti0041565 # FBti0100778
+! MA1a. Insertion symbol to use in database    :P{lacZ}3Cy(2)2[1] # PBac{RB}4E-T[e02096] # P{UASp-YFP.Rab3}4EHP[05b]
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :
+! MA20. Species of host genome                 :
+!
+! MA1c. Action - rename this insertion symbol    :
+! MA1g. Action - merge these insertion(s) (FBti) :
+! MA1h. Action - delete insertion record ("y"/blank)   :
+! MA1i. Action - dissociate MA1f from FBrf ("y"/blank) :y #  # n
+!
+! MA1d. Other synonym(s) for insertion symbol  :
+! MA1e. Silent synonym(s) for insertion symbol :
+! MA22. Line id associated with insertion      :
+!
+! MA5a. Chromosomal location of insert                     :
+! MA5c. Cytological location of insert (in situ)           :
+! MA5e. Cytological location (inferred from sequence)      :
+!   MA5f. Genomic release number for data reported in MA5e :
+! MA5d. Insertion maps to/near gene                        :
+!
+! MA7.  Associated chromosomal aberration      :
+! MA14. Associated balancer                    :
+! MA12. Consequent allele(s)                   :
+!
+! MA8.  Phenotype (viable, fertile)            :
+!
+! MA21a. Genomic location of insertion                     :
+!   MA21b. Genome release number for entry in MA21a        :
+! MA21e. Comments concerning genomic location              :
+! MA6.   Orientation of insert relative to chromosome      :
+!
+! MA21c. Insertion into natTE (identified, in FB)             :
+! MA21f. Insertion into other TE or repeat region ("y"/blank) :
+! MA21d. Distance from insertion site to end of natTE/repeat  :
+!
+! MA19a. Accession for insertion flanking sequence (dupl for multiple) :
+!   MA19b. Insertion site accession type (5', 3', b)                   :
+!   MA19c. Position of first base of target sequence in accession      :
+!   MA19d. First base of unique sequence in accession if in natTE      :
+!   MA19e. Accession invalidation or assessment                        :
+! MA26.  Accession for this instance of natTE                          :
+!
+! MA23a. Insertion-affected gene reported (dupl for multiple) :
+!   MA23b. Affected gene criteria [CV]                        :
+!   MA23c. Comment, affected gene criteria [free text]        :
+!   MA23g. Orientation relative to affected gene              :
+!
+! MA15a. FBti progenitor (via transposition) at distinct location :
+! MA15b. FBti progenitor (via recombination) at distinct location :
+! MA15c. Replaced FBti progenitor, recombination substrate        :
+! MA15d. Modified FBti progenitor (in situ)                       :
+!
+! MA24. Arose in multiple insertion line ("y"/"p"/blank) :
+! MA18. Co-isolated insertion(s)                         :
+!
+! MA16. Information on availability      :
+! MA30. From dataset/collection (symbol) :
+!   MA30a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+! MA9.  Comments [free text]             :
+! MA10. Internal notes                   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

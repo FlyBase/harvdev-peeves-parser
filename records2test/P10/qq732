@@ -1,0 +1,45 @@
+! PUBLICATION PROFORMA                   Version 38:  16 Sep 2009
+!
+! P22.  FlyBase reference ID (FBrf)      *U :
+! P32.  Action - make this/these FBrf(s) secondary IDs of P22 *N :
+! P39.  Action - obsolete P22 in FlyBase               TAKE CARE :
+! P1.   Type of publication [CV]  *T :paper
+! P21.  Parent multipub (ID)                *W :2728
+! P2.   Parent multipub (abbreviation)      *w :Neuron
+! P12.  Author(s)                   *a-*b :Frank	C.A.
+Kennedy	M.J.
+Goold	C.P.
+Marek	K.W.
+Davis	G.W.
+! P10.  Year or date (YYYY.M.D) if PC  *t :
+! P16.  Title                          *u :Mechanisms underlying the rapid induction and sustained expression of synaptic homeostasis.
+! P3.   Volume number                  *y :52
+! P4.   Issue number                   *Y :4
+! P11a. Page range or article number        *z :663--677
+! P11d. DOI                                    :
+! P11b. URL                                 *R :
+! P13.  Language of publication [CV]                          *L :English
+! P14.  Additional language(s) of abstract [CV]               *A :
+! P26.  PubMed ID                *M :17114050
+! P23.  Text of personal communication *F :
+! P18.  Associated comments                                  *G :
+! P38.  Associated file, archived at ftp site [SoftCV]       *K :
+! P31.  Related publication (FBrf)          *E :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

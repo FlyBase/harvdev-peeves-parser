@@ -1,0 +1,48 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0199194
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :This record has examples of basic format problems with the SP2: plingc-ability, multiple ness, whether filled in, allowed values
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! SPECIES PROFORMA     Version 3:  18 Dec 2015
+! SP1a. Genus to use in FlyBase (organism.genus)     :genus
+! SP1b. Species to use in FlyBase (organism.species) :species
+! SP1g. Is SP1a+SP1b already in FlyBase? (y/n) :n
+! SP2. Abbreviation to use in FlyBase (organism.abbreviation) : Dmel
+new 
+! SP3a. Common name (organism.common_name) :
+! SP3b. Action - change existing organism.common_name? (blank/y) :
+! SP4. Taxon ID :
+! SP5. Taxgroup [SoftCV] :
+! SP6. Official database for species :wrong - multiple
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! SPECIES PROFORMA     Version 3:  18 Dec 2015
+! SP1a. Genus to use in FlyBase (organism.genus)     :blah
+! SP1b. Species to use in FlyBase (organism.species) :fdshjf
+! SP1g. Is SP1a+SP1b already in FlyBase? (y/n) :n
+!c SP2. Abbreviation to use in FlyBase (organism.abbreviation) :Dmfds77*$
+! SP3a. Common name (organism.common_name) :
+! SP3b. Action - change existing organism.common_name? (blank/y) :
+! SP4. Taxon ID :
+! SP5. Taxgroup [SoftCV] :
+! SP6. Official database for species :funky characters, !c
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! SPECIES PROFORMA     Version 3:  18 Dec 2015
+! SP1a. Genus to use in FlyBase (organism.genus)     :blah
+! SP1b. Species to use in FlyBase (organism.species) :fdshjf
+! SP1g. Is SP1a+SP1b already in FlyBase? (y/n) :n
+!c SP2. Abbreviation to use in FlyBase (organism.abbreviation) : aspaceatbeginning and end 
+! SP3a. Common name (organism.common_name) :
+! SP3b. Action - change existing organism.common_name? (blank/y) :
+! SP4. Taxon ID :
+! SP5. Taxgroup [SoftCV] :
+! SP6. Official database for species :funky characters, !c
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

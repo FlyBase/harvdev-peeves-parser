@@ -1,0 +1,67 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0199194
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :testing get_species_prefix_from_symbol
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! NATURAL TRANSPOSON PROFORMA                        Version 8: 11 Dec 2014
+! TE1f. ID for gen.natTE (FBte or "new")       :new
+! TE1a. gen.natTE symbol to use in database    :\nothing before prefix
+! TE1b. gen.natTE symbol used in reference     :
+! TE13. Internal comments   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! NATURAL TRANSPOSON PROFORMA                        Version 8: 11 Dec 2014
+! TE1f. ID for gen.natTE (FBte or "new")       :new
+! TE1a. gen.natTE symbol to use in database    :0\zero before prefix
+! TE1b. gen.natTE symbol used in reference     :
+! TE13. Internal comments   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! NATURAL TRANSPOSON PROFORMA                        Version 8: 11 Dec 2014
+! TE1f. ID for gen.natTE (FBte or "new")       :new
+! TE1a. gen.natTE symbol to use in database    :T:Ivir\HA1
+! TE1b. gen.natTE symbol used in reference     :
+! TE13. Internal comments   :tag-like symbol??
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! NATURAL TRANSPOSON PROFORMA                        Version 8: 11 Dec 2014
+! TE1f. ID for gen.natTE (FBte or "new")       :new
+! TE1a. gen.natTE symbol to use in database    :T:wg
+! TE1b. gen.natTE symbol used in reference     :
+! TE13. Internal comments   :Dmel tag-like symbol??
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! NATURAL TRANSPOSON PROFORMA                        Version 8: 11 Dec 2014
+! TE1f. ID for gen.natTE (FBte or "new")       :new
+! TE1a. gen.natTE symbol to use in database    :Dbuz\In(2)jz[3]-4
+! TE1b. gen.natTE symbol used in reference     :
+! TE13. Internal comments   :??non-Dmel balancer like symbol
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! NATURAL TRANSPOSON PROFORMA                        Version 8: 11 Dec 2014
+! TE1f. ID for gen.natTE (FBte or "new")       :new
+! TE1a. gen.natTE symbol to use in database    :CyO-123
+! TE1b. gen.natTE symbol used in reference     :
+! TE13. Internal comments   :Dmel balancer like symbol??
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! NATURAL TRANSPOSON PROFORMA                        Version 8: 11 Dec 2014
+! TE1f. ID for gen.natTE (FBte or "new")       :new
+! TE1a. gen.natTE symbol to use in database    :CyO-Hsp70-PBac\T.w[+]
+! TE1b. gen.natTE symbol used in reference     :
+! TE13. Internal comments   :Dmel balancer like symbol with \ in bit after - ??
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

@@ -1,0 +1,33 @@
+
+Processing gm0002
+
+gm0002: P38: Not checking this field because of ?? in '??
+'
+
+gm0002: GA56: 'embryonic stage' is not a valid phenotypic class in 'embryonic stage | recessive | lethal'
+
+gm0002: GA56: 'lethal' is not a valid qualifier in 'embryonic stage | recessive | lethal'
+
+gm0002: GA56: 'pupal stage' is not a valid phenotypic class in 'pupal stage | recessive'
+
+gm0002: GA56: 'wing' is not a valid phenotypic class
+
+gm0002: GA56: 'eye' is not a valid qualifier in 'lethal | eye'
+
+gm0002: GA56: 'ectopic' is not a valid qualifier in 'lethal | ectopic'
+
+gm0002: GA56: 'supernumerary' is not a valid qualifier in 'visible | supernumerary'
+
+gm0002: GA56: 'suppressible' is not a valid qualifier in 'fertile | suppressible'
+
+gm0002: GA56: 'anterior' is not a valid qualifier in 'paralytic | anterior'
+
+
+This file failed at least one check:	gm0002
+
+Ignoring these 10 files:
+
+GA56_CV_terms_bugs	GA56_CV_terms_bugs%	GA56_CV_terms_test	gm0001%	gm0002%	gm070227%	peeves.crib	peeves_test.cfg	pub.crib	sent
+
+
+

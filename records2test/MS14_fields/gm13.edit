@@ -1,0 +1,48 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0090768
+! P2.   Parent multipub abbreviation               *w :Proc. Natl. Acad. Sci. U.S.A.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! MOLECULAR SEGMENT AND CONSTRUCT PROFORMA           Version 30: 08 March 2017
+! MS1f. Database ID for segment (FBid or "new") :FBtp0001317
+! MS1a. Segment symbol to use in database       :P{EP}
+! MS1b. Symbol used in paper                    :
+! MS16. Segment category (type of entity) [CV]  :transgenic_transposable_element
+! MS4a. Description [CV]                        :transposon
+! MS21. Transposon class (generic)              :
+! MS14. Uses [CV]                               :
+! MS14a. Tagged with experimental tool (FBto symbol)        :
+! MS14b. Other experimental tools carried (FBto symbol)     :
+! MS14c. Encoded experimental tool (FBto symbol)  :
+! MS14d. Encoded experimental tool [CV]           :
+! MS14e. Regulatory region(s) present (symbol)  :UAS
+! MS22. Localized function [CV]      :
+! MS1c. Action - replace this segment symbol :
+! MS1g. Action - merge these segments (FBid) :
+! MS19a. Progenitor construct (symbol) :
+! MS19b. Progenitor(s) (other - free text) :
+! MS10b. General comments :
+! MS15. Moseg description [free text] :
+! MS23. Marker allele(s) carried (symbol) :w[+mC]
+! MS11.  Internal notes   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

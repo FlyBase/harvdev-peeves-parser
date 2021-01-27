@@ -1,0 +1,29 @@
+! C1.  Curator ID	:pb
+! C2.  Date		:150720
+! C3.  Curator notes to self	:
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0208976
+! P2.   Parent multipub abbreviation               *w :Genetics
+! P19.  Internal notes                   *H :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA             Version 2.6  15 Nov 2011
+!
+! IN1f. Database ID for interaction  :FBrf0208976-1.EMSA.A
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :n
+! IN2a. Interaction description (protein-protein/RNA-protein)     :protein-protein
+! IN2b. Interaction type (Termlink MI CV) :physical association
+! IN3.  Interaction assay (Termlink MI CV)    :electrophoretic mobility shift assay
+autoradiography
+! IN5d. Conditional dependencies :Interaction observed in the presence of DNA probe containing Act57B Mef2 binding site.
+! IN5e. Comments concerning source   :Interaction in vitro; protein produced as a recombinant fusion protein in bacterial system; 
+! IN6.  List of interactors (FB symbol or ids), role (Termlink MI CV), qualifier ( <symbol>  <ID_as_reported>  <role>  <qual/note> ):
+<symbol> Mef2-XP <ID_as_reported> Mef2 <role> neutral component <qual/note> 
+<symbol> Mef2-XP <ID_as_reported> Mef2 <role> neutral component <qual/note> 
+! IN7b. Comments concerning experimental data:
+! IN8a. Public comments   :The interaction detailed in this paper is between two isoforms of @Mef2@ that contain point mutations (@Mef2@ 30-5 and @Mef2@ 44-5) that affect the gene regulation activity of the protein homo-dimer.  To determine if a physical interaction between @Mef2@ 30-5 and @Mef2@ 44-5 is possible, Lovato et al. carried out electrophoretic mobility shift assays, using either full length @Mef2@ protein or a truncated version, or a mixture of both proteins that had been synthesized in the same in vitro reaction. When mixed with the @Mef2@ binding site from Act57B, the individual full length and truncated isoforms generated shifted bands that were consistent with their ability to interact with DNA, and consistent with their respective sizes.  The truncated isoform bound to DNA had a greater mobility than the full length @Mef2@-DNA complex. When the mixture of full length and truncated @Mef2@ was incubated with the DNA probe, a band of intermediate mobility was also observed. This band must represent an heterodimer of full lengthand truncated protein interacting with DNA.
+! IN8b. Internal comments :Fig5
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

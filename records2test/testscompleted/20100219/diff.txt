@@ -1,0 +1,119 @@
+2c2,3
+< Processing gm25195.edit
+---
+> Using Peeves in /Peeves/test
+> /Peeves/test/Peeves
+4c5
+< gm25195.edit: Most .edit records contain a !c, did you forget to add one?
+---
+> Processing gm25195.edit
+340,341d340
+< gm25159.edit: Most .edit records contain a !c, did you forget to add one?
+< 
+347,348d345
+< gm25158.edit: Most .edit records contain a !c, did you forget to add one?
+< 
+354,355d350
+< gm25157.edit: Most .edit records contain a !c, did you forget to add one?
+< 
+1004,1005d998
+< st1163.edit: Most .edit records contain a !c, did you forget to add one?
+< 
+1011,1012d1003
+< st1162.edit: Most .edit records contain a !c, did you forget to add one?
+< 
+1018,1019d1008
+< st1161.edit: Most .edit records contain a !c, did you forget to add one?
+< 
+1025,1026d1013
+< st1160.edit: Most .edit records contain a !c, did you forget to add one?
+< 
+1032,1033d1018
+< st1159.edit: Most .edit records contain a !c, did you forget to add one?
+< 
+1039,1040d1023
+< st1158.edit: Most .edit records contain a !c, did you forget to add one?
+< 
+1132,1133d1114
+< sm1075.edit: Most .edit records contain a !c, did you forget to add one?
+< 
+1372a1354,1356
+> Processing as94.user
+> 
+> 
+1377d1360
+< I checked 152 files.
+1379c1362,1364
+< These 60 files passed all the checks:
+---
+> Processing as77.user
+> 
+> as77.user: P41: Missing data.
+1381,1408c1366,1398
+< gm25137	gm25138.bibl	gm25139	gm25140	gm25141	ra734	ra736	ra743	sb138.skim	sb139.skim
+< sb140.skim	sb141.skim	sb142.skim	sb143.skim	sb144.skim	sb145.skim	sb146.skim	sb147.skim	sb148.bibl	sb149.skim
+< sb150.skim	sb151.skim	sb152.skim	sb153.skim	sb154.skim	sb155.skim	sb156.skim	sb157.skim	sb158.skim	sb159.skim
+< sb160.skim	sb161.skim	sb162.skim	sb163.skim	sb164.skim	sb165.skim	sb166.skim	sb167.skim	sb168.skim	sb169.skim
+< sb170.skim	sb171.skim	sb172.skim	sb173.skim	sb174.skim	sb175.skim	sb176.skim	sb177.skim	sb178.skim	sr101.skim
+< sr102.skim	sr103.skim	sr104.skim	sr105.skim	sr106.skim	sr107.skim	sr108.skim	sr109.skim	sr110.skim	st1157.full
+< 
+< These 92 files failed at least one check:
+< 
+< gm24399	gm24943	gm25122	gm25126.edit	gm25127.edit	gm25129.edit	gm25130	gm25132.edit	gm25133	gm25134.edit
+< gm25136	gm25142	gm25143	gm25145	gm25147.edit	gm25148.edit	gm25149.edit	gm25150.edit	gm25153.edit	gm25154.edit
+< gm25155.edit	gm25156.edit	gm25157.edit	gm25158.edit	gm25159.edit	gm25160.edit	gm25165.edit	gm25166.edit	gm25167.edit	gm25168.edit
+< gm25169.edit	gm25170.edit	gm25171.edit	gm25172.edit	gm25173.edit	gm25174.edit	gm25175.edit	gm25176.edit	gm25177.edit	gm25178.edit
+< gm25179.edit	gm25180.edit	gm25181.edit	gm25182.edit	gm25183.edit	gm25184.edit	gm25185.edit	gm25186.edit	gm25187.edit	gm25188.edit
+< gm25189.edit	gm25190.edit	gm25191.edit	gm25192.edit	gm25195.edit	pm1289	pm1905	pm1907	pm1910	pm2167
+< pm2169	pm2170	pm2171	pm2172	pm2173	pm2174	pm2175	pm2176	pm2177	pm2178
+< pm2179	pm2180	pm2181	pm2182	pm2183	pm2184	pm2185	pm2186	pm2187	ra728
+< ra737	ra742.edit	sm1074.edit	sm1075.edit	sm1076.edit	sr86.skim	st1158.edit	st1159.edit	st1160.edit	st1161.edit
+< st1162.edit	st1163.edit
+< 
+< Ignoring these 60 files:
+< 
+< as77.user	as94.user	fb_2010_03_EP3.accession.tsv	fb_2010_03_EP3.secondaryID.tsv	km282	km283	km284	km285	km286	km287
+< km288	km289	km290	pl146434.bibl	pl146435.bibl	pl146436.bibl	pl146437.bibl	pl146438.bibl	pl146439.bibl	pl146440.bibl
+< pl146441.bibl	pl146442.bibl	pl146443.bibl	pl146444.bibl	pl146445.bibl	pl146446.bibl	pl146447.bibl	pl146448.bibl	pl146449.bibl	pl146450.bibl
+< pl146451.bibl	pl146452.bibl	pl146453.bibl	pl146454.bibl	pl146455.bibl	pl146456.bibl	pl146457.bibl	pl146458.bibl	pl146459.bibl	pl146460.bibl
+< pl146461.bibl	pl146462.bibl	pl146463.bibl	pl146464.bibl	pl146465.bibl	pl146466.bibl	pl146467.bibl	pl146468.bibl	pl146469.bibl	pl146470.bibl
+< pl146472.bibl	pl146473.bibl	pl146474.bibl	pl146475.bibl	pl146476.bibl	pl146477.bibl	pl146478.bibl	pl146479.bibl	pl146480.bibl	pl146481.bibl
+---
+> I checked 154 files.
+> 
+> These 61 files passed all the checks:
+> 
+> as94.user	gm25137	gm25138.bibl	gm25139	gm25140	gm25141	ra734	ra736	ra743	sb138.skim
+> sb139.skim	sb140.skim	sb141.skim	sb142.skim	sb143.skim	sb144.skim	sb145.skim	sb146.skim	sb147.skim	sb148.bibl
+> sb149.skim	sb150.skim	sb151.skim	sb152.skim	sb153.skim	sb154.skim	sb155.skim	sb156.skim	sb157.skim	sb158.skim
+> sb159.skim	sb160.skim	sb161.skim	sb162.skim	sb163.skim	sb164.skim	sb165.skim	sb166.skim	sb167.skim	sb168.skim
+> sb169.skim	sb170.skim	sb171.skim	sb172.skim	sb173.skim	sb174.skim	sb175.skim	sb176.skim	sb177.skim	sb178.skim
+> sr101.skim	sr102.skim	sr103.skim	sr104.skim	sr105.skim	sr106.skim	sr107.skim	sr108.skim	sr109.skim	sr110.skim
+> st1157.full
+> 
+> These 93 files failed at least one check:
+> 
+> as77.user	gm24399	gm24943	gm25122	gm25126.edit	gm25127.edit	gm25129.edit	gm25130	gm25132.edit	gm25133
+> gm25134.edit	gm25136	gm25142	gm25143	gm25145	gm25147.edit	gm25148.edit	gm25149.edit	gm25150.edit	gm25153.edit
+> gm25154.edit	gm25155.edit	gm25156.edit	gm25157.edit	gm25158.edit	gm25159.edit	gm25160.edit	gm25165.edit	gm25166.edit	gm25167.edit
+> gm25168.edit	gm25169.edit	gm25170.edit	gm25171.edit	gm25172.edit	gm25173.edit	gm25174.edit	gm25175.edit	gm25176.edit	gm25177.edit
+> gm25178.edit	gm25179.edit	gm25180.edit	gm25181.edit	gm25182.edit	gm25183.edit	gm25184.edit	gm25185.edit	gm25186.edit	gm25187.edit
+> gm25188.edit	gm25189.edit	gm25190.edit	gm25191.edit	gm25192.edit	gm25195.edit	pm1289	pm1905	pm1907	pm1910
+> pm2167	pm2169	pm2170	pm2171	pm2172	pm2173	pm2174	pm2175	pm2176	pm2177
+> pm2178	pm2179	pm2180	pm2181	pm2182	pm2183	pm2184	pm2185	pm2186	pm2187
+> ra728	ra737	ra742.edit	sm1074.edit	sm1075.edit	sm1076.edit	sr86.skim	st1158.edit	st1159.edit	st1160.edit
+> st1161.edit	st1162.edit	st1163.edit
+> 
+> Ignoring these 58 files:
+> 
+> fb_2010_03_EP3.accession.tsv	fb_2010_03_EP3.secondaryID.tsv	km282	km283	km284	km285	km286	km287	km288	km289
+> km290	pl146434.bibl	pl146435.bibl	pl146436.bibl	pl146437.bibl	pl146438.bibl	pl146439.bibl	pl146440.bibl	pl146441.bibl	pl146442.bibl
+> pl146443.bibl	pl146444.bibl	pl146445.bibl	pl146446.bibl	pl146447.bibl	pl146448.bibl	pl146449.bibl	pl146450.bibl	pl146451.bibl	pl146452.bibl
+> pl146453.bibl	pl146454.bibl	pl146455.bibl	pl146456.bibl	pl146457.bibl	pl146458.bibl	pl146459.bibl	pl146460.bibl	pl146461.bibl	pl146462.bibl
+> pl146463.bibl	pl146464.bibl	pl146465.bibl	pl146466.bibl	pl146467.bibl	pl146468.bibl	pl146469.bibl	pl146470.bibl	pl146472.bibl	pl146473.bibl
+> pl146474.bibl	pl146475.bibl	pl146476.bibl	pl146477.bibl	pl146478.bibl	pl146479.bibl	pl146480.bibl	pl146481.bibl
+1423a1414,1417
+> Using ** test ** Peeves
+> 
+> 
+> 

@@ -1,0 +1,127 @@
+! PUBLICATION PROFORMA                   Version 46:  20 Jun 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0223980
+! P2.   Parent multipub abbreviation               *w :J. Genet. Genomics
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :dppdsfhdfkd
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :dpp
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! GENEGROUP PROFORMA     Version 4: 28 Aug 2014
+!
+! GG1h. FlyBase gene group ID (FBgg)  *z :
+! GG1a. Gene group symbol                               *a :hello
+! GG1b. Gene group symbol(s) used in reference          *i :
+! GG1e. Action - rename this gene group symbol      :rename
+! GG1f. Action - merge these gene groups (symbols)  :
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :n
+! GG2a. Action - gene group name to use in FlyBase      *e :title correclty herer
+! GG2b. Gene group name(s) used in reference            *V :
+! GG2c. Action - rename this gene group name        :
+!
+! GG3a. Action - obsolete GG1a in FlyBase (y)        TAKE CARE :
+! GG3b. Action - dissociate GG1a from reference (y)  TAKE CARE :
+!
+! GG4.  Type of gene group [CV]  *t :
+! GG12. Internal notes  *W :??error, forgot to fill in G2c
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 4: 28 Aug 2014
+!
+! GG1h. FlyBase gene group ID (FBgg)  *z :
+! GG1a. Gene group symbol                               *a :new_symbol
+! GG1b. Gene group symbol(s) used in reference          *i :
+! GG1e. Action - rename this gene group symbol      :
+! GG1f. Action - merge these gene groups (symbols)  :
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :n
+! GG2a. Action - gene group name to use in FlyBase      *e :title still correclty here
+! GG2b. Gene group name(s) used in reference            *V :
+! GG2c. Action - rename this gene group name        :
+!
+! GG3a. Action - obsolete GG1a in FlyBase (y)        TAKE CARE :
+! GG3b. Action - dissociate GG1a from reference (y)  TAKE CARE :
+!
+! GG4.  Type of gene group [CV]  *t :
+! GG10. Comments [free text]  *u :@new_symbol@ should not trip error as should be pre-instantiated
+! GG12. Internal notes  *W :??no error - only need to fill in GG2a for new gene
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 4: 28 Aug 2014
+!
+! GG1h. FlyBase gene group ID (FBgg)  *z :
+! GG1a. Gene group symbol                               *a :1 # 2 # 3
+! GG1b. Gene group symbol(s) used in reference          *i :
+! GG1e. Action - rename this gene group symbol      :symbol5 # merge2 # argh2
+! GG1f. Action - merge these gene groups (symbols)  :
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :n
+! GG2a. Action - gene group name to use in FlyBase      *e :here #  # title still correclty here
+! GG2b. Gene group name(s) used in reference            *V :
+! GG2c. Action - rename this gene group name        : # title wrongly here # and here
+!
+! GG3a. Action - obsolete GG1a in FlyBase (y)        TAKE CARE :
+! GG3b. Action - dissociate GG1a from reference (y)  TAKE CARE :
+!
+! GG4.  Type of gene group [CV]  *t :
+! GG12. Internal notes  *W :??seeing if traps error when hashes in proformae
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 4: 28 Aug 2014
+!
+! GG1h. FlyBase gene group ID (FBgg)  *z :
+! GG1a. Gene group symbol                               *a :4
+! GG1b. Gene group symbol(s) used in reference          *i :
+! GG1e. Action - rename this gene group symbol      :symbol5
+! GG1f. Action - merge these gene groups (symbols)  :
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :n
+! GG2a. Action - gene group name to use in FlyBase      *e :
+! GG2b. Gene group name(s) used in reference            *V :
+! GG2c. Action - rename this gene group name        :lasdjljdksl
+!
+! GG3a. Action - obsolete GG1a in FlyBase (y)        TAKE CARE :
+! GG3b. Action - dissociate GG1a from reference (y)  TAKE CARE :
+!
+! GG4.  Type of gene group [CV]  *t :
+! GG12. Internal notes  *W :??seeing if traps error when hashes in proformae
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

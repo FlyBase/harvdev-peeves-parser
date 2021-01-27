@@ -1,0 +1,31 @@
+! C1.  Curator ID	:sian
+! C2.  Date		:170308
+! C3.  Curator notes to self	:
+! C9.  Cambridge curation (new_al, merge, split, rename, new_char, pheno, new_transg, nocur) 
+! C4.  Additional curation (P41. wt_exp, pert_exp, neur_exp, gene_model, gene_model_nonmel, phys_int, cis_reg, genom_feat, no_flag, P42. novel_anat P43. disease)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 46:  20 Jun 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0151632
+! P2.   Parent multipub abbreviation               *w :Development
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 8: Jun 08 2011
+!
+! F1f. Database id (default 'new')   :FBpp0090932
+! F1a. Gene product symbol           :vg-XP
+! F3.  Gene product type [CV]        :protein SO:0000358
+! F2.  Sequence attribute [CV]	     :
+!
+! F9. Expression pattern (<e><t><a><s><note>) : 
+<e> il <t> third instar larval stage <a> wing pouch | restricted <s>  <note>
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!
+

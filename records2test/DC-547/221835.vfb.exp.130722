@@ -1,0 +1,282 @@
+! C1. Curator ID:vfb
+! C2. Date:130722
+! C3. Curator notes to self:Update after parsing. Wait or ontology update (antennal lobe projection neuron V adPN) mc130722
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 44:  6 Nov 2012
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0221835
+! P2.   Parent multipub abbreviation               *w :Science
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 8: Jun 08 2011
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Scer\GAL4[VT33008]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+!
+! F4. Names(s) used in paper [free text] :
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> debs <t> A <a> bilateral V relay interneuron <s>  <note>
+<e> debs <t> A <a> synapse <s>  <note>
+<e> debs <t> A <a>  <s> Nebenkern <note>
+!
+! F15. General expression comment [free text] :
+!
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n):
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :Mmus\Cd8a[Scer\UAS.T:Avic\GFP]
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 8: Jun 08 2011
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Scer\GAL4[VT1606]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+!
+! F4. Names(s) used in paper [free text] :
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> debs <t> A <a> bilateral V relay interneuron <s>  <note>
+!
+! F15. General expression comment [free text] :
+!
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n):
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :Mmus\Cd8a[Scer\UAS.T:Avic\GFP]
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 8: Jun 08 2011
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Scer\GAL4[VT31497]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+!
+! F4. Names(s) used in paper [free text] :
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> debs <t> A <a> bilateral V relay interneuron <s>  <note>
+!
+! F15. General expression comment [free text] :
+!
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n):
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :Mmus\Cd8a[Scer\UAS.T:Avic\GFP]
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 8: Jun 08 2011
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Scer\GAL4[VT48643]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+!
+! F4. Names(s) used in paper [free text] :
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> debs <t> A <a> bilateral V relay interneuron <s>  <note>
+!
+! F15. General expression comment [free text] :
+!
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n):
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :Mmus\Cd8a[Scer\UAS.T:Avic\GFP]
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 8: Jun 08 2011
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Scer\GAL4[NP7243]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+!
+! F4. Names(s) used in paper [free text] :E0044-Gal4
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> debs <t> A <a> adult brain | restricted <s>  <note>
+<e> debs <t> A <a> adult antennal lobe projection neuron V adPN <s>  <note>
+<e> debs <t> A <a> dorsal anterior lateral neuron of the protocerebrum <s>  <note>
+<e> debs <t> A <a> anterior superior medial protocerebrum <s>  <note>
+<e> debs <t> A <a> inner antenno-cerebral tract <s>  <note>
+<e> debs <t> A <a> subesophageal ganglion neuron <s>  <note> ascending neurons
+<e> debs <t> A <a> adult pars intercerebralis | restricted <s>  <note>
+<e> debs <t> A <a> antennal mechanosensory and motor center <s>  <note>
+!
+! F15. General expression comment [free text] :
+!
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n):
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :Mmus\Cd8a[Scer\UAS.T:Avic\GFP]
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 8: Jun 08 2011
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Scer\GAL4[VT12760]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+!
+! F4. Names(s) used in paper [free text] :
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> debs <t> A <a> adult multiglomerular antennal lobe projection neuron <s>  <note>
+<e> debs <t> A <a> middle antenno-cerebral tract <s>  <note>
+<e> debs <t> A <a> superior medial protocerebrum <s>  <note>
+<e> debs <t> A <a> lateral horn <s>  <note>
+<e> debs <t> A <a> posterior superior lateral protocerebrum <s>  <note>
+!
+! F15. General expression comment [free text] :
+!
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n):
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :Mmus\Cd8a[Scer\UAS.T:Avic\GFP]
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 8: Jun 08 2011
+!
+! F1f. Database id (default 'new')   :FBtr0336505
+! F1a. Gene product symbol           :Scer\GAL4[Mmp2-NP0509]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+!
+! F4. Names(s) used in paper [free text] :E0564-Gal4
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> debs <t> A <a> adult multiglomerular antennal lobe projection neuron <s>  <note>
+<e> debs <t> A <a> outer antenno-cerebral tract <s>  <note>
+<e> debs <t> A <a> superior medial protocerebrum <s>  <note>
+<e> debs <t> A <a> superior clamp <s>  <note>
+<e> debs <t> A <a> posterior superior lateral protocerebrum <s>  <note>
+<e> debs <t> A <a> lateral horn <s>  <note>
+!
+! F15. General expression comment [free text] :
+!
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :Mmp2
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n):
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :Mmus\Cd8a[Scer\UAS.T:Avic\GFP]
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 8: Jun 08 2011
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Ecol\lexA[L5131]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :
+!
+!
+! F4. Names(s) used in paper [free text] :
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> debs <t> A <a> adult olfactory receptor neuron Gr21a/63a <s>  <note>
+!
+! F15. General expression comment [free text] :
+!
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n):
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :Mmus\Cd8a[Scer\UAS.T:Avic\GFP]
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

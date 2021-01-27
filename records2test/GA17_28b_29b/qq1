@@ -1,0 +1,45 @@
+! PUBLICATION PROFORMA                      Version 41:  16 Mar 2010
+!
+! P22. FlyBase reference ID (FBrf) or "new"                         *U :FBrf0033300
+! P2. Parent multipub (abbreviation)                               *w :Genetics
+! P13. Language of publication [CV]                                 *L :English
+! P19. Internal notes                                              *H :?? test record to check GA17, GA28b and GA29b.  sm100720.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                             Version 66:  03 Mar 2010
+!
+! G1a. Gene symbol to use in FlyBase                                *a :wg
+! G1b. Gene symbol(s) used in reference                             *i :wg
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                           Version 50: 02 Mar 2010
+!
+! GA1a. Allele symbol to use in FlyBase                             *A :wg[1]
+! GA1b. Allele symbol(s) used in reference                          *i :wg[1]
+! GA1g. Is GA1a the current symbol of an allele in FlyBase? (y/n)      :y
+! GA17. Phenotype (anatomy | qualifier(s)) [CV]                    *k :G1 phase of mitotic cell cycle
+M phase of mitotic cell cycle
+negative regulation of mitotic cell cycle
+establishment of mitotic spindle localization
+positive regulation of cell cycle
+second mitotic wave involved in compound eye morphogenesis
+cyclin-dependent protein kinase activity
+interphase of meiotic cell cycle
+! GA28b. Genetic interaction (anatomy, effect) [CV]                 *S :G1 phase of mitotic cell cycle, suppressible { hh[bar3] }
+M phase of mitotic cell cycle, suppressible { hh[bar3] }
+negative regulation of mitotic cell cycle, suppressible { hh[bar3] }
+establishment of mitotic spindle localization, suppressible { hh[bar3] }
+positive regulation of cell cycle, suppressible { hh[bar3] }
+second mitotic wave involved in compound eye morphogenesis, suppressible { hh[bar3] }
+cyclin-dependent protein kinase activity, suppressible { hh[bar3] }
+interphase of meiotic cell cycle, suppressible { hh[bar3] }
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]            *j :G1 phase of mitotic cell cycle, enhanceable { Hsap\ABL1[Act5C.PJ] }
+M phase of mitotic cell cycle, enhanceable { Hsap\ABL1[Act5C.PJ] }
+negative regulation of mitotic cell cycle, enhanceable { Hsap\ABL1[Act5C.PJ] }
+establishment of mitotic spindle localization, enhanceable { Hsap\ABL1[Act5C.PJ] }
+positive regulation of cell cycle, enhanceable { Hsap\ABL1[Act5C.PJ] }
+second mitotic wave involved in compound eye morphogenesis, enhanceable { Hsap\ABL1[Act5C.PJ] }
+cyclin-dependent protein kinase activity, enhanceable { Hsap\ABL1[Act5C.PJ] }
+interphase of meiotic cell cycle, enhanceable { Hsap\ABL1[Act5C.PJ] }
+! GA14. Internal notes                                              *W :?? Previously, curators could use use "use terms from gene_ontology.obo that are descendants of the term 'cell cycle ; GO:0007049'" to "specify cell cycle defects".  We've decided to stop this policy and peeves needs to report an error if such a term is used.   All entries in GA17, GA28b and GA29b here should generate a Peeves error.
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

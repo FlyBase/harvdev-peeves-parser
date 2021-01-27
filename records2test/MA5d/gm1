@@ -1,0 +1,95 @@
+! PUBLICATION PROFORMA                   Version 45:  9 Apr 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0025953
+! P2.   Parent multipub abbreviation               *w :Cell
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0078020
+! MA1a. Insertion symbol to use in database    :?{}Dsim\Lhr[1]
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :
+! MA20. Species of host genome                 :
+!
+! MA1c. Action - rename this insertion symbol    :
+! MA1g. Action - merge these insertion(s) (FBti) :
+! MA1h. Action - delete insertion record ("y"/blank)   :
+! MA1i. Action - dissociate MA1f from FBrf ("y"/blank) :
+!
+! MA1d. Other synonym(s) for insertion symbol  :
+! MA1e. Silent synonym(s) for insertion symbol :
+! MA22. Line id associated with insertion      :
+!
+! MA5a. Chromosomal location of insert                     :5
+! MA5c. Cytological location of insert (in situ)           :
+! MA5e. Cytological location (inferred from sequence)      :
+!   MA5f. Genomic release number for data reported in MA5e :
+! MA5d. Insertion maps to/near gene                        :invalidsymbol
+dpp
+hh[bar3]
+
+dpp
+en
+!
+! MA7.  Associated chromosomal aberration      :
+! MA14. Associated balancer                    :
+! MA12. Consequent allele(s)                   :
+!
+! MA8.  Phenotype (viable, fertile)            :
+!
+! MA21a. Genomic location of insertion                     :
+!   MA21b. Genome release number for entry in MA21a        :
+! MA21e. Comments concerning genomic location              :
+! MA6.   Orientation of insert relative to chromosome      :
+!
+! MA21c. Insertion into natTE (identified, in FB)             :
+! MA21f. Insertion into other TE or repeat region ("y"/blank) :
+! MA21d. Distance from insertion site to end of natTE/repeat  :
+!
+! MA19a. Accession for insertion flanking sequence (dupl for multiple) :
+!   MA19b. Insertion site accession type (5', 3', b)                   :
+!   MA19c. Position of first base of target sequence in accession      :
+!   MA19d. First base of unique sequence in accession if in natTE      :
+!   MA19e. Accession invalidation or assessment                        :
+! MA26.  Accession for this instance of natTE                          :
+!
+! MA23a. Insertion-affected gene reported (dupl for multiple) :
+!   MA23b. Affected gene criteria [CV]                        :
+!   MA23c. Comment, affected gene criteria [free text]        :
+!   MA23g. Orientation relative to affected gene              :
+!
+! MA15a. FBti progenitor (via transposition) at distinct location :
+! MA15b. FBti progenitor (via recombination) at distinct location :
+! MA15c. Replaced FBti progenitor, recombination substrate        :
+! MA15d. Modified FBti progenitor (in situ)                       :
+!
+! MA24. Arose in multiple insertion line ("y"/"p"/blank) :
+! MA18. Co-isolated insertion(s)                         :
+!
+! MA16. Information on availability      :
+! MA30. From dataset/collection (symbol) :
+!   MA30a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+! MA9.  Comments [free text]             :
+! MA10. Internal notes                   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

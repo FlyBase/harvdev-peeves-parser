@@ -1,0 +1,177 @@
+! PUBLICATION PROFORMA                   Version 24:  5 December 2006
+!
+! P. PUBLICATION DATA
+!
+! P22. Publication FBrf            *U :
+! P32. FBrf to be merged into P22. *N :
+! P1.  Type of publication  [CV] *T :FlyBase analysis
+! P21. Journal etc unique ID *W/*U (starw.nice) :
+! P2.  Journal etc abbreviation           *w/*s :
+! P20. Series abbreviation      *S :
+! P3.  Volume designation       *y :1
+! P4.  Issue number             *Y :2
+! P11a. Page range              *z :1--5
+! P11b. URL                     *R :
+! P11c. accession number           :
+! P11d. DOI                        :
+! P10. Year of publication      *t :2007.2.27
+! P12. Author(s)              *a-r :G. Millburn
+! P16. Title of publication (excl. part-title)   *u :Testing GA56. to destruction. mwah ha ha. spacing bugs.
+! P17. Part-number and title                     *v :
+! P13. Language(s) of paper [CV]                 *L :English
+! P14. Additional language(s) of abstract(s) [CV]*A :
+! P8.  Publisher (if P1 = book)                  *x :
+! P24. Place of publication (if P1 = book)       *P :
+! P25. Biosis ID      *B :
+! P26. Medline ID     *M :
+! P27. Zoo Record ID  *Q :
+! P29. ISBN if P1=book*I :
+! P30. Also published as (FBrf)            *C :
+! P31. Related publication (FBrf)          *E :
+! P23. Text of personal communication      *F :
+! P18. Associated text                     *G :
+! P19. Internal notes                      *H :
+! P38. File deposited to archive           *K :??
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! G. GENE DATA (excluding kilobase distance data)
+! If this publication includes information to enter concerning a gene,
+! move to the start of the line below and include the Gene proforma.
+! GENE PROFORMA                          Version 44:  1 December 2006
+!
+! G1a.  Gene symbol to use in database                      *a :bw
+! G1b.  Gene symbol used in paper                           *i :bw
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge genes                                   :
+! G1g.  Is G1a the valid symbol of a gene in FlyBase?          :y
+! G30.  Gene category (if gene is new to FlyBase) [SO CV]   *t :
+! G2a.  Gene name to use in database                        *e :
+! G2b.  Gene name used in paper                             *V :
+! G2c.  Database gene name(s) to replace                    *V :
+! G27.  Etymology                                              :
+! G31a. Action - delete gene              - TAKE CARE :
+! G31b. Action - dissociate G1a from FBrf - TAKE CARE :
+! G20a. G1a in title/abstract? Reviews - G1a significant subject? NSC :n
+! G20b. G1a wildtype expression in wildtype analysed?             NSC :
+! G20c. G1a expression analysed in mutant/perturbed bckgrd?       NSC :
+! G20d. G1a genome annotation analysed?                           NSC :
+! G20e. G1a product physical interaction analysed?                NSC :
+! G20f. G1a cis-regulatory elements characterized?                NSC :
+! G20g. G1a gene model decorated - alleles/rescue frags/breaks?   NSC :
+! G20h. G1a polymorphism data reported?                           NSC :
+! G10a. Cytological map posn if by chromosome in situ      *c :
+! G10b. Cytological map posn if details unspecified        *c :
+! G11.  Comments on cytological map position [SoftCV]      *D :
+! G25.  Relationship to clone                         [SoftCV]*s :
+! G19a. Gene order/orientation from molecular mapping [SoftCV]*s :
+! G19b. Comments, not allele-specific -- molecular         *s :
+! G12a. Comments, not allele-specific - biological role    *r :
+! G12b. Comments, not allele-specific -- mutants           *p :
+! G14a. Comments, not allele-specific -- other             *u :
+! G14b. Identification                                        :
+! G28a. Comments -- relationship to other genes        [free text] *q :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G29a. Functional comp/gain of function -- structured [SoftCV] *q :
+! G29b. Functional comp/gain of function            [free text] *q :
+! G18.  Gene(s) stated to interact genetically with G1a    *p :
+! G22.  Homologous gene in reference species of drosophilid*M :
+! G24a. GO -- Cellular component | evidence [CV]           *f :
+! G24b. GO -- Molecular function | evidence [CV]           *F :
+! G24c. GO -- Biological process | evidence [CV]           *d :
+! G24e. GO specific internal note                          *H :
+! G15.  Internal notes  *W :All the data in this record is made up.??
+! RARE FIELDS MODULE:
+! move to the start of the line below this and include the Gene Modules pro.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GA. ALLELE DATA FOR THIS GENE (excluding kilobase distance data)
+! If there is any data to enter regarding a specific allele of this gene,
+! move to the start of the line below this and include the Allele proforma.
+! ALLELE PROFORMA                        Version 38: 7 December 2006
+!
+! GA1a.  Allele symbol to use in database                  *A :bw[1]
+! GA1b.  Allele symbol used in paper                       *i :bw[1]
+! GA1e.  Action - rename this allele symbol                   :
+! GA1f.  Action - merge alleles                               :
+! GA1g.  Is GA1a the valid symbol of an allele in FlyBase?    :y
+! GA2a.  Allele name to use in database                    *e :
+! GA2b.  Allele name used in paper                         *V :
+! GA2c.  Database allele name(s) to replace                *V :
+! GA31.  Etymology                                            :
+! GA32a. Action - delete allele             - TAKE CARE :
+! GA32b. Action - dissociate GA1a from FBrf - TAKE CARE :
+! GA3.   Rank [CV]                                      *k :
+! GA4.   Allele class [CV]                              *k :
+! GA56.  Phenotypic | dominance class [bipartite CV]    *k : fertile
+sterile 
+ semi-viable 
+ lethal | recessive
+semi-sterile | maternal effect 
+ semi-lethal | recessive 
+visible  | recessive | maternal effect
+behavioural |  pupal stage | recessive
+chemical resistant | embryonic stage  |  conditional cs
+grandchildless  { Scer\GAL4[dpp.blk1] }
+hypoactive{ Scer\GAL4[dpp.blk1] }
+hyperactive { Scer\GAL4[dpp.blk1]  }
+meiotic {  Scer\GAL4[dpp.blk1] }
+mitotic {Scer\GAL4[yolk] }
+uncoordinated { Scer\GAL4[yolk]}
+(with bw[2] ) jumpless | maternal effect
+( with bw[2]) flightless
+(with  bw[2]) Minute
+(withbw[2] ) hyperplastic
+(with bw[2])tumorigenic | recessive | maternal effect
+(with bw[2])  paralytic | pupal stage
+! GA17.  Phenotype  [CV, body part(s) where manifest]   *k :
+! GA7a.  Phenotype  [free text]                         *k :
+! GA28a. Genetic interaction  [CV, class, effect]       *S :
+! GA28b. Genetic interaction  [CV, anatomy, effect]     *S :
+! GA28c. Genetic interaction  [free text]               *S :
+! GA29a. Xenogenetic interaction [CV, class, effect]    *j :
+! GA29b. Xenogenetic interaction [CV, anatomy, effect]  *j :
+! GA29c. Xenogenetic interaction [free text]            *j :
+! GA21.  Interallelic complementation data (structured) [SoftCV]*Q :
+! GA22.  Interallelic complementation data (free text)          *Q :
+! GA10a. Associated construct                              *I :
+! GA10b. Name in paper for construct                       *L :
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Name in paper for insertion                       *N :
+! GA10e. Associated insertion - G1a is inside insert   *G :
+! GA10f. Name in paper for insertion                   *N :
+! GA10g. Associated aberration / cytology +            *P/*C  :
+! GA8.   Mutagen [CV]                                  *o :
+! GA19.  Vehicle of assay [CV]                         *k :
+! GA15.  Discoverer                                    *w :
+! GA11.  Progenitor genotype                           *O :
+! GA23a. Notes on origin [SoftCV]                      *R :
+! GA23b. Notes on origin [free text]                   *R :
+! GA12a. Nucleotide/amino acid changes (wrt GA11) [SoftCV]*s :
+! GA12b. Molecular modifications (wrt GA11)   [free text] *s :
+! GA30.  Tagged with                                       :
+! GA13.  Comments not specific to one transcript/product*u :
+! GA20.  Information on availability                    *v :
+! GA14.  Internal notes  *W :This proforma is for spacing errors in between the | and { to check Peeves picks 'em all up.
+first a space either/both sides of a simple term.
+then a space either/both sides of a qualfied term.
+then wrong amount of spaces around the | in terms with one or more |
+then wrong spacing in {}
+then wrong spacing in (with ) - these should also generate an error saying its not reciprocated in the other allele - if that check is working - the check may not be working, I got no error of that type, but perhaps that is because the line is malformed
+??
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! If there is another allele of this gene to curate for this pub, move to
+! the start of the line below this and include the Allele proforma again.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! If there is another gene to curate for this publication, move to the
+! start of the line below this and include the Gene proforma again.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! A. ABERRATION DATA (excluding kilobase distance data)
+! If this publication includes information to enter concerning an
+! aberration, defined as a named multi-segment construction whose segments
+! are all from the same species (not necessarily Drosophila melanogaster),
+! move to the start of the line below and include the Aberration proforma.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! M. MULTI-SPECIES CONSTRUCT DATA (excluding kilobase distance data)
+! If this publication includes information to enter concerning a
+! mulspcon, defined as a named, multi-segment, multi-species construct,
+! move to the start of the line below and include the MulSpCon proforma.
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

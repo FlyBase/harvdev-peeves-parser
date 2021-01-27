@@ -1,0 +1,158 @@
+
+
+Relevant symbol/action fields:
+
+! G1a.  Gene symbol to use in FlyBase                       *a :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :
+! G1s. Species of gene [symbol]                                :
+
+(G1s will be likely filled in by default as Dmel in master proforma to make it easier for curators)
+
+
+The five possible combinations involving these fields are:
+
+
+1. existing gene, no symbol changes.
+
+G1a = a valid symbol already in chado
+G1g = y
+G1e = empty
+G1f = empty
+
+! G1a.  Gene symbol to use in FlyBase                       *a :hh
+
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+
+Rules for G1s:
+
+parsing code: will ignore G1s field (since the gene is already in chado and its identity is not being changed)
+
+curation: G1s does not have to be filled in (but will likely be present and filled in by default in the proforma)
+
+peeves checks for G1s: (none really needed as parsing code will ignore the field, but will add check that species abbreviation in G1s must correspond to the species already in chado for G1a, just in case, and will instruct curator to remove value from G1s if there is disagreement (e.g. if 'Dmel' is present in G1s in a proforma for Scer\GAL4), to prevent anything nasty happening).
+
+2. brand new gene.
+
+(e.g. 'newsymbol' proforma in gm1)
+
+G1a = a new symbol not already valid in chado
+G1g = n
+G1e = empty
+G1f = empty
+
+
+! G1a.  Gene symbol to use in FlyBase                       *a :newsymbol
+
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :n
+! G1s. Species of gene [symbol]                                :Dmel
+
+parsing code: will use G1s to assign species to new gene (as this is a new feature in chado)
+
+curation: G1s MUST be filled in
+
+peeves checks for G1s:
+- MUST be filled in
+- value must be valid species abbreviation in chado
+- must be single value
+
+3. simple rename of existing gene.
+
+(e.g. 'renamed' proforma in gm5)
+
+G1a = a new symbol not already valid in chado
+G1g = n
+G1e = symbol of gene being renamed
+G1f = empty
+
+
+! G1a.  Gene symbol to use in FlyBase                       *a :renamed
+
+! G1e.  Action - rename this gene symbol                       :dpp
+! G1f.  Action - merge these genes (symbols)                   :
+
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :n
+
+Rules for G1s:
+
+parsing code: will ignore G1s field (since rename proformae do not affect organism table, as number of features is not changing, only its symbol)
+
+curation: G1s does not have to be filled in (but will likely be present and filled in by default in the proforma)
+
+peeves checks for G1s: (none really needed as parsing code will ignore the field, but will add check that species in G1s must correspond to species already in chado for gene in G1e, just in case, and will instruct curator to remove value from G1s if there is disagreement, to prevent anything nasty happening).
+
+
+
+
+4. simple merge of existing genes, with the final valid symbol being the same as one of the original genes
+(e.g. 'cnn' proforma in gm5 for merge within a species)
+
+G1a = a valid symbol already in chado
+G1g = y
+G1e = empty
+G1f = symbols of genes being merged
+
+! G1a.  Gene symbol to use in FlyBase                       *a :cnn
+
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :cnn
+l(1)01
+
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G1s. Species of gene [symbol]                                :Dmel
+
+In most cases, this will be used to do a simple merge of genes in the same species, but in rare cases it can be used to merge genes from different species (e.g. gm6 example, although that is for alleles, but principle is the same !).
+
+
+parsing code: will use G1s to assign species to new feature in chado that corresponds to merged gene
+
+curation: G1s MUST be filled in
+
+peeves checks for G1s:
+- MUST be filled in
+- value must be valid species abbreviation in chado
+- must be single value
+
+additional peeves check: peeves will warn if the species in G1s is different from the species in chado of any of the genes in G1f (as that is a rare thing), so the curator can check that they really meant to do this.  Also, if it is a merge of more than one species, then for genes, should also warn that there should be merge proformae for any alleles of the gene whose species in chado does not match that in G1s, so that their species is also changed to the correct value at the same time.
+
+
+
+5. merge of existing genes, plus rename (ie. final symbol of merged gene is new to chado)
+(e.g. 'madeupsymbol' proforma in gm5)
+
+G1a = a new symbol not already valid in chado
+G1g = n
+G1e = empty
+G1f = symbols of genes being merged
+
+
+! G1a.  Gene symbol to use in FlyBase                       *a :madeupsymbol
+
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :amy
+da
+
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :n
+! G1s. Species of gene [symbol]                                :Dmel
+
+In most cases, this will be used to do a merge+rename of genes in the same species, but in rare cases it could be used to merge+rename genes from different species.
+
+
+parsing code: will use G1s to assign species to new feature in chado that corresponds to merged gene
+
+curation: G1s MUST be filled in
+
+peeves checks for G1s:
+- MUST be filled in
+- value must be valid species abbreviation in chado
+- must be single value
+
+additional peeves check: peeves will warn if the species in G1s is different from the species in chado of any of the genes in G1f (as that is a rare thing), so the curator can check that they really meant to do this.  Also, if it is a merge of more than one species, then for genes, should also warn that there should be merge proformae for any alleles of the gene whose species in chado does not match that in G1s, so that their species is also changed to the correct value at the same time.
+

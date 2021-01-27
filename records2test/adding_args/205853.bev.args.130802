@@ -1,0 +1,71 @@
+! C1.  Curator ID	:Bev
+! C2.  Date		:130802
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 44:  6 Nov 2012
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0205853
+! P19.  Internal notes                   *H :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 28: 10 Nov 2010
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0014112
+! MA1a. Insertion symbol to use in database    :copia{}Doa[HD]
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :
+! MA20. Species of host genome                 :
+! MA21a. Genomic location of insertion (dupl for multiple) :3R:24716648..24716648
+!   MA21b. Genome release number for entry in MA21a        :5
+! MA21e. Comments concerning genomic location              :The copia retrotransposon is inserted anti-
+parallel to the @Doa@ gene at nucleotide 7791 (relative to reference sequence NG_000621).
+! MA6.   Orientation of insert relative to chromosome      :-
+! MA9.  Comments [free text]        :
+! MA10. Internal notes              :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 28: 10 Nov 2010
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0005439
+! MA1a. Insertion symbol to use in database    :P{PZ}Doa[01705b]
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :
+! MA20. Species of host genome                 :
+! MA21a. Genomic location of insertion (dupl for multiple) :3R:24717487..24717487
+!   MA21b. Genome release number for entry in MA21a        :5
+! MA21e. Comments concerning genomic location              :The insertion site is at nucleotide 8630 (relative to reference sequence NG_000621).
+! MA6.   Orientation of insert relative to chromosome      :
+! MA9.  Comments [free text]        :The orientation of the insertion was not reported.
+! MA10. Internal notes              :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 28: 10 Nov 2010
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0005805
+! MA1a. Insertion symbol to use in database    :P{PZ}Doa[04743]
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :
+! MA20. Species of host genome                 :
+! MA21a. Genomic location of insertion (dupl for multiple) :3R:24716963..24716963
+!   MA21b. Genome release number for entry in MA21a        :5
+! MA21e. Comments concerning genomic location              :The insertion site is at nucleotide 8106 (relative to reference sequence NG_000621).
+! MA6.   Orientation of insert relative to chromosome      :
+! MA9.  Comments [free text]        :The orientation of the insertion was not reported.
+! MA10. Internal notes              :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 28: 10 Nov 2010
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0013646
+! MA1a. Insertion symbol to use in database    :P{lacW}Doa[S084402]
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :
+! MA20. Species of host genome                 :
+! MA21a. Genomic location of insertion (dupl for multiple) :3R:24717847..24717847
+!   MA21b. Genome release number for entry in MA21a        :5
+! MA21e. Comments concerning genomic location              :The insertion site is at nucleotide 8990 (relative to reference sequence NG_000621).
+! MA6.   Orientation of insert relative to chromosome      :
+! MA9.  Comments [free text]        :The orientation of the insertion was not reported.
+! MA10. Internal notes              :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

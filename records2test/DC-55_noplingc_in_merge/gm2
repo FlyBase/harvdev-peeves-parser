@@ -1,0 +1,122 @@
+! PUBLICATION PROFORMA                   Version 38:  16 Sep 2009
+!
+! P22.  FlyBase reference ID (FBrf)      *U :FBrf0087998
+! P21.  Parent multipub (ID)                *W :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! TRANSPOSON INSERTION PROFORMA                   Version 27: 27 June 2008 
+!
+! MA1f. Database ID for insertion (FBti)       :new
+! MA1a. Insertion symbol to use in database    :P{newsymbol}x
+! MA1b. Symbol used in reference               :synonym
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :
+! MA20. Species of host genome                 :
+!
+! MA1c. Action - rename this insertion symbol    :
+! MA1g. Action - merge these insertion(s) (FBti) :FBti0128391
+FBti0115972
+!
+!
+!c MA5a. Chromosomal location of insert                     :
+!
+!
+! MA8.  Phenotype (viable, fertile)            :
+!
+!
+!
+!
+!
+!
+!
+! MA10. Internal notes              :??this should give an error as there is a plingc. gm100225
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! MOLECULAR SEGMENT AND CONSTRUCT PROFORMA           Version 27: 08 July 2008
+!
+! MS1f. Database ID for segment (FBid or "new") :new
+! MS1a. Segment symbol to use in database       :P{PTT-un1}
+! MS1b. Symbol used in paper                    :synonym2
+! MS16. Segment category (type of entity) [CV]  :transgenic_transposable_element
+!
+! MS4a. Description [CV]                        :transposon
+! MS21. Transposon class (generic)              :
+! MS14. Uses [CV]                               :
+! MS22. Localized function [CV]      :
+!
+! MS1c. Action - replace this segment symbol :
+! MS1g. Action - merge these segment(s)      :FBtp0017491
+FBtp0003563
+!
+!
+! MS19a. Progenitor(s) (in FB) :
+! MS19b. Progenitor(s) (other) :
+!
+!
+!
+!
+!
+!
+!
+! MS10b. General comments :
+! MS11.  Internal notes   :??this should give an error as there is a plingc. gm100225
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! NATURAL TRANSPOSON PROFORMA                        Version 7: 27 June 2008
+!
+! TE1f. ID for gen.natTE (FBte or "new")       :new
+! TE1a. gen.natTE symbol to use in database    :1360
+! TE1b. gen.natTE symbol used in reference     :synonym3
+! TE3.  Species                                :
+!
+! TE14a.  gen.natTE name to use in database      :
+! TE14b.  gen.natTE name used in reference       :
+! TE14c.  Database gen.natTE name(s) to replace  :
+!
+! TE1c. Action - rename this gen.natTE symbol    :
+! TE1g. Action - merge these gen.natTE(s) (FBte) :FBte0000559
+FBte0000109
+! TE1h. Action - delete gen.natTE record ("y"/blank)   :
+! TE1i. Action - dissociate TE1f from FBrf ("y"/blank) :
+!
+! TE2a. Other synonym(s) for gen.natTE symbol  :
+! TE2b. Silent synonym(s) for gen.natTE symbol :
+!
+! TE4a. Transposon type [CV]                :
+! TE4b. Length of complete element, bp      :
+! TE4c. Terminal repeat length, bp          :
+! TE4d. Target site duplication, bp         :
+!c TE4e. Target site sequence (if consensus) :
+!
+! TE5a. Number of copies in sequenced genome (dupl for multiple) :
+!   TE5b. Description of sequenced genome   :
+! TE5c. Number of copies in reported genome (dupl for multiple)  :
+!   TE5d. Description of reported genome(s) :
+!
+! TE6a. Reference sequence for complete element :
+! TE6b. Accession(s) for gen.natTE          :
+! TE6c. Accession(s) for flanking sequence      :
+! TE7.  Phylogenetic range  :
+! TE8.  Component gene(s)   :
+!
+! TE9.  Named isolates        :
+! TE10. Engineered constructs :
+! TE11. Other variants        :
+!
+! TE12. Comments            :
+! TE13. Internal comments   :??this should give an error as there is a plingc. gm100225
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

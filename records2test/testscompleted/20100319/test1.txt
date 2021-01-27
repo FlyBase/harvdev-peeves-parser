@@ -1,0 +1,314 @@
+
+Using Peeves in /Peeves/test
+/Peeves/test/Peeves
+
+Processing sm1090.bibl
+
+sm1090.bibl: MP1: 4116 is not a valid multipub ID.
+
+sm1090.bibl: MP3: Can't have 'y' when MP1 doesn't specify an existing multipub id in Chado.
+
+sm1090.bibl: MP19: the data in MP1 is not a valid multipub, according to Chado.
+
+sm1090.bibl: Required proforma field MP2a missing or malformed.
+
+sm1090.bibl: Required proforma field MP11 missing or malformed.
+
+sm1090.bibl: Required proforma field MP17 missing or malformed.
+
+sm1090.bibl: MP1: 4968 is not a valid multipub ID.
+
+sm1090.bibl: MP3: Can't have 'y' when MP1 doesn't specify an existing multipub id in Chado.
+
+sm1090.bibl: MP19: the data in MP1 is not a valid multipub, according to Chado.
+
+sm1090.bibl: Required proforma field MP2a missing or malformed.
+
+sm1090.bibl: Required proforma field MP11 missing or malformed.
+
+sm1090.bibl: Required proforma field MP17 missing or malformed.
+
+sm1090.bibl: Warning: I don't yet know how to deal with the 'MP18' proforma field.
+
+sm1090.bibl: Required proforma field MP2a missing or malformed.
+
+sm1090.bibl: Required proforma field MP11 missing or malformed.
+
+sm1090.bibl: Required proforma field MP17 missing or malformed.
+
+sm1090.bibl: Required proforma field MP2a missing or malformed.
+
+sm1090.bibl: Required proforma field MP11 missing or malformed.
+
+sm1090.bibl: Required proforma field MP17 missing or malformed.
+
+sm1090.bibl: Required proforma field MP2a missing or malformed.
+
+sm1090.bibl: Required proforma field MP11 missing or malformed.
+
+sm1090.bibl: Required proforma field MP17 missing or malformed.
+
+sm1090.bibl: MP1: 3894 is not a valid multipub ID.
+
+sm1090.bibl: MP3: Can't have 'y' when MP1 doesn't specify an existing multipub id in Chado.
+
+sm1090.bibl: MP19: the data in MP1 is not a valid multipub, according to Chado.
+
+sm1090.bibl: Required proforma field MP2a missing or malformed.
+
+sm1090.bibl: Required proforma field MP11 missing or malformed.
+
+sm1090.bibl: Required proforma field MP17 missing or malformed.
+
+sm1090.bibl: Warning: I don't yet know how to deal with the 'MP18' proforma field.
+
+sm1090.bibl: Required proforma field MP2a missing or malformed.
+
+sm1090.bibl: Required proforma field MP11 missing or malformed.
+
+sm1090.bibl: Required proforma field MP17 missing or malformed.
+
+sm1090.bibl: Required proforma field MP2a missing or malformed.
+
+sm1090.bibl: Required proforma field MP11 missing or malformed.
+
+sm1090.bibl: Required proforma field MP17 missing or malformed.
+
+sm1090.bibl: Warning: I don't yet know how to deal with the 'MP18' proforma field.
+
+sm1090.bibl: Required proforma field MP2a missing or malformed.
+
+sm1090.bibl: Required proforma field MP11 missing or malformed.
+
+sm1090.bibl: Required proforma field MP17 missing or malformed.
+
+sm1090.bibl: Required proforma field MP2a missing or malformed.
+
+sm1090.bibl: Required proforma field MP11 missing or malformed.
+
+sm1090.bibl: Required proforma field MP17 missing or malformed.
+
+sm1090.bibl: MP1: 8256 is not a valid multipub ID.
+
+sm1090.bibl: MP3: Can't have 'y' when MP1 doesn't specify an existing multipub id in Chado.
+
+sm1090.bibl: MP19: the data in MP1 is not a valid multipub, according to Chado.
+
+sm1090.bibl: Required proforma field MP2a missing or malformed.
+
+sm1090.bibl: Required proforma field MP11 missing or malformed.
+
+sm1090.bibl: Required proforma field MP17 missing or malformed.
+
+sm1090.bibl: MP1: 7267 is not a valid multipub ID.
+
+sm1090.bibl: MP3: Can't have 'y' when MP1 doesn't specify an existing multipub id in Chado.
+
+sm1090.bibl: MP19: the data in MP1 is not a valid multipub, according to Chado.
+
+sm1090.bibl: Required proforma field MP2a missing or malformed.
+
+sm1090.bibl: Required proforma field MP11 missing or malformed.
+
+sm1090.bibl: Required proforma field MP17 missing or malformed.
+
+sm1090.bibl: MP1: 9692 is not a valid multipub ID.
+
+sm1090.bibl: MP3: Can't have 'y' when MP1 doesn't specify an existing multipub id in Chado.
+
+sm1090.bibl: MP19: the data in MP1 is not a valid multipub, according to Chado.
+
+sm1090.bibl: Required proforma field MP2a missing or malformed.
+
+sm1090.bibl: Required proforma field MP11 missing or malformed.
+
+sm1090.bibl: Required proforma field MP17 missing or malformed.
+
+sm1090.bibl: Required proforma field MP2a missing or malformed.
+
+sm1090.bibl: Required proforma field MP11 missing or malformed.
+
+sm1090.bibl: Required proforma field MP17 missing or malformed.
+
+sm1090.bibl: Required proforma field MP2a missing or malformed.
+
+sm1090.bibl: Required proforma field MP11 missing or malformed.
+
+sm1090.bibl: Required proforma field MP17 missing or malformed.
+
+sm1090.bibl: Required proforma field MP2a missing or malformed.
+
+sm1090.bibl: Required proforma field MP11 missing or malformed.
+
+sm1090.bibl: Required proforma field MP17 missing or malformed.
+
+sm1090.bibl: MP1: 9350 is not a valid multipub ID.
+
+sm1090.bibl: MP3: Can't have 'y' when MP1 doesn't specify an existing multipub id in Chado.
+
+sm1090.bibl: MP19: the data in MP1 is not a valid multipub, according to Chado.
+
+sm1090.bibl: Required proforma field MP2a missing or malformed.
+
+sm1090.bibl: Required proforma field MP11 missing or malformed.
+
+sm1090.bibl: Required proforma field MP17 missing or malformed.
+
+sm1090.bibl: Warning: I don't yet know how to deal with the 'MP18' proforma field.
+
+sm1090.bibl: Required proforma field MP2a missing or malformed.
+
+sm1090.bibl: Required proforma field MP11 missing or malformed.
+
+sm1090.bibl: Required proforma field MP17 missing or malformed.
+
+sm1090.bibl: MP1: 7837 is not a valid multipub ID.
+
+sm1090.bibl: MP3: Can't have 'y' when MP1 doesn't specify an existing multipub id in Chado.
+
+sm1090.bibl: MP19: the data in MP1 is not a valid multipub, according to Chado.
+
+sm1090.bibl: Required proforma field MP2a missing or malformed.
+
+sm1090.bibl: Required proforma field MP11 missing or malformed.
+
+sm1090.bibl: Required proforma field MP17 missing or malformed.
+
+sm1090.bibl: Required proforma field MP2a missing or malformed.
+
+sm1090.bibl: Required proforma field MP11 missing or malformed.
+
+sm1090.bibl: Required proforma field MP17 missing or malformed.
+
+sm1090.bibl: Required proforma field MP2a missing or malformed.
+
+sm1090.bibl: Required proforma field MP11 missing or malformed.
+
+sm1090.bibl: Required proforma field MP17 missing or malformed.
+
+sm1090.bibl: Required proforma field MP2a missing or malformed.
+
+sm1090.bibl: Required proforma field MP11 missing or malformed.
+
+sm1090.bibl: Required proforma field MP17 missing or malformed.
+
+sm1090.bibl: MP1: 9646 is not a valid multipub ID.
+
+sm1090.bibl: MP3: Can't have 'y' when MP1 doesn't specify an existing multipub id in Chado.
+
+sm1090.bibl: MP19: the data in MP1 is not a valid multipub, according to Chado.
+
+sm1090.bibl: Required proforma field MP2a missing or malformed.
+
+sm1090.bibl: Required proforma field MP11 missing or malformed.
+
+sm1090.bibl: Required proforma field MP17 missing or malformed.
+
+
+Processing sm1089.bibl
+
+sm1089.bibl: MP17: Trying to change multipub type to the value (journal) it already has in Chado
+
+sm1089.bibl: MP2a: Can't change the reference Nat. Genet. to the same value 'Nat. Genet.' as it already has in Chado
+
+sm1089.bibl: Required proforma field MP11 missing or malformed.
+
+sm1089.bibl: MP17: Trying to change multipub type to the value (journal) it already has in Chado
+
+sm1089.bibl: MP2a: Can't change the reference BMC Mol. Biol. to the same value 'BMC Mol. Biol.' as it already has in Chado
+
+sm1089.bibl: Required proforma field MP11 missing or malformed.
+
+sm1089.bibl: MP17: Trying to change multipub type to the value (journal) it already has in Chado
+
+sm1089.bibl: MP2a: Can't change the reference Nat. Immunol. to the same value 'Nat. Immunol.' as it already has in Chado
+
+sm1089.bibl: Required proforma field MP11 missing or malformed.
+
+sm1089.bibl: MP17: Trying to change multipub type to the value (journal) it already has in Chado
+
+sm1089.bibl: MP2a: Can't change the reference Nat. Med. to the same value 'Nat. Med.' as it already has in Chado
+
+sm1089.bibl: Required proforma field MP11 missing or malformed.
+
+sm1089.bibl: MP17: Trying to change multipub type to the value (journal) it already has in Chado
+
+sm1089.bibl: MP2a: Can't change the reference Nat. Methods to the same value 'Nat. Methods' as it already has in Chado
+
+sm1089.bibl: Required proforma field MP11 missing or malformed.
+
+sm1089.bibl: MP17: Trying to change multipub type to the value (journal) it already has in Chado
+
+sm1089.bibl: MP2a: Can't change the reference Nat. Rev. Genet. to the same value 'Nat. Rev. Genet.' as it already has in Chado
+
+sm1089.bibl: Required proforma field MP11 missing or malformed.
+
+sm1089.bibl: MP17: Trying to change multipub type to the value (journal) it already has in Chado
+
+sm1089.bibl: MP2a: Can't change the reference Nat. Rev. Mol. Cell Biol. to the same value 'Nat. Rev. Mol. Cell Biol.' as it already has in Chado
+
+sm1089.bibl: Required proforma field MP11 missing or malformed.
+
+sm1089.bibl: MP17: Trying to change multipub type to the value (journal) it already has in Chado
+
+sm1089.bibl: MP2a: Can't change the reference Nat. Rev. Neurosci. to the same value 'Nat. Rev. Neurosci.' as it already has in Chado
+
+sm1089.bibl: Required proforma field MP11 missing or malformed.
+
+sm1089.bibl: MP17: Trying to change multipub type to the value (journal) it already has in Chado
+
+sm1089.bibl: MP2a: Can't change the reference Nat. Rev. Drug Discov. to the same value 'Nat. Rev. Drug Discov.' as it already has in Chado
+
+sm1089.bibl: Required proforma field MP11 missing or malformed.
+
+sm1089.bibl: MP17: Trying to change multipub type to the value (journal) it already has in Chado
+
+sm1089.bibl: MP2a: Can't change the reference Nat. Rev. Immunol. to the same value 'Nat. Rev. Immunol.' as it already has in Chado
+
+sm1089.bibl: Required proforma field MP11 missing or malformed.
+
+sm1089.bibl: MP17: Trying to change multipub type to the value (journal) it already has in Chado
+
+sm1089.bibl: MP2a: Can't change the reference Nat. Rev. Cancer to the same value 'Nat. Rev. Cancer' as it already has in Chado
+
+sm1089.bibl: Required proforma field MP11 missing or malformed.
+
+sm1089.bibl: MP17: Trying to change multipub type to the value (journal) it already has in Chado
+
+sm1089.bibl: MP2a: Can't change the reference Nat. Struct. Mol. Biol. to the same value 'Nat. Struct. Mol. Biol.' as it already has in Chado
+
+sm1089.bibl: Required proforma field MP11 missing or malformed.
+
+I checked 2 files.
+
+These 2 files failed at least one check:
+
+sm1089.bibl	sm1090.bibl
+
+Ignoring these 54 files:
+
+pl146542.bibl	pl146543.bibl	pl146545.bibl	pl146546.bibl	pl146547.bibl	pl146549.bibl	pl146550.bibl	pl146551.bibl	pl146552.bibl	pl146553.bibl
+pl146554.bibl	pl146555.bibl	pl146556.bibl	pl146557.bibl	pl146558.bibl	pl146559.bibl	pl146560.bibl	pl146561.bibl	pl146562.bibl	pl146564.bibl
+pl146565.bibl	pl146566.bibl	pl146567.bibl	pl146568.bibl	pl146569.bibl	pl146570.bibl	pl146571.bibl	pl146572.bibl	pl146573.bibl	pl146574.bibl
+pl146575.bibl	pl146576.bibl	pl146577.bibl	pl146578.bibl	pl146579.bibl	pl146580.bibl	pl146581.bibl	pl146582.bibl	pl146583.bibl	pl146584.bibl
+pl146585.bibl	pl146586.bibl	pl146587.bibl	pl146588.bibl	pl146589.bibl	pl146590.bibl	pl146591.bibl	pl146592.bibl	pl146593.bibl	pl146594.bibl
+pl146595.bibl	pl146596.bibl	pl146597.bibl	pl146598.bibl
+
+
+I came to this conclusion by consulting fb_2010_04_03 stored on oscar.gen.cam.ac.uk
+
+I used these ontologies:
+FBbt: /curfiles/ontologies/fly_anatomy.obo dated 04:02:2010 12:01
+FBdv: /curfiles/ontologies/fly_development.obo dated 19:10:2009 13:49
+FBcv: /curfiles/ontologies/flybase_controlled_vocabulary.obo dated 09:02:2009 13:59
+FBsp: /curfiles/ontologies/fly_taxonomy.obo dated 06:04:2007 11:47
+SO  : /curfiles/ontologies/so.obo dated 02:06:2006 12:44
+GO  : /curfiles/ontologies/gene_ontology.obo dated 26:11:2009 19:30
+GO_dbxrefs: /curfiles/ontologies/GO.xrf_abbs dated 2010/01/23 04:34:32
+
+
+
+Using ** test ** Peeves
+
+
+

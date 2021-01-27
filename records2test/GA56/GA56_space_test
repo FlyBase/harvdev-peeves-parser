@@ -1,0 +1,73 @@
+
+Processing gm070227
+
+gm070227: P38: Not checking this field because of ?? in '??
+'
+
+gm070227: G15: Not checking this field because of ?? in 'All the data in this record is made up.??'
+
+gm070227: GA56: superfluous leading whitespace in ' fertile'
+
+gm070227: GA56: superfluous trailing whitespace in 'sterile '
+
+gm070227: GA56: superfluous leading whitespace in ' semi-viable '
+
+gm070227: GA56: superfluous trailing whitespace in 'semi-viable '
+
+gm070227: GA56: superfluous leading whitespace in ' lethal | recessive'
+
+gm070227: GA56: superfluous trailing whitespace in 'semi-sterile | maternal effect '
+
+gm070227: GA56: superfluous leading whitespace in ' semi-lethal | recessive '
+
+gm070227: GA56: superfluous trailing whitespace in 'semi-lethal | recessive '
+
+gm070227: GA56: superfluous trailing whitespace in 'visible '
+
+gm070227: GA56: ' pupal stage' is not a valid qualifier in 'behavioural |  pupal stage | recessive'
+
+gm070227: GA56: 'embryonic stage ' is not a valid qualifier in 'chemical resistant | embryonic stage  |  conditional cs'
+
+gm070227: GA56: ' conditional cs' is not a valid qualifier in 'chemical resistant | embryonic stage  |  conditional cs'
+
+gm070227: GA56: superfluous trailing whitespace in 'grandchildless '
+
+gm070227: GA56: 'hypoactive{ Scer\GAL4[dpp.blk1] }' is not a valid phenotypic class.  Did you miss a space next to a curly bracket perhaps?
+
+gm070227: GA56: superfluous trailing whitespace in 'Scer\GAL4[dpp.blk1] '
+
+gm070227: GA56: superfluous leading whitespace in ' Scer\GAL4[dpp.blk1]'
+
+gm070227: GA56: 'mitotic {Scer\GAL4[yolk] }' is not a valid phenotypic class.  Did you miss a space next to a curly bracket perhaps?
+
+gm070227: GA56: 'uncoordinated { Scer\GAL4[yolk]}' is not a valid phenotypic class.  Did you miss a space next to a curly bracket perhaps?
+
+gm070227: GA56: superfluous trailing whitespace in 'bw[2] '
+
+gm070227: GA56: '( with bw[2]) flightless' is not a valid phenotypic class
+
+gm070227: GA56: superfluous leading whitespace in ' bw[2]'
+
+gm070227: GA56: '(withbw[2] ) hyperplastic' is not a valid phenotypic class
+
+gm070227: GA56: '(with bw[2])tumorigenic' is not a valid phenotypic class in '(with bw[2])tumorigenic | recessive | maternal effect'
+
+gm070227: GA56: superfluous leading whitespace in ' paralytic | pupal stage'
+
+gm070227: GA14: Not checking this field because of ?? in 'This proforma is for spacing errors in between the | and { to check Peeves picks 'em all up.
+first a space either/both sides of a simple term.
+then a space either/both sides of a qualfied term.
+then wrong amount of spaces around the | in terms with one or more |
+then wrong spacing in {}
+then wrong spacing in (with ) - these should also generate an error saying its not reciprocated in the other allele - if that check is working.
+??'
+
+
+This file failed at least one check:	gm070227
+
+Ignoring these 8 files:
+
+GA56.bug_report	GA56.bug_report%	GA56_space_test	gm070227%	peeves.crib	peeves.crib%	peeves_test.cfg	peeves_test.cfg%
+
+
+

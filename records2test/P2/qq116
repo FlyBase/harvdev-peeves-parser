@@ -1,0 +1,9 @@
+! PUBLICATION PROFORMA                   Version 41:  16 Mar 2010
+!
+! P22.  FlyBase reference ID (FBrf)      *U :FBrf0072125
+! P1.   Type of publication [CV]  *T :
+! P2.   Parent multipub (abbreviation)      *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :no_flag
+! P19.  Internal notes                   *H :?? The FBrf in P22 has a pubtype of 'book', so doesn't have an associated multipub.  Don't want to get Peeves error for omitting P2 entry in this case.  This record is same as qq115.edit, but this record name lacks the '.edit' suffix - this shouldn't matter.   sm100415.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

@@ -1,0 +1,52 @@
+! C1.  Curator ID	:bev
+! C2.  Date		:140123
+! C3.  Curator notes to self	:
+! C9.  Cambridge curation (new_al, merge, split, rename, new_char, pheno, nocur, new_transg) 
+! C4.  Additional curation (P41. wt_exp, pert_exp, neur_exp, gene_model, gene_model_nonmel, phys_int, cis_reg, genom_feat, no_flag, disease P42. novel_anat)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 44:  6 Nov 2012
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0222702
+! P2.   Parent multipub abbreviation               *w :Mol. Biol. Evol.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :no_flag
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! NATURAL TRANSPOSON PROFORMA                        Version 7: 13 Apr 2011
+!
+! TE1f. ID for gen.natTE (FBte or "new")       :FBte0000088
+! TE1a. gen.natTE symbol to use in database    :mdg1
+! TE1b. gen.natTE symbol used in reference     :mdg1
+! TE3.  Species                                :Dmel
+! TE14b.  gen.natTE name used in reference       :
+! TE4a. Transposon type [CV]                :
+!
+! TE13. Internal comments   :?? error is mismatch between TE1f and TE1a
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! NATURAL TRANSPOSON PROFORMA                        Version 7: 13 Apr 2011
+!
+! TE1f. ID for gen.natTE (FBte or "new")       :FBte0000015
+! TE1a. gen.natTE symbol to use in database    :springer
+! TE1b. gen.natTE symbol used in reference     :springer
+! TE3.  Species                                :Dmel
+! TE14b.  gen.natTE name used in reference       :
+! TE4a. Transposon type [CV]                :
+!
+! TE13. Internal comments   :?? error is mismatch between TE1f and TE1a
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! NATURAL TRANSPOSON PROFORMA                        Version 7: 13 Apr 2011
+!
+! TE1f. ID for gen.natTE (FBte or "new")       :FBte0000333
+! TE1a. gen.natTE symbol to use in database    :jockey
+! TE1b. gen.natTE symbol used in reference     :jockey
+! TE3.  Species                                :Dmel
+! TE14b.  gen.natTE name used in reference       :
+! TE4a. Transposon type [CV]                :
+!
+! TE13. Internal comments   :?? error is mismatch between TE1f and TE1a
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

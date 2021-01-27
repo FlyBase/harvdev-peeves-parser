@@ -1,0 +1,62 @@
+ PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :new
+! P45.  Publication is NOT about Drosophila? (y)      *q :
+! P32.  Action - make this FBrf a secondary ID of P22 (FBrf)  *N :
+! P39.  Action - obsolete P22 in FlyBase (y)           TAKE CARE :
+! P1.   Type of publication [CV]  *T :review
+! P2.   Parent multipub abbreviation               *w :Gene
+! P12.  Author(s)                           *a-*b :Collart	M.A.
+Panasenko	O.O.
+! P10.  Year (YYYY), or date (YYYY.M.D) if PC  *t :2012
+! P16.  Title                                  *u :The Ccr4--not complex.
+! P3.   Volume number                          *y :492
+! P4.   Issue number                           *Y :1
+! P11a. Page range or article number               *z :42--53
+! P11d. DOI                                           :10.1016/j.gene.2011.09.033
+! P11b. URL                                        *R :
+! P11c. Sequence accession number                     :
+! P13.  Language of publication [CV]                          *L :English
+! P14.  Additional language(s) of abstract [CV]               *A :
+! P26.  PubMed ID                *M :22027279
+! P28.  PubMed Central ID  *c :
+! P29.  ISBN, if P1 = book       *I :
+! P23.  Text of personal communication *F :
+! P18.  Miscellaneous comments                                  *G :
+! P38.  Associated file(s), archived at ftp site [SoftCV]    *K :
+! P30.  Also published as (FBrf)            *C :
+! P31.  Related publication(s) (FBrf)       *E :
+! P34.  Abstract text    *X :The Ccr4-Not complex is a unique, essential and conserved multi-subunit complex that acts at the level of many different cellular functions to regulate gene expression. Two enzymatic activities, namely ubiquitination and deadenylation, are provided by different subunits of the complex. However, studies over the last decade have demonstrated a tantalizing multi-functionality of this complex that extends well beyond its identified enzymatic activities. Most of our initial knowledge about the Ccr4-Not complex stemmed from studies in yeast, but an increasing number of reports on this complex in other species are emerging. In this review we will discuss the structure and composition of the complex, and describe the different cellular functions with which the Ccr4-Not complex has been connected in different organisms. Finally, based upon our current state of knowledge, we will propose a model to explain how one complex can provide such multi-functionality. This model suggests that the Ccr4-Not complex might function as a "chaperone platform".
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :no_flag
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :noDOcur
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+ GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Pop2 # twin # Not3 # Cnot4 # pum # nos # gw # pAbp # Not1 # Rga # Rcd-1
+! G1b.  Gene symbol(s) used in reference                    *i :CAF1 # CCR4 # NOT3/5 # NOT4 # Pum # Nanos # GW182 # PABPC1 # NOT1 # NOT2 # CAF40
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :yah di yah
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

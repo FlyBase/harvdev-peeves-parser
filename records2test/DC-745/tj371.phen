@@ -1,0 +1,871 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0230708
+! P2.   Parent multipub abbreviation               *w :eLife
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :noDOcur
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :crb
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :crb[Y10A]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :(with crb[GX24w-]/crb[GX24w-]) increased cell death | embryonic stage
+(with crb[GX24w-]/crb[GX24w-]) majority die during embryonic stage
+(with crb[GX24w-]/crb[11A22]) majority die during embryonic stage
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :(with crb[GX24w-]/crb[GX24w-]) amnioserosa | embryonic stage
+(with crb[GX24w-]/crb[GX24w-]) germ band | embryonic stage
+(with crb[GX24w-]/crb[GX24w-]) epidermal cell | embryonic stage
+(with crb[GX24w-]/crb[GX24w-]) zonula adherens | embryonic stage
+(with crb[GX24w-]/crb[GX24w-]) embryo | dorsal closure stage
+(with crb[GX24w-]/crb[GX24w-]) embryonic/first instar larval cuticle | embryonic stage
+(with crb[GX24w-]/crb[11A22]) embryo | dorsal closure stage
+(with crb[GX24w-]/crb[11A22]) embryonic/first instar larval cuticle | embryonic stage
+! GA7a.  Phenotype [free text]                            *k :A majority of embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[GX24w-]@ background exhibit lethality due to dorsal closure defects, ranging in severity from open cuticle, dorsal holes, closed cuticles but failure to hatch, or kinked larvae. These embryos also exhibit major defects in germ band retraction; a highly disorganized amnioserosa, with an increase in large processes, an increase in the number of apoptotic cells, and aberrant contractions of amnioserosal cells; and exhibit disorganization of elongation of the dorsal-most epidermal cells, and erratic extension of the filopodia extended by these cells. The amnioserosa in these embryos shows fragmentation of the zonula adherens.
+
+A majority of embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background exhibit lethality due to dorsal closure defects, ranging in severity from open cuticle, dorsal holes, closed cuticles but failure to hatch, or kinked larvae.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :(with crb[GX24w-]/crb[11A22]) majority die during embryonic stage, suppressible { flw[Scer\UAS.T:Ivir\HA1], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[11A22]) majority die during embryonic stage, enhanceable { flw[6]/flw[6] }
+(with crb[GX24w-]/crb[11A22]) majority die during embryonic stage, enhanceable { flw[6] }
+(with crb[GX24w-]/crb[11A22]) majority die during embryonic stage, suppressible | partially { Rho1[N19.Scer\UAS], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[11A22]) majority die during embryonic stage, suppressible | partially { Rok[CAT-KG.Scer\UAS], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[GX24w-]) majority die during embryonic stage, suppressible | partially { Rho1[1B] }
+(with crb[GX24w-]/crb[11A22]) majority die during embryonic stage, non-suppressible { Rok[2]/Rok[2] }
+(with crb[GX24w-]/crb[11A22]) majority die during embryonic stage, non-suppressible { Rok[2] }
+(with crb[GX24w-]/crb[11A22]) majority die during embryonic stage, non-suppressible { Rac1[N17.Scer\UAS], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[11A22]) majority die during embryonic stage, suppressible | partially { Pak[AID.Scer\UAS.T:Zzzz\FLAG], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[11A22]) majority die during embryonic stage, suppressible | partially { Moe[K.T559D.Scer\UAS.T:Hsap\MYC], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[11A22]) majority die during embryonic stage, non-suppressible { Moe[Scer\UAS.T:Hsap\MYC], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[11A22]) majority die during embryonic stage, non-suppressible { Arpc1[Q25st]/+ }
+(with crb[GX24w-]/crb[11A22]) majority die during embryonic stage, suppressible | partially { shg[Scer\UAS.cSa], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[GX24w-]) majority die during embryonic stage, suppressible | partially { SCAR[&Dgr;37]/+ }
+(with crb[GX24w-]/crb[GX24w-]) visible, UI { SCAR[&Dgr;37]/+ }
+(with crb[GX24w-]/crb[11A22]) majority die during embryonic stage, suppressible | partially { Arp3[EP3640]/+ }
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :(with crb[GX24w-]/crb[GX24w-]) amnioserosa, non-suppressible { yrt[75]/yrt[75] }
+(with crb[GX24w-]/crb[GX24w-]) germ band | embryonic stage, non-suppressible { yrt[75]/yrt[75] }
+(with crb[GX24w-]/crb[11A22]) embryo | dorsal closure stage, suppressible | partially { flw[Scer\UAS.T:Ivir\HA1], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[11A22]) embryonic dorsal epidermis, UI { flw[Scer\UAS.T:Ivir\HA1], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[11A22]) embryo | dorsal closure stage, enhanceable { flw[6]/flw[6] }
+(with crb[GX24w-]/crb[11A22]) embryonic/first instar larval cuticle | embryonic stage, enhanceable { flw[6]/flw[6] }
+(with crb[GX24w-]/crb[11A22]) embryo | dorsal closure stage, enhanceable { flw[6] }
+(with crb[GX24w-]/crb[11A22]) embryonic/first instar larval cuticle | embryonic stage, enhanceable { flw[6] }
+(with crb[GX24w-]/crb[11A22]) embryo | dorsal closure stage, suppressible | partially { Rho1[N19.Scer\UAS], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[11A22]) embryonic/first instar larval cuticle | embryonic stage, suppressible | partially { Rho1[N19.Scer\UAS], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[11A22]) embryo | dorsal closure stage, suppressible | partially { Rok[CAT-KG.Scer\UAS], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[11A22]) embryonic/first instar larval cuticle | embryonic stage, suppressible | partially { Rok[CAT-KG.Scer\UAS], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[GX24w-]) embryo | dorsal closure stage, suppressible | partially { Rho1[1B] }
+(with crb[GX24w-]/crb[GX24w-]) embryonic/first instar larval cuticle | embryonic stage, suppressible | partially { Rho1[1B] }
+(with crb[GX24w-]/crb[11A22]) embryo | dorsal closure stage, non-suppressible { Rok[2]/Rok[2] }
+(with crb[GX24w-]/crb[11A22]) embryonic/first instar larval cuticle | embryonic stage, non-suppressible { Rok[2]/Rok[2] }
+(with crb[GX24w-]/crb[11A22]) embryo | dorsal closure stage, non-suppressible { Rok[2] }
+(with crb[GX24w-]/crb[11A22]) embryonic/first instar larval cuticle | embryonic stage, non-suppressible { Rok[2] }
+(with crb[GX24w-]/crb[11A22]) embryo | dorsal closure stage, non-suppressible { Rac1[N17.Scer\UAS], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[11A22]) embryonic/first instar larval cuticle | embryonic stage, non-suppressible { Rac1[N17.Scer\UAS], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[11A22]) embryo | dorsal closure stage, suppressible | partially { Pak[AID.Scer\UAS.T:Zzzz\FLAG], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[11A22]) embryonic/first instar larval cuticle | embryonic stage, suppressible | partially { Pak[AID.Scer\UAS.T:Zzzz\FLAG], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[11A22]) embryo | dorsal closure stage, suppressible | partially { Moe[K.T559D.Scer\UAS.T:Hsap\MYC], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[11A22]) embryonic/first instar larval cuticle | embryonic stage, suppressible | partially { Moe[K.T559D.Scer\UAS.T:Hsap\MYC], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[11A22]) embryo | dorsal closure stage, non-suppressible { Moe[Scer\UAS.T:Hsap\MYC], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[11A22]) embryonic/first instar larval cuticle | embryonic stage, non-suppressible { Moe[Scer\UAS.T:Hsap\MYC], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[11A22]) embryo | dorsal closure stage, suppressible | partially { shg[Scer\UAS.cSa], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[11A22]) embryonic/first instar larval cuticle | embryonic stage, suppressible | partially { shg[Scer\UAS.cSa], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[GX24w-]) embryo | dorsal closure stage, suppressible | partially { SCAR[&Dgr;37]/+ }
+(with crb[GX24w-]/crb[GX24w-]) embryonic/first instar larval cuticle | embryonic stage, suppressible | partially { SCAR[&Dgr;37]/+ }
+(with crb[GX24w-]/crb[GX24w-]) adult abdomen, UI { SCAR[&Dgr;37]/+ }
+(with crb[GX24w-]/crb[11A22]) embryo | dorsal closure stage, suppressible | partially { Arp3[EP3640]/+ }
+(with crb[GX24w-]/crb[11A22]) embryonic/first instar larval cuticle | embryonic stage, suppressible | partially { Arp3[EP3640]/+ }
+(with crb[GX24w-]/crb[11A22]) embryo | dorsal closure stage, non-suppressible { Arpc1[Q25st]/+ }
+(with crb[GX24w-]/crb[11A22]) embryonic/first instar larval cuticle | embryonic stage, non-suppressible { Arpc1[Q25st]/+ }
+! GA28c. Genetic interaction [free text]                    *S :@yrt[75]@/@yrt[75]@ fails to ameliorate the germ band retraction and amnioserosal integrity defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[GX24w-]@ background.
+
+Expression of @flw[Scer\UAS.T:Ivir\HA1]@ under the control of @Scer\GAL4[332.3]@ largely suppresses the embryonic lethality and dorsal closure defects in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background, although some embryos exhibit irregular zippering at the posterior canthus and bunching of the epidermis.
+
+@flw[6]@/@flw[6]@ or @flw[6]@ hemizygosity enhances the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+
+@Arp3[EP3640]@/+, or expression of @Rho1[N19.Scer\UAS]@, @Rok[CAT-KG.Scer\UAS]@ or @Moe[K.T559D.Scer\UAS.T:Hsap\MYC]@ under the control of @Scer\GAL4[332.3]@ partially suppresses the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+
+@Rho1[1B]@ hemizygosity partially suppresses the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[GX24w-]@ background.
+
+@Arpc1[Q25st]@/+, @Rok[2]@/@Rok[2]@ or @Rok[2]@ hemizygosity, or expression of @Rac1[N17.Scer\UAS]@ or @Moe[Scer\UAS.T:Hsap\MYC]@ under the control of @Scer\GAL4[332.3]@, fails to suppress the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+
+Expression of @Pak[AID.Scer\UAS.T:Zzzz\FLAG]@ or @shg[Scer\UAS.cSa]@ under the control of @Scer\GAL4[332.3]@ partially suppresses the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background, resulting in some adult survival.
+
+@SCAR[&Dgr;37]@/+ partially suppresses the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[GX24w-]@ background, resulting in some adults surviving, although these adults show defects in abdominal development.
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :Expression of @crb[Scer\UAS.cWa]@ under the control of @Scer\GAL4[332.3]@ fails to significantly rescue the lethality and dorsal closure defects in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :crb[+tfos]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Embryos expressing @crb[+tfos]@ in a @crb[GX24w-]@/@crb[GX24w-]@ background successfully complete dorsal closure, and exhibit normal elongation and filpodia extension of the dorsal-most epidermal cells.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :(with crb[GX24w-]/crb[11A22]) lethal - all die during embryonic stage, UI { Pak[Scer\UAS.T:Myr-Src64B], Scer\GAL4[332.3] }
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :(with crb[GX24w-]/crb[11A22]) embryo | dorsal closure stage, UI { Pak[Scer\UAS.T:Myr-Src64B], Scer\GAL4[332.3] }
+(with crb[GX24w-]/crb[11A22]) embryonic/first instar larval cuticle | embryonic stage, UI { Pak[Scer\UAS.T:Myr-Src64B], Scer\GAL4[332.3] }
+! GA28c. Genetic interaction [free text]                    *S :Expression of @flw[Scer\UAS.T:Ivir\HA1]@ under the control of @Scer\GAL4[332.3]@ does not lead to any obvious phenotype in embryos expressing @crb[+tfos]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+
+@SCAR[&Dgr;37]@/+ or @Arp3[EP3640]@/+ does not lead to any dorsal closure defects in embryos expressing @crb[+tfos]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+
+Expression of @Pak[Scer\UAS.T:Myr-Src64B]@ under the control of @Scer\GAL4[332.3]@ in embryos expressing @crb[+tfos]@ in a @crb[GX24w-]@/@crb[11A22]@ background leads to complete embryonic lethality with most embryos exhibiting dorsal closure defects ranging in severity from open cuticle and dorsal holes, to closed cuticles but failure to hatch.
+
+Embryos expressing @crb[+tfos]@ in a @crb[GX24w-]@/@crb[GX24w-]@, @yrt[75]@/@yrt[75]@ background exhibit defects in dorsal closure mainly after germ band retraction, although overall amnioserosa integrity is preserved during dorsal closure and most of the zippering is completed, leaving a hole only at the posterior canthus.
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :crb[Y10F]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Embryos expressing @crb[Y10F]@ in a @crb[GX24w-]@/@crb[GX24w-]@ background successfully complete dorsal closure and do not show obvious defects in the amnioserosal cells.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :Expression of @flw[Scer\UAS.T:Ivir\HA1]@ under the control of @Scer\GAL4[332.3]@ does not lead to any obvious phenotype in embryos expressing @crb[Y10F]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :crb[GX24w-]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :A majority of embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[GX24w-]@ background exhibit lethality due to dorsal closure defects, ranging in severity from open cuticle, dorsal holes, closed cuticles but failure to hatch, or kinked larvae. These embryos also exhibit major defects in germ band retraction; a highly disorganized amnioserosa, with an increase in large processes, an increase in the number of apoptotic cells, and aberrant contractions of amnioserosal cells; and exhibit disorganization of elongation of the dorsal-most epidermal cells, and erratic extension of the filopodia extended by these cells. The amnioserosa in these embryos shows fragmentation of the zonula adherens.
+
+A majority of embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background exhibit lethality due to dorsal closure defects, ranging in severity from open cuticle, dorsal holes, closed cuticles but failure to hatch, or kinked larvae.
+
+Embryos expressing @crb[+tfos]@ in a @crb[GX24w-]@/@crb[GX24w-]@ background successfully complete dorsal closure, and exhibit normal elongation and filpodia extension of the dorsal-most epidermal cells.
+
+Embryos expressing @crb[Y10F]@ in a @crb[GX24w-]@/@crb[GX24w-]@ background successfully complete dorsal closure and do not show obvious defects in the amnioserosal cells.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :Embryos expressing @crb[+tfos]@ in a @crb[GX24w-]@/@crb[GX24w-]@, @yrt[75]@/@yrt[75]@ background exhibit defects in dorsal closure mainly after germ band retraction, although overall amnioserosa integrity is preserved during dorsal closure and most of the zippering is completed, leaving a hole only at the posterior canthus.
+
+Expression of @flw[Scer\UAS.T:Ivir\HA1]@ under the control of @Scer\GAL4[332.3]@ does not lead to any obvious phenotype in embryos expressing @crb[Y10F]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+
+@yrt[75]@/@yrt[75]@ fails to ameliorate the germ band retraction and amnioserosal integrity defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[GX24w-]@ background.
+
+Expression of @flw[Scer\UAS.T:Ivir\HA1]@ under the control of @Scer\GAL4[332.3]@ largely suppresses the embryonic lethality and dorsal closure defects in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background, although some embryos exhibit irregular zippering at the posterior canthus and bunching of the epidermis.
+
+@flw[6]@/@flw[6]@ or @flw[6]@ hemizygosity enhances the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+
+@Arp3[EP3640]@/+, or expression of @Rho1[N19.Scer\UAS]@, @Rok[CAT-KG.Scer\UAS]@ or @Moe[K.T559D.Scer\UAS.T:Hsap\MYC]@ under the control of @Scer\GAL4[332.3]@ partially suppresses the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+
+@Rho1[1B]@ hemizygosity partially suppresses the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[GX24w-]@ background.
+
+@Arpc1[Q25st]@/+, @Rok[2]@/@Rok[2]@ or @Rok[2]@ hemizygosity, or expression of @Rac1[N17.Scer\UAS]@ or @Moe[Scer\UAS.T:Hsap\MYC]@ under the control of @Scer\GAL4[332.3]@, fails to suppress the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+
+Expression of @Pak[AID.Scer\UAS.T:Zzzz\FLAG]@ or @shg[Scer\UAS.cSa]@ under the control of @Scer\GAL4[332.3]@ partially suppresses the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background, resulting in some adult survival.
+
+@SCAR[&Dgr;37]@/+ partially suppresses the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[GX24w-]@ background, resulting in some adults surviving, although these adults show defects in abdominal development.
+
+Expression of @flw[Scer\UAS.T:Ivir\HA1]@ under the control of @Scer\GAL4[332.3]@ does not lead to any obvious phenotype in embryos expressing @crb[+tfos]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+
+@SCAR[&Dgr;37]@/+ or @Arp3[EP3640]@/+ does not lead to any dorsal closure defects in embryos expressing @crb[+tfos]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+
+Expression of @Pak[Scer\UAS.T:Myr-Src64B]@ under the control of @Scer\GAL4[332.3]@ in embryos expressing @crb[+tfos]@ in a @crb[GX24w-]@/@crb[11A22]@ background leads to complete embryonic lethality with most embryos exhibiting dorsal closure defects ranging in severity from open cuticle and dorsal holes, to closed cuticles but failure to hatch.
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :Expression of @crb[Scer\UAS.cWa]@ under the control of @Scer\GAL4[332.3]@ fails to significantly rescue the lethality and dorsal closure defects in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :crb[11A22]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :A majority of embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background exhibit lethality due to dorsal closure defects, ranging in severity from open cuticle, dorsal holes, closed cuticles but failure to hatch, or kinked larvae.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :Expression of @flw[Scer\UAS.T:Ivir\HA1]@ under the control of @Scer\GAL4[332.3]@ does not lead to any obvious phenotype in embryos expressing @crb[Y10F]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+
+Expression of @flw[Scer\UAS.T:Ivir\HA1]@ under the control of @Scer\GAL4[332.3]@ largely suppresses the embryonic lethality and dorsal closure defects in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background, although some embryos exhibit irregular zippering at the posterior canthus and bunching of the epidermis.
+
+@flw[6]@/@flw[6]@ or @flw[6]@ hemizygosity enhances the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+
+@Arp3[EP3640]@/+, or expression of @Rho1[N19.Scer\UAS]@, @Rok[CAT-KG.Scer\UAS]@ or @Moe[K.T559D.Scer\UAS.T:Hsap\MYC]@ under the control of @Scer\GAL4[332.3]@ partially suppresses the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+
+@Arpc1[Q25st]@/+, @Rok[2]@/@Rok[2]@ or @Rok[2]@ hemizygosity, or expression of @Rac1[N17.Scer\UAS]@ or @Moe[Scer\UAS.T:Hsap\MYC]@ under the control of @Scer\GAL4[332.3]@, fails to suppress the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+
+Expression of @Pak[AID.Scer\UAS.T:Zzzz\FLAG]@ or @shg[Scer\UAS.cSa]@ under the control of @Scer\GAL4[332.3]@ partially suppresses the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background, resulting in some adult survival.
+
+Expression of @flw[Scer\UAS.T:Ivir\HA1]@ under the control of @Scer\GAL4[332.3]@ does not lead to any obvious phenotype in embryos expressing @crb[+tfos]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+
+@SCAR[&Dgr;37]@/+ or @Arp3[EP3640]@/+ does not lead to any dorsal closure defects in embryos expressing @crb[+tfos]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+
+Expression of @Pak[Scer\UAS.T:Myr-Src64B]@ under the control of @Scer\GAL4[332.3]@ in embryos expressing @crb[+tfos]@ in a @crb[GX24w-]@/@crb[11A22]@ background leads to complete embryonic lethality with most embryos exhibiting dorsal closure defects ranging in severity from open cuticle and dorsal holes, to closed cuticles but failure to hatch.
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :Expression of @crb[Scer\UAS.cWa]@ under the control of @Scer\GAL4[332.3]@ fails to significantly rescue the lethality and dorsal closure defects in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :crb[Scer\UAS.cWa]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :Fails to rescue: crb[Y10A]/- { Scer\GAL4[332.3] }
+! GA22.  Interallelic complementation or rescue data [free text] *Q :Expression of @crb[Scer\UAS.cWa]@ under the control of @Scer\GAL4[332.3]@ fails to significantly rescue the lethality and dorsal closure defects in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :yrt
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :yrt[75]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :embryo | dorsal closure stage, UI { crb[GX24w-]/crb[GX24w-], crb[+tfos] }
+! GA28c. Genetic interaction [free text]                    *S :Embryos expressing @crb[+tfos]@ in a @crb[GX24w-]@/@crb[GX24w-]@, @yrt[75]@/@yrt[75]@ background exhibit defects in dorsal closure mainly after germ band retraction, although overall amnioserosa integrity is preserved during dorsal closure and most of the zippering is completed, leaving a hole only at the posterior canthus.
+
+@yrt[75]@/@yrt[75]@ fails to ameliorate the germ band retraction and amnioserosal integrity defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[GX24w-]@ background.
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :flw
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :flw[Scer\UAS.T:Ivir\HA1]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :Expression of @flw[Scer\UAS.T:Ivir\HA1]@ under the control of @Scer\GAL4[332.3]@ largely suppresses the embryonic lethality and dorsal closure defects in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background, although some embryos exhibit irregular zippering at the posterior canthus and bunching of the epidermis.
+
+Expression of @flw[Scer\UAS.T:Ivir\HA1]@ under the control of @Scer\GAL4[332.3]@ does not lead to any obvious phenotype in embryos expressing @crb[+tfos]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+
+Expression of @flw[Scer\UAS.T:Ivir\HA1]@ under the control of @Scer\GAL4[332.3]@ does not lead to any obvious phenotype in embryos expressing @crb[Y10F]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :flw[6]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :@flw[6]@/@flw[6]@ or @flw[6]@ hemizygosity enhances the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Rho1
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Rho1[N19.Scer\UAS]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :Expression of @Rho1[N19.Scer\UAS]@ under the control of @Scer\GAL4[332.3]@ partially suppresses the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Rho1[1B]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :@Rho1[1B]@ hemizygosity partially suppresses the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[GX24w-]@ background.
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Rok
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Rok[CAT-KG.Scer\UAS]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :Expression of @Rok[CAT-KG.Scer\UAS]@ under the control of @Scer\GAL4[332.3]@ partially suppresses the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Rok[2]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :@Rok[2]@/@Rok[2]@ or @Rok[2]@ hemizygosity fails to suppress the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Rac1
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Rac1[N17.Scer\UAS]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :Expression of @Rac1[N17.Scer\UAS]@ under the control of @Scer\GAL4[332.3]@ fails to suppress the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Pak
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Pak[AID.Scer\UAS.T:Zzzz\FLAG]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :Expression of @Pak[AID.Scer\UAS.T:Zzzz\FLAG]@ under the control of @Scer\GAL4[332.3]@ partially suppresses the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background, resulting in some adult survival.
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Pak[Scer\UAS.T:Myr-Src64B]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :Expression of @Pak[Scer\UAS.T:Myr-Src64B]@ under the control of @Scer\GAL4[332.3]@ in embryos expressing @crb[+tfos]@ in a @crb[GX24w-]@/@crb[11A22]@ background leads to complete embryonic lethality with most embryos exhibiting dorsal closure defects ranging in severity from open cuticle and dorsal holes, to closed cuticles but failure to hatch.
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Moe
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Moe[K.T559D.Scer\UAS.T:Hsap\MYC]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :Expression of @Moe[K.T559D.Scer\UAS.T:Hsap\MYC]@ under the control of @Scer\GAL4[332.3]@ partially suppresses the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Moe[Scer\UAS.T:Hsap\MYC]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :Expression of @Moe[Scer\UAS.T:Hsap\MYC]@ under the control of @Scer\GAL4[332.3]@ fails to suppress the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :shg
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :shg[Scer\UAS.cSa]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :Expression of @shg[Scer\UAS.cSa]@ under the control of @Scer\GAL4[332.3]@ largely suppresses the embryonic lethality and dorsal closure defects in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background, resulting in some adult survival.
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :SCAR
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :SCAR[&Dgr;37]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :@SCAR[&Dgr;37]@/+ partially suppresses the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[GX24w-]@ background, resulting in some adults surviving, although these adults show defects in abdominal development.
+
+@SCAR[&Dgr;37]@/+ does not lead to any dorsal closure defects in embryos expressing @crb[+tfos]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Arpc1
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Arpc1[Q25st]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :@Arpc1[Q25st]@/+ fails to suppress the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Arp3
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Arp3[EP3640]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :@Arp3[EP3640]@/+ partially suppresses the embryonic lethality and dorsal closure defects seen in embryos expressing @crb[Y10A]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+
+@Arp3[EP3640]@/+ does not lead to any dorsal closure defects in embryos expressing @crb[+tfos]@ in a @crb[GX24w-]@/@crb[11A22]@ background.
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

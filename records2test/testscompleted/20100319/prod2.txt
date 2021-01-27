@@ -1,0 +1,692 @@
+
+Using Peeves in /Peeves/production
+/Peeves/production/Peeves
+
+Processing gm25278.edit
+
+gm25278.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25278.edit: GA1e: by[+t11.T:Avic\GFP] is not a valid allele symbol in Chado
+
+gm25278.edit: GA1g claims that by[T:Avic\GFP] is not an existing allele symbol, but Chado knows it as FBal0180606
+
+gm25278.edit: GA1e: by[R483E.t11.T:Avic\GFP] is not a valid allele symbol in Chado
+
+gm25278.edit: GA1g claims that by[R483E.T:Avic\GFP] is not an existing allele symbol, but Chado knows it as FBal0180599
+
+gm25278.edit: GA1e: by[&Dgr;352-698.t11.T:Avic\GFP] is not a valid allele symbol in Chado
+
+gm25278.edit: GA1g claims that by[&Dgr;352-698.T:Avic\GFP] is not an existing allele symbol, but Chado knows it as FBal0180607
+
+gm25278.edit: GA1e: cic[+tJa.T:Ivir\HA1] is not a valid allele symbol in Chado
+
+gm25278.edit: GA1g claims that cic[T:Ivir\HA1] is not an existing allele symbol, but Chado knows it as FBal0137284
+
+gm25278.edit: GA1e: cni[+t.T:Myc] is not a valid allele symbol in Chado
+
+gm25278.edit: GA1g claims that cni[T:Hsap\MYC] is not an existing allele symbol, but Chado knows it as FBal0193430
+
+gm25278.edit: GA1e: cnk[+t5.5.T:Zzzz\FLAG] is not a valid allele symbol in Chado
+
+gm25278.edit: GA1g claims that cnk[T:Zzzz\FLAG] is not an existing allele symbol, but Chado knows it as FBal0180442
+
+gm25278.edit: GA1e: esc[+t4.2.T:Ivir\HA1] is not a valid allele symbol in Chado
+
+gm25278.edit: GA1g claims that esc[T:Ivir\HA1] is not an existing allele symbol, but Chado knows it as FBal0089291
+
+gm25278.edit: GA1e: esc[+t4.2.T:Zzzz\FLAG] is not a valid allele symbol in Chado
+
+gm25278.edit: GA1g claims that esc[T:Zzzz\FLAG] is not an existing allele symbol, but Chado knows it as FBal0141137
+
+gm25278.edit: GA1e: fs(1)M3[+t8.T:Ivir\HA1] is not a valid allele symbol in Chado
+
+gm25278.edit: GA1g claims that fs(1)M3[T:Ivir\HA1] is not an existing allele symbol, but Chado knows it as FBal0135724
+
+gm25278.edit: GA1e: fs(1)N[+t8.9.T:Ivir\HA1] is not a valid allele symbol in Chado
+
+gm25278.edit: GA1g claims that fs(1)N[T:Ivir\HA1] is not an existing allele symbol, but Chado knows it as FBal0135719
+
+gm25278.edit: GA1e: tsl[+t10.T:Ivir\HA1] is not a valid allele symbol in Chado
+
+gm25278.edit: GA1g claims that tsl[T:Ivir\HA1] is not an existing allele symbol, but Chado knows it as FBal0135597
+
+gm25278.edit: GA1e: fws[+t5.7.T:Avic\GFP] is not a valid allele symbol in Chado
+
+gm25278.edit: GA1g claims that fws[T:Avic\GFP] is not an existing allele symbol, but Chado knows it as FBal0151906
+
+gm25278.edit: GA1e: lkb1[+tMa.T:Avic\GFP] is not a valid allele symbol in Chado
+
+gm25278.edit: GA1g claims that lkb1[T:Avic\GFP] is not an existing allele symbol, but Chado knows it as FBal0141056
+
+gm25278.edit: GA1e: mago[+t2.2.T:Avic\GFP] is not a valid allele symbol in Chado
+
+gm25278.edit: GA1g claims that mago[T:Avic\GFP] is not an existing allele symbol, but Chado knows it as FBal0063884
+
+gm25278.edit: GA1e: mago[+t2.2.T:Hsap\MYC] is not a valid allele symbol in Chado
+
+gm25278.edit: GA1g claims that mago[T:Hsap\MYC] is not an existing allele symbol, but Chado knows it as FBal0063883
+
+gm25278.edit: GA1e: ninaE[WT.+t2747] is not a valid allele symbol in Chado
+
+gm25278.edit: GA1g claims that ninaE[+t2.747] is not an existing allele symbol, but Chado knows it as FBal0241242
+
+gm25278.edit: GA1e: ninaE[P37H.+t2747] is not a valid allele symbol in Chado
+
+gm25278.edit: GA1g claims that ninaE[P37H] is not an existing allele symbol, but Chado knows it as FBal0241243
+
+gm25278.edit: GA1e: ninaE[P37H.+t2747.T:Hsim\gD] is not a valid allele symbol in Chado
+
+gm25278.edit: GA1g claims that ninaE[P37H.T:Hsim\gD] is not an existing allele symbol, but Chado knows it as FBal0241244
+
+gm25278.edit: GA1e: Pi3K92E[+t.T:Hsap\MYC] is not a valid allele symbol in Chado
+
+gm25278.edit: GA1g claims that Pi3K92E[T:Hsap\MYC] is not an existing allele symbol, but Chado knows it as FBal0218868
+
+gm25278.edit: GA1e: Su(z)2[+t14.T:Hsap\MYC] is not a valid allele symbol in Chado
+
+gm25278.edit: GA1g claims that Su(z)2[T:Hsap\MYC] is not an existing allele symbol, but Chado knows it as FBal0063037
+
+gm25278.edit: GA1e: U2af50[+tRa.T:Ivir\HA1] is not a valid allele symbol in Chado
+
+gm25278.edit: GA1g claims that U2af50[T:Ivir\HA1] is not an existing allele symbol, but Chado knows it as FBal0090517
+
+
+Processing gm25257.edit
+
+gm25257.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25257.edit: G1f: 'CG42731' is not a valid gene symbol
+
+gm25257.edit: G1f: 'CG34363' is not a valid gene symbol
+
+gm25257.edit: G1f: 'CG12897' is not a valid gene symbol
+
+gm25257.edit: G2a: Missing data when G1f has data 'CG42732 CG34363 CG12897' and G1g is y
+
+gm25257.edit: G31a: Do you REALLY want to delete 'CG33984' and all associated data from FlyBase? Did you mistakenly fill in the G31a field instead of the intended G31b??
+
+gm25257.edit: G1g claims that CG33984 is an existing gene symbol, but Chado has never heard of it.
+
+gm25257.edit: G31a: Do you REALLY want to delete 'CG31392' and all associated data from FlyBase? Did you mistakenly fill in the G31a field instead of the intended G31b??
+
+gm25257.edit: G1g claims that CG31392 is an existing gene symbol, but Chado has never heard of it.
+
+gm25257.edit: G31a: Do you REALLY want to delete 'Dpse\GA28754' and all associated data from FlyBase? Did you mistakenly fill in the G31a field instead of the intended G31b??
+
+gm25257.edit: G1g claims that Dpse\GA28754 is an existing gene symbol, but Chado has never heard of it.
+
+gm25257.edit: G31a: Do you REALLY want to delete 'Dpse\GA28364' and all associated data from FlyBase? Did you mistakenly fill in the G31a field instead of the intended G31b??
+
+gm25257.edit: G1g claims that Dpse\GA28364 is an existing gene symbol, but Chado has never heard of it.
+
+gm25257.edit: G31a: Do you REALLY want to delete 'Dpse\GA26886' and all associated data from FlyBase? Did you mistakenly fill in the G31a field instead of the intended G31b??
+
+gm25257.edit: G1g claims that Dpse\GA26886 is an existing gene symbol, but Chado has never heard of it.
+
+
+Processing gm25255.edit
+
+gm25255.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25255.edit: G31a: Do you REALLY want to delete 'Mab4A11' and all associated data from FlyBase? Did you mistakenly fill in the G31a field instead of the intended G31b??
+
+gm25255.edit: G1g claims that Mab4A11 is an existing gene symbol, but Chado has never heard of it.
+
+
+Processing gm25254.edit
+
+gm25254.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25254.edit: G1f: 'CG42636' is not a valid gene symbol
+
+
+Processing gm25253.edit
+
+gm25253.edit: Most .edit records contain a !c, did you forget to add one?
+
+
+Processing gm25252.edit
+
+gm25252.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25252.edit: G31a: Do you REALLY want to delete 'CG12901' and all associated data from FlyBase? Did you mistakenly fill in the G31a field instead of the intended G31b??
+
+gm25252.edit: G1g claims that CG12901 is an existing gene symbol, but Chado has never heard of it.
+
+gm25252.edit: GA32a: Do you REALLY want to delete 'CG12901[f07056]'?
+
+gm25252.edit: GA1g claims that CG12901[f07056] is an existing allele symbol, but Chado has never heard of it.
+
+gm25252.edit: GA1e: CG12901[GD4798] is not a valid allele symbol in Chado
+
+gm25252.edit: GA1g claims that CG42733[GD4798] is not an existing allele symbol, but Chado knows it as FBal0199969
+
+gm25252.edit: MA20: Invalid species ''
+
+
+Processing gm25251.edit
+
+gm25251.edit: Most .edit records contain a !c, did you forget to add one?
+
+
+Processing gm25250.edit
+
+gm25250.edit: Most .edit records contain a !c, did you forget to add one?
+
+
+Processing gm25249.edit
+
+gm25249.edit: Most .edit records contain a !c, did you forget to add one?
+
+
+Processing gm25248.edit
+
+gm25248.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25248.edit: GA1g claims that CG42730[GD939] is not an existing allele symbol, but Chado knows it as FBal0241707
+
+gm25248.edit: GA1g claims that CG42730[KK100538] is not an existing allele symbol, but Chado knows it as FBal0241708
+
+
+Processing gm25247.edit
+
+gm25247.edit: Most .edit records contain a !c, did you forget to add one?
+
+
+Processing gm25246.edit
+
+gm25246.edit: Most .edit records contain a !c, did you forget to add one?
+
+
+Processing gm25245.edit
+
+gm25245.edit: Most .edit records contain a !c, did you forget to add one?
+
+
+Processing gm25244.edit
+
+gm25244.edit: GA1e: Scer\GAL4[tectonic.PA-R] is not a valid allele symbol in Chado
+
+gm25244.edit: GA1g claims that Scer\GAL4[CG9227.PAR] is not an existing allele symbol, but Chado knows it as FBal0159811
+
+
+Processing gm25243.edit
+
+
+Processing pm2224.edit
+
+pm2224.edit: Most .edit records contain a !c, did you forget to add one?
+
+
+Processing pm2223.edit
+
+pm2223.edit: Most .edit records contain a !c, did you forget to add one?
+
+pm2223.edit: P21: Missing data
+
+
+Processing pm2222.edit
+
+pm2222.edit: Most .edit records contain a !c, did you forget to add one?
+
+pm2222.edit: P21: Missing data
+
+
+Processing pm2221.edit
+
+pm2221.edit: Most .edit records contain a !c, did you forget to add one?
+
+pm2221.edit: P21: Missing data
+
+pm2221.edit: GA1e: CG31392[KK105543] is not a valid allele symbol in Chado
+
+pm2221.edit: GA1g claims that CG42727[KK105543] is not an existing allele symbol, but Chado knows it as FBal0233631
+
+
+Processing pm2220.edit
+
+pm2220.edit: Most .edit records contain a !c, did you forget to add one?
+
+pm2220.edit: P21: Missing data
+
+
+Processing pm2219.edit
+
+pm2219.edit: Most .edit records contain a !c, did you forget to add one?
+
+pm2219.edit: P21: Missing data
+
+pm2219.edit: GA1e: CG31392[GD10246] is not a valid allele symbol in Chado
+
+pm2219.edit: GA1g claims that CG42726[GD10246] is not an existing allele symbol, but Chado knows it as FBal0202857
+
+
+Processing pm2218.edit
+
+pm2218.edit: Most .edit records contain a !c, did you forget to add one?
+
+
+Processing pm2217.edit
+
+pm2217.edit: Most .edit records contain a !c, did you forget to add one?
+
+
+Processing pm2216.edit
+
+pm2216.edit: Most .edit records contain a !c, did you forget to add one?
+
+pm2216.edit: P21: Missing data
+
+
+Processing pm2215.edit
+
+pm2215.edit: Most .edit records contain a !c, did you forget to add one?
+
+pm2215.edit: P21: Missing data
+
+
+Processing pm2214.edit
+
+pm2214.edit: Most .edit records contain a !c, did you forget to add one?
+
+pm2214.edit: P21: Missing data
+
+
+Processing pm2213.edit
+
+pm2213.edit: Most .edit records contain a !c, did you forget to add one?
+
+
+Processing pm2212.edit
+
+pm2212.edit: Most .edit records contain a !c, did you forget to add one?
+
+pm2212.edit: P21: Missing data
+
+
+Processing pm2211.edit
+
+pm2211.edit: Most .edit records contain a !c, did you forget to add one?
+
+
+Processing pm2210.edit
+
+pm2210.edit: Most .edit records contain a !c, did you forget to add one?
+
+pm2210.edit: P21: Missing data
+
+
+Processing pm2209.edit
+
+pm2209.edit: Most .edit records contain a !c, did you forget to add one?
+
+
+Processing pm2208.edit
+
+pm2208.edit: Most .edit records contain a !c, did you forget to add one?
+
+pm2208.edit: P21: Missing data
+
+
+Processing pm2207.edit
+
+pm2207.edit: Most .edit records contain a !c, did you forget to add one?
+
+pm2207.edit: P21: Missing data
+
+
+Processing pm2206.edit
+
+pm2206.edit: Most .edit records contain a !c, did you forget to add one?
+
+pm2206.edit: P21: Missing data
+
+
+Processing pm2205.edit
+
+pm2205.edit: Most .edit records contain a !c, did you forget to add one?
+
+pm2205.edit: P21: Missing data
+
+
+Processing pm2204.edit
+
+pm2204.edit: Most .edit records contain a !c, did you forget to add one?
+
+pm2204.edit: P21: Missing data
+
+
+Processing sm1101.edit
+
+sm1101.edit: Most .edit records contain a !c, did you forget to add one?
+
+sm1101.edit: Required proforma field P21 missing or malformed.
+
+sm1101.edit: Required proforma field G1b missing or malformed.
+
+sm1101.edit: Required proforma field G2b missing or malformed.
+
+sm1101.edit: G1g claims that Mmus\Fezf1 is not an existing gene symbol, but Chado knows it as FBgn0261695
+
+sm1101.edit: Required proforma field G1b missing or malformed.
+
+sm1101.edit: Required proforma field G2b missing or malformed.
+
+sm1101.edit: G1g claims that Mmus\Fezf2 is not an existing gene symbol, but Chado knows it as FBgn0261696
+
+
+Processing sm1099.bibl
+
+sm1099.bibl: Required proforma field P21 missing or malformed.
+
+
+Processing sm1098.bibl
+
+sm1098.bibl: MP1: 4969 is not a valid multipub ID.
+
+sm1098.bibl: MP3: Can't have 'y' when MP1 doesn't specify an existing multipub id in Chado.
+
+sm1098.bibl: MP19: the data in MP1 is not a valid multipub, according to Chado.
+
+sm1098.bibl: Required proforma field MP2a missing or malformed.
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: Required proforma field MP2a missing or malformed.
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: Warning: I don't yet know how to deal with the 'MP18' proforma field.
+
+sm1098.bibl: Required proforma field MP2a missing or malformed.
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: Warning: I don't yet know how to deal with the 'MP18' proforma field.
+
+sm1098.bibl: Required proforma field MP2a missing or malformed.
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: Required proforma field MP2a missing or malformed.
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: Required proforma field MP2a missing or malformed.
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: Required proforma field MP2a missing or malformed.
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: Warning: I don't yet know how to deal with the 'MP18' proforma field.
+
+sm1098.bibl: Required proforma field MP2a missing or malformed.
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: MP1: 4313 is not a valid multipub ID.
+
+sm1098.bibl: MP3: Can't have 'y' when MP1 doesn't specify an existing multipub id in Chado.
+
+sm1098.bibl: MP19: the data in MP1 is not a valid multipub, according to Chado.
+
+sm1098.bibl: Required proforma field MP2a missing or malformed.
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: MP1: 2834 is not a valid multipub ID.
+
+sm1098.bibl: MP3: Can't have 'y' when MP1 doesn't specify an existing multipub id in Chado.
+
+sm1098.bibl: MP19: the data in MP1 is not a valid multipub, according to Chado.
+
+sm1098.bibl: Required proforma field MP2a missing or malformed.
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: Warning: I don't yet know how to deal with the 'MP18' proforma field.
+
+sm1098.bibl: Required proforma field MP2a missing or malformed.
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: MP1: 9699 is not a valid multipub ID.
+
+sm1098.bibl: MP3: Can't have 'y' when MP1 doesn't specify an existing multipub id in Chado.
+
+sm1098.bibl: MP19: the data in MP1 is not a valid multipub, according to Chado.
+
+sm1098.bibl: Required proforma field MP2a missing or malformed.
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: MP1: 9735 is not a valid multipub ID.
+
+sm1098.bibl: MP3: Can't have 'y' when MP1 doesn't specify an existing multipub id in Chado.
+
+sm1098.bibl: MP19: the data in MP1 is not a valid multipub, according to Chado.
+
+sm1098.bibl: Required proforma field MP2a missing or malformed.
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: MP1: 5072 is not a valid multipub ID.
+
+sm1098.bibl: MP3: Can't have 'y' when MP1 doesn't specify an existing multipub id in Chado.
+
+sm1098.bibl: MP19: the data in MP1 is not a valid multipub, according to Chado.
+
+sm1098.bibl: Required proforma field MP2a missing or malformed.
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: MP2a: Can't change the reference J. Appl. Entomol. to the same value 'J. Appl. Entomol.' as it already has in Chado
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: Required proforma field MP2a missing or malformed.
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: Required proforma field MP2a missing or malformed.
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: Required proforma field MP2a missing or malformed.
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: Warning: I don't yet know how to deal with the 'MP18' proforma field.
+
+sm1098.bibl: Required proforma field MP2a missing or malformed.
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: MP1: 4922 is not a valid multipub ID.
+
+sm1098.bibl: MP3: Can't have 'y' when MP1 doesn't specify an existing multipub id in Chado.
+
+sm1098.bibl: MP19: the data in MP1 is not a valid multipub, according to Chado.
+
+sm1098.bibl: Required proforma field MP2a missing or malformed.
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: MP1: 4923 is not a valid multipub ID.
+
+sm1098.bibl: MP3: Can't have 'y' when MP1 doesn't specify an existing multipub id in Chado.
+
+sm1098.bibl: MP19: the data in MP1 is not a valid multipub, according to Chado.
+
+sm1098.bibl: Required proforma field MP2a missing or malformed.
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: MP1: 9348 is not a valid multipub ID.
+
+sm1098.bibl: MP3: Can't have 'y' when MP1 doesn't specify an existing multipub id in Chado.
+
+sm1098.bibl: MP19: the data in MP1 is not a valid multipub, according to Chado.
+
+sm1098.bibl: Required proforma field MP2a missing or malformed.
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: Required proforma field MP2a missing or malformed.
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: Warning: I don't yet know how to deal with the 'MP18' proforma field.
+
+sm1098.bibl: Required proforma field MP2a missing or malformed.
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: Warning: I don't yet know how to deal with the 'MP18' proforma field.
+
+sm1098.bibl: Required proforma field MP2a missing or malformed.
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: MP2a: Can't change the reference Cell. Mol. Biol. to the same value 'Cell. Mol. Biol.' as it already has in Chado
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+sm1098.bibl: MP2a: Can't change the reference Cell. Mol. Biol. (Noisy-Le-Grand) to the same value 'Cell. Mol. Biol. (Noisy-Le-Grand)' as it already has in Chado
+
+sm1098.bibl: Required proforma field MP11 missing or malformed.
+
+sm1098.bibl: Required proforma field MP17 missing or malformed.
+
+
+Processing sm1097.edit
+
+sm1097.edit: Most .edit records contain a !c, did you forget to add one?
+
+sm1097.edit: Required proforma field P21 missing or malformed.
+
+sm1097.edit: Required proforma field G1b missing or malformed.
+
+sm1097.edit: Required proforma field G2b missing or malformed.
+
+sm1097.edit: G1g claims that Hsap\ACSL3 is not an existing gene symbol, but Chado knows it as FBgn0261693
+
+sm1097.edit: Required proforma field G1b missing or malformed.
+
+sm1097.edit: Required proforma field G2b missing or malformed.
+
+sm1097.edit: G1g claims that Hsap\ACSL4 is not an existing gene symbol, but Chado knows it as FBgn0261694
+
+
+Processing sm1091.bibl
+
+sm1091.bibl: Required proforma field P22 missing or malformed.
+
+sm1091.bibl: Required proforma field P21 missing or malformed.
+
+
+Processing ra782.edit
+
+ra782.edit: Most .edit records contain a !c, did you forget to add one?
+
+ra782.edit: G1g claims that T:CBD is not an existing gene symbol, but Chado knows it as FBgn0261692
+
+
+Processing ra765.edit
+
+ra765.edit: Most .edit records contain a !c, did you forget to add one?
+
+ra765.edit: G1g claims that Hsap\DAB2 is not an existing gene symbol, but Chado knows it as FBgn0261689
+
+ra765.edit: G1g claims that Mmus\Dab1 is not an existing gene symbol, but Chado knows it as FBgn0261690
+
+ra765.edit: G1g claims that T:Hsap\APP is not an existing gene symbol, but Chado knows it as FBgn0261691
+
+I checked 43 files.
+
+This file passed all the checks:	gm25243.edit
+
+These 42 files failed at least one check:
+
+gm25244.edit	gm25245.edit	gm25246.edit	gm25247.edit	gm25248.edit	gm25249.edit	gm25250.edit	gm25251.edit	gm25252.edit	gm25253.edit
+gm25254.edit	gm25255.edit	gm25257.edit	gm25278.edit	pm2204.edit	pm2205.edit	pm2206.edit	pm2207.edit	pm2208.edit	pm2209.edit
+pm2210.edit	pm2211.edit	pm2212.edit	pm2213.edit	pm2214.edit	pm2215.edit	pm2216.edit	pm2217.edit	pm2218.edit	pm2219.edit
+pm2220.edit	pm2221.edit	pm2222.edit	pm2223.edit	pm2224.edit	ra765.edit	ra782.edit	sm1091.bibl	sm1097.edit	sm1098.bibl
+sm1099.bibl	sm1101.edit
+
+Ignoring these 48 files:
+
+pl146544.bibl	pl146548.bibl	pl146563.bibl	pl146599.bibl	pl146600.bibl	pl146601.bibl	pl146602.bibl	pl146603.bibl	pl146604.bibl	pl146605.bibl
+pl146606.bibl	pl146607.bibl	pl146608.bibl	pl146609.bibl	pl146610.bibl	pl146611.bibl	pl146612.bibl	pl146613.bibl	pl146614.bibl	pl146615.bibl
+pl146616.bibl	pl146617.bibl	pl146618.bibl	pl146619.bibl	pl146620.bibl	pl146621.bibl	pl146622.bibl	pl146623.bibl	pl146624.bibl	pl146625.bibl
+pl146626.bibl	pl146627.bibl	pl146628.bibl	pl146629.bibl	pl146630.bibl	pl146631.bibl	pl146632.bibl	pl146633.bibl	pl146634.bibl	pl146635.bibl
+pl146636.bibl	pl146637.bibl	pl146638.bibl	pl146639.bibl	pl146640.bibl	pl146641.bibl	pl146642.bibl	pl146643.bibl
+
+
+I came to this conclusion by consulting fb_2010_04_03 stored on oscar.gen.cam.ac.uk
+
+I used these ontologies:
+FBbt: /curfiles/ontologies/fly_anatomy.obo dated 04:02:2010 12:01
+FBdv: /curfiles/ontologies/fly_development.obo dated 19:10:2009 13:49
+FBcv: /curfiles/ontologies/flybase_controlled_vocabulary.obo dated 09:02:2009 13:59
+FBsp: /curfiles/ontologies/fly_taxonomy.obo dated 06:04:2007 11:47
+SO  : /curfiles/ontologies/so.obo dated 02:06:2006 12:44
+GO  : /curfiles/ontologies/gene_ontology.obo dated 26:11:2009 19:30
+GO_dbxrefs: /curfiles/ontologies/GO.xrf_abbs dated 2010/01/23 04:34:32
+
+
+

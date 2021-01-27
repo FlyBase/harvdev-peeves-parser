@@ -1,0 +1,71 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0105495
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+! ABERRATION PROFORMA                    Version 56: 17 Aug 2012
+!
+! A1a.  Aberration symbol to use in FlyBase                 *a :Df(2R)csa7
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+! A7a.  Complementation - genes completely deleted/disrupted by A1a *q :
+! A25x. Molecular data - comments [free text]    :
+! A90a. Location data for breakpoint number (dupl for multiple) :-1
+! A90b.    Genomic location of breakpoint                       :X:1237849
+! A90c.    Genome release number for entry in A90a              :6
+! A90h.    Linked to restriction fragment   :
+! A90j.    Comments concerning sequence location                :
+! A90a. Location data for breakpoint number (dupl for multiple) :0
+! A90b.    Genomic location of breakpoint                       :2R:23551816..2R3
+! A90c.    Genome release number for entry in A90a              :6
+! A90h.    Linked to restriction fragment   :
+! A90j.    Comments concerning sequence location                :
+! A90a. Location data for breakpoint number (dupl for multiple) :0
+! A90b.    Genomic location of breakpoint                       :2R:23551816..334678
+! A90c.    Genome release number for entry in A90a              :6
+! A90h.    Linked to restriction fragment   :
+! A90j.    Comments concerning sequence location                :
+! A91a. Deleted segment data for segment number (dupl for multiple) :1
+! A91b.    Cytological location of left end of segment              :59E2
+! A91c.    Cytological location of right end of segment             :59E3
+! A91d.    Estimated cytology                                       :y
+! A91e.    Observed cytology                                        :n
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION PROFORMA                    Version 56: 17 Aug 2012
+!
+! A1a.  Aberration symbol to use in FlyBase                 *a :Df(2R)babo[50]
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+! A7a.  Complementation - genes completely deleted/disrupted by A1a *q :
+! A25x. Molecular data - comments [free text]    :
+! A90a. Location data for breakpoint number (dupl for multiple) :
+! A90b.    Genomic location of breakpoint                       :X:1237849.23845
+! A90c.    Genome release number for entry in A90a              :6
+! A90h.    Linked to restriction fragment   :
+! A90j.    Comments concerning sequence location                :
+! A90a. Location data for breakpoint number (dupl for multiple) :2
+! A90b.    Genomic location of breakpoint                       :2R:23551816...367
+! A90c.    Genome release number for entry in A90a              :6
+! A90h.    Linked to restriction fragment   :
+! A90j.    Comments concerning sequence location                :
+! A15.  Internal notes                          *K :X:1237849.23845 has only one dot, 2R:23551816...367 has three
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

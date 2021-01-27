@@ -1,0 +1,245 @@
+! PUBLICATION PROFORMA                   Version 43:  17 Jun 2011
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0199194
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P19.  Internal notes                   *H :??basic checks which should give an error
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENE PROFORMA                          Version 74:  6 Nov 2012
+!
+! G1h.  FlyBase gene ID (FBgn) *z :
+! G1a.  Gene symbol to use in FlyBase                       *a :dpp
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G31a. Action - obsolete G1a in FlyBase (y)       TAKE CARE :
+! G31b. Action - dissociate G1a from reference (y) TAKE CARE :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G5.   Genetic map position if by recombination mapping   *b :
+! G6.   Genetic map position - error, if reported          *b :
+! G7a.  Genetic map position - gene(s) mapped left of G1a  *b :
+! G7b.  Genetic map position - gene(s) mapped right of G1a *b :
+! G8.   Genetic map position - comments                    *B :
+! G10a. Cytological map position, Dmel ONLY - chromosome in situ   *c :
+! G10b. Cytological map position, Dmel ONLY - details unspecified  *c :
+! G11.  Cytological map position - comments               [SoftCV] *D :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G35.  Reference database ID for foreign sequence          :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G26.  Tag/Foreign gene summary information             *u :
+! G35.  Reference database ID for foreign sequence          :
+! G32.  Newly assigned annotation ID (CG/CR number) TAKE CARE :
+! G33.  Sequence accession number - seq cur only                :
+! G15.  Internal notes  *W :??should generate an error as blank G35 line in twice
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 74:  6 Nov 2012
+!
+! G1h.  FlyBase gene ID (FBgn) *z :
+! G1a.  Gene symbol to use in FlyBase                       *a :Hsap\ABCB1
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G31a. Action - obsolete G1a in FlyBase (y)       TAKE CARE :
+! G31b. Action - dissociate G1a from reference (y) TAKE CARE :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G5.   Genetic map position if by recombination mapping   *b :
+! G6.   Genetic map position - error, if reported          *b :
+! G7a.  Genetic map position - gene(s) mapped left of G1a  *b :
+! G7b.  Genetic map position - gene(s) mapped right of G1a *b :
+! G8.   Genetic map position - comments                    *B :
+! G10a. Cytological map position, Dmel ONLY - chromosome in situ   *c :
+! G10b. Cytological map position, Dmel ONLY - details unspecified  *c :
+! G11.  Cytological map position - comments               [SoftCV] *D :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G35.  Reference database ID for foreign sequence          :
+! G14a. Miscellaneous comments                              *u :
+! G26.  Tag/Foreign gene summary information             *u :
+! G35.  Reference database ID for foreign sequence          :
+! G32.  Newly assigned annotation ID (CG/CR number) TAKE CARE :
+! G33.  Sequence accession number - seq cur only                :
+! G15.  Internal notes  *W :??should generate an error as filled in G35 line in twice
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 74:  6 Nov 2012
+!
+! G1h.  FlyBase gene ID (FBgn) *z :
+! G1a.  Gene symbol to use in FlyBase                       *a :Hsap\ABL1
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G31a. Action - obsolete G1a in FlyBase (y)       TAKE CARE :
+! G31b. Action - dissociate G1a from reference (y) TAKE CARE :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G5.   Genetic map position if by recombination mapping   *b :
+! G6.   Genetic map position - error, if reported          *b :
+! G7a.  Genetic map position - gene(s) mapped left of G1a  *b :
+! G7b.  Genetic map position - gene(s) mapped right of G1a *b :
+! G8.   Genetic map position - comments                    *B :
+! G10a. Cytological map position, Dmel ONLY - chromosome in situ   *c :
+! G10b. Cytological map position, Dmel ONLY - details unspecified  *c :
+! G11.  Cytological map position - comments               [SoftCV] *D :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G26.  Tag/Foreign gene summary information             *u :
+!c G35.  Reference database ID for foreign sequence          :
+! G32.  Newly assigned annotation ID (CG/CR number) TAKE CARE :
+! G33.  Sequence accession number - seq cur only                :
+! G15.  Internal notes  *W :??should generate an error as not allowed to plingc
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 74:  6 Nov 2012
+!
+! G1h.  FlyBase gene ID (FBgn) *z :
+! G1a.  Gene symbol to use in FlyBase                       *a :Hsap\ADAR
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G31a. Action - obsolete G1a in FlyBase (y)       TAKE CARE :
+! G31b. Action - dissociate G1a from reference (y) TAKE CARE :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G5.   Genetic map position if by recombination mapping   *b :
+! G6.   Genetic map position - error, if reported          *b :
+! G7a.  Genetic map position - gene(s) mapped left of G1a  *b :
+! G7b.  Genetic map position - gene(s) mapped right of G1a *b :
+! G8.   Genetic map position - comments                    *B :
+! G10a. Cytological map position, Dmel ONLY - chromosome in situ   *c :
+! G10b. Cytological map position, Dmel ONLY - details unspecified  *c :
+! G11.  Cytological map position - comments               [SoftCV] *D :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G26.  Tag/Foreign gene summary information             *u :
+!c G35.  Reference database ID for foreign sequence          :HGNC:457685
+! G32.  Newly assigned annotation ID (CG/CR number) TAKE CARE :
+! G33.  Sequence accession number - seq cur only                :
+! G15.  Internal notes  *W :??should generate an error as not allowed to plingc
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 73:  10 Oct 2012
+!
+! G1h.  FlyBase gene ID (FBgn) *z :
+! G1a.  Gene symbol to use in FlyBase                       *a :Hsap\newgene
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :n
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :engineered_foreign_gene ; SO:0000281
+! G2a.  Action - gene name to use in FlyBase                *e :serpin peptidase inhibitor, clade I (neuroserpin), member 1
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G31a. Action - obsolete G1a in FlyBase (y)       TAKE CARE :
+! G31b. Action - dissociate G1a from reference (y) TAKE CARE :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G5.   Genetic map position if by recombination mapping   *b :
+! G6.   Genetic map position - error, if reported          *b :
+! G7a.  Genetic map position - gene(s) mapped left of G1a  *b :
+! G7b.  Genetic map position - gene(s) mapped right of G1a *b :
+! G8.   Genetic map position - comments                    *B :
+! G10a. Cytological map position, Dmel ONLY - chromosome in situ   *c :
+! G10b. Cytological map position, Dmel ONLY - details unspecified  *c :
+! G11.  Cytological map position - comments               [SoftCV] *D :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G26.  Tag/Foreign gene summary information             *u :Foreign sequence; species == Homo sapiens; gene == SERPINI1; HGNC:8943.
+! G35.  Reference database ID for foreign sequence          :HGNC:1234 
+! G32.  Newly assigned annotation ID (CG/CR number) TAKE CARE :
+! G33.  Sequence accession number - seq cur only                :
+! G15.  Internal notes  *W :??should generate an error as whitespace at end of line
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

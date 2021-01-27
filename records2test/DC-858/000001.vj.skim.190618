@@ -1,0 +1,42 @@
+! C1.  Curator ID	:vj
+! C2.  Date		:190617
+! C3.  Curator notes to self	:succeeds
+! C9.  Cambridge curation (new_al, merge, split, rename, new_char, pheno, nocur, new_transg, gene_group, pheno_chem, pheno_anat) 
+! C4.  Additional curation (P41. wt_exp, pert_exp, neur_exp, gene_model, gene_model_nonmel, phys_int, cis_reg, genom_feat, no_flag, disease, diseaseHP, dataset, cell_line, dataset, P42. novel_anat, P43. disease)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"            *U   :FBrf0241541
+! P2.   Parent multipub abbreviation                           *w   :Biophys. J.
+! P40.  Flag Cambridge for curation                CAMCUR   :
+! P41.  Flag Harvard for curation                   HARVCUR   :disease
+diseaseF
+! P42.  Flag Ontologists for curation                     ONTO   :
+! P43.  Flag Disease for curation                        DISEASE   :
+! P44.  Disease(s) relevant to FBrf                [free text]   :future: aging, lifespan
+acute myeloid leukemia
+! P19.  Internal notes                            *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                                      *a   :tim
+! G1b.  Gene symbol(s) used in reference                                *i   :tim
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)   :y
+! G2b.  Gene name(s) used in reference                                  *V   :
+! G30.  Class of gene, if new (SO_term ; ID)           [CV]          *t   :
+! G34.  Antibody generated (monoclonal/polyclonal)           *s   :
+! G15.  Internal notes  *W :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                                      *a   :per
+! G1b.  Gene symbol(s) used in reference                                *i   :per
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)   :y
+! G2b.  Gene name(s) used in reference                                  *V   :
+! G30.  Class of gene, if new (SO_term ; ID)           [CV]          *t   :
+! G34.  Antibody generated (monoclonal/polyclonal)           *s   :
+! G15.  Internal notes  *W :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

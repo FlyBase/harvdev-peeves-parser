@@ -1,0 +1,81 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0220460
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :dpp
+! G1b.  Gene symbol(s) used in reference                    *i :dpp
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2b.  Gene name(s) used in reference                      *V :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 53: 12 Sep 2012
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :dpp[14]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA90a. Allele to which GA90b-k apply [dupl for multiple] :dpp[14]fdgsgdj
+! GA90k. Molecular nature (type) of lesion :deletion
+!
+! GA90a. Allele to which GA90b-k apply [dupl for multiple] :dpp[15]-1
+! GA90k. Molecular nature (type) of lesion :deletion
+!
+! GA90a. Allele to which GA90b-k apply [dupl for multiple] :dpp[14]-1a
+! GA90k. Molecular nature (type) of lesion :deletion
+! GA14.  Internal notes  *W :??error - GA90a filled in with rubbish in first instance, format correct but allele wrong in second instance, format of suffix wrong in third instance
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :mir-1
+! G1b.  Gene symbol(s) used in reference                    *i :mir-1
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2b.  Gene name(s) used in reference                      *V :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 53: 12 Sep 2012
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :mir-1[KO]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA90a. Allele to which GA90b-k apply [dupl for multiple] :mir-1[KO]
+! GA90k. Molecular nature (type) of lesion :deletion
+!
+! GA90a. Allele to which GA90b-k apply [dupl for multiple] :mir-1[KO]-2
+! GA90k. Molecular nature (type) of lesion :deletion
+!
+! GA90a. Allele to which GA90b-k apply [dupl for multiple] :mir-1[-KO]
+! GA90k. Molecular nature (type) of lesion :deletion
+! GA14.  Internal notes  *W :
+! GA90a. Allele to which GA90b-k apply [dupl for multiple] :mir-1[KO]
+! GA90k. Molecular nature (type) of lesion :deletion
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

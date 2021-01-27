@@ -1,0 +1,83 @@
+! PUBLICATION PROFORMA                   Version 45:  9 Apr 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0111338
+! P2.   Parent multipub abbreviation               *w :Genetics
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+! ABERRATION PROFORMA                    Version 59: 05 Mar 2014
+!
+! A1a.  Aberration symbol to use in FlyBase                 *a :In(2LR)O
+! A1b.  Aberration symbol(s) used in reference              *i :In(2LR)O
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+! A2b.  Aberration name(s) used in reference                *Q :
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENOTYPE VARIANT DATA FOR THIS ABERRATION
+! Insert genotype variant proforma below.
+! GENOTYPE VARIANT PROFORMA                 Version 23: 13 Jan 2010
+!
+! AB1a.  Genotype variant symbol to use in FlyBase                 *I :CyO-2XGMRrpr
+! AB1b.  Genotype variant symbol(s) used in reference              *i :CyO-2XGMRrpr
+! AB1e.  Action - rename this genotype variant symbol                 :
+! AB1f.  Action - merge these genotype variants (symbols)             :
+! AB1g.  Is AB1a the current symbol of a genotype variant in FlyBase? :y
+! AB2a.  Action - genotype variant name to use in FlyBase          *e :
+! AB2b.  Genotype variant name(s) used in reference                *Q :
+! AB2c.  Action - replace this genotype variant name                  :
+! AB11a. Action - obsolete AB1a in FlyBase       TAKE CARE :
+! AB11b. Action - dissociate AB1a from reference TAKE CARE :
+! AB10.  Nickname                                            *U :
+! AB8.   Is AB1a used/usable as a balancer? (y/n)            *u :y
+! AB3.   Culprit                *w :
+! AB9.   Progenitor chromosome  *u :
+! AB5a.  Transposon insertions  *P :
+! AB5b.  Non-insertion alleles  *S :
+! AB6.   Miscellaneous comments *u :
+! AB7.   Internal notes         *K :??no error
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next genotype variant proforma below.
+! GENOTYPE VARIANT PROFORMA                 Version 23: 13 Jan 2010
+!
+! AB1a.  Genotype variant symbol to use in FlyBase                 *I :CyO-2xTb-RFP
+! AB1b.  Genotype variant symbol(s) used in reference              *i :
+! AB1e.  Action - rename this genotype variant symbol                 :
+! AB1f.  Action - merge these genotype variants (symbols)             :
+! AB1g.  Is AB1a the current symbol of a genotype variant in FlyBase? :y
+! AB2a.  Action - genotype variant name to use in FlyBase          *e :
+! AB2b.  Genotype variant name(s) used in reference                *Q :CyO-2xTb-RFP
+blah
+! AB2c.  Action - replace this genotype variant name                  :
+! AB11a. Action - obsolete AB1a in FlyBase       TAKE CARE :
+! AB11b. Action - dissociate AB1a from reference TAKE CARE :
+! AB10.  Nickname                                            *U :
+! AB8.   Is AB1a used/usable as a balancer? (y/n)            *u :y
+! AB3.   Culprit                *w :
+! AB9.   Progenitor chromosome  *u :
+! AB5a.  Transposon insertions  *P :
+! AB5b.  Non-insertion alleles  *S :
+! AB6.   Miscellaneous comments *u :
+! AB7.   Internal notes         *K :??no error
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next genotype variant proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

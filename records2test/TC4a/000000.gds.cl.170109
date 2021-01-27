@@ -1,0 +1,23 @@
+! C1.  Curator ID	:gds
+! C2.  Date		:170109
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :unattributed
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! CULTURED CELL LINE PROFORMA            Version 5:  Jul 02 2014
+!
+! TC1f. FB ID for cell line (FBtc ID or "new")  :FBtc9000008
+! TC1a. Cell line symbol to use in database  :S2-Invitrogen
+! TC4a. Parental cell line (valid cell line symbol) :Schneider's-line-2
+! TC4b. Derived from parental line by (CV) :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! CULTURED CELL LINE PROFORMA            Version 5:  Jul 02 2014
+!
+! TC1f. FB ID for cell line (FBtc ID or "new")  :FBtc9000009
+! TC1a. Cell line symbol to use in database  :S2-ATCC
+! TC4a. Parental cell line (valid cell line symbol) :S2-ATCC
+! TC4b. Derived from parental line by (CV) :isolate_of
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!
+

@@ -1,0 +1,102 @@
+! C1. Curator ID:vfb
+! C2. Date:170516
+! C3. Curator notes to self:check for new anatomy ontology term for md-L (github, anatomy ontology issue #103). Replace mechansensory/multidendritic ah060617
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0233217
+! P2.   Parent multipub abbreviation               *w :Neuron
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Tmc-XP
+! F3.  Gene product type [CV]        :protein SO:0000358
+! F2.  Sequence attribute [CV]	     :
+! F4. Names(s) used in paper [free text] :
+! F5. Molecule size(s) (wb, nb, sa)      :
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> il <t> A <a> mechanosensory neuron &&of labellum <s> multidendritic dendrite <note>
+<e> il <t> A <a> multidendritic neuron &&of labellum <s> multidendritic dendrite <note>
+! F15. General expression comment [free text] :
+! F10. Used as bodypart marker for (term ; ID) [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :n
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :n
+! F17. Alleles or genotypes used :
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Scer\GAL4[Tmc.3.0]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+! F4. Names(s) used in paper [free text] :tmc-Gal4
+! F5. Molecule size(s) (wb, nb, sa)      :
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> debs <t> A <a> mechanosensory neuron &&of  labellum <s>  <note>
+<e> debs <t> A <a> multidendritic neuron &&of labellum <s>  <note>
+<e> debs <t> A <a> multidendritic neuron &&of ventral cibarial sense organ | subset <s>  <note>
+<e> debs <t> A <a> adult subesophageal zone | restricted <s>  <note>
+<e> debs <t> A <a> adult antennal lobe projection neuron vPN <s>  <note>
+<e> debs <t> A <a> Kenyon cell | subset <s>  <note>
+<e> debs <t> A <a> neuron &&of prothoracic coxa-trochanter joint <s>  <note>
+<e> debs <t> A <a> neuron &&of mesothoracic coxa-trochanter joint <s>  <note>
+<e> debs <t> A <a> neuron &&of metathoracic coxa-trochanter joint <s>  <note>
+<e> debs <t> A <a> thoracico-abdominal ganglion | subset <s>  <note>
+! F15. General expression comment [free text] :@Scer\GAL4[Tmc.3.0]@ is expressed in a single multidendritic, mechanosensory neuron in each of the two bilaterally symmetrical labella. The cell body of these neurons is adjacent to the I6 sensilla at the proximal part of the labella, while the dendritic branches innervate the sensilla, predominately, but not exclusively, the L-type sensilla.
+Expression of @Scer\GAL4[Tmc.3.0]@ in the adult antennal lobe projection neurons and Kenyon cells may be ectopic rather than representative of @Tmc@.
+! F10. Used as bodypart marker for (term ; ID) [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :Tmc
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :n
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :n
+! F17. Alleles or genotypes used :
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :Some expression from the supplementary data ah190517.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Ncra\QF[Tmc.3.0]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+! F4. Names(s) used in paper [free text] :tmc-QF
+! F5. Molecule size(s) (wb, nb, sa)      :
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> debs <t> A <a> mechanosensory neuron &&of labellum <s>  <note>
+<e> debs <t> A <a> multidendritic neuron &&of labellum <s>  <note>
+<e> debs <t> A <a> multidendritic neuron &&of ventral cibarial sense organ | subset <s>  <note>
+<e> debs <t> A <a> adult subesophageal zone | restricted <s>  <note>
+! F15. General expression comment [free text] :The dendritic branches of @Ncra\QF[Tmc.3.0]@ expressing neurons are entangled with @Scer\GAL4[Gr5a.PUn]@ expressing S cells underneath the cuticle while the dendritic arbors are closely associated with their cell bodies.
+! F10. Used as bodypart marker for (term ; ID) [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :Tmc
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :n
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :n
+! F17. Alleles or genotypes used :
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+! F1f. Database id (default 'new')   :FBtr0344515
+! F1a. Gene product symbol           :Scer\GAL4[Gr5a.PUn]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+! F4. Names(s) used in paper [free text] :
+! F5. Molecule size(s) (wb, nb, sa)      :
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> debs <t> A <a> S cell <s>  <note>
+! F15. General expression comment [free text] :
+! F10. Used as bodypart marker for (term ; ID) [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :Gr5a
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :n
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :n
+! F17. Alleles or genotypes used :
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

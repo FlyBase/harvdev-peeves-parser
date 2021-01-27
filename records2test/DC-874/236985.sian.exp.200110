@@ -1,0 +1,52 @@
+! C1.  Curator ID	:sian
+! C2.  Date		:200110
+! C3.  Curator notes to self	:
+! C9.  Cambridge curation (new_al, merge, split, rename, new_char, pheno, new_transg, nocur) 
+! C4.  Additional curation (P41. wt_exp, pert_exp, neur_exp, gene_model, gene_model_nonmel, phys_int, cis_reg, genom_feat, no_flag, P42. novel_anat P43. disease)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 48: 21 May 2018
+!
+! P22. FlyBase reference ID (FBrf) or "new" U :FBrf0236985
+! P2. Parent multipub abbreviation w :Science
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :FBtr0477590
+! F1a. Gene product symbol           :lncRNA:CR44317-XR
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :
+!
+! F4. Names(s) used in paper [free text] :CR44317
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> vis <t> E | stage 6 <a> organism | pair rule expression pattern <s>  <note>
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :FBtr0328337
+! F1a. Gene product symbol           :CG14688-XR
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :
+!
+! F4. Names(s) used in paper [free text] :CG14688
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> scrs <t> E | stage 6 <a> mesoderm anlage <s>  <note>
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :FBtr0326364
+! F1a. Gene product symbol           :CG34224-XR
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :
+!
+! F4. Names(s) used in paper [free text] :CG34224
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> rs <t> E | stage 6 <a> organism <s>  <note>
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!
+

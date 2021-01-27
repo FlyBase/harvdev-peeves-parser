@@ -1,0 +1,42 @@
+
+Processing gm0010
+
+gm0010: P38: Not checking this field because of ?? in '??
+'
+
+gm0010: GA17: 'recessive' is not a valid qualifier in 'embryonic epidermis | recessive'
+
+gm0010: GA17: 'dominant' is not a valid qualifier in 'head | dominant'
+
+gm0010: GA17: 'suppressible' is not a valid qualifier in 'eye | suppressible'
+
+gm0010: GA17: 'parental effect' is not a valid qualifier in 'midgut | parental effect'
+
+gm0010: GA17: 'neurogenic' is not a valid qualifier in 'ommatidium | neurogenic'
+
+gm0010: GA17: 'homeotic' is not a valid qualifier in 'sex comb | homeotic'
+
+gm0010: GA17: 'embryonic stage' is not a valid body part
+
+gm0010: GA17: 'pupal stage' is not a valid qualifier in 'eye | pupal stage'
+
+gm0010: GA17: 'adult stage' is not a valid body part in 'leg & adult stage'
+
+gm0010: GA17: 'maternal effect' is not a valid body part in 'maternal effect | leg'
+
+gm0010: GA17: 'leg' is not a valid qualifier in 'maternal effect | leg'
+
+gm0010: GA17: 'ectopic' is not a valid body part in 'ectopic | chaeta'
+
+gm0010: GA17: 'chaeta' is not a valid qualifier in 'ectopic | chaeta'
+
+
+This file failed at least one check:	gm0010
+
+Ignoring these 12 files:
+
+GA17	GA17_qualifier_test	gm0006%	gm0007%	gm0008%	gm0009%	gm0010%	peeves.crib	peeves_test.cfg	peeves_test.cfg%
+pub.crib	sent
+
+
+

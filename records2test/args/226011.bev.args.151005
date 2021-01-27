@@ -1,0 +1,34 @@
+! C1.  Curator ID	:Bev
+! C2.  Date		:151105
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0226011
+! P19.  Internal notes                   *H :test copy for peeves.
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION PROFORMA                    Version 60: 05 Mar 2014
+!
+! A1h.  FlyBase aberration ID (FBab) *z :FBab0047625
+! A1a.  Aberration symbol to use in FlyBase                 *a :Df(2R)IR52a-d
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+! A7a.  Complementation - genes completely deleted/disrupted by A1a *q :
+! A25x. Molecular data - comments [free text]    :A deletion which removes @CG12964@ and the entire IR52 cluster resulting from FLP-catalyzed recombination using the FRT-containing transposons @PBac{WH}f01317@ and @PBac{RB}GalNAc-T1[e02175]@.
+! A90a. Location data for breakpoint number (dupl for multiple) :1
+! A90b.    Genomic location of breakpoint                       :2R:15484550
+! A90c.    Genome release number for entry in A90a              :6
+! A90h.    Linked to restriction fragment                       :
+! A90j.    Comments concerning sequence location                :
+! A90a. Location data for breakpoint number (dupl for multiple) :2
+! A90b.    Genomic location of breakpoint                       :2R:15511962
+! A90c.    Genome release number for entry in A90a              :6
+! A90h.    Linked to restriction fragment                       :
+! A90j.    Comments concerning sequence location                :
+! A91a. Deleted segment data for segment number (dupl for multiple) :1
+! A91b.    Cytological location of left end of segment              :52A4
+! A91c.    Cytological location of right end of segment             :52A6
+! A91d.    Estimated cytology                                       :y
+! A91e.    Observed cytology                                        :n
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

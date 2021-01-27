@@ -1,0 +1,51 @@
+! C1. Curator ID:vfb
+! C2. Date:151013
+! C3. Curator notes to self:
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0222577
+! P2.   Parent multipub abbreviation               *w :Hum. Mol. Genet.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :This proforma tests basic format checking of each element of a TAP line - each element has a basic error of extra space at beginning/end of element
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :FBpp0111212
+! F1a. Gene product symbol           :TBPH-XP
+! F3.  Gene product type [CV]        :protein SO:0000358  
+! F2.  Sequence attribute [CV]	     :
+!
+! F4. Names(s) used in paper [free text] :
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> il  <t> late embryonic stage <a> prothoracic leg <s> nucleus <note>
+<e> il <t>  late embryonic stage  <a> embryonic/larval neuron <s> nucleus <note>
+<e> il <t> late embryonic stage <a>   embryonic/larval glial cell <s> perinuclear region of cytoplasm <note>
+<e> il <t> larval stage <a> embryonic/larval central nervous system | restricted <s> nucleus    <note>
+<e> il <t> larval stage <a> embryonic/larval central nervous system | dodgy a qualifier <s> nucleus <note>
+!
+! F15. General expression comment [free text] :
+! F10. Used as bodypart marker for (term ; ID) [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :some data taken from supplemental material.ns151013
+! F91. From dataset/collection (symbol) :
+! F91a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

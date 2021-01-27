@@ -1,0 +1,762 @@
+! PUBLICATION PROFORMA                   Version 25:  27 April 2007
+!
+! P. PUBLICATION DATA
+!
+! P22. Publication FBrf            *U :
+! P32. Database pubID to replace *N :
+! P1.  Type of publication  [CV] *T :FlyBase analysis
+! P21. Journal etc unique ID *W/*U (starw.nice) :
+! P2.  Journal etc abbreviation           *w/*s :
+! P20. Series abbreviation      *S :
+! P3.  Volume designation       *y :
+! P4.  Issue number             *Y :
+! P11a. Page range              *z :
+! P11b. URL                     *R :
+! P11c. accession number           :
+! P11d. DOI                        :
+! P10. Year of publication      *t :2007.5.21
+! P12. Author(s)              *a-r :Some random author
+! P16. Title of publication (excl. part-title)   *u :some random title.
+! P17. Part-number and title                     *v :
+! P13. Language(s) of paper [CV]                 *L :English
+! P14. Additional language(s) of abstract(s) [CV]*A :
+! P8.  Publisher (if P1 = book)                  *x :
+! P24. Place of publication (if P1 = book)       *P :
+! P25. Biosis ID      *B :
+! P26. Medline ID     *M :
+! P27. Zoo Record ID  *Q :
+! P29. ISBN if P1=book*I :
+! P30. Also published as (FBrf)            *C :
+! P31. Related publication (FBrf)          *E :
+! P23. Text of personal communication      *F :
+! P18. Associated text                     *G :
+! P19. Internal notes                      *H :testing for finding duplicate proformae.
+! P38. File deposited to archive           *K :
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! G. GENE DATA (excluding kilobase distance data)
+! If this publication includes information to enter concerning a gene,
+! move to the start of the line below and include the Gene proforma.
+! GENE PROFORMA                          Version 45:  9 May 2007
+!
+! G1a.  Gene symbol to use in database                      *a :invalid
+! G1b.  Gene symbol used in paper                           *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes                             :
+! G1g.  Is G1a the valid symbol of a gene in FlyBase?          :y
+! G30.  Gene category (if gene is new to FlyBase) [SO CV]   *t :
+! G2a.  Gene name to use in database                        *e :
+! G2b.  Gene name used in paper                             *V :
+! G2c.  Database gene name(s) to replace                    *V :
+! G27.  Etymology                                              :
+! G31a. Action - delete gene              - TAKE CARE :
+! G31b. Action - dissociate G1a from FBrf - TAKE CARE :
+! G20a. G1a in title/abstract? Reviews - G1a significant subject? NSC :
+! G20b. G1a wildtype expression in wildtype analysed?             NSC :
+! G20c. G1a expression analysed in mutant/perturbed bckgrd?       NSC :
+! G20d. G1a genome annotation analysed?                           NSC :
+! G20e. G1a product physical interaction analysed?                NSC :
+! G20f. G1a cis-regulatory elements characterized?                NSC :
+! G20g. G1a gene model decorated - alleles/rescue frags/breaks?   NSC :
+! G20h. G1a polymorphism data reported?                           NSC :
+! G10a. Cytological map posn if by chromosome in situ      *c :
+! G10b. Cytological map posn if details unspecified        *c :
+! G11.  Comments on cytological map position [SoftCV]      *D :
+! G25.  Relationship to clone                         [SoftCV]*s :
+! G19a. Gene order/orientation from molecular mapping [SoftCV]*s :
+! G19b. Comments, not allele-specific -- molecular         *s :
+! G12a. Comments, not allele-specific - biological role    *r :
+! G12b. Comments, not allele-specific -- mutants           *p :
+! G14a. Comments, not allele-specific -- other             *u :
+! G14b. Identification                                        :
+! G28a. Comments -- relationship to other genes        [free text] *q :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G29a. Functional comp/gain of function -- structured [SoftCV] *q :
+! G29b. Functional comp/gain of function            [free text] *q :
+! G18.  Gene(s) stated to interact genetically with G1a    *p :
+! G22.  Homologous gene in reference species of drosophilid*M :
+! G24a. GO -- Cellular component | evidence [CV]           *f :
+! G24b. GO -- Molecular function | evidence [CV]           *F :
+! G24c. GO -- Biological process | evidence [CV]           *d :
+! G24e. GO specific internal note                          *H :
+! G15.  Internal notes  *W :
+! RARE FIELDS MODULE:
+! move to the start of the line below this and include the Gene Modules pro.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GA. ALLELE DATA FOR THIS GENE (excluding kilobase distance data)
+! If there is any data to enter regarding a specific allele of this gene,
+! move to the start of the line below this and include the Allele proforma.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! If there is another gene to curate for this publication, move to the
+! start of the line below this and include the Gene proforma again.
+! GENE PROFORMA                          Version 45:  9 May 2007
+!
+! G1a.  Gene symbol to use in database                      *a :dpp
+! G1b.  Gene symbol used in paper                           *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes                             :
+! G1g.  Is G1a the valid symbol of a gene in FlyBase?          :y
+! G30.  Gene category (if gene is new to FlyBase) [SO CV]   *t :
+! G2a.  Gene name to use in database                        *e :
+! G2b.  Gene name used in paper                             *V :
+! G2c.  Database gene name(s) to replace                    *V :
+! G27.  Etymology                                              :
+! G31a. Action - delete gene              - TAKE CARE :
+! G31b. Action - dissociate G1a from FBrf - TAKE CARE :
+! G20a. G1a in title/abstract? Reviews - G1a significant subject? NSC :
+! G20b. G1a wildtype expression in wildtype analysed?             NSC :
+! G20c. G1a expression analysed in mutant/perturbed bckgrd?       NSC :
+! G20d. G1a genome annotation analysed?                           NSC :
+! G20e. G1a product physical interaction analysed?                NSC :
+! G20f. G1a cis-regulatory elements characterized?                NSC :
+! G20g. G1a gene model decorated - alleles/rescue frags/breaks?   NSC :
+! G20h. G1a polymorphism data reported?                           NSC :
+! G10a. Cytological map posn if by chromosome in situ      *c :
+! G10b. Cytological map posn if details unspecified        *c :
+! G11.  Comments on cytological map position [SoftCV]      *D :
+! G25.  Relationship to clone                         [SoftCV]*s :
+! G19a. Gene order/orientation from molecular mapping [SoftCV]*s :
+! G19b. Comments, not allele-specific -- molecular         *s :
+! G12a. Comments, not allele-specific - biological role    *r :
+! G12b. Comments, not allele-specific -- mutants           *p :
+! G14a. Comments, not allele-specific -- other             *u :
+! G14b. Identification                                        :
+! G28a. Comments -- relationship to other genes        [free text] *q :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G29a. Functional comp/gain of function -- structured [SoftCV] *q :
+! G29b. Functional comp/gain of function            [free text] *q :
+! G18.  Gene(s) stated to interact genetically with G1a    *p :
+! G22.  Homologous gene in reference species of drosophilid*M :
+! G24a. GO -- Cellular component | evidence [CV]           *f :
+! G24b. GO -- Molecular function | evidence [CV]           *F :
+! G24c. GO -- Biological process | evidence [CV]           *d :
+! G24e. GO specific internal note                          *H :
+! G15.  Internal notes  *W :dpp is in twice - once in hashed proforma once in regular.
+! RARE FIELDS MODULE:
+! move to the start of the line below this and include the Gene Modules pro.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GA. ALLELE DATA FOR THIS GENE (excluding kilobase distance data)
+! If there is any data to enter regarding a specific allele of this gene,
+! move to the start of the line below this and include the Allele proforma.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! If there is another gene to curate for this publication, move to the
+! start of the line below this and include the Gene proforma again.
+! GENE PROFORMA                          Version 45:  9 May 2007
+!
+! G1a.  Gene symbol to use in database                      *a :Adh # dpp
+! G1b.  Gene symbol used in paper                           *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes                             :
+! G1g.  Is G1a the valid symbol of a gene in FlyBase?          :y
+! G30.  Gene category (if gene is new to FlyBase) [SO CV]   *t :
+! G2a.  Gene name to use in database                        *e :
+! G2b.  Gene name used in paper                             *V :
+! G2c.  Database gene name(s) to replace                    *V :
+! G27.  Etymology                                              :
+! G31a. Action - delete gene              - TAKE CARE :
+! G31b. Action - dissociate G1a from FBrf - TAKE CARE :
+! G20a. G1a in title/abstract? Reviews - G1a significant subject? NSC :
+! G20b. G1a wildtype expression in wildtype analysed?             NSC :
+! G20c. G1a expression analysed in mutant/perturbed bckgrd?       NSC :
+! G20d. G1a genome annotation analysed?                           NSC :
+! G20e. G1a product physical interaction analysed?                NSC :
+! G20f. G1a cis-regulatory elements characterized?                NSC :
+! G20g. G1a gene model decorated - alleles/rescue frags/breaks?   NSC :
+! G20h. G1a polymorphism data reported?                           NSC :
+! G10a. Cytological map posn if by chromosome in situ      *c :
+! G10b. Cytological map posn if details unspecified        *c :
+! G11.  Comments on cytological map position [SoftCV]      *D :
+! G25.  Relationship to clone                         [SoftCV]*s :
+! G19a. Gene order/orientation from molecular mapping [SoftCV]*s :
+! G19b. Comments, not allele-specific -- molecular         *s :
+! G12a. Comments, not allele-specific - biological role    *r :
+! G12b. Comments, not allele-specific -- mutants           *p :
+! G14a. Comments, not allele-specific -- other             *u :
+! G14b. Identification                                        :
+! G28a. Comments -- relationship to other genes        [free text] *q :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G29a. Functional comp/gain of function -- structured [SoftCV] *q :
+! G29b. Functional comp/gain of function            [free text] *q :
+! G18.  Gene(s) stated to interact genetically with G1a    *p :
+! G22.  Homologous gene in reference species of drosophilid*M :
+! G24a. GO -- Cellular component | evidence [CV]           *f :
+! G24b. GO -- Molecular function | evidence [CV]           *F :
+! G24c. GO -- Biological process | evidence [CV]           *d :
+! G24e. GO specific internal note                          *H :
+! G15.  Internal notes  *W :
+! RARE FIELDS MODULE:
+! move to the start of the line below this and include the Gene Modules pro.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GA. ALLELE DATA FOR THIS GENE (excluding kilobase distance data)
+! If there is any data to enter regarding a specific allele of this gene,
+! move to the start of the line below this and include the Allele proforma.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! If there is another gene to curate for this publication, move to the
+! start of the line below this and include the Gene proforma again.
+! GENE PROFORMA                          Version 45:  9 May 2007
+!
+! G1a.  Gene symbol to use in database                      *a :CG12507
+! G1b.  Gene symbol used in paper                           *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes                             :
+! G1g.  Is G1a the valid symbol of a gene in FlyBase?          :y
+! G30.  Gene category (if gene is new to FlyBase) [SO CV]   *t :
+! G2a.  Gene name to use in database                        *e :
+! G2b.  Gene name used in paper                             *V :
+! G2c.  Database gene name(s) to replace                    *V :
+! G27.  Etymology                                              :
+! G31a. Action - delete gene              - TAKE CARE :
+! G31b. Action - dissociate G1a from FBrf - TAKE CARE :
+! G20a. G1a in title/abstract? Reviews - G1a significant subject? NSC :
+! G20b. G1a wildtype expression in wildtype analysed?             NSC :
+! G20c. G1a expression analysed in mutant/perturbed bckgrd?       NSC :
+! G20d. G1a genome annotation analysed?                           NSC :
+! G20e. G1a product physical interaction analysed?                NSC :
+! G20f. G1a cis-regulatory elements characterized?                NSC :
+! G20g. G1a gene model decorated - alleles/rescue frags/breaks?   NSC :
+! G20h. G1a polymorphism data reported?                           NSC :
+! G10a. Cytological map posn if by chromosome in situ      *c :
+! G10b. Cytological map posn if details unspecified        *c :
+! G11.  Comments on cytological map position [SoftCV]      *D :
+! G25.  Relationship to clone                         [SoftCV]*s :
+! G19a. Gene order/orientation from molecular mapping [SoftCV]*s :
+! G19b. Comments, not allele-specific -- molecular         *s :
+! G12a. Comments, not allele-specific - biological role    *r :
+! G12b. Comments, not allele-specific -- mutants           *p :
+! G14a. Comments, not allele-specific -- other             *u :
+! G14b. Identification                                        :
+! G28a. Comments -- relationship to other genes        [free text] *q :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G29a. Functional comp/gain of function -- structured [SoftCV] *q :
+! G29b. Functional comp/gain of function            [free text] *q :
+! G18.  Gene(s) stated to interact genetically with G1a    *p :
+! G22.  Homologous gene in reference species of drosophilid*M :
+! G24a. GO -- Cellular component | evidence [CV]           *f :
+! G24b. GO -- Molecular function | evidence [CV]           *F :
+! G24c. GO -- Biological process | evidence [CV]           *d :
+! G24e. GO specific internal note                          *H :
+! G15.  Internal notes  *W :CG12507 is in twice in regular profomra.
+! RARE FIELDS MODULE:
+! move to the start of the line below this and include the Gene Modules pro.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GA. ALLELE DATA FOR THIS GENE (excluding kilobase distance data)
+! If there is any data to enter regarding a specific allele of this gene,
+! move to the start of the line below this and include the Allele proforma.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! If there is another gene to curate for this publication, move to the
+! start of the line below this and include the Gene proforma again.
+! GENE PROFORMA                          Version 45:  9 May 2007
+!
+! G1a.  Gene symbol to use in database                      *a :mRpS21
+! G1b.  Gene symbol used in paper                           *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes                             :
+! G1g.  Is G1a the valid symbol of a gene in FlyBase?          :y
+! G30.  Gene category (if gene is new to FlyBase) [SO CV]   *t :
+! G2a.  Gene name to use in database                        *e :
+! G2b.  Gene name used in paper                             *V :
+! G2c.  Database gene name(s) to replace                    *V :
+! G27.  Etymology                                              :
+! G31a. Action - delete gene              - TAKE CARE :
+! G31b. Action - dissociate G1a from FBrf - TAKE CARE :
+! G20a. G1a in title/abstract? Reviews - G1a significant subject? NSC :
+! G20b. G1a wildtype expression in wildtype analysed?             NSC :
+! G20c. G1a expression analysed in mutant/perturbed bckgrd?       NSC :
+! G20d. G1a genome annotation analysed?                           NSC :
+! G20e. G1a product physical interaction analysed?                NSC :
+! G20f. G1a cis-regulatory elements characterized?                NSC :
+! G20g. G1a gene model decorated - alleles/rescue frags/breaks?   NSC :
+! G20h. G1a polymorphism data reported?                           NSC :
+! G10a. Cytological map posn if by chromosome in situ      *c :
+! G10b. Cytological map posn if details unspecified        *c :
+! G11.  Comments on cytological map position [SoftCV]      *D :
+! G25.  Relationship to clone                         [SoftCV]*s :
+! G19a. Gene order/orientation from molecular mapping [SoftCV]*s :
+! G19b. Comments, not allele-specific -- molecular         *s :
+! G12a. Comments, not allele-specific - biological role    *r :
+! G12b. Comments, not allele-specific -- mutants           *p :
+! G14a. Comments, not allele-specific -- other             *u :
+! G14b. Identification                                        :
+! G28a. Comments -- relationship to other genes        [free text] *q :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G29a. Functional comp/gain of function -- structured [SoftCV] *q :
+! G29b. Functional comp/gain of function            [free text] *q :
+! G18.  Gene(s) stated to interact genetically with G1a    *p :
+! G22.  Homologous gene in reference species of drosophilid*M :
+! G24a. GO -- Cellular component | evidence [CV]           *f :
+! G24b. GO -- Molecular function | evidence [CV]           *F :
+! G24c. GO -- Biological process | evidence [CV]           *d :
+! G24e. GO specific internal note                          *H :
+! G15.  Internal notes  *W :
+! RARE FIELDS MODULE:
+! move to the start of the line below this and include the Gene Modules pro.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GA. ALLELE DATA FOR THIS GENE (excluding kilobase distance data)
+! If there is any data to enter regarding a specific allele of this gene,
+! move to the start of the line below this and include the Allele proforma.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! If there is another gene to curate for this publication, move to the
+! start of the line below this and include the Gene proforma again.
+! GENE PROFORMA                          Version 45:  9 May 2007
+!
+! G1a.  Gene symbol to use in database                      *a :CG12507
+! G1b.  Gene symbol used in paper                           *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes                             :
+! G1g.  Is G1a the valid symbol of a gene in FlyBase?          :y
+! G30.  Gene category (if gene is new to FlyBase) [SO CV]   *t :
+! G2a.  Gene name to use in database                        *e :
+! G2b.  Gene name used in paper                             *V :
+! G2c.  Database gene name(s) to replace                    *V :
+! G27.  Etymology                                              :
+! G31a. Action - delete gene              - TAKE CARE :
+! G31b. Action - dissociate G1a from FBrf - TAKE CARE :
+! G20a. G1a in title/abstract? Reviews - G1a significant subject? NSC :
+! G20b. G1a wildtype expression in wildtype analysed?             NSC :
+! G20c. G1a expression analysed in mutant/perturbed bckgrd?       NSC :
+! G20d. G1a genome annotation analysed?                           NSC :
+! G20e. G1a product physical interaction analysed?                NSC :
+! G20f. G1a cis-regulatory elements characterized?                NSC :
+! G20g. G1a gene model decorated - alleles/rescue frags/breaks?   NSC :
+! G20h. G1a polymorphism data reported?                           NSC :
+! G10a. Cytological map posn if by chromosome in situ      *c :
+! G10b. Cytological map posn if details unspecified        *c :
+! G11.  Comments on cytological map position [SoftCV]      *D :
+! G25.  Relationship to clone                         [SoftCV]*s :
+! G19a. Gene order/orientation from molecular mapping [SoftCV]*s :
+! G19b. Comments, not allele-specific -- molecular         *s :
+! G12a. Comments, not allele-specific - biological role    *r :
+! G12b. Comments, not allele-specific -- mutants           *p :
+! G14a. Comments, not allele-specific -- other             *u :
+! G14b. Identification                                        :
+! G28a. Comments -- relationship to other genes        [free text] *q :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G29a. Functional comp/gain of function -- structured [SoftCV] *q :
+! G29b. Functional comp/gain of function            [free text] *q :
+! G18.  Gene(s) stated to interact genetically with G1a    *p :
+! G22.  Homologous gene in reference species of drosophilid*M :
+! G24a. GO -- Cellular component | evidence [CV]           *f :
+! G24b. GO -- Molecular function | evidence [CV]           *F :
+! G24c. GO -- Biological process | evidence [CV]           *d :
+! G24e. GO specific internal note                          *H :
+! G15.  Internal notes  *W :
+! RARE FIELDS MODULE:
+! move to the start of the line below this and include the Gene Modules pro.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GA. ALLELE DATA FOR THIS GENE (excluding kilobase distance data)
+! If there is any data to enter regarding a specific allele of this gene,
+! move to the start of the line below this and include the Allele proforma.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! If there is another gene to curate for this publication, move to the
+! start of the line below this and include the Gene proforma again.
+! GENE PROFORMA                          Version 45:  9 May 2007
+!
+! G1a.  Gene symbol to use in database                      *a :shi # dap
+! G1b.  Gene symbol used in paper                           *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes                             :
+! G1g.  Is G1a the valid symbol of a gene in FlyBase?          :y
+! G30.  Gene category (if gene is new to FlyBase) [SO CV]   *t :
+! G2a.  Gene name to use in database                        *e :
+! G2b.  Gene name used in paper                             *V :
+! G2c.  Database gene name(s) to replace                    *V :
+! G27.  Etymology                                              :
+! G31a. Action - delete gene              - TAKE CARE :
+! G31b. Action - dissociate G1a from FBrf - TAKE CARE :
+! G20a. G1a in title/abstract? Reviews - G1a significant subject? NSC :
+! G20b. G1a wildtype expression in wildtype analysed?             NSC :
+! G20c. G1a expression analysed in mutant/perturbed bckgrd?       NSC :
+! G20d. G1a genome annotation analysed?                           NSC :
+! G20e. G1a product physical interaction analysed?                NSC :
+! G20f. G1a cis-regulatory elements characterized?                NSC :
+! G20g. G1a gene model decorated - alleles/rescue frags/breaks?   NSC :
+! G20h. G1a polymorphism data reported?                           NSC :
+! G10a. Cytological map posn if by chromosome in situ      *c :
+! G10b. Cytological map posn if details unspecified        *c :
+! G11.  Comments on cytological map position [SoftCV]      *D :
+! G25.  Relationship to clone                         [SoftCV]*s :
+! G19a. Gene order/orientation from molecular mapping [SoftCV]*s :
+! G19b. Comments, not allele-specific -- molecular         *s :
+! G12a. Comments, not allele-specific - biological role    *r :
+! G12b. Comments, not allele-specific -- mutants           *p :
+! G14a. Comments, not allele-specific -- other             *u :
+! G14b. Identification                                        :
+! G28a. Comments -- relationship to other genes        [free text] *q :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G29a. Functional comp/gain of function -- structured [SoftCV] *q :
+! G29b. Functional comp/gain of function            [free text] *q :
+! G18.  Gene(s) stated to interact genetically with G1a    *p :
+! G22.  Homologous gene in reference species of drosophilid*M :
+! G24a. GO -- Cellular component | evidence [CV]           *f :
+! G24b. GO -- Molecular function | evidence [CV]           *F :
+! G24c. GO -- Biological process | evidence [CV]           *d :
+! G24e. GO specific internal note                          *H :
+! G15.  Internal notes  *W :dap is in twice - both times in hashhed profomra.
+! RARE FIELDS MODULE:
+! move to the start of the line below this and include the Gene Modules pro.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GA. ALLELE DATA FOR THIS GENE (excluding kilobase distance data)
+! If there is any data to enter regarding a specific allele of this gene,
+! move to the start of the line below this and include the Allele proforma.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! If there is another gene to curate for this publication, move to the
+! start of the line below this and include the Gene proforma again.
+! GENE PROFORMA                          Version 45:  9 May 2007
+!
+! G1a.  Gene symbol to use in database                      *a :dap # CG1126
+! G1b.  Gene symbol used in paper                           *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes                             :
+! G1g.  Is G1a the valid symbol of a gene in FlyBase?          :y
+! G30.  Gene category (if gene is new to FlyBase) [SO CV]   *t :
+! G2a.  Gene name to use in database                        *e :
+! G2b.  Gene name used in paper                             *V :
+! G2c.  Database gene name(s) to replace                    *V :
+! G27.  Etymology                                              :
+! G31a. Action - delete gene              - TAKE CARE :
+! G31b. Action - dissociate G1a from FBrf - TAKE CARE :
+! G20a. G1a in title/abstract? Reviews - G1a significant subject? NSC :
+! G20b. G1a wildtype expression in wildtype analysed?             NSC :
+! G20c. G1a expression analysed in mutant/perturbed bckgrd?       NSC :
+! G20d. G1a genome annotation analysed?                           NSC :
+! G20e. G1a product physical interaction analysed?                NSC :
+! G20f. G1a cis-regulatory elements characterized?                NSC :
+! G20g. G1a gene model decorated - alleles/rescue frags/breaks?   NSC :
+! G20h. G1a polymorphism data reported?                           NSC :
+! G10a. Cytological map posn if by chromosome in situ      *c :
+! G10b. Cytological map posn if details unspecified        *c :
+! G11.  Comments on cytological map position [SoftCV]      *D :
+! G25.  Relationship to clone                         [SoftCV]*s :
+! G19a. Gene order/orientation from molecular mapping [SoftCV]*s :
+! G19b. Comments, not allele-specific -- molecular         *s :
+! G12a. Comments, not allele-specific - biological role    *r :
+! G12b. Comments, not allele-specific -- mutants           *p :
+! G14a. Comments, not allele-specific -- other             *u :
+! G14b. Identification                                        :
+! G28a. Comments -- relationship to other genes        [free text] *q :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G29a. Functional comp/gain of function -- structured [SoftCV] *q :
+! G29b. Functional comp/gain of function            [free text] *q :
+! G18.  Gene(s) stated to interact genetically with G1a    *p :
+! G22.  Homologous gene in reference species of drosophilid*M :
+! G24a. GO -- Cellular component | evidence [CV]           *f :
+! G24b. GO -- Molecular function | evidence [CV]           *F :
+! G24c. GO -- Biological process | evidence [CV]           *d :
+! G24e. GO specific internal note                          *H :
+! G15.  Internal notes  *W :
+! RARE FIELDS MODULE:
+! move to the start of the line below this and include the Gene Modules pro.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GA. ALLELE DATA FOR THIS GENE (excluding kilobase distance data)
+! If there is any data to enter regarding a specific allele of this gene,
+! move to the start of the line below this and include the Allele proforma.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! If there is another gene to curate for this publication, move to the
+! start of the line below this and include the Gene proforma again.
+! GENE PROFORMA                          Version 45:  9 May 2007
+!
+! G1a.  Gene symbol to use in database                      *a :invalid
+! G1b.  Gene symbol used in paper                           *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes                             :
+! G1g.  Is G1a the valid symbol of a gene in FlyBase?          :y
+! G30.  Gene category (if gene is new to FlyBase) [SO CV]   *t :
+! G2a.  Gene name to use in database                        *e :
+! G2b.  Gene name used in paper                             *V :
+! G2c.  Database gene name(s) to replace                    *V :
+! G27.  Etymology                                              :
+! G31a. Action - delete gene              - TAKE CARE :
+! G31b. Action - dissociate G1a from FBrf - TAKE CARE :
+! G20a. G1a in title/abstract? Reviews - G1a significant subject? NSC :
+! G20b. G1a wildtype expression in wildtype analysed?             NSC :
+! G20c. G1a expression analysed in mutant/perturbed bckgrd?       NSC :
+! G20d. G1a genome annotation analysed?                           NSC :
+! G20e. G1a product physical interaction analysed?                NSC :
+! G20f. G1a cis-regulatory elements characterized?                NSC :
+! G20g. G1a gene model decorated - alleles/rescue frags/breaks?   NSC :
+! G20h. G1a polymorphism data reported?                           NSC :
+! G10a. Cytological map posn if by chromosome in situ      *c :
+! G10b. Cytological map posn if details unspecified        *c :
+! G11.  Comments on cytological map position [SoftCV]      *D :
+! G25.  Relationship to clone                         [SoftCV]*s :
+! G19a. Gene order/orientation from molecular mapping [SoftCV]*s :
+! G19b. Comments, not allele-specific -- molecular         *s :
+! G12a. Comments, not allele-specific - biological role    *r :
+! G12b. Comments, not allele-specific -- mutants           *p :
+! G14a. Comments, not allele-specific -- other             *u :
+! G14b. Identification                                        :
+! G28a. Comments -- relationship to other genes        [free text] *q :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G29a. Functional comp/gain of function -- structured [SoftCV] *q :
+! G29b. Functional comp/gain of function            [free text] *q :
+! G18.  Gene(s) stated to interact genetically with G1a    *p :
+! G22.  Homologous gene in reference species of drosophilid*M :
+! G24a. GO -- Cellular component | evidence [CV]           *f :
+! G24b. GO -- Molecular function | evidence [CV]           *F :
+! G24c. GO -- Biological process | evidence [CV]           *d :
+! G24e. GO specific internal note                          *H :
+! G15.  Internal notes  *W :put an invalid symbol in twice to see what happened.
+! RARE FIELDS MODULE:
+! move to the start of the line below this and include the Gene Modules pro.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GA. ALLELE DATA FOR THIS GENE (excluding kilobase distance data)
+! If there is any data to enter regarding a specific allele of this gene,
+! move to the start of the line below this and include the Allele proforma.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! If there is another gene to curate for this publication, move to the
+! start of the line below this and include the Gene proforma again.
+! GENE PROFORMA                          Version 45:  9 May 2007
+!
+! G1a.  Gene symbol to use in database                      *a :newsymbol
+! G1b.  Gene symbol used in paper                           *i :
+! G1e.  Action - rename this gene symbol                       :Atg2
+! G1f.  Action - merge these genes                             :
+! G1g.  Is G1a the valid symbol of a gene in FlyBase?          :n
+! G30.  Gene category (if gene is new to FlyBase) [SO CV]   *t :
+! G2a.  Gene name to use in database                        *e :
+! G2b.  Gene name used in paper                             *V :
+! G2c.  Database gene name(s) to replace                    *V :
+! G27.  Etymology                                              :
+! G31a. Action - delete gene              - TAKE CARE :
+! G31b. Action - dissociate G1a from FBrf - TAKE CARE :
+! G20a. G1a in title/abstract? Reviews - G1a significant subject? NSC :
+! G20b. G1a wildtype expression in wildtype analysed?             NSC :
+! G20c. G1a expression analysed in mutant/perturbed bckgrd?       NSC :
+! G20d. G1a genome annotation analysed?                           NSC :
+! G20e. G1a product physical interaction analysed?                NSC :
+! G20f. G1a cis-regulatory elements characterized?                NSC :
+! G20g. G1a gene model decorated - alleles/rescue frags/breaks?   NSC :
+! G20h. G1a polymorphism data reported?                           NSC :
+! G10a. Cytological map posn if by chromosome in situ      *c :
+! G10b. Cytological map posn if details unspecified        *c :
+! G11.  Comments on cytological map position [SoftCV]      *D :
+! G25.  Relationship to clone                         [SoftCV]*s :
+! G19a. Gene order/orientation from molecular mapping [SoftCV]*s :
+! G19b. Comments, not allele-specific -- molecular         *s :
+! G12a. Comments, not allele-specific - biological role    *r :
+! G12b. Comments, not allele-specific -- mutants           *p :
+! G14a. Comments, not allele-specific -- other             *u :
+! G14b. Identification                                        :
+! G28a. Comments -- relationship to other genes        [free text] *q :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G29a. Functional comp/gain of function -- structured [SoftCV] *q :
+! G29b. Functional comp/gain of function            [free text] *q :
+! G18.  Gene(s) stated to interact genetically with G1a    *p :
+! G22.  Homologous gene in reference species of drosophilid*M :
+! G24a. GO -- Cellular component | evidence [CV]           *f :
+! G24b. GO -- Molecular function | evidence [CV]           *F :
+! G24c. GO -- Biological process | evidence [CV]           *d :
+! G24e. GO specific internal note                          *H :
+! G15.  Internal notes  *W :proforma with rename of Atg2 to 'newsymbol'
+! RARE FIELDS MODULE:
+! move to the start of the line below this and include the Gene Modules pro.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GA. ALLELE DATA FOR THIS GENE (excluding kilobase distance data)
+! If there is any data to enter regarding a specific allele of this gene,
+! move to the start of the line below this and include the Allele proforma.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! If there is another gene to curate for this publication, move to the
+! start of the line below this and include the Gene proforma again.
+! GENE PROFORMA                          Version 45:  9 May 2007
+!
+! G1a.  Gene symbol to use in database                      *a :newsymbol
+! G1b.  Gene symbol used in paper                           *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes                             :
+! G1g.  Is G1a the valid symbol of a gene in FlyBase?          :y
+! G30.  Gene category (if gene is new to FlyBase) [SO CV]   *t :
+! G2a.  Gene name to use in database                        *e :
+! G2b.  Gene name used in paper                             *V :
+! G2c.  Database gene name(s) to replace                    *V :
+! G27.  Etymology                                              :
+! G31a. Action - delete gene              - TAKE CARE :
+! G31b. Action - dissociate G1a from FBrf - TAKE CARE :
+! G20a. G1a in title/abstract? Reviews - G1a significant subject? NSC :
+! G20b. G1a wildtype expression in wildtype analysed?             NSC :
+! G20c. G1a expression analysed in mutant/perturbed bckgrd?       NSC :
+! G20d. G1a genome annotation analysed?                           NSC :
+! G20e. G1a product physical interaction analysed?                NSC :
+! G20f. G1a cis-regulatory elements characterized?                NSC :
+! G20g. G1a gene model decorated - alleles/rescue frags/breaks?   NSC :
+! G20h. G1a polymorphism data reported?                           NSC :
+! G10a. Cytological map posn if by chromosome in situ      *c :
+! G10b. Cytological map posn if details unspecified        *c :
+! G11.  Comments on cytological map position [SoftCV]      *D :
+! G25.  Relationship to clone                         [SoftCV]*s :
+! G19a. Gene order/orientation from molecular mapping [SoftCV]*s :
+! G19b. Comments, not allele-specific -- molecular         *s :
+! G12a. Comments, not allele-specific - biological role    *r :
+! G12b. Comments, not allele-specific -- mutants           *p :
+! G14a. Comments, not allele-specific -- other             *u :
+! G14b. Identification                                        :
+! G28a. Comments -- relationship to other genes        [free text] *q :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G29a. Functional comp/gain of function -- structured [SoftCV] *q :
+! G29b. Functional comp/gain of function            [free text] *q :
+! G18.  Gene(s) stated to interact genetically with G1a    *p :
+! G22.  Homologous gene in reference species of drosophilid*M :
+! G24a. GO -- Cellular component | evidence [CV]           *f :
+! G24b. GO -- Molecular function | evidence [CV]           *F :
+! G24c. GO -- Biological process | evidence [CV]           *d :
+! G24e. GO specific internal note                          *H :
+! G15.  Internal notes  *W :
+! RARE FIELDS MODULE:
+! move to the start of the line below this and include the Gene Modules pro.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GA. ALLELE DATA FOR THIS GENE (excluding kilobase distance data)
+! If there is any data to enter regarding a specific allele of this gene,
+! move to the start of the line below this and include the Allele proforma.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! If there is another gene to curate for this publication, move to the
+! start of the line below this and include the Gene proforma again.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! A. ABERRATION DATA (excluding kilobase distance data)
+! If this publication includes information to enter concerning an
+! aberration, defined as a named multi-segment construction whose segments
+! are all from the same species (not necessarily Drosophila melanogaster),
+! move to the start of the line below and include the Aberration proforma.
+! ABERRATION PROFORMA                    Version 33: 16 October 2006
+!
+! A1a. Aberration symbol to use in database           *a :In(3R)P
+! A1b. Aberration symbol used in paper                *i :In(3R)P
+! A1e.  Action - rename this aberration symbol            :
+! A1f.  Action - merge aberrations                        :
+! A1g.  Is A1a the valid symbol of an aberration in FlyBase? :y
+! A2a.  Aberration name to use in database             *e :
+! A2b.  Aberration name used in paper                  *Q :
+! A2c.  Database aberration name(s) to replace         *Q :
+! A4.  Mutagen  [CV]                                  *o :
+! A16. Discoverer                                     *w :
+! A6.  Progenitor genotype                            *O :
+! A23. Parent chromosome (for segregants - *Y)           :
+! A7a. Genes removed or broken by the aberration (Df) in A1a (complementation)     *q :
+! A7b. Genes fully duplicated in the Dp in A1a (complementation)     *q :
+! A7c. Genes NOT removed or broken by the aberration (Df) in A1a (complementation) *q :
+! A7d. Genes NOT included in the Dp in A1a (complementation)         *q :
+! A7e. Genes partially disrupted by the Df in A1a (complementation) *q :
+! A7f. Genes partially duplicated in the Dp in A1a (complementation)*q :
+! A7x. Non-standard complementation data (free text, usually for A7e, A7f) *q :
+! A17. Phenotype (not associated with specified alleles)*p :
+! A8a. Breaks: cytological or progen break ranges       *B :
+1: 
+2: 
+3: 
+! A8b. Segments: cytological ranges of ends *B :
+1: 
+2: 
+3: 
+! A9. Type of aberration relative to progenitor [CV]   *C :
+! A26. Type of aberration relative to wild-type [CV]    *C :
+! A10. Known new junction(s) of A8a sides *N :
+! A11. New order of A8b segments          *N :
+! A18. Comments about cytology            *c :
+! A24a. Transposon insertions             *P :
+! A24b. Non-insert allele(s)              *S :
+! A14. Other comments                     *u :
+! A25a. Genes fully removed by the aberration (Df) in A1a (molecular) NSC               :
+! A25b. Genes fully duplicated in the Dp in A1a (molecular)  NSC        :
+! A25c. Genes NOT removed or broken by the aberration (Df) in A1a (molecular)  NSC      :
+! A25d. Genes NOT included in the Dp in A1a (molecular) NSC             :
+! A25e. Genes partially removed or broken by the aberration (Df) in A1a (molecular) NSC :
+! A25f. Genes partially included in the Dp in A1a (molecular) NSC       :
+! A25x. molecular data (free text, usually for A25e, A25f) NSC :
+! A20a. A1a polymorphism data reported?   *K :y
+! A21. Information on availability        *v :
+! A15. Internal notes                     *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! AB. BALANCER DATA ABOUT THIS ABERRATION
+! If there is any data regarding a specific constellation of markers on
+! this aberration, which has been named as a balancer chromosome, move
+! to the start of the line below this and include the Balancer proforma.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! If there is another aberration to curate for this publication, go to the
+! start of the line below this and include the Aberration proforma again.
+! ABERRATION PROFORMA                    Version 33: 16 October 2006
+!
+! A1a. Aberration symbol to use in database           *a :In(3R)P
+! A1b. Aberration symbol used in paper                *i :In(3R)P
+! A1e.  Action - rename this aberration symbol            :
+! A1f.  Action - merge aberrations                        :
+! A1g.  Is A1a the valid symbol of an aberration in FlyBase? :y
+! A2a.  Aberration name to use in database             *e :
+! A2b.  Aberration name used in paper                  *Q :
+! A2c.  Database aberration name(s) to replace         *Q :
+! A4.  Mutagen  [CV]                                  *o :
+! A16. Discoverer                                     *w :
+! A6.  Progenitor genotype                            *O :
+! A23. Parent chromosome (for segregants - *Y)           :
+! A7a. Genes removed or broken by the aberration (Df) in A1a (complementation)     *q :
+! A7b. Genes fully duplicated in the Dp in A1a (complementation)     *q :
+! A7c. Genes NOT removed or broken by the aberration (Df) in A1a (complementation) *q :
+! A7d. Genes NOT included in the Dp in A1a (complementation)         *q :
+! A7e. Genes partially disrupted by the Df in A1a (complementation) *q :
+! A7f. Genes partially duplicated in the Dp in A1a (complementation)*q :
+! A7x. Non-standard complementation data (free text, usually for A7e, A7f) *q :
+! A17. Phenotype (not associated with specified alleles)*p :
+! A8a. Breaks: cytological or progen break ranges       *B :
+1: 
+2: 
+3: 
+! A8b. Segments: cytological ranges of ends *B :
+1: 
+2: 
+3: 
+! A9. Type of aberration relative to progenitor [CV]   *C :
+! A26. Type of aberration relative to wild-type [CV]    *C :
+! A10. Known new junction(s) of A8a sides *N :
+! A11. New order of A8b segments          *N :
+! A18. Comments about cytology            *c :
+! A24a. Transposon insertions             *P :
+! A24b. Non-insert allele(s)              *S :
+! A14. Other comments                     *u :
+! A25a. Genes fully removed by the aberration (Df) in A1a (molecular) NSC               :
+! A25b. Genes fully duplicated in the Dp in A1a (molecular)  NSC        :
+! A25c. Genes NOT removed or broken by the aberration (Df) in A1a (molecular)  NSC      :
+! A25d. Genes NOT included in the Dp in A1a (molecular) NSC             :
+! A25e. Genes partially removed or broken by the aberration (Df) in A1a (molecular) NSC :
+! A25f. Genes partially included in the Dp in A1a (molecular) NSC       :
+! A25x. molecular data (free text, usually for A25e, A25f) NSC :
+! A20a. A1a polymorphism data reported?   *K :y
+! A21. Information on availability        *v :
+! A15. Internal notes                     *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! AB. BALANCER DATA ABOUT THIS ABERRATION
+! If there is any data regarding a specific constellation of markers on
+! this aberration, which has been named as a balancer chromosome, move
+! to the start of the line below this and include the Balancer proforma.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! If there is another aberration to curate for this publication, go to the
+! start of the line below this and include the Aberration proforma again.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! MA. TRANSPOSON INSERTION DATA
+! MS. MOLECULAR SEGMENT AND CONSTRUCT DATA
+! TE. NATURAL TRANSPOSON, GENERIC DATA
+! If this publication includes information to enter concerning a
+! transposon/transgene insertion, molecular segment/construct, or
+! natural transposon, move to the start of the line below and include
+! the appropriate ti.pro, moseg.pro, or gen.natTE.pro proforma.
+! NATURAL TRANSPOSON PROFORMA                        Version 8: 11 Dec 2014
+! TE1f. ID for gen.natTE (FBte or "new")       :FBte0000266
+! TE1a. gen.natTE symbol to use in database    :3S18
+! TE1b. gen.natTE symbol used in reference     :
+! TE13. Internal comments   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! NATURAL TRANSPOSON PROFORMA                        Version 8: 11 Dec 2014
+! TE1f. ID for gen.natTE (FBte or "new")       :new
+! TE1a. gen.natTE symbol to use in database    :412[her&blahgr;]
+! TE1b. gen.natTE symbol used in reference     :
+! TE13. Internal comments   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! NATURAL TRANSPOSON PROFORMA                        Version 8: 11 Dec 2014
+! TE1f. ID for gen.natTE (FBte or "new")       :new
+! TE1a. gen.natTE symbol to use in database    :3S18
+! TE1b. gen.natTE symbol used in reference     :
+! TE13. Internal comments   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

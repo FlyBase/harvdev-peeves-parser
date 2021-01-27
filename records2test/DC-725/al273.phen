@@ -1,0 +1,66 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0230072
+! P2.   Parent multipub abbreviation               *w :Neurobiol. Disease
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+!c P43.  Flag Disease for curation            DISEASE :dm_gen::DONE
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Pros&bgr;6
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Pros&bgr;6[1.B.Scer\UAS]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :lethal, UI { Pros&bgr;2[1.Scer\UAS], Hsap\ATXN3[tr.Q78.Scer\UAS.T:Ivir\HA1], Scer\GAL4[GMR.long] }
+lethal { Pros&bgr;2[1.Scer\UAS], Hsap\ATXN3[tr.Q78.Scer\UAS.T:Ivir\HA1], Scer\GAL4[GMR.long] }, suppressible { Hsap\ATXN3[Scer\UAS.WT.T:Zzzz\His6], Scer\GAL4[GMR.long] }
+lethal { Pros&bgr;2[1.Scer\UAS], Hsap\ATXN3[tr.Q78.Scer\UAS.T:Ivir\HA1], Scer\GAL4[GMR.long] }, suppressible { DnaJ-1[Scer\UAS.cKa], Scer\GAL4[GMR.long] }
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :Simultaneous co-expression of @Pros&bgr;6[1.B.Scer\UAS]@ and @Pros&bgr;2[1.Scer\UAS]@ does not suppress the protective role of expression of @Hsap\ATXN3[Scer\UAS.WT.T:Zzzz\His6]@ or @DnaJ-1[Scer\UAS.cKa]@ in suppression of eye degeneration in @Scer\GAL4[GMR.long]@>@Hsap\ATXN3[tr.Q78.Scer\UAS.T:Ivir\HA1]@ flies. 
+
+Simultaneous co-expression of @Pros&bgr;6[1.B.Scer\UAS]@ and @Pros&bgr;2[1.Scer\UAS]@ leads to lethality in @Scer\GAL4[GMR.long]@>@Hsap\ATXN3[tr.Q78.Scer\UAS.T:Ivir\HA1]@ flies; extra co-expression of @Hsap\ATXN3[Scer\UAS.WT.T:Zzzz\His6]@ or @DnaJ-1[Scer\UAS.cKa]@ suppresses this lethality.
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

@@ -1,0 +1,23 @@
+! C1.  Curator ID	:gds
+! C2.  Date		:170307
+! C3.  Curator notes to self	:Negative - subject is FBtp, not FBmc.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0068584
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! MOLECULAR SEGMENT AND CONSTRUCT PROFORMA           Version 30: 7 March 2017
+!
+! MS1f. Database ID for segment (FBid or "new") :FBtp0003199
+! MS1a. Segment symbol to use in database       :P{2xBLE1+}
+!
+! MS19a. Progenitor construct  :
+! MS19d. Progenitor cDNA or genomic clone  :
+! MS19b. Progenitor(s) (other - free text)  :
+! MS19c. Isolate of (generic natTE)  :
+! MS19e. Associated gene (gene symbol)  :dpp
+tkv
+! MS20.  Related constructs    :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!
+

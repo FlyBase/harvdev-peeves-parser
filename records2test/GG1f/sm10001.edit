@@ -1,0 +1,51 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0225556
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :test record - what does Peeves do if attempting a rename (GG1e) and GG1f is blank - expect this to be fine (generate no errors).
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 6: 01 Oct 2015
+!
+! GG1a. Gene group symbol                               *a :NEWSYMBOL
+! GG1b. Gene group symbol synonym(s)                    *i :
+! GG1e. Action - rename this gene group symbol      :UBACT
+! GG1f. Action - merge these gene groups (symbols)  :
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :n
+! GG2a. Action - gene group name to use in FlyBase      *e :
+! GG2b. Gene group name synonym(s)                      *V :
+! GG2c. Action - rename this gene group name        :
+!
+! GG3a. Action - obsolete GG1a in FlyBase (y)        TAKE CARE :
+! GG3b. Action - dissociate GG1a from reference (y)  TAKE CARE :
+!
+! GG4.  Type of gene group [CV]  *t :
+!
+! GG5.  Description of gene group  [free text]  *D :
+!
+! GG6a. Key GO term(s) - Cellular Component (term ; ID)  *f :
+! GG6b. Key GO term(s) - Molecular Function (term ; ID)  *F :
+! GG6c. Key GO term(s) - Biological Process (term ; ID)  *d :
+!
+! GG7a. Related gene group(s) in FB - parent (symbol)     *P :
+! GG7c. Related gene group(s) in FB - undefined (symbol)  *U :
+!
+! GG8a. Equivalent gene group accession (rpt. sect. for mult.)  *O :
+! GG8b. FlyBase database symbol (DB1a) for GG8a  *O :
+! GG8c. Title for GG8a [free text]               *T :
+! GG8d. Action - dissociate the accession in GG8a/GG8b from gene group in GG1a? (blank/y) :
+!
+! GG9.  Other related external resource(s) ([title](URL)) *E :
+!
+! GG10. Comments [free text]  *u :
+!
+! GG11. Date gene group last reviewed (YYYYMMDD)  *y :
+!
+! GG12. Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

@@ -1,0 +1,61 @@
+! C1.  Curator ID	:gds
+! C2.  Date		:151208
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 44:  6 Nov 2012
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0107610
+! P2.   Parent multipub abbreviation               *w :Cell
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA             Version 2.6  15 Nov 2011
+!
+! IN1f. Database ID for interaction  :FBrf0107610-2a.PD.WB
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :n
+! IN2a. Interaction description (protein-protein/RNA-protein)     :protein-protein
+! IN2b. Interaction type (Termlink MI CV) :physical association
+! IN3.  Interaction assay (Termlink MI CV)    :pull down
+western blot
+! IN5b. Stage and tissue ( <e> <t> <a> <s> <note> ) :
+<e> <t> E <a> organism <s> <note>
+! IN5e. Comments concerning source   :Interaction in vitro; bait produced as a recombinant fusion protein in bacterial system; prey derived from wild-type embryonic extract.
+! IN6.  List of interactors (FB symbol or ids), role (Termlink MI CV), qualifier ( <symbol>  <ID_as_reported>  <role>  <qual/note> ):
+<symbol> Patj-XP <ID_as_reported> DLT <role> bait <qual/note> GST tag
+<symbol> Nrx-IV-XP <ID_as_reported> NRV IV <role> prey <qual/note>
+! IN7c. Subregion(s) of participant(s) with role in interaction ( <link to>  <description> region <role> unspecified role <coordinates/seq>  <note> ):
+<link to> Patj-XP <description> PDZ domains 3-4 <role> sufficient binding region <coordinates/seq> aa 539-871 <note>
+! IN7b. Comments concerning experimental data:
+! IN8a. Public comments   :
+! IN8b. Internal comments :Fig1D
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA             Version 2.6  15 Nov 2011
+!
+! IN1f. Database ID for interaction  :FBrf0107610-4a.PD.A
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :n
+! IN2a. Interaction description (protein-protein/RNA-protein)     :protein-protein
+! IN2b. Interaction type (Termlink MI CV) :physical association
+! IN3.  Interaction assay (Termlink MI CV)    :pull down
+autoradiography
+! IN5e. Comments concerning source   :Interaction in vitro; bait produced as a recombinant fusion protein in bacterial system; prey produced and labeled by in vitro translation..
+! IN6.  List of interactors (FB symbol or ids), role (Termlink MI CV), qualifier ( <symbol>  <ID_as_reported>  <role>  <qual/note> ):
+<symbol> Patj-XP <ID_as_reported> DLT <role> bait <qual/note> GST tag
+<symbol> Patj-XP <ID_as_reported> DLT <role> prey <qual/note> T7 tag
+! IN7c. Subregion(s) of participant(s) with role in interaction ( <link to>  <description> region <role> unspecified role <coordinates/seq>  <note> ):
+<link to> Patj-XP <description> PDZ domains 3-4 <role> sufficient binding region <coordinates/seq> aa 539-871 <note>
+! IN7b. Comments concerning experimental data:
+! IN8a. Public comments   :
+! IN8b. Internal comments :Fig3N
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA             Version 2.6  15 Nov 2011
+!
+! IN1f. Database ID for interaction  :FBrf0107610-2.PD.WB
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :y
+! IN1h. Action - delete event record ("y"/blank) :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA             Version 2.6  15 Nov 2011
+!
+! IN1f. Database ID for interaction  :FBrf0107610-4.PD.A
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :y
+! IN1h. Action - delete event record ("y"/blank) :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!!
+

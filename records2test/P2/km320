@@ -1,0 +1,62 @@
+! PUBLICATION PROFORMA                   Version 41:  16 Mar 2010
+!
+! P22.  FlyBase reference ID (FBrf)      *U :FBrf0106865
+! P32.  Action - make this/these FBrf(s) secondary IDs of P22 *N :
+! P39.  Action - obsolete P22 in FlyBase               TAKE CARE :
+! P1.   Type of publication [CV]  *T :
+! P2.   Parent multipub (abbreviation)      *w :
+! P12.  Author(s)                   *a-*b :
+! P10.  Year or date (YYYY.M.D) if PC  *t :
+! P16.  Title                          *u :
+! P3.   Volume number                  *y :
+! P4.   Issue number                   *Y :
+! P11a. Page range or article number        *z :
+! P11d. DOI                                    :
+! P11b. URL                                 *R :
+! P11c. Sequence accession number              :
+! P13.  Language of publication [CV]                          *L :English
+! P14.  Additional language(s) of abstract [CV]               *A :
+! P26.  PubMed ID                *M :
+! P29.  ISBN, if P1 = book       *I :
+! P23.  Text of personal communication *F :
+! P18.  Miscellaneous comments                                  *G :
+! P38.  Associated file, archived at ftp site [SoftCV]       *K :
+! P30.  Also published as (FBrf)            *C :
+! P31.  Related publication (FBrf)          *E :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :no_flag
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 66:  03 Mar 2010
+!
+! G1h.  FlyBase gene ID (FBgn) *z :FBgn0022216
+! G1a.  Gene symbol to use in FlyBase                       *a :l(2)k03610
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! ALLELE PROFORMA                        Version 50: 02 Mar 2010
+!
+! GA1h. FlyBase allele ID (FBal) *z :FBal0064551
+! GA1a.  Allele symbol to use in FlyBase                        *A :l(2)k03610[k03703]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - replace this allele name                         :
+! GA31.  Etymology                                              *u :
+! GA32a. Action - obsolete GA1a in FlyBase (y)         TAKE CARE :
+! GA32b. Action - dissociate GA1a from reference (y)   TAKE CARE :
+!
+! GA23b. Notes on origin [free text]                   *R :Isolated with @raw[k03703]@. Lethality of the 'l(2)k03703' line does not map to the site of the @P{lacW}raw[k03703]@ insertion.
+!
+!c GA10c. Associated insertion - G1a is outwith insert      *G :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

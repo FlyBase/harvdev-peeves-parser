@@ -1,0 +1,27 @@
+
+Processing gm0005
+
+gm0005: P38: Not checking this field because of ?? in '??
+'
+
+gm0005: GA56: 'bw[24]' is not a valid driver in '{ bw[24] }' from 'lethal { bw[24] }'
+
+gm0005: GA56: 'Tp(2;Y)R24' is not a valid driver in '{ Tp(2;Y)R24 }' from 'visible { Tp(2;Y)R24 }'
+
+gm0005: GA56: 'P{2212H6.5+PBX0.6}' is not a valid symbol in '{ P{2212H6.5+PBX0.6} }' from 'suppressor of variegation | recessive { P{2212H6.5+PBX0.6} }'
+
+gm0005: GA56: superfluous leading whitespace in ' Scer\GAL4[2-097]'
+
+gm0005: GA56: 'Scer\GAL4[2-111]/Scer\GAL4[2-113]' is not a valid driver in '{ Scer\GAL4[2-111]/Scer\GAL4[2-113] }' from 'visible { Scer\GAL4[2-111]/Scer\GAL4[2-113] }'
+
+gm0005: GA56: '+' is not a valid symbol in '{ In(2)Heidi/+ }' from 'suppressor of variegation | dominant { In(2)Heidi/+ }'
+
+
+This file failed at least one check:	gm0005
+
+Ignoring these 7 files:
+
+GA56_curly_test	GA56_curly_test#	gm0005%	peeves.crib	peeves_test.cfg	pub.crib	sent
+
+
+

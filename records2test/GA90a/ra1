@@ -1,0 +1,50 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 42:  01 Nov 2010
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0123457
+! P2.   Parent multipub (abbreviation)      *w :Cell
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P19.  Internal notes                   *H :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 50: 02 Mar 2010
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :eve[3]
+! GA1b.  Allele symbol(s) used in reference                     *i :eve[3]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA90a. Allele to which FA90b-k apply  [dupl for multiple] :eve[3]
+!   GA90k. Molecular nature (type) of  lesion:point_mutation
+!   GA90b. Genomic location of lesion               :
+!   GA90c. Genome release number for entry in GA90b :
+!   GA90i. Orientation relative to chromosome (+/-):
+!c   GA90d. NA change: "C to T"  (location in GA90b) :A5867306G
+!   GA90e. Reported NA change:
+!c   GA90f. Reported PR change:Q309E
+!c   GA90g. Computed PR change (derived)   :Q309E | eve-PA
+!   GA90h. Linked to restriction fragment :
+!   GA90j. Comments concerning sequence location:Location on reference sequence inferred by FlyBase curator.
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 50: 02 Mar 2010
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :eve[2]
+! GA1b.  Allele symbol(s) used in reference                     *i :eve[2]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA90a. Allele to which FA90b-k apply  [dupl for multiple] :eve[2]
+!   GA90k. Molecular nature (type) of  lesion:point_mutation
+!c   GA90b. Genomic location of lesion               :2R:5867231..5867231
+!   GA90c. Genome release number for entry in GA90b :
+!   GA90i. Orientation relative to chromosome (+/-):
+!c   GA90d. NA change: "C to T"  (location in GA90b) :C5867231T
+!   GA90e. Reported NA change:
+!   GA90f. Reported PR change:
+!c   GA90g. Computed PR change (derived)   :Q82@ | eve-PA
+!   GA90h. Linked to restriction fragment :
+!   GA90j. Comments concerning sequence location:
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

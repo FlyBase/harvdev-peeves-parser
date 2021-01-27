@@ -1,0 +1,1803 @@
+
+Using Peeves in /Peeves/production
+/Peeves/production/Peeves
+
+Processing gm25496
+
+gm25496: P41: Missing data.
+
+gm25496: No data in either G1b or G2b for 'Tl'
+
+gm25496: No data in either G1b or G2b for 'Myd88'
+
+gm25496: GA1g claims that Myd88[&Dgr;EP2133-1A] is not an existing allele symbol, but Chado knows it as FBal0243576
+
+gm25496: No data in either G1b or G2b for 'w'
+
+gm25496: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm25496: No data in either G1b or G2b for 'tub'
+
+gm25496: No data in either G1b or G2b for 'pll'
+
+gm25496: No data in either G1b or G2b for 'spz'
+
+gm25496: No data in either G1b or G2b for 'key'
+
+
+Processing gm25495
+
+gm25495: P41: Missing data.
+
+gm25495: No data in either G1b or G2b for 'ecd'
+
+
+Processing gm25494
+
+gm25494: GA10a: NEW:'P{RacGAP84C.5.0}' is not new and Chado knows it as FBtp0053413
+
+gm25494: P41: Missing data.
+
+gm25494: G31b: Do you *really* want to dissociate gene symbol 'rn' from FBrf0137318?
+
+gm25494: No data in either G1b or G2b for 'drk'
+
+gm25494: GA1g claims that drk[EDA] is not an existing allele symbol, but Chado knows it as FBal0243574
+
+gm25494: No data in either G1b or G2b for 'Ras85D'
+
+gm25494: No data in either G1b or G2b for 'RacGAP84C'
+
+gm25494: GA1g claims that RacGAP84C[t5.0] is not an existing allele symbol, but Chado knows it as FBal0243575
+
+
+Processing gm25493
+
+gm25493: P41: Missing data.
+
+gm25493: No data in either G1b or G2b for 'bss'
+
+gm25493: No data in either G1b or G2b for 'eas'
+
+gm25493: No data in either G1b or G2b for 'sda'
+
+gm25493: GA1g claims that sda[iso6.10] is not an existing allele symbol, but Chado knows it as FBal0243573
+
+gm25493: No data in either G1b or G2b for 'mle'
+
+gm25493: No data in either G1b or G2b for 'para'
+
+gm25493: No data in either G1b or G2b for 'Sh'
+
+gm25493: No data in either G1b or G2b for 'eag'
+
+gm25493: No data in either G1b or G2b for 'slo'
+
+gm25493: No data in either G1b or G2b for 'shakB'
+
+
+Processing gm25492
+
+gm25492: GA10a: NEW:'P{hsp70-eTAF60}' is not new and Chado knows it as FBtp0053412
+
+gm25492: No data in either G1b or G2b for 'Taf6'
+
+gm25492: GA1g claims that Taf6[3] is not an existing allele symbol, but Chado knows it as FBal0243570
+
+gm25492: GA1g claims that Taf6[hs.T:Zzzz\FLAG] is not an existing allele symbol, but Chado knows it as FBal0243571
+
+gm25492: GA1g claims that Taf6[unspecified] is not an existing allele symbol, but Chado knows it as FBal0243572
+
+gm25492: No data in either G1b or G2b for 'Ecol\CAT'
+
+
+Processing gm25491
+
+gm25491: P41: Missing data.
+
+gm25491: GA1g claims that Sac1[L4H] is not an existing allele symbol, but Chado knows it as FBal0243568
+
+gm25491: G1f: 'l(3)S007412' is not a valid gene symbol
+
+gm25491: GA1e: l(3)S007412[S007412] is not a valid allele symbol in Chado
+
+gm25491: GA1g claims that Glut1[S007412] is not an existing allele symbol, but Chado knows it as FBal0100199
+
+gm25491: G1g claims that l(3)16107 is not an existing gene symbol, but Chado knows it as FBgn0261915
+
+gm25491: GA1g claims that l(3)16107[16107] is not an existing allele symbol, but Chado knows it as FBal0243569
+
+gm25491: No data in either G1b or G2b for 'l(3)L3D'
+
+gm25491: No data in either G1b or G2b for 'l(3)8E276'
+
+gm25491: No data in either G1b or G2b for 'l(3)4106'
+
+gm25491: No data in either G1b or G2b for 'mtacp1'
+
+gm25491: No data in either G1b or G2b for 'l(3)L1M'
+
+gm25491: No data in either G1b or G2b for 'l(3)B197'
+
+gm25491: No data in either G1b or G2b for 'l(3)9358'
+
+gm25491: No data in either G1b or G2b for 'l(3)L3F'
+
+gm25491: A1g claims that Df(3L)11367 is not an existing aberration symbol, but Chado knows it as FBab0046533
+
+gm25491: A1g claims that Df(3L)1237 is not an existing aberration symbol, but Chado knows it as FBab0046534
+
+gm25491: A1g claims that Df(3L)12131 is not an existing aberration symbol, but Chado knows it as FBab0046535
+
+gm25491: A1g claims that Df(3L)18194 is not an existing aberration symbol, but Chado knows it as FBab0046536
+
+gm25491: GA21: You state for l(3)02640[j4E3] 'Fails to complement: l(3)02640[7E130]', but have not curated the reciprocal statement
+
+
+Processing gm25490
+
+gm25490: GA10a: NEW:'P{FRT(Sap47[5.Scer\SceI.RS])}' is not new and Chado knows it as FBtp0053407
+
+gm25490: GA10a: NEW:'P{FRT(Sap47[7.6.Scer\SceI.RS])}' is not new and Chado knows it as FBtp0053408
+
+gm25490: GA10a: NEW:'P{UAS-Sap47.cDNA.RNAi}' is not new and Chado knows it as FBtp0053409
+
+gm25490: GA10a: NEW:'P{UAS-Sap47.gen.RNAi}' is not new and Chado knows it as FBtp0053410
+
+gm25490: GA10a: NEW:'P{UAS-Sap47.F}' is not new and Chado knows it as FBtp0053411
+
+gm25490: GA10a: NEW:'P{UAS-Sap47.cDNA.RNAi}' is not new and Chado knows it as FBtp0053409
+
+gm25490: GA10a: NEW:'P{UAS-Sap47.gen.RNAi}' is not new and Chado knows it as FBtp0053410
+
+gm25490: GA10a: NEW:'P{UAS-Sap47.F}' is not new and Chado knows it as FBtp0053411
+
+gm25490: P41: Missing data.
+
+gm25490: No data in either G1b or G2b for 'Sap47'
+
+gm25490: GA1g claims that Sap47[5.Scer\SceI.RS] is not an existing allele symbol, but Chado knows it as FBal0243558
+
+gm25490: GA1g claims that Sap47[7.6.Scer\SceI.RS] is not an existing allele symbol, but Chado knows it as FBal0243559
+
+gm25490: GA1g claims that Sap47[201] is not an existing allele symbol, but Chado knows it as FBal0243560
+
+gm25490: GA1g claims that Sap47[208] is not an existing allele symbol, but Chado knows it as FBal0243561
+
+gm25490: GA1g claims that Sap47[dsRNA.cDNA.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0243562
+
+gm25490: GA1g claims that Sap47[dsRNA.gen.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0243563
+
+gm25490: GA1g claims that Sap47[4] is not an existing allele symbol, but Chado knows it as FBal0243564
+
+gm25490: GA1g claims that Sap47[26] is not an existing allele symbol, but Chado knows it as FBal0243565
+
+gm25490: GA1g claims that Sap47[70] is not an existing allele symbol, but Chado knows it as FBal0243566
+
+gm25490: GA1g claims that Sap47[Scer\UAS.cFa] is not an existing allele symbol, but Chado knows it as FBal0243567
+
+gm25490: No data in either G1b or G2b for 'w'
+
+gm25490: No data in either G1b or G2b for 'Scer\GAL4'
+
+
+Processing gm25489.bibl
+
+gm25489.bibl: P1: Trying to change publication type to the value (review) it already has in Chado
+
+
+Processing gm25487.edit
+
+gm25487.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25487.edit: P2: Missing data - must have multipub abbreviation.
+
+gm25487.edit: G1g claims that Ncra\QF is not an existing gene symbol, but Chado knows it as FBgn0261910
+
+gm25487.edit: G1g claims that Ncra\QS is not an existing gene symbol, but Chado knows it as FBgn0261911
+
+gm25487.edit: G26: Invalid data in 'Foreign sequence; species == Neurospora crassa; sequence == 'QUAS, QF protein binding sequence'.'
+
+gm25487.edit: G1g claims that Ncra\QUAS is not an existing gene symbol, but Chado knows it as FBgn0261912
+
+gm25487.edit: G26: Invalid species (unknown) in 'Foreign sequence; species == unknown; function tag == 'MGCCFSKT, myristoylation and palmitoylation sequence (first 8 amino acid residues of the MARCKS protein)'.'
+
+gm25487.edit: G1g claims that T:Uuuu\MyrPalm2 is not an existing gene symbol, but Chado knows it as FBgn0261913
+
+
+Processing gm25483.edit
+
+gm25483.edit: P38: Bad file name specification 'FlyBase_submission_260310.xls'
+
+gm25483.edit: P2: Missing data - must have multipub abbreviation.
+
+
+Processing gm25474.edit
+
+gm25474.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25474.edit: P2: Missing data - must have multipub abbreviation.
+
+gm25474.edit: G2a: You have given data (myeloid leukemia factor 2) for an existing gene 'Hsap\MLF2'.  Did you mean to put it in G2b?
+
+
+Processing gm25469
+
+gm25469: GA10a: NEW:'P{UAS-Sin1.Flag}' is not new and Chado knows it as FBtp0053403
+
+gm25469: GA10a: NEW:'P{UAS-trc.U}' is not new and Chado knows it as FBtp0053404
+
+gm25469: GA10a: NEW:'P{UAS-trc.Myr}' is not new and Chado knows it as FBtp0053405
+
+gm25469: GA10a: NEW:'P{UAS-trc.Myr.T449A}' is not new and Chado knows it as FBtp0053406
+
+gm25469: GA10a: NEW:'P{UAS-Sin1.Flag}' is not new and Chado knows it as FBtp0053403
+
+gm25469: P41: Missing data.
+
+gm25469: No data in either G1b or G2b for 'Avic\GFP'
+
+gm25469: No data in either G1b or G2b for 'Sin1'
+
+gm25469: GA1g claims that Sin1[Scer\UAS.T:Zzzz\FLAG] is not an existing allele symbol, but Chado knows it as FBal0243554
+
+gm25469: No data in either G1b or G2b for 'rictor'
+
+gm25469: No data in either G1b or G2b for 'Tor'
+
+gm25469: No data in either G1b or G2b for 'S6k'
+
+gm25469: No data in either G1b or G2b for 'trc'
+
+gm25469: GA1g claims that trc[Scer\UAS.cUa] is not an existing allele symbol, but Chado knows it as FBal0243555
+
+gm25469: GA1g claims that trc[Scer\UAS.T:Myr1] is not an existing allele symbol, but Chado knows it as FBal0243556
+
+gm25469: GA1g claims that trc[T449A.Scer\UAS.T:Myr1] is not an existing allele symbol, but Chado knows it as FBal0243557
+
+gm25469: No data in either G1b or G2b for 'w'
+
+gm25469: No data in either G1b or G2b for 'Scer\GAL4'
+
+
+Processing gm25429
+
+gm25429: GA10a: NEW:'P{NIG.6876R}' is not new and Chado knows it as FBtp0053399
+
+gm25429: GA10a: NEW:'P{GMR-hPrp31.GFP}' is not new and Chado knows it as FBtp0053400
+
+gm25429: GA10a: NEW:'P{GMR-hPrp31.AD5.GFP}' is not new and Chado knows it as FBtp0053401
+
+gm25429: GA10a: NEW:'P{ey-GAL4.U}' is not new and Chado knows it as FBtp0053402
+
+gm25429: G1e: CG6876 is not a valid gene symbol in Chado
+
+gm25429: G1g claims that Prp31 is not an existing gene symbol, but Chado knows it as FBgn0036487
+
+gm25429: No G2a data corresponding to  G1e.  Action - rename this gene symbol                       :CG6876
+
+gm25429: No G2c data corresponding to  G1e.  Action - rename this gene symbol                       :CG6876
+
+gm25429: GA1g claims that Prp31[NIG.6876R] is not an existing allele symbol, but Chado knows it as FBal0243550
+
+gm25429: No data in either G1b or G2b for 'Hsap\PRPF31'
+
+gm25429: GA1g claims that Hsap\PRPF31[GMR.T:Avic\GFP] is not an existing allele symbol, but Chado knows it as FBal0243551
+
+gm25429: GA1g claims that Hsap\PRPF31[AD5.GMR.T:Avic\GFP] is not an existing allele symbol, but Chado knows it as FBal0243552
+
+gm25429: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm25429: GA1g claims that Scer\GAL4[ey.PU] is not an existing allele symbol, but Chado knows it as FBal0243553
+
+
+Processing pm2285
+
+pm2285: GA10a: NEW:'P{UAS-Nkx6.S}' is not new and Chado knows it as FBtp0053421
+
+pm2285: P41: Missing data.
+
+pm2285: GA1g claims that HGTX[Scer\UAS.cSa] is not an existing allele symbol, but Chado knows it as FBal0243585
+
+
+Processing pm2284
+
+pm2284: P41: Missing data.
+
+pm2284: No data in either G1b or G2b for 'Indy'
+
+
+Processing pm2283
+
+pm2283: P41: Missing data.
+
+pm2283: No data in either G1b or G2b for 'CalpA'
+
+pm2283: No data in either G1b or G2b for 'cact'
+
+pm2283: No data in either G1b or G2b for 'dpp'
+
+pm2283: No data in either G1b or G2b for 'dl'
+
+pm2283: No data in either G1b or G2b for 'gd'
+
+pm2283: No data in either G1b or G2b for 'Tl'
+
+pm2283: No data in either G1b or G2b for 'tkv'
+
+pm2283: No data in either G1b or G2b for 'Scer\GAL4'
+
+pm2283: No data in either G1b or G2b for 'sog'
+
+pm2283: No data in either G1b or G2b for 'CalpB'
+
+
+Processing pm2282
+
+pm2282: GA10a: NEW:'P{UASp-mars.WT}' is not new and Chado knows it as FBtp0053419
+
+pm2282: GA10a: NEW:'P{UASp-mars.F839A}' is not new and Chado knows it as FBtp0053420
+
+pm2282: P41: Missing data.
+
+pm2282: No data in either G1b or G2b for 'mars'
+
+pm2282: GA1g claims that mars[1] is not an existing allele symbol, but Chado knows it as FBal0243582
+
+pm2282: GA1g claims that mars[Scer\UAS.P\T.cTa] is not an existing allele symbol, but Chado knows it as FBal0243583
+
+pm2282: GA1g claims that mars[F839A.Scer\UAS.P\T] is not an existing allele symbol, but Chado knows it as FBal0243584
+
+pm2282: No data in either G1b or G2b for 'tacc'
+
+pm2282: No data in either G1b or G2b for 'Pp1-87B'
+
+
+Processing pm2281.edit
+
+pm2281.edit: P2: Missing data - must have multipub abbreviation.
+
+
+Processing pm2279.edit
+
+pm2279.edit: P2: Missing data - must have multipub abbreviation.
+
+
+Processing pm2278
+
+pm2278: GA10a: NEW:'P{UAS-pre-mir-124a}' is not new and Chado knows it as FBtp0053416
+
+pm2278: GA10a: NEW:'P{UAS-pre-mir-124a.mut}' is not new and Chado knows it as FBtp0053417
+
+pm2278: GA10a: NEW:'P{mir-124-GAL4}' is not new and Chado knows it as FBtp0053418
+
+pm2278: P41: Missing data.
+
+pm2278: GA1g claims that mir-124[Scer\UAS.cXa] is not an existing allele symbol, but Chado knows it as FBal0243579
+
+pm2278: GA1g claims that mir-124[mut.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0243580
+
+pm2278: GA1g claims that Scer\GAL4[mir-124] is not an existing allele symbol, but Chado knows it as FBal0243581
+
+
+Processing pm2277
+
+pm2277: P41: Missing data.
+
+pm2277: No data in either G1b or G2b for 'homer'
+
+
+Processing pm2273
+
+pm2273: GA10a: NEW:'P{LexAop-GCaMP}' is not new and Chado knows it as FBtp0053414
+
+pm2273: GA10a: NEW:'P{GABA-B-R2-GAL4}' is not new and Chado knows it as FBtp0053415
+
+pm2273: GA10a claims that P{GAL4}GH298 is an existing FBtp symbol, but Chado has never heard of it.
+
+pm2273: P41: Missing data.
+
+pm2273: No data in either G1b or G2b for 'GABA-B-R2'
+
+pm2273: No data in either G1b or G2b for 'Ggal\MLCK::Rat\Cam'
+
+pm2273: GA1g claims that Ggal\MLCK::Rat\Cam[Ecol\lexAop] is not an existing allele symbol, but Chado knows it as FBal0243577
+
+pm2273: GA1g claims that Scer\GAL4[GABA-B-R2] is not an existing allele symbol, but Chado knows it as FBal0243578
+
+pm2273: No data in either G1b or G2b for 'Ecol\lexA'
+
+pm2273: No data in either G1b or G2b for 'Mmus\Vamp2'
+
+pm2273: No data in either G1b or G2b for 'Mmmm\VR1'
+
+pm2273: No data in either G1b or G2b for 'Mmus\Cd8a'
+
+pm2273: No data in either G1b or G2b for 'Crei\ChR2'
+
+
+Processing pm2266
+
+pm2266: P41: Missing data.
+
+
+Processing st1204.edit
+
+
+Processing st1202.edit
+
+
+Processing st1201.edit
+
+
+Processing sm1185
+
+sm1185: Required proforma field P2 missing or malformed.
+
+sm1185: G1f: 'Pi4KIII&agr;' is not a valid gene symbol
+
+sm1185: Required proforma field G2b missing or malformed.
+
+sm1185: G2a: Missing data when G1f has data 'CG10260 Pi4KIII&agr;' and G1g is y
+
+
+Processing sm1184.bibl
+
+sm1184.bibl: MP17: Trying to change multipub type to the value (journal) it already has in Chado
+
+sm1184.bibl: MP2a: Can't change the reference Cell Death Differ. to the same value 'Cell Death Differ.' as it already has in Chado
+
+sm1184.bibl: Required proforma field MP3 missing or malformed.
+
+sm1184.bibl: Required proforma field MP11 missing or malformed.
+
+sm1184.bibl: MP17: Trying to change multipub type to the value (journal) it already has in Chado
+
+sm1184.bibl: MP2a: Can't change the reference EMBO Rep. to the same value 'EMBO Rep.' as it already has in Chado
+
+sm1184.bibl: Required proforma field MP3 missing or malformed.
+
+sm1184.bibl: Required proforma field MP11 missing or malformed.
+
+sm1184.bibl: MP17: Trying to change multipub type to the value (journal) it already has in Chado
+
+sm1184.bibl: MP2a: Can't change the reference Hum. Mol. Genet. to the same value 'Hum. Mol. Genet.' as it already has in Chado
+
+sm1184.bibl: Required proforma field MP3 missing or malformed.
+
+sm1184.bibl: Required proforma field MP11 missing or malformed.
+
+
+Processing sm1183.edit
+
+sm1183.edit: Required proforma field P2 missing or malformed.
+
+sm1183.edit: Required proforma field G2b missing or malformed.
+
+
+Processing sm1182.bibl
+
+sm1182.bibl: P1: Trying to change publication type to the value (review) it already has in Chado
+
+
+Processing sm1181
+
+sm1181: Required proforma field P2 missing or malformed.
+
+
+Processing sm1180
+
+sm1180: Required proforma field G1b missing or malformed.
+
+sm1180: Required proforma field G2b missing or malformed.
+
+
+Processing sm1179.edit
+
+sm1179.edit: Most .edit records contain a !c, did you forget to add one?
+
+sm1179.edit: G1e: Mat89Bb is not a valid gene symbol in Chado
+
+sm1179.edit: Required proforma field G1b missing or malformed.
+
+sm1179.edit: Required proforma field G2b missing or malformed.
+
+sm1179.edit: G1g claims that asun is not an existing gene symbol, but Chado knows it as FBgn0020407
+
+
+Processing sm1178.bibl
+
+sm1178.bibl: P22: FBrf0206230 is marked as obsolete in Chado.
+
+sm1178.bibl: P39: Trying to delete something which, according to Chado, is not a currently valid publication
+
+sm1178.bibl: Required proforma field P2 missing or malformed.
+
+sm1178.bibl: None of P11a through P11d have any data.
+
+sm1178.bibl: P3: Must have data for a new publication of type ''
+
+sm1178.bibl: P4: Must have data for a new publication of type ''
+
+
+Processing sm1164
+
+sm1164: GA10a: NEW:'P{UAS-endoA.wt}' is not new and Chado knows it as FBtp0053440
+
+sm1164: GA10a: NEW:'P{UAS-endoA.HA}' is not new and Chado knows it as FBtp0053441
+
+sm1164: GA10a: NEW:'P{UAS-endoA.A66D}' is not new and Chado knows it as FBtp0053442
+
+sm1164: GA10a: NEW:'P{UAS-endoA.A66W}' is not new and Chado knows it as FBtp0053443
+
+sm1164: GA10a: NEW:'P{UAS-endoA.SS}' is not new and Chado knows it as FBtp0053444
+
+sm1164: GA10a: NEW:'P{UAS-endoA.SSQ}' is not new and Chado knows it as FBtp0053445
+
+sm1164: GA10a: NEW:'P{UAS-endoA.&Dgr;LQPNP}' is not new and Chado knows it as FBtp0053446
+
+sm1164: GA10a: NEW:'P{UAS-endoA.EEE}' is not new and Chado knows it as FBtp0053447
+
+sm1164: GA10a: NEW:'P{UAS-endoA.I10E}' is not new and Chado knows it as FBtp0053448
+
+sm1164: GA10a: NEW:'P{UAS-endoA.D151P}' is not new and Chado knows it as FBtp0053449
+
+sm1164: GA10a: NEW:'P{UAS-endoA.P143A.&Dgr;LEN}' is not new and Chado knows it as FBtp0053450
+
+sm1164: GA10a: NEW:'P{UAS-endoA.&Dgr;BAR}' is not new and Chado knows it as FBtp0053451
+
+sm1164: GA10a: NEW:'P{UAS-endoA::ARFIP2.HA}' is not new and Chado knows it as FBtp0053452
+
+sm1164: GA10a: NEW:'P{UAS-Amph(BAR)::endoA.HA}' is not new and Chado knows it as FBtp0053453
+
+sm1164: GA10a: NEW:'P{UAS-endoA::TRIP10.J}' is not new and Chado knows it as FBtp0053454
+
+sm1164: GA10a: NEW:'P{UAS-CG8176::endoA.J}' is not new and Chado knows it as FBtp0053455
+
+sm1164: Required proforma field GA2b missing or malformed.
+
+sm1164: Required proforma field GA1b missing or malformed.
+
+sm1164: Required proforma field GA2b missing or malformed.
+
+sm1164: GA1g claims that endoA[Scer\UAS.wt] is not an existing allele symbol, but Chado knows it as FBal0243619
+
+sm1164: Required proforma field GA1b missing or malformed.
+
+sm1164: Required proforma field GA2b missing or malformed.
+
+sm1164: GA1g claims that endoA[Scer\UAS.T:Ivir\HA] is not an existing allele symbol, but Chado knows it as FBal0243620
+
+sm1164: Required proforma field GA1b missing or malformed.
+
+sm1164: Required proforma field GA2b missing or malformed.
+
+sm1164: GA1g claims that endoA[A66D.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0243621
+
+sm1164: Required proforma field GA1b missing or malformed.
+
+sm1164: Required proforma field GA2b missing or malformed.
+
+sm1164: GA1g claims that endoA[A66W.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0243622
+
+sm1164: Required proforma field GA1b missing or malformed.
+
+sm1164: Required proforma field GA2b missing or malformed.
+
+sm1164: GA1g claims that endoA[SS.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0243623
+
+sm1164: Required proforma field GA1b missing or malformed.
+
+sm1164: Required proforma field GA2b missing or malformed.
+
+sm1164: GA1g claims that endoA[SSQ.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0243624
+
+sm1164: Required proforma field GA1b missing or malformed.
+
+sm1164: Required proforma field GA2b missing or malformed.
+
+sm1164: GA1g claims that endoA[&Dgr;LQPNP.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0243625
+
+sm1164: Required proforma field GA1b missing or malformed.
+
+sm1164: Required proforma field GA2b missing or malformed.
+
+sm1164: GA1g claims that endoA[EEE.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0243626
+
+sm1164: Required proforma field GA1b missing or malformed.
+
+sm1164: Required proforma field GA2b missing or malformed.
+
+sm1164: GA1g claims that endoA[I10E.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0243627
+
+sm1164: Required proforma field GA1b missing or malformed.
+
+sm1164: Required proforma field GA2b missing or malformed.
+
+sm1164: GA1g claims that endoA[D151P.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0243628
+
+sm1164: Required proforma field GA1b missing or malformed.
+
+sm1164: Required proforma field GA2b missing or malformed.
+
+sm1164: GA1g claims that endoA[P143A.&Dgr;LEN.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0243629
+
+sm1164: Required proforma field GA1b missing or malformed.
+
+sm1164: Required proforma field GA2b missing or malformed.
+
+sm1164: GA1g claims that endoA[&Dgr;BAR.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0243630
+
+sm1164: Required proforma field G2b missing or malformed.
+
+sm1164: Required proforma field GA1b missing or malformed.
+
+sm1164: Required proforma field GA2b missing or malformed.
+
+sm1164: Required proforma field GA1b missing or malformed.
+
+sm1164: Required proforma field GA2b missing or malformed.
+
+sm1164: Required proforma field G2b missing or malformed.
+
+sm1164: Required proforma field G2b missing or malformed.
+
+sm1164: G1a: Invalid species 'endoA::Hsap' in 'endoA::Hsap\ARFIP2'
+
+sm1164: Required proforma field G1b missing or malformed.
+
+sm1164: Required proforma field G2b missing or malformed.
+
+sm1164: G1g claims that endoA::Hsap\ARFIP2 is not an existing gene symbol, but Chado knows it as FBgn0261918
+
+sm1164: Required proforma field GA1b missing or malformed.
+
+sm1164: Required proforma field GA2b missing or malformed.
+
+sm1164: GA1g claims that endoA::Hsap\ARFIP2[Scer\UAS.T:Ivir\HA] is not an existing allele symbol, but Chado knows it as FBal0243631
+
+sm1164: Required proforma field G1b missing or malformed.
+
+sm1164: Required proforma field G2b missing or malformed.
+
+sm1164: G1g claims that Amph::endoA is not an existing gene symbol, but Chado knows it as FBgn0261919
+
+sm1164: Required proforma field GA1b missing or malformed.
+
+sm1164: Required proforma field GA2b missing or malformed.
+
+sm1164: GA1g claims that Amph::endoA[Scer\UAS.T:Ivir\HA] is not an existing allele symbol, but Chado knows it as FBal0243632
+
+sm1164: G1a: Invalid species 'endoA::Hsap' in 'endoA::Hsap\TRIP10'
+
+sm1164: Required proforma field G1b missing or malformed.
+
+sm1164: Required proforma field G2b missing or malformed.
+
+sm1164: G1g claims that endoA::Hsap\TRIP10 is not an existing gene symbol, but Chado knows it as FBgn0261920
+
+sm1164: Required proforma field GA1b missing or malformed.
+
+sm1164: Required proforma field GA2b missing or malformed.
+
+sm1164: GA1g claims that endoA::Hsap\TRIP10[Scer\UAS.cJa] is not an existing allele symbol, but Chado knows it as FBal0243633
+
+sm1164: Required proforma field G1b missing or malformed.
+
+sm1164: Required proforma field G2b missing or malformed.
+
+sm1164: G1g claims that CG8176::endoA is not an existing gene symbol, but Chado knows it as FBgn0261921
+
+sm1164: Required proforma field GA1b missing or malformed.
+
+sm1164: Required proforma field GA2b missing or malformed.
+
+sm1164: GA1g claims that CG8176::endoA[Scer\UAS.cJa] is not an existing allele symbol, but Chado knows it as FBal0243634
+
+
+Processing st1140
+
+st1140: P41: Missing data.
+
+
+Processing st938
+
+st938: P41: Missing data.
+
+
+Processing ra837
+
+
+Processing ra836.edit
+
+ra836.edit: Most .edit records contain a !c, did you forget to add one?
+
+ra836.edit: P2: Missing data - must have multipub abbreviation.
+
+ra836.edit: G1g claims that T:Mmus\Ptprm is not an existing gene symbol, but Chado knows it as FBgn0261917
+
+
+Processing ra834
+
+ra834: G1g claims that Burdock\env is not an existing gene symbol, but Chado knows it as FBgn0261916
+
+
+Processing ra833
+
+ra833: GA10a: NEW:'P{hs-zen}' is not new and Chado knows it as FBtp0053428
+
+ra833: GA1g claims that zen[hsp70.PR] is not an existing allele symbol, but Chado knows it as FBal0243596
+
+
+Processing ra832
+
+ra832: GA10a: NEW:'P{UAS-tra.w(-).1}' is not new and Chado knows it as FBtp0053426
+
+ra832: GA10a: NEW:'P{UAS-tra.w(-).1}' is not new and Chado knows it as FBtp0053426
+
+ra832: GA1g claims that tra[mw(-).Scer\UAS.cFa] is not an existing allele symbol, but Chado knows it as FBal0243590
+
+ra832: GA1g claims that tra[mw(-).Scer\UAS.cFb] is not an existing allele symbol, but Chado knows it as FBal0243591
+
+ra832: GA1g claims that w[Tab2-201Y] is not an existing allele symbol, but Chado knows it as FBal0243592
+
+ra832: GA1g claims that w[Tab2-201Y.w-] is not an existing allele symbol, but Chado knows it as FBal0243593
+
+ra832: GA1g claims that Tab2[201Y.w-] is not an existing allele symbol, but Chado knows it as FBal0243594
+
+ra832: GA1g claims that Scer\GAL4[Tab2-201Y.w-] is not an existing allele symbol, but Chado knows it as FBal0243595
+
+
+Processing st828.skim
+
+
+Processing ra820
+
+ra820: GA10a: NEW:'P{UAS-jub.RNAi.22.5}' is not new and Chado knows it as FBtp0053422
+
+ra820: GA10a: NEW:'P{UAS-jub.RNAi.18.1}' is not new and Chado knows it as FBtp0053423
+
+ra820: GA10a: NEW:'P{UAS-jub.mCherry}' is not new and Chado knows it as FBtp0053424
+
+ra820: GA10a: NEW:'P{UAS-LIMD1.HA}' is not new and Chado knows it as FBtp0053425
+
+ra820: G1e: CG11063 is not a valid gene symbol in Chado
+
+ra820: G1g claims that jub is not an existing gene symbol, but Chado knows it as FBgn0030530
+
+ra820: No G2c data corresponding to  G1e.  Action - rename this gene symbol                       :CG11063
+
+ra820: GA1g claims that jub[dsRNA.C.Scer\UAS.22.5] is not an existing allele symbol, but Chado knows it as FBal0243586
+
+ra820: GA1g claims that jub[dsRNA.C.Scer\UAS.18.1] is not an existing allele symbol, but Chado knows it as FBal0243587
+
+ra820: GA1g claims that jub[Scer\UAS.T:Disc\RFP-mCherry] is not an existing allele symbol, but Chado knows it as FBal0243588
+
+ra820: GA1g claims that Hsap\LIMD1[Scer\UAS.T:Ivir\HA] is not an existing allele symbol, but Chado knows it as FBal0243589
+
+ra820: A1g claims that Df(1)djub[I] is not an existing aberration symbol, but Chado knows it as FBab0046549
+
+ra820: A1g claims that Df(1)djub[II] is not an existing aberration symbol, but Chado knows it as FBab0046550
+
+ra820: MA20: Invalid species ''
+
+ra820: MA20: Invalid species ''
+
+ra820: MA20: Invalid species ''
+
+ra820: MA20: Invalid species ''
+
+
+Processing st361
+
+
+Processing km328
+
+km328: P41: Missing data.
+
+km328: P19: Unwanted stamp in 'communicated by kv134369@bcm.tmc.edu and levis@ciwemb.edu in separate e-mails to Annette Parks.'
+
+km328: Invalid proforma field  MS18a. Cloning sites [CV]    :
+
+
+Processing km327
+
+km327: P2: Missing data - must have multipub abbreviation.
+
+km327: A1h: Curators don't usually fill in the FBab field.  Are you sure you want to for 'Df(2R)Sw'?
+
+
+Processing km325
+
+
+Processing km323
+
+km323: P2: Missing data - must have multipub abbreviation.
+
+km323: A1h: Curators don't usually fill in the FBab field.  Are you sure you want to for 'Dp(1;Y)BSC130'?
+
+km323: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+km323: Invalid proforma field c A90b.    Genomic location of breakpoint                       :
+
+km323: Invalid proforma field c A90c.    Genome release number for entry in A90a              :
+
+km323: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km323: No data in either A1b or A2b for 'Dp(1;Y)BSC130'
+
+
+Processing km322
+
+km322: A1h: Curators don't usually fill in the FBab field.  Are you sure you want to for 'Dp(1;Y)BSC130'?
+
+km322: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+km322: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:18823963..19047385
+
+km322: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km322: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km322: No data in either A1b or A2b for 'Dp(1;Y)BSC130'
+
+
+Processing km320
+
+km320: P2: Missing data - must have multipub abbreviation.
+
+km320: G1h: Curators don't usually fill in the FBgn field.  Are you sure you want to for 'l(2)k03610'?
+
+km320: No data in either G1b or G2b for 'l(2)k03610'
+
+km320: GA1h: Curators don't usually fill in the FBal field.  Are you sure you want to for 'l(2)k03610[k03703]'?
+
+
+Processing km317
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:1
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:387562
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :3
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:3736678--3843899
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :4
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:4825473..4825859
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :1
+
+km317: Invalid proforma field  A92b.    Cytological location of left end of segment                 :1Lt
+
+km317: Invalid proforma field  A92c.    Cytological location of right end of segment                :1B5
+
+km317: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km317: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km317: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :2
+
+km317: Invalid proforma field  A92b.    Cytological location of left end of segment                 :X:3F3--3F9
+
+km317: Invalid proforma field  A92c.    Cytological location of right end of segment                :4D7
+
+km317: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km317: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km317: A1g claims that Dp(1;Y)BSC158 is not an existing aberration symbol, but Chado knows it as FBab0046537
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:1
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:387562
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :3
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:3994648--4025177
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :4
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:4825473..4825859
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :1
+
+km317: Invalid proforma field  A92b.    Cytological location of left end of segment                 :1Lt
+
+km317: Invalid proforma field  A92c.    Cytological location of right end of segment                :1B5
+
+km317: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km317: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km317: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :2
+
+km317: Invalid proforma field  A92b.    Cytological location of left end of segment                 :X:4A5--4B1
+
+km317: Invalid proforma field  A92c.    Cytological location of right end of segment                :4D7
+
+km317: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km317: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km317: A1g claims that Dp(1;Y)BSC159 is not an existing aberration symbol, but Chado knows it as FBab0046538
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:1
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:387562
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :3
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:4025177--4186834
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :4
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:4825473..4825859
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :1
+
+km317: Invalid proforma field  A92b.    Cytological location of left end of segment                 :1Lt
+
+km317: Invalid proforma field  A92c.    Cytological location of right end of segment                :1B5
+
+km317: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km317: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km317: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :2
+
+km317: Invalid proforma field  A92b.    Cytological location of left end of segment                 :X:4B1--4B5
+
+km317: Invalid proforma field  A92c.    Cytological location of right end of segment                :4D7
+
+km317: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km317: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km317: A1g claims that Dp(1;Y)BSC160 is not an existing aberration symbol, but Chado knows it as FBab0046539
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:1
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:387562
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :3
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:4186834--4317564
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :4
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:4825473..4825859
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :1
+
+km317: Invalid proforma field  A92b.    Cytological location of left end of segment                 :1Lt
+
+km317: Invalid proforma field  A92c.    Cytological location of right end of segment                :1B5
+
+km317: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km317: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km317: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :2
+
+km317: Invalid proforma field  A92b.    Cytological location of left end of segment                 :X:4B5--4C3
+
+km317: Invalid proforma field  A92c.    Cytological location of right end of segment                :4D7
+
+km317: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km317: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km317: A1g claims that Dp(1;Y)BSC161 is not an existing aberration symbol, but Chado knows it as FBab0046540
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:1
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:387562
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :3
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:4317564--4478617
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :4
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:4825473..4825859
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :1
+
+km317: Invalid proforma field  A92b.    Cytological location of left end of segment                 :1Lt
+
+km317: Invalid proforma field  A92c.    Cytological location of right end of segment                :1B5
+
+km317: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km317: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km317: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :2
+
+km317: Invalid proforma field  A92b.    Cytological location of left end of segment                 :X:4C3--4C8
+
+km317: Invalid proforma field  A92c.    Cytological location of right end of segment                :4D7
+
+km317: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km317: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km317: A1g claims that Dp(1;Y)BSC162 is not an existing aberration symbol, but Chado knows it as FBab0046541
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:1
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:387562
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :3
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:4478617--4539074
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :4
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:4825473..4825859
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :1
+
+km317: Invalid proforma field  A92b.    Cytological location of left end of segment                 :1Lt
+
+km317: Invalid proforma field  A92c.    Cytological location of right end of segment                :1B5
+
+km317: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km317: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km317: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :2
+
+km317: Invalid proforma field  A92b.    Cytological location of left end of segment                 :X:4C8--4C10
+
+km317: Invalid proforma field  A92c.    Cytological location of right end of segment                :4D7
+
+km317: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km317: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km317: A1g claims that Dp(1;Y)BSC163 is not an existing aberration symbol, but Chado knows it as FBab0046542
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:1
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:387562
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :3
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:4573372--4698591
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :4
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:4825473..4825859
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :1
+
+km317: Invalid proforma field  A92b.    Cytological location of left end of segment                 :1Lt
+
+km317: Invalid proforma field  A92c.    Cytological location of right end of segment                :1B5
+
+km317: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km317: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km317: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :2
+
+km317: Invalid proforma field  A92b.    Cytological location of left end of segment                 :X:4C12--4D2
+
+km317: Invalid proforma field  A92c.    Cytological location of right end of segment                :4D7
+
+km317: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km317: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km317: A1g claims that Dp(1;Y)BSC164 is not an existing aberration symbol, but Chado knows it as FBab0046543
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:1
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:387562
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :3
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:4573372--4698591
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :4
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:4825473..4825859
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :1
+
+km317: Invalid proforma field  A92b.    Cytological location of left end of segment                 :1Lt
+
+km317: Invalid proforma field  A92c.    Cytological location of right end of segment                :1B5
+
+km317: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km317: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km317: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :2
+
+km317: Invalid proforma field  A92b.    Cytological location of left end of segment                 :X:4C12--4D2
+
+km317: Invalid proforma field  A92c.    Cytological location of right end of segment                :4D7
+
+km317: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km317: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km317: A1g claims that Dp(1;Y)BSC165 is not an existing aberration symbol, but Chado knows it as FBab0046544
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:1
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:387562
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :3
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:4573372--4698591
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :4
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:4825473..4825859
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :1
+
+km317: Invalid proforma field  A92b.    Cytological location of left end of segment                 :1Lt
+
+km317: Invalid proforma field  A92c.    Cytological location of right end of segment                :1B5
+
+km317: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km317: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km317: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :2
+
+km317: Invalid proforma field  A92b.    Cytological location of left end of segment                 :X:4C12--4D2
+
+km317: Invalid proforma field  A92c.    Cytological location of right end of segment                :4D7
+
+km317: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km317: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km317: A1g claims that Dp(1;Y)BSC166 is not an existing aberration symbol, but Chado knows it as FBab0046545
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:1
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:387562
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :3
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:4573372--4698591
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :4
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:4825473..4825859
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :1
+
+km317: Invalid proforma field  A92b.    Cytological location of left end of segment                 :1Lt
+
+km317: Invalid proforma field  A92c.    Cytological location of right end of segment                :1B5
+
+km317: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km317: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km317: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :2
+
+km317: Invalid proforma field  A92b.    Cytological location of left end of segment                 :X:4C12--4D2
+
+km317: Invalid proforma field  A92c.    Cytological location of right end of segment                :4D7
+
+km317: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km317: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km317: A1g claims that Dp(1;Y)BSC167 is not an existing aberration symbol, but Chado knows it as FBab0046546
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:1
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:387562
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :3
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:4573372--4698591
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :4
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:4825473..4825859
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :1
+
+km317: Invalid proforma field  A92b.    Cytological location of left end of segment                 :1Lt
+
+km317: Invalid proforma field  A92c.    Cytological location of right end of segment                :1B5
+
+km317: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km317: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km317: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :2
+
+km317: Invalid proforma field  A92b.    Cytological location of left end of segment                 :X:4C12--4D2
+
+km317: Invalid proforma field  A92c.    Cytological location of right end of segment                :4D7
+
+km317: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km317: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km317: A1g claims that Dp(1;Y)BSC168 is not an existing aberration symbol, but Chado knows it as FBab0046547
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:1
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:387562
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :3
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:4698591--4813070
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :4
+
+km317: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:4825473..4825859
+
+km317: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km317: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km317: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :1
+
+km317: Invalid proforma field  A92b.    Cytological location of left end of segment                 :1Lt
+
+km317: Invalid proforma field  A92c.    Cytological location of right end of segment                :1B5
+
+km317: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km317: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km317: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :2
+
+km317: Invalid proforma field  A92b.    Cytological location of left end of segment                 :X:4D2--4D6
+
+km317: Invalid proforma field  A92c.    Cytological location of right end of segment                :4D7
+
+km317: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km317: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km317: A1g claims that Dp(1;Y)BSC169 is not an existing aberration symbol, but Chado knows it as FBab0046548
+
+
+Processing sr132
+
+sr132: Required proforma field G2b missing or malformed.
+
+sr132: Required proforma field G2b missing or malformed.
+
+sr132: Required proforma field GA2b missing or malformed.
+
+sr132: Required proforma field GA2b missing or malformed.
+
+sr132: Required proforma field GA2b missing or malformed.
+
+sr132: Required proforma field GA1b missing or malformed.
+
+sr132: Required proforma field GA2b missing or malformed.
+
+sr132: Required proforma field G2b missing or malformed.
+
+sr132: Required proforma field GA2b missing or malformed.
+
+sr132: Required proforma field GA2b missing or malformed.
+
+sr132: Required proforma field GA2b missing or malformed.
+
+sr132: Required proforma field G2b missing or malformed.
+
+sr132: Required proforma field GA1b missing or malformed.
+
+sr132: Required proforma field GA2b missing or malformed.
+
+sr132: Required proforma field G2b missing or malformed.
+
+sr132: Required proforma field GA2b missing or malformed.
+
+sr132: Required proforma field G2b missing or malformed.
+
+sr132: Required proforma field GA2b missing or malformed.
+
+sr132: Required proforma field GA2b missing or malformed.
+
+sr132: Required proforma field G2b missing or malformed.
+
+sr132: Required proforma field GA2b missing or malformed.
+
+sr132: Required proforma field GA2b missing or malformed.
+
+sr132: Required proforma field GA2b missing or malformed.
+
+
+Processing sr130
+
+sr130: Required proforma field G2b missing or malformed.
+
+sr130: Required proforma field GA1b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+sr130: Required proforma field GA1b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+sr130: Required proforma field GA1b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+sr130: Required proforma field GA1b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+sr130: Required proforma field GA1b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+sr130: Required proforma field GA1b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+sr130: Required proforma field GA1b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+sr130: Required proforma field GA1b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+sr130: Required proforma field GA1b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+sr130: Required proforma field GA1b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+sr130: Required proforma field GA1b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+sr130: Required proforma field GA1b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+sr130: Required proforma field GA1b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+sr130: Required proforma field GA1b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+sr130: GA21: 'Hsim\VP16[VGlut-OK371-dVP16AD]' is not a valid driver in '{ Scer\GAL4[DBD.ort.C1-3.T:Zzzz\ZipRREEL], Hsim\VP16[VGlut-OK371-dVP16AD] }' in the line
+Rescues: ort[1]/ort[4] { Scer\GAL4[DBD.ort.C1-3.T:Zzzz\ZipRREEL], Hsim\VP16[VGlut-OK371-dVP16AD] }
+
+sr130: Required proforma field GA1b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+sr130: Required proforma field G2b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+sr130: Required proforma field G2b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+sr130: Required proforma field G2b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+sr130: Required proforma field G2b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+sr130: Required proforma field G2b missing or malformed.
+
+sr130: Required proforma field GA1b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+sr130: Required proforma field G1b missing or malformed.
+
+sr130: Required proforma field G2b missing or malformed.
+
+sr130: Required proforma field GA1b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+sr130: Required proforma field G1b missing or malformed.
+
+sr130: Required proforma field G2b missing or malformed.
+
+sr130: Required proforma field GA1b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+sr130: Required proforma field G1b missing or malformed.
+
+sr130: Required proforma field G2b missing or malformed.
+
+sr130: Required proforma field GA1b missing or malformed.
+
+sr130: Required proforma field GA2b missing or malformed.
+
+
+Processing sr125
+
+sr125: GA10a: NEW:'P{UAS-Rdl.L}' is not new and Chado knows it as FBtp0053456
+
+sr125: GA10a: NEW:'P{UAS-Rdl.RNAi.4-5}' is not new and Chado knows it as FBtp0053457
+
+sr125: GA10a: NEW:'P{UAS-Rdl.RNAi.2-7}' is not new and Chado knows it as FBtp0053458
+
+sr125: GA10a: NEW:'P{UAS-Rdl.RNAi.8-10}' is not new and Chado knows it as FBtp0053459
+
+sr125: Required proforma field G2b missing or malformed.
+
+sr125: Required proforma field GA1b missing or malformed.
+
+sr125: Required proforma field GA2b missing or malformed.
+
+sr125: Required proforma field GA1b missing or malformed.
+
+sr125: Required proforma field GA2b missing or malformed.
+
+sr125: Required proforma field GA1b missing or malformed.
+
+sr125: Required proforma field GA2b missing or malformed.
+
+sr125: Required proforma field G1b missing or malformed.
+
+sr125: Required proforma field G2b missing or malformed.
+
+sr125: Required proforma field GA1b missing or malformed.
+
+sr125: Required proforma field GA2b missing or malformed.
+
+sr125: Required proforma field GA1b missing or malformed.
+
+sr125: Required proforma field GA2b missing or malformed.
+
+sr125: Required proforma field G2b missing or malformed.
+
+sr125: Required proforma field GA2b missing or malformed.
+
+sr125: Required proforma field GA2b missing or malformed.
+
+sr125: Required proforma field GA1b missing or malformed.
+
+sr125: Required proforma field GA2b missing or malformed.
+
+sr125: GA1g claims that Rdl[Scer\UAS.cLa] is not an existing allele symbol, but Chado knows it as FBal0243635
+
+sr125: Required proforma field GA1b missing or malformed.
+
+sr125: Required proforma field GA2b missing or malformed.
+
+sr125: GA1g claims that Rdl[dsRNA.4-5.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0243636
+
+sr125: Required proforma field GA1b missing or malformed.
+
+sr125: Required proforma field GA2b missing or malformed.
+
+sr125: GA1g claims that Rdl[dsRNA.2-7.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0243637
+
+sr125: Required proforma field GA1b missing or malformed.
+
+sr125: Required proforma field GA2b missing or malformed.
+
+sr125: GA1g claims that Rdl[dsRNA.8-10.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0243638
+
+sr125: Required proforma field G1b missing or malformed.
+
+sr125: Required proforma field G2b missing or malformed.
+
+sr125: Required proforma field GA1b missing or malformed.
+
+sr125: Required proforma field GA2b missing or malformed.
+
+
+Processing as124.user
+
+
+Processing as123.user
+
+as123.user: P41: Missing data.
+
+
+Processing as122.user
+
+as122.user: P41: Missing data.
+
+
+Processing as121.user
+
+as121.user: P41: Missing data.
+
+I checked 59 files.
+
+These 8 files passed all the checks:
+
+as124.user	km325	ra837	st1201.edit	st1202.edit	st1204.edit	st361	st828.skim
+
+These 51 files failed at least one check:
+
+as121.user	as122.user	as123.user	gm25429	gm25469	gm25474.edit	gm25483.edit	gm25487.edit	gm25489.bibl	gm25490
+gm25491	gm25492	gm25493	gm25494	gm25495	gm25496	km317	km320	km322	km323
+km327	km328	pm2266	pm2273	pm2277	pm2278	pm2279.edit	pm2281.edit	pm2282	pm2283
+pm2284	pm2285	ra820	ra832	ra833	ra834	ra836.edit	sm1164	sm1178.bibl	sm1179.edit
+sm1180	sm1181	sm1182.bibl	sm1183.edit	sm1184.bibl	sm1185	sr125	sr130	sr132	st1140
+st938
+
+Ignoring these 52 files:
+
+pl147130.bibl	pl147131.bibl	pl147132.bibl	pl147133.bibl	pl147134.bibl	pl147135.bibl	pl147136.bibl	pl147138.bibl	pl147139.bibl	pl147140.bibl
+pl147141.bibl	pl147142.bibl	pl147143.bibl	pl147144.bibl	pl147145.bibl	pl147146.bibl	pl147147.bibl	pl147148.bibl	pl147149.bibl	pl147150.bibl
+pl147151.bibl	pl147152.bibl	pl147153.bibl	pl147154.bibl	pl147155.bibl	pl147156.bibl	pl147157.bibl	pl147158.bibl	pl147159.bibl	pl147160.bibl
+pl147161.bibl	pl147162.bibl	pl147163.bibl	pl147164.bibl	pl147165.bibl	pl147166.bibl	pl147167.bibl	pl147168.bibl	pl147169.bibl	pl147170.bibl
+pl147171.bibl	pl147172.bibl	pl147173.bibl	pl147174.bibl	pl147175.bibl	sb214	sb217	sb219	sb226	sb227
+sb228	sb229
+
+
+I came to this conclusion by consulting fb_2010_06_03 stored on oscar.gen.cam.ac.uk
+
+I used these ontologies:
+FBbt: /curfiles/ontologies/fly_anatomy.obo dated 04:02:2010 12:01
+FBdv: /curfiles/ontologies/fly_development.obo dated 19:10:2009 13:49
+FBcv: /curfiles/ontologies/flybase_controlled_vocabulary.obo dated 05:03:2010 18:50
+FBsp: /curfiles/ontologies/fly_taxonomy.obo dated 06:04:2007 11:47
+SO  : /curfiles/ontologies/so.obo dated 02:06:2006 12:44
+GO  : /curfiles/ontologies/gene_ontology.obo dated 13:05:2010 19:30
+GO_dbxrefs: /curfiles/ontologies/GO.xrf_abbs dated 2010/05/18 14:00:16
+
+
+

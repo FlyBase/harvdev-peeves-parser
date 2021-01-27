@@ -1,0 +1,59 @@
+! C1.  Curator ID	:Bev
+! C2.  Date		:170612
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0233649
+! P19.  Internal notes                   *H :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 8: Jun 08 2011
+!
+! F1f. Database id (default 'new')   :FBtr0111450
+! F1a. Gene product symbol           :Scer\GAL4[btd-MD808]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+! F4. Names(s) used in paper [free text] :btd-Gal4
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> debs <t> L | first instar <a> ventral thoracic disc <s>  <note>
+<e> debs <t> L | third instar <a> ventral thoracic disc | restricted <s>  <note>
+<e> debs <t> PP <a> ventral thoracic disc | restricted <s>  <note>
+<e> debs <t> PP <a> presumptive femur <s>  <note>
+<e> debs <t> PP <a> presumptive metatarsus <s>  <note>
+<e> debs <t> PP <a> presumptive tarsal segment 2 <s>  <note>
+<e> debs <t> PP <a> presumptive tarsal segment 3 <s>  <note>
+<e> debs <t> PP <a> presumptive tarsal segment 4 <s>  <note>
+<e> debs <t> PP <a> presumptive tarsal segment 5 <s>  <note>
+!
+! F15. General expression comment [free text] :In third instar larvae, @btd@-GAL4 is expressed throughout the medial and distal regions of the leg disc but is excluded from the body wall and the distal tip of the leg. In prepupal leg discs, it is expressed in the  tarsal segments and more proximally with a gap in the region corresponding to the tibia.
+!
+! F17. Alleles or genotypes used :
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 8: Jun 08 2011
+!
+! F1f. Database id (default 'new')   :FBpp0089959
+! F1a. Gene product symbol           :Sp1-XP
+! F3.  Gene product type [CV]        :protein SO:0000358
+! F2.  Sequence attribute [CV]	     :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> il <t> L | first instar <a> ventral thoracic disc <s>  <note>
+<e> il <t> L | third instar <a> ventral thoracic disc | restricted <s>  <note>
+<e> il <t> PP <a> ventral thoracic disc | restricted <s>  <note>
+<e> il <t> PP <a> presumptive metatarsus <s>  <note>
+<e> il <t> PP <a> presumptive tarsal segment 2 <s>  <note>
+<e> il <t> PP <a> presumptive tarsal segment 3 <s>  <note>
+<e> il <t> PP <a> presumptive tarsal segment 4 <s>  <note>
+<e> il <t> PP <a> presumptive tarsal segment 5 <s>  <note>
+!
+! F15. General expression comment [free text] :In third instar larvae, @Sp1@ is expressed throughout the medial and distal regions of the leg disc but is excluded from the body wall and the distal tip of the leg. In prepupal leg discs, expression is restricted to the tarsal segments and specifically to the interjoint regions.
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

@@ -1,0 +1,31 @@
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0226669
+! P2.   Parent multipub abbreviation               *w :EMBO Rep.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENE PROFORMA                          Version 79:  3 Oct 2018
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :dpp
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :is_active_in cellular_component ; GO:0005575 | IDA
+located_in cellular_component ; GO:0005575 | ND
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :enables molecular_function ; GO:0003674 | IMP
+blah molecular_function ; GO:0003674 | ND
+NOT enables molecular_function ; GO:0003674 | ND
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :acts_upstream_of_positive_effect biological_process ; GO:0008150 | IGI
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G15.  Internal notes  *W :testing root terms - not OK
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

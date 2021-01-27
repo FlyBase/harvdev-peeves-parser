@@ -1,0 +1,102 @@
+! PUBLICATION PROFORMA                   Version 46:  20 Jun 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0105495
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! GENEGROUP PROFORMA     Version 4: 28 Aug 2014
+!
+! GG1a. Gene group symbol                               *a :new_group
+! GG1b. Gene group symbol(s) used in reference          *i :synonym
+! GG1e. Action - rename this gene group symbol      :
+! GG1f. Action - merge these gene groups (symbols)  :
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :n
+! GG2a. Action - gene group name to use in FlyBase      *e :
+! GG2b. Gene group name(s) used in reference            *V :
+! GG2c. Action - rename this gene group name        :
+!
+! GG4.  Type of gene group [CV]  *t :pathway group
+!
+! GG12. Internal notes  *W :??no error
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 4: 28 Aug 2014
+!
+! GG1a. Gene group symbol                               *a :symbol
+! GG1b. Gene group symbol(s) used in reference          *i :
+! GG1e. Action - rename this gene group symbol      :
+! GG1f. Action - merge these gene groups (symbols)  :
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :y
+! GG2a. Action - gene group name to use in FlyBase      *e :
+! GG2b. Gene group name(s) used in reference            *V :
+! GG2c. Action - rename this gene group name        :
+!
+! GG4.  Type of gene group [CV]  *t :P-element activity
+!
+! GG12. Internal notes  *W :??error - wrong namespace
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 4: 28 Aug 2014
+!
+! GG1a. Gene group symbol                               *a :symbol2
+! GG1b. Gene group symbol(s) used in reference          *i :
+! GG1e. Action - rename this gene group symbol      :
+! GG1f. Action - merge these gene groups (symbols)  :
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :y
+! GG2a. Action - gene group name to use in FlyBase      *e :
+! GG2b. Gene group name(s) used in reference            *V :
+! GG2c. Action - rename this gene group name        :
+!
+! GG4.  Type of gene group [CV]  *t :loss of function allele
+process group
+!
+! GG12. Internal notes  *W :??error - multiple values
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 4: 28 Aug 2014
+!
+! GG1a. Gene group symbol                               *a :symbol3
+! GG1b. Gene group symbol(s) used in reference          *i :
+! GG1e. Action - rename this gene group symbol      :
+! GG1f. Action - merge these gene groups (symbols)  :merg
+rewureow
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :y
+! GG2a. Action - gene group name to use in FlyBase      *e :
+! GG2b. Gene group name(s) used in reference            *V :
+! GG2c. Action - rename this gene group name        :
+!
+! GG4.  Type of gene group [CV]  *t :process group
+!
+! GG12. Internal notes  *W :??error -filled in for merge
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 4: 28 Aug 2014
+!
+! GG1a. Gene group symbol                               *a :symbol5
+! GG1b. Gene group symbol(s) used in reference          *i :
+! GG1e. Action - rename this gene group symbol      :rewrewrew
+! GG1f. Action - merge these gene groups (symbols)  :
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :n
+! GG2a. Action - gene group name to use in FlyBase      *e :
+! GG2b. Gene group name(s) used in reference            *V :
+! GG2c. Action - rename this gene group name        :
+!
+! GG4.  Type of gene group [CV]  *t :process group
+!
+! GG12. Internal notes  *W :??error -filled in for rename
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

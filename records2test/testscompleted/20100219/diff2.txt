@@ -1,0 +1,65 @@
+1a2,4
+> Using Peeves in /Peeves/test
+> /Peeves/test/Peeves
+> 
+214,215d216
+< gm25100.edit: Most .edit records contain a !c, did you forget to add one?
+< 
+542,543d542
+< st1155.edit: Most .edit records contain a !c, did you forget to add one?
+< 
+765d763
+< I checked 56 files.
+767c765,770
+< These 17 files passed all the checks:
+---
+> Processing as91.user
+> 
+> 
+> Processing as90.user
+> 
+> as90.user: G1h: The FBid given in G1h, 'FBgn0029176', does not match the symbol given in G1a, 'Ef1&ggr;'.
+769,770c772
+< sb118.skim	sb119.skim	sb120.skim	sb121.skim	sb122.skim	sb123.skim	sb124.skim	sb126.skim	sb127.skim	sb128.skim
+< sb129.skim	sb130.skim	sb131.skim	sb132.skim	sb135.skim	sb136.skim	sb137.skim
+---
+> I checked 58 files.
+772c774
+< These 39 files failed at least one check:
+---
+> These 18 files passed all the checks:
+774,777c776,777
+< gm24809	gm24997	gm25046	gm25067.edit	gm25093	gm25097	gm25100.edit	gm25102	gm25103.edit	gm25104.edit
+< gm25105	gm25107.edit	gm25108	gm25109	gm25110.bibl	gm25111.bibl	gm25112.bibl	gm25113.bibl	gm25114.bibl	gm25115.bibl
+< gm25116.bibl	gm25117.bibl	gm25118.bibl	gm25119.bibl	gm25120.bibl	gm25123.edit	gm25128.edit	pm1062	pm2147	pm2149
+< pm2164	pm2166	sb125.skim	sb133.skim	sb134.skim	sm1061.edit	sm1073.bibl	st1155.edit	st1156.edit
+---
+> as91.user	sb118.skim	sb119.skim	sb120.skim	sb121.skim	sb122.skim	sb123.skim	sb124.skim	sb126.skim	sb127.skim
+> sb128.skim	sb129.skim	sb130.skim	sb131.skim	sb132.skim	sb135.skim	sb136.skim	sb137.skim
+779c779
+< Ignoring these 41 files:
+---
+> These 40 files failed at least one check:
+781,785c781,791
+< as90.user	as91.user	pl146395.bibl	pl146396.bibl	pl146397.bibl	pl146398.bibl	pl146399.bibl	pl146400.bibl	pl146401.bibl	pl146402.bibl
+< pl146403.bibl	pl146404.bibl	pl146405.bibl	pl146406.bibl	pl146407.bibl	pl146408.bibl	pl146409.bibl	pl146410.bibl	pl146411.bibl	pl146412.bibl
+< pl146413.bibl	pl146414.bibl	pl146415.bibl	pl146416.bibl	pl146417.bibl	pl146418.bibl	pl146419.bibl	pl146420.bibl	pl146421.bibl	pl146422.bibl
+< pl146423.bibl	pl146424.bibl	pl146425.bibl	pl146426.bibl	pl146427.bibl	pl146428.bibl	pl146429.bibl	pl146430.bibl	pl146431.bibl	pl146432.bibl
+< pl146433.bibl
+---
+> as90.user	gm24809	gm24997	gm25046	gm25067.edit	gm25093	gm25097	gm25100.edit	gm25102	gm25103.edit
+> gm25104.edit	gm25105	gm25107.edit	gm25108	gm25109	gm25110.bibl	gm25111.bibl	gm25112.bibl	gm25113.bibl	gm25114.bibl
+> gm25115.bibl	gm25116.bibl	gm25117.bibl	gm25118.bibl	gm25119.bibl	gm25120.bibl	gm25123.edit	gm25128.edit	pm1062	pm2147
+> pm2149	pm2164	pm2166	sb125.skim	sb133.skim	sb134.skim	sm1061.edit	sm1073.bibl	st1155.edit	st1156.edit
+> 
+> Ignoring these 39 files:
+> 
+> pl146395.bibl	pl146396.bibl	pl146397.bibl	pl146398.bibl	pl146399.bibl	pl146400.bibl	pl146401.bibl	pl146402.bibl	pl146403.bibl	pl146404.bibl
+> pl146405.bibl	pl146406.bibl	pl146407.bibl	pl146408.bibl	pl146409.bibl	pl146410.bibl	pl146411.bibl	pl146412.bibl	pl146413.bibl	pl146414.bibl
+> pl146415.bibl	pl146416.bibl	pl146417.bibl	pl146418.bibl	pl146419.bibl	pl146420.bibl	pl146421.bibl	pl146422.bibl	pl146423.bibl	pl146424.bibl
+> pl146425.bibl	pl146426.bibl	pl146427.bibl	pl146428.bibl	pl146429.bibl	pl146430.bibl	pl146431.bibl	pl146432.bibl	pl146433.bibl
+800a807,810
+> Using ** test ** Peeves
+> 
+> 
+> 

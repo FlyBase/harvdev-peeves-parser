@@ -1,0 +1,72 @@
+
+A. spacing errors
+=================
+(fake curation record = gm070227 in ~gm119/peeves_test)
+(peeves output file = GA56_space_test)
+
+1. I wrote the following in
+
+' semi-viable '
+
+and got these error messages:
+
+gm070227: GA56: superfluous leading whitespace in ' semi-viable '
+
+gm070227: GA56: superfluous trailing whitespace in 'semi-viable '
+
+
+NOTE that the top error message gives the whole line in the '', i.e. ' semi-viable ' but
+ the second one has thrown away the leading whitespace in 'semi-viable '
+ - probably doesn't matter much, but it isn't consistent.
+
+2. We need to have the WHOLE phenotypic class line reported always for
+errors of spacing in this field, here are two examples why (at the
+moment we are only getting parts of the line reported - I can see why
+as thats where the extra white space is, but it makes for a confusing
+report and makes it really hard to find the line that is actually
+causing the error).
+
+a. I wrote the following:
+
+visible  | recessive | maternal effect
+
+which has an extra space after the visible
+
+it gives this error message:
+
+gm070227: GA56: superfluous trailing whitespace in 'visible '
+
+it would be MUCH more helpful if the error message gave the entire line, i.e.:
+
+gm070227: GA56: superfluous trailing whitespace in 'visible  | recessive | maternal effect'
+
+
+(the phrase 'visible ' could be in free text or any of the many GA56. in a real proforma)
+
+
+or maybe this is better - it gives where the extra whitespace is first AND then the whole line so its easy to find !
+
+gm070227: GA56: superfluous trailing whitespace in 'visible ' in 'visible  | recessive | maternal effect'
+
+
+b. I wrote the following:
+
+(with bw[2])  paralytic | pupal stage
+
+it gave me this error:
+
+gm070227: GA56: superfluous leading whitespace in ' paralytic | pupal stage'
+
+this is another good example where we really need to have the whole phenotypic class line in the error report - I actually had to change the test proforma, because in the first instance I had  two lines with 'paralytic | pupal stage' in various forms and I did not know which line was giving me the error without having the whole line to look at.
+
+So we need the error report to say:
+
+
+gm070227: GA56: superfluous leading whitespace in '(with bw[2])  paralytic | pupal stage'
+
+or maybe:
+
+gm070227: GA56: superfluous leading whitespace in ' paralytic | pupal stage' in '(with bw[2])  paralytic | pupal stage'
+
+
+(there were similar examples involving dodgy spacing in the (with ) part and in the {})

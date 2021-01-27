@@ -1,0 +1,82 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0220460
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Rab3
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2b.  Gene name(s) used in reference                      *V :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 53: 12 Sep 2012
+!
+! GA1h. FlyBase allele ID (FBal) *z :FBal0242917
+! GA1a.  Allele symbol to use in FlyBase                        *A :Rab3[rup]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA90a. Allele to which GA90b-k apply [dupl for multiple] :Rab3[rup]x
+! GA90k. Molecular nature (type) of lesion :deletion
+! GA90b. Genomic location of lesion :2R:6611417..6611421
+! GA90c. Genome release number for entry in GA90b :5
+! GA90i. Orientation relative to chromosome (+/-) :
+! GA90d. NA change "C to T" (location in GA90b) :
+! GA90e. Reported NA change :
+! GA90f. Reported PR change           :
+! GA90g. Computed PR change (derived) :
+! GA90h. Linked to restriction fragment :
+! GA90j. Comments concerning sequence location :A 5bp deletion (TGTCC) in the @Rab3@ coding region that causes a frameshift and early translation termination.
+! GA14.  Internal notes  *W :??error - GA90a value does not match GA1a value
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 53: 12 Sep 2012
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Rab3[HMS01131]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA90a. Allele to which GA90b-k apply [dupl for multiple] :
+! GA90k. Molecular nature (type) of lesion :deletion
+! GA90b. Genomic location of lesion :2R:6611.66
+! GA90c. Genome release number for entry in GA90b :6
+! GA90i. Orientation relative to chromosome (+/-) :+
+! GA90d. NA change "C to T" (location in GA90b) :text
+! GA90e. Reported NA change :ddd
+! GA90f. Reported PR change           :fff
+! GA90g. Computed PR change (derived) :5443
+! GA90h. Linked to restriction fragment :thgdhgf
+! GA90j. Comments concerning sequence location :here is some text.
+! GA90a. Allele to which GA90b-k apply [dupl for multiple] :Rab3[HMS01131]
+double line
+! GA90k. Molecular nature (type) of lesion :deletion
+! GA90b. Genomic location of lesion :
+! GA90c. Genome release number for entry in GA90b :
+! GA90i. Orientation relative to chromosome (+/-) :
+! GA90d. NA change "C to T" (location in GA90b) :
+! GA90e. Reported NA change :
+! GA90f. Reported PR change           :
+! GA90g. Computed PR change (derived) :
+! GA90h. Linked to restriction fragment :
+! GA90j. Comments concerning sequence location :
+! GA14.  Internal notes  *W :??error - GA90a not filled in and other GA90a fields are
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

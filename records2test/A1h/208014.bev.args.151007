@@ -1,0 +1,36 @@
+! C1.  Curator ID	:Bev
+! C2.  Date		:140915
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 44:  6 Nov 2012
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0208014
+! P19.  Internal notes                   *H :Submitted previously without Pub proforma!. Submitting again.
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION PROFORMA                    Version 56: 17 Aug 2012
+!
+! A1h.  FlyBase aberration ID (FBab) *z :FBab0046230
+! A1a.  Aberration symbol to use in FlyBase                 *a :Df(3R)98E2
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+! A7a.  Complementation - genes completely deleted/disrupted by A1a *q :CG9990
+htt
+! A25x. Molecular data - comments [free text]    :~55kb deletion of @CG9990@ and @htt@ resulting from FLP-catalyzed recombination using the FRT-containing transposons @P{XP}d08071@ and @PBac{WH}htt[f05417]@.
+! A90a. Location data for breakpoint number (dupl for multiple) :1
+! A90b.    Genomic location of breakpoint                       :3R:28675020
+! A90c.    Genome release number for entry in A90a              :6
+! A90h.    Linked to restriction fragment   : 
+! A90j.    Comments concerning sequence location                :Estimated site of @P{XP}d08071@ insertion.
+! A90a. Location data for breakpoint number (dupl for multiple) :2
+! A90b.    Genomic location of breakpoint                       :3R:28730077
+! A90c.    Genome release number for entry in A90a              :6
+! A90h.    Linked to restriction fragment   : 
+! A90j.    Comments concerning sequence location                :
+! A91a. Deleted segment data for segment number (dupl for multiple) :1
+! A91b.    Cytological location of left end of segment              :98E1
+! A91c.    Cytological location of right end of segment             :98E2
+! A91d.    Estimated cytology                                       :y
+! A91e.    Observed cytology                                        :n
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

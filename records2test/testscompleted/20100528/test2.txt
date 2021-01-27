@@ -1,0 +1,589 @@
+
+Using Peeves in /Peeves/test
+/Peeves/test/Peeves
+
+Processing gm25482.edit
+
+gm25482.edit: Most .edit records contain a !c, did you forget to add one?
+
+
+Processing gm25481
+
+
+Processing gm25480
+
+
+Processing gm25479
+
+
+Processing gm25478
+
+
+Processing gm25477
+
+
+Processing gm25476
+
+
+Processing gm25475
+
+
+Processing gm25473
+
+gm25473: GA10a: NEW:'P{UAS-hMLF1.FLAG}' is not new and Chado knows it as FBtp0053381
+
+gm25473: GA10a: NEW:'P{UAS-hMLF2.FLAG}' is not new and Chado knows it as FBtp0053382
+
+gm25473: GA1g claims that Hsap\MLF1[Scer\UAS.T:Zzzz\FLAG] is not an existing allele symbol, but Chado knows it as FBal0243512
+
+gm25473: G1g claims that Hsap\MLF2 is not an existing gene symbol, but Chado knows it as FBgn0261908
+
+gm25473: No data in either G1b or G2b for 'Hsap\MLF2'
+
+gm25473: GA1g claims that Hsap\MLF2[Scer\UAS.T:Zzzz\FLAG] is not an existing allele symbol, but Chado knows it as FBal0243513
+
+
+Processing gm25472
+
+gm25472: GA10a: NEW:'P{UAS-Hsp23.K}' is not new and Chado knows it as FBtp0053380
+
+gm25472: GA1g claims that Hsp23[Scer\UAS.cKa] is not an existing allele symbol, but Chado knows it as FBal0243511
+
+
+Processing gm25471
+
+
+Processing gm25470
+
+
+Processing gm25468.edit
+
+gm25468.edit: Most .edit records contain a !c, did you forget to add one?
+
+
+Processing gm25467
+
+gm25467: GA10c: NEW:'Doc{}Spc105R[1]' is not new and Chado knows it as FBti0129802
+
+gm25467: GA10c: NEW:'P{PTT-un1}Spc105R[P01511LE]' is not new and Chado knows it as FBti0129803
+
+gm25467: GA10a: NEW:'P{gSpc105}' is not new and Chado knows it as FBtp0053364
+
+gm25467: GA10a: NEW:'P{gSpc105(C)}' is not new and Chado knows it as FBtp0053365
+
+gm25467: GA10a: NEW:'P{gEGFP-Spc105}' is not new and Chado knows it as FBtp0053366
+
+gm25467: GA10a: NEW:'P{gSpc105-EGFP}' is not new and Chado knows it as FBtp0053367
+
+gm25467: GA10a: NEW:'P{gEGFP-Spc105-mRFP1}' is not new and Chado knows it as FBtp0053368
+
+gm25467: GA10a: NEW:'P{gSpc105.wr1}' is not new and Chado knows it as FBtp0053369
+
+gm25467: GA10a: NEW:'P{UAS-Spc105(FL)-EGFP}' is not new and Chado knows it as FBtp0053370
+
+gm25467: GA10a: NEW:'P{UAS-Spc105(N)-EGFP}' is not new and Chado knows it as FBtp0053371
+
+gm25467: GA10a: NEW:'P{UAS-EGFP-Spc105(M)}' is not new and Chado knows it as FBtp0053372
+
+gm25467: GA10a: NEW:'P{UAS-EGFP-Spc105(C)}' is not new and Chado knows it as FBtp0053373
+
+gm25467: GA10e: NEW:'P{PTT-un1}Spc105R[P01511LE]' is not new and Chado knows it as FBti0129803
+
+gm25467: GA10a: NEW:'P{gmRFP-Cenp-C}' is not new and Chado knows it as FBtp0053374
+
+gm25467: GA10a: NEW:'P{gCenp-C-mRFP1}' is not new and Chado knows it as FBtp0053375
+
+gm25467: GA10a: NEW:'P{gmRFP1-Ndc80}' is not new and Chado knows it as FBtp0053376
+
+gm25467: GA10a: NEW:'P{gEGFP-Nsl1}' is not new and Chado knows it as FBtp0053377
+
+gm25467: GA10a: NEW:'P{gSpc105.wr15}' is not new and Chado knows it as FBtp0053378
+
+gm25467: GA10a: NEW:'P{gSpc105.wr30}' is not new and Chado knows it as FBtp0053379
+
+gm25467: GA10a: NEW:'P{gSpc105}' is not new and Chado knows it as FBtp0053364
+
+gm25467: GA10a: NEW:'P{gSpc105(C)}' is not new and Chado knows it as FBtp0053365
+
+gm25467: GA10a: NEW:'P{gEGFP-Spc105}' is not new and Chado knows it as FBtp0053366
+
+gm25467: GA10a: NEW:'P{gSpc105-EGFP}' is not new and Chado knows it as FBtp0053367
+
+gm25467: GA10a: NEW:'P{gEGFP-Spc105-mRFP1}' is not new and Chado knows it as FBtp0053368
+
+gm25467: GA10a: NEW:'P{gSpc105.wr1}' is not new and Chado knows it as FBtp0053369
+
+gm25467: GA10a: NEW:'P{UAS-Spc105(FL)-EGFP}' is not new and Chado knows it as FBtp0053370
+
+gm25467: GA10a: NEW:'P{UAS-Spc105(N)-EGFP}' is not new and Chado knows it as FBtp0053371
+
+gm25467: GA10a: NEW:'P{UAS-EGFP-Spc105(M)}' is not new and Chado knows it as FBtp0053372
+
+gm25467: GA10a: NEW:'P{UAS-EGFP-Spc105(C)}' is not new and Chado knows it as FBtp0053373
+
+gm25467: GA10a: NEW:'P{gmRFP-Cenp-C}' is not new and Chado knows it as FBtp0053374
+
+gm25467: GA10a: NEW:'P{gCenp-C-mRFP1}' is not new and Chado knows it as FBtp0053375
+
+gm25467: GA10a: NEW:'P{gmRFP1-Ndc80}' is not new and Chado knows it as FBtp0053376
+
+gm25467: GA10a: NEW:'P{gEGFP-Nsl1}' is not new and Chado knows it as FBtp0053377
+
+gm25467: GA10a: NEW:'P{gSpc105.wr15}' is not new and Chado knows it as FBtp0053378
+
+gm25467: GA10a: NEW:'P{gSpc105.wr30}' is not new and Chado knows it as FBtp0053379
+
+gm25467: P41: Missing data.
+
+gm25467: GA1g claims that Spc105R[1] is not an existing allele symbol, but Chado knows it as FBal0243491
+
+gm25467: GA1g claims that Spc105R[P01511LE] is not an existing allele symbol, but Chado knows it as FBal0243492
+
+gm25467: GA1g claims that Spc105R[+tg] is not an existing allele symbol, but Chado knows it as FBal0243493
+
+gm25467: GA1g claims that Spc105R[gC] is not an existing allele symbol, but Chado knows it as FBal0243494
+
+gm25467: GA1g claims that Spc105R[N.T:Avic\GFP-EGFP] is not an existing allele symbol, but Chado knows it as FBal0243495
+
+gm25467: GA1g claims that Spc105R[C.T:Avic\GFP-EGFP] is not an existing allele symbol, but Chado knows it as FBal0243496
+
+gm25467: GA1g claims that Spc105R[N.T:Avic\GFP-EGFP.C.T:Disc\RFP-mRFP] is not an existing allele symbol, but Chado knows it as FBal0243497
+
+gm25467: GA1g claims that Spc105R[wr1] is not an existing allele symbol, but Chado knows it as FBal0243498
+
+gm25467: GA1g claims that Spc105R[FL.Scer\UAS.T:Avic\GFP-EGFP] is not an existing allele symbol, but Chado knows it as FBal0243499
+
+gm25467: GA1g claims that Spc105R[N.Scer\UAS.T:Avic\GFP-EGFP] is not an existing allele symbol, but Chado knows it as FBal0243500
+
+gm25467: GA1g claims that Spc105R[M.Scer\UAS.T:Avic\GFP-EGFP] is not an existing allele symbol, but Chado knows it as FBal0243501
+
+gm25467: GA1g claims that Spc105R[C.Scer\UAS.T:Avic\GFP-EGFP] is not an existing allele symbol, but Chado knows it as FBal0243502
+
+gm25467: No data in either G1b or G2b for 'Avic\GFP'
+
+gm25467: GA1g claims that Avic\GFP[Spc105R-P01511LE] is not an existing allele symbol, but Chado knows it as FBal0243503
+
+gm25467: GA1g claims that mad2[P] is not an existing allele symbol, but Chado knows it as FBal0243504
+
+gm25467: No data in either G1b or G2b for 'Mis12'
+
+gm25467: No data in either G1b or G2b for 'Cenp-C'
+
+gm25467: GA1g claims that Cenp-C[N.T:Disc\RFP-mRFP] is not an existing allele symbol, but Chado knows it as FBal0243505
+
+gm25467: GA1g claims that Cenp-C[C.T:Disc\RFP-mRFP] is not an existing allele symbol, but Chado knows it as FBal0243506
+
+gm25467: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm25467: No data in either G1b or G2b for 'Ndc80'
+
+gm25467: GA1g claims that Ndc80[T:Disc\RFP-mRFP] is not an existing allele symbol, but Chado knows it as FBal0243507
+
+gm25467: No data in either G1b or G2b for 'Nuf2'
+
+gm25467: No data in either G1b or G2b for 'Spc25'
+
+gm25467: No data in either G1b or G2b for 'Kmn1'
+
+gm25467: GA1g claims that Kmn1[T:Avic\GFP-EGFP] is not an existing allele symbol, but Chado knows it as FBal0243508
+
+gm25467: G1g claims that Dwil\Spc105R is not an existing gene symbol, but Chado knows it as FBgn0261906
+
+gm25467: G1a: Invalid species 'Spc105R::Dwil' in 'Spc105R::Dwil\Spc105R'
+
+gm25467: G1g claims that Spc105R::Dwil\Spc105R is not an existing gene symbol, but Chado knows it as FBgn0261907
+
+gm25467: No data in either G1b or G2b for 'Spc105R::Dwil\Spc105R'
+
+gm25467: GA1g claims that Spc105R::Dwil\Spc105R[wr15] is not an existing allele symbol, but Chado knows it as FBal0243509
+
+gm25467: GA1g claims that Spc105R::Dwil\Spc105R[wr30] is not an existing allele symbol, but Chado knows it as FBal0243510
+
+gm25467: No data in either G1b or G2b for 'w'
+
+
+Processing gm25466.edit
+
+gm25466.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25466.edit: G31a: Do you REALLY want to delete 'BP1030' and all associated data from FlyBase? Did you mistakenly fill in the G31a field instead of the intended G31b??
+
+gm25466.edit: G1g claims that BP1030 is an existing gene symbol, but Chado has never heard of it.
+
+gm25466.edit: G31a: Do you REALLY want to delete 'BP1038' and all associated data from FlyBase? Did you mistakenly fill in the G31a field instead of the intended G31b??
+
+gm25466.edit: G1g claims that BP1038 is an existing gene symbol, but Chado has never heard of it.
+
+gm25466.edit: G31a: Do you REALLY want to delete 'BP1043' and all associated data from FlyBase? Did you mistakenly fill in the G31a field instead of the intended G31b??
+
+gm25466.edit: G1g claims that BP1043 is an existing gene symbol, but Chado has never heard of it.
+
+gm25466.edit: G31a: Do you REALLY want to delete 'BP1046' and all associated data from FlyBase? Did you mistakenly fill in the G31a field instead of the intended G31b??
+
+gm25466.edit: G1g claims that BP1046 is an existing gene symbol, but Chado has never heard of it.
+
+gm25466.edit: G31a: Do you REALLY want to delete 'BP1048' and all associated data from FlyBase? Did you mistakenly fill in the G31a field instead of the intended G31b??
+
+gm25466.edit: G1g claims that BP1048 is an existing gene symbol, but Chado has never heard of it.
+
+gm25466.edit: G31a: Do you REALLY want to delete 'BP1051' and all associated data from FlyBase? Did you mistakenly fill in the G31a field instead of the intended G31b??
+
+gm25466.edit: G1g claims that BP1051 is an existing gene symbol, but Chado has never heard of it.
+
+gm25466.edit: G31a: Do you REALLY want to delete 'BP1052' and all associated data from FlyBase? Did you mistakenly fill in the G31a field instead of the intended G31b??
+
+gm25466.edit: G1g claims that BP1052 is an existing gene symbol, but Chado has never heard of it.
+
+gm25466.edit: G31a: Do you REALLY want to delete 'BP1054' and all associated data from FlyBase? Did you mistakenly fill in the G31a field instead of the intended G31b??
+
+gm25466.edit: G1g claims that BP1054 is an existing gene symbol, but Chado has never heard of it.
+
+gm25466.edit: G31a: Do you REALLY want to delete 'BP1055' and all associated data from FlyBase? Did you mistakenly fill in the G31a field instead of the intended G31b??
+
+gm25466.edit: G1g claims that BP1055 is an existing gene symbol, but Chado has never heard of it.
+
+gm25466.edit: G31a: Do you REALLY want to delete 'BP1057' and all associated data from FlyBase? Did you mistakenly fill in the G31a field instead of the intended G31b??
+
+gm25466.edit: G1g claims that BP1057 is an existing gene symbol, but Chado has never heard of it.
+
+gm25466.edit: G31a: Do you REALLY want to delete 'BP1059' and all associated data from FlyBase? Did you mistakenly fill in the G31a field instead of the intended G31b??
+
+gm25466.edit: G1g claims that BP1059 is an existing gene symbol, but Chado has never heard of it.
+
+gm25466.edit: G31a: Do you REALLY want to delete 'BP1060' and all associated data from FlyBase? Did you mistakenly fill in the G31a field instead of the intended G31b??
+
+gm25466.edit: G1g claims that BP1060 is an existing gene symbol, but Chado has never heard of it.
+
+
+Processing gm25453.edit
+
+gm25453.edit: P2: Multipub abbreviation (you gave 'Hum. Molec. Genet.') does not match that associated with FBrf0152072 in chado.
+
+gm25453.edit: GA32b: Do you *really* want to dissociate 'GMR[5x.cHa]' from FBrf0152072?
+
+gm25453.edit: GA1e: GMR[Zzzz\CAG.127Q] is not a valid allele symbol in Chado
+
+gm25453.edit: GA1g claims that Zzzz\CAG[127Q.1GR.T:Ivir\HA1] is not an existing allele symbol, but Chado knows it as FBal0241466
+
+
+Processing pm2275
+
+pm2275: P41: Missing data.
+
+pm2275: No data in either G1b or G2b for 'Btau\MAPT'
+
+
+Processing pm2274
+
+pm2274: GA10a: NEW:'P{UAS-Cbl.Dv}' is not new and Chado knows it as FBtp0053390
+
+pm2274: GA10a: NEW:'P{UAS-D-Cbl-onc}' is not new and Chado knows it as FBtp0053391
+
+pm2274: P41: Missing data.
+
+pm2274: No data in either G1b or G2b for 'Cbl'
+
+pm2274: GA1g claims that Cbl[1] is not an existing allele symbol, but Chado knows it as FBal0243525
+
+pm2274: GA1g claims that Cbl[2] is not an existing allele symbol, but Chado knows it as FBal0243526
+
+pm2274: GA1g claims that Cbl[Dv.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0243527
+
+pm2274: GA1g claims that Cbl[D.onc.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0243528
+
+pm2274: No data in either G1b or G2b for 'Egfr'
+
+pm2274: No data in either G1b or G2b for 'sev'
+
+pm2274: A1g claims that Df(3L)Cbl1 is not an existing aberration symbol, but Chado knows it as FBab0046529
+
+pm2274: A1g claims that Df(3L)Cbl2 is not an existing aberration symbol, but Chado knows it as FBab0046530
+
+
+Processing pm2272
+
+pm2272: P41: Missing data.
+
+pm2272: P2: Multipub abbreviation (you gave 'EMBO Rpts') does not match that associated with FBrf0151287 in chado.
+
+pm2272: No data in either G1b or G2b for 'insc'
+
+pm2272: No data in either G1b or G2b for 'baz'
+
+
+Processing pm2271
+
+pm2271: GA10a: NEW:'P{UAS-cert.R}' is not new and Chado knows it as FBtp0053389
+
+pm2271: P41: Missing data.
+
+pm2271: G1e: CG7207 is not a valid gene symbol in Chado
+
+pm2271: G1h must not have data '' when G1e has data 'CG7207'
+
+pm2271: G1g claims that cert is not an existing gene symbol, but Chado knows it as FBgn0027569
+
+pm2271: GA1g claims that cert[1] is not an existing allele symbol, but Chado knows it as FBal0243523
+
+pm2271: GA1g claims that cert[Scer\UAS.cRa] is not an existing allele symbol, but Chado knows it as FBal0243524
+
+pm2271: No data in either G1b or G2b for 'Scer\GAL4'
+
+pm2271: No data in any of GA1b, GA2b, GA10a, GA10c or GA10e for 'Scer\GAL4[unspecified]' --- did you mean unnamed in GA1b?
+
+
+Processing pm2270
+
+pm2270: P41: Missing data.
+
+pm2270: GA1g claims that mam[k1514] is not an existing allele symbol, but Chado knows it as FBal0243521
+
+pm2270: GA1g claims that Scer\GAL4[AM29] is not an existing allele symbol, but Chado knows it as FBal0243522
+
+
+Processing pm2269
+
+pm2269: GA10a: NEW:'P{UAS-Drl-2.S}' is not new and Chado knows it as FBtp0053398
+
+pm2269: GA10e: NEW:'P{GawB}NP7247' is not new and Chado knows it as FBti0129812
+
+pm2269: P41: Missing data.
+
+pm2269: No data in either G1b or G2b for 'drl'
+
+pm2269: No data in either G1b or G2b for 'Drl-2'
+
+pm2269: GA1g claims that Drl-2[Scer\UAS.cSa] is not an existing allele symbol, but Chado knows it as FBal0243548
+
+pm2269: No data in either G1b or G2b for 'Wnt5'
+
+pm2269: GA1g claims that Scer\GAL4[NP7247] is not an existing allele symbol, but Chado knows it as FBal0243549
+
+
+Processing pm1904
+
+pm1904: GA10a: NEW:'P{UAS-cln3.T}' is not new and Chado knows it as FBtp0053383
+
+pm1904: GA10a: NEW:'P{UAS-cln3.Venus}' is not new and Chado knows it as FBtp0053384
+
+pm1904: GA10a: NEW:'P{UAS-cln3.&Dgr;C]}' is not new and Chado knows it as FBtp0053385
+
+pm1904: GA10a: NEW:'P{UAS-bsk.N}' is not new and Chado knows it as FBtp0053386
+
+pm1904: GA10a: NEW:'P{UAS-HsCln3.T}' is not new and Chado knows it as FBtp0053387
+
+pm1904: GA10a: NEW:'P{UAS-HsCln3.&Dgr;C}' is not new and Chado knows it as FBtp0053388
+
+pm1904: P2: Multipub abbreviation (you gave 'Hum. Molec. Genet.') does not match that associated with FBrf0206987 in chado.
+
+pm1904: GA1g claims that cln3[Scer\UAS.cTa] is not an existing allele symbol, but Chado knows it as FBal0243514
+
+pm1904: GA1g claims that cln3[Scer\UAS.T:Avic\GFP-YFP.Venus] is not an existing allele symbol, but Chado knows it as FBal0243515
+
+pm1904: GA1g claims that cln3[&Dgr;C.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0243516
+
+pm1904: No data in either G1b or G2b for 'Scer\GAL4'
+
+pm1904: GA1g claims that bsk[Scer\UAS.cNa] is not an existing allele symbol, but Chado knows it as FBal0243517
+
+pm1904: No data in either G1b or G2b for 'Hsap\CLN3'
+
+pm1904: GA1g claims that Hsap\CLN3[Scer\UAS.cTa] is not an existing allele symbol, but Chado knows it as FBal0243518
+
+pm1904: GA1g claims that Hsap\CLN3[&Dgr;C.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0243519
+
+pm1904: No data in either G1b or G2b for 'Ecol\lacZ'
+
+pm1904: GA1g claims that tsu[&Dgr;18] is not an existing allele symbol, but Chado knows it as FBal0243520
+
+
+Processing ra830
+
+
+Processing ra829
+
+
+Processing ra828.bibl
+
+ra828.bibl: P12: Trying to change list of authors to the value
+Nilsson	E.
+Asztalos	Z.
+Yamamoto	D.
+ it already has in Chado.
+
+
+Processing ra827
+
+ra827: GA10a: NEW:'P{tetO-UAS-w}' is not new and Chado knows it as FBtp0053396
+
+ra827: GA10a: NEW:'P{tetO-UAS-lacZ}' is not new and Chado knows it as FBtp0053397
+
+ra827: GA1g claims that w[Tn10\tetO.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0243541
+
+ra827: GA1g claims that Ecol\lacZ[Tn10\tetO.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0243542
+
+
+Processing ra826
+
+ra826: GA1f: 'Akt1[P1627]' is not a valid allele symbol
+
+
+Processing ra825
+
+
+Processing ra824
+
+
+Processing ra823
+
+ra823: GA10a: NEW:'P{desat1-GAL4.E800}' is not new and Chado knows it as FBtp0053395
+
+ra823: GA1g claims that Scer\GAL4[desat1.PB] is not an existing allele symbol, but Chado knows it as FBal0243539
+
+
+Processing ra822
+
+ra822: GA10a: NEW:'P{UAS-Hr51.B}' is not new and Chado knows it as FBtp0053394
+
+ra822: GA1g claims that Hr51[Scer\UAS.cBa] is not an existing allele symbol, but Chado knows it as FBal0243537
+
+ra822: GA1g claims that Hr39[c739] is not an existing allele symbol, but Chado knows it as FBal0243538
+
+ra822: MA20: Invalid species ''
+
+
+Processing ra821.edit
+
+ra821.edit: Most .edit records contain a !c, did you forget to add one?
+
+ra821.edit: G1g claims that Hsap\LIMD1 is not an existing gene symbol, but Chado knows it as FBgn0261909
+
+
+Processing ra821
+
+ra821: GA10c: NEW:'P{PZ}Socs36E[PZ1647]' is not new and Chado knows it as FBti0129810
+
+ra821: GA1g claims that Socs36E[PZ1647] is not an existing allele symbol, but Chado knows it as FBal0243535
+
+ra821: GA1g claims that Socs36E[rv1] is not an existing allele symbol, but Chado knows it as FBal0243536
+
+
+Processing ra817
+
+ra817: GA10a: NEW:'P{UAS-Slob.S}' is not new and Chado knows it as FBtp0053392
+
+ra817: GA10a: NEW:'P{UAS-Slob.RNAi}' is not new and Chado knows it as FBtp0053393
+
+ra817: GA10c: NEW:'P{GawB}Slob[mut-K162]' is not new and Chado knows it as FBti0129807
+
+ra817: GA10c: NEW:'P{GawB}Slob[mut-IP1]' is not new and Chado knows it as FBti0129808
+
+ra817: GA10c: NEW:'P{GawB}Slob[mut-IP2]' is not new and Chado knows it as FBti0129809
+
+ra817: GA1g claims that Slob[Scer\UAS.cSa] is not an existing allele symbol, but Chado knows it as FBal0243529
+
+ra817: GA1g claims that Slob[dsRNA.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0243530
+
+ra817: GA1g claims that Slob[mut-K162] is not an existing allele symbol, but Chado knows it as FBal0243531
+
+ra817: GA1g claims that Slob[mut-IP1] is not an existing allele symbol, but Chado knows it as FBal0243532
+
+ra817: GA1g claims that Slob[mut-IP2] is not an existing allele symbol, but Chado knows it as FBal0243533
+
+ra817: GA1g claims that Slob[WT-P41] is not an existing allele symbol, but Chado knows it as FBal0243534
+
+
+Processing km318
+
+km318: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+km318: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:1
+
+km318: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km318: Invalid proforma field  A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+
+km318: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+km318: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:387562
+
+km318: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km318: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km318: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :3
+
+km318: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:17805012--17995075
+
+km318: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km318: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km318: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :4
+
+km318: Invalid proforma field  A90b.    Genomic location of breakpoint                       :X:18400974
+
+km318: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+km318: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+km318: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :1
+
+km318: Invalid proforma field  A92b.    Cytological location of left end of segment                 :1Lt
+
+km318: Invalid proforma field  A92c.    Cytological location of right end of segment                :1B5
+
+km318: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km318: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km318: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :2
+
+km318: Invalid proforma field  A92b.    Cytological location of left end of segment                 :X:16F2--16F6
+
+km318: Invalid proforma field  A92c.    Cytological location of right end of segment                :17C1
+
+km318: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+km318: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+km318: A1g claims that Dp(1;Y)BSC157 is not an existing aberration symbol, but Chado knows it as FBab0046528
+
+I checked 36 files.
+
+These 13 files passed all the checks:
+
+gm25470	gm25471	gm25475	gm25476	gm25477	gm25478	gm25479	gm25480	gm25481	ra824
+ra825	ra829	ra830
+
+These 23 files failed at least one check:
+
+gm25453.edit	gm25466.edit	gm25467	gm25468.edit	gm25472	gm25473	gm25482.edit	km318	pm1904	pm2269
+pm2270	pm2271	pm2272	pm2274	pm2275	ra817	ra821	ra821.edit	ra822	ra823
+ra826	ra827	ra828.bibl
+
+Ignoring these 34 files:
+
+pl147098.bibl	pl147099.bibl	pl147100.bibl	pl147101.bibl	pl147102.bibl	pl147103.bibl	pl147104.bibl	pl147105.bibl	pl147106.bibl	pl147107.bibl
+pl147108.bibl	pl147109.bibl	pl147110.bibl	pl147111.bibl	pl147112.bibl	pl147113.bibl	pl147114.bibl	pl147115.bibl	pl147116.bibl	pl147117.bibl
+pl147118.bibl	pl147119.bibl	pl147120.bibl	pl147121.bibl	pl147122.bibl	pl147123.bibl	pl147124.bibl	pl147125.bibl	pl147126.bibl	pl147127.bibl
+pl147128.bibl	pl147129.bibl	sb215	sb224
+
+
+I came to this conclusion by consulting fb_2010_06_03 stored on oscar.gen.cam.ac.uk
+
+I used these ontologies:
+FBbt: /curfiles/ontologies/fly_anatomy.obo dated 04:02:2010 12:01
+FBdv: /curfiles/ontologies/fly_development.obo dated 19:10:2009 13:49
+FBcv: /curfiles/ontologies/flybase_controlled_vocabulary.obo dated 05:03:2010 18:50
+FBsp: /curfiles/ontologies/fly_taxonomy.obo dated 06:04:2007 11:47
+SO  : /curfiles/ontologies/so.obo dated 02:06:2006 12:44
+GO  : /curfiles/ontologies/gene_ontology.obo dated 13:05:2010 19:30
+GO_dbxrefs: /curfiles/ontologies/GO.xrf_abbs dated 2010/05/18 14:00:16
+
+
+
+Using ** test ** Peeves
+
+
+

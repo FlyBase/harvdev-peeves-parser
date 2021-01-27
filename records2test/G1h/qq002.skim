@@ -1,0 +1,271 @@
+! C1.  Curator ID	:sian
+! C2.  Date		:091026
+! C3.  Curator notes to self	:
+! C9.  Cambridge curation (new_gene, new_al, merge, split, rename, new_char, pheno, new_transg, nocur, GOcur, orthologs) 
+! C4.  Additional curation (wt_exp, pert_exp, marker, gene_model, gene_model_nonmel, phys_int, cis_reg, genom_feat, no_flag, RNAi, cell_cult, trans_assay)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 38:  16 Sep 2009
+!
+! P22.  FlyBase reference ID (FBrf)      *U :FBrf0202410
+! P2.   Parent multipub (abbreviation)      *w :RNA
+! P40.  Flag Cambridge for curation [SoftCV]  CAMCUR :
+! P41.  Flag Harvard for curation [SoftCV]   HARVCUR :cell_cult
+phys-int
+! P19.  Internal notes                   *H :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0046834
+! G1a.  Gene symbol to use in FlyBase                       *a :mir-1
+! G1b.  Gene symbol(s) used in reference                    *i :miR-1
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :miR-1
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0046824
+! G1a.  Gene symbol to use in FlyBase                       *a :mir-2b-1
+! G1b.  Gene symbol(s) used in reference                    *i :miR-2b
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :miR-2b
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0046823
+! G1a.  Gene symbol to use in FlyBase                       *a :mir-2b-2
+! G1b.  Gene symbol(s) used in reference                    *i :miR-2b
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :miR-2b
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0046816
+! G1a.  Gene symbol to use in FlyBase                       *a :mir-7
+! G1b.  Gene symbol(s) used in reference                    *i :miR-7
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :miR-7
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0067726
+! G1a.  Gene symbol to use in FlyBase                       *a :mir-184
+! G1b.  Gene symbol(s) used in reference                    *i :miR-184
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :miR-184
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0086369
+! G1a.  Gene symbol to use in FlyBase                       *a :mir-278
+! G1b.  Gene symbol(s) used in reference                    *i :miR-278
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :miR-278
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0067690
+! G1a.  Gene symbol to use in FlyBase                       *a :mir-314
+! G1b.  Gene symbol(s) used in reference                    *i :miR-314
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :miR-314
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0026611
+! G1a.  Gene symbol to use in FlyBase                       *a :AGO1
+! G1b.  Gene symbol(s) used in reference                    *i :Ago1
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :Argonaute
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0087035
+! G1a.  Gene symbol to use in FlyBase                       *a :AGO2
+! G1b.  Gene symbol(s) used in reference                    *i :Ago2
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :Argonaute
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0011706
+! G1a.  Gene symbol to use in FlyBase                       *a :rpr
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :reaper
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0039690
+! G1a.  Gene symbol to use in FlyBase                       *a :CG1969
+! G1b.  Gene symbol(s) used in reference                    *i :CG1969
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0064191
+! G1a.  Gene symbol to use in FlyBase                       *a :ban
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :bantam
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0026570
+! G1a.  Gene symbol to use in FlyBase                       *a :CG5704
+! G1b.  Gene symbol(s) used in reference                    *i :CG5704
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0002930
+! G1a.  Gene symbol to use in FlyBase                       *a :nec
+! G1b.  Gene symbol(s) used in reference                    *i :CG1857
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0037731
+! G1a.  Gene symbol to use in FlyBase                       *a :CG18542
+! G1b.  Gene symbol(s) used in reference                    *i :CG18542
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0051121
+! G1a.  Gene symbol to use in FlyBase                       *a :CG31121
+! G1b.  Gene symbol(s) used in reference                    *i :CG31121
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0031217
+! G1a.  Gene symbol to use in FlyBase                       *a :CG11377
+! G1b.  Gene symbol(s) used in reference                    *i :CG11377
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0015766
+! G1a.  Gene symbol to use in FlyBase                       *a :Msr-110
+! G1b.  Gene symbol(s) used in reference                    *i :Msr-110
+CG10596
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :Msr-110
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0031099
+! G1a.  Gene symbol to use in FlyBase                       *a :CG17065
+! G1b.  Gene symbol(s) used in reference                    *i :CG17065
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0035499
+! G1a.  Gene symbol to use in FlyBase                       *a :Chd64
+! G1b.  Gene symbol(s) used in reference                    *i :Chd64
+CG14996
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :Chd64
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0259174
+! G1a.  Gene symbol to use in FlyBase                       *a :Nedd4
+! G1b.  Gene symbol(s) used in reference                    *i :Nedd4
+CG7555
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :Nedd4
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0040308
+! G1a.  Gene symbol to use in FlyBase                       *a :Jacfrac2
+! G1b.  Gene symbol(s) used in reference                    *i :Jacfrac2
+CG1274
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0010894
+! G1a.  Gene symbol to use in FlyBase                       *a :sinu
+! G1b.  Gene symbol(s) used in reference                    *i :CG10624
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0037116
+! G1a.  Gene symbol to use in FlyBase                       *a :CG7158
+! G1b.  Gene symbol(s) used in reference                    *i :CG7158
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 63:  14 Aug 2009
+!
+! G1h. FlyBase gene ID (FBgn)                               *z :FBgn0036198
+! G1a.  Gene symbol to use in FlyBase                       *a :CG6038
+! G1b.  Gene symbol(s) used in reference                    *i :CG6038
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

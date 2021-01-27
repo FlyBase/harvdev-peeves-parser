@@ -1,0 +1,37 @@
+! C1.  Curator ID	:gds
+! C2.  Date		:160314
+! C3.  Curator notes to self	:
+! C9.  Cambridge curation (gene_group, new_al, merge, split, rename, new_char, pheno, nocur, new_transg) 
+! C4.  Additional curation (P41. wt_exp, pert_exp, neur_exp, gene_model, gene_model_nonmel, phys_int, cis_reg, genom_feat, no_flag, disease, P42. novel_anat, P43. disease)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0214675
+! P2.   Parent multipub abbreviation               *w :Cell Host Microbe
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! CULTURED CELL LINE PROFORMA  Version 5:  Jul 02 2014
+!
+! TC1f. FB ID for cell line (FBtc ID or "new")  :FBtc0000009
+! TC1a. Cell line symbol to use in database  :S1
+! TC1b. Symbol used in paper/source (free text) :DL1
+! TC9.  Comment(s) (free text)       :
+! TC10. Internal note(s) (free text) :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! CULTURED CELL LINE PROFORMA  Version 5:  Jul 02 2014
+!
+! TC1f. FB ID for cell line (FBtc ID or "new")  :FBtc0000001
+! TC1a. Cell line symbol to use in database  :Kc167
+! TC1b. Symbol used in paper/source (free text) :Kc167
+! TC9.  Comment(s) (free text)       :
+! TC10. Internal note(s) (free text) :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! CULTURED CELL LINE PROFORMA  Version 5:  Jul 02 2014
+!
+! TC1f. FB ID for cell line (FBtc ID or "new")  :FBtc0000006
+! TC1a. Cell line symbol to use in database  :S2
+! TC1b. Symbol used in paper/source (free text) :S2
+! TC9.  Comment(s) (free text)       :
+! TC10. Internal note(s) (free text) :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!
+

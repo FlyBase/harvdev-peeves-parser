@@ -1,0 +1,7 @@
+notes on checking for duplicate proformae:
+
+1. gene.pro
+
+- finds duplicate valid and invalid symbols
+- finds duplicates when one or both is in hashed proforma
+- if there is a rename proforma and then another one with the new symbol it finds that as a duplicate

@@ -1,0 +1,204 @@
+! PUBLICATION PROFORMA                   Version 41:  16 Mar 2010
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0199194
+! P2.   Parent multipub (abbreviation)      *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENE PROFORMA                          Version 66:  03 Mar 2010
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Ncra\QF
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :n
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :engineered_foreign_gene ; SO:0000281
+! G2a.  Action - gene name to use in FlyBase                *e :Quinic acid utilization activator
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - replace this gene name                        :
+! G27.  Etymology                                           *u :
+! G31a. Action - obsolete G1a in FlyBase (y)       TAKE CARE :
+! G31b. Action - dissociate G1a from reference (y) TAKE CARE :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G5.   Genetic map position if by recombination mapping   *b :
+! G6.   Genetic map position - error, if reported          *b :
+! G7a.  Genetic map position - gene(s) mapped left of G1a  *b :
+! G7b.  Genetic map position - gene(s) mapped right of G1a *b :
+! G8.   Genetic map position - comments                    *B :
+! G10a. Cytological map position, if by chromosome in situ   *c :
+! G10b. Cytological map position, if details unspecified     *c :
+! G11.  Cytological map position - comments [SoftCV]         *D :
+! G22.  Orthologous gene in reference drosophilid species      *l :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G17t. Abs or insertions that cause recessive PEV for G1a   *n :
+! G17u. Abs or insertions that cause no PEV for G1a          *n :
+! G17v. Abs or insertions that cause dominant PEV for G1a    *n :
+! G26.  Foreign gene/Tag summary information             *u :Foreign sequence; species == Neurospora crassa; gene == 'QF'; UniProtKB/Swiss-Prot:P11638.
+! G32.  Newly assigned annotation ID (CG/CR number) TAKE CARE :
+! G33.  Sequence accession number - seq cur only                :
+! G15.  Internal notes  *W :Although the symbol
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 66:  03 Mar 2010
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Ncra\QS
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :n
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :engineered_foreign_gene ; SO:0000281
+! G2a.  Action - gene name to use in FlyBase                *e :Quinate repressor
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - replace this gene name                        :
+! G27.  Etymology                                           *u :
+! G31a. Action - obsolete G1a in FlyBase (y)       TAKE CARE :
+! G31b. Action - dissociate G1a from reference (y) TAKE CARE :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G5.   Genetic map position if by recombination mapping   *b :
+! G6.   Genetic map position - error, if reported          *b :
+! G7a.  Genetic map position - gene(s) mapped left of G1a  *b :
+! G7b.  Genetic map position - gene(s) mapped right of G1a *b :
+! G8.   Genetic map position - comments                    *B :
+! G10a. Cytological map position, if by chromosome in situ   *c :
+! G10b. Cytological map position, if details unspecified     *c :
+! G11.  Cytological map position - comments [SoftCV]         *D :
+! G22.  Orthologous gene in reference drosophilid species      *l :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G17t. Abs or insertions that cause recessive PEV for G1a   *n :
+! G17u. Abs or insertions that cause no PEV for G1a          *n :
+! G17v. Abs or insertions that cause dominant PEV for G1a    *n :
+! G26.  Foreign gene/Tag summary information             *u :Foreign sequence; species == Neurospora crassa; gene == 'QS'; UniProtKB/Swiss-Prot:P11637.
+! G32.  Newly assigned annotation ID (CG/CR number) TAKE CARE :
+! G33.  Sequence accession number - seq cur only                :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 66:  03 Mar 2010
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Ncra\QUAS
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :n
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :engineered_foreign_region ; SO:0000805
+regulatory_region ; SO:0005836
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - replace this gene name                        :
+! G27.  Etymology                                           *u :
+! G31a. Action - obsolete G1a in FlyBase (y)       TAKE CARE :
+! G31b. Action - dissociate G1a from reference (y) TAKE CARE :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G5.   Genetic map position if by recombination mapping   *b :
+! G6.   Genetic map position - error, if reported          *b :
+! G7a.  Genetic map position - gene(s) mapped left of G1a  *b :
+! G7b.  Genetic map position - gene(s) mapped right of G1a *b :
+! G8.   Genetic map position - comments                    *B :
+! G10a. Cytological map position, if by chromosome in situ   *c :
+! G10b. Cytological map position, if details unspecified     *c :
+! G11.  Cytological map position - comments [SoftCV]         *D :
+! G22.  Orthologous gene in reference drosophilid species      *l :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G17t. Abs or insertions that cause recessive PEV for G1a   *n :
+! G17u. Abs or insertions that cause no PEV for G1a          *n :
+! G17v. Abs or insertions that cause dominant PEV for G1a    *n :
+! G26.  Foreign gene/Tag summary information             *u :Foreign sequence; species == Neurospora crassa; sequence == 'QUAS, QF protein binding sequence'.
+! G32.  Newly assigned annotation ID (CG/CR number) TAKE CARE :
+! G33.  Sequence accession number - seq cur only                :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 66:  03 Mar 2010
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :T:Uuuu\MyrPalm2
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :n
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :engineered_foreign_region ; SO:0000805
+engineered_tag ; SO:0000807
+! G2a.  Action - gene name to use in FlyBase                *e :Myristoylation and Palmitoylation sequence tag 2
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - replace this gene name                        :
+! G27.  Etymology                                           *u :
+! G31a. Action - obsolete G1a in FlyBase (y)       TAKE CARE :
+! G31b. Action - dissociate G1a from reference (y) TAKE CARE :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G5.   Genetic map position if by recombination mapping   *b :
+! G6.   Genetic map position - error, if reported          *b :
+! G7a.  Genetic map position - gene(s) mapped left of G1a  *b :
+! G7b.  Genetic map position - gene(s) mapped right of G1a *b :
+! G8.   Genetic map position - comments                    *B :
+! G10a. Cytological map position, if by chromosome in situ   *c :
+! G10b. Cytological map position, if details unspecified     *c :
+! G11.  Cytological map position - comments [SoftCV]         *D :
+! G22.  Orthologous gene in reference drosophilid species      *l :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G17t. Abs or insertions that cause recessive PEV for G1a   *n :
+! G17u. Abs or insertions that cause no PEV for G1a          *n :
+! G17v. Abs or insertions that cause dominant PEV for G1a    *n :
+! G26.  Foreign gene/Tag summary information             *u :Foreign sequence; species == unknown; function tag == 'MGCCFSKT, myristoylation and palmitoylation sequence (first 8 amino acid residues of the MARCKS protein)'.
+! G32.  Newly assigned annotation ID (CG/CR number) TAKE CARE :
+! G33.  Sequence accession number - seq cur only                :
+! G15.  Internal notes  *W :Information for this tag came from PubMed:17868096. gm100520.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

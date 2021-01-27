@@ -1,0 +1,50 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0185555
+! P45.  Publication is NOT about Drosophila? (y)      *q :
+! P32.  Action - make this FBrf a secondary ID of P22 (FBrf)  *N :
+! P39.  Action - obsolete P22 in FlyBase (y)           TAKE CARE :
+! P1.   Type of publication [CV]  *T :
+! P2.   Parent multipub abbreviation               *w :Acta Univ. Ouluensis A. Sci. Rer. Nat.
+! P12.  Author(s)                           *a-*b :
+! P10.  Year (YYYY), or date (YYYY.M.D) if PC  *t :
+! P16.  Title                                  *u :
+! P3.   Volume number                          *y :
+! P4.   Issue number                           *Y :
+! P11a. Page range or article number               *z :
+! P11d. DOI                                           :
+! P11b. URL                                        *R :
+! P11c. Sequence accession number                     :
+! P13.  Language of publication [CV]                          *L :English
+! P14.  Additional language(s) of abstract [CV]               *A :
+! P26.  PubMed ID                *M :
+! P28.  PubMed Central ID  *c :
+!c P29.  ISBN, if P1 = book       *I :9789514269523
+9789514269516
+! P23.  Text of personal communication *F :
+! P18.  Miscellaneous comments                                  *G :
+! P38.  Associated file(s), archived at ftp site [SoftCV]    *K :
+! P30.  Also published as (FBrf)            *C :
+! P31.  Related publication(s) (FBrf)       *E :
+! P34.  Abstract text    *X :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :testing check_changes_with_chado with multiple values
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

@@ -377,29 +377,32 @@ FIELD:
 # $nat_te_end is only populated if the symbol in MS1a 'looks' like an FBtp symbol (either transposable-element based or TI-style)
 					if ($nat_te_end) {
 
-						unless ($MS16_value =~ m/FBtp/) {
-							report ($file, "%s: '%s' is not a valid value when the construct in MS1a is of the type FBtp:\n!%s\n!%s\n!%s", 'MS16', $MS16_list[$i], $proforma_fields{'MS1f'}, $proforma_fields{'MS1a'}, $proforma_fields{'MS16'});
+						if ($nat_te_end eq 'TI') {
 
+							unless ($MS16_value eq 'TI') {
+								report ($file, "%s: '%s' is not a valid value when the construct in MS1a is a TI-style construct:\n!%s\n!%s\n!%s", 'MS16', $MS16_list[$i],  $proforma_fields{'MS1f'}, $proforma_fields{'MS1a'}, $proforma_fields{'MS16'});
+							}
 						} else {
 
-							if ($nat_te_end eq 'TI') {
-								if ($MS16_value eq 'FBtp') {
-									report ($file, "%s: '%s' is not a valid value when the construct in MS1a is a TI-style construct:\n!%s\n!%s\n!%s", 'MS16', $MS16_list[$i],  $proforma_fields{'MS1f'}, $proforma_fields{'MS1a'}, $proforma_fields{'MS16'});
-								}
+							unless ($MS16_value eq 'FBtp') {
+								report ($file, "%s: '%s' is not a valid value when the construct in MS1a is a regular FBtp construct:\n!%s\n!%s\n!%s", 'MS16', $MS16_list[$i], $proforma_fields{'MS1f'}, $proforma_fields{'MS1a'}, $proforma_fields{'MS16'});
+
 							}
 						}
+
+
 
 # symbol in MS1a does not look like an FBtp symbol
 					} else {
 
-						if ($MS16_value  eq 'FBtp') {
+						if ($MS16_value  eq 'FBtp' || $MS16_value eq 'TI') {
 							report ($file, "%s: '%s' is not a valid value when the construct in MS1a is NOT of the type FBtp:\n!%s\n!%s\n!%s", 'MS16', $MS16_list[$i],  $proforma_fields{'MS1f'}, $proforma_fields{'MS1a'}, $proforma_fields{'MS16'});
 						}
 					}
 
 # add test for constraint on filling in MS19e
 					if (defined $MS19e_list[$i] && $MS19e_list[$i] ne '') {
-						unless ($MS16_value eq 'engineered_construct') {
+						unless ($MS16_value eq 'engineered_plasmid') {
 							report ($file, "%s can ONLY be filled in for a FBmc type of construct:\n!%s\n!%s\n!%s\n!%s",'MS19e', $proforma_fields{'MS1f'}, $proforma_fields{'MS1a'}, $proforma_fields{'MS16'}, $proforma_fields{'MS19e'});
 						}
 					}

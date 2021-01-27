@@ -1,0 +1,61 @@
+! C1.  Curator ID  :gds
+! C2.  Date  :160510
+! C3.  Curator notes to self  :Test project record for Peeves checking.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+! P22.  FlyBase reference ID (FBrf) or new  *U :FBrf0217348
+! P2.   Parent multipub abbreviation               *w :Nat. Genet.
+! P19.  Internal notes                   *H :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! DATASET/COLLECTION PROFORMA   Version 4.4   09 Feb 2016
+!
+! LC1f. Database ID for dataset  :new
+! LC1a. Symbol                   :Fake_Furlong_BiTS_ChIP-Seq
+! LC1b. Symbol used in paper/source  :BiTS-ChIP
+! LC1d. Nickname [for labels]        :BiTS-ChIP-Seq
+! LC6g. Dataset title  :ChIP-Seq profiling of histone modifications in purified embryonic mesodermal cells.
+! LC6a. Description [free text]  :
+! LC2a. Type of dataset entity [CV]  :assay ; FBcv:0003025
+! LC2b. Type of dataset data [CV]    :
+! LC11m. Experimental protocol - dataset [CV]  :dsRNA depletion ; FBcv:0003189
+ssRNA depletion ; FBcv:0003175
+clone-based finishing ; FBcv:0003230
+! LC14h. Reference FlyBase gene model annotation set [free text]  :
+! LC10. Internal notes      :??dsRNA depletion ; FBcv:0003189 is OK
+ssRNA depletion ; FBcv:0003175 has mis-match of id - is is outside of expected namespace
+clone-based finishing ; FBcv:0003230 is not from correct namespace
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! DATASET/COLLECTION PROFORMA   Version 4.4   09 Feb 2016
+!
+! LC1f. Database ID for dataset  :new
+! LC1a. Symbol                   :new_dataset
+! LC1b. Symbol used in paper/source  :
+! LC1d. Nickname [for labels]        :
+! LC6g. Dataset title  :ewfmogreogrjbfgbfk
+! LC6a. Description [free text]  :
+! LC2a. Type of dataset entity [CV]  :project ; FBcv:0003023
+! LC11m. Experimental protocol - dataset [CV]  :clone-based finishing ; FBcv:0003230
+clone-based finishing ; FBcv:0003230
+loss of function allele ; FBcv:0000287
+biotic stimulus study ; FBcv:859675498
+! LC2b. Type of dataset data [CV]    :
+! LC14h. Reference FlyBase gene model annotation set [free text]  :
+! LC10. Internal notes      :biotic stimulus study ; FBcv:859675498 is correct namespace, but wrong id
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! DATASET/COLLECTION PROFORMA   Version 4.4   09 Feb 2016
+!
+! LC1f. Database ID for dataset  :new
+! LC1a. Symbol                   :new_dataset_correct
+! LC1b. Symbol used in paper/source  :
+! LC1d. Nickname [for labels]        :
+! LC6g. Dataset title  :ewfmogreogrjbfgbfk
+! LC6a. Description [free text]  :
+! LC2a. Type of dataset entity [CV]  :project ; FBcv:0003023
+! LC11m. Experimental protocol - dataset [CV]  :clone-based finishing ; FBcv:0003230
+  cell cycle study ; FBcv:0003129  
+! LC2b. Type of dataset data [CV]    :
+! LC14h. Reference FlyBase gene model annotation set [free text]  :
+! LC10. Internal notes      :this one is all fine and dandy, no errors (except trailing whitespace)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!

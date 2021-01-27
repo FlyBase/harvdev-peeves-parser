@@ -1,0 +1,118 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0105495
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :gm: (adding a few tools so that can test new allele and moseg fields in later phases). This has an example where I have used the symbol of tools made in this proforma in the fields of other proformae in the same record. e.g. I have made the FRT tool in this record and have then used it in the TO7a of the FLP proforma, and also in the TO7b of the mFRT71 proforma. Hopefully this record will load fine, as have requested that the relevant 'TO7' fields allow 'already in chado, or generated in the curation record', but if it turns out its only possible to use symbols 'already in chado' in the TO7 fields (see NOTE 2 in tool_proforma_spec.v3.txt), then this one will bounce.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! EXPERIMENTAL TOOL PROFORMA                       Version 4:  31 Oct 2017
+!
+! TO1f. Database ID for experimental tool (FBto)       :new
+! TO1a. Experimental tool symbol to use in database    :FRT
+! TO1b.  Experimental tool symbol synonym(s)           :
+! TO10. Species of tool (organism.abbreviation)        :Ssss
+!
+! TO1c. Action - rename this experimental tool symbol  :
+! TO1g. Action - merge these experimental tools (FBto) :
+! TO1h. Action - obsolete TO1a in FlyBase (y/blank)       :
+! TO1i. Action - dissociate TO1a from reference (y/blank) :
+!
+! TO2a.  Action - experimental tool name to use in FlyBase       :FLP recombination target site
+! TO2b.  Experimental tool name synonym(s)                       :
+! TO2c.  Action - rename this experimental tool name             :
+!
+! TO4.   Experimental tool uses [CV]                             :site-specific recombination target region
+! TO5.   Description of experimental tool [free text]            :@FRT@ is a recombination target site recognised by the @FLP@ recombinase.
+!
+! TO6a. Accession number for tool (dupl section for multiple)    :
+! TO6b. FlyBase database symbol (DB1a) for accession in TO6a     :
+! TO6c. Title for TO6a (if desired) [free text]                  :
+! TO6d. Action - dissociate accession in TO6a/TO6b from tool in TO1a? (blank/y) :
+!
+! TO7a. Compatible tools(s) (symbol) :FLP
+! TO7b. Other related tools(s) (symbol) :mFRT71
+! TO7c. Gene of origin (symbol)   :
+!
+! TO8.  Comments [free text] :
+! TO9.  Internal notes       :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! EXPERIMENTAL TOOL PROFORMA                       Version 4:  31 Oct 2017
+!
+! TO1f. Database ID for experimental tool (FBto)       :new
+! TO1a. Experimental tool symbol to use in database    :FLP
+! TO1b.  Experimental tool symbol synonym(s)           :
+! TO10. Species of tool (organism.abbreviation)        :Ssss
+!
+! TO1c. Action - rename this experimental tool symbol  :
+! TO1g. Action - merge these experimental tools (FBto) :
+! TO1h. Action - obsolete TO1a in FlyBase (y/blank)       :
+! TO1i. Action - dissociate TO1a from reference (y/blank) :
+!
+! TO2a.  Action - experimental tool name to use in FlyBase       :FLIP recombinase
+! TO2b.  Experimental tool name synonym(s)                       :
+! TO2c.  Action - rename this experimental tool name             :
+!
+! TO4.   Experimental tool uses [CV]                             :site-specific recombinase
+! TO5.   Description of experimental tool [free text]            :
+!
+! TO6a. Accession number for tool (dupl section for multiple)    :
+! TO6b. FlyBase database symbol (DB1a) for accession in TO6a     :
+! TO6c. Title for TO6a (if desired) [free text]                  :
+! TO6d. Action - dissociate accession in TO6a/TO6b from tool in TO1a? (blank/y) :
+!
+! TO7a. Compatible tools(s) (symbol) :FRT
+! TO7b. Other related tools(s) (symbol) :
+! TO7c. Gene of origin (symbol)   :
+!
+! TO8.  Comments [free text] :
+! TO9.  Internal notes       :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! EXPERIMENTAL TOOL PROFORMA                       Version 4:  31 Oct 2017
+!
+! TO1f. Database ID for experimental tool (FBto)       :new
+! TO1a. Experimental tool symbol to use in database    :mFRT71
+! TO1b.  Experimental tool symbol synonym(s)           :
+! TO10. Species of tool (organism.abbreviation)        :Ssss
+!
+! TO1c. Action - rename this experimental tool symbol  :
+! TO1g. Action - merge these experimental tools (FBto) :
+! TO1h. Action - obsolete TO1a in FlyBase (y/blank)       :
+! TO1i. Action - dissociate TO1a from reference (y/blank) :
+!
+! TO2a.  Action - experimental tool name to use in FlyBase       :
+! TO2b.  Experimental tool name synonym(s)                       :
+! TO2c.  Action - rename this experimental tool name             :
+!
+! TO4.   Experimental tool uses [CV]                             :site-specific recombination target region
+! TO5.   Description of experimental tool [free text]            :@mFRT71@ is a recombination target site, derived from @FRT@, that is recognised by the mFlp5 recombinase.
+!
+! TO6a. Accession number for tool (dupl section for multiple)    :
+! TO6b. FlyBase database symbol (DB1a) for accession in TO6a     :
+! TO6c. Title for TO6a (if desired) [free text]                  :
+! TO6d. Action - dissociate accession in TO6a/TO6b from tool in TO1a? (blank/y) :
+!
+! TO7a. Compatible tools(s) (symbol) :
+! TO7b. Other related tools(s) (symbol) :FRT
+! TO7c. Gene of origin (symbol)   :
+!
+! TO8.  Comments [free text] :
+! TO9.  Internal notes       :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

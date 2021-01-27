@@ -278,7 +278,10 @@ FIELD:
 		double_query ($file, $2, $3) or validate_G24g ($2, $1, $3);
 
 		if (defined $3 && $3 ne '') {
-			report ($file, "%s: **WARNING**: GO fields should no longer be used as moving to Protein2GO\n%s", $2, $proforma_fields{$2});
+			unless (valid_symbol ($file, 'curator_type') eq 'GOCUR') {
+				report ($file, "%s: **WARNING**: GO fields should no longer be used as moving to Protein2GO\n!%s", $2, $proforma_fields{$2});
+
+			}
 		}
 	}
 	elsif ($field =~ /^(.*?) (G24a)\..*?:(.*)/s)
@@ -289,7 +292,10 @@ FIELD:
 	    double_query ($file, $2, $3) or validate_G24abc ($2, $1, $3);
 
 		if (defined $3 && $3 ne '') {
-			report ($file, "%s: **WARNING**: GO fields should no longer be used as moving to Protein2GO\n!%s", $2, $proforma_fields{$2});
+			unless (valid_symbol ($file, 'curator_type') eq 'GOCUR') {
+				report ($file, "%s: **WARNING**: GO fields should no longer be used as moving to Protein2GO\n!%s", $2, $proforma_fields{$2});
+
+			}
 		}
 
 	}
@@ -301,7 +307,10 @@ FIELD:
 	    double_query ($file, $2, $3) or validate_G24abc ($2, $1, $3);
 
 		if (defined $3 && $3 ne '') {
-			report ($file, "%s: **WARNING**: GO fields should no longer be used as moving to Protein2GO\n!%s", $2, $proforma_fields{$2});
+			unless (valid_symbol ($file, 'curator_type') eq 'GOCUR') {
+				report ($file, "%s: **WARNING**: GO fields should no longer be used as moving to Protein2GO\n!%s", $2, $proforma_fields{$2});
+
+			}
 		}
 
 	}
@@ -313,7 +322,10 @@ FIELD:
 	    double_query ($file, $2, $3) or validate_G24abc ($2, $1, $3);
 
 		if (defined $3 && $3 ne '') {
-			report ($file, "%s: **WARNING**: GO fields should no longer be used as moving to Protein2GO\n!%s", $2, $proforma_fields{$2});
+			unless (valid_symbol ($file, 'curator_type') eq 'GOCUR') {
+				report ($file, "%s: **WARNING**: GO fields should no longer be used as moving to Protein2GO\n!%s", $2, $proforma_fields{$2});
+
+			}
 		}
 
 	}
@@ -323,7 +335,10 @@ FIELD:
 	    process_field_data ($file, $g_num_syms, $1, '1', $2, $3, \%proforma_fields, '0');
 
 		if (defined $3 && $3 ne '') {
-			report ($file, "%s: GO fields should no longer be used as moving to Protein2GO\n!%s", $2, $proforma_fields{$2});
+			unless (valid_symbol ($file, 'curator_type') eq 'GOCUR') {
+				report ($file, "%s: **WARNING**: GO fields should no longer be used as moving to Protein2GO\n!%s", $2, $proforma_fields{$2});
+
+			}
 		}
 
 	}
@@ -1107,6 +1122,15 @@ sub validate_G24abc {
 
     $seen_G24 = 1;				# Seen a G24 field and it has data.
 
+
+	my %root_term_mapping = (
+
+		'G24a' => 'is_active_in',
+		'G24b' => 'enables',
+		'G24c' => 'involved_in',
+
+	);
+
     foreach my $data (dehash ($file, $code, $g_num_syms, $data_list))
     {
 	next if $data eq '';
@@ -1140,7 +1164,7 @@ sub validate_G24abc {
 		report ($file, "%s: ' ; ' and ' | ' separators in wrong order in '%s'", $code, $datum);
 		next;
 	    }
-	    my ($qualified_term, $id, $evidence) = ($datum =~ /(.*?) ; (.*?) \| (.*)/);
+	    my (undef, $qualified_term, $id, $evidence) = ($datum =~ /(NOT )?(.*?) ; (.*?) \| (.*)/);
 
 # Check for a qualifier and remove it from the qualified_term if a valid one is found to allow subsequent checking of term
 
@@ -1163,6 +1187,32 @@ sub validate_G24abc {
 # Now the evidence data ...
 
 	    do_go_evidence ($code, $datum, $id, $evidence);
+
+# check format of root term annotations - exploit the fact that root terms have the same name as their namespace
+
+		if ($term eq $go_namespace{$code}) {
+
+# check evidence is ND
+			unless ($evidence eq 'ND') {
+
+				report ($file, "%s: '%s' in '%s' is not valid (only the 'ND' evidence code is allowed with the root term).",$code,$evidence, $datum);
+
+			}
+
+
+			unless ($qualifier eq $root_term_mapping{$code}) {
+
+				report ($file, "%s: '%s' in '%s' is not valid (only the '%s' qualifier is allowed with the root term).",$code,$qualifier, $datum, $root_term_mapping{$code});
+
+
+			}
+
+			if ($datum =~ /^NOT/) {
+				report ($file, "%s: the root term '%s' can not be used with 'NOT' in '%s'.",$code,$term, $datum);
+
+
+			}
+		}
 	}
     }
 }

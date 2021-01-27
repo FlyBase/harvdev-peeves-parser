@@ -1,0 +1,55 @@
+! C1.  Curator ID	:gds
+! C2.  Date		:151016
+! C3.  Curator notes to self	:
+! C9.  Cambridge curation (gene_group, new_al, merge, split, rename, new_char, pheno, nocur, new_transg) 
+! C4.  Additional curation (P41. wt_exp, pert_exp, neur_exp, gene_model, gene_model_nonmel, phys_int, cis_reg, genom_feat, no_flag, disease, P42. novel_anat, P43. disease)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0105944
+! P2.   Parent multipub abbreviation               *w :Oncogene
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA             Version 2.6  15 Nov 2011
+!
+! IN1f. Database ID for interaction  :FBrf0105944-1.Y2H
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :y
+! IN1c. Action - rename this event   :
+! IN2a. Interaction description (protein-protein/RNA-protein)     :protein-protein
+! IN2b. Interaction type (Termlink MI CV) :physical association
+! IN1c. Action - rename this event   :
+! IN3.  Interaction assay (Termlink MI CV)    :
+! IN5a. Cell line used               :
+! IN8a. Public comments   :
+! IN8b. Internal comments :This is an obsolete symbol, should coplain
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA             Version 2.6  15 Nov 2011
+!
+! IN1f. Database ID for interaction  :FBrf0105944-4.Y2H
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :y
+! IN1c. Action - rename this event   :
+! IN2a. Interaction description (protein-protein/RNA-protein)     :protein-protein
+! IN2b. Interaction type (Termlink MI CV) :physical association
+! IN1c. Action - rename this event   :
+! IN3.  Interaction assay (Termlink MI CV)    :
+! IN5a. Cell line used               :
+! IN8a. Public comments   :
+! IN8b. Internal comments :This is ok, no error
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA             Version 2.6  15 Nov 2011
+!
+! IN1f. Database ID for interaction  :FBrf0105944-5.coIP.WB
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :n
+! IN1c. Action - rename this event   :
+! IN2a. Interaction description (protein-protein/RNA-protein)     :protein-protein
+! IN2b. Interaction type (Termlink MI CV) :physical association
+! IN1c. Action - rename this event   :
+! IN3.  Interaction assay (Termlink MI CV)    :
+! IN5a. Cell line used               :
+! IN8a. Public comments   :
+! IN8b. Internal comments :This is an existing FBid, so should complain
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!
+

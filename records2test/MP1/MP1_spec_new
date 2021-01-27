@@ -1,0 +1,69 @@
+## `! MP1.  FlyBase multipub ID                       *U :`
+[**`Curation Manual`**][CurationManual]
+
+### Multiple values allowed:
+
+No.
+
+### !c Applicable:
+
+No.
+
+### Inclusion of field essential for proforma checks:
+
+Yes.
+
+### Field mandatorially has value:
+
+Yes.
+
+### Allowed values:
+
+* string 'new', or
+* `multipub_id` consists of an integer greater than zero. 
+
+### Checks
+
+For allowed values.  
+If a number then it matches the `multipub_id` of a valid multipub already in Chado.
+
+If **`MP1`** contains a value that doesn't match either of the above, Peeves should issue
+an error message of the type: 
+`MP1: '<invalid_text_entered>' is not a valid entry`
+
+If **'MP1`** is left blank, then Peeves should issue an error message of the type: 
+`MP1: Must have a value.`
+
+### Related fields:
+
+[**`MP17`**][MP17]    
+[**`MP18`**][MP18]    
+[**`MP19`**][MP19]    
+[**`MP2a`**][MP2a]  
+[**`MP2b`**][MP2b]  
+[**`MP15`**][MP15]    
+[**`MP6`**][MP6]    
+[**`MP11`**][MP11]    
+
+
+### Comments:
+
+The `multipub_id` consists of an integer greater than zero.  
+  
+When the `FBmp` uniquename type is introduced into Chado (see JIRA DB-32), the value
+required in **`MP1`** will change appropriately.  
+  
+### Updated:  
+  
+sm100316.  
+hf100421
+
+[CurationManual]: ../../../../../documents/curation/curation_docs/curation_manual_2.html#mp1-flybase-multipub-id-u-
+[MP17]: MP17.html
+[MP18]: MP18.html
+[MP19]: MP19.html
+[MP2a]: MP2a.html
+[MP2b]: MP2b.html
+[MP15]: MP15.html
+[MP6]: MP6.html
+[MP11]: MP11.html

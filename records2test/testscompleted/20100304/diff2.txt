@@ -1,0 +1,483 @@
+2,3c2,3
+< Using Peeves in /Peeves/production
+< /Peeves/production/Peeves
+---
+> Using Peeves in /Peeves/test
+> /Peeves/test/Peeves
+7,8d6
+< gm25195.edit: No data in either G1b or G2b for 'nemy'
+< 
+19,21c17
+< gm25191.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0140267?
+< 
+< gm25191.edit: No data in either G1b or G2b for 'nemy'
+---
+> gm25191.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0140267?
+28,32c24
+< gm25190.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0159903?
+< 
+< gm25190.edit: No data in either G1b or G2b for 'nemy'
+< 
+< gm25190.edit: No data in either G1b or G2b for 'CG42708'
+---
+> gm25190.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0159903?
+39,41c31
+< gm25189.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0141415?
+< 
+< gm25189.edit: No data in either G1b or G2b for 'nemy'
+---
+> gm25189.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0141415?
+48,50c38
+< gm25188.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0187645?
+< 
+< gm25188.edit: No data in either G1b or G2b for 'nemy'
+---
+> gm25188.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0187645?
+55,57c43
+< gm25187.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0208510?
+< 
+< gm25187.edit: No data in either G1b or G2b for 'nemy'
+---
+> gm25187.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0208510?
+66,68c52
+< gm25186.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0139971?
+< 
+< gm25186.edit: No data in either G1b or G2b for 'nemy'
+---
+> gm25186.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0139971?
+75,77c59
+< gm25185.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0204785?
+< 
+< gm25185.edit: No data in either G1b or G2b for 'nemy'
+---
+> gm25185.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0204785?
+84,86c66
+< gm25184.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0166452?
+< 
+< gm25184.edit: No data in either G1b or G2b for 'nemy'
+---
+> gm25184.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0166452?
+93,95c73
+< gm25183.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0208557?
+< 
+< gm25183.edit: No data in either G1b or G2b for 'nemy'
+---
+> gm25183.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0208557?
+102,106c80
+< gm25182.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0104946?
+< 
+< gm25182.edit: No data in either G1b or G2b for 'nemy'
+< 
+< gm25182.edit: No data in either G1b or G2b for 'CG42708'
+---
+> gm25182.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0104946?
+128,129d101
+< gm25182.edit: No data in either G1b or G2b for 'CG8776'
+< 
+143,147c115
+< gm25181.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0105495?
+< 
+< gm25181.edit: No data in either G1b or G2b for 'nemy'
+< 
+< gm25181.edit: No data in either G1b or G2b for 'CG42708'
+---
+> gm25181.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0105495?
+154,156c122
+< gm25180.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0174215?
+< 
+< gm25180.edit: No data in either G1b or G2b for 'nemy'
+---
+> gm25180.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0174215?
+163,165c129
+< gm25179.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0195262?
+< 
+< gm25179.edit: No data in either G1b or G2b for 'nemy'
+---
+> gm25179.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0195262?
+172,174c136
+< gm25178.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0206129?
+< 
+< gm25178.edit: No data in either G1b or G2b for 'nemy'
+---
+> gm25178.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0206129?
+181,183c143
+< gm25177.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0141561?
+< 
+< gm25177.edit: No data in either G1b or G2b for 'nemy'
+---
+> gm25177.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0141561?
+190,192c150
+< gm25176.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0125078?
+< 
+< gm25176.edit: No data in either G1b or G2b for 'nemy'
+---
+> gm25176.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0125078?
+199,201c157
+< gm25175.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0202345?
+< 
+< gm25175.edit: No data in either G1b or G2b for 'nemy'
+---
+> gm25175.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0202345?
+206,207d161
+< gm25174.edit: No data in either G1b or G2b for 'Dpse\GA21309'
+< 
+213,217c167
+< gm25173.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0206127?
+< 
+< gm25173.edit: No data in either G1b or G2b for 'nemy'
+< 
+< gm25173.edit: No data in either G1b or G2b for 'CG42708'
+---
+> gm25173.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0206127?
+224,228c174
+< gm25172.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0141245?
+< 
+< gm25172.edit: No data in either G1b or G2b for 'nemy'
+< 
+< gm25172.edit: No data in either G1b or G2b for 'CG42708'
+---
+> gm25172.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0141245?
+235,239c181
+< gm25171.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0126668?
+< 
+< gm25171.edit: No data in either G1b or G2b for 'nemy'
+< 
+< gm25171.edit: No data in either G1b or G2b for 'CG42708'
+---
+> gm25171.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0126668?
+246,250c188
+< gm25170.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0202955?
+< 
+< gm25170.edit: No data in either G1b or G2b for 'nemy'
+< 
+< gm25170.edit: No data in either G1b or G2b for 'CG42708'
+---
+> gm25170.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0202955?
+257,261c195
+< gm25169.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0126705?
+< 
+< gm25169.edit: No data in either G1b or G2b for 'nemy'
+< 
+< gm25169.edit: No data in either G1b or G2b for 'CG42708'
+---
+> gm25169.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0126705?
+268,272c202
+< gm25168.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0202579?
+< 
+< gm25168.edit: No data in either G1b or G2b for 'nemy'
+< 
+< gm25168.edit: No data in either G1b or G2b for 'CG42708'
+---
+> gm25168.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0202579?
+279,283c209
+< gm25167.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0200327?
+< 
+< gm25167.edit: No data in either G1b or G2b for 'nemy'
+< 
+< gm25167.edit: No data in either G1b or G2b for 'CG42708'
+---
+> gm25167.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0200327?
+290,294c216
+< gm25166.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0195410?
+< 
+< gm25166.edit: No data in either G1b or G2b for 'nemy'
+< 
+< gm25166.edit: No data in either G1b or G2b for 'CG42708'
+---
+> gm25166.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0195410?
+301,305c223
+< gm25165.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0200402?
+< 
+< gm25165.edit: No data in either G1b or G2b for 'nemy'
+< 
+< gm25165.edit: No data in either G1b or G2b for 'CG42708'
+---
+> gm25165.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'nemy' from FBrf0200402?
+312c230
+< gm25160.edit: G31b: Do you *really* want to dissociate 'l(1)19Ec' from FBrf0208510?
+---
+> gm25160.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'l(1)19Ec' from FBrf0208510?
+316,317d233
+< gm25160.edit: No data in either G1b or G2b for 'l(1)19Ec'
+< 
+328,329d243
+< gm25158.edit: No data in either G1b or G2b for 'l(1)19Ec'
+< 
+335,338d248
+< gm25157.edit: No data in either G1b or G2b for 'l(1)19Ec'
+< 
+< gm25157.edit: No data in either G1b or G2b for 'Dpse\GA10854'
+< 
+344c254
+< gm25156.edit: G31b: Do you *really* want to dissociate 'l(1)19Ec' from FBrf0206127?
+---
+> gm25156.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'l(1)19Ec' from FBrf0206127?
+348,351d257
+< gm25156.edit: No data in either G1b or G2b for 'l(1)19Ec'
+< 
+< gm25156.edit: No data in either G1b or G2b for 'CG42707'
+< 
+357c263
+< gm25155.edit: G31b: Do you *really* want to dissociate 'l(1)19Ec' from FBrf0202579?
+---
+> gm25155.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'l(1)19Ec' from FBrf0202579?
+361,364d266
+< gm25155.edit: No data in either G1b or G2b for 'l(1)19Ec'
+< 
+< gm25155.edit: No data in either G1b or G2b for 'CG42707'
+< 
+370c272
+< gm25154.edit: G31b: Do you *really* want to dissociate 'l(1)19Ec' from FBrf0200327?
+---
+> gm25154.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'l(1)19Ec' from FBrf0200327?
+374,377d275
+< gm25154.edit: No data in either G1b or G2b for 'l(1)19Ec'
+< 
+< gm25154.edit: No data in either G1b or G2b for 'CG42707'
+< 
+383c281
+< gm25153.edit: G31b: Do you *really* want to dissociate 'l(1)19Ec' from FBrf0195410?
+---
+> gm25153.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'l(1)19Ec' from FBrf0195410?
+387,390d284
+< gm25153.edit: No data in either G1b or G2b for 'l(1)19Ec'
+< 
+< gm25153.edit: No data in either G1b or G2b for 'CG42707'
+< 
+423,424d316
+< gm25149.edit: No data in either G1b or G2b for 'CG17667'
+< 
+452,453d343
+< gm25148.edit: No data in either G1b or G2b for 'dap'
+< 
+459c349
+< gm25147.edit: G31b: Do you *really* want to dissociate 'Pegarn' from FBrf0208017?
+---
+> gm25147.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'Pegarn' from FBrf0208017?
+463,464d352
+< gm25147.edit: No data in either G1b or G2b for 'Pegarn'
+< 
+492c380
+< gm25145: No data in either G1b or G2b for 'w'
+---
+> gm25145: No data in (one of) either G1b or G2b for 'w'
+494c382
+< gm25145: No data in either G1b or G2b for 'Scer\GAL4'
+---
+> gm25145: No data in (one of) either G1b or G2b for 'Scer\GAL4'
+496c384
+< gm25145: No data in either G1b or G2b for 'Avic\GFP'
+---
+> gm25145: No data in (one of) either G1b or G2b for 'Avic\GFP'
+531c419
+< gm25143: No data in either G1b or G2b for 'Scer\GAL4'
+---
+> gm25143: No data in (one of) either G1b or G2b for 'Scer\GAL4'
+533c421
+< gm25143: No data in either G1b or G2b for 'Avic\GFP'
+---
+> gm25143: No data in (one of) either G1b or G2b for 'Avic\GFP'
+535c423
+< gm25143: No data in either G1b or G2b for 'Ggal\LYZ'
+---
+> gm25143: No data in (one of) either G1b or G2b for 'Ggal\LYZ'
+612c500
+< gm25142: No data in either G1b or G2b for 'w'
+---
+> gm25142: No data in (one of) either G1b or G2b for 'w'
+664c552
+< gm25136: No data in either G1b or G2b for 'Scer\GAL4'
+---
+> gm25136: No data in (one of) either G1b or G2b for 'Scer\GAL4'
+666c554
+< gm25136: No data in either G1b or G2b for 'Hsap\H2BFQ'
+---
+> gm25136: No data in (one of) either G1b or G2b for 'Hsap\H2BFQ'
+670c558
+< gm25136: No data in either G1b or G2b for 'w'
+---
+> gm25136: No data in (one of) either G1b or G2b for 'w'
+672c560
+< gm25136: No data in either G1b or G2b for 'BacA\p35'
+---
+> gm25136: No data in (one of) either G1b or G2b for 'BacA\p35'
+679,684d566
+< gm25134.edit: No data in either G1b or G2b for 'Scer\GAL4'
+< 
+< gm25134.edit: No data in either G1b or G2b for 'Ilp6'
+< 
+< gm25134.edit: No data in either G1b or G2b for 'InR'
+< 
+702c584
+< gm25133: No data in either G1b or G2b for 'w'
+---
+> gm25133: No data in (one of) either G1b or G2b for 'w'
+718c600
+< gm25133: No data in either G1b or G2b for 'Scer\GAL4'
+---
+> gm25133: No data in (one of) either G1b or G2b for 'Scer\GAL4'
+731,732d612
+< gm25132.edit: No data in either G1b or G2b for 'Appl'
+< 
+752c632
+< gm25130: No data in either G1b or G2b for 'Scer\GAL4'
+---
+> gm25130: No data in (one of) either G1b or G2b for 'Scer\GAL4'
+760c640
+< gm25130: No data in either G1b or G2b for 'Ecol\lacZ'
+---
+> gm25130: No data in (one of) either G1b or G2b for 'Ecol\lacZ'
+773,774d652
+< gm25129.edit: No data in either G1b or G2b for 'nej'
+< 
+784,785d661
+< gm25127.edit: No data in either G1b or G2b for 'Npc1b'
+< 
+882,883d757
+< gm25127.edit: No data in either G1b or G2b for 'CG42707'
+< 
+912c786
+< gm24943: No data in either G1b or G2b for 'Dcr-1'
+---
+> gm24943: No data in (one of) either G1b or G2b for 'Dcr-1'
+916c790
+< gm24943: No data in either G1b or G2b for 'pasha'
+---
+> gm24943: No data in (one of) either G1b or G2b for 'pasha'
+922c796
+< gm24943: No data in either G1b or G2b for 'Scer\GAL4'
+---
+> gm24943: No data in (one of) either G1b or G2b for 'Scer\GAL4'
+924c798
+< gm24943: No data in either G1b or G2b for 'Mmus\Cd8a'
+---
+> gm24943: No data in (one of) either G1b or G2b for 'Mmus\Cd8a'
+926c800
+< gm24943: No data in either G1b or G2b for 'Dcr-2'
+---
+> gm24943: No data in (one of) either G1b or G2b for 'Dcr-2'
+928c802
+< gm24943: No data in either G1b or G2b for 'AGO1'
+---
+> gm24943: No data in (one of) either G1b or G2b for 'AGO1'
+934c808
+< gm24943: No data in either G1b or G2b for 'piwi'
+---
+> gm24943: No data in (one of) either G1b or G2b for 'piwi'
+936c810
+< gm24943: No data in either G1b or G2b for 'aub'
+---
+> gm24943: No data in (one of) either G1b or G2b for 'aub'
+951c825
+< gm24399: No data in either G1b or G2b for 'ems'
+---
+> gm24399: No data in (one of) either G1b or G2b for 'ems'
+953c827
+< gm24399: No data in either G1b or G2b for 'Scer\GAL4'
+---
+> gm24399: No data in (one of) either G1b or G2b for 'Scer\GAL4'
+955c829
+< gm24399: No data in either G1b or G2b for 'Mmus\Cd8a'
+---
+> gm24399: No data in (one of) either G1b or G2b for 'Mmus\Cd8a'
+957c831
+< gm24399: No data in either G1b or G2b for 'Ecol\lexA'
+---
+> gm24399: No data in (one of) either G1b or G2b for 'Ecol\lexA'
+959c833
+< gm24399: No data in either G1b or G2b for 'Rnor\CD2'
+---
+> gm24399: No data in (one of) either G1b or G2b for 'Rnor\CD2'
+961c835
+< gm24399: No data in either G1b or G2b for 'BacA\p35'
+---
+> gm24399: No data in (one of) either G1b or G2b for 'BacA\p35'
+963c837
+< gm24399: No data in either G1b or G2b for 'acj6'
+---
+> gm24399: No data in (one of) either G1b or G2b for 'acj6'
+965c839
+< gm24399: G31b: Do you *really* want to dissociate 'Nrt' from FBrf0205118?
+---
+> gm24399: G31b: Do you *really* want to dissociate 1 gene symbol 'Nrt' from FBrf0205118?
+967c841
+< gm24399: No data in either G1b or G2b for 'Nrt'
+---
+> gm24399: No data in (one of) either G1b or G2b for 'Nrt'
+1285c1159
+< pm2167: No data in either G1b or G2b for 'Hsap\CLN3'
+---
+> pm2167: No data in (one of) either G1b or G2b for 'Hsap\CLN3'
+1300c1174
+< pm1910: No data in either G1b or G2b for 'Scer\GAL4'
+---
+> pm1910: No data in (one of) either G1b or G2b for 'Scer\GAL4'
+1354c1228
+< pm1905: No data in either G1b or G2b for 'Hsap\UBE3A'
+---
+> pm1905: No data in (one of) either G1b or G2b for 'Hsap\UBE3A'
+1374,1375d1247
+< st1163.edit: No data in either G1b or G2b for 'sli'
+< 
+1379,1380d1250
+< st1162.edit: No data in either G1b or G2b for 'sli'
+< 
+1384,1385d1253
+< st1161.edit: No data in either G1b or G2b for 'sli'
+< 
+1389,1390d1256
+< st1160.edit: No data in either G1b or G2b for 'sli'
+< 
+1394,1395d1259
+< st1159.edit: No data in either G1b or G2b for 'sli'
+< 
+1399,1400d1262
+< st1158.edit: No data in either G1b or G2b for 'sli # robo # wg'
+< 
+1653,1655c1515
+< ra742.edit: G31b: Do you *really* want to dissociate 'Dl' from FBrf0201799?
+< 
+< ra742.edit: No data in either G1b or G2b for 'Dl'
+---
+> ra742.edit: G31b: Do you *really* want to dissociate 1 gene symbol 'Dl' from FBrf0201799?
+8460c8320
+< sr86.skim: No data in either G1b or G2b for 'step'
+---
+> sr86.skim: No data in (one of) either G1b or G2b for 'step'
+8469c8329
+< These 16 files passed all the checks:
+---
+> These 24 files passed all the checks:
+8471,8472c8331,8333
+< as94.user	gm25137	gm25139	gm25140	gm25141	sr101.skim	sr102.skim	sr103.skim	sr104.skim	sr105.skim
+< sr106.skim	sr107.skim	sr108.skim	sr109.skim	sr110.skim	st1157.full
+---
+> as94.user	gm25137	gm25139	gm25140	gm25141	gm25174.edit	gm25195.edit	sr101.skim	sr102.skim	sr103.skim
+> sr104.skim	sr105.skim	sr106.skim	sr107.skim	sr108.skim	sr109.skim	sr110.skim	st1157.full	st1158.edit	st1159.edit
+> st1160.edit	st1161.edit	st1162.edit	st1163.edit
+8474c8335
+< These 105 files failed at least one check:
+---
+> These 97 files failed at least one check:
+8479,8486c8340,8346
+< gm25168.edit	gm25169.edit	gm25170.edit	gm25171.edit	gm25172.edit	gm25173.edit	gm25174.edit	gm25175.edit	gm25176.edit	gm25177.edit
+< gm25178.edit	gm25179.edit	gm25180.edit	gm25181.edit	gm25182.edit	gm25183.edit	gm25184.edit	gm25185.edit	gm25186.edit	gm25187.edit
+< gm25188.edit	gm25189.edit	gm25190.edit	gm25191.edit	gm25192.edit	gm25195.edit	km282	km283	km284	km285
+< km286	km287	km288	km289	km290	pm1289	pm1905	pm1907	pm1910	pm2167
+< pm2169	pm2170	pm2171	pm2172	pm2173	pm2174	pm2175	pm2176	pm2177	pm2178
+< pm2179	pm2180	pm2181	pm2182	pm2183	pm2184	pm2185	pm2186	pm2187	ra728
+< ra734	ra736	ra737	ra742.edit	ra743	sm1074.edit	sm1075.edit	sm1076.edit	sr86.skim	st1158.edit
+< st1159.edit	st1160.edit	st1161.edit	st1162.edit	st1163.edit
+---
+> gm25168.edit	gm25169.edit	gm25170.edit	gm25171.edit	gm25172.edit	gm25173.edit	gm25175.edit	gm25176.edit	gm25177.edit	gm25178.edit
+> gm25179.edit	gm25180.edit	gm25181.edit	gm25182.edit	gm25183.edit	gm25184.edit	gm25185.edit	gm25186.edit	gm25187.edit	gm25188.edit
+> gm25189.edit	gm25190.edit	gm25191.edit	gm25192.edit	km282	km283	km284	km285	km286	km287
+> km288	km289	km290	pm1289	pm1905	pm1907	pm1910	pm2167	pm2169	pm2170
+> pm2171	pm2172	pm2173	pm2174	pm2175	pm2176	pm2177	pm2178	pm2179	pm2180
+> pm2181	pm2182	pm2183	pm2184	pm2185	pm2186	pm2187	ra728	ra734	ra736
+> ra737	ra742.edit	ra743	sm1074.edit	sm1075.edit	sm1076.edit	sr86.skim
+8513a8374,8377
+> Using ** test ** Peeves
+> 
+> 
+> 

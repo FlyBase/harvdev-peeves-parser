@@ -1,0 +1,116 @@
+! PUBLICATION PROFORMA                   Version 40:  03 Mar 2010
+!
+! P22.  FlyBase reference ID (FBrf)      *U :FBrf0208340
+! P32.  Action - make this/these FBrf(s) secondary IDs of P22 *N :
+! P39.  Action - obsolete P22 in FlyBase               TAKE CARE :
+! P1.   Type of publication [CV]  *T :
+! P2.   Parent multipub (abbreviation)      *w :
+! P21.  Parent multipub (ID)                *W :
+! P12.  Author(s)                   *a-*b :
+! P10.  Year or date (YYYY.M.D) if PC  *t :
+! P16.  Title                          *u :
+! P3.   Volume number                  *y :
+! P4.   Issue number                   *Y :
+! P11a. Page range or article number        *z :
+! P11d. DOI                                    :
+! P11b. URL                                 *R :
+! P11c. Sequence accession number              :
+! P13.  Language of publication [CV]                          *L :English
+! P14.  Additional language(s) of abstract [CV]               *A :
+! P26.  PubMed ID                *M :
+! P25.  BIOSIS ID                *B :
+! P27.  ZooRec ID                *Q :
+! P29.  ISBN, if P1 = book       *I :
+! P33.  Text of conference abstract    *D :
+! P23.  Text of personal communication *F :
+! P18.  Associated comments                                  *G :
+! P38.  Associated file, archived at ftp site [SoftCV]       *K :
+! P30.  Also published as (FBrf)            *C :
+! P31.  Related publication (FBrf)          *E :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :no_flag
+! P19.  Internal notes                   *H :?? - Expect assortment of Peeves errors, as indicated in A15 of each ab-pro, KM.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION PROFORMA                    Version 54: 03 Mar 2010
+!
+! A1h.  FlyBase aberration ID (FBab) *z :FBab0045983
+! A1a.  Aberration symbol to use in FlyBase                 *a :Df(3L)BSC844
+!
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+!
+! A91a. Deleted segment data for segment number (dupl for multiple) :1
+! A91b.    Cytological location of left end of segment              :75D8--75D9
+! A91c.    Cytological location of right end of segment             :75E4
+! A91d.    Estimated cytology                                       :y
+! A91e.    Observed cytology                                        :n
+! A92a. Duplicated segment data for segment number (dupl for multiple) :1
+! A92b.    Cytological location of left end of segment                 :76F1
+! A92c.    Cytological location of right end of segment                :74D1
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A15.  Internal notes                          *K :Errors in A91b (ranges not allowed); A92b & c (left end greater than right end)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION PROFORMA                    Version 54: 03 Mar 2010
+!
+! A1h.  FlyBase aberration ID (FBab) *z :FBab0045982
+! A1a.  Aberration symbol to use in FlyBase                 *a :Df(3L)BSC839
+!
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+! A91a. Deleted segment data for segment number (dupl for multiple) :1
+! A91b.    Cytological location of left end of segment              :75D8
+! A91c.    Cytological location of right end of segment             :75E4
+! A91d.    Estimated cytology                                       :y
+! A91e.    Observed cytology                                        :n
+! A91a. Deleted segment data for segment number (dupl for multiple) :1
+! A91b.    Cytological location of left end of segment              :76B1
+! A91c.    Cytological location of right end of segment             :77A2
+! A91d.    Estimated cytology                                       :y
+! A91e.    Observed cytology                                        :n
+!
+! A15.  Internal notes                          *K :Error in A91a, "1" appears more than once
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION PROFORMA                    Version 54: 03 Mar 2010
+!
+! A1h.  FlyBase aberration ID (FBab) *z :FBab0045981
+! A1a.  Aberration symbol to use in FlyBase                 *a :Df(3L)BSC837
+!
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+!
+! A91a. Deleted segment data for segment number (dupl for multiple) :1
+! A91b.    Cytological location of left end of segment              :3L:20313247
+! A91c.    Cytological location of right end of segment             :3L:20486308
+! A91d.    Estimated cytology                                       :y
+! A91e.    Observed cytology                                        :n
+!
+! A15.  Internal notes                          *K :Errors in A91b & c (sequence coordinates instead of cytological coordinates)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION PROFORMA                    Version 54: 03 Mar 2010
+!
+! A1h.  FlyBase aberration ID (FBab) *z :FBab0045971
+! A1a.  Aberration symbol to use in FlyBase                 *a :Df(2R)BSC858
+!
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+! A92a. Duplicated segment data for segment number (dupl for multiple) :1
+! A92b.    Cytological location of left end of segment                 :h38R
+! A92c.    Cytological location of right end of segment                :H46
+! A92d.    Estimated cytology                                          :n
+! A92e.    Observed cytology                                           :y
+!
+! A15.  Internal notes                          *K :Error in A92b & c ("R" extension not valid, "H" should be lower-case)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION PROFORMA                    Version 54: 03 Mar 2010
+!
+! A1h.  FlyBase aberration ID (FBab) *z :FBab0045969
+! A1a.  Aberration symbol to use in FlyBase                 *a :Df(2L)BSC855
+!
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+! A92a. Duplicated segment data for segment number (dupl for multiple) :1
+! A92b.    Cytological location of left end of segment                 :h37
+! A92c.    Cytological location of right end of segment                :h35
+! A92d.    Estimated cytology                                          :n
+! A92e.    Observed cytology                                           :n
+!
+! A15.  Internal notes                          *K :Error in A92b & c (left end greater than right end) and A92d & e (one value must be "n" and one "y")
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

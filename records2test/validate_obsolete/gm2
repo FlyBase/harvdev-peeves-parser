@@ -1,0 +1,337 @@
+! PUBLICATION PROFORMA                   Version 45:  9 Apr 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0220990
+! P2.   Parent multipub abbreviation               *w :Genetics
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :noDOcur
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENE PROFORMA                          Version 75:  05 Mar 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :dpp # hh # en
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G31a. Action - obsolete G1a in FlyBase (y)       TAKE CARE :y
+! G31b. Action - dissociate G1a from reference (y) TAKE CARE :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 75:  05 Mar 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :cnn
+! G1b.  Gene symbol(s) used in reference                    *i :cnn
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G31a. Action - obsolete G1a in FlyBase (y)       TAKE CARE :y
+! G31b. Action - dissociate G1a from reference (y) TAKE CARE :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :cnn[1]
+! GA1b.  Allele symbol(s) used in reference                     *i :cnn[1]
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA32a. Action - obsolete GA1a in FlyBase (y)         TAKE CARE :ygfhgf
+! GA32b. Action - dissociate GA1a from reference (y)   TAKE CARE :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :new
+! MA1a. Insertion symbol to use in database    :P{lacZ}blah
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :P{lacZ}
+! MA20. Species of host genome                 :Dmel
+!
+! MA1c. Action - rename this insertion symbol    :
+! MA1g. Action - merge these insertion(s) (FBti) :
+! MA1h. Action - delete insertion record ("y"/blank)   :y
+! MA1i. Action - dissociate MA1f from FBrf ("y"/blank) :
+!
+! MA1d. Other synonym(s) for insertion symbol  :
+! MA1e. Silent synonym(s) for insertion symbol :
+! MA22. Line id associated with insertion      :
+!
+! MA5a. Chromosomal location of insert                     :
+! MA5c. Cytological location of insert (in situ)           :
+! MA5e. Cytological location (inferred from sequence)      :
+!   MA5f. Genomic release number for data reported in MA5e :
+! MA5d. Insertion maps to/near gene                        :
+!
+! MA8.  Phenotype (viable, fertile)            :
+!
+! MA21a. Genomic location of insertion                     :
+!   MA21b. Genome release number for entry in MA21a        :
+! MA21e. Comments concerning genomic location              :
+! MA6.   Orientation of insert relative to chromosome      :
+!
+! MA21c. Insertion into natTE (identified, in FB)             :
+! MA21f. Insertion into other TE or repeat region ("y"/blank) :
+! MA21d. Distance from insertion site to end of natTE/repeat  :
+!
+! MA19a. Accession for insertion flanking sequence (dupl for multiple) :
+!   MA19b. Insertion site accession type (5', 3', b)                   :
+!   MA19c. Position of first base of target sequence in accession      :
+!   MA19d. First base of unique sequence in accession if in natTE      :
+!   MA19e. Accession invalidation or assessment                        :
+! MA26.  Accession for this instance of natTE                          :
+!
+! MA23a. Insertion-affected gene reported (dupl for multiple) :
+!   MA23b. Affected gene criteria [CV]                        :
+!   MA23c. Comment, affected gene criteria [free text]        :
+!   MA23g. Orientation relative to affected gene              :
+!
+! MA15a. FBti progenitor (via transposition) at distinct location :
+! MA15b. FBti progenitor (via recombination) at distinct location :
+! MA15c. Replaced FBti progenitor, recombination substrate        :
+! MA15d. Modified FBti progenitor (in situ)                       :
+!
+! MA24. Arose in multiple insertion line ("y"/"p"/blank) :
+! MA18. Co-isolated insertion(s)                         :
+!
+! MA16. Information on availability      :
+! MA30. From dataset/collection (symbol) :
+!   MA30a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+! MA9.  Comments [free text]             :
+! MA10. Internal notes                   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :dpp-RX
+! F3.  Gene product type [CV]        :
+! F2.  Sequence attribute [CV]	     :
+!
+! F1b. Action - rename this gene product (symbol)      :
+! F1c. Action - merge these products(s) (symbols or FB#s) :
+! F1d. Action - delete gene product record ("y"/blank) :y
+! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
+!
+! F4. Names(s) used in paper [free text] :
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+!
+! F15. General expression comment [free text] :
+!
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :n
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :n
+!
+! F12. Antibody reported (monoclonal, polyclonal) :
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+! F91. From dataset/collection (symbol) :
+! F91a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Notes on fields
+
+! F1f. Database id (default 'new')   :new
+        -required
+        -if the feature already exists in flybase then enter its flybase id (i.e. FBpp or FBtr)
+
+! F1a. Gene product symbol           :
+       = equivalent to GAT1a. GAP1a. OB1a.                    
+       -required (provides a double check if the feature is in the database already
+       -transcript and protein symbols are gene_symbol-XR and gene_symbol-XP for basic info
+ 
+! F3.  Gene product type [CV]        :
+        -only required if a new feature
+        - usually 'polypeptide' or 'mRNA' but could be other types of transcripts
+          eg. 'miRNA', 'ncRNA', 'rRNA', 'snRNA', 'snoRNA','tRNA' 
+
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+	Necessary for reporters; do not use for wild-type expression
+
+! F4. Names(s) used in paper [free text] :
+       = GAT1b. GAP1b. OB1e. 
+       -optional and not used much as most of this gets done with gene synoyms
+        and as this version is not set up to capture isoforms unlikely to use
+
+! F5. Molecule size(s) (wb, nb, sa)      :
+        this should be a controlled string listing all the identified sizes of molecule
+        species in conjunction with how they were identified.
+
+        sizes should be listed in descending order grouped by assay
+        more than one assay can be grouped together if the sizes identified 
+        apply to both assays
+
+        examples:
+        4.8, 4.3, 4.1, 4.0, 3.5, 3.2, 2.6 (nb) => 7 transcripts of the indicated sizes were
+                                                             identified via northern analysis
+        2.3 (nb, compiled cDNA) => a 2.3 kb transcript was identified by northern and a 
+                                              cDNA sequence was compiled
+
+        assays:
+        northern blot (nb)
+        cDNA length
+        compiled cDNA
+        sequence analysis (sa)
+        western blot (wb)
+
+
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+
+You can have multiple lines of grouped cv terms to describe expression patterns.
+
+Tag explanations:
+<e> the assay used to determine expression from an assay cv (we will likely use short
+        abbreviations and have them converted to full cvterm)
+
+current abbreviations can be found at: 
+file:///users/ftpuser/CUR/curation_guidelines/interaction_pathway_CVs.html#assay_CV
+
+<t> a term from the FBdv CV - we still need to determine if we can use shorthand and describe
+        multiple stages in a single term
+
+<a> a term from the FBbt CV - full term names and qualifiers - we need to make sure a convention is
+        established for this.
+
+<s> a term from the GO cellular component and qualifiers?
+
+<c> a term describing microtime like cell cycle and circadian time (need a CV source FBcv?)
+
+<note> a comment that is specific to that particular tag line
+        within this comment surrounding a block of text with open and close cv tags means that 
+        the comment is specific for that tag eg. <s>your comment here</s> is a subcellular specific
+        comment
+
+Adding complexity to these statements -
+
+1. in the <t> field you can use temporal shorthand cv with ranges of stages 
+        eg. <t> E | stage 10-14 = embryonic stage 10, embryonic stage 11 ... embryonic stage 14
+        we will make a correspondance mapping table
+        NOTE: it is best to avoid using hour terms if possible
+
+        embryonic shorthand cv: 
+        file:///users/ftpuser/CUR/curation_guidelines/interaction_pathway_CVs.html#temporal_CV
+        
+2. you can use multiple cv terms in each field - see TAP documentation
+        https://cedar.bio.indiana.edu/trac/env/ontologies
+
+! F15. General expression comment [free text] :
+        this is a comment that applies to any and all expression lines
+
+! F10. Used as bodypart marker for [CV] :
+if the protein/transcript or reporter is used as a marker for an anatomical structure
+then use the FBbt CV terms to capture this here
+
+! F11. Expression pattern ascribed to (gene symbol) :
+Used for reporter constructs.
+        ! F11a. Is subset of wild-type gene expression pattern (y/n) :
+if a reporter expression pattern is stated to reflect the expression pattern of a gene then
+that gene symbol goes in this field - if the pattern only reflects a subset of the wild-type
+expression pattern of the gene then F11a should be marked as 'y'
+        !     F11b. Is pattern aberrant relative to wild-type (y/n) :n
+
+! F12. Antibody reported (monoclonal, polyclonal) :
+
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+
+! F17. Alleles or genotypes used :typically, the UAS construct for GAL4 expression data
+
+! F13. Comment  [free text]       :
+        for general public comments on the feature.
+
+! F14. Internal note  [free text] :
+
+        for internal non-public comments
+
+! F91. From dataset/collection (symbol) :
+	
+	DESCRIPTION.
+	The field designates the geneproduct as part of a set defined by some dataset/collection.
+	FIELD TYPE.
+	Identifier.
+	REQUIRED ENTRY.
+	No.
+	SINGLE/MULTIPLE ENTRY?
+	Single. For multiple entries (rare), use a separate proforma record.
+	!c APPLICABLE?
+	No.
+	VALID FORMAT.
+	Current name for a "Large Dataset Metadata" (aka library/collection).
+	OTHER COMMENTS.
+	The F91 field creates a "library_feature" relationship. The dependent F91a field creates a "library_featureprop" that specifies the kind of library_feature relationship.
+	DEPENDENT FIELDS.
+	F91a. If F91 is used to associate a geneproduct and dataset/collection, F91a must be used to specify the type of relationship. See F91a documentation.
+	UPDATED.
+	gds130730.
+
+! F91a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+	
+	DESCRIPTION.
+	The field specifies how the geneproduct is related to the dataset/collection specified in the dependent F91 field.
+	FIELD TYPE.
+	CV.
+	REQUIRED ENTRY.
+	No. Required only if a dataset/collection is specified in the dependent F91 field.
+	SINGLE/MULTIPLE ENTRY?
+	Single. For multiple entries (rare), use a separate proforma record.
+	!c APPLICABLE?
+	No.
+	VALID FORMAT.
+	Current valid entries from the “library_featureprop type” CV are:
+	member_of_reagent_collection
+	experimental_result
+	OTHER COMMENTS.
+	The F91a field creates a “library_featureprop” that describes how the geneproduct is related to the dataset/collection specified in F91. In the past, -XR gene products have been linked to 'gene expression cluster' datasets: no library_featureprop has been specified for these 'result'-type links. However, we are currently reviewing the best way to group 'results' related to dataset/metadata objects.
+	DEPENDENT FIELDS.
+	F91. F91a is only used if a dataset/collection is specified in F91.
+	UPDATED.
+	gds130730.
+
+
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

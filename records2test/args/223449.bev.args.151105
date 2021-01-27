@@ -1,0 +1,38 @@
+! C1.  Curator ID	:Bev
+! C2.  Date		:151105
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0223449
+! P19.  Internal notes                   *H :for peeves test
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0159172
+! MA1a. Insertion symbol to use in database    :P{lacW}Sxl[M1,fPd-w+mC-B]
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :
+! MA20. Species of host genome                 :
+! MA21a. Genomic location of insertion                     :X:7097230..7097230
+!   MA21b. Genome release number for entry in MA21a        :6
+! MA21e. Comments concerning genomic location              :The insertion site was reported as +820 relative to the @Sxl@ transcription start site.
+! MA6.   Orientation of insert relative to chromosome      :
+! MA9.  Comments [free text]             :The orientation of the insertion was not reported.
+! MA10. Internal notes                   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1h. FlyBase allele ID (FBal) *z :FBal0265992
+! GA1a.  Allele symbol to use in FlyBase                        *A :heph[ex3.4]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :deletion
+! GA90b. Genomic location of lesion :3R:31830753..31917783
+! GA90c. Genome release number for entry in GA90b :6
+! GA90i. Orientation relative to chromosome (+/-) :-
+! GA90j. Comments concerning sequence location :Scer\FRT-mediated recombination between the two progenitor insertions has deleted the sequence between them.
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

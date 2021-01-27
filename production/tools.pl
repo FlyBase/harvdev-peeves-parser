@@ -228,12 +228,12 @@ sub trim_space_from_ends ($$$)
     defined $string or return '';	# Always return a valid string, even with undef input.
     if ($string =~ /^\s+/)
     {
-	# report ($file, "%s: superfluous leading whitespace in '%s'", $code, $string);
+	#report ($file, "%s: superfluous leading whitespace in '%s'", $code, $string);
 	$string =~ s/^\s+//;
     }
     if ($string =~ /\s+$/)
     {
-	# report ($file, "%s: superfluous trailing whitespace in '%s'", $code, $string);
+	#report ($file, "%s: superfluous trailing whitespace in '%s'", $code, $string);
 	$string =~ s/\s+$//;
     }
     return $string;
@@ -1106,9 +1106,9 @@ sub check_qualifier {
 
 # 		'GA34a' => 'models|suppresses|enhances|DOES NOT model|DOES NOT suppress|DOES NOT enhance',
 		'GA34a' => 'model of|ameliorates|exacerbates|DOES NOT model|DOES NOT ameliorate|DOES NOT exacerbate',
-		'G24a' => 'NOT colocalizes_with|colocalizes_with|NOT',
-		'G24b' => 'NOT contributes_to|contributes_to|NOT',
-		'G24c' => 'NOT',
+		'G24a' => 'colocalizes_with|part_of|located_in|is_active_in',
+		'G24b' => 'contributes_to|enables',
+		'G24c' => 'involved_in|acts_upstream_of|acts_upstream_of_positive_effect|acts_upstream_of_negative_effect',
 	);
 
 
@@ -1119,29 +1119,6 @@ sub check_qualifier {
 		$qualifier = $1;
 		$term = $2;
 
-# temporary code until get used to new qualifiers
-	} elsif ($qualified_term =~ /(models|suppresses|enhances|DOES NOT suppress|DOES NOT enhance) (.*)/) {
-
-		my $bad_qualifier = $1;
-		$qualifier = $bad_qualifier;
-		$term = $2;
-
-		my %bad_qualifier_mapping = (
-
-			'models' => 'model of',
-			'suppresses' => 'ameliorates',
-			'enhances' => 'exacerbates',
-			'DOES NOT suppress' => 'DOES NOT ameliorate',
-			'DOES NOT enhance' => 'DOES NOT exacerbate',
-
-
-		);
-
-		report ($file, "%s: '%s' is not a valid qualifier, did you mean '%s' instead ?:\n%s",$code,$bad_qualifier,$bad_qualifier_mapping{$bad_qualifier},$datum);
-
-
-
-
 	} else {
 
 # In this case, there is either no qualifier, or someone has entered an invalid qualifier.
@@ -1149,13 +1126,11 @@ sub check_qualifier {
 
 		$term = $qualified_term;
 
-# qualifier is compulsory for DO lines, so print an error if there isn't one
+# qualifier is compulsory, so print an error if there isn't one
 
-		if ($code eq 'GA34a') {
-			unless ($qualifier) {
+		unless ($qualifier) {
 
-				report ($file, "%s: No valid qualifier in '%s'",$code,$datum);
-			}
+			report ($file, "%s: No valid qualifier in '%s'",$code,$datum);
 		}
 	}
 
@@ -1467,7 +1442,7 @@ sub check_allowed_characters {
 # based on proforma parsing software, but there are no examples to check yet.
 # For now, exluded \ in allowed list
 
-		'SF1a' => 'a-zA-Z0-9_:;&\[\]\()\'\.\+\-', # same as LC1a
+		'SF1a' => 'a-zA-Z0-9_:;&\[\]\()\'\.\+\-\/', # same as LC1a, but with / added (DC-895)
 
 #		'' => '',
 
@@ -3635,6 +3610,7 @@ sub validate_ontology_term_id_field {
 		'LC2a' => 'FBcv:dataset_entity_type',
 		'LC4j' => 'FBbt:default',
 		'LC4k' => 'FBdv:default',
+		'LC13d' => 'SO:default',
 
 	);
 
@@ -4320,7 +4296,7 @@ sub validate_primary_proforma_field
 }
 
 # TAP statement subroutines - pulled from expression.pl so that they can be re-used to check IN5b field which uses identical format
-# deliberately not turned into process_field_data format, because F9 checking would ideally cross-check the value in <e> against the value in F1a (transcript vs protein)
+# deliberately not turned into process_field_data format, because F9 checking would ideally cross-check the value in <e> against the value in F1a (transcript vs polypeptide)
 # and so should implement this in similar way to IN6, IN7cd cross-checks
 
 sub TAP_check {
@@ -4332,7 +4308,7 @@ sub TAP_check {
 	my %no_assay_mapping = (
 
 		'LC4g' => '1',
-		'IN5d' => '1',
+		'IN5b' => '1',
 
 	);
 
@@ -4346,6 +4322,21 @@ sub TAP_check {
 			'FBti' => '1',
 
 		},
+
+	};
+
+# mapping of fields and FBrfs where <e> and <t> are often empty, so we want the normal warning
+# message to be suppressed.
+	my $allow_empty_ref = {
+
+
+		'F9' => {
+
+			'FBrf0237128' => '1',
+
+		},
+
+
 
 	};
 
@@ -4376,7 +4367,7 @@ sub TAP_check {
 		}
 	} else {
 
-		unless ($no_assay_mapping{$code}) {
+		unless ($no_assay_mapping{$code} || (exists $allow_empty_ref->{$code} && exists $allow_empty_ref->{$code}->{$g_FBrf})) {
 			report ($file, "%s: Looks like you forgot to include an assay term in %s", $code, $TAP);
 
 		}
@@ -4557,6 +4548,11 @@ sub TAP_check {
 				}
 			}
 
+		}
+	} else {
+
+		unless (exists $allow_empty_ref->{$code} && exists $allow_empty_ref->{$code}->{$g_FBrf}) {
+			report ($file, "%s: Looks like you forgot to include a temporal term in %s", $code, $TAP);
 		}
 	}
 
@@ -4766,7 +4762,7 @@ sub type_gene_product {
 
 # Subroutine which 'types' a gene product symbol as either FBtr or FBpp based on the format of the symbol.
 # Returns the gene product type, symbol of the parent to which the product is attached
-# (either a gene symbol for regular transcripts/proteins, or an allele symbol for expression
+# (either a gene symbol for regular transcripts/polypeptides, or an allele symbol for expression
 # of transgenic constructs/insertions), and the expected type of the parent symbol if $return_value is '1'.
 # If $return_value is '0', returns just the type of the gene product.
 # If the symbol does not match any of the expected formats, then empty values will be returned.

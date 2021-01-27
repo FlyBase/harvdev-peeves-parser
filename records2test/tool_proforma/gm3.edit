@@ -1,0 +1,89 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0105495
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :gm: test record - testing renaming and correction using TO6 fields. no errors, should load **if loaded AFTER gm1.edit**.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! EXPERIMENTAL TOOL PROFORMA                       Version 4:  31 Oct 2017
+!
+! TO1f. Database ID for experimental tool (FBto)       :??FBto??
+! TO1a. Experimental tool symbol to use in database    :TagBFP
+! TO1b.  Experimental tool symbol synonym(s)           :
+! TO10. Species of tool (organism.abbreviation)        :
+!
+! TO1c. Action - rename this experimental tool symbol  :
+! TO1g. Action - merge these experimental tools (FBto) :
+! TO1h. Action - obsolete TO1a in FlyBase (y/blank)       :
+! TO1i. Action - dissociate TO1a from reference (y/blank) :
+!
+! TO2a.  Action - experimental tool name to use in FlyBase       :TagBFP fluorescent protein rename
+! TO2b.  Experimental tool name synonym(s)                       :
+! TO2c.  Action - rename this experimental tool name             :TagBFP fluorescent protein
+!
+!c TO4.   Experimental tool uses [CV]                             :fluorescent protein
+! TO5.   Description of experimental tool [free text]            :
+!
+! TO6a. Accession number for tool (dupl section for multiple)    :
+! TO6b. FlyBase database symbol (DB1a) for accession in TO6a     :
+! TO6c. Title for TO6a (if desired) [free text]                  :
+! TO6d. Action - dissociate accession in TO6a/TO6b from tool in TO1a? (blank/y) :
+!
+! TO7a. Compatible tools(s) (symbol) :
+! TO7b. Other related tools(s) (symbol) :
+! TO7c. Gene of origin (symbol)   :
+!
+! TO8.  Comments [free text] :
+! TO9.  Internal notes       :gm: testing rename of fullname and plingc of TO4
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! EXPERIMENTAL TOOL PROFORMA                       Version 4:  31 Oct 2017
+!
+! TO1f. Database ID for experimental tool (FBto)       :??FBto??
+! TO1a. Experimental tool symbol to use in database    :pHluorinE
+! TO1b.  Experimental tool symbol synonym(s)           :
+! TO10. Species of tool (organism.abbreviation)        :
+!
+! TO1c. Action - rename this experimental tool symbol  :
+! TO1g. Action - merge these experimental tools (FBto) :
+! TO1h. Action - obsolete TO1a in FlyBase (y/blank)       :
+! TO1i. Action - dissociate TO1a from reference (y/blank) :
+!
+! TO2a.  Action - experimental tool name to use in FlyBase       :
+! TO2b.  Experimental tool name synonym(s)                       :
+! TO2c.  Action - rename this experimental tool name             :
+!
+! TO4.   Experimental tool uses [CV]                             :
+! TO5.   Description of experimental tool [free text]            :
+!
+! TO6a. Accession number for tool (dupl section for multiple)    :AF058695
+! TO6b. FlyBase database symbol (DB1a) for accession in TO6a     :GB
+! TO6c. Title for TO6a (if desired) [free text]                  :
+! TO6d. Action - dissociate accession in TO6a/TO6b from tool in TO1a? (blank/y) :y
+!
+! TO7a. Compatible tools(s) (symbol) :
+! TO7b. Other related tools(s) (symbol) :
+! TO7c. Gene of origin (symbol)   :
+!
+! TO8.  Comments [free text] :
+! TO9.  Internal notes       :gm: testing removal of accession loaded in gm1.edit
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

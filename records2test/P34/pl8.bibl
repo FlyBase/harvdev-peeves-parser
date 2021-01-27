@@ -1,0 +1,22 @@
+! PUBLICATION PROFORMA                   Version 45:  30 Jan 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :new
+! P1.   Type of publication [CV]  *T :paper
+! P2.   Parent multipub abbreviation               *w :Nature
+! P12.  Author(s)                           *a-*b :Sotomayor	M.
+Weihofen	W.A.
+Gaudet	R.
+Corey	D.P.
+! P10.  Year (YYYY), or date (YYYY.M.D) if PC  *t :2012
+! P16.  Title                                  *u :Structure of a Force-Conveying Cadherin Bond Essential for Inner-Ear Mechanotransduction.
+! P3.   Volume number                          *y :492
+! P4.   Issue number                           *Y :7427
+! P11a. Page range or article number               *z :128--132
+! P11d. DOI                                           :10.1038/nature11590
+! P13.  Language of publication [CV]                          *L :English
+! P14.  Additional language(s) of abstract [CV]               *A :
+! P26.  PubMed ID                *M :23135401
+! P31.  Related publication (FBrf)          *E :
+! P34.  PubMed abstract  *X :Dysfunction of the intestinal epithelium is believed to result in the excessive translocation of commensal bacteria into the bowel wall that drives chronic mucosal inflammation in Crohn's disease, an incurable inflammatory bowel disease in humans characterized by inflammation of the terminal ileum. In healthy individuals, the intestinal epithelium maintains a physical barrier, established by the tight contact of cells. Moreover, specialized epithelial cells such as Paneth cells and goblet cells provide innate immune defence functions by secreting mucus and antimicrobial peptides, which hamper access and survival of bacteria adjacent to the epithelium. Epithelial cell death is a hallmark of intestinal inflammation and has been discussed as a possible pathogenic mechanism driving Crohn's disease in humans. However, the regulation of epithelial cell death and its role in intestinal homeostasis remain poorly understood. Here we demonstrate a critical role for caspase-8 in regulating necroptosis of intestinal epithelial cells (IECs) and terminal ileitis. Mice with a conditional deletion of caspase-8 in the intestinal epithelium (Casp8(ΔIEC)) spontaneously developed inflammatory lesions in the terminal ileum and were highly susceptible to colitis. Casp8(ΔIEC) mice lacked Paneth cells and showed reduced numbers of goblet cells, indicating dysregulated antimicrobial immune cell functions of the intestinal epithelium. Casp8(ΔIEC) mice showed increased cell death in the Paneth cell area of small intestinal crypts. Epithelial cell death was induced by tumour necrosis factor (TNF)-α, was associated with increased expression of receptor-interacting protein 3 (Rip3; also known as Ripk3) and could be inhibited on blockade of necroptosis. Lastly, we identified high levels of RIP3 in human Paneth cells and increased necroptosis in the terminal ileum of patients with Crohn's disease, suggesting a potential role of necroptosis in the pathogenesis of this disease. Together, our data demonstrate a critical function of caspase-8 in regulating intestinal homeostasis and in protecting IECs from TNF-α-induced necroptotic cell death.
+! P19.  Internal notes                   *H :??Testing new P34 (PubMed abstract) field.  This record has an abstract containing UTF-8 greek symbols, which should be OK and should pass Peeves and parsing tests.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
