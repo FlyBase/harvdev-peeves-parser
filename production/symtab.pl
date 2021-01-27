@@ -45,7 +45,7 @@ our %Peeves_config;
 
 my $GO_obo    = "$Peeves_config{'Ontology_path'}/go-basic.obo";
 my $GO_dbxref = "$Peeves_config{'Ontology_path'}/GO.xrf_abbs";
-my $SO_obo    = "$Peeves_config{'Ontology_path'}/so-simple.obo";
+my $SO_obo    = "$Peeves_config{'Ontology_path'}/so.obo";
 my $FBbt_obo  = "$Peeves_config{'Ontology_path'}/fly_anatomy.obo";
 my $FBcv_obo  = "$Peeves_config{'Ontology_path'}/flybase_controlled_vocabulary.obo";
 my $FBdv_obo  = "$Peeves_config{'Ontology_path'}/fly_development.obo";
