@@ -1,0 +1,157 @@
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :new
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Hsap\RELA[AD.R21D02]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+! F4. Names(s) used in paper [free text] :
+! F5. Molecule size(s) (wb, nb, sa)      :
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :<e> debs <t> adult stage | female <a> antenna <s> cytoplasm <note> when combined with @FBtp0099455:P{R12C11-GAL4.DBD}@ (combination referred to as 'MB074C')
+<e> debs <t> see <a> what <s> happens <note> when combined with @FBtp0099466:P{R22C12-GAL4.DBD}@ (combination referred to as 'MB399B')
+! F15. General expression comment [free text] :
+! F10. Used as bodypart marker for (term ; ID) [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+! F11a. Is subset of wild-type gene expression pattern (y/n) :
+! F11b. Is pattern aberrant relative to wild-type (y/n) :
+! F17. Alleles or genotypes used :
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :They refer to the combination of PBac{R21D02-p65.AD} (AD) plus P{R12C11-GAL4.DBD} (DBD) as 'MB074C' (combination verified against FlyLight 20180404_splitgal4 database). 181012.
+They refer to the combination of P{R21D02-p65.AD} (AD) plus P{R22C12-GAL4.DBD} (DBD) as 'MB399B' (combination verified against FlyLight 20180404_splitgal4 database). 181012.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :FBtr0473825
+! F1a. Gene product symbol           :Hsap\RELA[AD.R31H10]RA
+! F3.  Gene product type [CV]        :
+! F2.  Sequence attribute [CV]	     :
+! F4. Names(s) used in paper [free text] :
+! F5. Molecule size(s) (wb, nb, sa)      :
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :<e> debs <t>  <a> leg <s>  <note> when combined with @FBtp0124277:P{VT040698-GAL4.DBD}@ (combination referred to as 'SS01560')
+<e> debs <t> L3 <a>  <s> mitotic spindle <note> when combined with @FBtp0124277:P{VT040698-GAL4.DBD}@ (combination referred to as 'SS01560')
+! F15. General expression comment [free text] :
+! F10. Used as bodypart marker for (term ; ID) [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+! F11a. Is subset of wild-type gene expression pattern (y/n) :
+! F11b. Is pattern aberrant relative to wild-type (y/n) :
+! F17. Alleles or genotypes used :
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :They refer to the combination of P{R31H10-p65.AD} (AD) plus P{VT040698-GAL4.DBD} (DBD) as 'SS01560' (combination verified against FlyLight 20180404_splitgal4 database). 181012.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Hsap\RELA[AD.VT040698]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+! F4. Names(s) used in paper [free text] :
+! F5. Molecule size(s) (wb, nb, sa)      :
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :<e> debs <t> adult stage <a> neuron <s>  <note> when combined with @FBtp0123634:P{VT025718-GAL4.DBD}@ (combination referred to as 'SS02536')
+<e> debs <t> embryonic stage <a> head <s> nucleus <note> when combined with @FBtp0123634:P{VT025718-GAL4.DBD}@ (combination referred to as 'SS02536')
+! F15. General expression comment [free text] :
+! F10. Used as bodypart marker for (term ; ID) [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+! F11a. Is subset of wild-type gene expression pattern (y/n) :
+! F11b. Is pattern aberrant relative to wild-type (y/n) :
+! F17. Alleles or genotypes used :
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :They refer to the combination of P{VT040698-p65.AD} (AD) plus P{VT025718-GAL4.DBD} (DBD) as 'SS02536' (combination verified against FlyLight 20180404_splitgal4 database). 181012.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :FBtr0445238
+! F1a. Gene product symbol           :Scer\GAL4[DBD.R12C11]RA
+! F3.  Gene product type [CV]        :
+! F2.  Sequence attribute [CV]	     :
+! F4. Names(s) used in paper [free text] :
+! F5. Molecule size(s) (wb, nb, sa)      :
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :<e> debs <t> adult stage | female <a> antenna <s> cytoplasm <note> when combined with @FBtp0099529:PBac{R21D02-p65.AD}@ (combination referred to as 'MB074C')
+! F15. General expression comment [free text] :
+! F10. Used as bodypart marker for (term ; ID) [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+! F11a. Is subset of wild-type gene expression pattern (y/n) :
+! F11b. Is pattern aberrant relative to wild-type (y/n) :
+! F17. Alleles or genotypes used :
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :They refer to the combination of PBac{R21D02-p65.AD} (AD) plus P{R12C11-GAL4.DBD} (DBD) as 'MB074C' (combination verified against FlyLight 20180404_splitgal4 database). 181012.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :FBtr0445239
+! F1a. Gene product symbol           :Scer\GAL4[DBD.R22C12]RA
+! F3.  Gene product type [CV]        :
+! F2.  Sequence attribute [CV]	     :
+! F4. Names(s) used in paper [free text] :
+! F5. Molecule size(s) (wb, nb, sa)      :
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :<e> debs <t> see <a> what <s> happens <note> when combined with @FBtp0099528:P{R21D02-p65.AD}@ (combination referred to as 'MB399B')
+! F15. General expression comment [free text] :
+! F10. Used as bodypart marker for (term ; ID) [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+! F11a. Is subset of wild-type gene expression pattern (y/n) :
+! F11b. Is pattern aberrant relative to wild-type (y/n) :
+! F17. Alleles or genotypes used :
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :They refer to the combination of P{R21D02-p65.AD} (AD) plus P{R22C12-GAL4.DBD} (DBD) as 'MB399B' (combination verified against FlyLight 20180404_splitgal4 database). 181012.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Scer\GAL4[DBD.VT025718]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+! F4. Names(s) used in paper [free text] :
+! F5. Molecule size(s) (wb, nb, sa)      :
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :<e> debs <t> adult stage <a> neuron <s>  <note> when combined with @FBtp0120472:P{VT040698-p65.AD}@ (combination referred to as 'SS02536')
+<e> debs <t> embryonic stage <a> head <s> nucleus <note> when combined with @FBtp0120472:P{VT040698-p65.AD}@ (combination referred to as 'SS02536')
+! F15. General expression comment [free text] :
+! F10. Used as bodypart marker for (term ; ID) [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+! F11a. Is subset of wild-type gene expression pattern (y/n) :
+! F11b. Is pattern aberrant relative to wild-type (y/n) :
+! F17. Alleles or genotypes used :
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :They refer to the combination of P{VT040698-p65.AD} (AD) plus P{VT025718-GAL4.DBD} (DBD) as 'SS02536' (combination verified against FlyLight 20180404_splitgal4 database). 181012.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Scer\GAL4[DBD.VT040698]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+! F4. Names(s) used in paper [free text] :
+! F5. Molecule size(s) (wb, nb, sa)      :
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :<e> debs <t>  <a> leg <s>  <note> when combined with @FBtp0118584:P{R31H10-p65.AD}@ (combination referred to as 'SS01560')
+<e> debs <t> L3 <a>  <s> mitotic spindle <note> when combined with @FBtp0118584:P{R31H10-p65.AD}@ (combination referred to as 'SS01560')
+! F15. General expression comment [free text] :
+! F10. Used as bodypart marker for (term ; ID) [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+! F11a. Is subset of wild-type gene expression pattern (y/n) :
+! F11b. Is pattern aberrant relative to wild-type (y/n) :
+! F17. Alleles or genotypes used :
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :They refer to the combination of P{R31H10-p65.AD} (AD) plus P{VT040698-GAL4.DBD} (DBD) as 'SS01560' (combination verified against FlyLight 20180404_splitgal4 database). 181012.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

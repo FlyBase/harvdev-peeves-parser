@@ -1,0 +1,8 @@
+! PUBLICATION PROFORMA                   Version 41:  16 Mar 2010
+!
+! P22.  FlyBase reference ID (FBrf)      *U :FBrf0209900
+! P1.   Type of publication [CV]  *T :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :no_flag
+! P19.  Internal notes                   *H :?? P2 field omitted - want Peeves error saying: "Required proforma field P2 missing or malformed."  sm100322.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

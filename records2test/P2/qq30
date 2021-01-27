@@ -1,0 +1,9 @@
+! PUBLICATION PROFORMA                   Version 41:  16 Mar 2010
+!
+! P22.  FlyBase reference ID (FBrf)      *U :FBrf0209900
+! P1.   Type of publication [CV]  *T :
+!c P2.   Parent multipub (abbreviation)      *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :no_flag
+! P19.  Internal notes                   *H :?? Trying to change the parent multipub to nothing.  Want a Peeves error.  sm100322.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

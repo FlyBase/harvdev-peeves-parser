@@ -1,0 +1,55 @@
+! C1. Curator ID:vfb
+! C2. Date:130821
+! C3. Curator notes to self: edit to original record, to change from nervus corporis cardiaci to nervus corporis cardiaci I. Wait for ontology update before loading. mc130820
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 44:  6 Nov 2012
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0179777
+! P2.   Parent multipub abbreviation               *w :Dev. Biol.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 8: Jun 08 2011
+!
+! F1f. Database id (default 'new')   :FBpp0090512
+! F1a. Gene product symbol           :Fas2-XP
+! F3.  Gene product type [CV]        :protein SO:0000358
+! F2.  Sequence attribute [CV]	     :
+!
+! F4. Names(s) used in paper [free text] :FasII
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> il <t> embryonic stage 11--embryonic stage 17 <a> corpus cardiacum <s>  <note>
+<e> il <t> embryonic stage 15--embryonic stage 17 <a> corpus allatum <s>  <note>
+<e> il <t> late embryonic stage <a> mushroom body <s>  <note>
+<e> il <t> late embryonic stage <a> ring gland <s>  <note>
+<e> il <t> late embryonic stage <a> optic lobe <s>  <note>
+<e> il <t> embryonic stage 16 <a> optic lobe <s>  <note>
+<e> il <t> embryonic stage 16 <a> nervus corporis cardiaci I <s>  <note>
+<e> il <t> embryonic stage 13 <a> pars intercerebralis <s>  <note>
+<e> il <t> embryonic stage 13 <a> stomatogastric nervous system <s>  <note>
+!
+! F15. General expression comment [free text] :
+!
+! F10. used as bodypart marker for (CV FBbt) :
+! F11. Expression pattern ascribed to (gene symbol) :Fas2
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :n
+!     F11b. Is pattern aberrant relative to wild-type (y/n):n
+!
+! F12. Antibody reported (monoclonal, polyclonal) :monoclonal
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

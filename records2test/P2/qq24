@@ -1,0 +1,9 @@
+! PUBLICATION PROFORMA                   Version 41:  16 Mar 2010
+!
+! P22.  FlyBase reference ID (FBrf)      *U :unattributed
+! P1.   Type of publication [CV]  *T :
+! P2.   Parent multipub (abbreviation)      *w :J. Fluoresc.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :no_flag
+! P19.  Internal notes                   *H :?? P2 field filled in when P22 is 'unattributed'- want Peeves error.  sm100322.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

@@ -1,0 +1,75 @@
+! PUBLICATION PROFORMA                   Version 46:  20 Jun 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0223980
+! P2.   Parent multipub abbreviation               *w :J. Genet. Genomics
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :??checkign GG1a vs GG2c
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! GENEGROUP PROFORMA     Version 4: 28 Aug 2014
+!
+! GG1a. Gene group symbol                               *a :test
+! GG1b. Gene group symbol(s) used in reference          *i :
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :n
+! GG2a. Action - gene group name to use in FlyBase      *e :
+! GG2b. Gene group name(s) used in reference            *V :
+! GG2c. Action - rename this gene group name        :
+!
+! GG4.  Type of gene group [CV]  *t :
+!
+! GG5.  Description of gene group  [free text]  *D :
+!
+! GG6a. Key GO term(s) - Cellular Component (term ; ID)  *f :dodgy;format
+nucleus ; GO:647864
+! GG6b. Key GO term(s) - Molecular Function (term ; ID)  *F :
+! GG6c. Key GO term(s) - Biological Process (term ; ID)  *d :blah ; GO:1903016
+!
+! GG10. Comments [free text]  *u :
+!
+! GG11. Date gene group last reviewed (YYYYMMDD)  *y :
+!
+! GG12. Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 4: 28 Aug 2014
+!
+! GG1a. Gene group symbol                               *a :test2
+! GG1b. Gene group symbol(s) used in reference          *i :
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :n
+! GG2a. Action - gene group name to use in FlyBase      *e :
+! GG2b. Gene group name(s) used in reference            *V :
+! GG2c. Action - rename this gene group name        :
+!
+! GG4.  Type of gene group [CV]  *t :
+!
+! GG5.  Description of gene group  [free text]  *D :
+!
+! GG6a. Key GO term(s) - Cellular Component (term ; ID)  *f :(1->3)-beta-D-glucan binding ; GO:0001872
+! GG6b. Key GO term(s) - Molecular Function (term ; ID)  *F :(1->3)-beta-D-glucan binding ; GO:0001872
+meiotic prophase I ; GO:0007128
+blah ; GO:1903016
+! GG6c. Key GO term(s) - Biological Process (term ; ID)  *d :nucleus ; GO:647864ff
+unknown term ; unknown id
+!
+! GG10. Comments [free text]  *u :
+!
+! GG11. Date gene group last reviewed (YYYYMMDD)  *y :
+!
+! GG12. Internal notes  *W :??function term correct in GG6b, but also wrongly in GG6a (etc), 'meiotic prophase I' should trip 'gocheck_do_not_annotate' error
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

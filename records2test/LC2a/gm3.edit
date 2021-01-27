@@ -1,0 +1,27 @@
+! C1.  Curator ID  :gds
+! C2.  Date  :160510
+! C3.  Curator notes to self  :Test project record for Peeves checking.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+! P22.  FlyBase reference ID (FBrf) or new  *U :FBrf0217348
+! P2.   Parent multipub abbreviation               *w :Nat. Genet.
+! P19.  Internal notes                   *H :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! DATASET/COLLECTION PROFORMA   Version 4.4   09 Feb 2016
+!
+! LC1f. Database ID for dataset  :FBlc0000023
+! LC1a. Symbol                   :blah
+! LC1b. Symbol used in paper/source  :blah
+! LC1d. Nickname [for labels]        :blah
+! LC3a. Action - rename this dataset symbol    :AF_cDNA
+! LC3b. Action - merge these datasets      :
+! LC6g. Dataset title  :here is some text
+! LC6a. Description [free text]  :
+!c LC2a. Type of dataset entity [CV]  :biosample ; FBcv:0003024
+! LC2b. Type of dataset data [CV]    :construct collection ; FBcv:0003113
+! LC14h. Reference FlyBase gene model annotation set [free text]  :
+! LC10. Internal notes      :??testing for if !c of LC2a allowed in future
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!
+

@@ -1,0 +1,13 @@
+Tested 3 archive/oldrecs as the latest ones were mostly bibl.
+V. few and only correct messages. 
+An error over a field that is deprecated acceptable (sjm)
+
+Haiyan false error for blank P22 left in for one week.
+
+hif.
+
+Note on
+G1b and G2b missing or malformed. This is showing for sm...edit records and is 
+different to the 'no data in these fields message that I was working on previously. Is a Jui thing since Jui shrinks these out. Gm says these fields are used for cross checking and should never be missing.
+
+

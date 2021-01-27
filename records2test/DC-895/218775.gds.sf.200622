@@ -1,0 +1,26 @@
+! C1.  Curator ID  :gds
+! C2.  Date        :200622
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0218775
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! SEQUENCE FEATURE/MAPPED ENTITIES PROFORMA    Version 6: 20 Dec 2019
+! SF1f. Database ID for feature         :FBsf0000435389
+! SF1a. Feature symbol to use in database    :Tgs1_tatl_pPd926/58
+! SF1b. Symbol used in paper/source          :Tgs1_tatl_pPd926/58
+! SF1c. Action - rename this feature         :tatl_pPd926/58
+! SF5c. Associated FBtp transgenic_transposon (symbol) :P{CG31241-lacZ.-926+58}
+! SF6. Comments [free text]        :evidence: Reporter construct (in vivo)
+! SF8. Internal notes              :FBrf0187583
+RFRC:0000003412
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! SEQUENCE FEATURE/MAPPED ENTITIES PROFORMA    Version 6: 20 Dec 2019
+! SF1f. Database ID for feature         :new
+! SF1a. Feature symbol to use in database    :&agr;:[]()'.+-!?
+! SF1b. Symbol used in paper/source          :
+! SF1c. Action - rename this feature         :
+! SF5c. Associated FBtp transgenic_transposon (symbol) :
+! SF6. Comments [free text]        :
+! SF8. Internal notes              :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!!!

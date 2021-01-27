@@ -1,0 +1,71 @@
+! PUBLICATION PROFORMA    Version 46:  20 Jun 2014
+!
+! P22. FlyBase reference ID (FBrf) or "new"                         *U :FBrf0226348
+! P13. Language of publication [CV]                                *L :English
+! P19.  Internal notes                   *H :Author Rabinow said in response to query: "The construct that was supplied to us as "C2V" was in fact a VDRC stock (#37437), the PTP61F-IR construct on 3."  sm141020.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 76:  04 Sept 2014
+!
+! G1a. Gene symbol to use in FlyBase                                *a :Ptp61F
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 57: 02 Jul 2014
+!
+! GA1a. Allele symbol to use in FlyBase                             *A :Ptp61F[GD3571]
+! GA1g. Is GA1a the current symbol of an allele in FlyBase? (y/n)      :y
+! GA28c. Genetic interaction [free text]                           *S :@rl[Sem]@ in combination with @Ptp61F[GD3571]@ results in larger than normal eyes.
+! GA10a. Associated construct                                       *I :P{GD3571}
+! GA10b. Construct symbol(s) used in reference                      *L :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 76:  04 Sept 2014
+!
+! G1a. Gene symbol to use in FlyBase                                *a :InR
+! G1b. Gene symbol(s) used in reference                             *i :InR
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 57: 02 Jul 2014
+!
+! GA1a. Allele symbol to use in FlyBase                             *A :InR[A1325D.GMR]
+! GA1g. Is GA1a the current symbol of an allele in FlyBase? (y/n)      :y
+! GA28a. Genetic interaction (class, effect) [CV]                   *S :size defective, enhanceable { Ptp61F[GD3571], Scer\GAL4[GMR.PU] }
+! GA28b. Genetic interaction (anatomy, effect) [CV]                 *S :eye, enhanceable { Ptp61F[GD3571], Scer\GAL4[GMR.PU] }
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 76:  04 Sept 2014
+!
+! G1a. Gene symbol to use in FlyBase                                *a :rl
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 57: 02 Jul 2014
+!
+! GA1a. Allele symbol to use in FlyBase                             *A :rl[Sem]
+! GA28a. Genetic interaction (class, effect) [CV]                   *S :
+size defective, UI { Ptp61F[dsRNA.Scer\UAS.WIZ], Scer\GAL4[GMR.PU] }
+! GA28b. Genetic interaction (anatomy, effect) [CV]                 *S :wing vein, enhanceable { Ptp61F[GD3571], Scer\GAL4[GMR.PU] }
+wing vein | ectopic, enhanceable { Ptp61F[GD3571], Scer\GAL4[GMR.PU] }
+
+eye, UI { Ptp61F[GD3571], Scer\GAL4[GMR.PU] }
+!c GA28c. Genetic interaction [free text]                            *S :@rl[Sem]@ in combination with @Ptp61F[4-10]@/+ or @Scer\GAL4[GMR.PU]@-driven @Ptp61F[dsRNA.Scer\UAS.WIZ]@ or @Ptp61F[GD3571]@ results in larger than normal eyes.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 76:  04 Sept 2014
+!
+! G1a. Gene symbol to use in FlyBase                                *a :pnt
+! G1b. Gene symbol(s) used in reference                             *i :
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 57: 02 Jul 2014
+!
+! GA1a. Allele symbol to use in FlyBase                             *A :pnt[P2.Scer\UAS.T:Hsim\VP16]
+! GA1g. Is GA1a the current symbol of an allele in FlyBase? (y/n)      :y
+! GA28b. Genetic interaction (anatomy, effect) [CV]                 *S :eye { Scer\GAL4[GMR.PU] }, non-suppressible { Ptp61F[GD3571], Scer\GAL4[GMR.PU] }
+eye { Scer\GAL4[GMR.PU] }, non-enhanceable { Ptp61F[GD3571], Scer\GAL4[GMR.PU] }
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA    Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)                               :FBti0090562
+! MA1a. Insertion symbol to use in database                            :P{GD3571}v37437
+! MA1b. Symbol used in reference                                       :Ptp61F-IR-C2V
+Ptp61F C2V-IR
+! MA27. Insertion category [CV]                                        :synTE_insertion
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

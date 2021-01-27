@@ -1,0 +1,29 @@
+! PUBLICATION PROFORMA                   Version 41:  16 Mar 2010
+!
+! P22.  FlyBase reference ID (FBrf)      *U :unattributed
+! P32.  Action - make this/these FBrf(s) secondary IDs of P22 *N :
+! P39.  Action - obsolete P22 in FlyBase               TAKE CARE :
+! P1.   Type of publication [CV]  *T :
+! P2.   Parent multipub (abbreviation)      *w :
+! P12.  Author(s)                   *a-*b :
+! P10.  Year or date (YYYY.M.D) if PC  *t :
+! P16.  Title                          *u :
+! P3.   Volume number                  *y :
+! P4.   Issue number                   *Y :
+! P11a. Page range or article number        *z :
+! P11d. DOI                                    :
+! P11b. URL                                 *R :
+! P11c. Sequence accession number              :
+! P13.  Language of publication [CV]                          *L :English
+! P14.  Additional language(s) of abstract [CV]               *A :
+! P26.  PubMed ID                *M :
+! P29.  ISBN, if P1 = book       *I :
+! P23.  Text of personal communication *F :
+! P18.  Miscellaneous comments                                  *G :
+! P38.  Associated file, archived at ftp site [SoftCV]       *K :
+!c P30.  Also published as (FBrf)            *C :FBrf0100037
+! P31.  Related publication (FBrf)          *E :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P19.  Internal notes                   *H :?? Checking P30 - !c not allowed here, so expect Peeves error .  sm100422.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

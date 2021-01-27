@@ -1,0 +1,110 @@
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0237128
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :??testing suppression of empty <e> and <t> message in F9
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+! F1f. Database id (default 'new')   :FBtr0472991
+! F1a. Gene product symbol           :Scer\GAL4[Pdfr-EY11851-GAL4]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+! F4. Names(s) used in paper [free text] :
+! F5. Molecule size(s) (wb, nb, sa)      :
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e>  <t> A <a> adult brain | restricted <s>  <note>
+<e> debs <t>  <a> LNd neuron <s>  <note>
+! F15. General expression comment [free text] :
+! F10. Used as bodypart marker for (term ; ID) [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :n
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :n
+! F17. Alleles or genotypes used :
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :??should not give empty <e> or <t> error
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! DATASET/COLLECTION PROFORMA   Version 4.1   19 September 2017
+!
+! LC1f. Database ID for dataset  :FBlc0003382
+! LC1a. Symbol                   :TRiP-KO
+! LC1b. Symbol used in paper/source  :
+! LC1d. Nickname [for labels]        :
+! LC6g. Dataset title  :
+! LC6a. Description [free text]  :
+! LC2a. Type of dataset entity [CV term ; ID]  :
+! LC2b. Type of dataset data [CV term ; ID]    :
+! LC3. Dataset belongs_to this project  :
+! LC14a. Dataset assay/collection is assay_of this biosample  :
+! LC14b. Dataset result is analysis_of  :
+! LC14c. Dataset uses_reagent  :
+! LC14d. Dataset technical_reference_is  :
+! LC14e. Dataset biological_reference_is  :
+! LC14f. Dataset replaced_by  :
+! LC14g. Dataset genome_reference_is  :
+! LC14h. Reference FlyBase gene model annotation set [free text]  :
+! LC3a. Action - rename this dataset symbol    :
+! LC3b. Action - merge these datasets      :
+! LC3c. Action - delete dataset record [y/blank]   :
+! LC3d. Action - dissociate LC1f from FBrf [y/blank]  :
+! LC3e. Action - dissociate LC1f from this dataset  :
+! LC13a. Key GO term(s) - Cellular Component [CV term ; ID]  :
+! LC13b. Key GO term(s) - Molecular Function [CV term ; ID]  :
+! LC13c. Key GO term(s) - Biological Process [CV term ; ID]  :
+! LC13d. Key SO term(s) [CV term ; ID]  :
+! LC4a. Species of derivation [CV]  :
+! LC4i. Other species of interest [CV]  :
+! LC4h. Strain used [symbol]    :
+! LC4b. Strain used [free text]  :
+! LC4f. Genotype used [free text]  :
+! LC4g. Stage and tissue (<e>  <t>  <a>  <s>  <note>)  :
+<e> debs <t> A <a> adult AV2b1 neuron <s>  <note>
+<e> is <t>  <a> embryonic abdominal segment 5--7 <s><note>
+! LC4j. Tissue of interest [CV term ; ID]   :
+! LC4k. Stage of interest [CV term ; ID]   :
+! LC4e. Cell line used [symbol]  :
+! LC12a. Experimental entity [FBid]  :
+! LC12b. Type of experimental entity [CV]  :
+! LC12c. Action - delete the dataset-feature relationship specified in LC12a/LC12b (y/blank)  :
+! LC6d. Dataset/collection members stored in database [Y/N]  :
+! LC6e. Number of entities in dataset/collection [if LC6d is N]   :
+! LC6f. Comment on number of entities in dataset/collection [free text]  :
+! LC11m. Experimental protocol - dataset [CV term ; ID]  :
+! LC11j. Experimental protocol - data analysis is secondary analysis (y/blank)  :
+! LC11a. Experimental protocol, source isolation and prep [free text]  :
+! LC6b. Experimental protocol, dataset/collection preparation [free text]  :
+! LC11c. Experimental protocol, mode of assay [free text]  :
+! LC11e. Experimental protocol, data analysis [free text]  :
+! LC7a. Types of additional data available [free text]  :
+! LC7f. Associated files, archived at ftp site [SoftCV]  :
+! LC7c. Additional data at [database name]  :
+! LC99a. DataSet Accession Number [dbxref.accession]  :
+! LC99b. Database name [database name]  :
+! LC99c. DataSet title [free text]  :
+! LC99d. Action - dissociate accession in LC99a/LC99b from dataset in LC1f/LC1a? (y/blank)  :
+! LC8a. Created by [database name]        :
+! LC8c. Created by [free text]      :
+! LC8b. Available from [database name]    :
+! LC8d. Available from [free text]  :
+! LC9. Additional comments  :
+! LC9a. Structured table [SoftCV]  :
+! LC10. Internal notes      :??should still give an error as not F9
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

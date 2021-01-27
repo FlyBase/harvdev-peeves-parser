@@ -1,0 +1,48 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0235991
+! P2.   Parent multipub abbreviation               *w :Genome Res.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! DATASET/COLLECTION PROFORMA   Version 4.1   19 September 2017
+!
+! LC1f. Database ID for dataset  :new
+! LC1a. Symbol                   :new_dataset
+! LC1b. Symbol used in paper/source  :developmental proteome
+! LC6g. Dataset title  :Developmental proteome of Drosophila melanogaster - umbrella record.
+! LC6a. Description [free text]  :
+! LC2a. Type of dataset entity [CV term ; ID]  :project ; FBcv:0003023
+! LC2b. Type of dataset data [CV term ; ID]    :umbrella project ; FBcv:0003030
+! LC4a. Species of derivation [CV]  :Dmel
+! LC6d. Dataset/collection members stored in database [Y/N]  :Y
+! LC6e. Number of entities in dataset/collection [if LC6d is N]   :55
+! LC6f. Comment on number of entities in dataset/collection [free text]  :
+! LC11a. Experimental protocol, source isolation and prep [free text]  :
+! LC6b. Experimental protocol, dataset/collection preparation [free text]  :
+! LC11c. Experimental protocol, mode of assay [free text]  :
+! LC11e. Experimental protocol, data analysis [free text]  :
+! LC9. Additional comments  :
+! LC99a. DataSet Accession Number [dbxref.accession]  :
+! LC99b. Database name [database name]  :
+! LC99c. DataSet title [free text]  :
+! LC99d. Action - dissociate accession in LC99a/LC99b from dataset in LC1f/LC1a? (y/blank)  :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

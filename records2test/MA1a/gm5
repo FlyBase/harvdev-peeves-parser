@@ -1,0 +1,104 @@
+! PUBLICATION PROFORMA                   Version 44:  6 Nov 2012
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0011145
+! P2.   Parent multipub abbreviation               *w :A. Rep. Biol. Lab., Long Island Biol. Ass.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :no_flag
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :noDOcur
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :??MA1a format tests
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :new
+! MA1a. Insertion symbol to use in database    :gypsy{}en[new]
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :gypsy
+! MA20. Species of host genome                 :
+!
+! MA1c. Action - rename this insertion symbol    :
+! MA1g. Action - merge these insertion(s) (FBti) :
+!
+!
+! MA5a. Chromosomal location of insert                     :
+!
+!
+! MA8.  Phenotype (viable, fertile)            :
+!
+!
+!
+!
+!
+!
+! MA9.  Comments [free text]             :does it say that @new_transg@ in stamps is invalid or @19D@, how about @dpp@, which is valid, or @Blah2@?
+!
+! MA10. Internal notes                   :??identified bug in valid_symbol_of_any_type in symtab.pl - anything that is in the symbol table i.e. even camflag values etc. that has a true value is considered valid by this subroutine, so if you put e.g. @new_transg@ in stamps it doesn't flag it (because its in as a type 'P40_flag'), similar for 19D as is in as an allowed cyto value.  Need to change valid_symbol_of_any_type so that it only looks for either things in %chadotypes (but that will not work as it has FBrf and multipub) or make a new % called stamp_types that will contain FBids of types that can be in @@ and only get it to check those ? or maybe only return true if the *value* returned in the subroutine is either =~ m|^good_| (ie. symbol instantiated in record) or it starts with an FBid that is in %stamp_types  will write ticket documenting this
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :new
+! MA1a. Insertion symbol to use in database    :PBac{lacW}5674
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :P{lacW}
+! MA20. Species of host genome                 :
+!
+! MA1c. Action - rename this insertion symbol    :
+! MA1g. Action - merge these insertion(s) (FBti) :
+!
+!
+! MA5a. Chromosomal location of insert                     :
+!
+!
+! MA8.  Phenotype (viable, fertile)            :
+!
+!
+!
+!
+!
+!
+!
+! MA10. Internal notes                   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :new
+! MA1a. Insertion symbol to use in database    :P{}reallynew
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :P-element
+! MA20. Species of host genome                 :
+!
+! MA1c. Action - rename this insertion symbol    :
+! MA1g. Action - merge these insertion(s) (FBti) :
+!
+!
+! MA5a. Chromosomal location of insert                     :
+!
+!
+! MA8.  Phenotype (viable, fertile)            :
+!
+!
+!
+!
+!
+!
+!
+! MA10. Internal notes                   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

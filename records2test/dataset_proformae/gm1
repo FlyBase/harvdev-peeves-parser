@@ -1,0 +1,48 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 44:  6 Nov 2012
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0213581
+! P2.   Parent multipub abbreviation               *w :Nat. Methods
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! DATASET/COLLECTION PROFORMA   Version 3.0   05 Mar 2014
+!
+! LC1f. Database ID for dataset :FBlc0000185
+! LC1a. Symbol                     :TRiP-3
+! LC1b. Symbol used in paper/source :shRNAs expressed from Valium20
+!
+! LC11a. Experimental protocol, source isolation and prep [free text] :Hairpin constructs were based on the backbone of @mir-1@ with perfect complementarity between the guide and passenger strands, which favors loading onto @AGO2@ effector complexes.
+shRNA sequences were predicted for all annotated genes, the vast majority using 'designer of small interfering RNA' (DSIR, Vert et al., 2006, PMID: 17137497). To minimize off­target effects, shRNAs whose guide or passenger strands had complementary matches of 16 nucleotides or more to the fly transcriptome. Only shRNAs that lacked sequence complementarity to annotated microRNA ‘seed’ sequences were considered.
+A shRNA library repre­senting 83,256 unique synthetic hairpins was synthesized on four custom 22K Agilent microarrays, with up to six shRNAs per gene. Synthetic hairpin constructs were then amplified and cloned into pVALIUM20.
+! LC6b.  Experimental protocol, dataset/collection preparation [free text] :The attB sequence allowed for targeted phiC31-mediated integration at genomic attP landing sites
+!
+! LC7a. Types of additional data available [free text] :TRiP Approach - 2nd generation (http://www.flyrnai.org/TRiP-TTR-GEN2.html)
+!
+! LC9.  Additional comments :The second generation of shRNA-based RNAi constructs was developed because first generation, long dsRNA hairpin-based constructs are ineffective in gene knockdown during oogenesis.
+In general, the phenotypes obtained using pVALIUM20-expressed shRNA constructs were stronger than those obtained with pVALIUM10-expressed long dsRNA ­hairpin constructs, and resembled genetic null mutations for the respective genes.
+In compari­son to long­ hairpin constructs, shRNA constructs are expected to be advantageous as they give rise to only two siRNA species, the guide and passenger strands. However, off­target effects with shRNAs have been observed nonetheless, and verification of obtained phenotypes using independent shRNA constructs to the same gene is advised.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! DATASET/COLLECTION PROFORMA   Version 3.0   05 Mar 2014
+!
+! LC1f. Database ID for dataset :FBlc0000186
+! LC1a. Symbol                     :TRiP-4
+! LC1b. Symbol used in paper/source :shRNAs expressed from Valium22
+!
+! LC11a. Experimental protocol, source isolation and prep [free text] :Hairpin constructs were based on the backbone of @mir-1@ with perfect complementarity between the guide and passenger strands, which favors loading onto @AGO2@ effector complexes.
+shRNA sequences were predicted for all annotated genes, the vast majority using 'designer of small interfering RNA' (DSIR, Vert et al., 2006, PMID: 17137497). To minimize off­target effects, shRNAs whose guide or passenger strands had complementary matches of 16 nucleotides or more to the fly transcriptome. Only shRNAs that lacked sequence complementarity to annotated microRNA ‘seed’ sequences were considered.
+A shRNA library repre­senting 83,256 unique synthetic hairpins was synthesized on four custom 22K Agilent microarrays, with up to six shRNAs per gene. Synthetic hairpin constructs were then amplified and cloned into pVALIUM22.
+! LC6b.  Experimental protocol, dataset/collection preparation [free text] :The attB sequence allowed for targeted phiC31-mediated integration at genomic attP landing sites
+!
+! LC7a. Types of additional data available [free text] :TRiP Approach - 2nd generation (http://www.flyrnai.org/TRiP-TTR-GEN2.html)
+!
+! LC9.  Additional comments :The second generation of shRNA-based RNAi constructs was developed because first generation, long dsRNA hairpin-based constructs are ineffective in gene knockdown during oogenesis.
+pVALIUM22-based shRNA constructs are not only more effective than pVALIUM20-based shRNA constructs for knockdown in the germline, but they are also strictly restricted to the female germline.
+In compari­son to long­ hairpin constructs, shRNA constructs are expected to be advantageous as they give rise to only two siRNA species, the guide and passenger strands. Nonetheless, off­target effects with shRNAs have been observed, and verification of phenotypes using independent shRNA constructs to the same gene is advised.
+! LC4j. Tissue of interest [CV]   :wing
+mushroom body ; FBbt:00005801
+! LC4k. Stage of interest [CV]   :embryonic stage ; FBdv:00005289
+adult stage
+head
+eye ; FBbt:00004508
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!
+

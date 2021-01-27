@@ -1,0 +1,17 @@
+
+Processing gm0006
+
+gm0006: P38: Not checking this field because of ?? in '??
+'
+
+gm0006: GA56: Mismatch between gene symbol '14-3-3&zgr;' in GA1a and the gene portion 'Adgf-A' given in '(with Adgf-A[Karel.3'])' from '(with Adgf-A[Karel.3']) melanotic 'tumor''
+
+
+This file failed at least one check:	gm0006
+
+Ignoring these 6 files:
+
+GA56_complicated_test	gm0006%	peeves.crib	peeves_test.cfg	pub.crib	sent
+
+
+

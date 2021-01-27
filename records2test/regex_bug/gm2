@@ -1,0 +1,90 @@
+! PUBLICATION PROFORMA                   Version 45:  9 Apr 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0220990
+! P2.   Parent multipub abbreviation               *w :Genetics
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :noDOcur
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :??checking changed regex format (peeves v.1.5.48)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0152330
+!cfs MA1a. Insertion symbol to use in database    :Mi{MIC}2mit[MI05471]
+!cfs MA1b. Symbol used in reference               :
+!cfs MA27. Insertion category [CV]                :synTE_insertion
+!cfs MA4.  Symbol of inserted transposon          :
+!cfs MA20. Species of host genome                 :
+!
+!cfs MA1c. Action - rename this insertion symbol    :
+!cfs MA1g. Action - merge these insertion(s) (FBti) :
+!cfs MA1h. Action - delete insertion record ("y"/blank)   :
+!cfs MA1i. Action - dissociate MA1f from FBrf ("y"/blank) :
+!
+!cfs MA1d. Other synonym(s) for insertion symbol  :
+!cfs MA1e. Silent synonym(s) for insertion symbol :
+!cfs MA22. Line id associated with insertion      :
+!
+!cfs MA5a. Chromosomal location of insert                     :
+!cfs MA5c. Cytological location of insert (in situ)           :
+!cfs MA5e. Cytological location (inferred from sequence)      :
+! cfs  MA5f. Genomic release number for data reported in MA5e :
+!cfs MA5d. Insertion maps to/near gene                        :
+!
+!cfs MA7.  Associated chromosomal aberration      :
+!cfs MA14. Associated balancer                    :
+!cfs MA12. Consequent allele(s)                   :
+!
+!cfs MA8.  Phenotype (viable, fertile)            :
+!
+!cfs MA21a. Genomic location of insertion                     :
+!cfs   MA21b. Genome release number for entry in MA21a        :
+!cfs MA21e. Comments concerning genomic location              :
+!cfs MA6.   Orientation of insert relative to chromosome      :
+!
+!cfs MA21c. Insertion into natTE (identified, in FB)             :
+!cfs MA21f. Insertion into other TE or repeat region ("y"/blank) :
+!cfs MA21d. Distance from insertion site to end of natTE/repeat  :
+!
+!cfs MA19a. Accession for insertion flanking sequence (dupl for multiple) :
+!cfs   MA19b. Insertion site accession type (5', 3', b)                   :
+!cfs   MA19c. Position of first base of target sequence in accession      :
+!cfs   MA19d. First base of unique sequence in accession if in natTE      :
+!cfs   MA19e. Accession invalidation or assessment                        :
+!cfs MA26.  Accession for this instance of natTE                          :
+!
+!cfs MA23a. Insertion-affected gene reported (dupl for multiple) :
+!cfs   MA23b. Affected gene criteria [CV]                        :
+!cfs   MA23c. Comment, affected gene criteria [free text]        :
+!cfs   MA23g. Orientation relative to affected gene              :
+!
+!cfs MA15a. FBti progenitor (via transposition) at distinct location :
+!cfs MA15b. FBti progenitor (via recombination) at distinct location :
+!cfs MA15c. Replaced FBti progenitor, recombination substrate        :
+!cfs MA15d. Modified FBti progenitor (in situ)                       :
+!
+!cfs MA24. Arose in multiple insertion line ("y"/"p"/blank) :
+!cfs MA18. Co-isolated insertion(s)                         :
+!
+!cfs MA16. Information on availability      :
+!cfs MA30. From dataset/collection (symbol) :
+!cfs   MA30a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+!cfs MA9.  Comments [free text]             :
+!cfs MA10. Internal notes                   :??dodgy stuff in !C field proforma, should return errors
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

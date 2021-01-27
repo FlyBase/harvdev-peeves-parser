@@ -1,0 +1,43 @@
+! PUBLICATION PROFORMA                   Version 44:  6 Nov 2012
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :new
+! P32.  Action - make this FBrf a secondary ID of P22 (FBrf)  *N :
+! P39.  Action - obsolete P22 in FlyBase (y)           TAKE CARE :
+! P1.   Type of publication [CV]  *T :paper
+! P2.   Parent multipub abbreviation               *w :Genetics
+! P12.  Author(s)                           *a-*b :Author	B.
+! P10.  Year (YYYY), or date (YYYY.M.D) if PC  *t :2012
+! P16.  Title                                  *u :Another new paper.
+! P3.   Volume number                          *y :3
+! P4.   Issue number                           *Y :1
+! P11a. Page range or article number               *z :11--20
+! P11d. DOI                                           :
+! P11b. URL                                        *R :
+! P13.  Language of publication [CV]                          *L :English
+! P14.  Additional language(s) of abstract [CV]               *A :
+! P26.  PubMed ID                *M :
+! P23.  Text of personal communication *F :
+! P18.  Miscellaneous comments                                  *G :
+! P38.  Associated file, archived at ftp site [SoftCV]       *K :
+! P31.  Related publication (FBrf)          *E :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :dm_gen
+dm_other
+! P19.  Internal notes                   *H :??this should not give a P43 error as OK to add disease info for new pub, should give a P41 error as new pub and is empty, also since disease style flags filled in in P43, should warn that no similar are in P41
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

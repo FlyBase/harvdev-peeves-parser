@@ -1,0 +1,30 @@
+
+Processing gm0003
+
+gm0003: P38: Not checking this field because of ?? in '??
+'
+
+gm0003: GA56: Can't use 'recessive' and '(with )' in '(with bw[2]) lethal | recessive'
+
+gm0003: GA56: Can't use 'dominant' and '(with )' in '(with bw[4]) visible | dominant'
+
+gm0003: GA56: Can't use 'recessive' and '(with )' in '(with bw[5]) paralytic | recessive | dominant'
+
+gm0003: GA56: Can't use 'dominant' and '(with )' in '(with bw[4]) visible | dominant | conditional ts'
+
+gm0003: GA56: the allele 'bw[4]' in (with bw[4]) is the same as that in GA1a for '(with bw[4]) paralytic'
+
+gm0003: GA56: the allele 'bw[4]' in (with bw[4]) is the same as that in GA1a for '(with bw[4]) visible | dominant'
+
+gm0003: GA56: Can't use 'dominant' and '(with )' in '(with bw[4]) visible | dominant'
+
+
+This file failed at least one check:	gm0003
+
+Ignoring these 11 files:
+
+GA56_CV_terms_bugs	GA56_CV_terms_bugs%	GA56_with_test	gm0001%	gm0002%	gm0003%	gm070227%	peeves.crib	peeves_test.cfg	pub.crib
+sent
+
+
+

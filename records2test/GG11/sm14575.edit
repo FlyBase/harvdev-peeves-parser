@@ -1,0 +1,48 @@
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0225556
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 7: 08 May 2018
+!
+! GG1a. Gene group symbol                               *a :ELOVL
+! GG1b. Gene group symbol synonym(s)                    *i :Elo
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :n
+! GG2a. Action - gene group name to use in FlyBase      *e :FATTY ACID ELONGASES
+! GG2b. Gene group name synonym(s)                      *V :Elongases
+VLCFA elongases
+!
+!
+! GG4.  Type of gene group [CV]  *t :functional group
+!
+! GG5.  Description of gene group  [free text]  *D :Fatty acid elongases are conserved from yeast to mammals and mediate elongation of fatty acids into very-long-chain fatty acids (VLCFAs, i.e. with acyl chains of 18 carbon atoms or longer). They are bound to the endoplasmic reticulum membrane where they are believed to perform the first step (condensation) in the elongation cycle. VLCFAs are most commonly found in sphingolipids and are essential for sphingolipid formation and function. (Adapted from PMID:16564093.)
+!
+! GG6a. Key GO term(s) - Cellular Component (term ; ID)  *f :integral component of endoplasmic reticulum membrane ; GO:0030176
+! GG6b. Key GO term(s) - Molecular Function (term ; ID)  *F :fatty acid elongase activity ; GO:0009922
+! GG6c. Key GO term(s) - Biological Process (term ; ID)  *d :fatty acid elongation ; GO:0030497
+very long-chain fatty acid biosynthetic process ; GO:0042761
+sphingolipid biosynthetic process ; GO:0030148
+!
+! GG7a. Related gene group(s) in FB - parent (symbol)     *P :
+! GG7c. Related gene group(s) in FB - undefined (symbol)  *U :
+!
+! GG8a. Equivalent gene group accession (rpt. sect. for mult.)  *O :
+! GG8b. FlyBase database symbol (DB1a) for GG8a  *O :
+! GG8c. Title for GG8a [free text]               *T :
+!
+! GG9.  Other related external resource(s) ([title](URL)) *E :
+!
+! GG10. Comments [free text]  *u :
+!
+! GG11. Date gene group last reviewed (YYYYMMDD)  *y :
+!
+! GG12. Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

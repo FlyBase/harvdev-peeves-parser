@@ -1,0 +1,61 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0234411
+! P2.   Parent multipub abbreviation               *w :Neuron
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! CULTURED CELL LINE PROFORMA            Version 5:  Jul 02 2014
+!
+! TC1f. FB ID for cell line (FBtc ID or "new")  :new
+! TC1j. Use this for FB ID (FBtc ID) :FBtc0000000
+! TC1a. Cell line symbol to use in database  :blah
+! TC1b. Symbol used in paper/source (free text) :blah blah
+! TC1c. Symbol synonym (free text)           :fdhjkghsdkg
+! TC1d. Species of source [CV]               :Dmel
+!
+! TC1e. Action - rename this cell line         :n
+! TC1g. Action - merge these cell lines        :n
+! TC1h. Action - delete cell line record ("y"/blank)   :y
+! TC1i. Action - dissociate TC1f from FBrf ("y"/blank) :y
+!
+! TC2a. Source strain (soft CV)            :Orgon R
+! TC2b. Source genotype (components in FB) :w[1] y[3]
+! TC2c. Source cross  (components in FB)   :q x b
+! TC2d. Tissue source  [CV]                :wing
+nucleus
+! TC2e. Developmental stage of source [CV] :embyonic stage
+leg
+!
+! TC3a. Lab of origin (free text) :hello
+! TC4a. Parental cell line (valid cell line symbol) :S2-GFP-SKLdsfdfdf
+! TC4b. Derived from parental line by (CV) :something
+!
+! TC5a. Integrated construct insertion (FBti symbol) :P{lacW}E1-2
+! TC5b. Karotype (free text)      :yes
+! TC5c. Sex ("male" or "female")  :male
+female
+! TC5d. Basis for sex (free text) :some more free text
+!
+! TC8.  Member of dataset/collection [symbol] :probably
+! TC9.  Comment(s) (free text)       :free text
+! TC10. Internal note(s) (free text) :internal note here
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

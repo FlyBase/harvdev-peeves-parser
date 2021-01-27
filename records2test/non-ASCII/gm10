@@ -1,0 +1,1620 @@
+! PUBLICATION PROFORMA    Version 44:  6 Nov 2012
+!
+! P22. FlyBase reference ID (FBrf) or "new"                         *U :FBrf0219269
+! P13. Language of publication [CV]                                *L :English
+! P40.  Flag Cambridge for curation           CAMCUR :pheno
+new_char
+! P41.  Flag Harvard for curation            HARVCUR :pert_exp
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :noDOcur
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 74:  6 Nov 2012
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :tim
+! G1b.  Gene symbol(s) used in reference                    *i :TIM
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2b.  Gene name(s) used in reference                      *V :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 74:  6 Nov 2012
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :per
+! G1b.  Gene symbol(s) used in reference                    *i :PER
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2b.  Gene name(s) used in reference                      *V :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 74:  6 Nov 2012
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Dcr-2
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2b.  Gene name(s) used in reference                      *V :Dicer2
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Dcr-2[Scer\UAS.cDa]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :P{UAS-Dcr-2.D}
+! GA10b. Construct symbol(s) used in reference               *L :UAS-Dicer2
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 74:  6 Nov 2012
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Mmus\Cd8a
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2b.  Gene name(s) used in reference                      *V :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Mmus\Cd8a[Scer\FRT.Scer\UAS.T:Avic\GFP]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :P{UAS(FRT.CD2.y[+])CD8-GFP}
+! GA10b. Construct symbol(s) used in reference               *L :UAS-CD8GFP
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 74:  6 Nov 2012
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Avic\GFP
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2b.  Gene name(s) used in reference                      *V :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[Scer\UAS.cUa]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA10a. Associated construct                                *I :P{UAS-GFP.U}
+! GA10b. Construct symbol(s) used in reference               *L :UAS-GFP
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 74:  6 Nov 2012
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Scer\GAL4
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2b.  Gene name(s) used in reference                      *V :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Scer\GAL4[elav-C155]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA10a. Associated construct                                *I :
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :P{GawB}elav[C155]
+! GA10f. Insertion symbol(s) used in reference          *N :Elav-Gal4
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Scer\GAL4[GMR.PFa]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA10a. Associated construct                                *I :P{GMR-GAL4.w[-]}
+! GA10b. Construct symbol(s) used in reference               *L :GMR-Gal4
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Scer\GAL4[C805]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA10a. Associated construct                                *I :
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :P{GawB}l(2)C805[C805]
+! GA10f. Insertion symbol(s) used in reference          *N :RG-Gal4
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Scer\GAL4[Act5C.PI]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA10a. Associated construct                                *I :P{Act5C-GAL4}
+! GA10b. Construct symbol(s) used in reference               *L :Actin-Gal4
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Scer\GAL4[NP3084]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA10a. Associated construct                                *I :
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :P{GawB}NP3084
+! GA10f. Insertion symbol(s) used in reference          *N :Midgut-Gal4
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Scer\GAL4[ple.PF]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA10a. Associated construct                                *I :P{ple-GAL4.F}
+! GA10b. Construct symbol(s) used in reference               *L :TH-Gal4
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Scer\GAL4[nrv2.PS]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA10a. Associated construct                                *I :P{nrv2-GAL4.S}
+! GA10b. Construct symbol(s) used in reference               *L :Nrv2-Gal4
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Scer\GAL4[tim.PE]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA10a. Associated construct                                *I :P{GAL4-tim.E}
+! GA10b. Construct symbol(s) used in reference               *L :tim-Gal4
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Scer\GAL4[cry.PE]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA10a. Associated construct                                *I :P{cry-GAL4.E}
+! GA10b. Construct symbol(s) used in reference               *L :cry-Gal4
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Scer\GAL4[cry.PZ]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA10a. Associated construct                                *I :P{cry-GAL4.Z}
+! GA10b. Construct symbol(s) used in reference               *L :cry-Gal4
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Scer\GAL4[Mai179]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA10a. Associated construct                                *I :
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :P{GawB}l(2)Mai179[Mai179]
+! GA10f. Insertion symbol(s) used in reference          *N :Mai[179]-Gal4
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Scer\GAL4[Clk.4.1M]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA10a. Associated construct                                *I :P{Clk4.1M-GAL4}
+! GA10b. Construct symbol(s) used in reference               *L :clk[4.1M]-Gal4
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Scer\GAL4[Clk.4.5F]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA10a. Associated construct                                *I :P{Clk4.5F-GAL4}
+! GA10b. Construct symbol(s) used in reference               *L :clk[4.5F]-Gal4
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Scer\GAL4[P2.4.Pdf]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA10a. Associated construct                                *I :P{Pdf-GAL4.P2.4}
+! GA10b. Construct symbol(s) used in reference               *L :Pdf-Gal4
+pdf-Gal4
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA14.  Internal notes  *W :Guessed they used the most popular pdf-gal4.  sm131024.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Scer\GAL4[repo.PU]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA10a. Associated construct                                *I :P{repo-GAL4.U}
+! GA10b. Construct symbol(s) used in reference               *L :Repo-Gal4
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :Scer\GAL80
+! G1b. Gene symbol(s) used in reference                             *i :
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Scer\GAL80[cry.PS]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA10a. Associated construct                                *I :P{cry-GAL80.S}
+! GA10b. Construct symbol(s) used in reference               *L :cry-Gal80
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Scer\GAL80[Pdf.PS]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA10a. Associated construct                                *I :P{Pdf-GAL80.S}
+! GA10b. Construct symbol(s) used in reference               *L :pdf-Gal80
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA14.  Internal notes  *W :Assumed pdf-Gal80 from same source as the cry-Gal80 (which is referenced).  sm131024.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :Tsf1
+! G1b. Gene symbol(s) used in reference                             *i :Tsf1
+CG6186
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :Transferrin
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Tsf1[GD6514]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD6514}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :Tsf2
+! G1b. Gene symbol(s) used in reference                             *i :Tsf2
+CG10620
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :Melanotransferrin
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Tsf2[GD2442]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD2442}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :Tsf3
+! G1b. Gene symbol(s) used in reference                             *i :Tsf3
+CG3666
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :Transferrin
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Tsf3[KK109853]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :locomotor rhythm defective { Scer\GAL4[tim.PE] }
+locomotor rhythm defective { Scer\GAL4[cry.PZ] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) results in robust reduction in the the number of flies showing rhythmic behaviour in constant darkness, a concomitant reduction in the 'rhythmic strength' value of flies classified as rhythmic, and a prolonged period.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{KK109853}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :Mvl
+! G1b. Gene symbol(s) used in reference                             *i :Mvl
+CG3671
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :/Divalent metal transporter
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Mvl[GD3095]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD3095}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :nemy
+! G1b. Gene symbol(s) used in reference                             *i :Nemy
+CG8776
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :DcytB-like
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :nemy[GD15732]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD15732}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :CG1275
+! G1b. Gene symbol(s) used in reference                             *i :CG1275
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :DcytB-like
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :CG1275[KK101451]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{KK101451}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :MCO3
+! G1b. Gene symbol(s) used in reference                             *i :MCO3
+CG5959
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :Multicopper oxidase
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :MCO3[GD6275]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD6275}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :Zip89B
+! G1b. Gene symbol(s) used in reference                             *i :Zip3
+CG6898
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :Zinc-iron transporter
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Zip89B[GD3013]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD3013}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :CG10505
+! G1b. Gene symbol(s) used in reference                             *i :CG10505
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :ABC transporter
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :CG10505[KK103292]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{KK103292}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :mfrn
+! G1b. Gene symbol(s) used in reference                             *i :Mfrn
+CG4963
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :Mitoferrin
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :mfrn[GD336]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD336}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :Fer1HCH
+! G1b. Gene symbol(s) used in reference                             *i :Fer1HCH
+CG2216
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :Ferritin H
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Fer1HCH[GD4853]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :lethal { Scer\GAL4[tim.PE] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression with @P{GAL4-tim.E}27@, in the presence of @Dcr-2[Scer\UAS.cDa]@, results in lethality.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD4853}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Fer1HCH[KK110669]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :lethal { Scer\GAL4[tim.PE] }
+
+lethal { Scer\GAL4[repo.PU] }
+lethal { Scer\GAL4[Act5C.PI] }
+
+locomotor rhythm defective { Scer\GAL4[elav-C155] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression with @P{GAL4-tim.E}27@, @P{GAL4-tim.E}62@, @P{GAL4-tim.E}82@ or @P{GAL4-tim.E}86@, in the presence of @Dcr-2[Scer\UAS.cDa]@, results in lethality.  Inclusion of @Scer\GAL80[cry.PS]@ or @Scer\GAL80[Pdf.PS]@ rescues the lethality of @P{GAL4-tim.E}27@ @Fer1HCH[KK110669]@ flies; the resulting flies show normal circadian rhythms in constant darkness.
+
+Circadian arrhythmicity in constant darkness is observed when when @Fer1HCH[KK110669]@ (together with @Dcr-2[Scer\UAS.cDa]@) is expressed via @Scer\GAL4[elav-C155]@.
+
+Circadian behaviour in constant darkness is not affected when @Fer1HCH[KK110669]@ (together with @Dcr-2[Scer\UAS.cDa]@) is expressed via @Scer\GAL4[P2.4.Pdf]@, @P{cry-GAL4.E}19@, @Scer\GAL4[Clk.4.1M]@, @Scer\GAL4[Clk.4.5F]@, @Scer\GAL4[nrv2.PS]@, @Scer\GAL4[C805]@, @Scer\GAL4[NP3084]@, @Scer\GAL4[GMR.PFa]@, @Scer\GAL4[ple.PF]@, @Scer\GAL4[Mai179]@, @P{cry-GAL4.Z}17@ or @P{cry-GAL4.E}39@.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{KK110669}
+! GA10b. Construct symbol(s) used in reference               *L :UAS-Fer1HCH-RNAi
+! GA14.  Internal notes  *W :Assumed additional expts shown in Table 2 done with the RNAi line showing stronger and more penetrant effects in Table 1, ie. KK110669.  sm131024.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :Fer2LCH
+! G1b. Gene symbol(s) used in reference                             *i :Fer2LCH
+CG1469
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :Ferritin L
+Ferritin 2 Light Chain Homologue
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :locomotor rhythm ; GO:0045475 | IMP
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Fer2LCH[GD6348]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :locomotor rhythm defective { Scer\GAL4[tim.PE] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) results in robust reduction in the the number of flies showing rhythmic behaviour in constant darkness, a concomitant reduction in the 'rhythmic strength' value of flies classified as rhythmic, and a prolonged period.
+Under 12:12 hour alternating light/dark cycles, control and @P{GAL4-tim.E}27@ @Fer2LCH[GD6348]@ @Dcr-2[Scer\UAS.cDa]@ flies show no apparent differences in locomotor circadian rhythm.  Rhythm breaks down under constant darkness conditions, and is restored upon re-establishment of light/dark cycles.   Clock neurons are not killed by @Fer2LCH[GD6348]@ expression.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD6348}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Fer2LCH[KK103577]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :locomotor rhythm defective { Scer\GAL4[tim.PE] }
+locomotor rhythm defective { Scer\GAL4[cry.PZ] }
+locomotor rhythm defective { Scer\GAL4[Mai179] }
+locomotor rhythm defective { Scer\GAL4[cry.PE] }
+locomotor rhythm defective { Scer\GAL4[elav-C155] }
+
+lethal { Scer\GAL4[repo.PU] }
+lethal { Scer\GAL4[Act5C.PI] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) results in robust reduction in the the number of flies showing rhythmic behaviour in constant darkness and a concomitant reduction in the 'rhythmic strength' value of flies classified as rhythmic.  Inclusion of @Scer\GAL80[cry.PS]@ rescues the circadian rhythm defects of @P{GAL4-tim.E}27@ @Fer2LCH[KK103577]@ flies; inclusion of @Scer\GAL80[Pdf.PS]@ partially rescues these defects.
+
+Under 12:12 hour alternating light/dark cycles, control and @P{GAL4-tim.E}27@ @Fer2LCH[KK103577]@ @Dcr-2[Scer\UAS.cDa]@ flies show no apparent differences in locomotor circadian rhythm.  Rhythm breaks down under constant darkness conditions, and is restored upon re-establishment of light/dark cycles.  Clock neurons are not killed by @Fer2LCH[KK103577]@ expression.
+
+Circadian arrhythmicity in constant darkness is observed when when @Fer2LCH[KK103577]@ (together with @Dcr-2[Scer\UAS.cDa]@) is expressed via @Scer\GAL4[Mai179]@, @P{GAL4-tim.E}62@, @P{GAL4-tim.E}82@, @P{GAL4-tim.E}86@, @P{cry-GAL4.E}39@ or @Scer\GAL4[elav-C155]@.
+
+Circadian behaviour in constant darkness is not affected when @Fer2LCH[KK103577]@ (together with @Dcr-2[Scer\UAS.cDa]@) is expressed via @Scer\GAL4[P2.4.Pdf]@, @P{cry-GAL4.E}19@, @Scer\GAL4[Clk.4.1M]@, @Scer\GAL4[Clk.4.5F]@, @Scer\GAL4[nrv2.PS]@, @Scer\GAL4[C805]@, @Scer\GAL4[NP3084]@, @Scer\GAL4[GMR.PFa]@ or @Scer\GAL4[ple.PF]@.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{KK103577}
+! GA10b. Construct symbol(s) used in reference               *L :UAS-Fer2LCH-RNAi
+! GA14.  Internal notes  *W :Assumed additional expts shown in Table/Fig 2 done with the RNAi line showing stronger and more penetrant effects in Table 1, ie. KK103577.  sm131024.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :Fer3HCH
+! G1b. Gene symbol(s) used in reference                             *i :Fer3HCH
+CG4349
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :mitoch. ferritin
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Fer3HCH[GD11289]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD11289}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :mub
+! G1b. Gene symbol(s) used in reference                             *i :mub
+CG7437
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :poly (rC) binding protein
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :mub[KK108209]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :locomotor rhythm defective { Scer\GAL4[tim.PE] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) results in a reduction in the 'rhythmic strength' value of flies classified as rhythmic.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{KK108209}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :Cubn
+! G1b. Gene symbol(s) used in reference                             *i :CG32702
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :TMPRSS6 iron sensing
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Cubn[GD6458]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD6458}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :CG9003
+! G1b. Gene symbol(s) used in reference                             *i :CG9003
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :Fbxl5 iron sensing
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :CG9003[GD13533]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD13533}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :Alas
+! G1b. Gene symbol(s) used in reference                             *i :Alas
+CG3017
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :Alas/50-Aminolevulinate synthase
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Alas[GD10011]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD10011}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Alas[KK101189]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :lethal { Scer\GAL4[tim.PE] }
+lethal { Scer\GAL4[cry.PZ] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression with @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@, in the presence of @Dcr-2[Scer\UAS.cDa]@, results in lethality.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{KK101189}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :Pbgs
+! G1b. Gene symbol(s) used in reference                             *i :Pbgs
+CG10335
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :Porphobilinogen synthase
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Pbgs[GD12588]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :lethal { Scer\GAL4[tim.PE] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression with @P{GAL4-tim.E}27@, in the presence of @Dcr-2[Scer\UAS.cDa]@, results in lethality.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD12588}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :Coprox
+! G1b. Gene symbol(s) used in reference                             *i :Coprox
+CG3433
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :Corpoporphyrinogen III oxidase
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Coprox[KK101688]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :lethal { Scer\GAL4[tim.PE] }
+locomotor rhythm defective { Scer\GAL4[cry.PZ] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression with @P{GAL4-tim.E}27@, in the presence of @Dcr-2[Scer\UAS.cDa]@, results in lethality.
+Expression via @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) results in a reduction in the 'rhythmic strength' value of flies classified as rhythmic.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{KK101688}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :Ppox
+! G1b. Gene symbol(s) used in reference                             *i :Ppox
+CG5796
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :Protoporphyrinogen oxidase
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Ppox[GD11772]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :lethal { Scer\GAL4[tim.PE] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression with @P{GAL4-tim.E}27@, in the presence of @Dcr-2[Scer\UAS.cDa]@, results in lethality.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD11772}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :FeCH
+! G1b. Gene symbol(s) used in reference                             *i :CG2098
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :Ferrochelatase
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :FeCH[KK108873]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :locomotor rhythm defective { Scer\GAL4[tim.PE] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) results in a prolonged period.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{KK108873}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :FeCH[GD9723]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD9723}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :Ho
+! G1b. Gene symbol(s) used in reference                             *i :Ho
+CG14716
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :Haem oxygenase
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Ho[NIG.14716R]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{NIG.14716R}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :CG9471
+! G1b. Gene symbol(s) used in reference                             *i :CG9471
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :Biliverdin reductase
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :CG9471[GD14224]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD14224}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :Cchl
+! G1b. Gene symbol(s) used in reference                             *i :Cchl
+CG6022
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :Cytochrome c haem lyase
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Cchl[GD9912]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD9912}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :CG1358
+! G1b. Gene symbol(s) used in reference                             *i :CG1358
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :FLVCR haem transporter
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :CG1358[KK109206]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :locomotor rhythm defective { Scer\GAL4[tim.PE] }
+locomotor rhythm defective { Scer\GAL4[cry.PZ] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) results in robust reduction in the the number of flies showing rhythmic behaviour in constant darkness.  With @P{GAL4-tim.E}27@, flies also show a concomitant reduction in the 'rhythmic strength' value of flies classified as rhythmic.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{KK109206}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :Cat
+! G1b. Gene symbol(s) used in reference                             *i :Cat
+CG6871
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :Catalase
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Cat[GD1291]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :locomotor rhythm defective { Scer\GAL4[tim.PE] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) results in a reduction in the 'rhythmic strength' value of flies classified as rhythmic and a prolonged period.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD1291}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :Eip75B
+! G1b. Gene symbol(s) used in reference                             *i :Eip75B
+Rev-Erb
+CG8127
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Eip75B[GD1434]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :lethal { Scer\GAL4[tim.PE] }
+lethal { Scer\GAL4[cry.PZ] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression with @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@, in the presence of @Dcr-2[Scer\UAS.cDa]@, results in lethality.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD1434}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :fh
+! G1b. Gene symbol(s) used in reference                             *i :fh
+CG8971
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :frataxin homologue
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :fh[dsRNA.IR.Scer\UAS]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :locomotor rhythm defective { Scer\GAL4[tim.PE] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) results in a prolonged period.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{UAS-fh.IR}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :CG12264
+! G1b. Gene symbol(s) used in reference                             *i :CG12264
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :IscS homologue
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :CG12264[KK101134]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :locomotor rhythm defective { Scer\GAL4[tim.PE] }
+locomotor rhythm defective { Scer\GAL4[cry.PZ] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) results in robust reduction in the the number of flies showing rhythmic behaviour in constant darkness and a concomitant reduction in the 'rhythmic strength' value of flies classified as rhythmic.  With @P{GAL4-tim.E}27@, flies also show a prolonged period.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{KK101134}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :CG9836
+! G1b. Gene symbol(s) used in reference                             *i :CG9836
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :IscU homologue
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :CG9836[GD14694]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :lethal { Scer\GAL4[tim.PE] }
+locomotor rhythm defective { Scer\GAL4[cry.PZ] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression with @P{GAL4-tim.E}27@, in the presence of @Dcr-2[Scer\UAS.cDa]@, results in lethality.
+Expression via @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) results in robust reduction in the the number of flies showing rhythmic behaviour in constant darkness and a concomitant reduction in the 'rhythmic strength' value of flies classified as rhythmic.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD14694}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :l(1)G0136
+! G1b. Gene symbol(s) used in reference                             *i :CG8198
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :IscA1 homologue
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :l(1)G0136[KK109272]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :locomotor rhythm defective { Scer\GAL4[tim.PE] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) results in robust reduction in the the number of flies showing rhythmic behaviour in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{KK109272}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :CG13623
+! G1b. Gene symbol(s) used in reference                             *i :CG13623
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :IscA2 homologue
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :CG13623[KK108298]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{KK108298}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :CG6523
+! G1b. Gene symbol(s) used in reference                             *i :Grx3
+Grx4
+CG6523
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :CG6523[KK109143]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{KK109143}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :CG14407
+! G1b. Gene symbol(s) used in reference                             *i :CG14407
+Grx5
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :CG14407[GD8315]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD8315}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :ABCB7
+! G1b. Gene symbol(s) used in reference                             *i :CG7955
+ABCB7
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :ABCB7[GD2245]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD2245}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :CG7349
+! G1b. Gene symbol(s) used in reference                             *i :CG7349
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :Ferredoxin
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :CG7349[GD1574]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD1574}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :CG17904
+! G1b. Gene symbol(s) used in reference                             *i :CG17904
+Nubp1
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :CG17904[KK100373]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{KK100373}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :CG4858
+! G1b. Gene symbol(s) used in reference                             *i :CG4858
+Nubp2
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :CG4858[KK100349]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :locomotor rhythm defective { Scer\GAL4[tim.PE] }
+locomotor rhythm defective { Scer\GAL4[cry.PZ] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) results in robust reduction in the the number of flies showing rhythmic behaviour in constant darkness and a concomitant reduction in the 'rhythmic strength' value of flies classified as rhythmic.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{KK100349}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :CG17683
+! G1b. Gene symbol(s) used in reference                             *i :CG17683
+NAR1p
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :CG17683[KK115708]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :lethal { Scer\GAL4[tim.PE] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression with @P{GAL4-tim.E}27@, in the presence of @Dcr-2[Scer\UAS.cDa]@, results in lethality.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{KK115708}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :CG30152
+! G1b. Gene symbol(s) used in reference                             *i :CG30152
+FAM96a
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :CG30152[KK101219]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :lethal { Scer\GAL4[tim.PE] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression with @P{GAL4-tim.E}27@, in the presence of @Dcr-2[Scer\UAS.cDa]@, results in lethality.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{KK101219}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :Ciao1
+! G1b. Gene symbol(s) used in reference                             *i :CG12797
+CiaO1
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Ciao1[KK107587]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{KK107587}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :CG8043
+! G1b. Gene symbol(s) used in reference                             *i :CG8043
+Iba57
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :CG8043[KK107835]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :locomotor rhythm defective { Scer\GAL4[tim.PE] }
+locomotor rhythm defective { Scer\GAL4[cry.PZ] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) results in robust reduction in the the number of flies showing rhythmic behaviour in constant darkness.  With @P{GAL4-tim.E}27@, flies also show a concomitant reduction in the 'rhythmic strength' value of flies classified as rhythmic and a reduced period.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{KK107835}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :CG17843
+! G1b. Gene symbol(s) used in reference                             *i :CG17843
+Erv1
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :CG17843[KK105277]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{KK105277}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :CG1458
+! G1b. Gene symbol(s) used in reference                             *i :CG1458
+MitoNEET
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :CG1458[KK109403]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{KK109403}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :Irp-1B
+! G1b. Gene symbol(s) used in reference                             *i :Irp-1B
+CG6342
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :cytosolic aconitase
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Irp-1B[GD11895]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{GD11895}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Irp-1B[KK108179]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{KK108179}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :Acon
+! G1b. Gene symbol(s) used in reference                             *i :Acon
+CG9244
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :mitochondrial aconitase
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Acon[KK100999]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{KK100999}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :Sod
+! G1b. Gene symbol(s) used in reference                             *i :Sod1
+CG11793
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :Cu–Zn superoxide dismutase
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Sod[dsRNA.Scer\UAS.cHa]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{UAS-Sod.IR}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 74:  6 Nov 2012
+!
+! G1a. Gene symbol to use in FlyBase                                *a :Sod2
+! G1b. Gene symbol(s) used in reference                             *i :Sod2
+CG8905
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G2b. Gene name(s) used in reference                               *V :Mn superoxide dismutase
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA    Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Sod2[dsRNA.Scer\UAS.cKa]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Expression via @P{GAL4-tim.E}27@ or @P{cry-GAL4.Z}17@ (in the presence of @Dcr-2[Scer\UAS.cDa]@) does not significantly affect circadian rhythmicity in locomotor activity assays in constant darkness.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA10a. Associated construct                                *I :P{UAS-Sod2.dsRNA.K}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0017922
+! MA1a. Insertion symbol to use in database    :P{GAL4-tim.E}62
+! MA1b. Symbol used in reference               :tim[62]-Gal4
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA10. Internal notes                   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0017923
+! MA1a. Insertion symbol to use in database    :P{GAL4-tim.E}82
+! MA1b. Symbol used in reference               :tim[82]-Gal4
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA10. Internal notes                   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0017924
+! MA1a. Insertion symbol to use in database    :P{GAL4-tim.E}86
+! MA1b. Symbol used in reference               :tim[86]-Gal4
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA10. Internal notes                   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0017925
+! MA1a. Insertion symbol to use in database    :P{GAL4-tim.E}27
+! MA1b. Symbol used in reference               :tim[27]-Gal4
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA10. Internal notes                   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0058622
+! MA1a. Insertion symbol to use in database    :P{cry-GAL4.E}39
+! MA1b. Symbol used in reference               :cry[39]-Gal4
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA10. Internal notes                   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0127960
+! MA1a. Insertion symbol to use in database    :P{cry-GAL4.E}19
+! MA1b. Symbol used in reference               :cry[19]-Gal4
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA10. Internal notes                   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0027660
+! MA1a. Insertion symbol to use in database    :P{cry-GAL4.Z}17
+! MA1b. Symbol used in reference               :cry[17b]-Gal4
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA10. Internal notes                   :P{cry-GAL4.Z}17 is a guess for 'cry[17b]-Gal4'.  sm131024.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

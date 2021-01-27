@@ -1,0 +1,24 @@
+! PUBLICATION PROFORMA    Version 38:  16 Sep 2009
+!
+! P22. FlyBase reference ID (FBrf)                                  *U :new
+! P1. Type of publication [SoftCV]                                  [SoftCV]  *T :paper
+! P2. Parent multipub (abbreviation)                                *w :Neuron
+! P21. Parent multipub (ID)                                         *W :2728
+! P12. Author(s)                                                 *a-*b :Frank	C.A.
+Kennedy	M.J.
+Goold	C.P.
+Marek	K.W.
+Davis	G.W.
+! P16. Title                                                        *u :Mechanisms underlying the rapid induction and sustained expression of synaptic homeostasis.
+! P3. Volume number                                                 *y :52
+! P4. Issue number                                                  *Y :4
+! P11a. Page range or article number                                *z :663--677
+! P13. Language of publication [CV]                                *L :English
+! P26. PubMed ID                                                    *M :17114050
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA    Version 66:  03 Mar 2010
+!
+! G1a. Gene symbol to use in FlyBase                                *a :mel
+! G1g. Is G1a the current symbol of a gene in FlyBase? (y/n)           :y
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                           :y
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

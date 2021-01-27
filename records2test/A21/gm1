@@ -1,0 +1,86 @@
+! PUBLICATION PROFORMA                   Version 46:  20 Jun 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0111489
+! P2.   Parent multipub abbreviation               *w :Genetics
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+! ABERRATION PROFORMA                    Version 60: 05 Mar 2014
+!
+! A1a.  Aberration symbol to use in FlyBase                 *a :In(2LR)O
+! A1b.  Aberration symbol(s) used in reference              *i :In(2LR)O
+! A1e.  Action - rename this aberration symbol                 :
+! A1f.  Action - merge these aberrations (symbols)             :
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+! A2a.  Action - aberration name to use in FlyBase          *e :
+! A2b.  Aberration name(s) used in reference                *Q :
+! A2c.  Action - replace this aberration name                  :
+! A27a. Action - obsolete A1a in FlyBase       TAKE CARE :
+! A27b. Action - dissociate A1a from reference TAKE CARE :
+!c A21. A1a stated to be lost? *v :not allowed value
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENOTYPE VARIANT DATA FOR THIS ABERRATION
+! Insert genotype variant proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next aberration proforma below.
+! ABERRATION PROFORMA                    Version 60: 05 Mar 2014
+!
+! A1a.  Aberration symbol to use in FlyBase                 *a :In(2L)AC1
+! A1b.  Aberration symbol(s) used in reference              *i :In(2L)AC1
+! A1e.  Action - rename this aberration symbol                 :
+! A1f.  Action - merge these aberrations (symbols)             :
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+! A2a.  Action - aberration name to use in FlyBase          *e :
+! A2b.  Aberration name(s) used in reference                *Q :
+! A2c.  Action - replace this aberration name                  :
+! A27a. Action - obsolete A1a in FlyBase       TAKE CARE :
+! A27b. Action - dissociate A1a from reference TAKE CARE :
+! A21. A1a stated to be lost? *v :Stated to be lost.
+! A15.  Internal notes                          *K :??OK
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENOTYPE VARIANT DATA FOR THIS ABERRATION
+! Insert genotype variant proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next aberration proforma below.
+! ABERRATION PROFORMA                    Version 60: 05 Mar 2014
+!
+! A1a.  Aberration symbol to use in FlyBase                 *a :In(2L)dpp
+! A1b.  Aberration symbol(s) used in reference              *i :In(2L)dpp
+! A1e.  Action - rename this aberration symbol                 :
+! A1f.  Action - merge these aberrations (symbols)             :
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :n
+! A2a.  Action - aberration name to use in FlyBase          *e :
+! A2b.  Aberration name(s) used in reference                *Q :
+! A2c.  Action - replace this aberration name                  :
+! A27a. Action - obsolete A1a in FlyBase       TAKE CARE :
+! A27b. Action - dissociate A1a from reference TAKE CARE :
+!c A21. A1a stated to be lost? *v :multiple
+lines not allowed
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENOTYPE VARIANT DATA FOR THIS ABERRATION
+! Insert genotype variant proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

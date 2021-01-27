@@ -1,0 +1,43 @@
+! C1.  Curator ID	:gds
+! C2.  Date		:151016
+! C3.  Curator notes to self	:
+! C9.  Cambridge curation (gene_group, new_al, merge, split, rename, new_char, pheno, nocur, new_transg) 
+! C4.  Additional curation (P41. wt_exp, pert_exp, neur_exp, gene_model, gene_model_nonmel, phys_int, cis_reg, genom_feat, no_flag, disease, P42. novel_anat, P43. disease)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0111395
+! P2.   Parent multipub abbreviation               *w :Oncogene
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA             Version 2.6  15 Nov 2011
+!
+! IN1f. Database ID for interaction  :FBrf0111395-1.ENZ.WB
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :n
+! IN1c. Action - rename this event   :blah blah
+! IN2a. Interaction description (protein-protein/RNA-protein)     :protein-protein
+! IN2b. Interaction type (Termlink MI CV) :physical association
+! IN3.  Interaction assay (Termlink MI CV)    :enzymatic study
+western blot
+inferred by author
+! IN5a. Cell line used               :S2
+! IN5e. Comments concerning source   :Source was cell extract of S2 cell line; enzyme produced from transfected construct; enzyme target produced from transfected construct.
+! IN6.  List of interactors (FB symbol or ids), role (Termlink MI CV), qualifier ( <symbol>  <ID_as_reported>  <role>  <qual/note> ) :
+<symbol> Abl-XP <ID_as_reported> Abl <role> enzyme <qual/note>
+<symbol> Abi-XP <ID_as_reported> dAbi <role> enzyme target <qual/note>
+! IN7b. Comments concerning experimental data :
+! IN7c. Subregion(s) of participant(s) with role in interaction ( <link to>  <description> region <role> unspecified role <coordinates/seq>  <note> ) :
+<link to> Trc8-XP <description> Patched-like loop and RING-H2 finger <role> sufficient binding region <coordinates/seq> aa 277-744 <note> lacks C-terminal PEST sequences
+<link to> pbl-XP <description> N-terminal region <role> mutation disrupting interaction <coordinates/seq> aa 206 <note> P206A, coordinates relative to pbl-PA
+!
+! IN7d. Isoform-specific participant(s) with role in interaction ( <link to>  <description>  <role> unspecified role <note> ) :
+<link to> Sin3A-XP <description> 220-kDa isoforM <role> unspecified role <note> higher levels than 187-kDa isoform
+<link to> osk-XP <description> short Osk <role> unspecified role <note> not long Osk, corresponds to osk-PC
+
+! IN8a. Public comments   :Co-transfection of @Abl@ with @Abi@ leads to phosphorylated forms of @Abi@ as determined by higher molecular weight bands on western blot and phosphotyrosine reactivity of the @Abi@ protein band.
+! IN8b. Internal comments :Fig1A
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!
+

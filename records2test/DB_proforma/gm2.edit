@@ -1,0 +1,13 @@
+! DATABASE PROFORMA     Version 2: 16 Mar 2015
+!
+! DB1a. Symbol to use in FlyBase (db.name) :Affymetrix
+! DB1g. Is DB1a the current symbol of a database in FlyBase? (y/n) :n
+! DB2a. Description (db.description) :Affymetrix
+! DB2b. Action - change existing db.description? (blank/y) :y
+! DB3a. Database URL (db.url) :??
+! DB3c. Action - change existing db.url? (blank/y) :
+! DB3b. Accession URL (db.urlprefix) :
+! DB3d. Action - change existing db.urlprefix? (blank/y) :n
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

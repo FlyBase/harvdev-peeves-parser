@@ -1,0 +1,16 @@
+! C1. Curator ss
+! C2. Date:121030
+! C3. Curator notes to self:
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 43:  17 Jun 2011
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0215078
+! P2.   Parent multipub abbreviation               *w :J. Lipid Res.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :disease
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :??Should give an error as disease in P43 and nothing in P44
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

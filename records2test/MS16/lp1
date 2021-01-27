@@ -1,0 +1,330 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0180675
+! P2.   Parent multipub abbreviation               *w :Science
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! MOLECULAR SEGMENT AND CONSTRUCT PROFORMA           Version 29: 16 June 2014
+!
+! MS1f. Database ID for segment (FBid or "new") :FBmc0001379
+! MS1a. Segment symbol to use in database       :Lorist6
+! MS1b. Symbol used in paper                    :
+! MS16. Segment category (type of entity) [CV]  :transgenic_transposable_element
+!
+! MS4a. Description [CV]                        :transposon
+! MS21. Transposon class (generic)              :
+! MS14. Uses [CV]                               :
+! MS22. Localized function [CV]      :
+!
+! MS1c. Action - replace this segment symbol :
+! MS1g. Action - merge these segments (FBid) :
+!
+!
+! MS19a. Progenitor(s) (in FB) :
+! MS19b. Progenitor(s) (other) :
+!
+!
+!
+!
+!
+!
+!
+! MS10b. General comments :
+! MS11.  Internal notes   :??should complain about MS16 as not correct value for FBmc
+??should complain about MS4a as not allowed for FBmc
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! MOLECULAR SEGMENT AND CONSTRUCT PROFORMA           Version 29: 16 June 2014
+!
+! MS1f. Database ID for segment (FBid or "new") :FBmc0002788
+! MS1a. Segment symbol to use in database       :p0-CAT
+! MS1b. Symbol used in paper                    :
+! MS16. Segment category (type of entity) [CV]  :engineered_plasmid
+!
+! MS4a. Description [CV]                        :plasmid
+! MS21. Transposon class (generic)              :
+! MS14. Uses [CV]                               :
+! MS22. Localized function [CV]      :
+!
+! MS1c. Action - replace this segment symbol :
+! MS1g. Action - merge these segments (FBid) :
+!
+!
+! MS19a. Progenitor(s) (in FB) :
+! MS19b. Progenitor(s) (other) :
+!
+!
+!
+!
+!
+!
+!
+! MS10b. General comments :
+! MS11.  Internal notes   :??should generate NO error - 'engineered_plasmid' is correct for FBmc in MS16, 'plasmid' is correct for MS4a
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! MOLECULAR SEGMENT AND CONSTRUCT PROFORMA           Version 29: 16 June 2014
+!
+! MS1f. Database ID for segment (FBid or "new") :new
+! MS1a. Segment symbol to use in database       :PBac{+tCH322-07H05new}
+! MS1b. Symbol used in paper                    :
+! MS16. Segment category (type of entity) [CV]  :
+!
+! MS4a. Description [CV]                        :
+! MS21. Transposon class (generic)              :
+! MS14. Uses [CV]                               :
+! MS22. Localized function [CV]      :
+!
+! MS1c. Action - replace this segment symbol :
+! MS1g. Action - merge these segments (FBid) :FBtp0091928
+FBtp0089979
+!
+!
+! MS19a. Progenitor(s) (in FB) :
+! MS19b. Progenitor(s) (other) :
+!
+!
+!
+!
+!
+!
+!
+! MS10b. General comments :
+! MS11.  Internal notes   :??should complain as MS16 must be filled in for merge, should not complain about MS4a as does NOT need to be filled in for merge
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! MOLECULAR SEGMENT AND CONSTRUCT PROFORMA           Version 29: 16 June 2014
+!
+! MS1f. Database ID for segment (FBid or "new") :FBtp0132615
+! MS1a. Segment symbol to use in database       :PBac{10xUAS-mCherry}
+! MS1b. Symbol used in paper                    :
+! MS16. Segment category (type of entity) [CV]  :
+!
+! MS4a. Description [CV]                        :transposon
+! MS21. Transposon class (generic)              :
+! MS14. Uses [CV]                               :
+! MS22. Localized function [CV]      :
+!
+! MS1c. Action - replace this segment symbol :
+! MS1g. Action - merge these segments (FBid) :
+!
+!
+! MS19a. Progenitor(s) (in FB) :
+! MS19b. Progenitor(s) (other) :
+!
+!
+!
+!
+!
+!
+!
+! MS10b. General comments :
+! MS11.  Internal notes   :??should NOT complain - MS16 not needed for existing construct and MS4a is allowed value
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! MOLECULAR SEGMENT AND CONSTRUCT PROFORMA           Version 29: 16 June 2014
+!
+! MS1f. Database ID for segment (FBid or "new") :new
+! MS1a. Segment symbol to use in database       :P{GAL4new}
+! MS1b. Symbol used in paper                    :
+! MS16. Segment category (type of entity) [CV]  :engineered_region
+!
+! MS4a. Description [CV]                        :
+! MS21. Transposon class (generic)              :
+! MS14. Uses [CV]                               :
+! MS22. Localized function [CV]      :
+!
+! MS1c. Action - replace this segment symbol :
+! MS1g. Action - merge these segments (FBid) :
+!
+!
+! MS19a. Progenitor(s) (in FB) :
+! MS19b. Progenitor(s) (other) :
+!
+!
+!
+!
+!
+!
+!
+! MS10b. General comments :
+! MS11.  Internal notes   :??should complain - 'engineered_region' in MS16 not correct for regular FBtp construct, MS4a needed for new construct
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! MOLECULAR SEGMENT AND CONSTRUCT PROFORMA           Version 29: 16 June 2014
+!
+! MS1f. Database ID for segment (FBid or "new") :new
+! MS1a. Segment symbol to use in database       :TI{GAL4}
+! MS1b. Symbol used in paper                    :
+! MS16. Segment category (type of entity) [CV]  :
+!
+! MS4a. Description [CV]                        :transposon
+! MS21. Transposon class (generic)              :
+! MS14. Uses [CV]                               :
+! MS22. Localized function [CV]      :
+!
+! MS1c. Action - replace this segment symbol :
+! MS1g. Action - merge these segments (FBid) :
+!
+!
+! MS19a. Progenitor(s) (in FB) :
+! MS19b. Progenitor(s) (other) :
+!
+!
+!
+!
+!
+!
+!
+! MS10b. General comments :
+! MS11.  Internal notes   :??should complain - MS16 needed for new TI construct, MS4a should not be filled in for TI construct
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! MOLECULAR SEGMENT AND CONSTRUCT PROFORMA           Version 29: 16 June 2014
+!
+! MS1f. Database ID for segment (FBid or "new") :new
+! MS1a. Segment symbol to use in database       :TI{TI}
+! MS1b. Symbol used in paper                    :
+! MS16. Segment category (type of entity) [CV]  :transgenic_transposable_element
+!
+! MS4a. Description [CV]                        :
+! MS21. Transposon class (generic)              :
+! MS14. Uses [CV]                               :
+! MS22. Localized function [CV]      :
+!
+! MS1c. Action - replace this segment symbol :
+! MS1g. Action - merge these segments (FBid) :
+!
+!
+! MS19a. Progenitor(s) (in FB) :
+! MS19b. Progenitor(s) (other) :
+!
+!
+!
+!
+!
+!
+!
+! MS10b. General comments :
+! MS11.  Internal notes   :??should complain - transgenic_transposable_element not allowed for TI, should NOT complain about MS4a as not filled in for TI construct
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! MOLECULAR SEGMENT AND CONSTRUCT PROFORMA           Version 29: 16 June 2014
+!
+! MS1f. Database ID for segment (FBid or "new") :new
+! MS1a. Segment symbol to use in database       :TI{GFP}
+! MS1b. Symbol used in paper                    :
+! MS16. Segment category (type of entity) [CV]  :engineered_region
+!
+! MS4a. Description [CV]                        :cosmid
+! MS21. Transposon class (generic)              :
+! MS14. Uses [CV]                               :
+! MS22. Localized function [CV]      :
+!
+! MS1c. Action - replace this segment symbol :
+! MS1g. Action - merge these segments (FBid) :
+!
+!
+! MS19a. Progenitor(s) (in FB) :
+! MS19b. Progenitor(s) (other) :
+!
+!
+!
+!
+!
+!
+!
+! MS10b. General comments :
+! MS11.  Internal notes   :??should NOT complain - 'engineered_region' is correct for TI, should complain about MS4a - just that should not fill in for TI construct
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! MOLECULAR SEGMENT AND CONSTRUCT PROFORMA           Version 29: 16 June 2014
+!
+! MS1f. Database ID for segment (FBid or "new") :FBms0000002
+! MS1a. Segment symbol to use in database       :6.1_P5'(P5',X1)
+! MS1b. Symbol used in paper                    :
+! MS16. Segment category (type of entity) [CV]  :cloned_region
+!
+! MS4a. Description [CV]                        :component_segment
+! MS21. Transposon class (generic)              :
+! MS14. Uses [CV]                               :
+! MS22. Localized function [CV]      :
+!
+! MS1c. Action - replace this segment symbol :
+! MS1g. Action - merge these segments (FBid) :
+!
+!
+! MS19a. Progenitor(s) (in FB) :
+! MS19b. Progenitor(s) (other) :
+!
+!
+!
+!
+!
+!
+!
+! MS10b. General comments :
+! MS11.  Internal notes   :??should NOT complain - cloned_region is allowed for FBms in MS16, component_segment allowed in MS4a
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! MOLECULAR SEGMENT AND CONSTRUCT PROFORMA           Version 29: 16 June 2014
+!
+! MS1f. Database ID for segment (FBid or "new") :FBms0000006
+! MS1a. Segment symbol to use in database       :pBR322-S
+! MS1b. Symbol used in paper                    :
+! MS16. Segment category (type of entity) [CV]  :transgenic_transposable_element
+!
+! MS4a. Description [CV]                        :transposon
+! MS21. Transposon class (generic)              :
+! MS14. Uses [CV]                               :
+! MS22. Localized function [CV]      :
+!
+! MS1c. Action - replace this segment symbol :
+! MS1g. Action - merge these segments (FBid) :
+!
+!
+! MS19a. Progenitor(s) (in FB) :
+! MS19b. Progenitor(s) (other) :
+!
+!
+!
+!
+!
+!
+!
+! MS10b. General comments :
+! MS11.  Internal notes   :??should complain - transgenic_transposable_element not allowed for FBms in MS16, transposon not allowed for MS4a
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! MOLECULAR SEGMENT AND CONSTRUCT PROFORMA           Version 31: 11 Apr 2018
+! MS1f. Database ID for segment (FBid or "new") :FBmc0001479
+! MS1a. Segment symbol to use in database       :pBAC108L
+! MS1b. Symbol used in paper                    :
+! MS16. Segment category (type of entity) [CV]  :engineered_region
+! MS4a. Description [CV]                        :
+! MS21. Transposon class (generic)              :
+! MS14. Uses [CV]                               :
+! MS22. Localized function [CV]      :
+! MS1c. Action - replace this segment symbol :
+! MS1g. Action - merge these segments (FBid) :
+! MS24. Marker allele(s) carried (symbol) :
+! MS14a. Tagged with experimental tool (FBto symbol)        :
+! MS14b. Other experimental tools carried (FBto symbol)     :
+! MS14c. Encoded experimental tool (FBto symbol) :
+! MS14d. Encoded experimental tool [CV]          :
+! MS14e. Regulatory region(s) present (symbol) :
+! MS15. Moseg description [free text] :
+! MS19a. Progenitor construct (symbol) :
+! MS19b. Progenitor(s) (other - free text) :
+! MS10b. General comments :
+! MS11.  Internal notes   :??should complain - engineered_region is only allowed for FBtp
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

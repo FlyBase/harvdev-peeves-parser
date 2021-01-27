@@ -1,0 +1,1843 @@
+! PUBLICATION PROFORMA                   Version 44:  6 Nov 2012
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0222037
+! P2.   Parent multipub abbreviation               *w :PLoS Genet.
+!c P40.  Flag Cambridge for curation           CAMCUR :pheno
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :noDOcur
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENE PROFORMA                          Version 74:  6 Nov 2012
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :bab2
+! G1b.  Gene symbol(s) used in reference                    *i :bab2
+Bab2
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :bab2[Ar07]
+! GA1b.  Allele symbol(s) used in reference                     *i :bab[AR07]
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :leg
+tarsal segment 4
+tarsal segment 5
+! GA7a.  Phenotype [free text]                            *k :Homozygous @bab2[Ar07]@ mutant adults display shortened tarsi with segmental joint fusions, particularly the fully penetrant fusion of ts4-5.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :A single copy of @bab2[+tBAC26B15]@ rescues the leg segmentation phenotype seen in @bab2[Ar07]@ mutant flies.
+
+A single copy of @bab2[BAC26B15.&Dgr;LAE]@ fails to rescue the leg segmentation phenotype seen in @bab2[Ar07]@ mutant flies.
+
+Expression of @bab2[+mLAE]@ rescues the leg segmentation phenotype seen in @bab2[Ar07]@ mutant flies.
+! GA10a. Associated construct                                *I :
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :bab2[+tBAC26B15]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :Rescues: bab2[Ar07]
+! GA22.  Interallelic complementation or rescue data [free text] *Q :A single copy of @bab2[+tBAC26B15]@ rescues the leg segmentation phenotype seen in @bab2[Ar07]@ mutant flies.
+! GA10a. Associated construct                                *I :NEW:M{bab2[+tBAC26B15]}
+! GA10b. Construct symbol(s) used in reference               *L :BAC 26B15
+26B15LAE
+26B15-LAE+
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - genomic fragment
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :A genomic fragment encompassing the @bab2@ transcription unit, the @bab1@-@bab2@ intergenic region and 5' end of @bab1@ (BAC26B15).
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :The construct is inserted into the 2A platform on the X chromosome. lp131030.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :bab2[BAC26B15.&Dgr;LAE]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :Fails to rescue: bab2[Ar07]
+! GA22.  Interallelic complementation or rescue data [free text] *Q :A single copy of @bab2[BAC26B15.&Dgr;LAE]@ fails to rescue the leg segmentation phenotype seen in @bab2[Ar07]@ mutant flies.
+! GA10a. Associated construct                                *I :NEW:M{bab2.BAC26B15.&Dgr;LAE}
+! GA10b. Construct symbol(s) used in reference               *L :26B15&Dgr;LAE
+26B15 &Dgr;LAE
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - deletion
+! GA11.  Progenitor genotype                           *O :M{bab2[+tBAC26B15]}
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :A genomic fragment encompassing the @bab2@ transcription unit, the @bab1@-@bab2@ intergenic region and 5' end of @bab1@ (BAC26B15) in which the LAE has been deleted.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :The construct is inserted into the 2A platform on the X chromosome. lp131030.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :bab2[+mLAE]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :Rescues: bab2[Ar07]
+! GA22.  Interallelic complementation or rescue data [free text] *Q :Expression of @bab2[+mLAE]@ rescues the leg segmentation phenotype seen in @bab2[Ar07]@ mutant flies.
+! GA10a. Associated construct                                *I :NEW:M{bab2.LAE}
+! GA10b. Construct symbol(s) used in reference               *L :LAE-bab2cDNA
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - minigene
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :A @bab2@ cDNA is driven by the 567bp upstream LAE fragment and a minimal @bab2@ promoter.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :The construct is inserted into the 2A platform on the X chromosome. lp131030.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 74:  6 Nov 2012
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :bab1
+! G1b.  Gene symbol(s) used in reference                    *i :bab1
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 74:  6 Nov 2012
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Avic\GFP
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.BP47]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.BP47}
+! GA10b. Construct symbol(s) used in reference               *L :BP47
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - regulatory fusion
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :An hsp70 promoter and a genomic fragment from the region between @bab1@ and @bab2@ drive expression of @Avic\GFP@.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp131030.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.BP42]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.BP42}
+! GA10b. Construct symbol(s) used in reference               *L :BP42
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - regulatory fusion
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :An hsp70 promoter and a genomic fragment from the region between @bab1@ and @bab2@ drive expression of @Avic\GFP@.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp131030.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.1]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.1}
+! GA10b. Construct symbol(s) used in reference               *L :unnamed
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - regulatory fusion
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :An hsp70 promoter and a genomic fragment from the region between @bab1@ and @bab2@ drives expression of @Avic\GFP@.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :This is fragment 1 in Figure 1. They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.2]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.2}
+! GA10b. Construct symbol(s) used in reference               *L :unnamed
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - regulatory fusion
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :An hsp70 promoter and a genomic fragment from the region between @bab1@ and @bab2@ drives expression of @Avic\GFP@.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :This is fragment 2 in Figure 1. They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.3]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.3}
+! GA10b. Construct symbol(s) used in reference               *L :unnamed
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - regulatory fusion
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :An hsp70 promoter and a genomic fragment from the region between @bab1@ and @bab2@ drives expression of @Avic\GFP@.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :This is fragment 3 in Figure 1. They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.4]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.4}
+! GA10b. Construct symbol(s) used in reference               *L :unnamed
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - regulatory fusion
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :An hsp70 promoter and a genomic fragment from the region between @bab1@ and @bab2@ drives expression of @Avic\GFP@.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :This is fragment 4 in Figure 1. They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.5]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.5}
+! GA10b. Construct symbol(s) used in reference               *L :unnamed
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - regulatory fusion
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :An hsp70 promoter and a genomic fragment from the region between @bab1@ and @bab2@ drives expression of @Avic\GFP@.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :This is fragment 5 in Figure 1. They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.6]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.6}
+! GA10b. Construct symbol(s) used in reference               *L :unnamed
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - regulatory fusion
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :An hsp70 promoter and a genomic fragment from the region between @bab1@ and @bab2@ drives expression of @Avic\GFP@.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :This is fragment 6 in Figure 1. They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.7]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.7}
+! GA10b. Construct symbol(s) used in reference               *L :unnamed
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - regulatory fusion
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :An hsp70 promoter and a 1.5kb genomic fragment from the region between @bab1@ and @bab2@ drives expression of @Avic\GFP@.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :This is fragment 7 in Figure 1. They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.LAE]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP}
+! GA10b. Construct symbol(s) used in reference               *L :LAE-GFP
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - regulatory fusion
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :An hsp70 promoter and a 567bp genomic fragment from the region between @bab1@ and @bab2@ drives expression of @Avic\GFP@.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :This is fragment 8 in Figure 1. They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.vir.LAE]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.vir.LAE}
+! GA10b. Construct symbol(s) used in reference               *L :unnamed
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - regulatory fusion
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :An hsp70 promoter and a 700bp genomic fragment from the region between @bab1@ and @bab2@ in Drosophila virilis drives expression of @Avic\GFP@.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :This is the D.virilis LAE line shown in figure 1D. They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.F3]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.F3}
+! GA10b. Construct symbol(s) used in reference               *L :F3
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - deletion
+! GA11.  Progenitor genotype                           *O :Avic\GFP[bab2.LAE]
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :The 3' 89bp of the LAE region in @Avic\GFP[bab2.LAE]@ have been deleted, removing the CR3 motif.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W : They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.S5]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.LAE.S5}
+! GA10b. Construct symbol(s) used in reference               *L :S5
+S5-GFP
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - deletion
+! GA11.  Progenitor genotype                           *O :Avic\GFP[bab2.LAE]
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :The 3' 337bp of the LAE region in @Avic\GFP[bab2.LAE]@ have been deleted, removing the CR3 motif.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W : They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.LAE.S1]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.LAE.S1}
+! GA10b. Construct symbol(s) used in reference               *L :S1
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - deletion
+! GA11.  Progenitor genotype                           *O :Avic\GFP[bab2.LAE]
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :The 3' 430bp of the LAE region in @Avic\GFP[bab2.LAE]@ have been deleted, removing the CR3 and CR2 sequences.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W : They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.LAE.S3]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.LAE.S3}
+! GA10b. Construct symbol(s) used in reference               *L :S3
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - deletion
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :The 5' 32bp of the LAE region in @Avic\GFP[bab2.LAE]@ have been removed.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W : They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.LAE.F1]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.LAE.F1}
+! GA10b. Construct symbol(s) used in reference               *L :F1
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - deletion
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :The 5' 100bp of the LAE region in @Avic\GFP[bab2.LAE]@ have been deleted, removing the CR1 motif.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W : They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.LAE.B1]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.LAE.B1}
+! GA10b. Construct symbol(s) used in reference               *L :B1
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - deletion
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :The 5' 32bp and 3' 467 bp of the LAE region in @Avic\GFP[bab2.LAE]@ have been removed, leaving only the CR1 motif.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W : They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.LAE.LS1]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.LAE.LS1}
+! GA10b. Construct symbol(s) used in reference               *L :LS1
+LS1-GFP
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - site directed mutagenesis
+! GA11.  Progenitor genotype                           *O :Avic\GFP[bab2.LAE]
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :8bp of the  LAE region in @Avic\GFP[bab2.LAE]@ has been replaced by a linker region.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W : They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.LAE.LS2]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.LAE.LS2}
+! GA10b. Construct symbol(s) used in reference               *L :LS2
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - site directed mutagenesis
+! GA11.  Progenitor genotype                           *O :Avic\GFP[bab2.LAE]
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :8bp of the  LAE region in @Avic\GFP[bab2.LAE]@ has been replaced by a linker region.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W : They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.LAE.LS3]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.LAE.LS3}
+! GA10b. Construct symbol(s) used in reference               *L :LS3
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - site directed mutagenesis
+! GA11.  Progenitor genotype                           *O :Avic\GFP[bab2.LAE]
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :8bp of the  LAE region in @Avic\GFP[bab2.LAE]@ has been replaced by a linker region.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W : They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.LAE.LS4]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.LAE.LS4}
+! GA10b. Construct symbol(s) used in reference               *L :LS4
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - site directed mutagenesis
+! GA11.  Progenitor genotype                           *O :Avic\GFP[bab2.LAE]
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :8bp of the  LAE region in @Avic\GFP[bab2.LAE]@ has been replaced by a linker region.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W : They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.LAE.LS5]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.LAE.LS5}
+! GA10b. Construct symbol(s) used in reference               *L :LS5
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - site directed mutagenesis
+! GA11.  Progenitor genotype                           *O :Avic\GFP[bab2.LAE]
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :8bp of the  LAE region in @Avic\GFP[bab2.LAE]@ has been replaced by a linker region.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W : They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.LAE.LS6]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.LAE.LS6}
+! GA10b. Construct symbol(s) used in reference               *L :LS6
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - site directed mutagenesis
+! GA11.  Progenitor genotype                           *O :Avic\GFP[bab2.LAE]
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :8bp of the  LAE region in @Avic\GFP[bab2.LAE]@ has been replaced by a linker region.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.LAE.LS7]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.LAE.LS7}
+! GA10b. Construct symbol(s) used in reference               *L :LS7
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - site directed mutagenesis
+! GA11.  Progenitor genotype                           *O :Avic\GFP[bab2.LAE]
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :8bp of the  LAE region in @Avic\GFP[bab2.LAE]@ has been replaced by a linker region.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W : They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.LAE.LS8]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.LAE.LS8}
+! GA10b. Construct symbol(s) used in reference               *L :LS8
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - site directed mutagenesis
+! GA11.  Progenitor genotype                           *O :Avic\GFP[bab2.LAE]
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :8bp of the  LAE region in @Avic\GFP[bab2.LAE]@ has been replaced by a linker region.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W : They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.LAE.H4]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.LAE.H4}
+! GA10b. Construct symbol(s) used in reference               *L :H4
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - site directed mutagenesis
+! GA11.  Progenitor genotype                           *O :Avic\GFP[bab2.LAE]
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :The TAAT/ATTA sequences in the LAE region in @Avic\GFP[bab2.LAE]@ has been mutated.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W : They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[S65T.Scer\UAS]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :P{UAS-GFP.S65T}
+! GA10b. Construct symbol(s) used in reference               *L :UAS-GFP
+UAS-GFP."["S65T"]"
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.LAE.S10]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.LAE.S10}
+! GA10b. Construct symbol(s) used in reference               *L :S10
+S10-GFP
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - deletion
+! GA11.  Progenitor genotype                           *O :Avic\GFP[bab2.S5]
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :The 5' 32bp of the LAE in @Avic\GFP[bab2.S5]@ have been deleted.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W : They insert the fragments into the pBP-S3ag vector from S Carrol. This is described in FBrf0205843 (This vector contains the hsp70 promoter upstream of the GFP gene and a 284 base pair attB recombination sequence inserted in the AvrII restriction enzyme site of the SMG3 p-element transformation vector (gift from B. Prud’homme)). The construct is inserted into the 2A platform on the X chromosome. lp130910.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Avic\GFP[bab2.LAE.H3]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-GFP.LAE.H3}
+! GA10b. Construct symbol(s) used in reference               *L :H3-GFP
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - regulatory fusion
+! GA11.  Progenitor genotype                           *O :Avic\GFP[bab2.LAE.S10]
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :The 13bp T-rich sequence found at the 5'end of the LAE has been added to the 5' end of @Avic\GFP[bab2.LAE.S10]@.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 74:  6 Nov 2012
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Dll
+! G1b.  Gene symbol(s) used in reference                    *i :Dll
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :Distal-less
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Dll[17]
+! GA1b.  Allele symbol(s) used in reference                     *i :Dll[SA1]
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Dll[Scer\UAS.cWa]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :P{UAS-Dll.W}
+! GA10b. Construct symbol(s) used in reference               *L :UAS-Dll
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :They reference S Cohen for this line. lp131030.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 74:  6 Nov 2012
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :rn
+! G1b.  Gene symbol(s) used in reference                    *i :rn
+Rn
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :rotund
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :rn[Scer\UAS.cSPa]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :P{UAS-rn.SP}
+! GA10b. Construct symbol(s) used in reference               *L :UAS-rn[1]
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :They reference Bloomington for this line. lp131030.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :rn[16]
+! GA1b.  Allele symbol(s) used in reference                     *i :rn[16]
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 74:  6 Nov 2012
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :ss
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :spineless
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 74:  6 Nov 2012
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Scer\GAL4
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Scer\GAL4[rn-GAL4-5]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :P{GawB}rn[GAL4-5]
+! GA10f. Insertion symbol(s) used in reference          *N :rn-Gal4
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :They reference Bloomington but there are two available and none of the authors have used one before. Going for this one based on more usage. lp131030.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Scer\GAL4[Dll-em212]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :P{GawB}Dll[em212]
+! GA10f. Insertion symbol(s) used in reference          *N :Dll[EM212]-Gal4
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 74:  6 Nov 2012
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Disc\RFP
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 54: 14 Feb 2013
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Disc\RFP[bab2.LAE]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :NEW:M{bab2-RFP.LAE}
+! GA10b. Construct symbol(s) used in reference               *L :LAE-RFP
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :in vitro construct - regulatory fusion
+! GA11.  Progenitor genotype                           *O :Avic\GFP[bab2.LAE]
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :The @Avic\GFP@ coding region in @Avic\GFP[bab2.LAE]@ has been replaced by @Disc\RFP@.
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

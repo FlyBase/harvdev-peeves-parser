@@ -1,0 +1,34 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0105495
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :poe
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+! G39a. Gene summary - description [free text] :Poe encodes a Calmodulin-binding, E3 ubiquitin ligase. Poe functions in motor neuron excitability and synaptic vesicle release, glial growth in peripheral nerves, and in sperm individuation.
+!c G39b. Gene summary - enough information ? (y/n) :y
+! G39c. Gene summary - Date stamp (y, n, or YYYYMMDD) :y
+! G39d. Gene summary - specific internal note :test for !c (I insert a summary and changed the value in field 39b)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

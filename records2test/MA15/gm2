@@ -1,0 +1,76 @@
+! PUBLICATION PROFORMA                   Version 45:  9 Apr 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0025953
+! P2.   Parent multipub abbreviation               *w :Cell
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :??checking MA15 cross-checking
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0131919
+! MA1a. Insertion symbol to use in database    :P{EP}G1288
+! MA1b. Symbol used in reference               :P{EP}G1288
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :
+! MA20. Species of host genome                 :
+!
+!
+! MA15a. FBti progenitor (via transposition) at distinct location :
+! MA15b. FBti progenitor (via recombination) at distinct location :
+! MA15c. Replaced FBti progenitor, recombination substrate        :P{EP}G1288
+! MA15d. Modified FBti progenitor (in situ)                       :
+!
+! MA10. Internal notes                   :??error - same symbol in MA15 fields as in MA1a
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0007321
+! MA1a. Insertion symbol to use in database    :P{EP}g[EP514]
+! MA1b. Symbol used in reference               :P{EP}g[EP514]
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :
+! MA20. Species of host genome                 :
+!
+!
+! MA15a. FBti progenitor (via transposition) at distinct location :P{EP}Gadd34[G18907]
+! MA15b. FBti progenitor (via recombination) at distinct location :P{EP}garz[EP2028]
+! MA15c. Replaced FBti progenitor, recombination substrate        :P{EP}garz[EP2028]
+! MA15d. Modified FBti progenitor (in situ)                       :P{EP}garz[EP2028]
+!
+! MA10. Internal notes                   :??error - can't fill in any other MA15 field if MA15 a or MA15 filed in
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0016432
+! MA1a. Insertion symbol to use in database    :P{EP}Gdh[EP327]
+! MA1b. Symbol used in reference               :P{EP}Gdh[EP327]
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :
+! MA20. Species of host genome                 :
+!
+!
+! MA15a. FBti progenitor (via transposition) at distinct location :
+! MA15b. FBti progenitor (via recombination) at distinct location :P{EP}GE10558
+! MA15c. Replaced FBti progenitor, recombination substrate        :
+! MA15d. Modified FBti progenitor (in situ)                       :
+!
+! MA10. Internal notes                   :??error - nothing in MA15c when MA15b is filled in
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

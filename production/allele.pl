@@ -925,17 +925,15 @@ sub do_withs ($$$$)
 					      "and the gene portion '%s' given in '(with %s)' in the line\n%s",
 					      $code, $g1a_gene, $gene, $with, $context);
 	    }
-	    if ($with_thing eq $ga1a)
-	    {
-		report ($file, "%s: the allele '%s' in (with %s) is the same as that in GA1a for '%s'",
-			$code, $with_thing, $with, $context);
-	    }
-	    elsif (!exists $new_symbols{$with_thing} or $new_symbols{$with_thing} ne 'FBal')
+	    if (!exists $new_symbols{$with_thing} or $new_symbols{$with_thing} ne 'FBal')
 
 	    {
 
 			unless (valid_symbol ($file, 'record_type') eq 'EDIT') {
-				report ($file, "%s: You have a (with ) statement '%s' without having the allele in it," . " '%s', in its own allele proforma", $code, $context, $with_thing);
+#				report ($file, "%s: You have a (with ) statement '%s' without having the allele in it," . " '%s', in its own allele proforma", $code, $context, $with_thing);
+
+
+				report ($file, "%s: You have the following (with ) statement without having the allele, '%s', in its own proforma (this will not make the record bounce, but check whether you need to add a '%s' proforma to add relevant free text):\n%s", $code, $with_thing, $with_thing, $context);
 
 				}
 	    }
@@ -1209,10 +1207,20 @@ sub validate_GA56 ($$$)
 		do_withs ($code, $with, $primary_symbol_list->[$i], $phenclass);
 		foreach my $qualifier (split (' \| ', $qualified_phenotype))
 		{
-		    if ($qualifier eq 'recessive' or $qualifier eq 'dominant')
-		    {
+		    if ($qualifier eq 'dominant') {
 			report ($file, "%s: Can't use '%s' with a '(with )' in '%s'",
 				$code, $qualifier, $phenclass);
+		    } elsif ($qualifier eq 'recessive') {
+
+			# want to allow 'recessive' for simple homozygotes only
+			# this means can do a simple test of whether $with is the same as allele in GA1a
+			# without having to split out the components (if there is more than one component
+			# recessive isn't really applicable)
+			unless ($with eq silent_trim_space($primary_symbol_list->[$i])) {
+
+				report ($file, "%s: Can't use '%s' with '(with )' (not a simple homozygote) in '%s'",
+					$code, $qualifier, $phenclass);
+			}
 		    }
 		}
 	    }
@@ -1452,11 +1460,22 @@ sub validate_GA289ab ($$$)
 		do_withs ($code, $with_list, $primary_symbol_list->[$i], $gi_data);
 		foreach my $qualifier (split (' \| ', $qualified_phenotype))
 		{
-		    if ($qualifier eq 'recessive' or $qualifier eq 'dominant')
-		    {
+		    if ($qualifier eq 'dominant') {
 			report ($file, "%s: Can't use '%s' with a '(with )' in '%s'",
 				$code, $qualifier, $gi_data);
+		    } elsif ($qualifier eq 'recessive') {
+
+			# want to allow 'recessive' for simple homozygotes only
+			# this means can do a simple test of whether $with is the same as allele in GA1a
+			# without having to split out the components (if there is more than one component
+			# recessive isn't really applicable)
+			unless ($with_list eq silent_trim_space($primary_symbol_list->[$i])) {
+
+				report ($file, "%s: Can't use '%s' with '(with )' (not a simple homozygote) in '%s'",
+					$code, $qualifier, $gi_data);
+			}
 		    }
+
 		}
 	    }
 

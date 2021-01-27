@@ -1,0 +1,40 @@
+! C1.  Curator ID  :gds
+! C2.  Date  :160510
+! C3.  Curator notes to self  :Test project record for Peeves checking.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+! P22.  FlyBase reference ID (FBrf) or new  *U :FBrf0217348
+! P2.   Parent multipub abbreviation               *w :Nat. Genet.
+! P19.  Internal notes                   *H :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! DATASET/COLLECTION PROFORMA   Version 4.4   09 Feb 2016
+!
+! LC1f. Database ID for dataset  :new
+! LC1a. Symbol                   :Fake_Furlong_BiTS_ChIP-Seq
+! LC1b. Symbol used in paper/source  :BiTS-ChIP
+! LC1d. Nickname [for labels]        :BiTS-ChIP-Seq
+! LC6g. Dataset title  :ChIP-Seq profiling of histone modifications in purified embryonic mesodermal cells.
+! LC6a. Description [free text]  :
+! LC3. Dataset belongs_to this project  :
+! LC14b. Dataset result is analysis_of  :
+! LC14c. Dataset uses_reagent  :
+! LC14d. Dataset technical_reference_is  :
+! LC14e. Dataset biological_reference_is  :
+! LC14f. Dataset replaced_by  :
+! LC14g. Dataset genome_reference_is  : 
+! LC2a. Type of dataset entity [CV]  :
+! LC2b. Type of dataset data [CV]    :
+! LC14h. Reference FlyBase gene model annotation set [free text]  :
+! LC13a. Key GO term(s) - Cellular Component (term ; ID)  *f  :  
+! LC13b. Key GO term(s) - Molecular Function (term ; ID)  *F  :
+! LC13c. Key GO term(s) - Biological Process (term ; ID)  *d  :
+! LC13d. Key SO term(s) [CV] *t  :pcr_product ; SO:SO:0000006
+fdshkfd ; SO:reuworeoi
+aberration_junction ; SO:SO:0000408
+gene_with_dicistronic_mRNA ; SO:0000722
+nuclear_gene ; SO:0000010
+! LC10. Internal notes      :This is a bogus curation record for Peeves testing purposes only. 'nuclear_gene ; SO:0000010' has term ; id mistmatch
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!
+

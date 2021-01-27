@@ -45,7 +45,7 @@ our %Peeves_config;
 
 my $GO_obo    = "$Peeves_config{'Ontology_path'}/go-basic.obo";
 my $GO_dbxref = "$Peeves_config{'Ontology_path'}/GO.xrf_abbs";
-my $SO_obo    = "$Peeves_config{'Ontology_path'}/so.obo";
+my $SO_obo    = "$Peeves_config{'Ontology_path'}/so-simple.obo";
 my $FBbt_obo  = "$Peeves_config{'Ontology_path'}/fly_anatomy.obo";
 my $FBcv_obo  = "$Peeves_config{'Ontology_path'}/flybase_controlled_vocabulary.obo";
 my $FBdv_obo  = "$Peeves_config{'Ontology_path'}/fly_development.obo";
@@ -595,7 +595,7 @@ sub process_ontology_file {
     			&get_all_descendents_of ($id_type, $ancestor, $pedigree, $ancestors->{$ancestor}, $store_id);
 		
 			} else {
-# ancestor is valid, but has no child term - should be rare, but can happen (e.g. SO:protein), perhaps if anticipating
+# ancestor is valid, but has no child term - should be rare, but can happen (e.g. SO:polypeptide), perhaps if anticipating
 # possibility of child terms in future versions of an ontology.
 
 				if (my $id = valid_symbol($ancestor,"$id_type:default")) {
@@ -794,7 +794,7 @@ my $dv_short_qualifiers = {
 	my $so_ancestors = {
 	
 		'transcript' => '1',
-		'protein' => '1',
+		'polypeptide' => '1',
 		'chromosome_structure_variation' => '1',
 		'transposable_element' => '1',
 		'synthetic_sequence' => '1',
@@ -802,35 +802,6 @@ my $dv_short_qualifiers = {
 	};
 
 	&process_ontology_file ($SO_obo, 'SO:\d{1,}', '1', $so_ancestors);
-
-# work around bugs in SO.obo 8-(
-
-	my %so_foreign_workaround = (
-
-		'engineered_foreign_region' => 'SO:0000805',
-		'engineered_region' => 'SO:0000804',
-		'engineered_tag' => 'SO:0000807',
-
-	);
-
-	foreach my $term (keys %so_foreign_workaround) {
-
-		set_symbol ($term, 'SO:default', $so_foreign_workaround{$term});
-		set_symbol ($so_foreign_workaround{$term}, 'SO:default:id', $term);
-
-	}
-
-# Hopefully temporary workaround for LC13d
-		set_symbol ('pcr_product ; SO:SO:0000006', 'SO_term_workaround', '1');
-		set_symbol ('chromosome_arm ; SO:SO:0000105', 'SO_term_workaround', '1');
-		set_symbol ('exon ; SO:SO:0000147', 'SO_term_workaround', '1');
-		set_symbol ('mRNA ; SO:SO:0000234', 'SO_term_workaround', '1');
-		set_symbol ('protein ; SO:SO:0000358', 'SO_term_workaround', '1');
-		set_symbol ('gene ; SO:SO:0000704', 'SO_term_workaround', '1');
-		set_symbol ('aberration_junction ; SO:SO:0000408', 'SO_term_workaround', '1');
-		set_symbol ('oligonucleotide ; SO:SO:0000696', 'SO_term_workaround', '1');
-		set_symbol ('nuclear_mitochondrial_pseudogene ; SO:SO:0001044', 'SO_term_workaround', '1');
-		set_symbol ('golden_path_region ; SO:SO:0000688', 'SO_term_workaround', '1');
 
 
 # The block used in A9 are various types of aberrations.
@@ -843,7 +814,7 @@ my $dv_short_qualifiers = {
 		'T'  => 'chromosomal_translocation',
 		'R'  => 'ring_chromosome',
 		'AS' => 'autosynaptic_chromosome',
-		'DS' => 'dexstrosynaptic_chromosome',
+		'DS' => 'dextrosynaptic_chromosome',
 		'LS' => 'laevosynaptic_chromosome',
 		'fDp' => 'free_duplication',
 		'fR' => 'free_ring_duplication',
@@ -860,8 +831,8 @@ my $dv_short_qualifiers = {
 		'iTp1' => 'inverted_intrachromosomal_transposition',
 		'iTp2' => 'inverted_interchromosomal_transposition',
 		'uDp' => 'unoriented_insertional_duplication',
-		'uTp1' => 'unorientated_intrachromosomal_transposition',
-		'uTp2' => 'unorientated_interchromosomal_transposition',
+		'uTp1' => 'unoriented_intrachromosomal_transposition',
+		'uTp2' => 'unoriented_interchromosomal_transposition',
 		'Int' => 'introgressed_chromosome_region',	
 	);
 
@@ -1007,16 +978,12 @@ my $dv_short_qualifiers = {
     set_symbol ('ao', 'cur_type', 'CAMCUR');
     set_symbol ('cp', 'cur_type', 'CAMCUR');
     set_symbol ('gm', 'cur_type', 'CAMCUR');
-    set_symbol ('sf', 'cur_type', 'CAMCUR');
     set_symbol ('sm', 'cur_type', 'CAMCUR');
-    set_symbol ('sp', 'cur_type', 'CAMCUR');
     set_symbol ('vt', 'cur_type', 'CAMCUR');
-    set_symbol ('pg', 'cur_type', 'CAMCUR');
-    set_symbol ('pu', 'cur_type', 'CAMCUR');
     set_symbol ('ga', 'cur_type', 'GOCUR');
     set_symbol ('ha', 'cur_type', 'GOCUR');
+    set_symbol ('pg', 'cur_type', 'GOCUR');
     set_symbol ('up', 'cur_type', 'GOEXT');
-    set_symbol ('km', 'cur_type', 'IUCUR');
     set_symbol ('pl', 'cur_type', 'BIBLIO');
     set_symbol ('as', 'cur_type', 'USER');
     set_symbol ('us', 'cur_type', 'USER');
@@ -1026,10 +993,10 @@ my $dv_short_qualifiers = {
     set_symbol ('jma', 'cur_type', 'HARVCUR');
     set_symbol ('lc', 'cur_type', 'HARVCUR');
     set_symbol ('sian', 'cur_type', 'HARVCUR');
-    set_symbol ('vfb', 'cur_type', 'HARVCUR');
-    set_symbol ('pb', 'cur_type', 'UNMCUR');
-    set_symbol ('pt', 'cur_type', 'AUTO');
     set_symbol ('vj', 'cur_type', 'HARVCUR');
+    set_symbol ('vfb', 'cur_type', 'HARVCUR');
+    set_symbol ('pt', 'cur_type', 'AUTO');
+    set_symbol ('tl', 'cur_type', 'UNMCUR');
 
 
 #  Curator shortcuts are integers or abbreviations which translate into proforma-dependent strings on parsing.
@@ -1124,6 +1091,7 @@ my $dv_short_qualifiers = {
 #    set_symbol ('orthologs', 'P40_flag', 'multi');
     set_symbol ('noGOcur', 'P40_flag', 'multi');
     set_symbol ('gene_group', 'P40_flag', 'multi');
+    set_symbol ('pathway', 'P40_flag', 'multi');
 # for now, hard-coded 'gene_group::DONE'
     set_symbol ('gene_group::DONE', 'P40_flag', 'multi');
 
@@ -1149,6 +1117,8 @@ my $dv_short_qualifiers = {
     set_symbol ('diseaseF',           'P41_flag', 'multi');
     set_symbol ('dataset',           'P41_flag', 'multi');
     set_symbol ('cell_line',           'P41_flag', 'multi');
+    set_symbol ('cell_line(commercial)',           'P41_flag', 'multi');
+    set_symbol ('cell_line(stable)',           'P41_flag', 'multi');
 
 #    set_symbol ('cell_cult',         'P41_flag', 1);
 #    set_symbol ('trans_assay',       'P41_flag', 1);
@@ -7252,7 +7222,7 @@ my $dv_short_qualifiers = {
     set_symbol ('scrs', 'assay', 'single cell RNA-seq');
     set_symbol ('vis', 'assay', 'virtual in situ hybridization');
 
-# Protein assays:
+# polypeptide assays:
     set_symbol ('il', 'assay', 'immunolocalization');
     set_symbol ('ea', 'assay', 'enzyme assay or biochemical detection');
     set_symbol ('wb', 'assay', 'western blot');
@@ -7328,14 +7298,13 @@ my $dv_short_qualifiers = {
 
 # allowed values in GA90k
 
-    set_symbol ('point_mutation', 'lesion_type', 1);
-    set_symbol ('rescue_fragment', 'lesion_type', 1);
-    set_symbol ('insertion', 'lesion_type', 1);
-    set_symbol ('sequence_variant', 'lesion_type', 1);
-    set_symbol ('complex_substitution', 'lesion_type', 1);
-    set_symbol ('deletion', 'lesion_type', 1);
-    set_symbol ('insertion_site', 'lesion_type', 1);
-    set_symbol ('uncharacterized_change_in_nucleotide_sequence ', 'lesion_type', 1);
+	my @GA90k = ('point_mutation', 'rescue_region', 'insertion', 'sequence_variant', 'complex_substitution', 'deletion', 'insertion_site', 'sequence_alteration');
+
+	foreach my $term (@GA90k) {
+
+		set_symbol ($term, 'lesion_type', '1');
+		valid_symbol ($term, 'SO:default') or print "MAJOR PEEVES ERROR in basic ontology processing: the '$term' term listed in Peeves as a valid value for GA90k is no longer a valid SO term, Peeves will need altering to cope (probably by replacing this obsolete term with a new valid one).\n\n";
+	}
 
 
 # allowed values for fields that can contain 'y' or 'n'.  There is also a 'check_y_or_n' subroutine, but
@@ -7380,10 +7349,11 @@ my $dv_short_qualifiers = {
 # as this may be useful for cross-checking with symbol for new mosegs - might need to change
 # format of value to get the cross-checking to work
 
-    set_symbol ('transgenic_transposon', 'MS16_value', 'FBtp');
-    set_symbol ('engineered_construct', 'MS16_value', 'FBmc');
-    set_symbol ('DNA_segment', 'MS16_value', 'FBms|FBtp');
-    set_symbol ('natural_transposon_isolate_named', 'MS16_value', 'FBtp');
+    set_symbol ('transgenic_transposable_element', 'MS16_value', 'FBtp');
+    set_symbol ('engineered_plasmid', 'MS16_value', 'FBmc');
+    set_symbol ('cloned_region', 'MS16_value', 'FBms');
+    set_symbol ('engineered_region', 'MS16_value', 'TI'); # TI style constructs
+    set_symbol ('engineered_transposable_element', 'MS16_value', 'FBtp'); # replaces 'natural_transposon_isolate_named'
 
 # allowed values for MS4a (would be better to have reliable way to get this out of chado - 
 # These come from the 'transgene_description' cv (but there are lots of other
@@ -7484,12 +7454,12 @@ my $dv_short_qualifiers = {
 
 # SO term if that turns out to be needed.
 
-	my @SF2b = ('enhancer', 'exon_junction', 'insulator', 'modified_RNA_base_feature', 'oligonucleotide', 'origin_of_replication', 'protein_binding_site', 'region', 'regulatory_region', 'RNAi_reagent', 'silencer', 'TF_binding_site', 'oligo', 'polypeptide_region', 'polyA_site', 'repeat_region', 'satellite_DNA', 'transcription_start_site', 'experimental_result_region');
+	my @SF2b = ('enhancer', 'exon_junction', 'insulator', 'modified_RNA_base_feature', 'origin_of_replication', 'protein_binding_site', 'region', 'regulatory_region', 'RNAi_reagent', 'silencer', 'TF_binding_site', 'polypeptide_region', 'polyA_site', 'repeat_region', 'satellite_DNA', 'TSS', 'experimental_result_region', 'sgRNA');
 
 	foreach my $term (@SF2b) {
 
 		set_symbol ($term, 'SF2b_value', '1');
-
+		valid_symbol ($term, 'SO:default') or print "MAJOR PEEVES ERROR in basic ontology processing: the '$term' term listed in Peeves as a valid value for SF2b is no longer a valid SO term, Peeves will need altering to cope (probably by replacing this obsolete term with a new valid one).\n\n";
 	}
 	
 # allowed values for SF20a

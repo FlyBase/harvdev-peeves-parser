@@ -1,0 +1,22 @@
+! PUBLICATION PROFORMA                   Version 45:  30 Jan 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :new
+! P1.   Type of publication [CV]  *T :paper
+! P2.   Parent multipub abbreviation               *w :Nature
+! P12.  Author(s)                           *a-*b :Sotomayor	M.
+Weihofen	W.A.
+Gaudet	R.
+Corey	D.P.
+! P10.  Year (YYYY), or date (YYYY.M.D) if PC  *t :2012
+! P16.  Title                                  *u :Structure of a Force-Conveying Cadherin Bond Essential for Inner-Ear Mechanotransduction.
+! P3.   Volume number                          *y :492
+! P4.   Issue number                           *Y :7427
+! P11a. Page range or article number               *z :128--132
+! P11d. DOI                                           :10.1038/nature11590
+! P13.  Language of publication [CV]                          *L :English
+! P14.  Additional language(s) of abstract [CV]               *A :
+! P26.  PubMed ID                *M :23135401
+! P28.  PMCID            *m :@PMC3518760@
+! P31.  Related publication (FBrf)          *E :
+! P19.  Internal notes                   *H :??Testing new P28 (PMCID) field.  This record should not pass Peeves/parsing - PMCID field contains stamps.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

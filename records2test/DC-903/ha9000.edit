@@ -1,0 +1,46 @@
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0247448
+! P2.   Parent multipub abbreviation               *w :G3 (Bethesda)
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENE PROFORMA                          Version 79:  3 Oct 2018
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :meep
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :enables hydrolase activity, acting on ester bonds ; GO:0016788 | IDA
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :involved_in cellular response to glucose stimulus ; GO:0071333 | IMP
+involved_in glucose homeostasis ; GO:0042593 | IMP
+NOT involved_in triglyceride homeostasis ; GO:0070328 | IMP
+involved_in positive regulation of insulin receptor signaling pathway ; GO:0046628 | IMP
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENE PROFORMA                          Version 79:  3 Oct 2018
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Akt
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :is_active_in cytosol ; GO:0005829 | TAS
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :involved_in insulin receptor signaling pathway ; GO:0008286 | IDA
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

@@ -1,0 +1,30 @@
+! C1.  Curator ID  :gds
+! C2.  Date  :160510
+! C3.  Curator notes to self  :Testing creation of stub records.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :unattributed
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! DATASET/COLLECTION PROFORMA   Version 4.4   09 Feb 2016
+! LC1f. Database ID for dataset  :new
+! LC1a. Symbol                   :BS_BDTNP_E11_z_ChIP
+! LC2a. Type of dataset entity [CV]  :biosample ; FBcv:0003024
+! LC4a. Species of derivation [CV]  :Dmel
+! LC6d. Dataset/collection members stored in database [Y/N]  :N
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! DATASET/COLLECTION PROFORMA   Version 4.4   09 Feb 2016
+! LC1f. Database ID for dataset  :new
+! LC1a. Symbol                   :ChIP-chip_BDTNP_E11_z_ChIP
+! LC2a. Type of dataset entity [CV]  :assay ; FBcv:0003025
+! LC4a. Species of derivation [CV]  :Dmel
+! LC6d. Dataset/collection members stored in database [Y/N]  :N
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! DATASET/COLLECTION PROFORMA   Version 4.4   09 Feb 2016
+! LC1f. Database ID for dataset  :new
+! LC1a. Symbol                   :BDTNP1_TFBS_cad
+! LC2a. Type of dataset entity [CV]  :result ; FBcv:0003026
+! LC4a. Species of derivation [CV]  :Dmel
+! LC6d. Dataset/collection members stored in database [Y/N]  :N
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!
+

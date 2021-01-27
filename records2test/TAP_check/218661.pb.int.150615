@@ -1,0 +1,71 @@
+! C1.  Curator ID	:pb
+! C2.  Date		:150612
+! C3.  Curator notes to self	:Corrected coordinates for necessary binding site in *-1. Corrected cell line to accepted symbol for *-2. 150624gds.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0218661
+! P2.   Parent multipub abbreviation               *w :Dev. Biol.
+! P19.  Internal notes                   *H :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA             Version 2.6  15 Nov 2011
+!
+! IN1f. Database ID for interaction  :FBrf0218661-1.Y2H
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :n
+! IN2a. Interaction description (protein-protein/RNA-protein)     :protein-protein
+! IN2b. Interaction type (Termlink MI CV) :physical association
+! IN3.  Interaction assay (Termlink MI CV)    :two hybrid
+! IN5b. Stage and tissue ( <e> <t> <a> <s> <note> ) :
+<e> <t> E <a> organism <s> <note>
+! IN5e. Comments concerning source   :Source was yeast cell line; bait produced as transgenic fusion protein; prey produced as transgenic fusion protein (prey from embryo cDNA expression library).
+! IN6.  List of interactors (FB symbol or ids), role (Termlink MI CV), qualifier ( <symbol>  <ID_as_reported>  <role>  <qual/note> ) :
+<symbol> siz-XP <ID_as_reported> schizo/loner <role> bait <qual/note> fused to GAL4 DNA-binding domain
+<symbol> CadN-XP <ID_as_reported> N-cadherin <role> prey <qual/note> fused to GAL4 activation domain
+! IN7c. Subregion(s) of participant(s) with role in interaction ( <link to>  <description> region <role> unspecified role <coordinates/seq>  <note> ) :
+<link to> siz-XP <description> N-terminal domain <role> sufficient binding site <coordinates/seq> aa 1-358 <note> 
+<link to> siz-XP <description> N-terminal domain <role> necessary binding site <coordinates/seq> aa 1-352 <note> 
+! IN7b. Comments concerning experimental data:Two-hybrid system: yeast GAL4-BD/GAL4-AD
+! IN7d. Isoform-specific participant(s) with role in interaction :
+<link to> siz-XP <description> 1313-kDa isoform <role> bait <note> aa 1-350 construct os siz is refered to by the authors as SchizoP2
+<link to> siz-XP <description> 1325-kDa isoform <role> bait <note> aa 1-370 of siz-RB was also tested for binding to CadN and is listed by the authors as SchizoP1.
+! IN8a. Public comments   :@siz@-RA and @siz@-RB differ in the first 116 aa but retain conserved domains including the IQ motif.  Since the IQ motif is not required for @CadN@ binding, the authors reason that the shared 207 aa between @siz@-RA and @siz@-RB are essential for binding to @CadN@.
+! IN8b. Internal comments :Fig2A,B
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA             Version 2.6  15 Nov 2011
+!
+! IN1f. Database ID for interaction  :FBrf0218661-2.FC.FM
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :n
+! IN2a. Interaction description (protein-protein/RNA-protein)     :protein-protein
+! IN2b. Interaction type (Termlink MI CV) :physical association
+! IN3.  Interaction assay (Termlink MI CV)    :bimolecular fluorescence complementation
+fluorescence microscopy
+! IN5a. Cell line used               :S2
+! IN5e. Comments concerning source   :Source was live S2 cells; proteins produced from transfected constructs.
+! IN6.  List of interactors (FB symbol or ids), role (Termlink MI CV), qualifier ( <symbol>  <ID_as_reported>  <role>  <qual/note> ) :
+<symbol> CadN-XP <ID_as_reported> CadN <role> neutral component <qual/note> YFP tag, N-terminal fragment
+<symbol> siz-XP <ID_as_reported> Siz <role> neutral component <qual/note> YFP tag, C-terminal fragment
+! IN7b. Comments concerning experimental data:
+! IN8a. Public comments   :
+! IN8b. Internal comments :Fig2BG
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA             Version 2.6  15 Nov 2011
+!
+! IN1f. Database ID for interaction  :FBrf0218661-3.FC.FM
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :n
+! IN2a. Interaction description (protein-protein/RNA-protein)     :protein-protein
+! IN2b. Interaction type (Termlink MI CV) :physical association
+! IN3.  Interaction assay (Termlink MI CV)    :bimolecular fluorescence complementation
+fluorescence microscopy
+! IN5b. Stage and tissue (< e > < t > < a > < s > < note >) :
+<e> <t> E | stage 14 <a> organism <s> <note> 
+! IN5e. Comments concerning source   :Interaction in vivo; source was embryos of transgenic fly line; proteins produced from transgenic constructs.
+! IN6.  List of interactors (FB symbol or ids), role (Termlink MI CV), qualifier ( <symbol>  <ID_as_reported>  <role>  <qual/note> ) :
+<symbol> CadN-XP <ID_as_reported> CadN <role> neutral component <qual/note> YFP tag, N-terminal fragment
+<symbol> siz-XP <ID_as_reported> Siz <role> neutral component <qual/note> YFP tag, C-terminal fragment
+! IN7b. Comments concerning experimental data:Transgenic flies producing each of the @siz@ and @CadN@ fusion constructs were created such that the construct were expressed under the control of a @Mef2@ driver.  Interaction between @siz@ and @CadN@ reconstituted the YFP protein which was then visualized using anti-GFP antibody.  Flies expressing the @siz@ or @CadN@ constructs alone did not show signal when stained with anti-GFP.
+! IN8a. Public comments   :
+! IN8b. Internal comments :Fig2BC
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!
+

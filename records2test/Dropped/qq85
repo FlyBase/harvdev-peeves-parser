@@ -1,0 +1,56 @@
+! PUBLICATION PROFORMA                   Version 40:  03 Mar 2010
+!
+! P22.  FlyBase reference ID (FBrf)      *U :FBrf0143253
+! P21.  Parent multipub (ID)                *W :8651
+! P25.  BIOSIS ID                *B :
+! P27.  ZooRec ID                *Q :
+! P41.  Flag Harvard for curation            HARVCUR :no_flag
+! P19.  Internal notes                   *H :??testing Peeves to issue 'invalid proforma field' warning for P25, P27, G19a, G25, G29a, G29b, G19b, G12a, G12b, GA19, A10, A8b and A11.  sm100309.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENE PROFORMA                          Version 66:  03 Mar 2010
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :wg
+! G1b.  Gene symbol(s) used in reference                    *i :wg
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G19a. Gene order/orientation from molecular mapping [SoftCV] *s :
+! G25.  Relationship to clone                       [SoftCV] *s :
+! G29a. Functional complementation/gain of function       [SoftCV] *q :
+! G29b. Functional complementation/gain of function    [free text] *q :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G19b. Comments, not allele-specific - molecular          *s :
+! G12a. Comments, not allele-specific - biological role    *r :
+! G12b. Comments, not allele-specific - mutants            *p :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 50: 02 Mar 2010
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :wg[1]
+! GA1b.  Allele symbol(s) used in reference                     *i :wg[1]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA19.  Assay mode [CV]                               *k :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+! ABERRATION PROFORMA                    Version 54: 03 Mar 2010
+!
+! A1a.  Aberration symbol to use in FlyBase                 *a :Df(2L)wg-CX3
+! A1b.  Aberration symbol(s) used in reference              *i :Df(2L)wg-CX3
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+! A2b.  Aberration name(s) used in reference                *Q :
+! A10.  Known new junction(s) of A8a sides    *N :
+! A8b.  Segments - cytological ranges of ends *B :
+! A11.  New order of A8b segments             *N :
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

@@ -1,0 +1,1316 @@
+
+Using Peeves in /Peeves/production
+/Peeves/production/Peeves
+
+Processing gm25216
+
+gm25216: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm25216: GA1e: Scer\GAL4[Mai-60] is not a valid allele symbol in Chado
+
+gm25216: GA1g claims that Scer\GAL4[Mai60] is not an existing allele symbol, but Chado knows it as FBal0147482
+
+gm25216: MA20: Invalid species ''
+
+gm25216: MA20: Invalid species ''
+
+gm25216: MA20: Invalid species ''
+
+
+Processing gm25215
+
+gm25215: GA10a: NEW:'P{spag4.GFP}' is not new and Chado knows it as FBtp0051974
+
+gm25215: GA10a: NEW:'P{spag4.6xMyc}' is not new and Chado knows it as FBtp0051975
+
+gm25215: GA10a: NEW:'P{GFP.spag4}' is not new and Chado knows it as FBtp0051976
+
+gm25215: GA10a: NEW:'P{spag4.GFP}' is not new and Chado knows it as FBtp0051974
+
+gm25215: GA10a: NEW:'P{spag4.6xMyc}' is not new and Chado knows it as FBtp0051975
+
+gm25215: GA10a: NEW:'P{GFP.spag4}' is not new and Chado knows it as FBtp0051976
+
+gm25215: G1e: giac is not a valid gene symbol in Chado
+
+gm25215: G1g claims that spag4 is not an existing gene symbol, but Chado knows it as FBgn0032368
+
+gm25215: GA1g claims that spag4[1] is not an existing allele symbol, but Chado knows it as FBal0241675
+
+gm25215: GA1g claims that spag4[6] is not an existing allele symbol, but Chado knows it as FBal0241676
+
+gm25215: GA1g claims that spag4[C.T:Avic\GFP] is not an existing allele symbol, but Chado knows it as FBal0241677
+
+gm25215: GA1g claims that spag4[C.T:Hsap\MYC] is not an existing allele symbol, but Chado knows it as FBal0241678
+
+gm25215: GA1g claims that spag4[unspecified] is not an existing allele symbol, but Chado knows it as FBal0241679
+
+gm25215: GA1g claims that spag4[N.T:Avic\GFP] is not an existing allele symbol, but Chado knows it as FBal0241680
+
+gm25215: No data in either G1b or G2b for 'w'
+
+
+Processing gm25214
+
+gm25214: GA10a: NEW:'P{UAS-GFP.Gl}' is not new and Chado knows it as FBtp0051973
+
+gm25214: GA1g claims that Gl[Scer\UAS.T:Avic\GFP] is not an existing allele symbol, but Chado knows it as FBal0241674
+
+
+Processing gm25213
+
+
+Processing gm25212.edit
+
+gm25212.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25212.edit: No data in either G1b or G2b for 'CG42708'
+
+
+Processing gm25211.edit
+
+gm25211.edit: No data in either G1b or G2b for 'CG42708'
+
+
+Processing gm25210
+
+gm25210: GA10a: NEW:'P{UASp-Mer[+].myc}' is not new and Chado knows it as FBtp0051971
+
+gm25210: GA10a: NEW:'P{UASp-Mer[3].myc}' is not new and Chado knows it as FBtp0051972
+
+gm25210: P41: Missing data.
+
+gm25210: No data in either G1b or G2b for 'Mer'
+
+gm25210: GA1g claims that Mer[Scer\UAS.P\T.T:Hsap\MYC] is not an existing allele symbol, but Chado knows it as FBal0241672
+
+gm25210: GA1g claims that Mer[3.Scer\UAS.P\T.T:Hsap\MYC] is not an existing allele symbol, but Chado knows it as FBal0241673
+
+gm25210: No data in either G1b or G2b for 'Scer\GAL4'
+
+
+Processing gm25208
+
+
+Processing gm25207
+
+gm25207: MA20: Invalid species ''
+
+
+Processing gm25206
+
+gm25206: P41: Missing data.
+
+gm25206: No data in either G1b or G2b for 'Tpi'
+
+gm25206: GA1f: 'Tpi[sgk1]' is not a valid allele symbol
+
+gm25206: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm25206: No data in either G1b or G2b for 'Pros26'
+
+
+Processing gm25205.edit
+
+gm25205.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25205.edit: MA20: Invalid species ''
+
+
+Processing gm25204.bibl
+
+gm25204.bibl: P21: Missing data
+
+
+Processing gm25202.edit
+
+gm25202.edit: No data in either G1b or G2b for 'htt'
+
+gm25202.edit: MA20: Invalid species ''
+
+gm25202.edit: MA20: Invalid species ''
+
+gm25202.edit: MA20: Invalid species ''
+
+
+Processing gm25201
+
+gm25201: GA10a: NEW:'P{UASp-htt.Z}' is not new and Chado knows it as FBtp0051967
+
+gm25201: GA10a: NEW:'P{htt[+m22.7]}' is not new and Chado knows it as FBtp0051968
+
+gm25201: GA10a: NEW:'P{CG9990[+t24.7]}' is not new and Chado knows it as FBtp0051969
+
+gm25201: GA10a: NEW:'P{CG9990[+t24.7]}' is not new and Chado knows it as FBtp0051969
+
+gm25201: GA10a: NEW:'P{htt[+m22.7]}' is not new and Chado knows it as FBtp0051968
+
+gm25201: P41: Missing data.
+
+gm25201: GA1g claims that htt[Scer\UAS.P\T.cZa] is not an existing allele symbol, but Chado knows it as FBal0241667
+
+gm25201: GA1g claims that htt[98E2] is not an existing allele symbol, but Chado knows it as FBal0241668
+
+gm25201: GA1g claims that htt[+m22.7] is not an existing allele symbol, but Chado knows it as FBal0241669
+
+gm25201: GA1g claims that CG9990[+t24.7] is not an existing allele symbol, but Chado knows it as FBal0241670
+
+gm25201: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm25201: No data in either G1b or G2b for 'Hsap\HD'
+
+gm25201: No data in either G1b or G2b for 'w'
+
+gm25201: A1g claims that Df(3R)98E2 is not an existing aberration symbol, but Chado knows it as FBab0046230
+
+
+Processing gm25200
+
+gm25200: GA10c: NEW:'P{EP}Cad86C[GE22560]' is not new and Chado knows it as FBti0128479
+
+gm25200: GA10a: NEW:'P{UAS-Cad86C.HA}' is not new and Chado knows it as FBtp0051964
+
+gm25200: GA10a: NEW:'P{UAS-Cad86C.EXTRA.HA}' is not new and Chado knows it as FBtp0051965
+
+gm25200: GA10a: NEW:'P{UAS-Cad86C.INTRA.HA}' is not new and Chado knows it as FBtp0051966
+
+gm25200: GA10c: NEW:'P{EP}Cad88C[GE25091]' is not new and Chado knows it as FBti0128480
+
+gm25200: GA10a: NEW:'P{UAS-Cad86C.HA}' is not new and Chado knows it as FBtp0051964
+
+gm25200: GA10a: NEW:'P{UAS-Cad86C.EXTRA.HA}' is not new and Chado knows it as FBtp0051965
+
+gm25200: GA10a: NEW:'P{UAS-Cad86C.INTRA.HA}' is not new and Chado knows it as FBtp0051966
+
+gm25200: P41: Missing data.
+
+gm25200: No data in either G1b or G2b for 'smo'
+
+gm25200: No data in either G1b or G2b for 'tkv'
+
+gm25200: No data in either G1b or G2b for 'Cad86C'
+
+gm25200: GA1g claims that Cad86C[GE22560] is not an existing allele symbol, but Chado knows it as FBal0241660
+
+gm25200: GA1g claims that Cad86C[184A] is not an existing allele symbol, but Chado knows it as FBal0241661
+
+gm25200: GA1g claims that Cad86C[71C] is not an existing allele symbol, but Chado knows it as FBal0241662
+
+gm25200: GA1g claims that Cad86C[Scer\UAS.T:Ivir\HA1] is not an existing allele symbol, but Chado knows it as FBal0241663
+
+gm25200: GA1g claims that Cad86C[EXTRA.Scer\UAS.T:Ivir\HA1] is not an existing allele symbol, but Chado knows it as FBal0241664
+
+gm25200: GA1g claims that Cad86C[INTRA.Scer\UAS.T:Ivir\HA1] is not an existing allele symbol, but Chado knows it as FBal0241665
+
+gm25200: GA1g claims that Cad88C[GE25091] is not an existing allele symbol, but Chado knows it as FBal0241666
+
+gm25200: No data in either G1b or G2b for 'hh'
+
+gm25200: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm25200: No data in either G1b or G2b for 'ci'
+
+gm25200: No data in either G1b or G2b for 'Mmus\Cd8a'
+
+gm25200: No data in either G1b or G2b for 'w'
+
+
+Processing gm25199.edit
+
+
+Processing gm25197
+
+gm25197: GA10c: NEW:'P{?GT1}Cerk[1]' is not new and Chado knows it as FBti0128478
+
+gm25197: GA10a: NEW:'P{UAS-PLC&dgr;-PH-GFP.Z}' is not new and Chado knows it as FBtp0051961
+
+gm25197: GA10a: NEW:'P{UAS-GRP1-PH-GFP}' is not new and Chado knows it as FBtp0051962
+
+gm25197: P41: Missing data.
+
+gm25197: G1e: CG16708 is not a valid gene symbol in Chado
+
+gm25197: G1g claims that Cerk is not an existing gene symbol, but Chado knows it as FBgn0037315
+
+gm25197: No G2c data corresponding to  G1e.  Action - rename this gene symbol                       :CG16708
+
+gm25197: GA1e: CG16708[BG01100] is not a valid allele symbol in Chado
+
+gm25197: GA1g claims that Cerk[BG01100] is not an existing allele symbol, but Chado knows it as FBal0157152
+
+gm25197: GA1g claims that Cerk[1] is not an existing allele symbol, but Chado knows it as FBal0241656
+
+gm25197: GA1g claims that Cerk[Scer\UAS.cDa] is not an existing allele symbol, but Chado knows it as FBal0241657
+
+gm25197: No data in either G1b or G2b for 'Hsap\PLCD1'
+
+gm25197: GA1g claims that Hsap\PLCD1[PH.Scer\UAS.cZa.T:Avic\GFP] is not an existing allele symbol, but Chado knows it as FBal0241658
+
+gm25197: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm25197: GA1g claims that step[PH.Scer\UAS.T:Avic\GFP] is not an existing allele symbol, but Chado knows it as FBal0241659
+
+gm25197: No data in either G1b or G2b for 'Pros26'
+
+gm25197: MA20: Invalid species ''
+
+gm25197: MA20: Invalid species ''
+
+gm25197: Invalid proforma field  MS18a. Cloning sites [CV]    :
+
+
+Processing gm25196.edit
+
+gm25196.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25196.edit: No data in either G1b or G2b for 'nemy # CG42708'
+
+
+Processing gm25194.edit
+
+gm25194.edit: No data in either G1b or G2b for 'CG42708'
+
+gm25194.edit: G1g claims that CG8776 is an existing gene symbol, but Chado has never heard of it.
+
+gm25194.edit: No data in either G1b or G2b for 'CG8776'
+
+gm25194.edit: GA1g claims that CG8776[GS5162] is an existing allele symbol, but Chado has never heard of it.
+
+
+Processing gm25193.edit
+
+gm25193.edit: No data in either G1b or G2b for 'CG42708'
+
+
+Processing gm25164.edit
+
+gm25164.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25164.edit: No data in either G1b or G2b for 'Npc1b # CG42707'
+
+
+Processing gm25163.edit
+
+gm25163.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25163.edit: G1f: 'l(1)19Ec' is not a valid gene symbol
+
+gm25163.edit: No data in either G1b or G2b for 'Npc1b'
+
+
+Processing gm25162.edit
+
+gm25162.edit: No data in either G1b or G2b for 'CG42707'
+
+gm25162.edit: G1g claims that l(1)19Ec is an existing gene symbol, but Chado has never heard of it.
+
+
+Processing gm25161.edit
+
+gm25161.edit: No data in either G1b or G2b for 'Npc1b'
+
+
+Processing gm25152.edit
+
+gm25152.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25152.edit: G1f: 'CG17667' is not a valid gene symbol
+
+gm25152.edit: G2a: Missing data when G1f has data 'CG17667 CG42709' and G1g is y
+
+gm25152.edit: No data in either G1b or G2b for 'Atg1'
+
+
+Processing gm25151.edit
+
+gm25151.edit: G1g claims that CG17667 is an existing gene symbol, but Chado has never heard of it.
+
+gm25151.edit: No data in either G1b or G2b for 'CG17667'
+
+gm25151.edit: GA12b: Invalid stamp @P{EP}CG17667[EP3193]@ in 'The @P{EP}CG17667[EP3193]@ insertion maps within both @Atg1@ and @CG17667@ (nested genes).'
+
+gm25151.edit: GA1g claims that CG17667[EP3193] is an existing allele symbol, but Chado has never heard of it.
+
+gm25151.edit: No data in either G1b or G2b for 'Atg1'
+
+gm25151.edit: GA12b: Invalid stamp @P{EP}CG17667[EP3193]@ in 'The @P{EP}CG17667[EP3193]@ insertion maps within both @Atg1@ and @CG17667@ (nested genes).'
+
+
+Processing gm25146
+
+gm25146: GA10a: NEW:'P{tweek[+tHB69]}' is not new and Chado knows it as FBtp0051958
+
+gm25146: GA10a: NEW:'P{UAS-PLC&dgr;-PH-EGFP}' is not new and Chado knows it as FBtp0051959
+
+gm25146: GA10a: NEW:'P{UAS-PLC&dgr;-PHmut-EGFP}' is not new and Chado knows it as FBtp0051960
+
+gm25146: G1f: 'CG42555' is not a valid gene symbol
+
+gm25146: G1f: 'CG15134' is not a valid gene symbol
+
+gm25146: G1f: 'CG4841' is not a valid gene symbol
+
+gm25146: G1f: 'CG42706' is not a valid gene symbol
+
+gm25146: Mismatch between G1f data (tweek CG42555 CG15134 CG4841 CG42706) and G28b data (tweek CG42555 CG15134 CG4841)
+
+gm25146: GA1g claims that tweek[1] is not an existing allele symbol, but Chado knows it as FBal0241648
+
+gm25146: GA1g claims that tweek[2] is not an existing allele symbol, but Chado knows it as FBal0241649
+
+gm25146: GA1e: CG42555[c01084] is not a valid allele symbol in Chado
+
+gm25146: GA1g claims that tweek[c01084] is not an existing allele symbol, but Chado knows it as FBal0222480
+
+gm25146: GA1g claims that tweek[EY02585] is not an existing allele symbol, but Chado knows it as FBal0241650
+
+gm25146: GA1g claims that tweek[EY02585-&Dgr;1] is not an existing allele symbol, but Chado knows it as FBal0241651
+
+gm25146: GA1g claims that tweek[+tHB69] is not an existing allele symbol, but Chado knows it as FBal0241652
+
+gm25146: GA1e: CG15134[GD8917] is not a valid allele symbol in Chado
+
+gm25146: GA1g claims that tweek[GD8917] is not an existing allele symbol, but Chado knows it as FBal0201188
+
+gm25146: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm25146: No data in either G1b or G2b for 'Avic\GFP'
+
+gm25146: GA1g claims that ApepP[EY02585-&Dgr;1] is not an existing allele symbol, but Chado knows it as FBal0241653
+
+gm25146: GA1g claims that Hsap\PLCD1[PH.Scer\UAS.T:Avic\GFP-EGFP] is not an existing allele symbol, but Chado knows it as FBal0241654
+
+gm25146: GA1g claims that Hsap\PLCD1[mut.PH.Scer\UAS.T:Avic\GFP-EGFP] is not an existing allele symbol, but Chado knows it as FBal0241655
+
+gm25146: A1g claims that Df(2L)EY02585[&Dgr;1] is not an existing aberration symbol, but Chado knows it as FBab0046229
+
+gm25146: MA20: Invalid species ''
+
+
+Processing gm25144
+
+gm25144: GA10a: NEW:'P{UAS-sten.F}' is not new and Chado knows it as FBtp0051956
+
+gm25144: GA10a: NEW:'P{UAS-sten.EGFP}' is not new and Chado knows it as FBtp0051957
+
+gm25144: GA1g claims that sten[unspecified] is not an existing allele symbol, but Chado knows it as FBal0241647
+
+gm25144: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm25144: No data in either G1b or G2b for 'Avic\GFP'
+
+gm25144: No data in either G1b or G2b for 'Ggal\LYZ'
+
+
+Processing gm25135
+
+gm25135: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm25135: No data in either G1b or G2b for 'Hsap\H2BFQ'
+
+gm25135: No data in either G1b or G2b for 'BacA\p35'
+
+
+Processing gm25131.edit
+
+gm25131.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25131.edit: MA20: Invalid species ''
+
+
+Processing gm25124
+
+gm25124: GA10a: NEW:'P{NIG.7765R}' is not new and Chado knows it as FBtp0051948
+
+gm25124: GA10a: NEW:'P{UASp-Gl.&Dgr;}' is not new and Chado knows it as FBtp0051949
+
+gm25124: GA10a: NEW:'P{UASp-Imp.RE}' is not new and Chado knows it as FBtp0051950
+
+gm25124: GA10a: NEW:'P{UASp-Imp.SD}' is not new and Chado knows it as FBtp0051951
+
+gm25124: GA10a: NEW:'P{UASp-Imp.KH}' is not new and Chado knows it as FBtp0051952
+
+gm25124: GA10c: NEW:'P{PTT-un1}Imp[PTT]' is not new and Chado knows it as FBti0128476
+
+gm25124: GA10a: NEW:'P{NIG.5433R}' is not new and Chado knows it as FBtp0051953
+
+gm25124: GA10a: NEW:'P{elav-GAL4.U}' is not new and Chado knows it as FBtp0051954
+
+gm25124: GA10e: NEW:'P{PTT-un1}Imp[PTT]' is not new and Chado knows it as FBti0128476
+
+gm25124: No data in either G1b or G2b for 'Dhc64C'
+
+gm25124: GA1g claims that Khc[NIG.7765R] is not an existing allele symbol, but Chado knows it as FBal0241636
+
+gm25124: GA1g claims that Gl[&Dgr;.Scer\UAS.P\T] is not an existing allele symbol, but Chado knows it as FBal0241637
+
+gm25124: No data in either G1b or G2b for 'Imp'
+
+gm25124: GA1g claims that Imp[RE.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0241638
+
+gm25124: GA1g claims that Imp[SD.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0241639
+
+gm25124: GA1g claims that Imp[KH.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0241640
+
+gm25124: GA1g claims that Imp[PTT] is not an existing allele symbol, but Chado knows it as FBal0241641
+
+gm25124: GA1g claims that Imp[H44] is not an existing allele symbol, but Chado knows it as FBal0241642
+
+gm25124: GA1g claims that Imp[H149] is not an existing allele symbol, but Chado knows it as FBal0241643
+
+gm25124: GA1g claims that Klc[NIG.5433R] is not an existing allele symbol, but Chado knows it as FBal0241644
+
+gm25124: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm25124: GA1g claims that Scer\GAL4[elav.PU] is not an existing allele symbol, but Chado knows it as FBal0241645
+
+gm25124: No data in either G1b or G2b for 'Avic\GFP'
+
+gm25124: GA1g claims that Avic\GFP[Imp-PTT] is not an existing allele symbol, but Chado knows it as FBal0241646
+
+gm25124: No data in either G1b or G2b for 'wit'
+
+gm25124: Invalid proforma field  MS18a. Cloning sites [CV]    :
+
+
+Processing gm25121
+
+gm25121: GA10a: NEW:'P{UAS-nemy.RA}' is not new and Chado knows it as FBtp0051993
+
+gm25121: GA10a: NEW:'P{UAS-nemy.RA}' is not new and Chado knows it as FBtp0051993
+
+gm25121: P41: Missing data.
+
+gm25121: G1f: 'CG8776' is not a valid gene symbol
+
+gm25121: GA1e: CG8776[NP0335] is not a valid allele symbol in Chado
+
+gm25121: GA1g claims that nemy[NP0335] is not an existing allele symbol, but Chado knows it as FBal0225710
+
+gm25121: GA1g claims that nemy[45] is not an existing allele symbol, but Chado knows it as FBal0241703
+
+gm25121: GA1g claims that nemy[RA.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0241704
+
+gm25121: GA1e: CG8776[GD1646] is not a valid allele symbol in Chado
+
+gm25121: GA1g claims that nemy[GD1646] is not an existing allele symbol, but Chado knows it as FBal0205988
+
+gm25121: No data in either G1b or G2b for 'w'
+
+gm25121: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm25121: GA1g claims that Scer\GAL4[nemy-NP0335] is not an existing allele symbol, but Chado knows it as FBal0241705
+
+gm25121: GA1g claims that Scer\GAL4[nemy-NP1238] is not an existing allele symbol, but Chado knows it as FBal0241706
+
+gm25121: No data in either G1b or G2b for 'Phm'
+
+gm25121: MA20: Invalid species ''
+
+gm25121: MA20: Invalid species ''
+
+
+Processing pm2195
+
+
+Processing pm2194
+
+
+Processing pm2193
+
+pm2193: P41: Missing data.
+
+pm2193: GA1g claims that Frq2[del3] is not an existing allele symbol, but Chado knows it as FBal0241688
+
+pm2193: GA1g claims that Frq2[del1] is not an existing allele symbol, but Chado knows it as FBal0241689
+
+pm2193: No data in either G1b or G2b for 'Scer\GAL4'
+
+pm2193: A1g claims that Df(X)frq[del3] is not an existing aberration symbol, but Chado knows it as FBab0046231
+
+pm2193: A1g claims that Df(X)frq[del1] is not an existing aberration symbol, but Chado knows it as FBab0046232
+
+
+Processing pm2192
+
+pm2192: GA10a: NEW:'P{UAS-pirk.A}' is not new and Chado knows it as FBtp0051981
+
+pm2192: GA10a: NEW:'P{pirk.4.5g}' is not new and Chado knows it as FBtp0051982
+
+pm2192: GA1g claims that pirk[Scer\UAS.cAa] is not an existing allele symbol, but Chado knows it as FBal0241686
+
+pm2192: GA1g claims that pirk[+t4.5] is not an existing allele symbol, but Chado knows it as FBal0241687
+
+pm2192: No data in either G1b or G2b for 'Scer\GAL4'
+
+
+Processing pm2191
+
+
+Processing pm2190
+
+pm2190: GA10a: NEW:'P{SympUAST-lid}' is not new and Chado knows it as FBtp0051980
+
+pm2190: GA1g claims that lid[Sym.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0241685
+
+
+Processing pm2188
+
+pm2188: GA10a: NEW:'P{UAS-TspAD-GFP}' is not new and Chado knows it as FBtp0051977
+
+pm2188: GA10a: NEW:'P{UAS-TspNTD-GFP}' is not new and Chado knows it as FBtp0051978
+
+pm2188: GA10a: NEW:'P{UAS-slow-HA}' is not new and Chado knows it as FBtp0051979
+
+pm2188: P41: Missing data.
+
+pm2188: GA1g claims that Tsp[Scer\UAS.AD.T:Avic\GFP] is not an existing allele symbol, but Chado knows it as FBal0241681
+
+pm2188: GA1g claims that Tsp[Scer\UAS.NTD.T:Avic\GFP] is not an existing allele symbol, but Chado knows it as FBal0241682
+
+pm2188: G1e: CG7447 is not a valid gene symbol in Chado
+
+pm2188: G1g claims that slow is not an existing gene symbol, but Chado knows it as FBgn0035539
+
+pm2188: GA1g claims that slow[Scer\UAS.T:Ivir\HA1] is not an existing allele symbol, but Chado knows it as FBal0241683
+
+pm2188: GA1g claims that slow[1] is not an existing allele symbol, but Chado knows it as FBal0241684
+
+pm2188: No data in either G1b or G2b for 'Scer\GAL4'
+
+pm2188: No data in either G1b or G2b for 'Avic\GFP'
+
+pm2188: No data in either G1b or G2b for 'Moe'
+
+pm2188: No data in either G1b or G2b for 'Mmus\Cd8a'
+
+
+Processing sm1085.edit
+
+sm1085.edit: Required proforma field P21 missing or malformed.
+
+sm1085.edit: Required proforma field G1b missing or malformed.
+
+sm1085.edit: Required proforma field G2b missing or malformed.
+
+
+Processing sm1084
+
+sm1084: Required proforma field P22 missing or malformed.
+
+sm1084: Required proforma field P21 missing or malformed.
+
+sm1084: Required proforma field G2b missing or malformed.
+
+sm1084: Required proforma field G2b missing or malformed.
+
+sm1084: G1g claims that M(2)59B is not an existing gene symbol, but Chado knows it as FBgn0261678
+
+sm1084: Required proforma field G2b missing or malformed.
+
+sm1084: Invalid proforma field  A91d. Estimated cytology                                            :y
+
+sm1084: Invalid proforma field  A91e. Observed cytology                                             :n
+
+sm1084: Invalid proforma field  A92d. Estimated cytology                                             :y
+
+sm1084: Invalid proforma field  A92e. Observed cytology                                              :n
+
+sm1084: Required proforma field A2b missing or malformed.
+
+sm1084: Invalid proforma field  A91d. Estimated cytology                                            :y
+
+sm1084: Invalid proforma field  A91e. Observed cytology                                             :n
+
+sm1084: Invalid proforma field  A92d. Estimated cytology                                             :y
+
+sm1084: Invalid proforma field  A92e. Observed cytology                                              :n
+
+sm1084: Required proforma field A2b missing or malformed.
+
+sm1084: Invalid proforma field  A91d. Estimated cytology                                            :y
+
+sm1084: Invalid proforma field  A91e. Observed cytology                                             :n
+
+sm1084: Invalid proforma field  A92d. Estimated cytology                                             :y
+
+sm1084: Invalid proforma field  A92e. Observed cytology                                              :n
+
+sm1084: Required proforma field A2b missing or malformed.
+
+sm1084: Invalid proforma field  A91d. Estimated cytology                                            :y
+
+sm1084: Invalid proforma field  A91e. Observed cytology                                             :n
+
+sm1084: Invalid proforma field  A92d. Estimated cytology                                             :y
+
+sm1084: Invalid proforma field  A92e. Observed cytology                                              :n
+
+sm1084: Required proforma field A2b missing or malformed.
+
+
+Processing sm1082
+
+sm1082: Required proforma field P22 missing or malformed.
+
+sm1082: Required proforma field P21 missing or malformed.
+
+
+Processing sm1081
+
+sm1081: Required proforma field P22 missing or malformed.
+
+sm1081: Required proforma field P21 missing or malformed.
+
+
+Processing sm1080.edit
+
+sm1080.edit: Most .edit records contain a !c, did you forget to add one?
+
+sm1080.edit: Required proforma field P21 missing or malformed.
+
+sm1080.edit: G1f: 'Dana\GF18843' is not a valid gene symbol
+
+sm1080.edit: Required proforma field G2b missing or malformed.
+
+sm1080.edit: G1f: 'Dana\Amy&PSgr;' is not a valid gene symbol
+
+sm1080.edit: Required proforma field G2b missing or malformed.
+
+sm1080.edit: Required proforma field G2b missing or malformed.
+
+sm1080.edit: Required proforma field G2b missing or malformed.
+
+
+Processing sm1079
+
+sm1079: Required proforma field P22 missing or malformed.
+
+sm1079: Required proforma field P21 missing or malformed.
+
+sm1079: Required proforma field G2b missing or malformed.
+
+sm1079: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple)        :1
+
+sm1079: Invalid proforma field  A90b. Genomic location of breakpoint                                 :2R:18685826
+
+sm1079: Invalid proforma field  A90c. Genome release number for entry in A90a                        :5
+
+sm1079: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple)        :2
+
+sm1079: Invalid proforma field  A90b. Genomic location of breakpoint                                 :2R:18774154
+
+sm1079: Invalid proforma field  A90c. Genome release number for entry in A90a                        :5
+
+sm1079: Invalid proforma field  A91a. Deleted segment data for segment number (dupl for multiple)   :1
+
+sm1079: Invalid proforma field  A91b. Cytological location of left end of segment                   :59B1
+
+sm1079: Invalid proforma field  A91c. Cytological location of right end of segment                  :59B4
+
+sm1079: Invalid proforma field  A91d. Estimated cytology                                            :y
+
+sm1079: Invalid proforma field  A91e. Observed cytology                                             :n
+
+sm1079: Invalid proforma field  A92d. Estimated cytology                                             :y
+
+sm1079: Invalid proforma field  A92e. Observed cytology                                              :n
+
+sm1079: Required proforma field A2b missing or malformed.
+
+sm1079: A1g claims that Df(2R)BSC864 is not an existing aberration symbol, but Chado knows it as FBab0046243
+
+sm1079: Invalid proforma field  A91d. Estimated cytology                                             :y
+
+sm1079: Invalid proforma field  A91e. Observed cytology                                              :n
+
+sm1079: Invalid proforma field  A92d. Estimated cytology                                            :y
+
+sm1079: Invalid proforma field  A92e. Observed cytology                                             :n
+
+sm1079: Required proforma field A2b missing or malformed.
+
+
+Processing sm1078.edit
+
+sm1078.edit: Required proforma field P21 missing or malformed.
+
+sm1078.edit: Invalid proforma field  A91d. Estimated cytology                                            :y
+
+sm1078.edit: Invalid proforma field  A91e. Observed cytology                                             :n
+
+sm1078.edit: Invalid proforma field  A92d. Estimated cytology                                             :y
+
+sm1078.edit: Invalid proforma field  A92e. Observed cytology                                              :n
+
+sm1078.edit: Required proforma field A1b missing or malformed.
+
+sm1078.edit: Required proforma field A2b missing or malformed.
+
+sm1078.edit: Invalid proforma field  A91d. Estimated cytology                                             :y
+
+sm1078.edit: Invalid proforma field  A91e. Observed cytology                                              :n
+
+sm1078.edit: Invalid proforma field  A92d. Estimated cytology                                            :y
+
+sm1078.edit: Invalid proforma field  A92e. Observed cytology                                             :n
+
+sm1078.edit: Required proforma field A1b missing or malformed.
+
+sm1078.edit: Required proforma field A2b missing or malformed.
+
+
+Processing sm1077.edit
+
+sm1077.edit: Most .edit records contain a !c, did you forget to add one?
+
+sm1077.edit: Required proforma field P21 missing or malformed.
+
+sm1077.edit: G1e: CG7843 is not a valid gene symbol in Chado
+
+sm1077.edit: Required proforma field G1b missing or malformed.
+
+sm1077.edit: Required proforma field G2b missing or malformed.
+
+sm1077.edit: G1g claims that Ars2 is not an existing gene symbol, but Chado knows it as FBgn0033062
+
+sm1077.edit: No G2a data corresponding to  G1e. Action - rename this gene symbol                                :CG7843
+
+sm1077.edit: No G2c data corresponding to  G1e. Action - rename this gene symbol                                :CG7843
+
+
+Processing ra758
+
+ra758: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+ra758: Invalid proforma field  A90b.    Genomic location of breakpoint                       :3R:24500751
+
+ra758: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+ra758: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+ra758: Invalid proforma field  A90b.    Genomic location of breakpoint                       :3R:25017393
+
+ra758: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+ra758: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+ra758: Invalid proforma field  A91a. Deleted segment data for segment number (dupl for multiple) :1
+
+ra758: Invalid proforma field  A91b.    Cytological location of left end of segment              :98E1
+
+ra758: Invalid proforma field  A91c.    Cytological location of right end of segment             :99A1
+
+ra758: Invalid proforma field  A91d.    Estimated cytology                                       :y
+
+ra758: Invalid proforma field  A91e.    Observed cytology                                        :n
+
+ra758: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :
+
+ra758: Invalid proforma field  A92b.    Cytological location of left end of segment                 :
+
+ra758: Invalid proforma field  A92c.    Cytological location of right end of segment                :
+
+ra758: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+ra758: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+ra758: A1g claims that Df(3R)BSC874 is not an existing aberration symbol, but Chado knows it as FBab0046242
+
+ra758: MA20: Invalid species ''
+
+
+Processing ra757
+
+ra757: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+ra757: Invalid proforma field  A90b.    Genomic location of breakpoint                       :3R:3591219
+
+ra757: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+ra757: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+ra757: Invalid proforma field  A90b.    Genomic location of breakpoint                       :3R:4069851
+
+ra757: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+ra757: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+ra757: Invalid proforma field  A91a. Deleted segment data for segment number (dupl for multiple) :1
+
+ra757: Invalid proforma field  A91b.    Cytological location of left end of segment              :84E1
+
+ra757: Invalid proforma field  A91c.    Cytological location of right end of segment             :84F5
+
+ra757: Invalid proforma field  A91d.    Estimated cytology                                       :y
+
+ra757: Invalid proforma field  A91e.    Observed cytology                                        :n
+
+ra757: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :
+
+ra757: Invalid proforma field  A92b.    Cytological location of left end of segment                 :
+
+ra757: Invalid proforma field  A92c.    Cytological location of right end of segment                :
+
+ra757: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+ra757: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+ra757: A1g claims that Df(3R)BSC873 is not an existing aberration symbol, but Chado knows it as FBab0046241
+
+ra757: MA20: Invalid species ''
+
+
+Processing ra756
+
+ra756: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+ra756: Invalid proforma field  A90b.    Genomic location of breakpoint                       :1:19638713
+
+ra756: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+ra756: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+ra756: Invalid proforma field  A90b.    Genomic location of breakpoint                       :1:20201432
+
+ra756: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+ra756: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+ra756: Invalid proforma field  A91a. Deleted segment data for segment number (dupl for multiple) :1
+
+ra756: Invalid proforma field  A91b.    Cytological location of left end of segment              :18E5
+
+ra756: Invalid proforma field  A91c.    Cytological location of right end of segment             :19C3
+
+ra756: Invalid proforma field  A91d.    Estimated cytology                                       :y
+
+ra756: Invalid proforma field  A91e.    Observed cytology                                        :n
+
+ra756: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :
+
+ra756: Invalid proforma field  A92b.    Cytological location of left end of segment                 :
+
+ra756: Invalid proforma field  A92c.    Cytological location of right end of segment                :
+
+ra756: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+ra756: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+ra756: A1g claims that Df(1)BSC872 is not an existing aberration symbol, but Chado knows it as FBab0046240
+
+ra756: MA20: Invalid species ''
+
+
+Processing ra755
+
+ra755: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+ra755: Invalid proforma field  A90b.    Genomic location of breakpoint                       :1:19511634
+
+ra755: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+ra755: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+ra755: Invalid proforma field  A90b.    Genomic location of breakpoint                       :1:19682746
+
+ra755: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+ra755: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+ra755: Invalid proforma field  A91a. Deleted segment data for segment number (dupl for multiple) :1
+
+ra755: Invalid proforma field  A91b.    Cytological location of left end of segment              :18D7
+
+ra755: Invalid proforma field  A91c.    Cytological location of right end of segment             :18F2
+
+ra755: Invalid proforma field  A91d.    Estimated cytology                                       :y
+
+ra755: Invalid proforma field  A91e.    Observed cytology                                        :n
+
+ra755: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :
+
+ra755: Invalid proforma field  A92b.    Cytological location of left end of segment                 :
+
+ra755: Invalid proforma field  A92c.    Cytological location of right end of segment                :
+
+ra755: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+ra755: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+ra755: A1g claims that Df(1)BSC871 is not an existing aberration symbol, but Chado knows it as FBab0046239
+
+
+Processing ra754
+
+ra754: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+ra754: Invalid proforma field  A90b.    Genomic location of breakpoint                       :1:19584121
+
+ra754: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+ra754: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+ra754: Invalid proforma field  A90b.    Genomic location of breakpoint                       :1:19742393
+
+ra754: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+ra754: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+ra754: Invalid proforma field  A91a. Deleted segment data for segment number (dupl for multiple) :1
+
+ra754: Invalid proforma field  A91b.    Cytological location of left end of segment              :18E1
+
+ra754: Invalid proforma field  A91c.    Cytological location of right end of segment             :18F3
+
+ra754: Invalid proforma field  A91d.    Estimated cytology                                       :y
+
+ra754: Invalid proforma field  A91e.    Observed cytology                                        :n
+
+ra754: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :
+
+ra754: Invalid proforma field  A92b.    Cytological location of left end of segment                 :
+
+ra754: Invalid proforma field  A92c.    Cytological location of right end of segment                :
+
+ra754: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+ra754: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+ra754: A1g claims that Df(1)BSC870 is not an existing aberration symbol, but Chado knows it as FBab0046238
+
+ra754: MA20: Invalid species ''
+
+
+Processing ra753
+
+ra753: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+ra753: Invalid proforma field  A90b.    Genomic location of breakpoint                       :1:3859757
+
+ra753: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+ra753: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+ra753: Invalid proforma field  A90b.    Genomic location of breakpoint                       :1:4255593
+
+ra753: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+ra753: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+ra753: Invalid proforma field  A91a. Deleted segment data for segment number (dupl for multiple) :1
+
+ra753: Invalid proforma field  A91b.    Cytological location of left end of segment              :4A1
+
+ra753: Invalid proforma field  A91c.    Cytological location of right end of segment             :4C1
+
+ra753: Invalid proforma field  A91d.    Estimated cytology                                       :y
+
+ra753: Invalid proforma field  A91e.    Observed cytology                                        :n
+
+ra753: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :
+
+ra753: Invalid proforma field  A92b.    Cytological location of left end of segment                 :
+
+ra753: Invalid proforma field  A92c.    Cytological location of right end of segment                :
+
+ra753: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+ra753: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+ra753: A1g claims that Df(1)BSC869 is not an existing aberration symbol, but Chado knows it as FBab0046237
+
+
+Processing ra751
+
+ra751: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+ra751: Invalid proforma field  A90b.    Genomic location of breakpoint                       :1:6875892
+
+ra751: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+ra751: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+ra751: Invalid proforma field  A90b.    Genomic location of breakpoint                       :1:6935548
+
+ra751: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+ra751: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+ra751: Invalid proforma field  A91a. Deleted segment data for segment number (dupl for multiple) :1
+
+ra751: Invalid proforma field  A91b.    Cytological location of left end of segment              :6E4
+
+ra751: Invalid proforma field  A91c.    Cytological location of right end of segment             :6F1
+
+ra751: Invalid proforma field  A91d.    Estimated cytology                                       :y
+
+ra751: Invalid proforma field  A91e.    Observed cytology                                        :n
+
+ra751: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :
+
+ra751: Invalid proforma field  A92b.    Cytological location of left end of segment                 :
+
+ra751: Invalid proforma field  A92c.    Cytological location of right end of segment                :
+
+ra751: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+ra751: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+ra751: A1g claims that Df(1)BSC867 is not an existing aberration symbol, but Chado knows it as FBab0046236
+
+ra751: MA20: Invalid species ''
+
+
+Processing ra750
+
+ra750: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+ra750: Invalid proforma field  A90b.    Genomic location of breakpoint                       :1:7981026
+
+ra750: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+ra750: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+ra750: Invalid proforma field  A90b.    Genomic location of breakpoint                       :1:8051355
+
+ra750: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+ra750: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+ra750: Invalid proforma field  A91a. Deleted segment data for segment number (dupl for multiple) :1
+
+ra750: Invalid proforma field  A91b.    Cytological location of left end of segment              :7D5
+
+ra750: Invalid proforma field  A91c.    Cytological location of right end of segment             :7D16
+
+ra750: Invalid proforma field  A91d.    Estimated cytology                                       :y
+
+ra750: Invalid proforma field  A91e.    Observed cytology                                        :n
+
+ra750: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :
+
+ra750: Invalid proforma field  A92b.    Cytological location of left end of segment                 :
+
+ra750: Invalid proforma field  A92c.    Cytological location of right end of segment                :
+
+ra750: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+ra750: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+ra750: A1g claims that Df(1)BSC866 is not an existing aberration symbol, but Chado knows it as FBab0046235
+
+ra750: MA20: Invalid species ''
+
+ra750: MA20: Invalid species ''
+
+
+Processing ra749
+
+ra749: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+ra749: Invalid proforma field  A90b.    Genomic location of breakpoint                       :2R:18652440
+
+ra749: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+ra749: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+ra749: Invalid proforma field  A90b.    Genomic location of breakpoint                       :2R:18828551
+
+ra749: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+ra749: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+ra749: Invalid proforma field  A91a. Deleted segment data for segment number (dupl for multiple) :1
+
+ra749: Invalid proforma field  A91b.    Cytological location of left end of segment              :59A4
+
+ra749: Invalid proforma field  A91c.    Cytological location of right end of segment             :59B7
+
+ra749: Invalid proforma field  A91d.    Estimated cytology                                       :y
+
+ra749: Invalid proforma field  A91e.    Observed cytology                                        :n
+
+ra749: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :
+
+ra749: Invalid proforma field  A92b.    Cytological location of left end of segment                 :
+
+ra749: Invalid proforma field  A92c.    Cytological location of right end of segment                :
+
+ra749: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+ra749: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+ra749: A1g claims that Df(2R)BSC865 is not an existing aberration symbol, but Chado knows it as FBab0046234
+
+
+Processing ra748
+
+ra748: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+ra748: Invalid proforma field  A90b.    Genomic location of breakpoint                       :2R:18685826
+
+ra748: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+ra748: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+ra748: Invalid proforma field  A90b.    Genomic location of breakpoint                       :2R:18889174
+
+ra748: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+ra748: Invalid proforma field  A90j.    Comments concerning sequence location                :
+
+ra748: Invalid proforma field  A91a. Deleted segment data for segment number (dupl for multiple) :1
+
+ra748: Invalid proforma field  A91b.    Cytological location of left end of segment              :59B1
+
+ra748: Invalid proforma field  A91c.    Cytological location of right end of segment             :59C1
+
+ra748: Invalid proforma field  A91d.    Estimated cytology                                       :y
+
+ra748: Invalid proforma field  A91e.    Observed cytology                                        :n
+
+ra748: Invalid proforma field  A92a. Duplicated segment data for segment number (dupl for multiple) :
+
+ra748: Invalid proforma field  A92b.    Cytological location of left end of segment                 :
+
+ra748: Invalid proforma field  A92c.    Cytological location of right end of segment                :
+
+ra748: Invalid proforma field  A92d.    Estimated cytology                                          :y
+
+ra748: Invalid proforma field  A92e.    Observed cytology                                           :n
+
+ra748: A1g claims that Df(2R)BSC863 is not an existing aberration symbol, but Chado knows it as FBab0046233
+
+
+Processing ra745.edit
+
+ra745.edit: Most .edit records contain a !c, did you forget to add one?
+
+ra745.edit: G1g claims that Mmus\Ptgs1 is not an existing gene symbol, but Chado knows it as FBgn0261672
+
+ra745.edit: No data in either G1b or G2b for 'Mmus\Ptgs1'
+
+
+Processing ra741
+
+ra741: GA10a: NEW:'P{UAS-nct.RNAi}' is not new and Chado knows it as FBtp0051988
+
+ra741: GA10a: NEW:'P{UAS-pen-2.RNAi}' is not new and Chado knows it as FBtp0051989
+
+ra741: GA10a: NEW:'P{UAS-mycAPP.LV}' is not new and Chado knows it as FBtp0051990
+
+ra741: GA10a: NEW:'P{UAS-BACE1.L}' is not new and Chado knows it as FBtp0051991
+
+ra741: GA10a: NEW:'P{UAS-LV.nls}' is not new and Chado knows it as FBtp0051992
+
+ra741: GA1g claims that nct[dsRNA.Scer\UAS.cLa] is not an existing allele symbol, but Chado knows it as FBal0241697
+
+ra741: GA1g claims that aph-1[dsRNA.Scer\UAS.cLa] is not an existing allele symbol, but Chado knows it as FBal0241698
+
+ra741: GA1g claims that pen-2[dsRNA.Scer\UAS.cLa] is not an existing allele symbol, but Chado knows it as FBal0241699
+
+ra741: GA1g claims that Hsap\APP[Scer\UAS.T:Hsap\MYC.T:SV40\nls2.T:Ecol\lexA.T:Hsim\VP16] is not an existing allele symbol, but Chado knows it as FBal0241700
+
+ra741: GA1g claims that Hsap\BACE1[Scer\UAS.cLa] is not an existing allele symbol, but Chado knows it as FBal0241701
+
+ra741: GA1g claims that Ecol\lexA[Scer\UAS.T:SV40\nls2.T:Hsim\VP16] is not an existing allele symbol, but Chado knows it as FBal0241702
+
+
+Processing ra740
+
+ra740: GA10a: NEW:'P{UASp-Ntf-2.GFP}' is not new and Chado knows it as FBtp0051987
+
+ra740: GA1g claims that Ntf-2[Scer\UAS.P\T.T:Avic\GFP] is not an existing allele symbol, but Chado knows it as FBal0241695
+
+ra740: GA1g claims that Ntf-2[unspecified] is not an existing allele symbol, but Chado knows it as FBal0241696
+
+
+Processing ra735
+
+ra735: GA10a: NEW:'P{UAS-caps.GFP}' is not new and Chado knows it as FBtp0051985
+
+ra735: GA10a: NEW:'P{UAS-caps.YFP}' is not new and Chado knows it as FBtp0051986
+
+ra735: GA1g claims that caps[L253fs] is not an existing allele symbol, but Chado knows it as FBal0241692
+
+ra735: GA1g claims that caps[Scer\UAS.T:Avic\GFP] is not an existing allele symbol, but Chado knows it as FBal0241693
+
+ra735: GA1g claims that caps[Scer\UAS.T:Avic\GFP-YFP] is not an existing allele symbol, but Chado knows it as FBal0241694
+
+
+Processing ra733
+
+ra733: GA10a: NEW:'P{UAS-gce.RNAi}' is not new and Chado knows it as FBtp0051983
+
+ra733: GA10a: NEW:'P{UAS-jhamt.L}' is not new and Chado knows it as FBtp0051984
+
+ra733: GA10e claims that P{GAL4}Aug21 is an existing FBti symbol, but Chado has never heard of it.
+
+ra733: GA1g claims that gce[dsRNA.Scer\UAS.cWa] is not an existing allele symbol, but Chado knows it as FBal0241690
+
+ra733: GA1g claims that jhamt[Scer\UAS.cLa] is not an existing allele symbol, but Chado knows it as FBal0241691
+
+
+Processing km293
+
+km293: Required proforma field P21 missing or malformed.
+
+km293: MA20: Invalid species ''
+
+
+Processing km291
+
+km291: A1h: Curators don't usually fill in the FBab field.  Are you sure you want to for 'Df(3R)ED5416'?
+
+
+Processing as96.user
+
+as96.user: P41: Missing data.
+
+as96.user: G1g claims that Dana\GF18843 is an existing gene symbol, but Chado has never heard of it.
+
+
+Processing as95.user
+
+as95.user: P41: Missing data.
+
+I checked 66 files.
+
+These 6 files passed all the checks:
+
+gm25199.edit	gm25208	gm25213	pm2191	pm2194	pm2195
+
+These 60 files failed at least one check:
+
+as95.user	as96.user	gm25121	gm25124	gm25131.edit	gm25135	gm25144	gm25146	gm25151.edit	gm25152.edit
+gm25161.edit	gm25162.edit	gm25163.edit	gm25164.edit	gm25193.edit	gm25194.edit	gm25196.edit	gm25197	gm25200	gm25201
+gm25202.edit	gm25204.bibl	gm25205.edit	gm25206	gm25207	gm25210	gm25211.edit	gm25212.edit	gm25214	gm25215
+gm25216	km291	km293	pm2188	pm2190	pm2192	pm2193	ra733	ra735	ra740
+ra741	ra745.edit	ra748	ra749	ra750	ra751	ra753	ra754	ra755	ra756
+ra757	ra758	sm1077.edit	sm1078.edit	sm1079	sm1080.edit	sm1081	sm1082	sm1084	sm1085.edit
+
+Ignoring these 65 files:
+
+pl146482.bibl	pl146483.bibl	pl146484.bibl	pl146485.bibl	pl146486.bibl	pl146487.bibl	pl146488.bibl	pl146489.bibl	pl146490.bibl	pl146491.bibl
+pl146492.bibl	pl146493.bibl	pl146494.bibl	pl146495.bibl	pl146496.bibl	pl146497.bibl	pl146498.bibl	pl146499.bibl	pl146500.bibl	pl146501.bibl
+pl146502.bibl	pl146503.bibl	pl146504.bibl	pl146505.bibl	pl146506.bibl	pl146507.bibl	pl146508.bibl	pl146509.bibl	pl146510.bibl	pl146511.bibl
+pl146512.bibl	pl146513.bibl	pl146514.bibl	pl146515.bibl	pl146516.bibl	pl146517.bibl	pl146518.bibl	pl146519.bibl	pl146520.bibl	pl146521.bibl
+pl146522.bibl	pl146523.bibl	pl146524.bibl	pl146525.bibl	pl146526.bibl	pl146527.bibl	pl146528.bibl	pl146529.bibl	pl146530.bibl	pl146531.bibl
+pl146532.bibl	pl146533.bibl	pl146534.bibl	pl146535.bibl	pl146536.bibl	pl146537.bibl	pl146538.bibl	pl146539.bibl	pl146540.bibl	pl146541.bibl
+sb179.skim	sb180.skim	sb181.skim	sb182.skim	sb183.skim
+
+
+I came to this conclusion by consulting fb_2010_03_05 stored on oscar.gen.cam.ac.uk
+
+I used these ontologies:
+FBbt: /curfiles/ontologies/fly_anatomy.obo dated 04:02:2010 12:01
+FBdv: /curfiles/ontologies/fly_development.obo dated 19:10:2009 13:49
+FBcv: /curfiles/ontologies/flybase_controlled_vocabulary.obo dated 09:02:2009 13:59
+FBsp: /curfiles/ontologies/fly_taxonomy.obo dated 06:04:2007 11:47
+SO  : /curfiles/ontologies/so.obo dated 02:06:2006 12:44
+GO  : /curfiles/ontologies/gene_ontology.obo dated 26:11:2009 19:30
+GO_dbxrefs: /curfiles/ontologies/GO.xrf_abbs dated 2010/01/23 04:34:32
+
+
+

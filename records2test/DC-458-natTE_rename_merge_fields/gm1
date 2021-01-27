@@ -1,0 +1,96 @@
+! C1.  Curator ID	:Bev
+! C2.  Date		:140221
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 44:  6 Nov 2012
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0222702
+! P2.   Parent multipub abbreviation               *w :Mol. Biol. Evol.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :no_flag
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :?? ID/symbol mismatch in full natTE proforma
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! NATURAL TRANSPOSON PROFORMA                        Version 7: 13 Apr 2011
+!
+! TE1f. ID for gen.natTE (FBte or "new")       :FBte0000333
+! TE1a. gen.natTE symbol to use in database    :mdg1
+! TE1b. gen.natTE symbol used in reference     :mdg1
+! TE3.  Species                                :
+!
+! TE14a.  gen.natTE name to use in database      :
+! TE14b.  gen.natTE name used in reference       :
+! TE14c.  Database gen.natTE name(s) to replace  :
+!
+! TE1c. Action - rename this gen.natTE symbol    :
+! TE1g. Action - merge these gen.natTE(s) (FBte) :
+! TE1h. Action - delete gen.natTE record ("y"/blank)   :
+! TE1i. Action - dissociate TE1f from FBrf ("y"/blank) :
+!
+! TE4a. Transposon type [CV]                :
+! TE4b. Length of complete element, bp      :
+! TE4c. Terminal repeat length, bp          :
+! TE4d. Target site duplication, bp         :
+! TE4e. Target site sequence (if consensus) :
+!
+! TE5a. Number of copies in sequenced genome (dupl for multiple) :
+!   TE5b. Description of sequenced genome   :
+! TE5c. Number of copies in reported genome (dupl for multiple)  :
+!   TE5d. Description of reported genome(s) :
+!
+! TE6a. Reference sequence for complete element :
+! TE6b. Accession(s) for gen.natTE          :
+! TE6c. Accession(s) for flanking sequence      :
+! TE7.  Phylogenetic range  :
+! TE8.  Component gene(s)   :
+!
+! TE9.  Named isolates        :
+! TE10. Engineered constructs :
+! TE11. Other variants        :
+!
+! TE12. Comments            :
+! TE13. Internal comments   :?? error is mismatch between TE1f and TE1a
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! NATURAL TRANSPOSON PROFORMA                        Version 7: 13 Apr 2011
+!
+! TE1f. ID for gen.natTE (FBte or "new")       :FBte0000675
+! TE1a. gen.natTE symbol to use in database    :springer
+! TE1b. gen.natTE symbol used in reference     :springer
+! TE3.  Species                                :
+!
+! TE14a.  gen.natTE name to use in database      :
+! TE14b.  gen.natTE name used in reference       :
+! TE14c.  Database gen.natTE name(s) to replace  :
+!
+! TE1c. Action - rename this gen.natTE symbol    :
+! TE1g. Action - merge these gen.natTE(s) (FBte) :
+! TE1h. Action - delete gen.natTE record ("y"/blank)   :
+! TE1i. Action - dissociate TE1f from FBrf ("y"/blank) :
+!
+! TE4a. Transposon type [CV]                :
+! TE4b. Length of complete element, bp      :
+! TE4c. Terminal repeat length, bp          :
+! TE4d. Target site duplication, bp         :
+! TE4e. Target site sequence (if consensus) :
+!
+! TE5a. Number of copies in sequenced genome (dupl for multiple) :
+!   TE5b. Description of sequenced genome   :
+! TE5c. Number of copies in reported genome (dupl for multiple)  :
+!   TE5d. Description of reported genome(s) :
+!
+! TE6a. Reference sequence for complete element :
+! TE6b. Accession(s) for gen.natTE          :
+! TE6c. Accession(s) for flanking sequence      :
+! TE7.  Phylogenetic range  :
+! TE8.  Component gene(s)   :
+!
+! TE9.  Named isolates        :
+! TE10. Engineered constructs :
+! TE11. Other variants        :
+!
+! TE12. Comments            :
+! TE13. Internal comments   :?? error is mismatch between TE1f and TE1a
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

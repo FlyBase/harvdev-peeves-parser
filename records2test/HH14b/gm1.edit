@@ -1,0 +1,193 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :unattributed
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! HUMAN HEALTH MODEL PROFORMA   Version 1.11:  1 Jul 2015
+!
+! HH1f. Database ID for disease or health issue  :FBhh0000025
+! HH1b. Full name to use in database  :thyroid carcinoma, familial medullary
+! HH1g. Sub-datatype [disease, health-related process] :
+!
+! HH1c. OMIM phenotype symbol (internal comment) :
+! HH1d. Symbol/name used in ref (free text)  :
+! HH1e. Additional synonyms (free text)   :
+!
+! HH2a. Category [parent entity, sub-entity, specific entity, group entity] :parent entity
+! HH2b. Parent entity (if HH2a = sub-entity)  :
+! HH2c. OMIM phenotype number :
+! HH2d. DOID  :
+!
+! HH3a. Action - rename this disease (HH1b is rename)  :
+! HH3c. Action - delete disease record ("y"/blank)  :
+! HH3d. Action - dissociate HH1f from FBrf ("y"/blank)  :
+!
+! HH15. Overview of Drosophila model (free text)  :
+!
+! HH4h. Description of process (free text) :
+! HH4a. Description/Symptoms and phenotype (free text)  :
+! HH4b. Description/Genetics (free text)  :
+! HH4c. Description/Cellular phenotype and pathology (free text)  :
+! HH4g. Description/Molecular information (free text)  :
+!
+! HH4d. GO term(s)  :
+! HH4e. FB group/process  :
+! HH4f. Related human health entity :
+!
+! HH5a. External link - accession number (repeat for multiple ) :
+!      HH5b. External link - FB database ID (DB1a) :
+!      HH5c. External link - title/description of specific accession :
+!
+! HH6c. Ordered list of OMIM phenotype entries (sep. by returns) :
+!
+! HH7a. Human gene(s) implicated (FB symbol, Hsap\xxx) :
+! HH7e. Human gene(s) implicated (HGNC accession number) :
+!     HH7d. Orthologous Dmel gene(s) [usu. DIOPT] :
+!     HH7c. Comments on orthologs (free text) :
+! HH7b. Other mammalian genes used  (in FB as transgene) :
+!
+! HH8a. Dmel gene(s) implicated (repeat for multiple) :
+!      HH8c. Comments on orthologs (free text) :
+! HH8e. Synthetic gene(s) used (symbol used by FB) :
+!
+! HH10. Summary of experimental data (free text) :
+!
+! HH11b. Mammalian transgenics, heterologous rescue (free text) :
+! HH11c. Mammalian transgenics, phenotype (free text) :
+! HH11d. Mammalian transgenics, physical interactions (free text) :
+! HH11e. Mammalian transgenics, interactions (free text) :
+! HH11f. Mammalian transgenics, perturbations and treatments (free text) :
+!
+! HH12a. Dmel gene(s), relevant phenotypes (free text) :
+! HH12c. Dmel gene(s), interactions (free text) :
+! HH12d. Dmel gene(s), perturbations and treatments (free text) :
+! HH12e. Dmel recombinant construct(s), phenotype or rescue (free text):
+!
+! HH13a. Additional experimental info (free text) :here is some text
+! HH13b. Proposed mechanisms (free text) :
+!
+! HH16a. Development of model ('y'/blank) :
+! HH16b. Refinement of model ('y'/blank) :
+! HH16c. Mechanism of disease-associated mutation ('y'/blank) :
+! HH16d. Genetic interaction ('y'/blank) :
+! HH16e. Physical interaction ('y'/blank) :
+! HH16f. Subcellular phenotype or mechanism ('y'/blank) :
+! HH16g. Role of post-translational modification ('y'/blank) :
+! HH16h. Molecular mechanism ('y'/blank) :
+! HH16i. Role of/in related molecular pathway ('y'/blank) :
+! HH16j. Chemical perturbation/stressor ('y'/blank) :
+! HH16k. Environmental perturbation/stressor ('y'/blank) :
+! HH16l. Drug discovery/assessment ('y'/blank) :
+!
+! HH14a. External link to BDSC - page ID (repeat for multiple) :
+!      HH14b. External link to BDSC - FB database ID (DB1a) :BDSC_HD
+!      HH14c. External link to BDSC - title/description of specific page :some specific page
+!
+! HH20. Internal notes :??no error
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! HUMAN HEALTH MODEL PROFORMA   Version 1.11:  1 Jul 2015
+!
+! HH1f. Database ID for disease or health issue  :new
+! HH1b. Full name to use in database  :some new disease
+! HH1g. Sub-datatype [disease, health-related process] :
+!
+! HH1c. OMIM phenotype symbol (internal comment) :
+! HH1d. Symbol/name used in ref (free text)  :
+! HH1e. Additional synonyms (free text)   :
+!
+! HH2a. Category [parent entity, sub-entity, specific entity, group entity] :parent entity
+! HH2b. Parent entity (if HH2a = sub-entity)  :
+! HH2c. OMIM phenotype number :
+! HH2d. DOID  :
+!
+! HH3a. Action - rename this disease (HH1b is rename)  :
+! HH3c. Action - delete disease record ("y"/blank)  :
+! HH3d. Action - dissociate HH1f from FBrf ("y"/blank)  :
+!
+! HH15. Overview of Drosophila model (free text)  :
+!
+! HH4h. Description of process (free text) :
+! HH4a. Description/Symptoms and phenotype (free text)  :
+! HH4b. Description/Genetics (free text)  :
+! HH4c. Description/Cellular phenotype and pathology (free text)  :
+! HH4g. Description/Molecular information (free text)  :
+!
+! HH4d. GO term(s)  :
+! HH4e. FB group/process  :
+! HH4f. Related human health entity :
+!
+! HH5a. External link - accession number (repeat for multiple ) :
+!      HH5b. External link - FB database ID (DB1a) :
+!      HH5c. External link - title/description of specific accession :
+!
+! HH6c. Ordered list of OMIM phenotype entries (sep. by returns) :
+!
+! HH7a. Human gene(s) implicated (FB symbol, Hsap\xxx) :
+! HH7e. Human gene(s) implicated (HGNC accession number) :
+!     HH7d. Orthologous Dmel gene(s) [usu. DIOPT] :
+!     HH7c. Comments on orthologs (free text) :
+! HH7b. Other mammalian genes used  (in FB as transgene) :
+!
+! HH8a. Dmel gene(s) implicated (repeat for multiple) :
+!      HH8c. Comments on orthologs (free text) :
+! HH8e. Synthetic gene(s) used (symbol used by FB) :
+!
+! HH10. Summary of experimental data (free text) :
+!
+! HH11b. Mammalian transgenics, heterologous rescue (free text) :
+! HH11c. Mammalian transgenics, phenotype (free text) :
+! HH11d. Mammalian transgenics, physical interactions (free text) :
+! HH11e. Mammalian transgenics, interactions (free text) :
+! HH11f. Mammalian transgenics, perturbations and treatments (free text) :
+!
+! HH12a. Dmel gene(s), relevant phenotypes (free text) :
+! HH12c. Dmel gene(s), interactions (free text) :
+! HH12d. Dmel gene(s), perturbations and treatments (free text) :
+! HH12e. Dmel recombinant construct(s), phenotype or rescue (free text):
+!
+! HH13a. Additional experimental info (free text) :here is some text
+! HH13b. Proposed mechanisms (free text) :
+!
+! HH16a. Development of model ('y'/blank) :
+! HH16b. Refinement of model ('y'/blank) :
+! HH16c. Mechanism of disease-associated mutation ('y'/blank) :
+! HH16d. Genetic interaction ('y'/blank) :
+! HH16e. Physical interaction ('y'/blank) :
+! HH16f. Subcellular phenotype or mechanism ('y'/blank) :
+! HH16g. Role of post-translational modification ('y'/blank) :
+! HH16h. Molecular mechanism ('y'/blank) :
+! HH16i. Role of/in related molecular pathway ('y'/blank) :
+! HH16j. Chemical perturbation/stressor ('y'/blank) :
+! HH16k. Environmental perturbation/stressor ('y'/blank) :
+! HH16l. Drug discovery/assessment ('y'/blank) :
+!
+! HH14a. External link to BDSC - page ID (repeat for multiple) :
+!      HH14b. External link to BDSC - FB database ID (DB1a) :BDSC_HDdodgy
+!      HH14c. External link to BDSC - title/description of specific page :some specific page again
+!
+! HH20. Internal notes :??error in HH14b
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

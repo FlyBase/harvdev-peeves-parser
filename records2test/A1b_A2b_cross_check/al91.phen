@@ -1,0 +1,412 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0231170
+! P2.   Parent multipub abbreviation               *w :PLoS Biol.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Tsc1
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Tsc1[Scer\UAS.cUa]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :small body | pharate adult stage, UI { gig[Scer\UAS.cUa], Scer\GAL4[C7] }
+developmental rate defective | larval stage, UI { gig[Scer\UAS.cUa], Scer\GAL4[C7] }
+small body | pharate adult stage, UI { gig[Scer\UAS.cUa], Scer\GAL4[C7], Gbp1[Scer\UAS.cKa] }
+developmental rate defective | larval stage, UI { gig[Scer\UAS.cUa], Scer\GAL4[C7], Gbp1[Scer\UAS.cKa] }
+small body | pharate adult stage, UI { gig[Scer\UAS.cUa], Scer\GAL4[C7], Gbp2[Scer\UAS.cKa] }
+developmental rate defective | larval stage, UI { gig[Scer\UAS.cUa], Scer\GAL4[C7], Gbp2[Scer\UAS.cKa] }
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :Co-expression of @Tsc1[Scer\UAS.cUa]@ and @gig[Scer\UAS.cUa]@ driven by @Scer\GAL4[C7]@ significantly decreases male and female body size (body weight measured at pharate adult stage), significantly decreases larval growth rates and significantly increases the duration of the third instar larval stage.
+
+At 22[o]C, co-expression of @Gbp1[Scer\UAS.cKa]@ or @Gbp2[Scer\UAS.cKa]@ partially suppresses the body size decreases, slower larval growth rate, and increased duration of the third instar larval stage (L3) seen in animals with @Tsc1[Scer\UAS.cUa]@ and @gig[Scer\UAS.cUa]@ driven by @Scer\GAL4[C7]@ (though body size, larval growth rate and duration of L3 is still significantly reduced compared to wild type).
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Rheb
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Rheb[Scer\UAS.cUa]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :small body | pharate adult stage { Scer\GAL4[C7] }
+developmental rate defective | larval stage { Scer\GAL4[C7] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Overexpression of @Rheb[Scer\UAS.cUa]@ driven by @Scer\GAL4[C7]@ induces mild but significant decreases in male and female body size (body weight measured at pharate adult stage), does not significantly affect larval growth rates, and slightly but significantly reduces the duration of the third instar larval stage.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Gbp1
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Gbp1[KK110262]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :small body | pharate adult stage { Scer\GAL4[C7] }
+small body | pharate adult stage { Scer\GAL4[ppl.PP] }
+developmental rate defective | larval stage { Scer\GAL4[ppl.PP] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :@Gbp1[KK110262]@ expression driven by @Scer\GAL4[C7]@ induces significant decreases in male and female body size (body weight measured at pharate adult stage), but does not significantly affect larval growth rate or the duration of the third instar larval stage.
+
+@Gbp1[KK110262]@ expression driven by @Scer\GAL4[ppl.PP]@ induces significant decreases in male and female body size (body weight measured at pharate adult stage) and reduces larval growth rate.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :small body | pharate adult stage { Scer\GAL4[C7] }, enhanceable { Gbp2[GD4931], Scer\GAL4[C7] }
+small body | pharate adult stage { Scer\GAL4[ppl.PP] }, enhanceable { Gbp2[GD4931], Scer\GAL4[ppl.PP] }
+developmental rate defective | larval stage { Scer\GAL4[ppl.PP] }, enhanceable { Gbp2[GD4931], Scer\GAL4[ppl.PP] }
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :Co-expression of @Gbp2[GD4931]@ enhances decreased body size seen in male and female flies with @Gbp1[KK110262]@ driven by @Scer\GAL4[C7]@.
+
+Co-expression of @Gbp1[KK110262]@ enhances the male and female fly decreased body size, along with the decreased larval growth rate and the increase in duration of the third instar stage seen in larvae with @Gbp2[GD4931]@ driven by @Scer\GAL4[ppl.PP]@.
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Gbp1[Scer\UAS.cKa]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :large body | pharate adult stage { Scer\GAL4[C7] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Overexpression of @Gbp1[Scer\UAS.cKa]@ driven by @Scer\GAL4[C7]@ induces slight but significant increases in male and female body size at 25[o]C, and even greater increases at 22[o]C (measured body weight at pharate adult stage).
+! GA28a. Genetic interaction (class, effect) [CV]           *S :small body | pharate adult stage, UI { Gbp2[Scer\UAS.cKa], Scer\GAL4[C7], Df(2R)Gbp-ex67 }
+developmental rate defective | larval stage, UI { Gbp2[Scer\UAS.cKa], Scer\GAL4[C7], Df(2R)Gbp-ex67 }
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :At 22[o]C, co-expression of @Gbp1[Scer\UAS.cKa]@ and @Gbp2[Scer\UAS.cKa]@ driven by @Scer\GAL4[C7]@ partially suppresses the body size decreases, slower larval growth rate, and increased duration of the third instar larval stage (L3) seen in @Df(2R)Gbp-ex67@/@Df(2R)Gbp-ex67@ (though body size and duration of L3 is still significantly reduced compared to wild type).
+
+At 22[o]C, co-expression of @Gbp1[Scer\UAS.cKa]@ partially suppresses the body size decreases, slower larval growth rate, and increased duration of the third instar larval stage (L3) seen in animals with @Tsc1[Scer\UAS.cUa]@ and @gig[Scer\UAS.cUa]@ driven by @Scer\GAL4[C7]@ (though body size, larval growth rate and duration of L3 is still significantly reduced compared to wild type).
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Gbp2
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Gbp2[GD4931]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :small body | pharate adult stage { Scer\GAL4[C7] }
+developmental rate defective | larval stage { Scer\GAL4[C7] }
+small body | pharate adult stage { Scer\GAL4[ppl.PP] }
+developmental rate defective | larval stage { Scer\GAL4[ppl.PP] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :@Gbp2[GD4931]@ expression driven by @Scer\GAL4[C7]@ induces significant decreases in male and female body size (body weight measured at pharate adult stage), significantly slows down larval growth rate and significantly increases the duration of the third instar larval stage.
+
+@Gbp2[GD4931]@ expression driven by @Scer\GAL4[ppl.PP]@ induces significant decreases in male and female body size (body weight measured at pharate adult stage), reduces larval growth rate and increases the duration of the third instar larval stage.
+! GA28a. Genetic interaction (class, effect) [CV]           *S :small body | pharate adult stage { Scer\GAL4[C7] }, enhanceable { Gbp1[KK110262], Scer\GAL4[C7] }
+developmental rate defective | larval stage { Scer\GAL4[ppl.PP] }, enhanceable { Gbp1[KK110262], Scer\GAL4[ppl.PP] }
+small body | pharate adult stage { Scer\GAL4[ppl.PP] }, enhanceable { Gbp1[KK110262], Scer\GAL4[ppl.PP] }
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :Co-expression of @Gbp1[KK110262]@ enhances decreased body size seen in male and female flies with @Gbp2[GD4931]@ driven by @Scer\GAL4[C7]@.
+
+Co-expression of @Gbp1[KK110262]@ enhances the male and female fly decreased body size, along with the decreased larval growth rate and the increase in duration of the third instar stage seen in larvae with @Gbp2[GD4931]@ driven by @Scer\GAL4[ppl.PP]@.
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Gbp2[Scer\UAS.cKa]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :large body | pharate adult stage { Scer\GAL4[C7] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :Overexpression of @Gbp2[Scer\UAS.cKa]@ driven by @Scer\GAL4[C7]@ induces slight but significant increases in male and female body size at 25[o]C, and even greater increases at 22[o]C (measured body weight at pharate adult stage).
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :At 22[o]C, co-expression of @Gbp1[Scer\UAS.cKa]@ and @Gbp2[Scer\UAS.cKa]@ driven by @Scer\GAL4[C7]@ partially suppresses the body size decreases, slower larval growth rate, and increased duration of the third instar larval stage (L3) seen in @Df(2R)Gbp-ex67@/@Df(2R)Gbp-ex67@ (though body size and duration of L3 is still significantly reduced compared to wild type).
+
+At 22[o]C, co-expression of @Gbp2[Scer\UAS.cKa]@ partially suppresses the body size decreases, slower larval growth rate, and increased duration of the third instar larval stage (L3) seen in animals with @Tsc1[Scer\UAS.cUa]@ and @gig[Scer\UAS.cUa]@ driven by @Scer\GAL4[C7]@ (though body size, larval growth rate and duration of L3 is still significantly reduced compared to wild type).
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Gbp3
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Gbp3[GD3119]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :small body | pharate adult stage { Scer\GAL4[C7] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :@Gbp3[GD3119]@ expression driven by @Scer\GAL4[C7]@ induces subtle but significant decreases in male and female body size (body weight measured at pharate adult stage).
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Scer\GAL4
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Scer\GAL4[ppl.PP]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA10a. Associated construct                                *I :P{ppl-GAL4.P}
+! GA10b. Construct symbol(s) used in reference               *L :ppl GAL4
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA14.  Internal notes  *W :References FBrf0161991, which used this construct. al160404.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :gig
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :gig[Scer\UAS.cUa]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :Co-expression of @Tsc1[Scer\UAS.cUa]@ and @gig[Scer\UAS.cUa]@ driven by @Scer\GAL4[C7]@ significantly decreases male and female body size (body weight measured at pharate adult stage), significantly decreases larval growth rates and significantly increases the duration of the third instar larval stage.
+
+At 22[o]C, co-expression of @Gbp1[Scer\UAS.cKa]@ or @Gbp2[Scer\UAS.cKa]@ partially suppresses the body size decreases, slower larval growth rate, and increased duration of the third instar larval stage (L3) seen in animals with @Tsc1[Scer\UAS.cUa]@ and @gig[Scer\UAS.cUa]@ driven by @Scer\GAL4[C7]@ (though body size, larval growth rate and duration of L3 is still significantly reduced compared to wild type).
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+! ABERRATION PROFORMA                    Version 60: 05 Mar 2014
+!
+! A1a.  Aberration symbol to use in FlyBase                 *a :Df(2R)Gbp-ex67
+! A1b.  Aberration symbol(s) used in reference              *i :
+! A1e.  Action - rename this aberration symbol                 :
+! A1f.  Action - merge these aberrations (symbols)             :
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+! A2a.  Action - aberration name to use in FlyBase          *e :
+! A2b.  Aberration name(s) used in reference                *Q :
+! A2c.  Action - replace this aberration name                  :
+! A4.   Mutagen [CV]                                     *o :
+! A6.   Progenitor genotype                              *O :
+! A7a.  Complementation - genes completely deleted/disrupted by A1a *q :
+! A7c.  Complementation - genes NOT deleted/disrupted by A1a        *q :
+! A7e.  Complementation - genes partially deleted/disrupted by A1a  *q :
+! A7b.  Complementation - genes completely duplicated in A1a *q :
+! A7d.  Complementation - genes NOT duplicated in A1a        *q :
+! A7f.  Complementation - genes partially duplicated in A1a  *q :
+! A7x.  Complementation - comments [free text] *q :
+! A25a. Molecular data - genes completely deleted by A1a               :
+! A25c. Molecular data - genes NOT deleted/disrupted by A1a            :
+! A25e. Molecular data - genes partially deleted/disrupted by A1a      :
+! A25b. Molecular data - genes completely duplicated in A1a     :
+! A25d. Molecular data - genes NOT duplicated in A1a            :
+! A25f. Molecular data - genes partially duplicated in A1a      :
+! A25x. Molecular data - comments [free text]    :
+! A17.  Phenotype, not associated with specified alleles [free text] *p :@Df(2R)Gbp-ex67@/@Df(2R)Gbp-ex67@ significantly decreases male and female body size (body weight measured at pharate adult stage), significantly decreases larval growth rates and significantly increases the duration of the third instar larval stage (compared to wild type or @Df(2R)Gbp-ex67@/+.
+! A19a. Phenotype, in combination with other abs [SoftCV]            *T :
+! A19b. Phenotype, in combination with other abs [free text]         *T :
+! A8a.  Breaks - cytological or progenitor break ranges  *B :
+! A9.   Class of aberration, relative to progenitor (SO_term ; ID) [CV] *C :
+! A26.  Class of aberration, relative to wild type (SO_term ; ID) [CV]  *C :
+! A18.  Comments about cytology               *c :
+! A24a. Transposon insertion(s)               *P :
+! A24b. Non-insertion allele(s)               *S :
+! A14.  Miscellaneous comments                *u :
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENOTYPE VARIANT DATA FOR THIS ABERRATION
+! Insert genotype variant proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

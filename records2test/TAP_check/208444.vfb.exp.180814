@@ -1,0 +1,44 @@
+! C1. Curator ID:vfb
+! C2. Date:180814
+! C3. Curator notes to self:
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0208444
+! P2.   Parent multipub abbreviation               *w :PLoS Biol.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+! F1f. Database id (default 'new')   :FBtr0472991
+! F1a. Gene product symbol           :Scer\GAL4[Pdfr-EY11851-GAL4]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+! F4. Names(s) used in paper [free text] :PdfrGAL4, PdfrGAL4-19
+! F5. Molecule size(s) (wb, nb, sa)      :
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> debs <t> A <a> adult brain | restricted <s>  <note>
+<e> debs <t> A <a> adult pars intercerebralis  | restricted <s>  <note>
+<e> debs <t> A <a> adult optic lobe | restricted <s>  <note>
+<e> debs <t> A <a> ellipsoid body | restricted <s>  <note>
+<e> debs <t> A <a> s-LNv Pdf neuron <s>  <note>
+<e> debs <t> A <a> LNd neuron <s>  <note>
+<e> debs <t> A <a> DN1 neuron | subset <s>  <note>
+<e> debs <t> A <a> l-LNv neuron | faint <s>  <note>
+<e> debs <t> A <a> DN3 neuron | subset <s>  <note>
+<e> debs <t> A <a> DN2 neuron | subset <s>  <note>
+<e> debs <t> A <a> LNd neuron <s>  <note>
+! F15. General expression comment [free text] :@Scer\GAL4[Pdfr-EY11851-GAL4]@ drives expression in the adult brain, including prominent expression in the pars intercerebralis, optic lobe and ellipsoid body as well as the @per@ expressing neurons, including two DN3 neurons and, stochastically, in two DN2 neurons.
+! F10. Used as bodypart marker for (term ; ID) [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :n
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :n
+! F17. Alleles or genotypes used :
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

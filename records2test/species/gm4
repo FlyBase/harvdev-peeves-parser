@@ -1,0 +1,274 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0223614
+! P2.   Parent multipub abbreviation               *w :Development
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :Test record  for implementing species field in cam-style proforma - not real data. This record has no errors.  It contains new component genes of natTEs??
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :gypsy2\env
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :n
+! G1s. Species of gene [symbol]                                :Dmel
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :transposable_element_gene ; SO:0000111
+! G2a.  Action - gene name to use in FlyBase                *e :gypsy2 envelope protein
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :new gene that is a component of the Dmel gypsy2 natTE.  Correctly has species Dmel.??
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Dalg\copia\ORF1
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :n
+! G1s. Species of gene [symbol]                                :Dalg
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :transposable_element_gene ; SO:0000111
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :New gene that is a component of a non-Dmel natTE (Dalg\copia). correctly has G1s as Dalg??
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! NATURAL TRANSPOSON PROFORMA                        Version 7: 13 Apr 2011
+!
+! TE1f. ID for gen.natTE (FBte or "new")       :FBte0001040
+! TE1a. gen.natTE symbol to use in database    :gypsy2
+! TE1b. gen.natTE symbol used in reference     :gypsy2
+! TE3.  Species                                :
+!
+! TE14a.  gen.natTE name to use in database      :
+! TE14b.  gen.natTE name used in reference       :
+! TE14c.  Database gen.natTE name(s) to replace  :
+!
+! TE1c. Action - rename this gen.natTE symbol    :
+! TE1g. Action - merge these gen.natTE(s) (FBte) :
+! TE1h. Action - delete gen.natTE record ("y"/blank)   :
+! TE1i. Action - dissociate TE1f from FBrf ("y"/blank) :
+!
+! TE4a. Transposon type [CV]                :
+! TE4b. Length of complete element, bp      :
+! TE4c. Terminal repeat length, bp          :
+! TE4d. Target site duplication, bp         :
+! TE4e. Target site sequence (if consensus) :
+!
+! TE5a. Number of copies in sequenced genome (dupl for multiple) :
+!   TE5b. Description of sequenced genome   :
+! TE5c. Number of copies in reported genome (dupl for multiple)  :
+!   TE5d. Description of reported genome(s) :
+!
+! TE6a. Reference sequence for complete element :
+! TE6b. Accession(s) for gen.natTE          :
+! TE6c. Accession(s) for flanking sequence      :
+! TE7.  Phylogenetic range  :
+! TE8.  Component gene(s)   :gypsy2\env
+!
+! TE9.  Named isolates        :
+! TE10. Engineered constructs :
+! TE11. Other variants        :
+!
+! TE12. Comments            :
+! TE13. Internal comments   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! NATURAL TRANSPOSON PROFORMA                        Version 7: 13 Apr 2011
+!
+! TE1f. ID for gen.natTE (FBte or "new")       :FBte0000994
+! TE1a. gen.natTE symbol to use in database    :Dalg\copia
+! TE1b. gen.natTE symbol used in reference     :
+! TE3.  Species                                :
+!
+! TE14a.  gen.natTE name to use in database      :
+! TE14b.  gen.natTE name used in reference       :
+! TE14c.  Database gen.natTE name(s) to replace  :
+!
+! TE1c. Action - rename this gen.natTE symbol    :
+! TE1g. Action - merge these gen.natTE(s) (FBte) :
+! TE1h. Action - delete gen.natTE record ("y"/blank)   :
+! TE1i. Action - dissociate TE1f from FBrf ("y"/blank) :
+!
+! TE4a. Transposon type [CV]                :
+! TE4b. Length of complete element, bp      :
+! TE4c. Terminal repeat length, bp          :
+! TE4d. Target site duplication, bp         :
+! TE4e. Target site sequence (if consensus) :
+!
+! TE5a. Number of copies in sequenced genome (dupl for multiple) :
+!   TE5b. Description of sequenced genome   :
+! TE5c. Number of copies in reported genome (dupl for multiple)  :
+!   TE5d. Description of reported genome(s) :
+!
+! TE6a. Reference sequence for complete element :
+! TE6b. Accession(s) for gen.natTE          :
+! TE6c. Accession(s) for flanking sequence      :
+! TE7.  Phylogenetic range  :
+! TE8.  Component gene(s)   :Dalg\copia\ORF1
+!
+! TE9.  Named isolates        :
+! TE10. Engineered constructs :
+! TE11. Other variants        :
+!
+! TE12. Comments            :
+! TE13. Internal comments   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! NATURAL TRANSPOSON PROFORMA                        Version 8: 11 Dec 2014
+!
+! TE1f. ID for gen.natTE (FBte or "new")       :new
+! TE1a. gen.natTE symbol to use in database    :Dvir\newsymbol
+! TE1b. gen.natTE symbol used in reference     :
+! TE3.  Species                                :Dmel
+!
+! TE1c. Action - rename this gen.natTE symbol    :
+! TE1g. Action - merge these gen.natTE(s) (FBte) :
+! TE1h. Action - delete gen.natTE record ("y"/blank)   :
+! TE1i. Action - dissociate TE1f from FBrf ("y"/blank) :
+!
+! TE4a. Transposon type [CV]                :
+! TE4b. Length of complete element, bp      :
+! TE4c. Terminal repeat length, bp          :
+! TE4d. Target site duplication, bp         :
+! TE4e. Target site sequence (if consensus) :
+!
+! TE5a. Number of copies in sequenced genome (dupl for multiple) :
+!   TE5b. Description of sequenced genome   :
+! TE5c. Number of copies in reported genome (dupl for multiple)  :
+!   TE5d. Description of reported genome(s) :
+!
+! TE6a. Reference sequence for complete element :
+! TE6b. Accession(s) for gen.natTE          :
+! TE6c. Accession(s) for flanking sequence      :
+! TE7.  Phylogenetic range  :
+! TE8.  Component gene(s)   :
+!
+! TE9.  Named isolates        :
+! TE10. Engineered constructs :
+! TE11. Other variants        :
+!
+! TE12. Comments            :
+! TE13. Internal comments   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! NATURAL TRANSPOSON PROFORMA                        Version 8: 11 Dec 2014
+!
+! TE1f. ID for gen.natTE (FBte or "new")       :new
+! TE1a. gen.natTE symbol to use in database    :noprefix
+! TE1b. gen.natTE symbol used in reference     :
+! TE3.  Species                                :Dpse
+!
+! TE1c. Action - rename this gen.natTE symbol    :
+! TE1g. Action - merge these gen.natTE(s) (FBte) :
+! TE1h. Action - delete gen.natTE record ("y"/blank)   :
+! TE1i. Action - dissociate TE1f from FBrf ("y"/blank) :
+!
+! TE4a. Transposon type [CV]                :
+! TE4b. Length of complete element, bp      :
+! TE4c. Terminal repeat length, bp          :
+! TE4d. Target site duplication, bp         :
+! TE4e. Target site sequence (if consensus) :
+!
+! TE5a. Number of copies in sequenced genome (dupl for multiple) :
+!   TE5b. Description of sequenced genome   :
+! TE5c. Number of copies in reported genome (dupl for multiple)  :
+!   TE5d. Description of reported genome(s) :
+!
+! TE6a. Reference sequence for complete element :
+! TE6b. Accession(s) for gen.natTE          :
+! TE6c. Accession(s) for flanking sequence      :
+! TE7.  Phylogenetic range  :
+! TE8.  Component gene(s)   :
+!
+! TE9.  Named isolates        :
+! TE10. Engineered constructs :
+! TE11. Other variants        :
+!
+! TE12. Comments            :
+! TE13. Internal comments   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! NATURAL TRANSPOSON PROFORMA                        Version 8: 11 Dec 2014
+!
+! TE1f. ID for gen.natTE (FBte or "new")       :new
+! TE1a. gen.natTE symbol to use in database    :springer\env # Dafs\gypsy\env
+! TE1b. gen.natTE symbol used in reference     :
+! TE3.  Species                                :Dhyd
+!
+! TE1c. Action - rename this gen.natTE symbol    :
+! TE1g. Action - merge these gen.natTE(s) (FBte) :
+! TE1h. Action - delete gen.natTE record ("y"/blank)   :
+! TE1i. Action - dissociate TE1f from FBrf ("y"/blank) :
+!
+! TE4a. Transposon type [CV]                :
+! TE4b. Length of complete element, bp      :
+! TE4c. Terminal repeat length, bp          :
+! TE4d. Target site duplication, bp         :
+! TE4e. Target site sequence (if consensus) :
+!
+! TE5a. Number of copies in sequenced genome (dupl for multiple) :
+!   TE5b. Description of sequenced genome   :
+! TE5c. Number of copies in reported genome (dupl for multiple)  :
+!   TE5d. Description of reported genome(s) :
+!
+! TE6a. Reference sequence for complete element :
+! TE6b. Accession(s) for gen.natTE          :
+! TE6c. Accession(s) for flanking sequence      :
+! TE7.  Phylogenetic range  :
+! TE8.  Component gene(s)   :
+!
+! TE9.  Named isolates        :
+! TE10. Engineered constructs :
+! TE11. Other variants        :
+!
+! TE12. Comments            :
+! TE13. Internal comments   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

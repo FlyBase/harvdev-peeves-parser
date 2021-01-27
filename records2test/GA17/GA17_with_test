@@ -1,0 +1,67 @@
+
+Processing gm0009
+
+gm0009: P38: Not checking this field because of ?? in '??
+'
+
+gm0009: GA17: the allele 'bw[1]' in (with bw[1]) is the same as that in GA1a for '(with bw[1]) eye | maternal effect'
+
+gm0009: GA17: the allele 'bw[1]' in (with bw[1]/bw[6]) is the same as that in GA1a for '(with bw[1]/bw[6]) wing'
+
+gm0009: GA17: 'bw[4] bw[1]' is neither a valid allele or aberration in '(with bw[4] bw[1]) wing vein'
+
+gm0009: GA17: superfluous trailing whitespace in 'bw[6] '
+
+gm0009: GA17: You have a (with ) statement '(with bw[6] /bw[5]) leg' without having the allele in it, 'bw[5]', in its own allele proforma
+
+gm0009: GA17: '+' is neither a valid allele or aberration in '(with +) embryonic head'
+
+gm0009: GA17: '+' is neither a valid allele or aberration in '(with +/bw[2]) midgut'
+
+gm0009: GA17: '+' is neither a valid allele or aberration in '(with bw[6]/+, bw[5]) midgut constriction 3'
+
+gm0009: GA17: You have a (with ) statement '(with bw[6]/+, bw[5]) midgut constriction 3' without having the allele in it, 'bw[5]', in its own allele proforma
+
+gm0009: GA17: '+' is neither a valid allele or aberration in '(with bw[4]/+) wing pulsatile organ'
+
+gm0009: GA17: Mismatch between gene symbol 'bw' in GA1a and the gene portion '1.28' given in '(with 1.28[P])' from '(with 1.28[P]) wing nerve L3-v'
+
+gm0009: GA17: You have a (with ) statement '(with 1.28[P]) wing nerve L3-v' without having the allele in it, '1.28[P]', in its own allele proforma
+
+gm0009: GA17: Mismatch between gene symbol 'bw' in GA1a and the gene portion 'su(w[a])' given in '(with su(w[a])[2])' from '(with su(w[a])[2]) wing blade'
+
+gm0009: GA17: You have a (with ) statement '(with su(w[a])[2]) wing blade' without having the allele in it, 'su(w[a])[2]', in its own allele proforma
+
+gm0009: GA17: Mismatch between gene symbol 'bw' in GA1a and the gene portion 'CG32479' given in '(with CG32479[c05882]/bw[4])' from '(with CG32479[c05882]/bw[4]) two cone-cell ommatidial stage'
+
+gm0009: GA17: You have a (with ) statement '(with CG32479[c05882]/bw[4]) two cone-cell ommatidial stage' without having the allele in it, 'CG32479[c05882]', in its own allele proforma
+
+gm0009: GA17: Mismatch between gene symbol 'bw' in GA1a and the gene portion 'CG33108' given in '(with CG33108[EY04458], Ecol\lacZ[hkb.VE.&Dgr;Dri])' from '(with CG33108[EY04458], Ecol\lacZ[hkb.VE.&Dgr;Dri]) pale ommatidium'
+
+gm0009: GA17: You have a (with ) statement '(with CG33108[EY04458], Ecol\lacZ[hkb.VE.&Dgr;Dri]) pale ommatidium' without having the allele in it, 'CG33108[EY04458]', in its own allele proforma
+
+gm0009: GA17: Mismatch between gene symbol 'bw' in GA1a and the gene portion 'Ecol\lacZ' given in '(with CG33108[EY04458], Ecol\lacZ[hkb.VE.&Dgr;Dri])' from '(with CG33108[EY04458], Ecol\lacZ[hkb.VE.&Dgr;Dri]) pale ommatidium'
+
+gm0009: GA17: You have a (with ) statement '(with CG33108[EY04458], Ecol\lacZ[hkb.VE.&Dgr;Dri]) pale ommatidium' without having the allele in it, 'Ecol\lacZ[hkb.VE.&Dgr;Dri]', in its own allele proforma
+
+gm0009: GA17: You have a (with ) statement '(with bw[19]) sex chromosome' without having the allele in it, 'bw[19]', in its own allele proforma
+
+gm0009: GA17: 'bw[new]' is neither a valid allele or aberration in '(with bw[new]) eyelet'
+
+gm0009: GA17: 'Df(1)new' is neither a valid allele or aberration in '(with Df(1)new) mouthpart'
+
+gm0009: GA14: Not checking this field because of ?? in 'this is checking that new symbols aren't bounced if there IS a proforma making them elsewhere in record - so shouldnt' get an error message ?? !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+'
+
+gm0009: GA17: 'invalid body part' is not a valid body part
+
+
+This file failed at least one check:	gm0009
+
+Ignoring these 11 files:
+
+GA17	GA17_with_test	gm0006%	gm0007%	gm0008%	gm0009%	peeves.crib	peeves_test.cfg	peeves_test.cfg%	pub.crib
+sent
+
+
+

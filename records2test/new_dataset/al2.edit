@@ -1,0 +1,124 @@
+! C1.  Curator ID  :gds
+! C2.  Date  :160510
+! C3.  Curator notes to self  :Test project record for Peeves checking.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+! P22.  FlyBase reference ID (FBrf) or new  *U :FBrf0217348
+! P2.   Parent multipub abbreviation               *w :Nat. Genet.
+! P19.  Internal notes                   *H :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Rab2
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Rab2[EYFP] # Rab2[Q65L.Scer\UAS.P\T.T:Avic\GFP-YFP]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA32a. Action - obsolete GA1a in FlyBase (y)         TAKE CARE :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA10a. Associated construct                                *I :
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :
+! GA11.  Progenitor genotype                           *O :
+! GA23a. Notes on origin [SoftCV]                      *R :
+! GA23b. Notes on origin [free text]                   *R :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA20.  GA1a stated to be lost?                         *v :
+! GA14.  Internal notes  *W :??problem - is in dataset
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :hh
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :hh[2]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA32a. Action - obsolete GA1a in FlyBase (y)         TAKE CARE :y
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA10a. Associated construct                                *I :
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :
+! GA11.  Progenitor genotype                           *O :
+! GA23a. Notes on origin [SoftCV]                      *R :
+! GA23b. Notes on origin [free text]                   *R :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :
+! GA30.  Tagged with                                       *s :
+! GA13.  Miscellaneous comments                        *u :
+! GA20.  GA1a stated to be lost?                         *v :
+! GA14.  Internal notes  *W :??no problem, not in dataset
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+! MA1f. Database ID for insertion (FBti)       :FBti0178219
+! MA1a. Insertion symbol to use in database    :P{SUPor-P}CG40191[KG07815]
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :
+! MA20. Species of host genome                 :
+! MA1c. Action - rename this insertion symbol    :
+! MA1h. Action - delete insertion record ("y"/blank)   :y
+! MA1g. Action - merge these insertion(s) (FBti) :
+! MA5a. Chromosomal location of insert                     :
+! MA8.  Phenotype (viable, fertile)            :
+! MA15c. Replaced FBti progenitor, recombination substrate        :
+! MA9.  Comments [free text]             :
+! MA10. Internal notes                   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!
+

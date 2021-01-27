@@ -1,0 +1,9 @@
+! PUBLICATION PROFORMA                   Version 41:  16 Mar 2010
+!
+! P22.  FlyBase reference ID (FBrf)      *U :FBrf0209900
+! P1.   Type of publication [CV]  *T :
+!c P2.   Parent multipub (abbreviation)      *w :J. Food Drug Anal.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :no_flag
+! P19.  Internal notes                   *H :?? Changing the parent multipub to a different multipub.  This is OK, but want a Peeves warning like this: "Are you sure you want to change the parent multipub of FBrf0209900 in chado?.  sm100322.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

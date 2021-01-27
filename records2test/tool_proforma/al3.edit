@@ -1,0 +1,56 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0105495
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :gm: testing using dissociate from ref (TO1i) field. This should work as the tool was created using FBrf0105495. It might make the db a bit unhappy as this is the only FBrf associated with this tool
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! EXPERIMENTAL TOOL PROFORMA                       Version 4:  31 Oct 2017
+!
+! TO1f. Database ID for experimental tool (FBto)       :FBto0000020
+! TO1a. Experimental tool symbol to use in database    :GAL80
+! TO1b.  Experimental tool symbol synonym(s)           :
+! TO10. Species of tool (organism.abbreviation)        :
+!
+! TO1c. Action - rename this experimental tool symbol  :
+! TO1g. Action - merge these experimental tools (FBto) :
+! TO1h. Action - obsolete TO1a in FlyBase (y/blank)       :
+! TO1i. Action - dissociate TO1a from reference (y/blank) :y
+!
+! TO2a.  Action - experimental tool name to use in FlyBase       :
+! TO2b.  Experimental tool name synonym(s)                       :
+! TO2c.  Action - rename this experimental tool name             :
+!
+! TO4.   Experimental tool uses [CV]                             :
+! TO5.   Description of experimental tool [free text]            :
+!
+! TO6a. Accession number for tool (dupl section for multiple)    :
+! TO6b. FlyBase database symbol (DB1a) for accession in TO6a     :
+! TO6c. Title for TO6a (if desired) [free text]                  :
+! TO6d. Action - dissociate accession in TO6a/TO6b from tool in TO1a? (blank/y) :
+!
+! TO7a. Compatible tools(s) (symbol) :
+! TO7b. Other related tools(s) (symbol) :
+! TO7c. Gene of origin (symbol)   :
+!
+! TO8.  Comments [free text] :
+! TO9.  Internal notes       :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

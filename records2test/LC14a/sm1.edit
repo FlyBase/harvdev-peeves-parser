@@ -1,0 +1,46 @@
+! C1.  Curator ID  :gds
+! C2.  Date  :160510
+! C3.  Curator notes to self  :Test project record for Peeves checking.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+! P22.  FlyBase reference ID (FBrf) or new  *U :FBrf0217348
+! P2.   Parent multipub abbreviation               *w :Nat. Genet.
+! P19.  Internal notes                   *H :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! DATASET/COLLECTION PROFORMA   Version 4.4   09 Feb 2016
+!
+! LC1f. Database ID for dataset  :new
+! LC1a. Symbol                   :Fake_Furlong_BiTS_ChIP-Seq
+! LC1b. Symbol used in paper/source  :BiTS-ChIP
+! LC1d. Nickname [for labels]        :BiTS-ChIP-Seq
+! LC6g. Dataset title  :ChIP-Seq profiling of histone modifications in purified embryonic mesodermal cells.
+! LC6a. Description [free text]  :Background: Chromatin modifications are associated with many aspects of gene expression, yet their role in cellular transitions during development remains elusive. Here, we use a new approach to obtain cell type-specific information on chromatin state and RNA polymerase II (Pol II) occupancy within the multicellular Drosophila melanogaster embryo.
+Results: We directly assessed the relationship between chromatin modifications and the spatio-temporal activity of enhancers. Rather than having a unique chromatin state, active developmental enhancers show heterogeneous histone modifications and Pol II occupancy. Despite this complexity, combined chromatin signatures and Pol II presence are sufficient to predict enhancer activity de novo. Pol II recruitment is highly predictive of the timing of enhancer activity and seems dependent on the timing and location of transcription factor binding. Chromatin modifications typically demarcate large regulatory regions encompassing multiple enhancers, whereas local changes in nucleosome positioning and Pol II occupancy delineate single active enhancers.
+Conclusion: This cell type-specific view identifies dynamic enhancer usage, an essential step in deciphering developmental networks.
+! LC2a. Type of dataset entity [CV]  :project ; FBcv:0003023
+! LC11m. Experimental protocol - dataset [CV]  :gene study ; FBcv:0003133
+ChIP-Seq ; FBcv:0003053
+Illumina sequencing ; FBcv:0003213
+ChIP ; FBcv:0003192
+! LC14a. Dataset assay/collection is assay_of this biosample  :wrong
+! LC10. Internal notes      :This is a bogus curation record for Peeves testing purposes only.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! DATASET/COLLECTION PROFORMA   Version 4.4   09 Feb 2016
+!
+! LC1f. Database ID for dataset  :new
+! LC1a. Symbol                   :another_new_one
+! LC1b. Symbol used in paper/source  :dfhds
+! LC1d. Nickname [for labels]        :dfhds-Seq
+! LC6g. Dataset title  :some title here.
+! LC6a. Description [free text]  :description
+! LC2a. Type of dataset entity [CV]  :project ; FBcv:0003023
+! LC11m. Experimental protocol - dataset [CV]  :gene study ; FBcv:0003133
+ChIP-Seq ; FBcv:0003053
+Illumina sequencing ; FBcv:0003213
+ChIP ; FBcv:0003192
+! LC14a. Dataset assay/collection is assay_of this biosample  :Fake_Furlong_BiTS_ChIP-Seq
+AF_cDNA
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!
+

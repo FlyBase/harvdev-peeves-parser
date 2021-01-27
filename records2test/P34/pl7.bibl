@@ -1,0 +1,22 @@
+! PUBLICATION PROFORMA                   Version 45:  30 Jan 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :new
+! P1.   Type of publication [CV]  *T :paper
+! P2.   Parent multipub abbreviation               *w :Nature
+! P12.  Author(s)                           *a-*b :Sotomayor	M.
+Weihofen	W.A.
+Gaudet	R.
+Corey	D.P.
+! P10.  Year (YYYY), or date (YYYY.M.D) if PC  *t :2012
+! P16.  Title                                  *u :Structure of a Force-Conveying Cadherin Bond Essential for Inner-Ear Mechanotransduction.
+! P3.   Volume number                          *y :492
+! P4.   Issue number                           *Y :7427
+! P11a. Page range or article number               *z :128--132
+! P11d. DOI                                           :10.1038/nature11590
+! P13.  Language of publication [CV]                          *L :English
+! P14.  Additional language(s) of abstract [CV]               *A :
+! P26.  PubMed ID                *M :23135401
+! P31.  Related publication (FBrf)          *E :
+! P34.  PubMed abstract  *X :Hearing and balance use hair cells in the inner ear to transform mechanical stimuli into electrical signals. Mechanical force from sound waves or head movements is conveyed to hair-cell transduction channels by tip links, fine filaments formed by two atypical cadherins known as protocadherin 15 and cadherin 23 (refs 4, 5). These two proteins are involved in inherited deafness and feature long extracellular domains that interact tip-to-tip in a Ca(2+)-dependent manner. However, the molecular architecture of this complex is unknown. Here we combine crystallography, molecular dynamics simulations and binding experiments to characterize the protocadherin 15-cadherin 23 bond. We find a unique cadherin interaction mechanism, in which the two most amino-terminal cadherin repeats (extracellular cadherin repeats 1 and 2) of each protein interact to form an overlapped, antiparallel heterodimer. Simulations predict that this tip-link bond is mechanically strong enough to resist forces in hair cells. In addition, the complex is shown to become unstable in response to Ca(2+) removal owing to increased flexure of Ca(2+)-free cadherin repeats. Finally, we use structures and biochemical measurements to study the molecular mechanisms by which deafness mutations disrupt tip-link function. Overall, our results shed light on the molecular mechanics of hair-cell sensory transduction and on new interaction mechanisms for cadherins, a large protein family implicated in tissue and organ morphogenesis, neural connectivity and cancer.
+! P19.  Internal notes                   *H :??Testing new P34 (PubMed abstract) field.  This record is fine and should pass Peeves and parsing tests.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

@@ -1,0 +1,85 @@
+! C1.  Curator ID  :gds
+! C2.  Date  :160510
+! C3.  Curator notes to self  :Test project record for Peeves checking.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+! P22.  FlyBase reference ID (FBrf) or new  *U :FBrf0217348
+! P2.   Parent multipub abbreviation               *w :Nat. Genet.
+! P19.  Internal notes                   *H :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! DATASET/COLLECTION PROFORMA   Version 4.4   09 Feb 2016
+!
+! LC1f. Database ID for dataset  :new
+! LC1a. Symbol                   :Fake_Furlong_BiTS_ChIP-Seq
+! LC1b. Symbol used in paper/source  :BiTS-ChIP
+! LC1d. Nickname [for labels]        :BiTS-ChIP-Seq
+! LC6g. Dataset title  :ChIP-Seq profiling of histone modifications in purified embryonic mesodermal cells.
+! LC6a. Description [free text]  :Background: Chromatin modifications are associated with many aspects of gene expression, yet their role in cellular transitions during development remains elusive. Here, we use a new approach to obtain cell type-specific information on chromatin state and RNA polymerase II (Pol II) occupancy within the multicellular Drosophila melanogaster embryo.
+Results: We directly assessed the relationship between chromatin modifications and the spatio-temporal activity of enhancers. Rather than having a unique chromatin state, active developmental enhancers show heterogeneous histone modifications and Pol II occupancy. Despite this complexity, combined chromatin signatures and Pol II presence are sufficient to predict enhancer activity de novo. Pol II recruitment is highly predictive of the timing of enhancer activity and seems dependent on the timing and location of transcription factor binding. Chromatin modifications typically demarcate large regulatory regions encompassing multiple enhancers, whereas local changes in nucleosome positioning and Pol II occupancy delineate single active enhancers.
+Conclusion: This cell type-specific view identifies dynamic enhancer usage, an essential step in deciphering developmental networks.
+! LC3. Dataset belongs_to this project  :incorrect
+! LC14b. Dataset result is analysis_of  :blah
+! LC14c. Dataset uses_reagent  :
+! LC14d. Dataset technical_reference_is  :fhiudhid
+! LC14e. Dataset biological_reference_is  :  FlyORF_3  
+! LC14f. Dataset replaced_by  :58977645
+! LC14g. Dataset genome_reference_is  :fdgf 
+! LC2a. Type of dataset entity [CV]  :project ; FBcv:0003023
+! LC2b. Type of dataset data [CV]    :genome binding ; FBcv:0003033
+! LC14h. Reference FlyBase gene model annotation set [free text]  :Dmel R6.01
+! LC13a. Key GO term(s) - Cellular Component (term ; ID)  *f  :chromatin ; GO:0000785
+nucleosome ; GO:0000786
+! LC13b. Key GO term(s) - Molecular Function (term ; ID)  *F  :nucleic acid binding ; GO:0003676
+! LC13c. Key GO term(s) - Biological Process (term ; ID)  *d  :regulation of sequence-specific DNA binding transcription factor activity ; GO:0051090
+! LC13d. Key SO term(s) [CV] *t  :TF_binding_site ; SO:0000235
+binding_site ; SO:0000409
+! LC4a. Species of derivation [CV]  :Dmel
+! LC4i. Other species of interest [CV]  :Cele
+! LC4h. Strain used [symbol]    :iso-1 incorrect
+! LC4b. Strain used [free text]  :MDv25
+! LC4f. Genotype used [free text]  :y[1] w[1118]; wg[1]/CyO
+! LC4g. Stage and tissue (<e>  <t>  <a>  <s>  <note>)  :
+<e>  <t> embryonic stage <a> organism <s> nucleus <note> 0-4hr AEL
+! LC4e. Cell line used [symbol]  :S2R+
+error
+! LC12a. Experimental entity [FB feature symbol]  :FBgn0003900
+! LC12b. Type of experimental entity [CV]  :bait_protein
+! LC12a. Experimental entity [FB feature symbol]  :FBgn0001199
+! LC12b. Type of experimental entity [CV]  :bait_protein
+! LC12a. Experimental entity [FB feature symbol]  :FBgn0003277
+! LC12b. Type of experimental entity [CV]  :bait_protein
+! LC12a. Experimental entity [FB feature symbol]  :FBtp0089822
+! LC12b. Type of experimental entity [CV]  :experimental_design
+! LC6d. Dataset/collection members stored in database [Y/N]  :N
+! LC11m. Experimental protocol - dataset [CV]  :gene study ; FBcv:0003133
+ChIP-Seq ; FBcv:0003053
+Illumina sequencing ; FBcv:0003213
+ChIP ; FBcv:0003192
+! LC11j. Experimental protocol - data analysis is secondary analysis (y/blank)  :y
+! LC11a. Experimental protocol, source isolation and prep [free text]  :Embryos were collected after a one hour pre-lay and aged for 4 hours.
+! LC6b. Experimental protocol, dataset/collection preparation [free text]  :Chromatin was prepared from formaldehyde-fixed embryos as previously described (FBrf0202481).
+! LC11c. Experimental protocol, mode of assay [free text]  :Chromatin immunoprecipitated DNA was analyzed by next generation sequencing.
+! LC11e. Experimental protocol, data analysis [free text]  :Reads were aligned using bowtie. Input DNA or @His3@ ChIP DNA was used as control data. Peaks were called with MACS 1.3.7.1. Peak calls were lifted over from Dmel_Release_5 to Dmel_Release_6 using the NCBI Genome Remapping tool.
+! LC7a. Types of additional data available [free text]  :Furlong lab(http://furlonglab.embl.de/)
+! LC7f. Associated files, archived at ftp site [SoftCV]  :File path: ftp://ftp.flybase.org/flybase/associated_files/Monfort.2015.1.15.zip ; File type: GFF3 ; File size: 1.5 MB ; File description: zip
+! LC7c. Additional data at [database name]  :ArrayExpress
+! LC99a. DataSet Accession Number [dbxref.accession]  :PRJEB2454
+! LC99b. Database name [database name]  :BioProject
+! LC99c. DataSet title [free text]  :BiTS-ChIP
+! LC99a. DataSet Accession Number [dbxref.accession]  :ERP000560
+! LC99b. Database name [database name]  :SRA Study
+! LC99c. DataSet title [free text]  :BiTS-ChIP
+! LC8a. Created by [database name]        :modMine
+! LC8c. Created by [free text]      :Furlong lab(http://furlonglab.embl.de/)
+! LC8b. Available from [database name]    :GEO
+! LC8d. Available from [free text]  :Furlong lab(http://furlonglab.embl.de/)
+! LC9a. Structured table [SoftCV]  :| coverage gap (Release 6 coordinates) | polytene range | distal construct | proximal construct |
+| --- | --- | --- | --- |
+| X:3,689,139..3,949,866 | 3E4--3F9 | Dp(1;Y)BSC74 | Dp(1;Y)BSC158 |
+| X:13,284,291..13,624,004 | 11E8--12A9 | Dp(1;Y)BSC325 | Dp(1;Y)BSC185 |
+| X:15,498,953..15,569,994 | 13C5--13D3 | Dp(1;Y)BSC231 | Dp(1;Y)BSC223 |
+! LC10. Internal notes      :This is a bogus curation record for Peeves testing purposes only.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!
+

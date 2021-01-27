@@ -1,0 +1,19 @@
+! PUBLICATION PROFORMA                   Version 35:  28 Oct 2008
+!
+! P22.  FlyBase reference ID (FBrf)      *U :FBrf0076410
+! P21.  Parent multipub ID               *W :6201
+! P40.  Flag Cambridge for curation [SoftCV]  CAMCUR :
+! P41.  Flag Harvard for curation [SoftCV]   HARVCUR :no_flag
+! P19.  Internal notes                   *H :??Record to check X1h field.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 59:  11 Nov 2008
+!
+! G1h. FlyBase gene ID (FBgn) :FBgn1015236
+! G1a.  Gene symbol to use in FlyBase                       *a :Hel93F
+! G1b.  Gene symbol(s) used in reference                    *i :Hel93F
+! G1g.  Is G1a the current symbol of a gene in FlyBase?        :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G34.  Antibody generated (monoclonal/polyclonal)            :
+! G15.  Internal notes  *W :Typo in FBgn - this id has right format but is not valid/current.  Should generate a Peeves error.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

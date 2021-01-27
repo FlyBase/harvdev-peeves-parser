@@ -1,0 +1,54 @@
+! C1.  Curator ID	:pb
+! C2.  Date		:150720
+! C3.  Curator notes to self	:Added IN7c seq data. 150807gds.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0210406
+! P2.   Parent multipub abbreviation               *w :Genetics
+! P19.  Internal notes                   *H :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA             Version 2.6  15 Nov 2011
+!
+! IN1f. Database ID for interaction  :FBrf0210406-1.EMSA.A
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :n
+! IN2a. Interaction description (protein-protein/RNA-protein)     :protein-protein
+! IN2b. Interaction type (Termlink MI CV) :physical association
+! IN3.  Interaction assay (Termlink MI CV)    :electrophoretic mobility shift assay
+autoradiography
+! IN5d. Conditional dependencies :Interaction observed in the presence of DNA probe containing a Hox-Exd composite element.
+! IN5e. Comments concerning source   :Interaction in vitro; protein produced as a recombinant fusion protein in bacterial system; 
+! IN6.  List of interactors (FB symbol or ids), role (Termlink MI CV), qualifier ( <symbol>  <ID_as_reported>  <role>  <qual/note> ) :
+<symbol> exd-XP <ID_as_reported> Exd <role> neutral component <qual/note>
+<symbol> Ubx-XP <ID_as_reported> Ubx <role> neutral component <qual/note> 
+! IN7d. Isoform-specific participant(s) with role in interaction :
+<link to> Ubx-XP <description> isoform Ia <role> unspecified role <note> corresponds to @Ubx-PE@
+! IN7c. Subregion(s) of participant(s) with role in interaction :
+<link to> Ubx-XP <description> hexapeptide motif <role> necessary binding site <coordinates/seq> YPWM <note> multiple alanine subsitutions
+! IN7b. Comments concerning experimental data:A composite Hox-Exd element that includes adjacent head-to-tail core sites for @Ubx@ and @Exd@ was used as the NDNA binding target in this experiment.
+! IN8a. Public comments   :
+! IN8b. Internal comments :Fig6
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA             Version 2.6  15 Nov 2011
+!
+! IN1f. Database ID for interaction  :FBrf0210406-2.EMSA.A
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :n
+! IN2a. Interaction description (protein-protein/RNA-protein)     :protein-protein
+! IN2b. Interaction type (Termlink MI CV) :physical association
+! IN3.  Interaction assay (Termlink MI CV)    :electrophoretic mobility shift assay
+autoradiography
+! IN5d. Conditional dependencies :Interaction observed in the presence of DNA probe containing a Hox-Exd composite element.
+! IN5e. Comments concerning source   :Interaction in vitro; protein produced as a recombinant fusion protein in bacterial system; 
+! IN6.  List of interactors (FB symbol or ids), role (Termlink MI CV), qualifier ( <symbol>  <ID_as_reported>  <role>  <qual/note> ) :
+<symbol> exd-XP <ID_as_reported> Exd <role> neutral component <qual/note>
+<symbol> Ubx-XP <ID_as_reported> Ubx <role> neutral component <qual/note> 
+! IN7d. Isoform-specific participant(s) with role in interaction :
+<link to> Ubx-XP <description> isoform IVa <role> unspecified role <note> corresponds to @Ubx-PB@
+! IN7c. Subregion(s) of participant(s) with role in interaction :
+<link to> Ubx-XP <description> hexapeptide motif <role> necessary binding site <coordinates/seq> YPWM <note> multiple alanine subsitutions
+! IN7b. Comments concerning experimental data:A composite Hox-Exd element that includes adjacent head-to-tail core sites for @Ubx@ and @Exd@ was used as the NDNA binding target in this experiment.
+! IN8a. Public comments   :
+! IN8b. Internal comments :Fig6
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

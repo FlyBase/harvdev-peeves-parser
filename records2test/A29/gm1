@@ -1,0 +1,67 @@
+! PUBLICATION PROFORMA                   Version 44:  6 Nov 2012
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0126825
+! P2.   Parent multipub abbreviation               *w :Cell
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :no_flag
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :noDOcur
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :checking A29 validation code
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+! ABERRATION PROFORMA                    Version 58: 14 Feb 2013
+!
+! A1a.  Aberration symbol to use in FlyBase                 *a :Dp(2;2)Pyx
+! A1b.  Aberration symbol(s) used in reference              *i :Dp(2;2)Pyx
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+! A2b.  Aberration name(s) used in reference                *Q :
+! A29.  New cytological order of the chromosomal aberration :
+! A15.  Internal notes                          *K :??no error - can be empty
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENOTYPE VARIANT DATA FOR THIS ABERRATION
+! Insert genotype variant proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next aberration proforma below.
+! ABERRATION PROFORMA                    Version 58: 14 Feb 2013
+!
+! A1a.  Aberration symbol to use in FlyBase                 *a :Dp(2;2)SMG45
+! A1b.  Aberration symbol(s) used in reference              *i :Dp(2;2)SMG45
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+! A2b.  Aberration name(s) used in reference                *Q :
+! A29.  New cytological order of the chromosomal aberration :ABCDEFLRSXYcehnt0-9;() |-
+! A15.  Internal notes                          *K :??no error - has only the allowed characters
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENOTYPE VARIANT DATA FOR THIS ABERRATION
+! Insert genotype variant proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next aberration proforma below.
+! ABERRATION PROFORMA                    Version 58: 14 Feb 2013
+!
+! A1a.  Aberration symbol to use in FlyBase                 *a :Dp(2;2)TE35B-54[L]
+! A1b.  Aberration symbol(s) used in reference              *i :Dp(2;2)TE35B-54[L]
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+! A2b.  Aberration name(s) used in reference                *Q :
+!c A29.  New cytological order of the chromosomal aberration :ABCDEFLRSXYcehnt0-9; 
+! A15.  Internal notes                          *K :??no error - can !c
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENOTYPE VARIANT DATA FOR THIS ABERRATION
+! Insert genotype variant proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

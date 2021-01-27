@@ -1,0 +1,83 @@
+! C1.  Curator ID	:pb
+! C2.  Date		:150805
+! C3.  Curator notes to self	:Added gene proforma. Corrected pub cited. 150807gds.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0158767
+! P2.   Parent multipub abbreviation               *w :Cell Biochem. Biophys.
+! P19.  Internal notes                   *H :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Mhc
+! G1b.  Gene symbol(s) used in reference                    *i :Mhc
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :Myosin Heavy Chain
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Mlc2
+! G1b.  Gene symbol(s) used in reference                    *i :dMLC-2
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :Myosin Regulatory Light Chain
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :Confirmed gene of study by tracing author citation to FBrf0043232. 150807gds.
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :fln
+! G1b.  Gene symbol(s) used in reference                    *i :Fln
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :Flightin
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA             Version 2.6  15 Nov 2011
+!
+! IN1f. Database ID for interaction  :FBrf0161992-1.FB
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :n
+! IN2a. Interaction description (protein-protein/RNA-protein)     :protein-protein
+! IN2b. Interaction type (Termlink MI CV) :physical association
+! IN3.  Interaction assay (Termlink MI CV)    :filter binding
+! IN5e. Comments concerning source   :Interaction in vitro; prey produced as a recombinant fusion protein in Sf9 (Spodoptera frugiperda) cell system; bait produced as a recombinant fusion protein in bacterial system.
+! IN6.  List of interactors (FB symbol or ids), role (Termlink MI CV), qualifier ( <symbol>  <ID_as_reported>  <role>  <qual/note> ):
+<symbol> Mhc-XP <ID_as_reported> MHC <role> bait <qual/note> 
+<symbol> fln-XP <ID_as_reported> rFln <role> prey <qual/note>  HIS tag
+! IN7c. Subregion(s) of participant(s) with role in interaction ( <link to>  <description> region <role> unspecified role <coordinates/seq>  <note> ):
+<link to> Mhc-XP <description> myosin rod <role> mutation disrupting interaction <coordinates/seq> aa 1554 <note> E1554K
+<link to> Mhc-XP <description> C600 <role> sufficient binding site <coordinates/seq> aa 1346-1935 <note> C600 construct
+<link to> Mhc-XP <description> LMM <role> necessary binding site <coordinates/seq> aa 1346-1540 <note>
+! IN7b. Comments concerning experimental data:
+! IN8a. Public comments   :
+! IN8b. Internal comments :Fig4, Fig5DE
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA             Version 2.6  15 Nov 2011
+!
+! IN1f. Database ID for interaction  :FBrf0161992-2.PD
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :n
+! IN2a. Interaction description (protein-protein/RNA-protein)     :protein-protein
+! IN2b. Interaction type (Termlink MI CV) :physical association
+! IN3.  Interaction assay (Termlink MI CV)    :pull down
+! IN5e. Comments concerning source   :Interaction in vitro; bait produced as a recombinant fusion protein in Sf9 (Spodoptera frugiperda) cell system; prey produced as a recombinant fusion protein in bacterial system.
+! IN6.  List of interactors (FB symbol or ids), role (Termlink MI CV), qualifier ( <symbol>  <ID_as_reported>  <role>  <qual/note> ):
+<symbol> fln-XP <ID_as_reported> rFLN <role> bait <qual/note> HIS tag
+<symbol> Mhc-XP <ID_as_reported> MHC <role> prey <qual/note> 
+! IN7c. Subregion(s) of participant(s) with role in interaction ( <link to>  <description> region <role> unspecified role <coordinates/seq>  <note> ):
+<link to> Mhc-XP <description> rod region <role> sufficient binding site <coordinates/seq> <note> MHC for this experiment was obtained from the MHC y57 allele and is missing most of the head region of the MHC molecule.
+<link to> Mhc-XP <description> myosin rod <role> mutation disrupting interaction <coordinates/seq> aa 1554 <note> E1554K
+! IN7b. Comments concerning experimental data:
+! IN8a. Public comments   :
+! IN8b. Internal comments :Fig3
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!
+

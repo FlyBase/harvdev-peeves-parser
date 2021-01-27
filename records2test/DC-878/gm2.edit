@@ -1,0 +1,72 @@
+! C1.  Curator ID	:vj 
+! C2.  Date		:200211
+! C3.  Curator notes to self	: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018 
+! 
+! 
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0244683
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! HUMAN HEALTH MODEL PROFORMA   Version 1.13:  10 Nov 2015 
+! HH1f. Database ID for disease or health issue  :FBhh0000790
+! HH1b. Full name to use in database  :Vibrio cholerae infection
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018 
+! 
+! 
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0244698
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! HUMAN HEALTH MODEL PROFORMA   Version 1.13:  10 Nov 2015 
+! HH1f. Database ID for disease or health issue  :FBhh0000017
+! HH1b. Full name to use in database  :amyotrophic lateral sclerosis 10
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! HUMAN HEALTH MODEL PROFORMA   Version 1.13:  10 Nov 2015 
+! HH1f. Database ID for disease or health issue  :FBhh0000070
+! HH1b. Full name to use in database  :spinocerebellar ataxia 15
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! HUMAN HEALTH MODEL PROFORMA   Version 1.13:  10 Nov 2015 
+! HH1f. Database ID for disease or health issue  :FBhh0000072
+! HH1b. Full name to use in database  :spinocerebellar ataxia 29
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 79:  3 Oct 2018
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :hh
+! G1b.  Gene symbol(s) used in reference                    *i :hh
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :??error - gene.pro should not be after hh pro
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018 
+! 
+! 
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0244702
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! HUMAN HEALTH MODEL PROFORMA   Version 1.13:  10 Nov 2015 
+! HH1f. Database ID for disease or health issue  :FBhh0001049
+! HH1b. Full name to use in database  :chronic myeloid leukemia, BCR-ABL1 fusions - wrong name
+! HH20. Internal notes :??error - HH1b invalid
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018 
+! 
+! 
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0244725
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! HUMAN HEALTH MODEL PROFORMA   Version 1.13:  10 Nov 2015 
+! HH1f. Database ID for disease or health issue  :FBhh0000081
+! HH1b. Full name to use in database  :Pitt-Hopkins syndrome
+! HH20. Internal notes :??error - swapped HH1f and HH1a around for this and next proforma
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! HUMAN HEALTH MODEL PROFORMA   Version 1.13:  10 Nov 2015 
+! HH1f. Database ID for disease or health issue  :FBhh0000433
+! HH1b. Full name to use in database  :Angelman syndrome
+! HH20. Internal notes :??error - swapped HH1f and HH1a around for this and next proforma
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

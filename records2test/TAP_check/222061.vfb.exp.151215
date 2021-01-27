@@ -1,0 +1,85 @@
+! C1. Curator ID:vfb
+! C2. Date:151215
+! C3. Curator notes to self:
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0222061
+! P2.   Parent multipub abbreviation               *w :Nature
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Scer\GAL4[NP0883]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+! F4. Names(s) used in paper [free text] :
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> debs <t> A <a> adult feeding interneuron <s>  <note> 
+<e> debs <t> A <a> subesophageal ganglion neuron | subset <s>  <note> 
+<e> debs <t> A <a> adult antennal lobe projection neuron | subset <s>  <note> 
+<e> debs <t> A <a> adult central nervous system | restricted <s>  <note> 
+!
+! F15. General expression comment [free text] :@Scer\GAL4[NP0883]@ drives expression in around 70 cells in the adult brain and in around 50 cells in the thoracico-abdominal ganglion. Labelled cells in the brain are mainly located in the adult gnathal ganglion and in the region of the antennal lobe/lateral horn.
+! F10. Used as bodypart marker for (term ; ID) [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :Mmus\Cd8a[Scer\UAS.T:Avic\GFP]
+Mmus\Cd8a[Scer\UAS.cSa.T:Disc\RFP-mCherry]
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+! F91. From dataset/collection (symbol) :
+! F91a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Scer\GAL4[NP5137]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+! F4. Names(s) used in paper [free text] :
+! F6. FlyExpress image number(s) (FBim)  :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e>  <t>  <a>  <s>  <note>) :
+<e> debs <t> A <a> adult feeding interneuron <s>  <note> 
+<e> debs <t> A <a> subesophageal ganglion neuron | subset <s>  <note> 
+<e> debs <t> A <a> adult mushroom body | restricted <s>  <note> 
+<e> debs <t> A <a> adult brain | restricted <s>  <note> 
+!
+! F15. General expression comment [free text] :
+! F10. Used as bodypart marker for (term ; ID) [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :
+!     F11b. Is pattern aberrant relative to wild-type (y/n) :
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :Mmus\Cd8a[Scer\UAS.T:Avic\GFP]
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+! F91. From dataset/collection (symbol) :
+! F91a. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

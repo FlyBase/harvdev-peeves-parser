@@ -1,0 +1,10 @@
+! PUBLICATION PROFORMA                   Version 41:  16 Mar 2010
+!
+! P22.  FlyBase reference ID (FBrf)      *U :new
+! P1.   Type of publication [CV]  *T :personal communication to FlyBase
+! P2.   Parent multipub (abbreviation)      *w :
+! P23.  Text of personal communication *F :Blah, blah.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :no_flag
+! P19.  Internal notes                   *H :?? P2 field not filled in for 'new' publication of type 'personal communication to FlyBase' - don't want Peeves error.  sm100322.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

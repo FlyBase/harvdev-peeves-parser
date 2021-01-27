@@ -1,0 +1,341 @@
+! PUBLICATION PROFORMA                   Version 44:  6 Nov 2012
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0020044
+! P19.  Internal notes                   *H :km326 - Strain data from L&G.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! STRAIN PROFORMA       Version 19: 2 May 2013
+!
+! SN1b.  FlyBase strain ID (FBsn, required if not new)                :new
+! SN1a.  Strain symbol to use in FlyBase                              :Austin
+! SN1c.  Strain symbol(s) used in reference                           :Austin
+! SN1f.  Species of strain (predominant if hybrid)         [symbol]   :Dmel
+! SN1g.  Strain type                                                  :wild type strain
+!
+! SN2a.  Action - strain name to use in FlyBase        :Austin
+! SN2b.  Strain name(s) used in reference              :Austin
+! SN2c.  Action - replace this strain name             :
+!
+! SN6g.  General phenotype comments    :Viability and fertility are good.
+!
+! SN11a. Collection site, country                      :
+! SN11b. Collection site, state or region              :
+! SN11c. Collection site, city or local place name     :
+! SN11d. Collection site, latitude (decimal degrees)   :
+! SN11e. Collection site, longitude (decimal degrees)  :
+! SN11f. Collection date     [MM.DD.YYYY/MM.YYYY/YYYY] :1929
+! SN11g. Collection season [winter/spring/summer/fall] :
+! SN11h. Collection substrate                          :
+! SN11i. Collection comments                           :Collected from a natural population. Started at the University of Texas before 1929.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! STRAIN PROFORMA       Version 19: 1 March 2013
+!
+! SN1b.  FlyBase strain ID (FBsn, required if not new)                :new
+! SN1a.  Strain symbol to use in FlyBase                              :Canton-S
+! SN1c.  Strain symbol(s) used in reference                           :Canton-S
+! SN1f.  Species of strain (predominant if hybrid)         [symbol]   :Dmel
+! SN1g.  Strain type                                                  :wild type strain
+!
+! SN2a.  Action - strain name to use in FlyBase        :Canton-Special
+! SN2b.  Strain name(s) used in reference              :Canton-Special
+! SN2c.  Action - replace this strain name             :
+!
+! SN6a.  Unassigned phenotype(s) (class | qualifier(s))  [FBcv term] :
+! SN6b.  Unassigned phenotype(s) (anatomy)               [FBcv term] :
+! SN6c.  Selected phenotype(s)   (class | qualifier(s))  [FBcv term] :visible | adult stage | recessive | supernumerary
+! SN6d.  Selected phenotype(s)   (anatomy)               [FBcv term] :macrochaeta | adult stage
+adult thorax
+! SN6e.  Unassigned phenotype comments :
+! SN6f.  Selected phenotype comments   :Contains a recessive for multiple thoracic and scutellar bristles, which overlaps wild type in most flies but appears sporadically in strains partly derived from Canton-S. Selected by C. Bridges.
+! SN6g.  General phenotype comments    :
+!
+! SN11a. Collection site, country                      :United States
+! SN11b. Collection site, state or region              :Ohio
+! SN11c. Collection site, city or local place name     :Canton
+! SN11d. Collection site, latitude (decimal degrees)   :
+! SN11e. Collection site, longitude (decimal degrees)  :
+! SN11f. Collection date     [MM.DD.YYYY/MM.YYYY/YYYY] :
+! SN11g. Collection season [winter/spring/summer/fall] :
+! SN11h. Collection substrate                          :
+! SN11i. Collection comments                           :
+!
+! SN14.  From library/collection              [symbol] :
+!
+! SN12.  Description/comments  :C. Bridges found that salivary chromosomes were normal.
+!
+! SN13.  Internal notes          :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! STRAIN PROFORMA       Version 19: 1 March 2013
+!
+! SN1b.  FlyBase strain ID (FBsn, required if not new)                :new
+! SN1a.  Strain symbol to use in FlyBase                              :Lausanne-S
+! SN1c.  Strain symbol(s) used in reference                           :Lausanne-S
+! SN1f.  Species of strain (predominant if hybrid)         [symbol]   :Dmel
+! SN1g.  Strain type                                                  :wild type strain
+!
+! SN2a.  Action - strain name to use in FlyBase        :Lausanne-Special
+! SN2b.  Strain name(s) used in reference              :Lausanne-Special
+! SN2c.  Action - replace this strain name             :
+!
+! SN6a.  Unassigned phenotype(s) (class | qualifier(s))  [FBcv term] :visible | adult stage
+! SN6b.  Unassigned phenotype(s) (anatomy)               [FBcv term] :posterior scutellar bristle
+! SN6c.  Selected phenotype(s)   (class | qualifier(s))  [FBcv term] :
+! SN6d.  Selected phenotype(s)   (anatomy)               [FBcv term] :
+! SN6e.  Unassigned phenotype comments :Has short posterior scutellar bristles.
+! SN6f.  Selected phenotype comments   :
+! SN6g.  General phenotype comments    :
+!
+! SN11a. Collection site, country                      :United States
+! SN11b. Collection site, state or region              :Wisconsin
+! SN11c. Collection site, city or local place name     :Lausanne
+! SN11d. Collection site, latitude (decimal degrees)   :
+! SN11e. Collection site, longitude (decimal degrees)  :
+! SN11f. Collection date     [MM.DD.YYYY/MM.YYYY/YYYY] :1938
+! SN11g. Collection season [winter/spring/summer/fall] :
+! SN11h. Collection substrate                          :
+! SN11i. Collection comments                           :
+!
+! SN14.  From library/collection              [symbol] :
+!
+! SN12.  Description/comments  :C. Bridges found that salivary chromosomes were normal.
+!
+! SN13.  Internal notes          :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! STRAIN PROFORMA       Version 19: 1 March 2013
+!
+! SN1b.  FlyBase strain ID (FBsn, required if not new)                :new
+! SN1a.  Strain symbol to use in FlyBase                              :Oregon-R
+! SN1c.  Strain symbol(s) used in reference                           :Oregon-R
+! SN1f.  Species of strain (predominant if hybrid)         [symbol]   :Dmel
+! SN1g.  Strain type                                                  :wild type strain
+!
+! SN2a.  Action - strain name to use in FlyBase        :Oregon-R
+! SN2b.  Strain name(s) used in reference              :Oregon-R
+! SN2c.  Action - replace this strain name             :
+!
+! SN5a.  Associated homozygous allele(s)                    [symbol] :e[unspecified]
+! SN5b.  Associated heterozygous allele(s)                  [symbol] :
+! SN5c.  Associated homozygous aberration(s)                [symbol] :Df(2R)Ore-R
+!
+! SN6a.  Unassigned phenotype(s) (class | qualifier(s))  [FBcv term] :visible | adult stage
+! SN6b.  Unassigned phenotype(s) (anatomy)               [FBcv term] :anterior crossvein
+! SN6c.  Selected phenotype(s)   (class | qualifier(s))  [FBcv term] :
+! SN6d.  Selected phenotype(s)   (anatomy)               [FBcv term] :
+! SN6e.  Unassigned phenotype comments :Strain shows a branching of the posterior crossvein that maps to chromosome 2.
+! SN6f.  Selected phenotype comments   :
+! SN6g.  General phenotype comments    :Strain shows a slight ebony phenotype and an occasional scooped wing.
+!
+! SN11a. Collection site, country                      :United States
+! SN11b. Collection site, state or region              :Oregon
+! SN11c. Collection site, city or local place name     :Roseburg
+! SN11d. Collection site, latitude (decimal degrees)   :
+! SN11e. Collection site, longitude (decimal degrees)  :
+! SN11f. Collection date     [MM.DD.YYYY/MM.YYYY/YYYY] :1925
+! SN11g. Collection season [winter/spring/summer/fall] :
+! SN11h. Collection substrate                          :
+! SN11i. Collection comments                           :Collected from wild flies in 1925 or earlier by D.E. Lancefield.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! STRAIN PROFORMA       Version 19: 1 March 2013
+!
+! SN1b.  FlyBase strain ID (FBsn, required if not new)                :new
+! SN1a.  Strain symbol to use in FlyBase                              :Oregon-R-C
+! SN1c.  Strain symbol(s) used in reference                           :Oregon-R-C
+! SN1f.  Species of strain (predominant if hybrid)         [symbol]   :Dmel
+! SN1g.  Strain type                                                  :wild type strain
+!
+! SN2a.  Action - strain name to use in FlyBase        :Oregon-R-C
+! SN2b.  Strain name(s) used in reference              :Oregon-R-C
+! SN2c.  Action - replace this strain name             :
+!
+! SN4.  Derived from strain                       [symbol] :Oregon-R
+!
+! SN5a.  Associated homozygous allele(s)                    [symbol] :
+! SN5b.  Associated heterozygous allele(s)                  [symbol] :
+! SN5c.  Associated homozygous aberration(s)                [symbol] :Df(2R)Ore-R
+!
+! SN6a.  Unassigned phenotype(s) (class | qualifier(s))  [FBcv term] :
+! SN6b.  Unassigned phenotype(s) (anatomy)               [FBcv term] :
+! SN6c.  Selected phenotype(s)   (class | qualifier(s))  [FBcv term] :
+! SN6d.  Selected phenotype(s)   (anatomy)               [FBcv term] :
+! SN6e.  Unassigned phenotype comments :
+! SN6f.  Selected phenotype comments   :
+! SN6g.  General phenotype comments    :Body color not so dark as that of Oregon-R.
+!
+! SN9a.  Isogenized chromosome(s)          [X/Y/2/3/4] :
+! SN9b.  Year isogenized (in or prior to)     [YYYY] :
+! SN9c.  Isogenization comment                       :
+! SN9d.  Extracted chromosome(s)           [X/Y/2/3/4] :
+! SN9e.  Inbred?                                   [y] :
+! SN9f.  Founded as [isofemale line/multi-female line] :
+! SN9g.  Breeding comments                             :Selected by C. Bridges in 1938 from Oregon-R.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! STRAIN PROFORMA       Version 19: 1 March 2013
+!
+! SN1b.  FlyBase strain ID (FBsn, required if not new)                :new
+! SN1a.  Strain symbol to use in FlyBase                              :Samarkand
+! SN1c.  Strain symbol(s) used in reference                           :Samarkand
+! SN1f.  Species of strain (predominant if hybrid)         [symbol]   :Dmel
+! SN1g.  Strain type                                                  :wild type strain
+!
+! SN2a.  Action - strain name to use in FlyBase        :Samarkand
+! SN2b.  Strain name(s) used in reference              :Samarkand
+! SN2c.  Action - replace this strain name             :
+!
+! SN6a.  Unassigned phenotype(s) (class | qualifier(s))  [FBcv term] :
+! SN6b.  Unassigned phenotype(s) (anatomy)               [FBcv term] :
+! SN6c.  Selected phenotype(s)   (class | qualifier(s))  [FBcv term] :
+! SN6d.  Selected phenotype(s)   (anatomy)               [FBcv term] :
+! SN6e.  Unassigned phenotype comments :
+! SN6f.  Selected phenotype comments   :
+! SN6g.  General phenotype comments    :Ives reports that females of his lines of Samarkand are distinguishable from Oregon-R females in that they have no faint trident on the thorax and that there is always a well-defined black band on seventh (most-posterior) dorsolateral abdominal segment.
+!
+! SN11a. Collection site, country                      :Uzbekistan
+! SN11b. Collection site, state or region              :Samarqand Viloyati
+! SN11c. Collection site, city or local place name     :Samarkand
+! SN11d. Collection site, latitude (decimal degrees)   :
+! SN11e. Collection site, longitude (decimal degrees)  :
+! SN11f. Collection date     [MM.DD.YYYY/MM.YYYY/YYYY] :1936
+! SN11g. Collection season [winter/spring/summer/fall] :
+! SN11h. Collection substrate                          :
+! SN11i. Collection comments                           :
+!
+! SN14.  From library/collection              [symbol] :
+!
+! SN12.  Description/comments  :Original stock contained a low frequency of inversions in 3R; chromosomes probably are now all of standard sequence.
+!
+! SN13.  Internal notes          :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! STRAIN PROFORMA       Version 19: 1 March 2013
+!
+! SN1b.  FlyBase strain ID (FBsn, required if not new)                :new
+! SN1a.  Strain symbol to use in FlyBase                              :Stephenville
+! SN1c.  Strain symbol(s) used in reference                           :Stephenville
+! SN1f.  Species of strain (predominant if hybrid)         [symbol]   :Dmel
+! SN1g.  Strain type                                                  :wild type strain
+!
+! SN2a.  Action - strain name to use in FlyBase        :Stephenville
+! SN2b.  Strain name(s) used in reference              :Stephenville
+! SN2c.  Action - replace this strain name             :
+!
+! SN6a.  Unassigned phenotype(s) (class | qualifier(s))  [FBcv term] :
+! SN6b.  Unassigned phenotype(s) (anatomy)               [FBcv term] :
+! SN6c.  Selected phenotype(s)   (class | qualifier(s))  [FBcv term] :
+! SN6d.  Selected phenotype(s)   (anatomy)               [FBcv term] :
+! SN6e.  Unassigned phenotype comments :
+! SN6f.  Selected phenotype comments   :
+! SN6g.  General phenotype comments    :Fertility and viability are good.
+!
+! SN11a. Collection site, country                      :United States
+! SN11b. Collection site, state or region              :Texas
+! SN11c. Collection site, city or local place name     :Stephenville
+! SN11d. Collection site, latitude (decimal degrees)   :
+! SN11e. Collection site, longitude (decimal degrees)  :
+! SN11f. Collection date     [MM.DD.YYYY/MM.YYYY/YYYY] :1935
+! SN11g. Collection season [winter/spring/summer/fall] :
+! SN11h. Collection substrate                          :
+! SN11i. Collection comments                           :
+!
+! SN14.  From library/collection              [symbol] :
+!
+! SN12.  Description/comments  :Salivary chromosomes probably normal.
+!
+! SN13.  Internal notes          :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! STRAIN PROFORMA       Version 19: 1 March 2013
+!
+! SN1b.  FlyBase strain ID (FBsn, required if not new)                :new
+! SN1a.  Strain symbol to use in FlyBase                              :Swedish-b
+! SN1c.  Strain symbol(s) used in reference                           :Swedish-b
+! SN1f.  Species of strain (predominant if hybrid)         [symbol]   :Dmel
+! SN1g.  Strain type                                                  :wild type strain
+!
+! SN2a.  Action - strain name to use in FlyBase        :Swedish-b
+! SN2b.  Strain name(s) used in reference              :Swedish-b
+! SN2c.  Action - replace this strain name             :
+!
+! SN5a.  Associated homozygous allele(s)                    [symbol] :
+! SN5b.  Associated heterozygous allele(s)                  [symbol] :
+! SN5c.  Associated homozygous aberration(s)                [symbol] :Df(2R)Sw
+!
+! SN6a.  Unassigned phenotype(s) (class | qualifier(s))  [FBcv term] :visible | adult stage
+! SN6b.  Unassigned phenotype(s) (anatomy)               [FBcv term] :scutellar bristle
+adult cuticle
+! SN6c.  Selected phenotype(s)   (class | qualifier(s))  [FBcv term] :
+! SN6d.  Selected phenotype(s)   (anatomy)               [FBcv term] :
+! SN6e.  Unassigned phenotype comments :Slight abnormality of abdominal banding and position of scutellar bristles.
+! SN6f.  Selected phenotype comments   :
+! SN6g.  General phenotype comments    :
+!
+! SN11a. Collection site, country                      :Sweden
+! SN11b. Collection site, state or region              :Stockholm
+! SN11c. Collection site, city or local place name     :
+! SN11d. Collection site, latitude (decimal degrees)   :
+! SN11e. Collection site, longitude (decimal degrees)  :
+! SN11f. Collection date     [MM.DD.YYYY/MM.YYYY/YYYY] :1923
+! SN11g. Collection season [winter/spring/summer/fall] :
+! SN11h. Collection substrate                          :
+! SN11i. Collection comments                           :Collected by C. Bridges near Stockholm in 1923.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! STRAIN PROFORMA       Version 19: 1 March 2013
+!
+! SN1b.  FlyBase strain ID (FBsn, required if not new)                :new
+! SN1a.  Strain symbol to use in FlyBase                              :Swedish-c
+! SN1c.  Strain symbol(s) used in reference                           :Swedish-c
+! SN1f.  Species of strain (predominant if hybrid)         [symbol]   :Dmel
+! SN1g.  Strain type                                                  :wild type strain
+!
+! SN2a.  Action - strain name to use in FlyBase        :Swedish-c
+! SN2b.  Strain name(s) used in reference              :Swedish-c
+! SN2c.  Action - replace this strain name             :
+!
+! SN4.  Derived from strain                       [symbol] :Swedish-b
+!
+! SN5a.  Associated homozygous allele(s)                    [symbol] :
+! SN5b.  Associated heterozygous allele(s)                  [symbol] :
+! SN5c.  Associated homozygous aberration(s)                [symbol] :Df(2R)Sw
+Df(2L)Sw-L
+!
+! SN9a.  Isogenized chromosome(s)          [X/Y/2/3/4] :
+! SN9b.  Year isogenized (in or prior to)     [YYYY] :
+! SN9c.  Isogenization comment                       :
+! SN9d.  Extracted chromosome(s)           [X/Y/2/3/4] :
+! SN9e.  Inbred?                                   [y] :
+! SN9f.  Founded as [isofemale line/multi-female line] :
+! SN9g.  Breeding comments                             :Derived by C. Bridges from Swedish-b in 1938.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! STRAIN PROFORMA       Version 19: 1 March 2013
+!
+! SN1b.  FlyBase strain ID (FBsn, required if not new)                :new
+! SN1a.  Strain symbol to use in FlyBase                              :Urbana-S
+! SN1c.  Strain symbol(s) used in reference                           :Urbana-S
+! SN1f.  Species of strain (predominant if hybrid)         [symbol]   :Dmel
+! SN1g.  Strain type                                                  :wild type strain
+!
+! SN2a.  Action - strain name to use in FlyBase        :Urbana-Special
+! SN2b.  Strain name(s) used in reference              :Urbana-Special
+! SN2c.  Action - replace this strain name             :
+!
+! SN6a.  Unassigned phenotype(s) (class | qualifier(s))  [FBcv term] :
+! SN6b.  Unassigned phenotype(s) (anatomy)               [FBcv term] :
+! SN6c.  Selected phenotype(s)   (class | qualifier(s))  [FBcv term] :body color defective | adult stage
+! SN6d.  Selected phenotype(s)   (anatomy)               [FBcv term] :adult cuticle
+! SN6e.  Unassigned phenotype comments :
+! SN6f.  Selected phenotype comments   :Selected by C. Bridges. Body color somewhat lighter than standard wild type.
+! SN6g.  General phenotype comments    :
+!
+! SN11a. Collection site, country                      :United States
+! SN11b. Collection site, state or region              :Illinois
+! SN11c. Collection site, city or local place name     :Urbana
+! SN11d. Collection site, latitude (decimal degrees)   :
+! SN11e. Collection site, longitude (decimal degrees)  :
+! SN11f. Collection date     [MM.DD.YYYY/MM.YYYY/YYYY] :
+! SN11g. Collection season [winter/spring/summer/fall] :
+! SN11h. Collection substrate                          :
+! SN11i. Collection comments                           :
+!
+! SN14.  From library/collection              [symbol] :
+!
+! SN12.  Description/comments  :Salivary chromosomes are normal.
+!
+! SN13.  Internal notes          :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

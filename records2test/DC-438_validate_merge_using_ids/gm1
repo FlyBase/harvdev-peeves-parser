@@ -1,0 +1,136 @@
+! PUBLICATION PROFORMA                   Version 44:  6 Nov 2012
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0155823
+! P2.   Parent multipub abbreviation               *w :Genome Biol.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :noDOcur
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :??testing validate_merge_using_ids in insertion.pro
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :new
+! MA1a. Insertion symbol to use in database    :P{EPgy2}Asx[EY07384]
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :
+! MA20. Species of host genome                 :
+!
+! MA1c. Action - rename this insertion symbol    :
+! MA1g. Action - merge these insertion(s) (FBti) :FBti0039443
+FBti0033171
+! MA1h. Action - delete insertion record ("y"/blank)   :
+! MA1i. Action - dissociate MA1f from FBrf ("y"/blank) :
+!
+! MA10. Internal notes                   :??no errors
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :new
+! MA1a. Insertion symbol to use in database    :newinsertionsymbol1
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :
+! MA20. Species of host genome                 :
+!
+! MA1c. Action - rename this insertion symbol    :
+! MA1g. Action - merge these insertion(s) (FBti) :FBti0039154
+! MA1h. Action - delete insertion record ("y"/blank)   :
+! MA1i. Action - dissociate MA1f from FBrf ("y"/blank) :
+!
+! MA10. Internal notes                   :??error - only one FBti
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :new
+! MA1a. Insertion symbol to use in database    :newinsertionsymbol2
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :
+! MA20. Species of host genome                 :
+!
+! MA1c. Action - rename this insertion symbol    :
+! MA1g. Action - merge these insertion(s) (FBti) :FBti0057636
+FBblah
+! MA1h. Action - delete insertion record ("y"/blank)   :
+! MA1i. Action - dissociate MA1f from FBrf ("y"/blank) :
+!
+! MA10. Internal notes                   :??error - FBblah not valid FBti symbol
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :new
+! MA1a. Insertion symbol to use in database    :P{EPgy2}bbg[EY11598]
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :
+! MA20. Species of host genome                 :
+!
+! MA1c. Action - rename this insertion symbol    :
+! MA1g. Action - merge these insertion(s) (FBti) :FBti0003020
+FBte0000333
+! MA1h. Action - delete insertion record ("y"/blank)   :
+! MA1i. Action - dissociate MA1f from FBrf ("y"/blank) :
+!
+! MA10. Internal notes                   :??error - FBti0003020 is not a current FBti symbol, FBte0000333 is not the expected type for this field
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :new
+! MA1a. Insertion symbol to use in database    :P{EPgy2}Gug[EY14339]
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :
+! MA20. Species of host genome                 :
+!
+! MA1c. Action - rename this insertion symbol    :
+! MA1g. Action - merge these insertion(s) (FBti) :P{EPgy2}Gug[EY14339]
+FBte0000333
+! MA1h. Action - delete insertion record ("y"/blank)   :
+! MA1i. Action - dissociate MA1f from FBrf ("y"/blank) :
+!
+! MA10. Internal notes                   :??error - should get message for P{EPgy2}Gug[EY14339] saying put in symbol instead of id and suggesting FBti number, should get wrong type of id for FBte
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :new
+! MA1a. Insertion symbol to use in database    :hghfdhgfdhjgk
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :
+! MA20. Species of host genome                 :
+!
+! MA1c. Action - rename this insertion symbol    :
+! MA1g. Action - merge these insertion(s) (FBti) :FBti0027100
+FBti0027100
+!
+!
+! MA5a. Chromosomal location of insert                     :
+!
+!
+! MA8.  Phenotype (viable, fertile)            :
+!
+!
+!
+!
+!
+!
+!
+! MA10. Internal notes                   :??error - duplicated FBids
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

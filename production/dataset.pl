@@ -767,25 +767,6 @@ sub validate_correct_dataset_entity_type {
 	}
 }
 
-sub validate_LC13d {
-
-	my ($file, $code, $dehashed_data, $context) = @_;
-
-	$dehashed_data eq '' and return;
-
-
-	my $uniqued_data = check_for_duplicated_lines($file,$code,$dehashed_data,$context->{$code});
-
-	foreach my $datum (keys %{$uniqued_data}) {
-
-		unless (valid_symbol($datum, 'SO_term_workaround')) {
-
-				validate_ontology_term_id_field ($file, $code, $datum, $context, 'SO:default', '');
-
-		}
-	}
-
-}
 
 
 

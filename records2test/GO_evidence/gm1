@@ -1,0 +1,162 @@
+! PUBLICATION PROFORMA                   Version 45:  9 Apr 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0111489
+! P2.   Parent multipub abbreviation               *w :Genetics
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENE PROFORMA                          Version 75:  05 Mar 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :hh
+! G1b.  Gene symbol(s) used in reference                    *i :hh
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :wing disc development ; GO:0035220 | IMP with @dpp@
+wing disc development ; GO:0035220 | inferred from reviewed computational analysis with @en@
+wing disc development ; GO:0035220 | RCA with @cnn@
+wing disc development ; GO:0035220 | non-traceable author statement with @sgg@
+wing disc development ; GO:0035220 | NAS by @Adh@
+wing disc development ; GO:0035220 | traceable author statement with @Adhr@
+wing disc development ; GO:0035220 | TAS with @sesB@
+wing disc development ; GO:0035220 | inferred from mutant phenotype with @Ant2@
+wing disc development ; GO:0035220 | inferred from direct assay with @Gpdh@
+wing disc development ; GO:0035220 | IDA with @a@
+wing disc development ; GO:0035220 | inferred from expression pattern with @b@
+wing disc development ; GO:0035220 | IEP with @c@
+wing disc development ; GO:0035220 | no biological data available with @d@
+wing disc development ; GO:0035220 | ND with @e@
+wing disc development ; GO:0035220 | inferred from experiment with @f@
+wing disc development ; GO:0035220 | EXP with @g@
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :??each should give error as shouldn' t have data after evidence code
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 75:  05 Mar 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Bc
+! G1b.  Gene symbol(s) used in reference                    *i :Bc
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :wing disc development ; GO:0035220 | inferred from genomic context with @h@
+wing disc development ; GO:0035220 | IGC with @j@
+wing disc development ; GO:0035220 | inferred from sequence model with @m@
+wing disc development ; GO:0035220 | ISM with @p@
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :??no error as can have with after evidence code
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 75:  05 Mar 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :z
+! G1b.  Gene symbol(s) used in reference                    *i :z
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :head development ; GO:0060322 | inferred from genomic context
+eye pigmentation ; GO:0048069 | IGC
+leg disc morphogenesis ; GO:0035220 | inferred from sequence model
+tail tip morphogenesis ; GO:0045138 | ISM
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :no evidence code errors, but GO id given for 'leg disc morphogenesis' is incorrect
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 75:  05 Mar 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :y
+! G1b.  Gene symbol(s) used in reference                    *i :y
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :head development ; GO:0060322 | IGC by @dpp@
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :?? error - should be with not by after evidence code
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

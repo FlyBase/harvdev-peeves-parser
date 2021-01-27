@@ -1,0 +1,38 @@
+
+Processing gm0004
+
+gm0004: P38: Not checking this field because of ?? in '??
+'
+
+gm0004: GA56: '+' is neither a valid allele or aberration in '(with +) lethal'
+
+gm0004: GA56: '+' is neither a valid allele or aberration in '(with +/bw[2]) visible'
+
+gm0004: GA56: '+' is neither a valid allele or aberration in '(with bw[6]/+, bw[5]) paralytic'
+
+gm0004: GA56: '+' is neither a valid allele or aberration in '(with bw[4]/+) viable'
+
+gm0004: GA56: Mismatch between gene symbol 'bw' in GA1a and the gene portion '1.28' given in '(with 1.28[P])' from '(with 1.28[P]) lethal'
+
+gm0004: GA56: Mismatch between gene symbol 'bw' in GA1a and the gene portion 'su(w[a])' given in '(with su(w[a])[2])' from '(with su(w[a])[2]) visible'
+
+gm0004: GA56: Mismatch between gene symbol 'bw' in GA1a and the gene portion 'CG32479' given in '(with CG32479[c05882]/bw[4])' from '(with CG32479[c05882]/bw[4]) fertile'
+
+gm0004: GA56: Mismatch between gene symbol 'bw' in GA1a and the gene portion 'CG33108' given in '(with CG33108[EY04458], Ecol\lacZ[hkb.VE.&Dgr;Dri])' from '(with CG33108[EY04458], Ecol\lacZ[hkb.VE.&Dgr;Dri]) viable'
+
+gm0004: GA56: Mismatch between gene symbol 'bw' in GA1a and the gene portion 'Ecol\lacZ' given in '(with CG33108[EY04458], Ecol\lacZ[hkb.VE.&Dgr;Dri])' from '(with CG33108[EY04458], Ecol\lacZ[hkb.VE.&Dgr;Dri]) viable'
+
+gm0004: GA56: 'bw[new]' is neither a valid allele or aberration in '(with bw[new]) lethal'
+
+gm0004: GA56: 'Df(1)new' is neither a valid allele or aberration in '(with Df(1)new) lethal'
+
+
+This file failed at least one check:	gm0004
+
+Ignoring these 12 files:
+
+GA56_CV_terms_bugs	GA56_CV_terms_bugs%	GA56_with_symbols_test	gm0001%	gm0002%	gm0003%	gm0004%	gm070227%	peeves.crib	peeves_test.cfg
+pub.crib	sent
+
+
+

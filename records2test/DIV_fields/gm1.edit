@@ -1,0 +1,45 @@
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0243121
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! DISEASE IMPLICATED VARIANT PROFORMA                          Version 1:  16 Apr 2020
+!
+! DIV1a. Disease-implicated change relative to human gene, primary (if protein, relative to UniProt ref isoform) :
+! DIV1b. Disease-implicated change in this allele relative to human gene, synonyms :
+! DIV1c. Is DIV1a a current DIV designation in FlyBase (y/n)? :n
+!
+! DIV1d. Action - delete DIV1a record from FlyBase (y/blank) :
+! DIV1e. Action - rename Disease-implicated variant (DIV1a is rename) :
+!
+! DIV2a. FB human disease model(s) relevant to this disease-implicated variant :
+! DIV2b. Deliberate omission FB human disease model(s) relevant to this disease-implicated variant (blank/y) :
+!
+! DIV3a. External link - accession number (repeat for multiple) :
+!     DIV3b. External link - FB database ID (DB1a) :
+!     DIV3c. External link - title/description of specific accession :
+!     DIV3d. Action - dissociate accession specified in DIV3a/DIV3b from this variant :
+!
+! DIV4. Comment(s) concerning disease-implicated variant :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

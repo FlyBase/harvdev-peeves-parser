@@ -1,0 +1,53 @@
+2,3c2,3
+< Using Peeves in /Peeves/test
+< /Peeves/test/Peeves
+---
+> Using Peeves in /Peeves/production
+> /Peeves/production/Peeves
+133a134,135
+> gm25491: GA21: You state for l(3)02640[j4E3] 'Fails to complement: l(3)02640[7E130]', but have not curated the reciprocal statement
+> 
+190a193,194
+> gm25487.edit: P2: Missing data - must have multipub abbreviation.
+> 
+207a212,213
+> gm25483.edit: P2: Missing data - must have multipub abbreviation.
+> 
+212a219,220
+> gm25474.edit: P2: Missing data - must have multipub abbreviation.
+> 
+350c358
+< pm2281.edit: P2: Missing data for paper --- perhaps you mean to put Development
+---
+> pm2281.edit: P2: Missing data - must have multipub abbreviation.
+355c363
+< pm2279.edit: P2: Missing data for paper --- perhaps you mean to put J. Neurosci.
+---
+> pm2279.edit: P2: Missing data - must have multipub abbreviation.
+441a450,451
+> sm1184.bibl: Required proforma field MP3 missing or malformed.
+> 
+447a458,459
+> sm1184.bibl: Required proforma field MP3 missing or malformed.
+> 
+453a466,467
+> sm1184.bibl: Required proforma field MP3 missing or malformed.
+> 
+700a715,716
+> ra836.edit: P2: Missing data - must have multipub abbreviation.
+> 
+788a805,806
+> km327: P2: Missing data - must have multipub abbreviation.
+> 
+796a815,816
+> km323: P2: Missing data - must have multipub abbreviation.
+> 
+827c847
+< km320: P2: Missing data for paper --- perhaps you mean to put Genetics
+---
+> km320: P2: Missing data - must have multipub abbreviation.
+1784,1787d1803
+< Using ** test ** Peeves
+< 
+< 
+< 

@@ -1,0 +1,176 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0225556
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 6: 01 Oct 2015
+!
+! GG1a. Gene group symbol                               *a :RPL
+! GG1b. Gene group symbol synonym(s)                    *i :
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :y
+! GG2a. Action - gene group name to use in FlyBase      *e :
+! GG2b. Gene group name synonym(s)                      *V :
+!
+!
+! GG4.  Type of gene group [CV]  *t :
+!
+!c GG5.  Description of gene group  [free text]  *D :Cytoplasmic ribosomes are found on the endoplasmic reticulum and in the cytoplasm. They translate all mRNAs produced from nuclear genes and perform the majority of cellular protein synthesis. Ribosomes are formed by two ribonucleoprotein subunits, large and small. The principle function of the large subunit is to bind tRNA during the synthesis of polypeptides. (Adapted from FBrf0205398).
+!
+! GG12. Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 6: 01 Oct 2015
+!
+! GG1a. Gene group symbol                               *a :CRP
+! GG1b. Gene group symbol synonym(s)                    *i :
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :y
+! GG2a. Action - gene group name to use in FlyBase      *e :
+! GG2b. Gene group name synonym(s)                      *V :
+!
+!
+! GG4.  Type of gene group [CV]  *t :
+!
+!c GG5.  Description of gene group  [free text]  *D :Cytoplasmic ribosomes are found on the endoplasmic reticulum and in the cytoplasm. They translate all mRNAs produced from nuclear genes and perform the majority of cellular protein synthesis. Ribosomes are formed by two ribonucleoprotein subunits, large and small. (Adapted from FBrf0205398).
+!
+! GG12. Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 6: 01 Oct 2015
+!
+! GG1a. Gene group symbol                               *a :RPS
+! GG1b. Gene group symbol synonym(s)                    *i :
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :y
+! GG2a. Action - gene group name to use in FlyBase      *e :
+! GG2b. Gene group name synonym(s)                      *V :
+!
+!
+! GG4.  Type of gene group [CV]  *t :
+!
+!c GG5.  Description of gene group  [free text]  *D :Cytoplasmic ribosomes are found on the endoplasmic reticulum and in the cytoplasm. They translate all mRNAs produced from nuclear genes and perform the majority of cellular protein synthesis. Ribosomes are formed by two ribonucleoprotein subunits, large and small. The principle function of the small subunit is to bind mRNA. (Adapted from FBrf0205398)
+!
+! GG12. Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 6: 01 Oct 2015
+!
+! GG1a. Gene group symbol                               *a :S-HSP
+! GG1b. Gene group symbol synonym(s)                    *i :
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :y
+!
+! GG6b. Key GO term(s) - Molecular Function (term ; ID)  *F :unfolded protein binding ; GO:0051082
+!
+!c GG12. Internal notes  *W :GO annotation status:Done for the gene group SMALL HEAT SHOCK PROTEINS. ha161219.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 6: 01 Oct 2015
+!
+! GG1a. Gene group symbol                               *a :TZ-O # new
+! GG1b. Gene group symbol synonym(s)                    *i :
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :y
+! GG2a. Action - gene group name to use in FlyBase      *e :
+! GG2b. Gene group name synonym(s)                      *V :
+!
+! GG7a. Related gene group(s) in FB - parent (symbol)     *P :TZ
+ # blah
+new
+! GG7c. Related gene group(s) in FB - undefined (symbol)  *U :
+!
+! GG6a. Key GO term(s) - Cellular Component (term ; ID)  *f :ciliary transition zone ; GO:0035869
+! GG6b. Key GO term(s) - Molecular Function (term ; ID)  *F :
+! GG6c. Key GO term(s) - Biological Process (term ; ID)  *d :cilium assembly ; GO:0060271
+!
+! GG8a. Equivalent gene group accession (rpt. sect. for mult.)  *O :
+! GG8b. FlyBase database symbol (DB1a) for GG8a  *O :
+! GG8c. Title for GG8a [free text]               *T :
+!
+! GG9.  Other related external resource(s) ([title](URL)) *E :
+!
+! GG10. Comments [free text]  *u :GO annotation status:Done for the gene group TRANSITION ZONE - OTHER COMPONENTS. ha161220.
+!
+! GG11. Date gene group last reviewed (YYYYMMDD)  *y :
+!
+! GG12. Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 6: 01 Oct 2015
+!
+! GG1a. Gene group symbol                               *a :MKS
+! GG1b. Gene group symbol synonym(s)                    *i :
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :y
+! GG2a. Action - gene group name to use in FlyBase      *e :
+! GG2b. Gene group name synonym(s)                      *V :
+!
+! GG7a. Related gene group(s) in FB - parent (symbol)     *P :TZ
+! GG7c. Related gene group(s) in FB - undefined (symbol)  *U :
+!
+! GG6a. Key GO term(s) - Cellular Component (term ; ID)  *f :MKS complex ; GO:0036038
+! GG6b. Key GO term(s) - Molecular Function (term ; ID)  *F :
+! GG6c. Key GO term(s) - Biological Process (term ; ID)  *d :cilium assembly ; GO:0060271
+!
+! GG8a. Equivalent gene group accession (rpt. sect. for mult.)  *O :
+! GG8b. FlyBase database symbol (DB1a) for GG8a  *O :
+! GG8c. Title for GG8a [free text]               *T :
+!
+! GG9.  Other related external resource(s) ([title](URL)) *E :
+!
+! GG10. Comments [free text]  *u :GO annotation status:Done for the gene group MKS COMPLEX. ha161220.
+!
+! GG11. Date gene group last reviewed (YYYYMMDD)  *y :
+!
+! GG12. Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 6: 01 Oct 2015
+!
+! GG1a. Gene group symbol                               *a :CEP290C
+! GG1b. Gene group symbol synonym(s)                    *i :
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :y
+! GG2a. Action - gene group name to use in FlyBase      *e :
+! GG2b. Gene group name synonym(s)                      *V :
+!
+! GG7a. Related gene group(s) in FB - parent (symbol)     *P :TZ
+! GG7c. Related gene group(s) in FB - undefined (symbol)  *U :
+!
+! GG6a. Key GO term(s) - Cellular Component (term ; ID)  *f :ciliary transition zone ; GO:0035869
+! GG6b. Key GO term(s) - Molecular Function (term ; ID)  *F :
+! GG6c. Key GO term(s) - Biological Process (term ; ID)  *d :cilium assembly ; GO:0060271
+!
+! GG8a. Equivalent gene group accession (rpt. sect. for mult.)  *O :
+! GG8b. FlyBase database symbol (DB1a) for GG8a  *O :
+! GG8c. Title for GG8a [free text]               *T :
+!
+! GG9.  Other related external resource(s) ([title](URL)) *E :
+!
+! GG10. Comments [free text]  *u :GO annotation status:Done for the gene group CEP290 COMPLEX. ha161220.
+!
+! GG11. Date gene group last reviewed (YYYYMMDD)  *y :
+!
+! GG12. Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 6: 01 Oct 2015
+!
+! GG1a. Gene group symbol                               *a :TZ
+! GG1b. Gene group symbol synonym(s)                    *i :
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :y
+! GG2a. Action - gene group name to use in FlyBase      *e :
+! GG2b. Gene group name synonym(s)                      *V :
+!
+! GG7a. Related gene group(s) in FB - parent (symbol)     *P :TZ
+! GG7c. Related gene group(s) in FB - undefined (symbol)  *U :
+!
+! GG6a. Key GO term(s) - Cellular Component (term ; ID)  *f :
+! GG6b. Key GO term(s) - Molecular Function (term ; ID)  *F :
+! GG6c. Key GO term(s) - Biological Process (term ; ID)  *d :cilium assembly ; GO:0060271
+!
+! GG8a. Equivalent gene group accession (rpt. sect. for mult.)  *O :
+! GG8b. FlyBase database symbol (DB1a) for GG8a  *O :
+! GG8c. Title for GG8a [free text]               *T :
+!
+! GG9.  Other related external resource(s) ([title](URL)) *E :
+!
+! GG10. Comments [free text]  *u :
+!
+! GG11. Date gene group last reviewed (YYYYMMDD)  *y :
+!
+! GG12. Internal notes  *W :
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

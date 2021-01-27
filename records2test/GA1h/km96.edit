@@ -1,0 +1,142 @@
+! PUBLICATION PROFORMA                   Version 37:  21 Jan 2009
+!
+! P22.  FlyBase reference ID (FBrf)      *U :FBrf0184340
+! P32.  Action - make this/these FBrf(s) secondary IDs of P22 *N :
+! P39.  Action - obsolete P22 in FlyBase               TAKE CARE :
+! P1.   Type of publication [CV]  *T :
+! P21.  Parent multipub (ID)                *W :
+! P2.   Parent multipub (abbreviation)      *w :
+! P12.  Author(s)                   *a-*b :
+! P10.  Year or date (YYYY.M.D) if PC  *t :
+! P16.  Title                          *u :
+! P3.   Volume number                  *y :
+! P4.   Issue number                   *Y :
+! P11a. Page range or article number        *z :
+! P11d. DOI                                    :
+! P11b. URL                                 *R :
+! P11c. Sequence accession number              :
+! P13.  Language of publication [CV]                          *L :English
+! P14.  Additional language(s) of abstract [CV]               *A :
+! P26.  PubMed ID                *M :
+! P25.  BIOSIS ID                *B :
+! P27.  ZooRec ID                *Q :
+! P29.  ISBN, if P1 = book       *I :
+! P33.  Text of conference abstract    *D :
+! P23.  Text of personal communication *F :
+! P18.  Associated comments                                  *G :
+! P38.  Associated file, archived at ftp site [SoftCV]       *K :
+! P30.  Also published as (FBrf)            *C :
+! P31.  Related publication (FBrf)          *E :
+! P40.  Flag Cambridge for curation [SoftCV]  CAMCUR :
+! P41.  Flag Harvard for curation [SoftCV]   HARVCUR :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 60:  21 Jan 2009
+!
+! G1h. FlyBase gene ID (FBgn) *z :FBgn0085351
+! G1a.  Gene symbol to use in FlyBase                       *a :inaF-A
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 47: 15 Dec 2008
+!
+! GA1h. FlyBase allele ID (FBal) *z :FBal0179416
+! GA1a.  Allele symbol to use in FlyBase                     *A :inaF-A[e03880]
+! GA1b.  Allele symbol(s) used in reference                  *i :
+! GA1e.  Action - rename this allele symbol                     :
+! GA1f.  Action - merge these alleles (symbols)                 :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase?    :y
+! GA2a.  Action - allele name to use in FlyBase              *e :
+! GA2b.  Allele name(s) used in reference                    *V :
+! GA2c.  Action - replace this/these allele name(s)             :
+! GA31.  Etymology                                              :
+! GA32a. Action - obsolete GA1a in FlyBase       TAKE CARE :y
+! GA32b. Action - dissociate GA1a from reference TAKE CARE :
+! GA14.  Internal notes  *W :??updated values so could test resolution of DC-33 [gm140225].??FBal0179416 is not a current allele FBid, so should generate some kind of error
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 55: 16 Dec 2013
+!
+! GA1h. FlyBase allele ID (FBal) *z :FBal0219766
+! GA1a.  Allele symbol to use in FlyBase                        *A :inaF-A[EP1418]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :blah blah
+! GA30.  Tagged with                                       *s :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :??no error - symbol and id match
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 55: 16 Dec 2013
+!
+! GA1h. FlyBase allele ID (FBal) *z :FBal0219768
+! GA1a.  Allele symbol to use in FlyBase                        *A :inaF-A[EY09517]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :
+! GA7a.  Phenotype [free text]                            *k :
+! GA28a. Genetic interaction (class, effect) [CV]           *S :
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :
+! GA28c. Genetic interaction [free text]                    *S :
+! GA29a. Xenogenetic interaction (class, effect) [CV]     *j :
+! GA29b. Xenogenetic interaction (anatomy, effect) [CV]   *j :
+! GA29c. Xenogenetic interaction [free text]              *j :
+! GA21.  Interallelic complementation or rescue data [SoftCV]    *Q :
+! GA22.  Interallelic complementation or rescue data [free text] *Q :
+! GA10a. Associated construct                                *I :
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA10g. Associated aberration / cytology normal (+)    *P/*C :
+! GA8.   Mutagen [CV]                                  *o :
+! GA11.  Progenitor genotype                           *O :
+! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
+! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :
+! GA30.  Tagged with                                       *s :
+! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :
+! GA34b. DO - Human disease model comment                     *p :
+! GA34c. DO - Human disease model internal note               *w :
+! GA13.  Miscellaneous comments                        *u :
+! GA14.  Internal notes  *W :??error - FBal0219768 is valid FBid for inaF-C[EP1418], not inaF-A[EY09517]??
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!
+

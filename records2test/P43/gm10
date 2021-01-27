@@ -1,0 +1,42 @@
+! PUBLICATION PROFORMA                   Version 44:  6 Nov 2012
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :new
+! P32.  Action - make this FBrf a secondary ID of P22 (FBrf)  *N :
+! P39.  Action - obsolete P22 in FlyBase (y)           TAKE CARE :
+! P1.   Type of publication [CV]  *T :paper
+! P2.   Parent multipub abbreviation               *w :Genetics
+! P12.  Author(s)                           *a-*b :Author	A.
+! P10.  Year (YYYY), or date (YYYY.M.D) if PC  *t :2012
+! P16.  Title                                  *u :A new paper.
+! P3.   Volume number                          *y :3
+! P4.   Issue number                           *Y :1
+! P11a. Page range or article number               *z :1--10
+! P11d. DOI                                           :
+! P11b. URL                                        *R :
+! P13.  Language of publication [CV]                          *L :English
+! P14.  Additional language(s) of abstract [CV]               *A :
+! P26.  PubMed ID                *M :
+! P23.  Text of personal communication *F :
+! P18.  Miscellaneous comments                                  *G :
+! P38.  Associated file, archived at ftp site [SoftCV]       *K :
+! P31.  Related publication (FBrf)          *E :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+!c P43.  Flag Disease for curation            DISEASE :noDOcur
+! P19.  Internal notes                   *H :??this should give an error as shouldn't be able to !c a new pub
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

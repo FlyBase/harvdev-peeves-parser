@@ -1,0 +1,89 @@
+! PUBLICATION PROFORMA                   Version 44:  6 Nov 2012
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0126825
+! P2.   Parent multipub abbreviation               *w :Cell
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :no_flag
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :noDOcur
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :checking A29 validation code
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+! ABERRATION PROFORMA                    Version 59: 05 Mar 2014
+!
+! A1a.  Aberration symbol to use in FlyBase                 *a :Ab(1)r20
+! A1b.  Aberration symbol(s) used in reference              *i :Ab(1)r20
+! A1e.  Action - rename this aberration symbol                 :
+! A1f.  Action - merge these aberrations (symbols)             :
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+! A2a.  Action - aberration name to use in FlyBase          *e :
+! A2b.  Aberration name(s) used in reference                *Q :
+! A2c.  Action - replace this aberration name                  :
+! A4.   Mutagen [CV]                                     *o :
+! A6.   Progenitor genotype                              *O :
+! A9.   Class of aberration, relative to progenitor (SO_term ; ID) [CV] *C :Df
+uDp
+! A26.  Class of aberration, relative to wild type (SO_term ; ID) [CV]  *C :
+! A15.  Internal notes                          *K :??error - more than one value
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENOTYPE VARIANT DATA FOR THIS ABERRATION
+! Insert genotype variant proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next aberration proforma below.
+! ABERRATION PROFORMA                    Version 59: 05 Mar 2014
+!
+! A1a.  Aberration symbol to use in FlyBase                 *a :Df(1)new # Df(2L)AC1
+! A1b.  Aberration symbol(s) used in reference              *i :
+! A1e.  Action - rename this aberration symbol                 :
+! A1f.  Action - merge these aberrations (symbols)             :
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :n # y
+! A2a.  Action - aberration name to use in FlyBase          *e :
+! A2b.  Aberration name(s) used in reference                *Q :
+! A2c.  Action - replace this aberration name                  :
+! A4.   Mutagen [CV]                                     *o :
+! A6.   Progenitor genotype                              *O :
+! A9.   Class of aberration, relative to progenitor (SO_term ; ID) [CV] *C :Df # fdhdsj
+! A26.  Class of aberration, relative to wild type (SO_term ; ID) [CV]  *C :
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENOTYPE VARIANT DATA FOR THIS ABERRATION
+! Insert genotype variant proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next aberration proforma below.
+! ABERRATION PROFORMA                    Version 59: 05 Mar 2014
+!
+! A1a.  Aberration symbol to use in FlyBase                 *a :Df(3)fds
+! A1b.  Aberration symbol(s) used in reference              *i :
+! A1e.  Action - rename this aberration symbol                 :
+! A1f.  Action - merge these aberrations (symbols)             :
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :n
+! A2a.  Action - aberration name to use in FlyBase          *e :
+! A2b.  Aberration name(s) used in reference                *Q :
+! A2c.  Action - replace this aberration name                  :
+! A4.   Mutagen [CV]                                     *o :
+! A6.   Progenitor genotype                              *O :
+! A9.   Class of aberration, relative to progenitor (SO_term ; ID) [CV] *C :
+! A26.  Class of aberration, relative to wild type (SO_term ; ID) [CV]  *C :fdsf
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENOTYPE VARIANT DATA FOR THIS ABERRATION
+! Insert genotype variant proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

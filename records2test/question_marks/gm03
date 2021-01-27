@@ -1,0 +1,49 @@
+! PUBLICATION PROFORMA                   Version 42:  01 Nov 2010
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0094055
+! P2.   Parent multipub (abbreviation)      *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! TRANSPOSON INSERTION PROFORMA                   Version 28: 10 Nov 2010
+!
+! MA1f. Database ID for insertion (FBti)       :new
+! MA1a. Insertion symbol to use in database    :P{lacW}cxcccc??should flag this line with new simple check for question marks
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :P{lacW}
+! MA20. Species of host genome                 :Dmel
+!
+! MA1c. Action - rename this insertion symbol    :
+! MA1g. Action - merge these insertion(s) (FBti) :
+!
+!
+! MA5a. Chromosomal location of insert                     :
+!
+!
+! MA8.  Phenotype (viable, fertile)            :
+!
+!
+!
+!
+!
+!
+!
+! MA10. Internal notes              :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

@@ -1,0 +1,103 @@
+! C1.  Curator ID	:sian
+! C2.  Date		:150115
+! C3.  Curator notes to self	:
+! C9.  Cambridge curation (new_al, merge, split, rename, new_char, pheno, new_transg, nocur) 
+! C4.  Additional curation (P41. wt_exp, pert_exp, neur_exp, gene_model, gene_model_nonmel, phys_int, cis_reg, genom_feat, no_flag, P42. novel_anat P43. disease)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 46:  20 Jun 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0201351
+! P2.   Parent multipub abbreviation               *w :Development
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :disease
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :disease
+! P44.  Disease(s) relevant to FBrf      [free text] :Familial cylindromatosis
+! P19.  Internal notes                   *H :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 8: Jun 08 2011
+!
+! F1f. Database id (default 'new')   :FBtr0322000
+! F1a. Gene product symbol           :CYLD-XR
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :
+!
+! F4. Names(s) used in paper [free text] :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e><t><a><s><note>) :
+<e> rtpc <t> E--A <a> organism <s><note>
+<e> rtpc <t> A | male <a> adult head <s><note>
+<e> rtpc <t> A | male <a> adult thorax <s><note>
+<e> rtpc <t> A | male <a> adult abdomen <s><note>
+<e> rtpc <t> A | female <a> adult head <s><note>
+<e> rtpc <t> A | female <a> adult thorax <s><note>
+<e> rtpc <t> A | female <a> adult abdomen <s><note>
+!
+! F15. General expression comment [free text] :
+!
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :n
+!     F11b. Is pattern aberrant relative to wild-type (y/n):n
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 8: Jun 08 2011
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :CYLD-XP
+! F3.  Gene product type [CV]        :protein SO:0000358
+! F2.  Sequence attribute [CV]	     :
+!
+! F4. Names(s) used in paper [free text] :
+!
+! F5. Molecule size(s) (wb, nb, sa)      :
+!
+! F9. Expression pattern (<e><t><a><s><note>) :
+<e> il <t> E | stage 1-5 <a> organism | ubiquitous <s><note>
+<e> il <t> E | stage 7 <a> mesoderm <s><note>
+<e> il <t> E | stage 7 <a> anterior endoderm <s><note>
+<e> il <t> E | stage 7 <a> posterior endoderm <s><note>
+<e> il <t> E | stage 12-14 <a> embryonic brain <s><note>
+<e> il <t> E | stage 12 <a> anterior midgut primordium <s><note>
+<e> il <t> E | stage 12 <a> posterior midgut primordium <s><note>
+<e> il <t> E | stage 12 <a> ventral nerve cord primordium <s><note>
+<e> il <t> E | stage 14 <a> fused midgut primordium <s><note>
+<e> il <t> E | stage 14 <a> embryonic hindgut <s><note>
+<e> il <t> E | stage 14 <a> ventral nerve cord <s><note>
+<e> il <t> A | female <a> ovary <s><note>
+<e> il <t> A | male <a> testis <s><note>
+<e> il <t> A <a> adult fat body <s><note>
+<e> il <t> A <a> antenna <s><note>
+<e> il <t> A <a> eye <s><note>
+!
+! F15. General expression comment [free text] :
+!
+! F10. Used as bodypart marker for [CV] :
+! F11. Expression pattern ascribed to (gene symbol) :
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :n
+!     F11b. Is pattern aberrant relative to wild-type (y/n):n
+!
+! F12. Antibody reported (monoclonal, polyclonal) :polyclonal
+blah
+polyclonal
+!
+! F16a. Nucleotide probe (cDNA, cDNA fragment, genomic fragment, synthetic) :
+!     F16b. Sequence coordinates for F16a   :
+!     F16c. Description of F16a [free text] :
+! F17. Alleles or genotypes used :
+!
+! F13. Comment  [free text]       :
+! F14. Internal note  [free text] :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!
+

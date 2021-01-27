@@ -1,0 +1,3 @@
+Note, Ruth also has some G1g check proformae in here peeves_test folder, so I tried not to overlap with those.
+
+The gm ones check cases of renames and merges to see if you've put the right G2 fields in.

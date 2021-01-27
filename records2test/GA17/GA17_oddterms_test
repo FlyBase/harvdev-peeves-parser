@@ -1,0 +1,22 @@
+
+Processing gm0012
+
+gm0012: P38: Not checking this field because of ?? in '??
+'
+
+gm0012: GA17: superfluous leading whitespace in ' Scer\GAL4[dpp.blk1]'
+
+gm0012: GA17: You have a (with ) statement '(with bw[2], bw[4]) chromosome, telomeric region' without having the allele in it, 'bw[4]', in its own allele proforma
+
+gm0012: GA17: 'acidic keratin' is not a valid body part
+
+
+This file failed at least one check:	gm0012
+
+Ignoring these 14 files:
+
+GA17	GA17_oddterms_test	gm0006%	gm0007%	gm0008%	gm0009%	gm0010%	gm0011%	gm0012%	peeves.crib
+peeves_test.cfg	peeves_test.cfg%	pub.crib	sent
+
+
+

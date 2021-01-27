@@ -1,0 +1,43 @@
+
+Processing gm0008
+
+gm0008: P38: Not checking this field because of ?? in '??
+'
+
+gm0008: GA17: superfluous leading whitespace in ' leg & chaeta'
+
+gm0008: GA17: superfluous leading whitespace in ' trichome'
+
+gm0008: GA17: 'larval midguts' is not a valid body part in 'larval midguts & embryos'
+
+gm0008: GA17: 'embryos' is not a valid body part in 'larval midguts & embryos'
+
+gm0008: GA17: 'meiotic cells cycle' is not a valid body part in 'meiotic cells cycle & sspindle | males'
+
+gm0008: GA17: 'sspindle' is not a valid body part in 'meiotic cells cycle & sspindle | males'
+
+gm0008: GA17: 'males' is not a valid qualifier in 'meiotic cells cycle & sspindle | males'
+
+gm0008: GA17: 'abdominal segment 56' is not a valid body part in 'abdominal segment 56 & pupariums & myoblasts | ectopics { Scer\GAL4[NP5169] }'
+
+gm0008: GA17: 'pupariums' is not a valid body part in 'abdominal segment 56 & pupariums & myoblasts | ectopics { Scer\GAL4[NP5169] }'
+
+gm0008: GA17: 'myoblasts' is not a valid body part in 'abdominal segment 56 & pupariums & myoblasts | ectopics { Scer\GAL4[NP5169] }'
+
+gm0008: GA17: 'ectopics' is not a valid qualifier in 'abdominal segment 56 & pupariums & myoblasts | ectopics { Scer\GAL4[NP5169] }'
+
+gm0008: GA17: 'acetoin catabolic process' is not a valid body part
+
+gm0008: GA17: 'copper-nicotianamine transporter activity' is not a valid body part
+
+gm0008: GA17: 'regulation of chromosome segregation' is not a valid body part
+
+
+This file failed at least one check:	gm0008
+
+Ignoring these 10 files:
+
+GA17	GA17_and_test	gm0006%	gm0007%	gm0008%	peeves.crib	peeves_test.cfg	peeves_test.cfg%	pub.crib	sent
+
+
+

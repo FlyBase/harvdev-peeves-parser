@@ -1,0 +1,89 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0211848
+! P2.   Parent multipub abbreviation               *w :Proc. Natl. Acad. Sci. U.S.A.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! DATASET/COLLECTION PROFORMA   Version 4.1   19 September 2017
+!
+! LC1f. Database ID for dataset  :new
+! LC1a. Symbol                   :new_dataset_symbol
+! LC1b. Symbol used in paper/source  :
+! LC1d. Nickname [for labels]        :
+! LC6g. Dataset title  :
+! LC6a. Description [free text]  :
+! LC2a. Type of dataset entity [CV term ; ID]  :reagent collection ; FBcv:0003027
+! LC2b. Type of dataset data [CV term ; ID]    :transgenic insertion collection ; FBcv:0003118
+! LC3. Dataset belongs_to this project  :
+! LC14a. Dataset assay/collection is assay_of this biosample  :
+! LC14b. Dataset result is analysis_of  :
+! LC14c. Dataset uses_reagent  :
+! LC14d. Dataset technical_reference_is  :
+! LC14e. Dataset biological_reference_is  :
+! LC14f. Dataset replaced_by  :
+! LC14g. Dataset genome_reference_is  :
+! LC14h. Reference FlyBase gene model annotation set [free text]  :
+! LC3a. Action - rename this dataset symbol    :
+! LC3b. Action - merge these datasets      :
+! LC3c. Action - delete dataset record [y/blank]   :
+! LC3d. Action - dissociate LC1f from FBrf [y/blank]  :
+! LC3e. Action - dissociate LC1f from this dataset  :
+! LC13a. Key GO term(s) - Cellular Component [CV term ; ID]  :
+! LC13b. Key GO term(s) - Molecular Function [CV term ; ID]  :
+! LC13c. Key GO term(s) - Biological Process [CV term ; ID]  :
+! LC13d. Key SO term(s) [CV term ; ID]  :
+! LC4a. Species of derivation [CV]  :Dmel
+! LC4i. Other species of interest [CV]  :
+! LC4h. Strain used [symbol]    :
+! LC4b. Strain used [free text]  :
+! LC4f. Genotype used [free text]  :
+! LC4g. Stage and tissue (<e>  <t>  <a>  <s>  <note>)  :
+! LC4j. Tissue of interest [CV term ; ID]   :
+! LC4k. Stage of interest [CV term ; ID]   :
+! LC4e. Cell line used [symbol]  :
+! LC12a. Experimental entity [FBid]  :
+! LC12b. Type of experimental entity [CV]  :
+! LC12c. Action - delete the dataset-feature relationship specified in LC12a/LC12b (y/blank)  :
+! LC6d. Dataset/collection members stored in database [Y/N]  :
+! LC6e. Number of entities in dataset/collection [if LC6d is N]   :
+! LC6f. Comment on number of entities in dataset/collection [free text]  :
+! LC11m. Experimental protocol - dataset [CV term ; ID]  :
+! LC11j. Experimental protocol - data analysis is secondary analysis (y/blank)  :
+! LC11a. Experimental protocol, source isolation and prep [free text]  :
+! LC6b. Experimental protocol, dataset/collection preparation [free text]  :
+! LC11c. Experimental protocol, mode of assay [free text]  :
+! LC11e. Experimental protocol, data analysis [free text]  :
+! LC7a. Types of additional data available [free text]  :
+! LC7f. Associated files, archived at ftp site [SoftCV]  :
+! LC7c. Additional data at [database name]  :
+! LC99a. DataSet Accession Number [dbxref.accession]  :
+! LC99b. Database name [database name]  :
+! LC99c. DataSet title [free text]  :
+! LC99d. Action - dissociate accession in LC99a/LC99b from dataset in LC1f/LC1a? (y/blank)  :
+! LC8a. Created by [database name]        :
+! LC8c. Created by [free text]      :
+! LC8b. Available from [database name]    :
+! LC8d. Available from [free text]  :
+! LC9. Additional comments  :
+! LC9a. Structured table [SoftCV]  :
+! LC10. Internal notes      :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

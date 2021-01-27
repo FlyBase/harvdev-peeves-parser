@@ -1,0 +1,41 @@
+! PUBLICATION PROFORMA                   Version 35:  28 Oct 2008
+!
+! P22.  FlyBase reference ID (FBrf)      *U :FBrf0076410
+! P21.  Parent multipub ID               *W :6201
+! P40.  Flag Cambridge for curation [SoftCV]  CAMCUR :
+! P41.  Flag Harvard for curation [SoftCV]   HARVCUR :no_flag
+! P19.  Internal notes                   *H :??Record to check X1h field.  sm100127.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION PROFORMA                    Version 45: 28 Oct 2008
+!
+! A1h.  :FBba0029569
+! A1a.  Aberration symbol to use in FlyBase                 *a :T(Y;3)x18
+! A1b.  Aberration symbol(s) used in reference              *i :T(Y;3)x18
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+! A2b.  Aberration name(s) used in reference                *Q :
+! A15.  Internal notes                          *K :FBba ID aberration proforma  - should be Peeves error.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENOTYPE VARIANT PROFORMA                 Version 21: 03 July 2008
+!
+! AB1h.  :FBba0000353
+! AB1a.  Genotype variant symbol to use in FlyBase                 *I :T(Y;3)x18.2
+! AB1b.  Genotype variant symbol(s) used in reference              *i :T(Y;3)x18.2
+! AB1e.  Action - rename this genotype variant symbol                 :
+! AB1f.  Action - merge these genotype variants (symbols)             :
+! AB1g.  Is AB1a the current symbol of a genotype variant in FlyBase? :y
+! AB2a.  Action - genotype variant name to use in FlyBase          *e :
+! AB2b.  Genotype variant name(s) used in reference                *Q :
+! AB2c.  Action - replace this/these genotype variant name(s)         :
+! AB11a. Action - obsolete AB1a in FlyBase       TAKE CARE :
+! AB11b. Action - dissociate AB1a from reference TAKE CARE :
+! AB10.  Nickname                                            *U :
+! AB8.   Is AB1a used/usable as a balancer? (y/n)            *u :y
+! AB3.   Culprit                *w :
+! AB9.   Progenitor chromosome  *u :
+! AB5a.  Transposon insertions  *P :
+! AB5b.  Non-insertion alleles  *S :
+! AB6.   Miscellaneous comments *u :
+! AB7.   Internal notes         *K :this is all correct - Peeves error NOT expected.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

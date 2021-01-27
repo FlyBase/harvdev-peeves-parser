@@ -1,0 +1,89 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 42:  01 Nov 2010
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0206799
+! P2.   Parent multipub (abbreviation)      *w :Dev. Biol.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P19.  Internal notes                   *H :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 50: 02 Mar 2010
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Dip3[R40H]
+! GA1b.  Allele symbol(s) used in reference                     *i :Dip3[R40H]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA90a. Allele to which FA90b-k apply  [dupl for multiple] :Dip3[R40H]
+!   GA90k. Molecular nature (type) of  lesion:point_mutation
+!   GA90b. Genomic location of lesion               :2R:14016505..14016505
+!   GA90c. Genome release number for entry in GA90b :5
+!   GA90i. Orientation relative to chromosome (+/-):+
+!   GA90d. NA change: "C to T"  (location in GA90b) :G14016505A
+!   GA90e. Reported NA change:
+!   GA90f. Reported PR change:R40H
+!   GA90g. Computed PR change (derived)   :R40H | Dip3-PA
+!   GA90h. Linked to restriction fragment :
+!   GA90j. Comments concerning sequence location:Site of nucleotide substitution in mutant inferred by FlyBase based on reported amino acid change.
+
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 50: 02 Mar 2010
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Dip3[H50P]
+! GA1b.  Allele symbol(s) used in reference                     *i :Dip3[H50P]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA90a. Allele to which FA90b-k apply  [dupl for multiple] :Dip3[H50P]
+!   GA90k. Molecular nature (type) of  lesion:point_mutation
+!   GA90b. Genomic location of lesion               :2R:14016535..14016535
+!   GA90c. Genome release number for entry in GA90b :5
+!   GA90i. Orientation relative to chromosome (+/-):+
+!   GA90d. NA change: "C to T"  (location in GA90b) :A14016535C
+!   GA90e. Reported NA change:
+!   GA90f. Reported PR change:H50P
+!   GA90g. Computed PR change (derived)   :H50P | Dip3-PA
+!   GA90h. Linked to restriction fragment :
+!   GA90j. Comments concerning sequence location:Site of nucleotide substitution in mutant inferred by FlyBase based on reported amino acid change.
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 50: 02 Mar 2010
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Dip3[T97M]
+! GA1b.  Allele symbol(s) used in reference                     *i :Dip3[T97M]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA90a. Allele to which FA90b-k apply  [dupl for multiple] :Dip3[T97M]
+!   GA90k. Molecular nature (type) of  lesion:point_mutation
+!   GA90b. Genomic location of lesion               :2R:14016753..14016753
+!   GA90c. Genome release number for entry in GA90b :5
+!   GA90i. Orientation relative to chromosome (+/-):+
+!   GA90d. NA change: "C to T"  (location in GA90b) :C14016753T
+!   GA90e. Reported NA change:
+!   GA90f. Reported PR change:T97M
+!   GA90g. Computed PR change (derived)   :T97M | Dip3-PA
+!   GA90h. Linked to restriction fragment :
+!   GA90j. Comments concerning sequence location:Site of nucleotide substitution in mutant inferred by FlyBase based on reported amino acid change.
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 50: 02 Mar 2010
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Dip3[K126M]
+! GA1b.  Allele symbol(s) used in reference                     *i :Dip3[K126M]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA90a. Allele to which FA90b-k apply  [dupl for multiple] :Dip3[K126M]
+!   GA90k. Molecular nature (type) of  lesion:point_mutation
+!   GA90b. Genomic location of lesion               :2R:14016840..14016840
+!   GA90c. Genome release number for entry in GA90b :5
+!   GA90i. Orientation relative to chromosome (+/-):+
+!   GA90d. NA change: "C to T"  (location in GA90b) :A14016840T
+!   GA90e. Reported NA change:
+!   GA90f. Reported PR change:K126M
+!   GA90g. Computed PR change (derived)   :K126M | Dip3-PA
+!   GA90h. Linked to restriction fragment :
+!   GA90j. Comments concerning sequence location:Site of nucleotide substitution in mutant inferred by FlyBase based on reported amino acid change.
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

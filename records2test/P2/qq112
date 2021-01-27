@@ -1,0 +1,24 @@
+! PUBLICATION PROFORMA    Version 41:  16 Mar 2010
+!
+! P22. FlyBase reference ID (FBrf) or "new"                         *U :new
+! P1. Type of publication [SoftCV]                                 [SoftCV]  *T :paper
+! P2. Parent multipub (abbreviation)                                *w :Nature
+! P12. Author(s)                                                *a-*b :Navarro	J.A.
+Ohmann	E.
+Sanchez	D.
+Botella	J.A.
+Liebisch	G.
+Moltó	M.D.
+Ganfornina	M.D.
+Schmitz	G.
+Schneuwly	S.
+! P10. Year or date (YYYY.M.D) if PC                               *t :2010
+! P16. Title                                                       *u :Altered lipid metabolism in a Drosophila model of Friedreich's ataxia.
+! P3. Volume number                                                *y :19
+! P4. Issue number                                                 *Y :14
+! P11a. Page range or article number                                *z :2828--2840
+! P11d. DOI                                                            :10.1093/hmg/ddq183
+! P13. Language of publication [CV]                                *L :English
+! P26. PubMed ID                                                    *M :20460268
+! P19. Internal notes                                              *H :?? the correct entry in P2 is 'Hum. Mol. Genet.', but currently I can put anything at all in this field (when P22 =new) without Peeves complaining.  sm100709.
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

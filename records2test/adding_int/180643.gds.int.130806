@@ -1,0 +1,121 @@
+! C1.  Curator ID	:gds
+! C2.  Date		:130806
+! C3.  Curator notes to self	:
+! C9.  Cambridge curation (new_al, merge, split, rename, new_char, pheno, nocur, new_transg) 
+! C4.  Additional curation (P41. wt_exp, pert_exp, neur_exp, gene_model, gene_model_nonmel, phys_int, cis_reg, genom_feat, no_flag, P42. novel_anat)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 43:  17 Jun 2011
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0167524
+! P2.   Parent multipub abbreviation               *w :Cell
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA             Version 2.6  15 Nov 2011
+!
+! IN1f. Database ID for interaction  :FBrf0180643-1.Y2H
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :n
+! IN2a. Interaction description (protein-protein/RNA-protein)     :protein-protein
+! IN2b. Interaction type (Termlink MI CV) :physical association
+! IN3.  Interaction assay (Termlink MI CV)    :two hybrid
+! IN5e. Comments concerning source   :Source was yeast cell line; bait produced as transgenic fusion protein; prey produced as transgenic fusion protein (prey from cDNA expression library).
+! IN6.  List of interactors (FB symbol or ids), role (Termlink MI CV), qualifier ( <symbol>  <ID_as_reported>  <role>  <qual/note> ):
+<symbol> cup-XP <ID_as_reported> Cup <role> bait <qual/note> fused to GAL4 DNA-binding domain
+<symbol> eIF-4E-XP <ID_as_reported> eIF4E <role> prey <qual/note> fused to GAL4 activation domain
+! IN7c. Subregion(s) of participant(s) with role in interaction ( <link to>  <description> region <role> unspecified role <coordinates/seq>  <note> ):
+<link to> eIF-4E-XP <description> C-terminal region <role> sufficient binding site <coordinates/seq> aa 89-259 <note>
+! IN7b. Comments concerning experimental data:Two-hybrid system: yeast GAL4-BD/GAL4-AD
+! IN8a. Public comments   :11 of 24 positives represented clones of @eIF-4E@.
+! IN8b. Internal comments :Fig1A
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA             Version 2.6  15 Nov 2011
+!
+! IN1f. Database ID for interaction  :FBrf0180643-2.Y2H
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :n
+! IN2a. Interaction description (protein-protein/RNA-protein)     :protein-protein
+! IN2b. Interaction type (Termlink MI CV) :physical association
+! IN3.  Interaction assay (Termlink MI CV)    :two hybrid
+! IN5e. Comments concerning source   :Source was yeast cell line; bait produced as transgenic fusion protein; prey produced as transgenic fusion protein (prey was previously cloned reagent).
+! IN6.  List of interactors (FB symbol or ids), role (Termlink MI CV), qualifier ( <symbol>  <ID_as_reported>  <role>  <qual/note> ):
+<symbol> eIF-4E-XP <ID_as_reported> eIF4E <role> bait <qual/note> fused to GAL4 DNA-binding domain
+<symbol> cup-XP <ID_as_reported> Cup <role> prey <qual/note> fused to GAL4 activation domain
+! IN7c. Subregion(s) of participant(s) with role in interaction ( <link to>  <description> region <role> unspecified role <coordinates/seq>  <note> ):
+<link to> cup-XP <description> eIF4E-binding motif <role> sufficient binding site <coordinates/seq> aa 324-453 <note>
+<link to> cup-XP <description> eIF4E-binding motif <role> mutation disrupting interaction <coordinates/seq> aa 342-348 <note> Y342A, L347A, M348A triple 'MEBS' mutant
+! IN7b. Comments concerning experimental data:Two-hybrid system: yeast GAL4-BD/GAL4-AD
+! IN8a. Public comments   :
+! IN8b. Internal comments :Fig4ADE
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA             Version 2.6  15 Nov 2011
+!
+! IN1f. Database ID for interaction  :FBrf0180643-3.PD.WB
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :n
+! IN2a. Interaction description (protein-protein/RNA-protein)     :protein-protein
+! IN2b. Interaction type (Termlink MI CV) :physical association
+! IN3.  Interaction assay (Termlink MI CV)    :pull down
+western blot
+! IN5b. Stage and tissue ( <e> <t> <a> <s> <note> ) :
+<e> <t> A | female <a> ovary <s> <note>
+! IN5e. Comments concerning source   :Interaction in vitro; bait produced as a recombinant fusion protein in bacterial system; prey derived from wild-type ovarian extract.
+! IN6.  List of interactors (FB symbol or ids), role (Termlink MI CV), qualifier ( <symbol>  <ID_as_reported>  <role>  <qual/note> ):
+<symbol> eIF-4E-XP <ID_as_reported> eIF4E <role> bait <qual/note> GST tag
+<symbol> cup-XP <ID_as_reported> Cup <role> prey <qual/note>
+! IN7b. Comments concerning experimental data:
+! IN8a. Public comments   :
+! IN8b. Internal comments :Fig1B
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA             Version 2.6  15 Nov 2011
+!
+! IN1f. Database ID for interaction  :FBrf0180643-4.PD.A
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :n
+! IN2a. Interaction description (protein-protein/RNA-protein)     :protein-protein
+! IN2b. Interaction type (Termlink MI CV) :physical association
+! IN3.  Interaction assay (Termlink MI CV)    :pull down
+autoradiography
+! IN5e. Comments concerning source   :Interaction in vitro; bait produced as a recombinant fusion protein in bacterial system; prey produced and labeled by in vitro translation.
+! IN6.  List of interactors (FB symbol or ids), role (Termlink MI CV), qualifier ( <symbol>  <ID_as_reported>  <role>  <qual/note> ):
+<symbol> eIF-4E-XP <ID_as_reported> eIF4E <role> bait <qual/note> GST tag
+<symbol> cup-XP <ID_as_reported> Cup <role> prey <qual/note> [35]S label
+! IN7c. Subregion(s) of participant(s) with role in interaction ( <link to>  <description> region <role> unspecified role <coordinates/seq>  <note> ):
+<link to> cup-XP <description> eIF4E-binding motif <role> sufficient binding site <coordinates/seq> aa 324-453 <note>
+! IN7b. Comments concerning experimental data:
+! IN8a. Public comments   :
+! IN8b. Internal comments :Fig4B
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA             Version 2.6  15 Nov 2011
+!
+! IN1f. Database ID for interaction  :FBrf0180643-5.coIP.A
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :n
+! IN2a. Interaction description (protein-protein/RNA-protein)     :protein-protein
+! IN2b. Interaction type (Termlink MI CV) :physical association
+! IN3.  Interaction assay (Termlink MI CV)    :anti tag coimmunoprecipitation
+autoradiography
+! IN5e. Comments concerning source   :Interaction in vitro; bait produced and labeled by in vitro translation; prey produced and labeled by in vitro translation.
+! IN6.  List of interactors (FB symbol or ids), role (Termlink MI CV), qualifier ( <symbol>  <ID_as_reported>  <role>  <qual/note> ):
+<symbol> eIF-4E-XP <ID_as_reported> eIF4E <role> bait <qual/note> HA tag, [35]S label
+<symbol> cup-XP <ID_as_reported> Cup <role> prey <qual/note> [35]S label
+! IN7c. Subregion(s) of participant(s) with role in interaction ( <link to>  <description> region <role> unspecified role <coordinates/seq>  <note> ):
+<link to> cup-XP <description> eIF4E-binding motif <role> sufficient binding site <coordinates/seq> aa 324-453 <note>
+! IN7b. Comments concerning experimental data:
+! IN8a. Public comments   :@cup@ and @@ compete for binding to @eIF-4E@.
+! IN8b. Internal comments :Fig4C, Fig5A
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA             Version 2.6  15 Nov 2011
+!
+! IN1f. Database ID for interaction  :FBrf0180643-6.coIP.A
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :n
+! IN2a. Interaction description (protein-protein/RNA-protein)     :protein-protein
+! IN2b. Interaction type (Termlink MI CV) :physical association
+! IN3.  Interaction assay (Termlink MI CV)    :anti tag coimmunoprecipitation
+autoradiography
+! IN5e. Comments concerning source   :Interaction in vitro; bait produced and labeled by in vitro translation; prey produced and labeled by in vitro translation.
+! IN6.  List of interactors (FB symbol or ids), role (Termlink MI CV), qualifier ( <symbol>  <ID_as_reported>  <role>  <qual/note> ):
+<symbol> eIF-4E-XP <ID_as_reported> eIF4E <role> bait <qual/note> HA tag, [35]S label
+<symbol> eIF4G-XP <ID_as_reported> 4G-200 <role> prey <qual/note> [35]S label
+! IN7c. Subregion(s) of participant(s) with role in interaction ( <link to>  <description> region <role> unspecified role <coordinates/seq>  <note> ):
+<link to> eIF4G-XP <description> eIF4E-binding motif <role> sufficient binding site <coordinates/seq> aa 199-399 <note>
+! IN7b. Comments concerning experimental data:
+! IN8a. Public comments   :@cup@ and @@ compete for binding to @eIF-4E@.
+! IN8b. Internal comments :Fig5A
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!
+

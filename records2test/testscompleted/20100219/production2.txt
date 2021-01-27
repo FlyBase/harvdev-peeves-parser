@@ -1,0 +1,800 @@
+
+Processing gm25128.edit
+
+gm25128.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25128.edit: No data in either G1b or G2b for 'Ecol\lacZ'
+
+gm25128.edit: GA32b: Do you *really* want to dissociate 'Ecol\lacZ[ftz.PC]' from FBrf0137201?
+
+gm25128.edit: MS1i: Do you REALLY want to dissociate 'FBtp0000176' from FBrf0137201?
+
+gm25128.edit: Invalid proforma field  MS18a. Cloning sites [CV]    :
+
+
+Processing gm25123.edit
+
+gm25123.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25123.edit: G1g claims that Mmus\Gprc5b is not an existing gene symbol, but Chado knows it as FBgn0261620
+
+gm25123.edit: No data in either G1b or G2b for 'Mmus\Gprc5b'
+
+gm25123.edit: G1g claims that Mmus\Gprc5d is not an existing gene symbol, but Chado knows it as FBgn0261621
+
+gm25123.edit: No data in either G1b or G2b for 'Mmus\Gprc5d'
+
+
+Processing gm25120.bibl
+
+gm25120.bibl: P1: Trying to change publication type to the value (review) it already has in Chado
+
+
+Processing gm25119.bibl
+
+gm25119.bibl: P1: Trying to change publication type to the value (review) it already has in Chado
+
+
+Processing gm25118.bibl
+
+gm25118.bibl: P1: Trying to change publication type to the value (review) it already has in Chado
+
+
+Processing gm25117.bibl
+
+gm25117.bibl: P1: Trying to change publication type to the value (review) it already has in Chado
+
+
+Processing gm25116.bibl
+
+gm25116.bibl: P1: Trying to change publication type to the value (review) it already has in Chado
+
+
+Processing gm25115.bibl
+
+gm25115.bibl: P1: Trying to change publication type to the value (review) it already has in Chado
+
+
+Processing gm25114.bibl
+
+gm25114.bibl: P1: Trying to change publication type to the value (review) it already has in Chado
+
+
+Processing gm25113.bibl
+
+gm25113.bibl: P1: Trying to change publication type to the value (review) it already has in Chado
+
+
+Processing gm25112.bibl
+
+gm25112.bibl: P1: Trying to change publication type to the value (review) it already has in Chado
+
+
+Processing gm25111.bibl
+
+gm25111.bibl: P1: Trying to change publication type to the value (review) it already has in Chado
+
+
+Processing gm25110.bibl
+
+gm25110.bibl: P1: Trying to change publication type to the value (review) it already has in Chado
+
+
+Processing gm25109
+
+gm25109: GA10a: NEW:'P{su(f)-lacZ.P}' is not new and Chado knows it as FBtp0051887
+
+gm25109: P41: Missing data.
+
+gm25109: No data in either G1b or G2b for 'su(f)'
+
+gm25109: GA1g claims that su(f)[P.T:Ecol\lacZ] is not an existing allele symbol, but Chado knows it as FBal0241449
+
+gm25109: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm25109: G31b: Do you *really* want to dissociate 'Dvir\su(f)' from FBrf0131325?
+
+gm25109: No data in either G1b or G2b for 'Dvir\su(f)'
+
+
+Processing gm25108
+
+gm25108: GA10a: NEW:'P{UAS-Asator-GFP.Q}' is not new and Chado knows it as FBtp0051886
+
+gm25108: GA10c: NEW:'P{?SUPor-P}Asator[exc]' is not new and Chado knows it as FBti0128370
+
+gm25108: GA10a: NEW:'P{UAS-Asator-GFP.Q}' is not new and Chado knows it as FBtp0051886
+
+gm25108: P41: Missing data.
+
+gm25108: No data in either G1b or G2b for 'Asator'
+
+gm25108: GA1g claims that Asator[Scer\UAS.T:Avic\GFP] is not an existing allele symbol, but Chado knows it as FBal0241447
+
+gm25108: GA1g claims that Asator[exc] is not an existing allele symbol, but Chado knows it as FBal0241448
+
+gm25108: No data in either G1b or G2b for 'w'
+
+gm25108: No data in either G1b or G2b for 'Scer\GAL4'
+
+
+Processing gm25107.edit
+
+gm25107.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25107.edit: No data in either G1b or G2b for 'Ecol\lacZ'
+
+gm25107.edit: GA1f: 'Ecol\lacZ[&bgr;Tub56D.i]' is not a valid allele symbol
+
+
+Processing gm25105
+
+gm25105: P41: Missing data.
+
+gm25105: G1f: 'l(3)S003108' is not a valid gene symbol
+
+gm25105: G1f: 'l(3)S022529' is not a valid gene symbol
+
+gm25105: No data in either G1b or G2b for 'larp'
+
+gm25105: GA1f: 'larp[mtrw]' is not a valid allele symbol
+
+gm25105: GA1f: 'l(3)S003108[S003108]' is not a valid allele symbol
+
+gm25105: GA1g claims that larp[S003108] is not an existing allele symbol, but Chado knows it as FBal0241443
+
+gm25105: GA1f: 'larp[mtr1]' is not a valid allele symbol
+
+gm25105: GA1f: 'l(3)S022529[S022529]' is not a valid allele symbol
+
+gm25105: GA1g claims that larp[S022529] is not an existing allele symbol, but Chado knows it as FBal0241444
+
+gm25105: GA1g claims that larp[mtr-null] is not an existing allele symbol, but Chado knows it as FBal0241445
+
+gm25105: No data in either G1b or G2b for 'Avic\GFP'
+
+gm25105: No data in either G1b or G2b for 'polo'
+
+gm25105: G1f: 'l(2)SH1908' is not a valid gene symbol
+
+gm25105: No data in either G1b or G2b for 'pAbp'
+
+gm25105: GA1e: l(2)SH1908[SH1908] is not a valid allele symbol in Chado
+
+gm25105: GA1g claims that pAbp[SH1908] is not an existing allele symbol, but Chado knows it as FBal0143561
+
+gm25105: MA20: Invalid species ''
+
+gm25105: MA20: Invalid species ''
+
+gm25105: MA20: Invalid species ''
+
+
+Processing gm25104.edit
+
+gm25104.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25104.edit: No data in either G1b or G2b for 'prel'
+
+gm25104.edit: No data in either G1b or G2b for 'debcl'
+
+
+Processing gm25103.edit
+
+gm25103.edit: No data in either A1b or A2b for 'In(2LR)Gla'
+
+
+Processing gm25102
+
+gm25102: P41: Missing data.
+
+gm25102: G1e: SP1070 is not a valid gene symbol in Chado
+
+gm25102: G1g claims that uif is not an existing gene symbol, but Chado knows it as FBgn0031879
+
+gm25102: No data in either G1b or G2b for 'uif'
+
+gm25102: GA1g claims that uif[1] is not an existing allele symbol, but Chado knows it as FBal0241440
+
+gm25102: GA1g claims that uif[2B7] is not an existing allele symbol, but Chado knows it as FBal0241441
+
+gm25102: GA1g claims that uif[1A15] is not an existing allele symbol, but Chado knows it as FBal0241442
+
+gm25102: GA1e: SP1070[GD139] is not a valid allele symbol in Chado
+
+gm25102: GA1g claims that uif[GD139] is not an existing allele symbol, but Chado knows it as FBal0208457
+
+gm25102: No data in either G1b or G2b for 'E(br)155'
+
+gm25102: No data in either G1b or G2b for 'Scer\GAL4'
+
+
+Processing gm25100.edit
+
+gm25100.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25100.edit: No data in either G1b or G2b for 'CG42678'
+
+
+Processing gm25097
+
+gm25097: GA10a: NEW:'P{VDRC.Ilp6.U}' is not new and Chado knows it as FBtp0051883
+
+gm25097: GA10a: NEW:'P{UAS-InR.RNAi.U}' is not new and Chado knows it as FBtp0051884
+
+gm25097: P41: Missing data.
+
+gm25097: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm25097: No data in either G1b or G2b for 'EcR'
+
+gm25097: No data in either G1b or G2b for 'Ilp6'
+
+gm25097: GA1g claims that Ilp6[41] is not an existing allele symbol, but Chado knows it as FBal0241437
+
+gm25097: GA1g claims that Ilp6[VDRC.cUa] is not an existing allele symbol, but Chado knows it as FBal0241438
+
+gm25097: No data in either G1b or G2b for 'Tsc1'
+
+gm25097: No data in either G1b or G2b for 'gig'
+
+gm25097: No data in either G1b or G2b for 'Pi3K92E'
+
+gm25097: No data in either G1b or G2b for 'InR'
+
+gm25097: GA1g claims that InR[dsRNA.cUa] is not an existing allele symbol, but Chado knows it as FBal0241439
+
+gm25097: No data in either G1b or G2b for 'Scer\GAL80'
+
+gm25097: A1g claims that Df(1)Ilp6[68] is not an existing aberration symbol, but Chado knows it as FBab0046103
+
+
+Processing gm25093
+
+gm25093: GA1g claims that Hr96[&Dgr;96TG.GFP.Scer\SceI.RS] is not an existing allele symbol, but Chado knows it as FBal0241436
+
+gm25093: No data in either G1b or G2b for 'Avic\GFP'
+
+gm25093: No data in either G1b or G2b for 'w'
+
+gm25093: Invalid proforma field  MS18a. Cloning sites [CV]    :
+
+
+Processing gm25067.edit
+
+gm25067.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25067.edit: No data in either G1b or G2b for 'Ggal\NgCAM'
+
+gm25067.edit: No data in either G1b or G2b for 'Hsap\LIX1'
+
+gm25067.edit: G2a: You have given data (Lix1 homolog (chicken)) for an existing gene 'Hsap\LIX1'.  Did you mean to put it in G2b?
+
+gm25067.edit: No data in either G1b or G2b for 'Hsap\LIX1L'
+
+gm25067.edit: G2a: You have given data (Lix1 homolog (mouse)-like) for an existing gene 'Hsap\LIX1L'.  Did you mean to put it in G2b?
+
+
+Processing gm25046
+
+gm25046: GA10a: NEW:'P{sd-GAL4.U}' is not new and Chado knows it as FBtp0051875
+
+gm25046: GA10c: NEW:'P{Mae-UAS.6.11}tow[UY1146]' is not new and Chado knows it as FBti0128365
+
+gm25046: GA10a: NEW:'P{UAS-tow.A1}' is not new and Chado knows it as FBtp0051876
+
+gm25046: GA10a: NEW:'P{UAS-tow.GH12583}' is not new and Chado knows it as FBtp0051877
+
+gm25046: GA10a: NEW:'P{UAS-tow.&Dgr;N}' is not new and Chado knows it as FBtp0051878
+
+gm25046: GA10a: NEW:'P{UAS-tow.5'UTR}' is not new and Chado knows it as FBtp0051879
+
+gm25046: GA10a: NEW:'P{UAS-tow.&Dgr;C}' is not new and Chado knows it as FBtp0051880
+
+gm25046: GA10a: NEW:'P{NIG.3595R}' is not new and Chado knows it as FBtp0051881
+
+gm25046: GA10a: NEW:'P{UAS-tow.A1}' is not new and Chado knows it as FBtp0051876
+
+gm25046: GA10a: NEW:'P{UAS-tow.GH12583}' is not new and Chado knows it as FBtp0051877
+
+gm25046: GA10a: NEW:'P{UAS-tow.&Dgr;N}' is not new and Chado knows it as FBtp0051878
+
+gm25046: GA10a: NEW:'P{UAS-tow.5'UTR}' is not new and Chado knows it as FBtp0051879
+
+gm25046: P41: Missing data.
+
+gm25046: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm25046: GA1g claims that Scer\GAL4[sd.PU] is not an existing allele symbol, but Chado knows it as FBal0241428
+
+gm25046: No data in either G1b or G2b for 'tow'
+
+gm25046: GA1g claims that tow[UY1146] is not an existing allele symbol, but Chado knows it as FBal0241429
+
+gm25046: GA1g claims that tow[A1.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0241430
+
+gm25046: GA1g claims that tow[GH12583.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0241431
+
+gm25046: GA1g claims that tow[&Dgr;N.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0241432
+
+gm25046: GA1g claims that tow[5'UTR.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0241433
+
+gm25046: GA1g claims that tow[&Dgr;C.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0241434
+
+gm25046: No data in either G1b or G2b for 'ptc'
+
+gm25046: No data in either G1b or G2b for 'fu'
+
+gm25046: No data in either G1b or G2b for 'cos'
+
+gm25046: No data in either G1b or G2b for 'N'
+
+gm25046: No data in either G1b or G2b for 'sqh'
+
+gm25046: GA1g claims that sqh[NIG.3595R] is not an existing allele symbol, but Chado knows it as FBal0241435
+
+gm25046: No data in either G1b or G2b for 'w'
+
+gm25046: No data in either G1b or G2b for 'Ecol\lacZ'
+
+gm25046: No data in either G1b or G2b for 'wg'
+
+gm25046: No data in either G1b or G2b for 'Su(fu)'
+
+
+Processing gm24997
+
+gm24997: GA10a: NEW:'P{UAS-nej.RNAi.Y}' is not new and Chado knows it as FBtp0051872
+
+gm24997: GA10a: NEW:'P{UAS-nej.Y}' is not new and Chado knows it as FBtp0051873
+
+gm24997: GA10e: NEW:'P{GAL4}SG' is not new and Chado knows it as FBti0128364
+
+gm24997: GA10a: NEW:'P{UAS-th.Y}' is not new and Chado knows it as FBtp0051874
+
+gm24997: G1f: 'l(1)G0350' is not a valid gene symbol
+
+gm24997: G1f: 'l(1)G0112' is not a valid gene symbol
+
+gm24997: G1f: 'l(1)G0470' is not a valid gene symbol
+
+gm24997: G1f: 'CG15321' is not a valid gene symbol
+
+gm24997: GA1e: l(1)G0350[G0350] is not a valid allele symbol in Chado
+
+gm24997: GA1g claims that nej[G0350] is not an existing allele symbol, but Chado knows it as FBal0100311
+
+gm24997: GA1e: l(1)G0112[G0112] is not a valid allele symbol in Chado
+
+gm24997: GA1g claims that nej[G0112] is not an existing allele symbol, but Chado knows it as FBal0098200
+
+gm24997: GA1e: l(1)G0470[G0470] is not a valid allele symbol in Chado
+
+gm24997: GA1g claims that nej[G0470] is not an existing allele symbol, but Chado knows it as FBal0103723
+
+gm24997: GA1g claims that nej[dsRNA.Scer\UAS.cYa] is not an existing allele symbol, but Chado knows it as FBal0241424
+
+gm24997: GA1g claims that nej[Scer\UAS.cYa] is not an existing allele symbol, but Chado knows it as FBal0241425
+
+gm24997: No data in either G1b or G2b for 'rpr'
+
+gm24997: No data in either G1b or G2b for 'EcR'
+
+gm24997: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm24997: GA1g claims that Scer\GAL4[SG] is not an existing allele symbol, but Chado knows it as FBal0241426
+
+gm24997: G31b: Do you *really* want to dissociate 'Sgs3' from FBrf0202209?
+
+gm24997: No data in either G1b or G2b for 'Sgs3'
+
+gm24997: GA1g claims that th[Scer\UAS.cYa] is not an existing allele symbol, but Chado knows it as FBal0241427
+
+gm24997: MA20: Invalid species ''
+
+gm24997: MA20: Invalid species ''
+
+gm24997: MA20: Invalid species ''
+
+
+Processing gm24809
+
+gm24809: GA10a: NEW:'P{UAS-SNF1A.M}' is not new and Chado knows it as FBtp0051870
+
+gm24809: GA10a: NEW:'P{UAS-mCherry-SNF1A}' is not new and Chado knows it as FBtp0051871
+
+gm24809: GA10a: NEW:'P{UAS-SNF1A.M}' is not new and Chado knows it as FBtp0051870
+
+gm24809: GA10a: NEW:'P{UAS-mCherry-SNF1A}' is not new and Chado knows it as FBtp0051871
+
+gm24809: P41: Missing data.
+
+gm24809: GA1g claims that SNF1A[1] is not an existing allele symbol, but Chado knows it as FBal0241419
+
+gm24809: GA1g claims that SNF1A[2] is not an existing allele symbol, but Chado knows it as FBal0241420
+
+gm24809: GA1g claims that SNF1A[3] is not an existing allele symbol, but Chado knows it as FBal0241421
+
+gm24809: GA1g claims that SNF1A[Scer\UAS.cMa] is not an existing allele symbol, but Chado knows it as FBal0241422
+
+gm24809: GA1g claims that SNF1A[Scer\UAS.T:Disc\RFP-mCherry] is not an existing allele symbol, but Chado knows it as FBal0241423
+
+gm24809: No data in either G1b or G2b for 'lkb1'
+
+gm24809: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm24809: No data in either G1b or G2b for 'CoVa'
+
+gm24809: No data in either G1b or G2b for 'w'
+
+
+Processing pm2166
+
+pm2166: P41: Missing data.
+
+pm2166: P21: Missing data
+
+pm2166: G1g claims that Aper\APO-3 is not an existing gene symbol, but Chado knows it as FBgn0261622
+
+
+Processing pm2164
+
+pm2164: GA10a: NEW:'P{UAS-Mlf.WT}' is not new and Chado knows it as FBtp0051894
+
+pm2164: GA10a: NEW:'P{UAS-Mlf.FLAG}' is not new and Chado knows it as FBtp0051895
+
+pm2164: GA10a: NEW:'P{UAS-pros.20Q}' is not new and Chado knows it as FBtp0051896
+
+pm2164: GA10a: NEW:'P{UAS-pros.127Q}' is not new and Chado knows it as FBtp0051897
+
+pm2164: GA10a: NEW:'P{UAS-pros.63Q}' is not new and Chado knows it as FBtp0051898
+
+pm2164: GA10a: NEW:'P{UAS-pros.223Q}' is not new and Chado knows it as FBtp0051899
+
+pm2164: GA10a: NEW:'P{5xGMR.127Q}' is not new and Chado knows it as FBtp0051900
+
+pm2164: GA10a: NEW:'P{GMR-127Q}' is not new and Chado knows it as FBtp0051901
+
+pm2164: GA10a: NEW:'P{UAS-zen.K}' is not new and Chado knows it as FBtp0051902
+
+pm2164: GA10a: NEW:'P{UAS-Zzzz\CAG.63Q}' is not new and Chado knows it as FBtp0051903
+
+pm2164: P41: Missing data.
+
+pm2164: GA1g claims that Mlf[Scer\UAS.cKb] is not an existing allele symbol, but Chado knows it as FBal0241459
+
+pm2164: GA1g claims that Mlf[Scer\UAS.T:Zzzz\FLAG] is not an existing allele symbol, but Chado knows it as FBal0241460
+
+pm2164: No data in either G1b or G2b for 'Scer\GAL4'
+
+pm2164: No data in either G1b or G2b for 'Ecol\lacZ'
+
+pm2164: GA1g claims that pros[Zzzz\CAG.20Q.Scer\UAS.T:Ivir\HA1] is not an existing allele symbol, but Chado knows it as FBal0241461
+
+pm2164: GA1g claims that pros[Zzzz\CAG.127Q.Scer\UAS.T:Ivir\HA1] is not an existing allele symbol, but Chado knows it as FBal0241462
+
+pm2164: GA1g claims that pros[Zzzz\CAG.63Q.Scer\UAS.T:Ivir\HA1] is not an existing allele symbol, but Chado knows it as FBal0241463
+
+pm2164: GA1g claims that pros[Zzzz\CAG.223Q.Scer\UAS.T:Ivir\HA1] is not an existing allele symbol, but Chado knows it as FBal0241464
+
+pm2164: No data in either G1b or G2b for 'GMR'
+
+pm2164: GA1g claims that GMR[5x.Zzzz\CAG.127Q] is not an existing allele symbol, but Chado knows it as FBal0241465
+
+pm2164: GA1g claims that GMR[Zzzz\CAG.127Q] is not an existing allele symbol, but Chado knows it as FBal0241466
+
+pm2164: GA1g claims that zen[Scer\UAS.cKa] is not an existing allele symbol, but Chado knows it as FBal0241467
+
+pm2164: No data in either G1b or G2b for 'Zzzz\CAG'
+
+pm2164: GA1g claims that Zzzz\CAG[63Q.Scer\UAS.T:Ivir\HA1] is not an existing allele symbol, but Chado knows it as FBal0241468
+
+
+Processing pm2149
+
+pm2149: P41: Missing data.
+
+pm2149: A1g claims that Df(2L)Exel6023 is not an existing aberration symbol, but Chado knows it as FBab0046105
+
+
+Processing pm2147
+
+pm2147: GA10a: NEW:'P{UAS-Fas1.+3}' is not new and Chado knows it as FBtp0051889
+
+pm2147: GA10a: NEW:'P{UAS-L1CAM.RSLE-}' is not new and Chado knows it as FBtp0051890
+
+pm2147: GA10a: NEW:'P{UAS-L1CAM.RSLE+}' is not new and Chado knows it as FBtp0051891
+
+pm2147: GA10a: NEW:'P{UAS-Nrcam.K}' is not new and Chado knows it as FBtp0051892
+
+pm2147: GA10a: NEW:'P{UAS-hNCAM.140}' is not new and Chado knows it as FBtp0051893
+
+pm2147: P41: Missing data.
+
+pm2147: No data in either G1b or G2b for 'Nrg'
+
+pm2147: GA17: 'axon tract' is not a valid body part in 'wing margin & axon tract { Scer\GAL4[Bx-MS1096] }'
+
+pm2147: No data in either G1b or G2b for 'Ecol\lacZ'
+
+pm2147: GA1g claims that Fas1[+3.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0241454
+
+pm2147: GA1g claims that Hsap\L1CAM[RSLE-.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0241455
+
+pm2147: GA1g claims that Mmus\L1cam[RSLE+.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0241456
+
+pm2147: GA1g claims that Rnor\Nrcam[Scer\UAS.cKa] is not an existing allele symbol, but Chado knows it as FBal0241457
+
+pm2147: GA17: 'axon tract' is not a valid body part in 'wing margin & axon tract { Scer\GAL4[Bx-MS1096] }'
+
+pm2147: GA1g claims that Hsap\NCAM1[140.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0241458
+
+pm2147: GA17: 'axon tract' is not a valid body part in 'wing margin & axon tract { Scer\GAL4[Bx-MS1096] }'
+
+
+Processing st1156.edit
+
+st1156.edit: No data in either G1b or G2b for 'CG7056'
+
+
+Processing st1155.edit
+
+st1155.edit: Most .edit records contain a !c, did you forget to add one?
+
+st1155.edit: No data in either G1b or G2b for 'sli'
+
+
+Processing sm1073.bibl
+
+sm1073.bibl: MP17: Trying to change multipub type to the value (journal) it already has in Chado
+
+sm1073.bibl: MP2b: Can't change the reference Mitteilungen der Deutschen Entomologischen Gesellschaft e. V. to the same value 'Mitteilungen der Deutschen Entomologischen Gesellschaft e. V.' as it already has in Chado
+
+sm1073.bibl: Required proforma field MP2a missing or malformed.
+
+sm1073.bibl: Required proforma field MP11 missing or malformed.
+
+sm1073.bibl: Warning: I don't yet know how to deal with the 'MP18' proforma field.
+
+sm1073.bibl: MP2a: Can't change the reference Nouv. Rev. Entomol. to the same value 'Nouv. Rev. Entomol.' as it already has in Chado
+
+sm1073.bibl: MP2b: Can't change the reference Nouvelle revue d'entomologie to the same value 'Nouvelle revue d'entomologie' as it already has in Chado
+
+sm1073.bibl: Required proforma field MP11 missing or malformed.
+
+sm1073.bibl: Required proforma field MP17 missing or malformed.
+
+sm1073.bibl: Required proforma field MP2a missing or malformed.
+
+sm1073.bibl: Required proforma field MP11 missing or malformed.
+
+sm1073.bibl: Required proforma field MP17 missing or malformed.
+
+sm1073.bibl: MP1: 9680 is not a valid multipub ID.
+
+sm1073.bibl: MP3: Can't have 'y' when MP1 doesn't specify an existing multipub id in Chado.
+
+sm1073.bibl: MP19: the data in MP1 is not a valid multipub, according to Chado.
+
+sm1073.bibl: Required proforma field MP2a missing or malformed.
+
+sm1073.bibl: Required proforma field MP11 missing or malformed.
+
+sm1073.bibl: Required proforma field MP17 missing or malformed.
+
+sm1073.bibl: Required proforma field MP2a missing or malformed.
+
+sm1073.bibl: Required proforma field MP11 missing or malformed.
+
+sm1073.bibl: Required proforma field MP17 missing or malformed.
+
+sm1073.bibl: Warning: I don't yet know how to deal with the 'MP18' proforma field.
+
+sm1073.bibl: MP2b: Can't change the reference Abstracts of scientific papers, annual meeting - American Society of Anesthesiologists to the same value 'Abstracts of scientific papers, annual meeting - American Society of Anesthesiologists' as it already has in Chado
+
+sm1073.bibl: Required proforma field MP2a missing or malformed.
+
+sm1073.bibl: Required proforma field MP11 missing or malformed.
+
+sm1073.bibl: Required proforma field MP17 missing or malformed.
+
+sm1073.bibl: Required proforma field MP2a missing or malformed.
+
+sm1073.bibl: Required proforma field MP11 missing or malformed.
+
+sm1073.bibl: Required proforma field MP17 missing or malformed.
+
+sm1073.bibl: Required proforma field MP2a missing or malformed.
+
+sm1073.bibl: Required proforma field MP11 missing or malformed.
+
+sm1073.bibl: Required proforma field MP17 missing or malformed.
+
+sm1073.bibl: Warning: I don't yet know how to deal with the 'MP18' proforma field.
+
+sm1073.bibl: MP2a: Can't change the reference Am. Biotechnol. Lab. to the same value 'Am. Biotechnol. Lab.' as it already has in Chado
+
+sm1073.bibl: Required proforma field MP11 missing or malformed.
+
+sm1073.bibl: Required proforma field MP17 missing or malformed.
+
+sm1073.bibl: Warning: I don't yet know how to deal with the 'MP18' proforma field.
+
+sm1073.bibl: MP17: Trying to change multipub type to the value (journal) it already has in Chado
+
+sm1073.bibl: Required proforma field MP2a missing or malformed.
+
+sm1073.bibl: Required proforma field MP11 missing or malformed.
+
+sm1073.bibl: Required proforma field MP2a missing or malformed.
+
+sm1073.bibl: Required proforma field MP11 missing or malformed.
+
+sm1073.bibl: Required proforma field MP17 missing or malformed.
+
+sm1073.bibl: Warning: I don't yet know how to deal with the 'MP18' proforma field.
+
+sm1073.bibl: MP2a: Can't change the reference Stud. Dipterol. to the same value 'Stud. Dipterol.' as it already has in Chado
+
+sm1073.bibl: Required proforma field MP11 missing or malformed.
+
+sm1073.bibl: Required proforma field MP17 missing or malformed.
+
+sm1073.bibl: Warning: I don't yet know how to deal with the 'MP18' proforma field.
+
+sm1073.bibl: MP17: Trying to change multipub type to the value (journal) it already has in Chado
+
+sm1073.bibl: Required proforma field MP2a missing or malformed.
+
+sm1073.bibl: Required proforma field MP11 missing or malformed.
+
+
+Processing pm1062
+
+pm1062: GA10a: NEW:'P{UAS-shtd.T}' is not new and Chado knows it as FBtp0051888
+
+pm1062: GA1g claims that shtd[2] is not an existing allele symbol, but Chado knows it as FBal0241450
+
+pm1062: GA1g claims that shtd[3.&ggr;] is not an existing allele symbol, but Chado knows it as FBal0241451
+
+pm1062: GA1g claims that shtd[EP&Dgr;] is not an existing allele symbol, but Chado knows it as FBal0241452
+
+pm1062: GA1g claims that shtd[rescue.Scer\UAS] is not an existing allele symbol, but Chado knows it as FBal0241453
+
+pm1062: A1g claims that Df(X)shtd[2] is not an existing aberration symbol, but Chado knows it as FBab0046104
+
+
+Processing sm1061.edit
+
+sm1061.edit: Most .edit records contain a !c, did you forget to add one?
+
+sm1061.edit: Required proforma field P21 missing or malformed.
+
+sm1061.edit: Required proforma field GA2b missing or malformed.
+
+sm1061.edit: Required proforma field GA2b missing or malformed.
+
+sm1061.edit: Required proforma field GA2b missing or malformed.
+
+sm1061.edit: Required proforma field GA2b missing or malformed.
+
+sm1061.edit: Required proforma field GA2b missing or malformed.
+
+sm1061.edit: Required proforma field GA2b missing or malformed.
+
+sm1061.edit: Required proforma field GA2b missing or malformed.
+
+sm1061.edit: Required proforma field GA2b missing or malformed.
+
+sm1061.edit: Required proforma field GA2b missing or malformed.
+
+sm1061.edit: Required proforma field GA2b missing or malformed.
+
+sm1061.edit: Required proforma field GA2b missing or malformed.
+
+sm1061.edit: Required proforma field GA2b missing or malformed.
+
+sm1061.edit: Required proforma field GA2b missing or malformed.
+
+
+Processing sb137.skim
+
+
+Processing sb136.skim
+
+
+Processing sb135.skim
+
+
+Processing sb134.skim
+
+sb134.skim: P40: Invalid camflag used: 'orthologs' 
+
+
+Processing sb133.skim
+
+sb133.skim: P40: Invalid camflag used: 'orthologs' 
+
+
+Processing sb132.skim
+
+
+Processing sb131.skim
+
+
+Processing sb130.skim
+
+
+Processing sb129.skim
+
+
+Processing sb128.skim
+
+
+Processing sb127.skim
+
+
+Processing sb126.skim
+
+
+Processing sb125.skim
+
+sb125.skim: P40: Invalid camflag used: 'orthologs' 
+
+
+Processing sb124.skim
+
+
+Processing sb123.skim
+
+
+Processing sb122.skim
+
+
+Processing sb121.skim
+
+
+Processing sb120.skim
+
+
+Processing sb119.skim
+
+
+Processing sb118.skim
+
+I checked 56 files.
+
+These 17 files passed all the checks:
+
+sb118.skim	sb119.skim	sb120.skim	sb121.skim	sb122.skim	sb123.skim	sb124.skim	sb126.skim	sb127.skim	sb128.skim
+sb129.skim	sb130.skim	sb131.skim	sb132.skim	sb135.skim	sb136.skim	sb137.skim
+
+These 39 files failed at least one check:
+
+gm24809	gm24997	gm25046	gm25067.edit	gm25093	gm25097	gm25100.edit	gm25102	gm25103.edit	gm25104.edit
+gm25105	gm25107.edit	gm25108	gm25109	gm25110.bibl	gm25111.bibl	gm25112.bibl	gm25113.bibl	gm25114.bibl	gm25115.bibl
+gm25116.bibl	gm25117.bibl	gm25118.bibl	gm25119.bibl	gm25120.bibl	gm25123.edit	gm25128.edit	pm1062	pm2147	pm2149
+pm2164	pm2166	sb125.skim	sb133.skim	sb134.skim	sm1061.edit	sm1073.bibl	st1155.edit	st1156.edit
+
+Ignoring these 41 files:
+
+as90.user	as91.user	pl146395.bibl	pl146396.bibl	pl146397.bibl	pl146398.bibl	pl146399.bibl	pl146400.bibl	pl146401.bibl	pl146402.bibl
+pl146403.bibl	pl146404.bibl	pl146405.bibl	pl146406.bibl	pl146407.bibl	pl146408.bibl	pl146409.bibl	pl146410.bibl	pl146411.bibl	pl146412.bibl
+pl146413.bibl	pl146414.bibl	pl146415.bibl	pl146416.bibl	pl146417.bibl	pl146418.bibl	pl146419.bibl	pl146420.bibl	pl146421.bibl	pl146422.bibl
+pl146423.bibl	pl146424.bibl	pl146425.bibl	pl146426.bibl	pl146427.bibl	pl146428.bibl	pl146429.bibl	pl146430.bibl	pl146431.bibl	pl146432.bibl
+pl146433.bibl
+
+
+I came to this conclusion by consulting fb_2010_03_02 stored on oscar.gen.cam.ac.uk
+
+I used these ontologies:
+FBbt: /curfiles/ontologies/fly_anatomy.obo dated 04:02:2010 12:01
+FBdv: /curfiles/ontologies/fly_development.obo dated 19:10:2009 13:49
+FBcv: /curfiles/ontologies/flybase_controlled_vocabulary.obo dated 09:02:2009 13:59
+FBsp: /curfiles/ontologies/fly_taxonomy.obo dated 06:04:2007 11:47
+SO  : /curfiles/ontologies/so.obo dated 02:06:2006 12:44
+GO  : /curfiles/ontologies/gene_ontology.obo dated 26:11:2009 19:30
+GO_dbxrefs: /curfiles/ontologies/GO.xrf_abbs dated 2010/01/23 04:34:32
+
+
+

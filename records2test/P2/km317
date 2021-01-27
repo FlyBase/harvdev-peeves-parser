@@ -1,0 +1,784 @@
+! PUBLICATION PROFORMA                   Version 38:  16 Sep 2009
+!
+! P22.  FlyBase reference ID (FBrf)      *U :new
+! P32.  Action - make this/these FBrf(s) secondary IDs of P22 *N :
+! P39.  Action - obsolete P22 in FlyBase               TAKE CARE :
+! P1.   Type of publication [CV]  *T :personal communication to FlyBase
+! P2.   Parent multipub (abbreviation)      *w :
+! P12.  Author(s)                   *a-*b :Cook	K.
+Garton	R.
+Brown	A.
+Ward	M.
+Deal	J.
+Kaufman	T.
+Cook	K.
+! P10.  Year or date (YYYY.M.D) if PC  *t :2010.5.6
+! P16.  Title                          *u :Generating Y-linked X chromosome duplications for region 3F to 4D.
+! P3.   Volume number                  *y :
+! P4.   Issue number                   *Y :
+! P11a. Page range or article number        *z :
+! P11d. DOI                                    :
+! P11b. URL                                 *R :
+! P11c. Sequence accession number              :
+! P13.  Language of publication [CV]                          *L :English
+! P14.  Additional language(s) of abstract [CV]               *A :
+! P26.  PubMed ID                *M :
+! P25.  BIOSIS ID                *B :
+! P27.  ZooRec ID                *Q :
+! P29.  ISBN, if P1 = book       *I :
+! P33.  Text of conference abstract    *D :
+! P23.  Text of personal communication *F :Generating Y-linked X chromosome duplications for region 3F to 4D
+Kim Cook, Russell Garton, Adam Brown, Megan Ward, Jennifer Deal, Megan Deal, Thom Kaufman & Kevin Cook
+Bloomington Drosophila Stock Center
+Indiana University
+
+We have generated a set of Y-linked duplications of X chromosomal segments by irradiating an attached-XY with an inversion in the X chromosome. The progenitor C(1;Y)N12, In(1)BSC4, P{w[+mC]=3'.RS5+3.3'}BSC4 w[1118], B[S] chromosome has the following form:
+
+
+1Lt to 1B5|4D7 to 1B5|4D7 to X heterochromatin breakpoint distal of bb|YS to YL|B[S]
+
+In(1)BSC4 is described in FBab0046069 and its construction was described in FBrf0209647. P{w[+mC]=3'.RS5+3.3'}BSC4  is associated with the distal inversion breakpoint.  
+
+Large irradiation-induced deletions within this progenitor chromosome with one breakpoint within the inversion near the distal inversion breakpoint and one breakpoint in X heterochromatin or basal X euchromatin produce Dp(1;Y) chromosomes of the form:
+
+1Lt to 1B5|4D7 to medial breakpoint|basal X breakpoint to X het breakpoint distal of bb|YS to YL|B[S]
+
+The Dp(1;Y) chromosomes share the same distal 1Lt to 1B5 segment containing the yellow (y) gene. The medial segments of these Dp(1;Y) chromosomes share a common end derived from the inversion breakpoint at 4D7, but they extend different distances distally on the standard X map. The Dp(1;Y) chromosomes carry segments of different sizes from the base of the X.  The breakpoints typically lie in basal X heterochromatin, but they may lie in basal euchromatin.  Dp(1;Y) chromosomes with breakpoints in YS cannot be established in stock, because deletion of YS male fertility genes renders males sterile. The B[S]-marked tip of YL in C(1;Y)N12 carries a portion of the base of the X distal to bb.   From Comparative Genome Hybridization microarrays of chromosomes derived from C(1;Y)N12 performed by Eric Spana at Duke University, we determined that the distal breakpoint of the basal X segment lies between Release 5 coordinate X:22228492 in fog and coordinate X:22384175 in stnA and that genes proximal to stnA are duplicated. We could not determine the proximalmost extent of this segment, but the microarrays indicated that the duplicated segment extends at least to coordinate X:22416503 in CG13865.  We saw no evidence for a large duplicated segment encompassing the BarH1 and BarH2 genes in 16A, but the resolution of the microarrays is not high enough to exclude the possibility of a small duplicated segment from the region.
+
+We exposed C(1;Y)N12, In(1)BSC4, P{w[+mC]=3'.RS5+3.3'}BSC4 w[1118], B[S] males lacking a free Y chromosome to ~4500 rads in a [137]Cs irradiator and mated them to winscy females. Dp(1;Y) chromosomes were recovered in y[+] w[+] B[S] males. Stocks were established by crossing these males to winscy females.  12 independent Dp(1;Y) chromosomes were established in stocks from approximately 341,000  progeny screened. 
+
+We maintained the isogenic background of the DrosDel transposon collection in generating the progenitor C(1;Y)N12, In(1)BSC4 chromosome and in all the Dp(1;Y) screen crosses.  Only the proximal regions of the X chromosome and the Y chromosome of C(1;Y)N12 were introduced from a different genetic background.  Fourth chromosomes were not tracked.  
+
+The distal 1Lt to 1B5 segment shared by all these duplications extends proximally to Release 5 coordinate X:387562, the insertion site of P{RS3)CB-5805-3 used in the construction of In(1)BSC4.
+
+The distal extents of the basal duplicated segments were determined by the positions of the proximal irradiation-induced breaks.  We did not map these breakpoints.  We cannot exclude the possibility that genes from the base of the X chromosome are present in the basal duplicated segments.
+
+On the standard X map, the proximal end of all the duplicated medial segments lies at Release 5 coordinate X: 4825473..4825859, the insertion site of P{RS5}CG4068[5-SZ-3655] used in the construction of In(1)BSC4.
+The distal extents of the medial segments were determined by the positions of the distal irradiation-induced breaks. We mapped these breakpoints to ~10 gene intervals defined by PCR primers using the following approach. Males carrying the new Dp(1;Y) chromosomes were crossed to females carrying a transposable element insertion positioned distal to P{RS5}CG4068[5-SZ-3655]. Primers flanking the insertions sites of the transposable elements were used to amplify fragments from DNA isolated from male progeny. With short extension times, fragments are amplified only if the site of the transposable element insertion is present in the Dp(1;Y) chromosome.  Breakpoints were mapped to successively smaller intervals in iterative rounds of crosses and PCR amplifications. The following transposable elements and primer pairs were used in mapping:
+
+Insertion: P{SUPor-P}ec[KG09175]
+Forward primer: CCAGAACGCAGCACTATATCGAC (X:3736678..3736700)
+Reverse primer: GGCCAACGTCTTCAGTGCGACG (X:3737602..3737581)
+
+Insertion: P{Mae-UAS.6.11}Vap-33-1[GG01069]
+Forward primer: CGCTTTCTATTGCCATCTCGCTCGATTGGC (X:3843899..3843928)
+Reverse primer: GCGAGGGGGTTGCAAAAGAATGGGG (X:3844623..3844599)
+
+Insertion: P{EPgy2}CG6379[EY08403]
+Forward primer: GTTCTCATCGTCCGAAGGTTCGTCC (X:3994648..3994672)
+Reverse primer: CTAGACCAAGTGTGGTATGCTCG (X:3995304..3995282)
+
+Insertion: PBac{RB}GlcAT-I[e04384]
+Forward primer: CCACACTGGAGACGAAGAATATCG (X:4025177..4025200)
+Reverse primer: GTGGCTTAATCCAGTTGGGGTCC (X:4025778..4025756)
+
+Insertion: P{SUPor-P}KG00475
+Forward primer: GGCTAAGCCAGTTTACAGGATCG (X:4186834..4186856)
+Reverse primer: GTTATCCTCGTTAAGTGCGTTAACCAC (X:4187481..4187455)
+
+Insertion: P{XP}bi[d05964]
+Forward primer: GAGTTCCATCTCGATTTAAGGTGGC (X:4317564..4317588)
+Reverse primer: GCATCCTACTCTCATTCGCTCGCC (X:4318287..4318264)
+
+Insertion: Mi{ET1}MB01991
+Forward primer: GTTCTAAGGCACAGGTCAGGGC (X:4478617..4478638)
+Reverse primer: GGTGATGACAGCAGACACCAGGC (X:4479348..4479326)
+
+Insertion: P{EP}HLH4C[G351]
+Forward primer: CTCAGTCAGAGCAGCTGGTGTCC (X:4539074..4539096)
+Reverse primer: CCAACTTAACCGAAGTGTTCGATGG (X:4539664..4539640)
+
+Insertion: P{SUPor-P}KG02802
+Forward primer: CGACGCGAACTCGTTTCTCGCCG (X:4573372..4573394)
+Reverse primer: CGCTTGTAAGGTGTTCACCACTTGCG (X:4574098..4574073)
+
+Insertion: P{SUPor-P}KG06705
+Forward primer: CGAATTAATGACGGTTGGGGTTCGC (X:4698591..4698615)
+Reverse primer: CATCCAAAGGACCACCAAACTGC (X:4699234..4699212)
+
+Insertion: P{EPgy2}CG6903[EY08878]
+Forward primer: GTCCAATCCAGACGCTCGTCGCG (X:4813070..4813092)
+Reverse primer: GGCATAGTGACCCTGATCGAGGTCG (X:4813615..4813591)
+
+The  Dp(1;Y) chromosomes carry the following medial segments (Release 5 coordinates and predicted cytologies): 
+
+Dp(1;Y)BSC158  X:3736678..3843899;4825473..4825859 (3F3-3F9;4D7)
+Dp(1;Y)BSC159  X:3994648..4025177;4825473..4825859 (4A5-4B1;4D7)
+Dp(1;Y)BSC160  X:4025177..4186834;4825473..4825859 (4B1-4B5;4D7)
+Dp(1;Y)BSC161  X:4186834..4317564;4825473..4825859 (4B5-4C3;4D7)
+Dp(1;Y)BSC162  X:4317564..4478617;4825473..4825859 (4C3-4C8;4D7)
+Dp(1;Y)BSC163  X:4478617..4539074;4825473..4825859 (4C8-4C10;4D7)
+Dp(1;Y)BSC164  X:4573372..4698591;4825473..4825859 (4C12-4D2;4D7)
+Dp(1;Y)BSC165  X:4573372..4698591;4825473..4825859 (4C12-4D2;4D7)
+Dp(1;Y)BSC166  X:4573372..4698591;4825473..4825859 (4C12-4D2;4D7)
+Dp(1;Y)BSC167  X:4573372..4698591;4825473..4825859 (4C12-4D2;4D7)
+Dp(1;Y)BSC168  X:4573372..4698591;4825473..4825859 (4C12-4D2;4D7)
+Dp(1;Y)BSC169  X:4698591..4813070;4825473..4825859 (4D2-4D6;4D7)
+! P18.  Associated comments                                  *G :
+! P38.  Associated file, archived at ftp site [SoftCV]       *K :
+! P30.  Also published as (FBrf)            *C :
+! P31.  Related publication (FBrf)          *E :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :no_flag
+! P19.  Internal notes                   *H :Submitter: kercook@indiana.edu
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION PROFORMA                    Version 52: 12th Jan 2010
+!
+! A1h.  FlyBase aberration ID (FBab) *z :
+! A1a.  Aberration symbol to use in FlyBase                 *a :Dp(1;Y)BSC158
+! A1b.  Aberration symbol(s) used in reference              *i :Dp(1;Y)BSC158
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :n
+! A2a.  Action - aberration name to use in FlyBase          *e :
+! A2b.  Aberration name(s) used in reference                *Q :
+! A2c.  Action - replace this aberration name                  :
+!
+! A4.   Mutagen [CV]                                     *o :137Cs gamma ray
+! A6.   Progenitor genotype                              *O :In(1)BSC4
+!
+! A9.   Class of aberration, relative to progenitor (SO_term ; ID) [CV] *C :chromosomal_deletion ; SO:1000029
+! A26.  Class of aberration, relative to wild type (SO_term ; ID) [CV]  *C :interchromosomal_duplication ; SO:0000457
+! A18.  Comments about cytology               *c :Dp(1;Y)BSC158 carries five regions from the X chromosome.  Three segments are appended to YS: a distal X segment (1Lt;1B5, X:1Lt;387562 (R5)), a medial X segment (3F3-3F9;4D7, X:3736678..3843899;4825473..4825859) and a basal X segment that extends distally from a point in centric heterochromatin distal to bb to a point either in X heterochromatin or in basal euchromatin.  An X segment extending proximal from a point between fog and stnA (X:22228492..22384175) to an unknown point in X heterochromatin and a small X segment from 16A carrying B[S] are appended to YL.
+! A24a. Transposon insertion(s)               *P :P{3'.RS5+3.3'}BSC4
+! A24b. Non-insertion allele(s)               *S :B[S]
+!
+! A14.  Miscellaneous comments                *u :
+! A90a. Location data for breakpoint number (dupl for multiple) :1
+! A90b.    Genomic location of breakpoint                       :X:1
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :2
+! A90b.    Genomic location of breakpoint                       :X:387562
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :3
+! A90b.    Genomic location of breakpoint                       :X:3736678--3843899
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :4
+! A90b.    Genomic location of breakpoint                       :X:4825473..4825859
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A92a. Duplicated segment data for segment number (dupl for multiple) :1
+! A92b.    Cytological location of left end of segment                 :1Lt
+! A92c.    Cytological location of right end of segment                :1B5
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A92a. Duplicated segment data for segment number (dupl for multiple) :2
+! A92b.    Cytological location of left end of segment                 :X:3F3--3F9
+! A92c.    Cytological location of right end of segment                :4D7
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! ABERRATION PROFORMA                    Version 52: 12th Jan 2010
+!
+! A1h.  FlyBase aberration ID (FBab) *z :
+! A1a.  Aberration symbol to use in FlyBase                 *a :Dp(1;Y)BSC159
+! A1b.  Aberration symbol(s) used in reference              *i :Dp(1;Y)BSC159
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :n
+! A2a.  Action - aberration name to use in FlyBase          *e :
+! A2b.  Aberration name(s) used in reference                *Q :
+! A2c.  Action - replace this aberration name                  :
+!
+! A4.   Mutagen [CV]                                     *o :137Cs gamma ray
+! A6.   Progenitor genotype                              *O :In(1)BSC4
+!
+! A9.   Class of aberration, relative to progenitor (SO_term ; ID) [CV] *C :chromosomal_deletion ; SO:1000029
+! A26.  Class of aberration, relative to wild type (SO_term ; ID) [CV]  *C :interchromosomal_duplication ; SO:0000457
+! A18.  Comments about cytology               *c :Dp(1;Y)BSC159 carries five regions from the X chromosome.  Three segments are appended to YS: a distal X segment (1Lt;1B5, X:1Lt;387562 (R5)), a medial X segment (4A5-4B1;4D7, X:3994648..4025177;4825473..4825859) and a basal X segment that extends distally from a point in centric heterochromatin distal to bb to a point either in X heterochromatin or in basal euchromatin.  An X segment extending proximal from a point between fog and stnA (X:22228492..22384175) to an unknown point in X heterochromatin and a small X segment from 16A carrying B[S] are appended to YL.
+! A24a. Transposon insertion(s)               *P :P{3'.RS5+3.3'}BSC4
+! A24b. Non-insertion allele(s)               *S :B[S]
+!
+! A14.  Miscellaneous comments                *u :
+! A90a. Location data for breakpoint number (dupl for multiple) :1
+! A90b.    Genomic location of breakpoint                       :X:1
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :2
+! A90b.    Genomic location of breakpoint                       :X:387562
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :3
+! A90b.    Genomic location of breakpoint                       :X:3994648--4025177
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :4
+! A90b.    Genomic location of breakpoint                       :X:4825473..4825859
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A92a. Duplicated segment data for segment number (dupl for multiple) :1
+! A92b.    Cytological location of left end of segment                 :1Lt
+! A92c.    Cytological location of right end of segment                :1B5
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A92a. Duplicated segment data for segment number (dupl for multiple) :2
+! A92b.    Cytological location of left end of segment                 :X:4A5--4B1
+! A92c.    Cytological location of right end of segment                :4D7
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! ABERRATION PROFORMA                    Version 52: 12th Jan 2010
+!
+! A1h.  FlyBase aberration ID (FBab) *z :
+! A1a.  Aberration symbol to use in FlyBase                 *a :Dp(1;Y)BSC160
+! A1b.  Aberration symbol(s) used in reference              *i :Dp(1;Y)BSC160
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :n
+! A2a.  Action - aberration name to use in FlyBase          *e :
+! A2b.  Aberration name(s) used in reference                *Q :
+! A2c.  Action - replace this aberration name                  :
+!
+! A4.   Mutagen [CV]                                     *o :137Cs gamma ray
+! A6.   Progenitor genotype                              *O :In(1)BSC4
+!
+! A9.   Class of aberration, relative to progenitor (SO_term ; ID) [CV] *C :chromosomal_deletion ; SO:1000029
+! A26.  Class of aberration, relative to wild type (SO_term ; ID) [CV]  *C :interchromosomal_duplication ; SO:0000457
+! A18.  Comments about cytology               *c :Dp(1;Y)BSC160 carries five regions from the X chromosome.  Three segments are appended to YS: a distal X segment (1Lt;1B5, X:1Lt;387562 (R5)), a medial X segment (4B1-4B5;4D7, X:4025177..4186834;4825473..4825859) and a basal X segment that extends distally from a point in centric heterochromatin distal to bb to a point either in X heterochromatin or in basal euchromatin.  An X segment extending proximal from a point between fog and stnA (X:22228492..22384175) to an unknown point in X heterochromatin and a small X segment from 16A carrying B[S] are appended to YL.
+! A24a. Transposon insertion(s)               *P :P{3'.RS5+3.3'}BSC4
+! A24b. Non-insertion allele(s)               *S :B[S]
+!
+! A14.  Miscellaneous comments                *u :
+! A90a. Location data for breakpoint number (dupl for multiple) :1
+! A90b.    Genomic location of breakpoint                       :X:1
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :2
+! A90b.    Genomic location of breakpoint                       :X:387562
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :3
+! A90b.    Genomic location of breakpoint                       :X:4025177--4186834
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :4
+! A90b.    Genomic location of breakpoint                       :X:4825473..4825859
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A92a. Duplicated segment data for segment number (dupl for multiple) :1
+! A92b.    Cytological location of left end of segment                 :1Lt
+! A92c.    Cytological location of right end of segment                :1B5
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A92a. Duplicated segment data for segment number (dupl for multiple) :2
+! A92b.    Cytological location of left end of segment                 :X:4B1--4B5
+! A92c.    Cytological location of right end of segment                :4D7
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! ABERRATION PROFORMA                    Version 52: 12th Jan 2010
+!
+! A1h.  FlyBase aberration ID (FBab) *z :
+! A1a.  Aberration symbol to use in FlyBase                 *a :Dp(1;Y)BSC161
+! A1b.  Aberration symbol(s) used in reference              *i :Dp(1;Y)BSC161
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :n
+! A2a.  Action - aberration name to use in FlyBase          *e :
+! A2b.  Aberration name(s) used in reference                *Q :
+! A2c.  Action - replace this aberration name                  :
+!
+! A4.   Mutagen [CV]                                     *o :137Cs gamma ray
+! A6.   Progenitor genotype                              *O :In(1)BSC4
+!
+! A9.   Class of aberration, relative to progenitor (SO_term ; ID) [CV] *C :chromosomal_deletion ; SO:1000029
+! A26.  Class of aberration, relative to wild type (SO_term ; ID) [CV]  *C :interchromosomal_duplication ; SO:0000457
+! A18.  Comments about cytology               *c :Dp(1;Y)BSC161 carries five regions from the X chromosome.  Three segments are appended to YS: a distal X segment (1Lt;1B5, X:1Lt;387562 (R5)), a medial X segment (4B5-4C3;4D7, X:4186834..4317564;4825473..4825859) and a basal X segment that extends distally from a point in centric heterochromatin distal to bb to a point either in X heterochromatin or in basal euchromatin.  An X segment extending proximal from a point between fog and stnA (X:22228492..22384175) to an unknown point in X heterochromatin and a small X segment from 16A carrying B[S] are appended to YL.
+! A24a. Transposon insertion(s)               *P :P{3'.RS5+3.3'}BSC4
+! A24b. Non-insertion allele(s)               *S :B[S]
+!
+! A14.  Miscellaneous comments                *u :
+! A90a. Location data for breakpoint number (dupl for multiple) :1
+! A90b.    Genomic location of breakpoint                       :X:1
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :2
+! A90b.    Genomic location of breakpoint                       :X:387562
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :3
+! A90b.    Genomic location of breakpoint                       :X:4186834--4317564
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :4
+! A90b.    Genomic location of breakpoint                       :X:4825473..4825859
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A92a. Duplicated segment data for segment number (dupl for multiple) :1
+! A92b.    Cytological location of left end of segment                 :1Lt
+! A92c.    Cytological location of right end of segment                :1B5
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A92a. Duplicated segment data for segment number (dupl for multiple) :2
+! A92b.    Cytological location of left end of segment                 :X:4B5--4C3
+! A92c.    Cytological location of right end of segment                :4D7
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! ABERRATION PROFORMA                    Version 52: 12th Jan 2010
+!
+! A1h.  FlyBase aberration ID (FBab) *z :
+! A1a.  Aberration symbol to use in FlyBase                 *a :Dp(1;Y)BSC162
+! A1b.  Aberration symbol(s) used in reference              *i :Dp(1;Y)BSC162
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :n
+! A2a.  Action - aberration name to use in FlyBase          *e :
+! A2b.  Aberration name(s) used in reference                *Q :
+! A2c.  Action - replace this aberration name                  :
+!
+! A4.   Mutagen [CV]                                     *o :137Cs gamma ray
+! A6.   Progenitor genotype                              *O :In(1)BSC4
+!
+! A9.   Class of aberration, relative to progenitor (SO_term ; ID) [CV] *C :chromosomal_deletion ; SO:1000029
+! A26.  Class of aberration, relative to wild type (SO_term ; ID) [CV]  *C :interchromosomal_duplication ; SO:0000457
+! A18.  Comments about cytology               *c :Dp(1;Y)BSC162 carries five regions from the X chromosome.  Three segments are appended to YS: a distal X segment (1Lt;1B5, X:1Lt;387562 (R5)), a medial X segment (4C3-4C8;4D7, X:4317564..4478617;4825473..4825859) and a basal X segment that extends distally from a point in centric heterochromatin distal to bb to a point either in X heterochromatin or in basal euchromatin.  An X segment extending proximal from a point between fog and stnA (X:22228492..22384175) to an unknown point in X heterochromatin and a small X segment from 16A carrying B[S] are appended to YL.
+! A24a. Transposon insertion(s)               *P :P{3'.RS5+3.3'}BSC4
+! A24b. Non-insertion allele(s)               *S :B[S]
+!
+! A14.  Miscellaneous comments                *u :
+! A90a. Location data for breakpoint number (dupl for multiple) :1
+! A90b.    Genomic location of breakpoint                       :X:1
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :2
+! A90b.    Genomic location of breakpoint                       :X:387562
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :3
+! A90b.    Genomic location of breakpoint                       :X:4317564--4478617
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :4
+! A90b.    Genomic location of breakpoint                       :X:4825473..4825859
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A92a. Duplicated segment data for segment number (dupl for multiple) :1
+! A92b.    Cytological location of left end of segment                 :1Lt
+! A92c.    Cytological location of right end of segment                :1B5
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A92a. Duplicated segment data for segment number (dupl for multiple) :2
+! A92b.    Cytological location of left end of segment                 :X:4C3--4C8
+! A92c.    Cytological location of right end of segment                :4D7
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! ABERRATION PROFORMA                    Version 52: 12th Jan 2010
+!
+! A1h.  FlyBase aberration ID (FBab) *z :
+! A1a.  Aberration symbol to use in FlyBase                 *a :Dp(1;Y)BSC163
+! A1b.  Aberration symbol(s) used in reference              *i :Dp(1;Y)BSC163
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :n
+! A2a.  Action - aberration name to use in FlyBase          *e :
+! A2b.  Aberration name(s) used in reference                *Q :
+! A2c.  Action - replace this aberration name                  :
+!
+! A4.   Mutagen [CV]                                     *o :137Cs gamma ray
+! A6.   Progenitor genotype                              *O :In(1)BSC4
+!
+! A9.   Class of aberration, relative to progenitor (SO_term ; ID) [CV] *C :chromosomal_deletion ; SO:1000029
+! A26.  Class of aberration, relative to wild type (SO_term ; ID) [CV]  *C :interchromosomal_duplication ; SO:0000457
+! A18.  Comments about cytology               *c :Dp(1;Y)BSC163 carries five regions from the X chromosome.  Three segments are appended to YS: a distal X segment (1Lt;1B5, X:1Lt;387562 (R5)), a medial X segment (4C8-4C10;4D7, X:4478617..4539074;4825473..4825859) and a basal X segment that extends distally from a point in centric heterochromatin distal to bb to a point either in X heterochromatin or in basal euchromatin.  An X segment extending proximal from a point between fog and stnA (X:22228492..22384175) to an unknown point in X heterochromatin and a small X segment from 16A carrying B[S] are appended to YL.
+! A24a. Transposon insertion(s)               *P :P{3'.RS5+3.3'}BSC4
+! A24b. Non-insertion allele(s)               *S :B[S]
+!
+! A14.  Miscellaneous comments                *u :
+! A90a. Location data for breakpoint number (dupl for multiple) :1
+! A90b.    Genomic location of breakpoint                       :X:1
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :2
+! A90b.    Genomic location of breakpoint                       :X:387562
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :3
+! A90b.    Genomic location of breakpoint                       :X:4478617--4539074
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :4
+! A90b.    Genomic location of breakpoint                       :X:4825473..4825859
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A92a. Duplicated segment data for segment number (dupl for multiple) :1
+! A92b.    Cytological location of left end of segment                 :1Lt
+! A92c.    Cytological location of right end of segment                :1B5
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A92a. Duplicated segment data for segment number (dupl for multiple) :2
+! A92b.    Cytological location of left end of segment                 :X:4C8--4C10
+! A92c.    Cytological location of right end of segment                :4D7
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! ABERRATION PROFORMA                    Version 52: 12th Jan 2010
+!
+! A1h.  FlyBase aberration ID (FBab) *z :
+! A1a.  Aberration symbol to use in FlyBase                 *a :Dp(1;Y)BSC164
+! A1b.  Aberration symbol(s) used in reference              *i :Dp(1;Y)BSC164
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :n
+! A2a.  Action - aberration name to use in FlyBase          *e :
+! A2b.  Aberration name(s) used in reference                *Q :
+! A2c.  Action - replace this aberration name                  :
+!
+
+! A4.   Mutagen [CV]                                     *o :137Cs gamma ray
+! A6.   Progenitor genotype                              *O :In(1)BSC4
+!
+! A9.   Class of aberration, relative to progenitor (SO_term ; ID) [CV] *C :chromosomal_deletion ; SO:1000029
+! A26.  Class of aberration, relative to wild type (SO_term ; ID) [CV]  *C :interchromosomal_duplication ; SO:0000457
+! A18.  Comments about cytology               *c :Dp(1;Y)BSC164 carries five regions from the X chromosome.  Three segments are appended to YS: a distal X segment (1Lt;1B5, X:1Lt;387562 (R5)), a medial X segment (4C12-4D2;4D7, X:4573372..4698591;4825473..4825859) and a basal X segment that extends distally from a point in centric heterochromatin distal to bb to a point either in X heterochromatin or in basal euchromatin.  An X segment extending proximal from a point between fog and stnA (X:22228492..22384175) to an unknown point in X heterochromatin and a small X segment from 16A carrying B[S] are appended to YL.
+! A24a. Transposon insertion(s)               *P :P{3'.RS5+3.3'}BSC4
+! A24b. Non-insertion allele(s)               *S :B[S]
+!
+! A14.  Miscellaneous comments                *u :
+! A90a. Location data for breakpoint number (dupl for multiple) :1
+! A90b.    Genomic location of breakpoint                       :X:1
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :2
+! A90b.    Genomic location of breakpoint                       :X:387562
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :3
+! A90b.    Genomic location of breakpoint                       :X:4573372--4698591
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :4
+! A90b.    Genomic location of breakpoint                       :X:4825473..4825859
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A92a. Duplicated segment data for segment number (dupl for multiple) :1
+! A92b.    Cytological location of left end of segment                 :1Lt
+! A92c.    Cytological location of right end of segment                :1B5
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A92a. Duplicated segment data for segment number (dupl for multiple) :2
+! A92b.    Cytological location of left end of segment                 :X:4C12--4D2
+! A92c.    Cytological location of right end of segment                :4D7
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! ABERRATION PROFORMA                    Version 52: 12th Jan 2010
+!
+! A1h.  FlyBase aberration ID (FBab) *z :
+! A1a.  Aberration symbol to use in FlyBase                 *a :Dp(1;Y)BSC165
+! A1b.  Aberration symbol(s) used in reference              *i :Dp(1;Y)BSC165
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :n
+! A2a.  Action - aberration name to use in FlyBase          *e :
+! A2b.  Aberration name(s) used in reference                *Q :
+! A2c.  Action - replace this aberration name                  :
+!
+! A4.   Mutagen [CV]                                     *o :137Cs gamma ray
+! A6.   Progenitor genotype                              *O :In(1)BSC4
+!
+! A9.   Class of aberration, relative to progenitor (SO_term ; ID) [CV] *C :chromosomal_deletion ; SO:1000029
+! A26.  Class of aberration, relative to wild type (SO_term ; ID) [CV]  *C :interchromosomal_duplication ; SO:0000457
+! A18.  Comments about cytology               *c :Dp(1;Y)BSC165 carries five regions from the X chromosome.  Three segments are appended to YS: a distal X segment (1Lt;1B5, X:1Lt;387562 (R5)), a medial X segment (4C12-4D2;4D7, X:4573372..4698591;4825473..4825859) and a basal X segment that extends distally from a point in centric heterochromatin distal to bb to a point either in X heterochromatin or in basal euchromatin.  An X segment extending proximal from a point between fog and stnA (X:22228492..22384175) to an unknown point in X heterochromatin and a small X segment from 16A carrying B[S] are appended to YL.
+! A24a. Transposon insertion(s)               *P :P{3'.RS5+3.3'}BSC4
+! A24b. Non-insertion allele(s)               *S :B[S]
+!
+! A14.  Miscellaneous comments                *u :
+! A90a. Location data for breakpoint number (dupl for multiple) :1
+! A90b.    Genomic location of breakpoint                       :X:1
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :2
+! A90b.    Genomic location of breakpoint                       :X:387562
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :3
+! A90b.    Genomic location of breakpoint                       :X:4573372--4698591
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :4
+! A90b.    Genomic location of breakpoint                       :X:4825473..4825859
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A92a. Duplicated segment data for segment number (dupl for multiple) :1
+! A92b.    Cytological location of left end of segment                 :1Lt
+! A92c.    Cytological location of right end of segment                :1B5
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A92a. Duplicated segment data for segment number (dupl for multiple) :2
+! A92b.    Cytological location of left end of segment                 :X:4C12--4D2
+! A92c.    Cytological location of right end of segment                :4D7
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! ABERRATION PROFORMA                    Version 52: 12th Jan 2010
+!
+! A1h.  FlyBase aberration ID (FBab) *z :
+! A1a.  Aberration symbol to use in FlyBase                 *a :Dp(1;Y)BSC166
+! A1b.  Aberration symbol(s) used in reference              *i :Dp(1;Y)BSC166
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :n
+! A2a.  Action - aberration name to use in FlyBase          *e :
+! A2b.  Aberration name(s) used in reference                *Q :
+! A2c.  Action - replace this aberration name                  :
+!
+! A4.   Mutagen [CV]                                     *o :137Cs gamma ray
+! A6.   Progenitor genotype                              *O :In(1)BSC4
+!
+! A9.   Class of aberration, relative to progenitor (SO_term ; ID) [CV] *C :chromosomal_deletion ; SO:1000029
+! A26.  Class of aberration, relative to wild type (SO_term ; ID) [CV]  *C :interchromosomal_duplication ; SO:0000457
+! A18.  Comments about cytology               *c :Dp(1;Y)BSC166 carries five regions from the X chromosome.  Three segments are appended to YS: a distal X segment (1Lt;1B5, X:1Lt;387562 (R5)), a medial X segment (4C12-4D2;4D7, X:4573372..4698591;4825473..4825859) and a basal X segment that extends distally from a point in centric heterochromatin distal to bb to a point either in X heterochromatin or in basal euchromatin.  An X segment extending proximal from a point between fog and stnA (X:22228492..22384175) to an unknown point in X heterochromatin and a small X segment from 16A carrying B[S] are appended to YL.
+! A24a. Transposon insertion(s)               *P :P{3'.RS5+3.3'}BSC4
+! A24b. Non-insertion allele(s)               *S :B[S]
+!
+! A14.  Miscellaneous comments                *u :
+! A90a. Location data for breakpoint number (dupl for multiple) :1
+! A90b.    Genomic location of breakpoint                       :X:1
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :2
+! A90b.    Genomic location of breakpoint                       :X:387562
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :3
+! A90b.    Genomic location of breakpoint                       :X:4573372--4698591
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :4
+! A90b.    Genomic location of breakpoint                       :X:4825473..4825859
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A92a. Duplicated segment data for segment number (dupl for multiple) :1
+! A92b.    Cytological location of left end of segment                 :1Lt
+! A92c.    Cytological location of right end of segment                :1B5
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A92a. Duplicated segment data for segment number (dupl for multiple) :2
+! A92b.    Cytological location of left end of segment                 :X:4C12--4D2
+! A92c.    Cytological location of right end of segment                :4D7
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! ABERRATION PROFORMA                    Version 52: 12th Jan 2010
+!
+! A1h.  FlyBase aberration ID (FBab) *z :
+! A1a.  Aberration symbol to use in FlyBase                 *a :Dp(1;Y)BSC167
+! A1b.  Aberration symbol(s) used in reference              *i :Dp(1;Y)BSC167
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :n
+! A2a.  Action - aberration name to use in FlyBase          *e :
+! A2b.  Aberration name(s) used in reference                *Q :
+! A2c.  Action - replace this aberration name                  :
+!
+! A4.   Mutagen [CV]                                     *o :137Cs gamma ray
+! A6.   Progenitor genotype                              *O :In(1)BSC4
+!
+! A9.   Class of aberration, relative to progenitor (SO_term ; ID) [CV] *C :chromosomal_deletion ; SO:1000029
+! A26.  Class of aberration, relative to wild type (SO_term ; ID) [CV]  *C :interchromosomal_duplication ; SO:0000457
+! A18.  Comments about cytology               *c :Dp(1;Y)BSC167 carries five regions from the X chromosome.  Three segments are appended to YS: a distal X segment (1Lt;1B5, X:1Lt;387562 (R5)), a medial X segment (4C12-4D2;4D7, X:4573372..4698591;4825473..4825859) and a basal X segment that extends distally from a point in centric heterochromatin distal to bb to a point either in X heterochromatin or in basal euchromatin.  An X segment extending proximal from a point between fog and stnA (X:22228492..22384175) to an unknown point in X heterochromatin and a small X segment from 16A carrying B[S] are appended to YL.
+! A24a. Transposon insertion(s)               *P :P{3'.RS5+3.3'}BSC4
+! A24b. Non-insertion allele(s)               *S :B[S]
+!
+! A14.  Miscellaneous comments                *u :
+! A90a. Location data for breakpoint number (dupl for multiple) :1
+! A90b.    Genomic location of breakpoint                       :X:1
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :2
+! A90b.    Genomic location of breakpoint                       :X:387562
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :3
+! A90b.    Genomic location of breakpoint                       :X:4573372--4698591
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :4
+! A90b.    Genomic location of breakpoint                       :X:4825473..4825859
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A92a. Duplicated segment data for segment number (dupl for multiple) :1
+! A92b.    Cytological location of left end of segment                 :1Lt
+! A92c.    Cytological location of right end of segment                :1B5
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A92a. Duplicated segment data for segment number (dupl for multiple) :2
+! A92b.    Cytological location of left end of segment                 :X:4C12--4D2
+! A92c.    Cytological location of right end of segment                :4D7
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! ABERRATION PROFORMA                    Version 52: 12th Jan 2010
+!
+! A1h.  FlyBase aberration ID (FBab) *z :
+! A1a.  Aberration symbol to use in FlyBase                 *a :Dp(1;Y)BSC168
+! A1b.  Aberration symbol(s) used in reference              *i :Dp(1;Y)BSC168
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :n
+! A2a.  Action - aberration name to use in FlyBase          *e :
+! A2b.  Aberration name(s) used in reference                *Q :
+! A2c.  Action - replace this aberration name                  :
+!
+! A4.   Mutagen [CV]                                     *o :137Cs gamma ray
+! A6.   Progenitor genotype                              *O :In(1)BSC4
+!
+! A9.   Class of aberration, relative to progenitor (SO_term ; ID) [CV] *C :chromosomal_deletion ; SO:1000029
+! A26.  Class of aberration, relative to wild type (SO_term ; ID) [CV]  *C :interchromosomal_duplication ; SO:0000457
+! A18.  Comments about cytology               *c :Dp(1;Y)BSC168 carries five regions from the X chromosome.  Three segments are appended to YS: a distal X segment (1Lt;1B5, X:1Lt;387562 (R5)), a medial X segment (4C12-4D2;4D7, X:4573372..4698591;4825473..4825859) and a basal X segment that extends distally from a point in centric heterochromatin distal to bb to a point either in X heterochromatin or in basal euchromatin.  An X segment extending proximal from a point between fog and stnA (X:22228492..22384175) to an unknown point in X heterochromatin and a small X segment from 16A carrying B[S] are appended to YL.
+! A24a. Transposon insertion(s)               *P :P{3'.RS5+3.3'}BSC4
+! A24b. Non-insertion allele(s)               *S :B[S]
+!
+! A14.  Miscellaneous comments                *u :
+! A90a. Location data for breakpoint number (dupl for multiple) :1
+! A90b.    Genomic location of breakpoint                       :X:1
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :2
+! A90b.    Genomic location of breakpoint                       :X:387562
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :3
+! A90b.    Genomic location of breakpoint                       :X:4573372--4698591
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :4
+! A90b.    Genomic location of breakpoint                       :X:4825473..4825859
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A92a. Duplicated segment data for segment number (dupl for multiple) :1
+! A92b.    Cytological location of left end of segment                 :1Lt
+! A92c.    Cytological location of right end of segment                :1B5
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A92a. Duplicated segment data for segment number (dupl for multiple) :2
+! A92b.    Cytological location of left end of segment                 :X:4C12--4D2
+! A92c.    Cytological location of right end of segment                :4D7
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! ABERRATION PROFORMA                    Version 52: 12th Jan 2010
+!
+! A1h.  FlyBase aberration ID (FBab) *z :
+! A1a.  Aberration symbol to use in FlyBase                 *a :Dp(1;Y)BSC169
+! A1b.  Aberration symbol(s) used in reference              *i :Dp(1;Y)BSC169
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :n
+! A2a.  Action - aberration name to use in FlyBase          *e :
+! A2b.  Aberration name(s) used in reference                *Q :
+! A2c.  Action - replace this aberration name                  :
+!
+! A4.   Mutagen [CV]                                     *o :137Cs gamma ray
+! A6.   Progenitor genotype                              *O :In(1)BSC4
+!
+! A9.   Class of aberration, relative to progenitor (SO_term ; ID) [CV] *C :chromosomal_deletion ; SO:1000029
+! A26.  Class of aberration, relative to wild type (SO_term ; ID) [CV]  *C :interchromosomal_duplication ; SO:0000457
+! A18.  Comments about cytology               *c :Dp(1;Y)BSC169 carries five regions from the X chromosome.  Three segments are appended to YS: a distal X segment (1Lt;1B5, X:1Lt;387562 (R5)), a medial X segment (4D2-4D6;4D7, X:4698591..4813070;4825473..4825859) and a basal X segment that extends distally from a point in centric heterochromatin distal to bb to a point either in X heterochromatin or in basal euchromatin.  An X segment extending proximal from a point between fog and stnA (X:22228492..22384175) to an unknown point in X heterochromatin and a small X segment from 16A carrying B[S] are appended to YL.
+! A24a. Transposon insertion(s)               *P :P{3'.RS5+3.3'}BSC4
+! A24b. Non-insertion allele(s)               *S :B[S]
+!
+! A14.  Miscellaneous comments                *u :
+! A90a. Location data for breakpoint number (dupl for multiple) :1
+! A90b.    Genomic location of breakpoint                       :X:1
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :This is 1Lt, not an induced breakpoint.
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :2
+! A90b.    Genomic location of breakpoint                       :X:387562
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :3
+! A90b.    Genomic location of breakpoint                       :X:4698591--4813070
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A90a. Location data for breakpoint number (dupl for multiple) :4
+! A90b.    Genomic location of breakpoint                       :X:4825473..4825859
+! A90c.    Genome release number for entry in A90a              :5
+! A90j.    Comments concerning sequence location                :
+!
+! A92a. Duplicated segment data for segment number (dupl for multiple) :1
+! A92b.    Cytological location of left end of segment                 :1Lt
+! A92c.    Cytological location of right end of segment                :1B5
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A92a. Duplicated segment data for segment number (dupl for multiple) :2
+! A92b.    Cytological location of left end of segment                 :X:4D2--4D6
+! A92c.    Cytological location of right end of segment                :4D7
+! A92d.    Estimated cytology                                          :y
+! A92e.    Observed cytology                                           :n
+!
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

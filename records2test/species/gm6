@@ -1,0 +1,87 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0199194
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :example of merging across species - currently allowed to do this (provided that 'winning' symbol is one of the symbols being merged) and merged feature takes on species of winning symbol - if implementing the species field means this trick is no longer allowed, then we'll need another method to specify changing the species of a feature (gene, allele are definitely needed). These are real examples that I would like to load for real sometime soon.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :mir-2c
+! G1b.  Gene symbol(s) used in reference                    *i :mir-2c
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2b.  Gene name(s) used in reference                      *V :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :mir-2c[sponge.Scer\UAS.T:Disc\RFP-mCherry]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :mir-2c[sponge.Scer\UAS.T:Disc\RFP-mCherry]
+Disc\RFP[mCh.Scer\UAS.mir-2c.sponge]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA1s. Species of gene [symbol]                                :Dmel
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA14.  Internal notes  *W :genuine example - both alleles in GA1f exist, want species to end up being Dmel as mir-2c[sponge.Scer\UAS.T:Disc\RFP-mCherry] is the winning symbol. In this test one, filled in GA1s as it will be filled in by default??
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :mir-13a
+! G1b.  Gene symbol(s) used in reference                    *i :mir-13a
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2b.  Gene name(s) used in reference                      *V :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 57: 02 Jul 2014
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :mir-13a[sponge.Scer\UAS.T:Disc\RFP-mCherry]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :mir-13a[sponge.Scer\UAS.T:Disc\RFP-mCherry]
+Disc\RFP[mCh.Scer\UAS.mir-13a.sponge]
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA1s. Species of gene [symbol]                                :
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA14.  Internal notes  *W :genuine example - both alleles in GA1f exist, want species to end up being Dmel as mir-2c[sponge.Scer\UAS.T:Disc\RFP-mCherry] is the winning symbol. In this test one, GA1s is not filled in??
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

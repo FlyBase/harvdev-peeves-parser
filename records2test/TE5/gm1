@@ -1,0 +1,54 @@
+! PUBLICATION PROFORMA                   Version 44:  6 Nov 2012
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0152065
+! P2.   Parent multipub abbreviation               *w :Genome Biol.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! NATURAL TRANSPOSON PROFORMA                        Version 7: 13 Apr 2011
+!
+! TE1f. ID for gen.natTE (FBte or "new")       :FBte0000266
+! TE1a. gen.natTE symbol to use in database    :3S18
+! TE1b. gen.natTE symbol used in reference     :3S18
+! TE3.  Species                                :
+!
+! TE14a.  gen.natTE name to use in database      :
+! TE14b.  gen.natTE name used in reference       :
+! TE14c.  Database gen.natTE name(s) to replace  :
+!
+!
+! TE5a. Number of copies in sequenced genome (dupl for multiple) :
+!   TE5b. Description of sequenced genome   :
+! TE5c. Number of copies in reported genome (dupl for multiple)  :1
+!   TE5d. Description of reported genome(s) :
+! TE5c. Number of copies in reported genome (dupl for multiple)  :Approximately 1
+!   TE5d. Description of reported genome(s) :
+! TE5c. Number of copies in reported genome (dupl for multiple)  :Approximately 12.
+!   TE5d. Description of reported genome(s) :
+! TE5c. Number of copies in reported genome (dupl for multiple)  :Approximately fdshdhsfhdjshjk.
+!   TE5d. Description of reported genome(s) :
+! TE5c. Number of copies in reported genome (dupl for multiple)  :Approximately rubish and no full stop
+!   TE5d. Description of reported genome(s) :
+! TE5c. Number of copies in reported genome (dupl for multiple)  :234hk.
+!   TE5d. Description of reported genome(s) :
+!
+! TE13. Internal comments   :?
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

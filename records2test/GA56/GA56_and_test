@@ -1,0 +1,24 @@
+
+Processing gm0001
+
+gm0001: P38: Not checking this field because of ?? in '??
+'
+
+gm0001: GA56: 'lethal & recessive' is not a valid phenotypic class
+
+gm0001: GA14: Not checking this field because of ?? in 'This proforma is for if people put & in GA56 by mistake - it generated an error yay ??
+also put in a completely blank line to see what happend - yay, it just ignored it !!'
+
+gm0001: GA56: 'bw[4] bw[1]' is neither a valid allele or aberration in '(with bw[4] bw[1]) chemical resistant'
+
+gm0001: GA56: superfluous trailing whitespace in 'bw[6] '
+
+
+This file failed at least one check:	gm0001
+
+Ignoring these 7 files:
+
+GA56_and_test	gm0001%	gm070227%	peeves.crib	peeves_test.cfg	pub.crib	sent
+
+
+

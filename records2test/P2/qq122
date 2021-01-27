@@ -1,0 +1,9 @@
+! PUBLICATION PROFORMA                   Version 41:  16 Mar 2010
+!
+! P22.  FlyBase reference ID (FBrf)      *U :FBrf0186715
+! P1.   Type of publication [CV]  *T :
+! P2.   Parent multipub (abbreviation)      *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :no_flag
+! P19.  Internal notes                   *H :?? The FBrf in P22 has pubtype of 'obituary', which typically has a parent multipub, but I've left P2 blank - want a Peeves error here.  sm100415.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

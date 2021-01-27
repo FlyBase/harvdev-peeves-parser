@@ -1,0 +1,171 @@
+! C1.  Curator ID	:sian
+! C2.  Date		:170103
+! C3.  Curator notes to self	:
+! C9.  Cambridge curation (new_al, merge, split, rename, new_char, pheno, new_transg, nocur) 
+! C4.  Additional curation (P41. wt_exp, pert_exp, neur_exp, gene_model, gene_model_nonmel, phys_int, cis_reg, genom_feat, no_flag, P42. novel_anat P43. disease)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 46:  20 Jun 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0212909
+! P2.   Parent multipub abbreviation               *w :Dev. Biol.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 8: Jun 08 2011
+!
+! F1f. Database id (default 'new')   :FBpp0090583
+! F1a. Gene product symbol           :N-XP
+! F3.  Gene product type [CV]        :protein SO:0000358
+! F2.  Sequence attribute [CV]	     :
+!
+! F9. Expression pattern (<e><t><a><s><note>) :
+<e> il <t> second instar larval stage -- late third instar larval stage <a> epithelial cell &&of larval inner optic anlage <s>  <note>
+<e> il <t> second instar larval stage--late third instar larval stage <a> epithelial cell &&of larval outer optic anlage <s>  <note>
+<e> il <t> late third instar larval stage <a> optic lobe neuron &&of medulla <s> axon <note>
+<e> il <t> late third instar larval stage <a> lamina <s>  <note>
+<e> il <t> late third instar larval stage <a> medulla <s>  <note>
+!
+! F15. General expression comment [free text] :@N@ protein is strongly expressed in neuroepithelial cells of the inner and outer optic anlagen (IPC, OPC) from late second to late third instar larval stages. @N@ expression is downregulated in the medial cells in the OPC that become medulla neuroblasts. @N@ protein is strongly expressed in medulla neurons and their axons, in the medulla neuropil, and in the lamina.
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 8: Jun 08 2011
+!
+! F1f. Database id (default 'new')   :FBpp0110662
+! F1a. Gene product symbol           :Dl-XP
+! F3.  Gene product type [CV]        :protein SO:0000358
+! F2.  Sequence attribute [CV]	     :
+!
+! F9. Expression pattern (<e><t><a><s><note>) :
+<e> il <t> second instar larval stage--late third instar larval stage <a> epithelial cell &&of larval inner optic anlage <s>  <note>
+<e> il <t> second instar larval stage--late third instar larval stage <a> epithelial cell &&of larval outer optic anlage <s>  <note>
+<e> il <t> late third instar larval stage <a> optic lobe neuron &&of medulla <s>  <note> newly generated, not mature, neurons
+<e> il <t> E | stage 15-14 <a> lamina anlage | faint <s>  <note>
+<e> il <t> O | stage S12A-12B <a> medulla <s>  <note>
+<e> il <t> A | stage 1-1 <a> adult brain <s>  <note>
+!
+! F15. General expression comment [free text] :@Dl@ protein is strongly expressed in neuroepithelial cells of the inner and outer optic anlagen (IPC, OPC) from late second to late third instar larval stages. In the OPC, @Dl@ immunoreactivity is stronger in the medial neuroepithelial cells that border the medulla neuroblasts. @Dl@ protein expression is detected at a lower level in medulla neuroblasts, but is higher in newly generated medulla neurons; however it is not detected in mature medulla neurons or their axons. @Dl@ protein is weakly expressed in the lamina anlage, and in anterior cells in the lamina; it is more strongly expressed as punctate dots in posterior lamina cells.
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 8: Jun 08 2011
+!
+! F1f. Database id (default 'new')   :FBpp0090678
+! F1a. Gene product symbol           :Su(H)-XP
+! F3.  Gene product type [CV]        :protein SO:0000358
+! F2.  Sequence attribute [CV]	     :
+!
+! F9. Expression pattern (<e><t><a><s><note>) :
+<e> il <t> third instar larval stage <a> embryonic/larval optic lobe | ubiquitous <s>  <note>
+<e> il <t> third instar larval stage <a> embryonic/larval brain | ubiquitous <s>  <note>
+<e> il <t> third instar larval stage <a> A1-7 dorsal acute muscle 1--A1-7 dorsal acute muscle 2 | ubiquitous <s>  <note>
+<e> il <t> third instar larval stage <a> embryonic peripheral glial cell 4--93 dorsal acute muscle 2 | ubiquitous <s>  <note>
+!
+! F15. General expression comment [free text] :@Su(H)@ protein is ubiquitously expressed in the optic lobes, the central brain, and the ventral nerve cord in the larval CNS.
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 8: Jun 08 2011
+!
+! F1f. Database id (default 'new')   :FBtr0006829
+! F1a. Gene product symbol           :Ecol\lacZ[E(spl)m8-HLH.2.61]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+!
+! F9. Expression pattern (<e><t><a><s><note>) :
+<e> de <t> second instar larval stage--late third instar larval stage <a> larval inner optic anlage <s>  <note>
+<e> de <t> second instar larval stage--late third instar larval stage <a> larval outer optic anlage <s>  <note>
+<e> de <t> late third instar larval stage <a> medulla forming neuroblast <s>  <note>
+<e> de <t> late third instar larval stage <a> optic lobe neuron &&of medulla <s> axon <note>
+!
+! F15. General expression comment [free text] :@E(spl)m8-HLH@ transcript is expressed in the inner and outer optic anlagen (IPC, OPC), most strongly in the medial epithelial cells of the OPC. Expression is also observed in medulla forming neuroblasts, and in newly generated medulla neurons and their axons.
+!
+! F11. Expression pattern ascribed to (gene symbol) :E(spl)m8-HLH
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :n
+!     F11b. Is pattern aberrant relative to wild-type (y/n):n
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 8: Jun 08 2011
+!
+! F1f. Database id (default 'new')   :FBtr0472552
+! F1a. Gene product symbol           :Scer\GAL4[C855a]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+!
+! F9. Expression pattern (<e><t><a><s><note>) :
+<e> debs <t> second instar larval stage--third instar larval stage <a> epithelial cell &&of larval outer optic anlage <s>  <note>
+<e> debs <t> second instar larval stage--third instar larval stage <a> lamina anlage <s>  <note>
+!
+! F15. General expression comment [free text] :@Scer\GAL4[C855a]@ drives expression from the end of the first instar onwards in the neuroepithelial cells of the outer optic anlage (OPC), and in lamina precursor cells.
+!
+! F17. Alleles or genotypes used :N[NIG.3936R]
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 8: Jun 08 2011
+!
+! F1f. Database id (default 'new')   :FBtr0004060
+! F1a. Gene product symbol           :Scer\GAL4[c768]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+!
+! F9. Expression pattern (<e><t><a><s><note>) :
+<e> debs <t> second instar larval stage--third instar larval stage <a> epithelial cell &&of larval outer optic anlage <s>  <note>
+<e> debs <t> second instar larval stage--third instar larval stage <a> embryonic/larval brain | restricted <s>  <note>
+<e> debs <t> second instar larval stage--third instar larval stage <a> ventral nerve cord | restricted <s>  <note>
+!
+! F15. General expression comment [free text] :@Scer\GAL4[C855a]@ drives expression from the end of the first instar onwards in the neuroepithelial cells of the outer optic anlage (OPC), as well as in some cells in the central brain and the ventral nerve cord.
+!
+! F17. Alleles or genotypes used :N[NIG.3936R]
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 8: Jun 08 2011
+!
+! F1f. Database id (default 'new')   :FBtr0344495
+! F1a. Gene product symbol           :Scer\GAL4[insc-Mz1407]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+!
+! F9. Expression pattern (<e><t><a><s><note>) :
+<e> debs <t> second instar larval stage--third instar larval stage <a> neuroblast &&of embryonic/larval optic lobe <s>  <note>
+<e> debs <t> second instar larval stage--third instar larval stage <a> neuroblast &&of embryonic/larval brain <s>  <note>
+<e> debs <t> second instar larval stage--third instar larval stage <a> neuroblast &&of ventral nerve cord <s>  <note>
+!
+! F15. General expression comment [free text] :@Scer\GAL4[insc-Mz1407]@ drives expression in neuroblasts of the larval optic lobe, central brain, and ventral nerve cord, but not the neuroepithelial cells of the outer optic anlage (OPC).
+!
+! F11. Expression pattern ascribed to (gene symbol) :insc
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :n
+!     F11b. Is pattern aberrant relative to wild-type (y/n):n
+!
+! F17. Alleles or genotypes used :N[NIG.3936R]
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 8: Jun 08 2011
+!
+! F1f. Database id (default 'new')   :FBtr0001022
+! F1a. Gene product symbol           :Scer\GAL4[elav-C155]RA
+! F3.  Gene product type [CV]        :mRNA SO:0000234
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+!
+! F9. Expression pattern (<e><t><a><s><note>) :
+<e> debs <t> second instar larval stage--third instar larval stage <a> neuroblast &&of embryonic/larval optic lobe <s>  <note>
+<e> debs <t> second instar larval stage--third instar larval stage <a> neuroblast &&of embryonic/larval brain <s>  <note>
+<e> debs <t> second instar larval stage--third instar larval stage <a> neuroblast &&of ventral nerve cord <s>  <note>
+!
+! F15. General expression comment [free text] :@Scer\GAL4[elav-C155]@ drives expression in neuroblasts of the larval optic lobe, central brain, and ventral nerve cord, but not the neuroepithelial cells of the outer optic anlage (OPC).
+!
+! F11. Expression pattern ascribed to (gene symbol) :elav
+!     F11a. Is subset of wild-type gene expression pattern (y/n) :n
+!     F11b. Is pattern aberrant relative to wild-type (y/n):n
+!
+! F17. Alleles or genotypes used :N[NIG.3936R]
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!
+

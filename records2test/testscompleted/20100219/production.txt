@@ -1,0 +1,1423 @@
+
+Processing gm25195.edit
+
+gm25195.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25195.edit: No data in either G1b or G2b for 'nemy'
+
+
+Processing gm25192.edit
+
+gm25192.edit: Invalid proforma field  MS18a. Cloning sites [CV]    :
+
+
+Processing gm25191.edit
+
+gm25191.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25191.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0140267?
+
+gm25191.edit: No data in either G1b or G2b for 'nemy'
+
+
+Processing gm25190.edit
+
+gm25190.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25190.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0159903?
+
+gm25190.edit: No data in either G1b or G2b for 'nemy'
+
+gm25190.edit: G1g claims that CG42708 is an existing gene symbol, but Chado has never heard of it.
+
+gm25190.edit: No data in either G1b or G2b for 'CG42708'
+
+
+Processing gm25189.edit
+
+gm25189.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25189.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0141415?
+
+gm25189.edit: No data in either G1b or G2b for 'nemy'
+
+gm25189.edit: G1g claims that CG42708 is an existing gene symbol, but Chado has never heard of it.
+
+
+Processing gm25188.edit
+
+gm25188.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25188.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0187645?
+
+gm25188.edit: No data in either G1b or G2b for 'nemy'
+
+gm25188.edit: G1g claims that CG42708 is an existing gene symbol, but Chado has never heard of it.
+
+
+Processing gm25187.edit
+
+gm25187.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0208510?
+
+gm25187.edit: No data in either G1b or G2b for 'nemy'
+
+gm25187.edit: G1g claims that CG42708 is an existing gene symbol, but Chado has never heard of it.
+
+gm25187.edit: Invalid proforma field  MS18a. Cloning sites [CV]    :
+
+
+Processing gm25186.edit
+
+gm25186.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25186.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0139971?
+
+gm25186.edit: No data in either G1b or G2b for 'nemy'
+
+
+Processing gm25185.edit
+
+gm25185.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25185.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0204785?
+
+gm25185.edit: No data in either G1b or G2b for 'nemy'
+
+gm25185.edit: G1g claims that CG42708 is an existing gene symbol, but Chado has never heard of it.
+
+
+Processing gm25184.edit
+
+gm25184.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25184.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0166452?
+
+gm25184.edit: No data in either G1b or G2b for 'nemy'
+
+gm25184.edit: G1g claims that CG42708 is an existing gene symbol, but Chado has never heard of it.
+
+
+Processing gm25183.edit
+
+gm25183.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25183.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0208557?
+
+gm25183.edit: No data in either G1b or G2b for 'nemy'
+
+gm25183.edit: G1g claims that CG42708 is an existing gene symbol, but Chado has never heard of it.
+
+
+Processing gm25182.edit
+
+gm25182.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25182.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0104946?
+
+gm25182.edit: No data in either G1b or G2b for 'nemy'
+
+gm25182.edit: G1g claims that CG42708 is an existing gene symbol, but Chado has never heard of it.
+
+gm25182.edit: No data in either G1b or G2b for 'CG42708'
+
+gm25182.edit: No data in either G1b or G2b for 'CG8776'
+
+gm25182.edit: GA32a: Do you REALLY want to delete 'CG8776[MB01945]'?
+
+gm25182.edit: MA20: Invalid species ''
+
+gm25182.edit: MA20: Invalid species ''
+
+
+Processing gm25181.edit
+
+gm25181.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25181.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0105495?
+
+gm25181.edit: No data in either G1b or G2b for 'nemy'
+
+gm25181.edit: G1g claims that CG42708 is an existing gene symbol, but Chado has never heard of it.
+
+gm25181.edit: No data in either G1b or G2b for 'CG42708'
+
+
+Processing gm25180.edit
+
+gm25180.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25180.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0174215?
+
+gm25180.edit: No data in either G1b or G2b for 'nemy'
+
+
+Processing gm25179.edit
+
+gm25179.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25179.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0195262?
+
+gm25179.edit: No data in either G1b or G2b for 'nemy'
+
+
+Processing gm25178.edit
+
+gm25178.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25178.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0206129?
+
+gm25178.edit: No data in either G1b or G2b for 'nemy'
+
+
+Processing gm25177.edit
+
+gm25177.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25177.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0141561?
+
+gm25177.edit: No data in either G1b or G2b for 'nemy'
+
+gm25177.edit: G1g claims that CG42708 is an existing gene symbol, but Chado has never heard of it.
+
+
+Processing gm25176.edit
+
+gm25176.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25176.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0125078?
+
+gm25176.edit: No data in either G1b or G2b for 'nemy'
+
+
+Processing gm25175.edit
+
+gm25175.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25175.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0202345?
+
+gm25175.edit: No data in either G1b or G2b for 'nemy'
+
+gm25175.edit: G1g claims that CG42708 is an existing gene symbol, but Chado has never heard of it.
+
+
+Processing gm25174.edit
+
+gm25174.edit: No data in either G1b or G2b for 'Dpse\GA21309'
+
+gm25174.edit: G1g claims that CG42708 is an existing gene symbol, but Chado has never heard of it.
+
+
+Processing gm25173.edit
+
+gm25173.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25173.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0206127?
+
+gm25173.edit: No data in either G1b or G2b for 'nemy'
+
+gm25173.edit: G1g claims that CG42708 is an existing gene symbol, but Chado has never heard of it.
+
+gm25173.edit: No data in either G1b or G2b for 'CG42708'
+
+
+Processing gm25172.edit
+
+gm25172.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25172.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0141245?
+
+gm25172.edit: No data in either G1b or G2b for 'nemy'
+
+gm25172.edit: G1g claims that CG42708 is an existing gene symbol, but Chado has never heard of it.
+
+gm25172.edit: No data in either G1b or G2b for 'CG42708'
+
+
+Processing gm25171.edit
+
+gm25171.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25171.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0126668?
+
+gm25171.edit: No data in either G1b or G2b for 'nemy'
+
+gm25171.edit: G1g claims that CG42708 is an existing gene symbol, but Chado has never heard of it.
+
+gm25171.edit: No data in either G1b or G2b for 'CG42708'
+
+
+Processing gm25170.edit
+
+gm25170.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25170.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0202955?
+
+gm25170.edit: No data in either G1b or G2b for 'nemy'
+
+gm25170.edit: G1g claims that CG42708 is an existing gene symbol, but Chado has never heard of it.
+
+gm25170.edit: No data in either G1b or G2b for 'CG42708'
+
+
+Processing gm25169.edit
+
+gm25169.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25169.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0126705?
+
+gm25169.edit: No data in either G1b or G2b for 'nemy'
+
+gm25169.edit: G1g claims that CG42708 is an existing gene symbol, but Chado has never heard of it.
+
+gm25169.edit: No data in either G1b or G2b for 'CG42708'
+
+
+Processing gm25168.edit
+
+gm25168.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25168.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0202579?
+
+gm25168.edit: No data in either G1b or G2b for 'nemy'
+
+gm25168.edit: G1g claims that CG42708 is an existing gene symbol, but Chado has never heard of it.
+
+gm25168.edit: No data in either G1b or G2b for 'CG42708'
+
+
+Processing gm25167.edit
+
+gm25167.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25167.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0200327?
+
+gm25167.edit: No data in either G1b or G2b for 'nemy'
+
+gm25167.edit: G1g claims that CG42708 is an existing gene symbol, but Chado has never heard of it.
+
+gm25167.edit: No data in either G1b or G2b for 'CG42708'
+
+
+Processing gm25166.edit
+
+gm25166.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25166.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0195410?
+
+gm25166.edit: No data in either G1b or G2b for 'nemy'
+
+gm25166.edit: G1g claims that CG42708 is an existing gene symbol, but Chado has never heard of it.
+
+gm25166.edit: No data in either G1b or G2b for 'CG42708'
+
+
+Processing gm25165.edit
+
+gm25165.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25165.edit: G31b: Do you *really* want to dissociate 'nemy' from FBrf0200402?
+
+gm25165.edit: No data in either G1b or G2b for 'nemy'
+
+gm25165.edit: G1g claims that CG42708 is an existing gene symbol, but Chado has never heard of it.
+
+gm25165.edit: No data in either G1b or G2b for 'CG42708'
+
+
+Processing gm25160.edit
+
+gm25160.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25160.edit: G31b: Do you *really* want to dissociate 'l(1)19Ec' from FBrf0208510?
+
+gm25160.edit: No data in either G1b or G2b for 'l(1)19Ec'
+
+gm25160.edit: G1g claims that CG42707 is an existing gene symbol, but Chado has never heard of it.
+
+
+Processing gm25159.edit
+
+gm25159.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25159.edit: G1g claims that CG42707 is an existing gene symbol, but Chado has never heard of it.
+
+
+Processing gm25158.edit
+
+gm25158.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25158.edit: No data in either G1b or G2b for 'l(1)19Ec'
+
+
+Processing gm25157.edit
+
+gm25157.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25157.edit: No data in either G1b or G2b for 'l(1)19Ec'
+
+gm25157.edit: No data in either G1b or G2b for 'Dpse\GA10854'
+
+gm25157.edit: G1g claims that CG42707 is an existing gene symbol, but Chado has never heard of it.
+
+
+Processing gm25156.edit
+
+gm25156.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25156.edit: G31b: Do you *really* want to dissociate 'l(1)19Ec' from FBrf0206127?
+
+gm25156.edit: No data in either G1b or G2b for 'l(1)19Ec'
+
+gm25156.edit: G1g claims that CG42707 is an existing gene symbol, but Chado has never heard of it.
+
+gm25156.edit: No data in either G1b or G2b for 'CG42707'
+
+
+Processing gm25155.edit
+
+gm25155.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25155.edit: G31b: Do you *really* want to dissociate 'l(1)19Ec' from FBrf0202579?
+
+gm25155.edit: No data in either G1b or G2b for 'l(1)19Ec'
+
+gm25155.edit: G1g claims that CG42707 is an existing gene symbol, but Chado has never heard of it.
+
+gm25155.edit: No data in either G1b or G2b for 'CG42707'
+
+
+Processing gm25154.edit
+
+gm25154.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25154.edit: G31b: Do you *really* want to dissociate 'l(1)19Ec' from FBrf0200327?
+
+gm25154.edit: No data in either G1b or G2b for 'l(1)19Ec'
+
+gm25154.edit: G1g claims that CG42707 is an existing gene symbol, but Chado has never heard of it.
+
+gm25154.edit: No data in either G1b or G2b for 'CG42707'
+
+
+Processing gm25153.edit
+
+gm25153.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25153.edit: G31b: Do you *really* want to dissociate 'l(1)19Ec' from FBrf0195410?
+
+gm25153.edit: No data in either G1b or G2b for 'l(1)19Ec'
+
+gm25153.edit: G1g claims that CG42707 is an existing gene symbol, but Chado has never heard of it.
+
+gm25153.edit: No data in either G1b or G2b for 'CG42707'
+
+
+Processing gm25150.edit
+
+gm25150.edit: G1g claims that CG17667 is an existing gene symbol, but Chado has never heard of it.
+
+gm25150.edit: GA1g claims that CG17667[EP3193] is an existing allele symbol, but Chado has never heard of it.
+
+gm25150.edit: GA1g claims that CG17667[EP3622] is an existing allele symbol, but Chado has never heard of it.
+
+gm25150.edit: GA1g claims that CG17667[EY07351] is an existing allele symbol, but Chado has never heard of it.
+
+gm25150.edit: GA1g claims that CG17667[GD12] is an existing allele symbol, but Chado has never heard of it.
+
+gm25150.edit: GA1g claims that CG17667[GD2508] is an existing allele symbol, but Chado has never heard of it.
+
+gm25150.edit: GA1g claims that CG17667[GD14305] is an existing allele symbol, but Chado has never heard of it.
+
+gm25150.edit: GA1g claims that CG17667[HM05068] is an existing allele symbol, but Chado has never heard of it.
+
+gm25150.edit: GA1g claims that CG17667[KK110672] is an existing allele symbol, but Chado has never heard of it.
+
+gm25150.edit: MA20: Invalid species ''
+
+gm25150.edit: MA20: Invalid species ''
+
+
+Processing gm25149.edit
+
+gm25149.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25149.edit: No data in either G1b or G2b for 'CG17667'
+
+gm25149.edit: No G2a data corresponding to  G1e.  Action - rename this gene symbol                       :Pegarn
+
+gm25149.edit: MA20: Invalid species ''
+
+gm25149.edit: MA20: Invalid species ''
+
+
+Processing gm25148.edit
+
+gm25148.edit: No data in either G1b or G2b for 'dap'
+
+
+Processing gm25147.edit
+
+gm25147.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25147.edit: G31b: Do you *really* want to dissociate 'Pegarn' from FBrf0208017?
+
+gm25147.edit: No data in either G1b or G2b for 'Pegarn'
+
+gm25147.edit: GA32b: Do you *really* want to dissociate 'Pegarn[EP3193]' from FBrf0208017?
+
+gm25147.edit: GA32a: Do you REALLY want to delete 'Pegarn[EP3348]'?
+
+
+Processing gm25145
+
+gm25145: No data in either G1b or G2b for 'w'
+
+gm25145: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm25145: No data in either G1b or G2b for 'Avic\GFP'
+
+
+Processing gm25143
+
+gm25143: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm25143: No data in either G1b or G2b for 'Avic\GFP'
+
+gm25143: No data in either G1b or G2b for 'Ggal\LYZ'
+
+gm25143: MA20: Invalid species ''
+
+
+Processing gm25142
+
+gm25142: No data in either G1b or G2b for 'w'
+
+gm25142: MA20: Invalid species ''
+
+gm25142: Invalid proforma field  MS18a. Cloning sites [CV]    :
+
+
+Processing gm25141
+
+
+Processing gm25140
+
+
+Processing gm25139
+
+
+Processing gm25138.bibl
+
+
+Processing gm25137
+
+
+Processing gm25136
+
+gm25136: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm25136: No data in either G1b or G2b for 'Hsap\H2BFQ'
+
+gm25136: No data in either G1b or G2b for 'w'
+
+gm25136: No data in either G1b or G2b for 'BacA\p35'
+
+gm25136: MA20: Invalid species ''
+
+
+Processing gm25134.edit
+
+gm25134.edit: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm25134.edit: No data in either G1b or G2b for 'Ilp6'
+
+gm25134.edit: No data in either G1b or G2b for 'InR'
+
+gm25134.edit: GA32a: Do you REALLY want to delete 'InR[dsRNA.cUa]'?
+
+gm25134.edit: MS1h: Do you REALLY want to delete 'FBtp0051884'?
+
+gm25134.edit: Invalid proforma field  MS18a. Cloning sites [CV]    :
+
+
+Processing gm25133
+
+gm25133: No data in either G1b or G2b for 'w'
+
+gm25133: No G2c data corresponding to  G1e.  Action - rename this gene symbol                       :CG7861
+
+gm25133: No data in either G1b or G2b for 'Scer\GAL4'
+
+
+Processing gm25132.edit
+
+gm25132.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25132.edit: No data in either G1b or G2b for 'Appl'
+
+
+Processing gm25130
+
+gm25130: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm25130: No data in either G1b or G2b for 'Ecol\lacZ'
+
+gm25130: MA20: Invalid species ''
+
+gm25130: MA20: Invalid species ''
+
+
+Processing gm25129.edit
+
+gm25129.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25129.edit: P21: Missing data
+
+gm25129.edit: No data in either G1b or G2b for 'nej'
+
+
+Processing gm25127.edit
+
+gm25127.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25127.edit: G1g claims that Npc1b is an existing gene symbol, but Chado has never heard of it.
+
+gm25127.edit: No data in either G1b or G2b for 'Npc1b'
+
+gm25127.edit: G1g claims that CG42707 is an existing gene symbol, but Chado has never heard of it.
+
+gm25127.edit: No data in either G1b or G2b for 'CG42707'
+
+
+Processing gm25126.edit
+
+gm25126.edit: Most .edit records contain a !c, did you forget to add one?
+
+gm25126.edit: No data in either A1b or A2b for 'Df(1)C1'
+
+gm25126.edit: No data in either A1b or A2b for 'Df(1)A118'
+
+
+Processing gm25122
+
+gm25122: P41: Missing data.
+
+gm25122: No data in either G1b or G2b for 'boss'
+
+gm25122: No data in either G1b or G2b for 'step'
+
+gm25122: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm25122: No data in either G1b or G2b for 'InR'
+
+gm25122: No data in either G1b or G2b for 'w'
+
+
+Processing gm24943
+
+gm24943: P41: Missing data.
+
+gm24943: No data in either G1b or G2b for 'Dcr-1'
+
+gm24943: No data in either G1b or G2b for 'pasha'
+
+gm24943: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm24943: No data in either G1b or G2b for 'Mmus\Cd8a'
+
+gm24943: No data in either G1b or G2b for 'Dcr-2'
+
+gm24943: No data in either G1b or G2b for 'AGO1'
+
+gm24943: GA28c: Invalid stamp @AFO2[414]@ in 'Double mutant @AGO1[k08121]@ @AFO2[414]@ projection neuron (PN) clones show normal glomerular target selection in adPN clones and in DL1 single cell projection neuron clones.'
+
+gm24943: GA28c: Invalid stamp @AFO2[414]@ in 'Double mutant @AGO1[k08121]@ @AFO2[414]@ projection neuron (PN) clones show normal glomerular target selection in adPN clones and in DL1 single cell projection neuron clones.'
+
+gm24943: No data in either G1b or G2b for 'piwi'
+
+gm24943: No data in either G1b or G2b for 'aub'
+
+gm24943: MA20: Invalid species ''
+
+gm24943: MA20: Invalid species ''
+
+gm24943: MA20: Invalid species ''
+
+
+Processing gm24399
+
+gm24399: P41: Missing data.
+
+gm24399: No data in either G1b or G2b for 'ems'
+
+gm24399: No data in either G1b or G2b for 'Scer\GAL4'
+
+gm24399: No data in either G1b or G2b for 'Mmus\Cd8a'
+
+gm24399: No data in either G1b or G2b for 'Ecol\lexA'
+
+gm24399: No data in either G1b or G2b for 'Rnor\CD2'
+
+gm24399: No data in either G1b or G2b for 'BacA\p35'
+
+gm24399: No data in either G1b or G2b for 'acj6'
+
+gm24399: G31b: Do you *really* want to dissociate 'Nrt' from FBrf0205118?
+
+gm24399: No data in either G1b or G2b for 'Nrt'
+
+
+Processing pm2187
+
+pm2187: P41: Missing data.
+
+pm2187: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+pm2187: Invalid proforma field  A90b.    Genomic location of breakpoint                       :3R:22919628..22921324
+
+pm2187: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+pm2187: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+pm2187: Invalid proforma field  A90b.    Genomic location of breakpoint                       :3R:23342311..23358483
+
+pm2187: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+
+Processing pm2186
+
+pm2186: P41: Missing data.
+
+pm2186: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+pm2186: Invalid proforma field  A90b.    Genomic location of breakpoint                       :2R:11946618..11987565
+
+pm2186: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+pm2186: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+pm2186: Invalid proforma field  A90b.    Genomic location of breakpoint                       :2R:12212018..12224070
+
+pm2186: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+
+Processing pm2185
+
+pm2185: P41: Missing data.
+
+pm2185: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+pm2185: Invalid proforma field  A90b.    Genomic location of breakpoint                       :3R:8269381..8272656
+
+pm2185: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+pm2185: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+pm2185: Invalid proforma field  A90b.    Genomic location of breakpoint                       :3R:9181043..9190877
+
+pm2185: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+
+Processing pm2184
+
+pm2184: P41: Missing data.
+
+pm2184: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+pm2184: Invalid proforma field  A90b.    Genomic location of breakpoint                       :2R:16976985..17007304
+
+pm2184: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+pm2184: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+pm2184: Invalid proforma field  A90b.    Genomic location of breakpoint                       :2R:17282113..17386709
+
+pm2184: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+
+Processing pm2183
+
+pm2183: P41: Missing data.
+
+pm2183: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+pm2183: Invalid proforma field  A90b.    Genomic location of breakpoint                       :3R:7072252..7095418
+
+pm2183: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+pm2183: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+pm2183: Invalid proforma field  A90b.    Genomic location of breakpoint                       :3R:8486218..8498999
+
+pm2183: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+
+Processing pm2182
+
+pm2182: P41: Missing data.
+
+pm2182: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+pm2182: Invalid proforma field  A90b.    Genomic location of breakpoint                       :3L:3910034..3935268
+
+pm2182: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+pm2182: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+pm2182: Invalid proforma field  A90b.    Genomic location of breakpoint                       :3L:5177885..5228896
+
+pm2182: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+
+Processing pm2181
+
+pm2181: P41: Missing data.
+
+pm2181: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+pm2181: Invalid proforma field  A90b.    Genomic location of breakpoint                       :2R:4848845..4852966
+
+pm2181: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+pm2181: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+pm2181: Invalid proforma field  A90b.    Genomic location of breakpoint                       :2R:5320669..5411775
+
+pm2181: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+
+Processing pm2180
+
+pm2180: P41: Missing data.
+
+pm2180: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+pm2180: Invalid proforma field  A90b.    Genomic location of breakpoint                       :3L:18033789..18078763
+
+pm2180: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+pm2180: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+pm2180: Invalid proforma field  A90b.    Genomic location of breakpoint                       :3L:18833555..18834991
+
+pm2180: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+
+Processing pm2179
+
+pm2179: P41: Missing data.
+
+pm2179: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+pm2179: Invalid proforma field  A90b.    Genomic location of breakpoint                       :2R:20155881..20193551
+
+pm2179: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+pm2179: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+pm2179: Invalid proforma field  A90b.    Genomic location of breakpoint                       :2R:20492825..20500415
+
+pm2179: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+
+Processing pm2178
+
+pm2178: P41: Missing data.
+
+pm2178: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+pm2178: Invalid proforma field  A90b.    Genomic location of breakpoint                       :3R:4756892..4763657
+
+pm2178: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+pm2178: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+pm2178: Invalid proforma field  A90b.    Genomic location of breakpoint                       :3R:5220217..5226766
+
+pm2178: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+
+Processing pm2177
+
+pm2177: P41: Missing data.
+
+pm2177: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+pm2177: Invalid proforma field  A90b.    Genomic location of breakpoint                       :2R:4366981..4421817
+
+pm2177: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+pm2177: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+pm2177: Invalid proforma field  A90b.    Genomic location of breakpoint                       :2R:4858050..4881316
+
+pm2177: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+
+Processing pm2176
+
+pm2176: P41: Missing data.
+
+pm2176: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+pm2176: Invalid proforma field  A90b.    Genomic location of breakpoint                       :3L:7349161..7350625
+
+pm2176: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+pm2176: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+pm2176: Invalid proforma field  A90b.    Genomic location of breakpoint                       :3L:8125230..8134144
+
+pm2176: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+
+Processing pm2175
+
+pm2175: P41: Missing data.
+
+pm2175: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+pm2175: Invalid proforma field  A90b.    Genomic location of breakpoint                       :2R:7042690..7102254
+
+pm2175: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+pm2175: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+pm2175: Invalid proforma field  A90b.    Genomic location of breakpoint                       :2R:7509389..7531762
+
+pm2175: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+
+Processing pm2174
+
+pm2174: P41: Missing data.
+
+pm2174: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+pm2174: Invalid proforma field  A90b.    Genomic location of breakpoint                       :3L:1861374..1865717
+
+pm2174: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+pm2174: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+pm2174: Invalid proforma field  A90b.    Genomic location of breakpoint                       :3L:2526381..2557148
+
+pm2174: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+
+Processing pm2173
+
+pm2173: P41: Missing data.
+
+pm2173: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+pm2173: Invalid proforma field  A90b.    Genomic location of breakpoint                       :3R:20079039..20100787
+
+pm2173: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+pm2173: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+pm2173: Invalid proforma field  A90b.    Genomic location of breakpoint                       :3R:20544176..20587126
+
+pm2173: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+
+Processing pm2172
+
+pm2172: P41: Missing data.
+
+pm2172: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+pm2172: Invalid proforma field  A90b.    Genomic location of breakpoint                       :2R:8587926..8622457
+
+pm2172: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+pm2172: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+pm2172: Invalid proforma field  A90b.    Genomic location of breakpoint                       :2R:9950134..9978645
+
+pm2172: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+
+Processing pm2171
+
+pm2171: P41: Missing data.
+
+pm2171: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :1
+
+pm2171: Invalid proforma field  A90b.    Genomic location of breakpoint                       :3R:4245820..4336007
+
+pm2171: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+pm2171: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple) :2
+
+pm2171: Invalid proforma field  A90b.    Genomic location of breakpoint                       :3R:4778677..4809191
+
+pm2171: Invalid proforma field  A90c.    Genome release number for entry in A90a              :5
+
+
+Processing pm2170
+
+pm2170: P41: Missing data.
+
+pm2170: P21: Missing data
+
+
+Processing pm2169
+
+pm2169: P41: Missing data.
+
+pm2169: P21: Missing data
+
+
+Processing pm2167
+
+pm2167: P41: Missing data.
+
+pm2167: P21: Missing data
+
+pm2167: No data in either G1b or G2b for 'Hsap\CLN3'
+
+
+Processing pm1910
+
+pm1910: No data in either G1b or G2b for 'Scer\GAL4'
+
+
+Processing pm1907
+
+pm1907: P41: Missing data.
+
+
+Processing pm1905
+
+pm1905: No data in either G1b or G2b for 'Hsap\UBE3A'
+
+
+Processing pm1289
+
+pm1289: P41: Missing data.
+
+
+Processing st1163.edit
+
+st1163.edit: Most .edit records contain a !c, did you forget to add one?
+
+st1163.edit: No data in either G1b or G2b for 'sli'
+
+
+Processing st1162.edit
+
+st1162.edit: Most .edit records contain a !c, did you forget to add one?
+
+st1162.edit: No data in either G1b or G2b for 'sli'
+
+
+Processing st1161.edit
+
+st1161.edit: Most .edit records contain a !c, did you forget to add one?
+
+st1161.edit: No data in either G1b or G2b for 'sli'
+
+
+Processing st1160.edit
+
+st1160.edit: Most .edit records contain a !c, did you forget to add one?
+
+st1160.edit: No data in either G1b or G2b for 'sli'
+
+
+Processing st1159.edit
+
+st1159.edit: Most .edit records contain a !c, did you forget to add one?
+
+st1159.edit: No data in either G1b or G2b for 'sli'
+
+
+Processing st1158.edit
+
+st1158.edit: Most .edit records contain a !c, did you forget to add one?
+
+st1158.edit: No data in either G1b or G2b for 'sli # robo # wg'
+
+
+Processing st1157.full
+
+
+Processing sm1076.edit
+
+sm1076.edit: Most .edit records contain a !c, did you forget to add one?
+
+sm1076.edit: Required proforma field P21 missing or malformed.
+
+sm1076.edit: Required proforma field G1b missing or malformed.
+
+sm1076.edit: Required proforma field G2b missing or malformed.
+
+sm1076.edit: Required proforma field G1b missing or malformed.
+
+sm1076.edit: Required proforma field G2b missing or malformed.
+
+sm1076.edit: Required proforma field G1b missing or malformed.
+
+sm1076.edit: Required proforma field G2b missing or malformed.
+
+sm1076.edit: Required proforma field G1b missing or malformed.
+
+sm1076.edit: Required proforma field G2b missing or malformed.
+
+sm1076.edit: Required proforma field G1b missing or malformed.
+
+sm1076.edit: Required proforma field G2b missing or malformed.
+
+sm1076.edit: Required proforma field G1b missing or malformed.
+
+sm1076.edit: Required proforma field G2b missing or malformed.
+
+sm1076.edit: Required proforma field G1b missing or malformed.
+
+sm1076.edit: Required proforma field G2b missing or malformed.
+
+sm1076.edit: Required proforma field G1b missing or malformed.
+
+sm1076.edit: Required proforma field G2b missing or malformed.
+
+sm1076.edit: Required proforma field G1b missing or malformed.
+
+sm1076.edit: Required proforma field G2b missing or malformed.
+
+sm1076.edit: Required proforma field G1b missing or malformed.
+
+sm1076.edit: Required proforma field G2b missing or malformed.
+
+sm1076.edit: Required proforma field G1b missing or malformed.
+
+sm1076.edit: Required proforma field G2b missing or malformed.
+
+sm1076.edit: Required proforma field G1b missing or malformed.
+
+sm1076.edit: Required proforma field G2b missing or malformed.
+
+sm1076.edit: Required proforma field G1b missing or malformed.
+
+sm1076.edit: Required proforma field G2b missing or malformed.
+
+sm1076.edit: Required proforma field G1b missing or malformed.
+
+sm1076.edit: Required proforma field G2b missing or malformed.
+
+sm1076.edit: Required proforma field G1b missing or malformed.
+
+sm1076.edit: Required proforma field G2b missing or malformed.
+
+sm1076.edit: Required proforma field G1b missing or malformed.
+
+sm1076.edit: Required proforma field G2b missing or malformed.
+
+sm1076.edit: Required proforma field G1b missing or malformed.
+
+sm1076.edit: Required proforma field G2b missing or malformed.
+
+sm1076.edit: Required proforma field G1b missing or malformed.
+
+sm1076.edit: Required proforma field G2b missing or malformed.
+
+sm1076.edit: Required proforma field G1b missing or malformed.
+
+sm1076.edit: Required proforma field G2b missing or malformed.
+
+
+Processing sm1075.edit
+
+sm1075.edit: Most .edit records contain a !c, did you forget to add one?
+
+sm1075.edit: Required proforma field P21 missing or malformed.
+
+sm1075.edit: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple)       :1
+
+sm1075.edit: Invalid proforma field c A90b. Genomic location of breakpoint                                :
+
+sm1075.edit: Invalid proforma field c A90j. Comments concerning sequence location                         :
+
+sm1075.edit: Invalid proforma field  A91d. Estimated cytology                                             :y
+
+sm1075.edit: Invalid proforma field  A91e. Observed cytology                                              :n
+
+sm1075.edit: Invalid proforma field  A92d. Estimated cytology                                            :y
+
+sm1075.edit: Invalid proforma field  A92e. Observed cytology                                             :n
+
+sm1075.edit: Required proforma field A1b missing or malformed.
+
+sm1075.edit: Required proforma field A2b missing or malformed.
+
+
+Processing sm1074.edit
+
+sm1074.edit: P23: Can't specify the text of a PC when P1 is not 'personal communication to FlyBase'.
+
+sm1074.edit: Required proforma field P21 missing or malformed.
+
+sm1074.edit: Invalid proforma field  A90a. Location data for breakpoint number (dupl for multiple)        :1
+
+sm1074.edit: Invalid proforma field  A90b. Genomic location of breakpoint                                 :X:7213043
+
+sm1074.edit: Invalid proforma field  A90c. Genome release number for entry in A90a                        :5
+
+sm1074.edit: Invalid proforma field  A90j. Comments concerning sequence location                          :An incorrect lefthand progenitor insertion of @P{XP}Dok[d02937]@, and thus an incorrect sequence location for breakpoint 1 of X:7,113,595 and an incorrect estimated cytology for the left end of segment 1 of 7A4, were displayed on FlyBase through to the FB2010_02 release.
+
+sm1074.edit: Invalid proforma field  A91a. Deleted segment data for segment number (dupl for multiple)   :1
+
+sm1074.edit: Invalid proforma field  A91b. Cytological location of left end of segment                   :7B1
+
+sm1074.edit: Invalid proforma field  A91c. Cytological location of right end of segment                  :7C1
+
+sm1074.edit: Invalid proforma field  A91d. Estimated cytology                                            :y
+
+sm1074.edit: Invalid proforma field  A91e. Observed cytology                                             :n
+
+sm1074.edit: Invalid proforma field  A92d. Estimated cytology                                             :y
+
+sm1074.edit: Invalid proforma field  A92e. Observed cytology                                              :n
+
+sm1074.edit: Required proforma field A1b missing or malformed.
+
+sm1074.edit: Required proforma field A2b missing or malformed.
+
+
+Processing ra743
+
+
+Processing ra742.edit
+
+ra742.edit: Most .edit records contain a !c, did you forget to add one?
+
+ra742.edit: G31b: Do you *really* want to dissociate 'Dl' from FBrf0201799?
+
+ra742.edit: No data in either G1b or G2b for 'Dl'
+
+
+Processing ra737
+
+ra737: MA20: Invalid species ''
+
+
+Processing ra736
+
+
+Processing ra734
+
+
+Processing ra728
+
+ra728: G2a: Missing data when G1f has data 'CG4272 C676' and G1g is n
+
+ra728: G2c: Missing data when G1f has data 'CG4272 C676' and G1g is n
+
+ra728: MA20: Invalid species ''
+
+
+Processing sb178.skim
+
+
+Processing sb177.skim
+
+
+Processing sb176.skim
+
+
+Processing sb175.skim
+
+
+Processing sb174.skim
+
+
+Processing sb173.skim
+
+
+Processing sb172.skim
+
+
+Processing sb171.skim
+
+
+Processing sb170.skim
+
+
+Processing sb169.skim
+
+
+Processing sb168.skim
+
+
+Processing sb167.skim
+
+
+Processing sb166.skim
+
+
+Processing sb165.skim
+
+
+Processing sb164.skim
+
+
+Processing sb163.skim
+
+
+Processing sb162.skim
+
+
+Processing sb161.skim
+
+
+Processing sb160.skim
+
+
+Processing sb159.skim
+
+
+Processing sb158.skim
+
+
+Processing sb157.skim
+
+
+Processing sb156.skim
+
+
+Processing sb155.skim
+
+
+Processing sb154.skim
+
+
+Processing sb153.skim
+
+
+Processing sb152.skim
+
+
+Processing sb151.skim
+
+
+Processing sb150.skim
+
+
+Processing sb149.skim
+
+
+Processing sb148.bibl
+
+
+Processing sb147.skim
+
+
+Processing sb146.skim
+
+
+Processing sb145.skim
+
+
+Processing sb144.skim
+
+
+Processing sb143.skim
+
+
+Processing sb142.skim
+
+
+Processing sb141.skim
+
+
+Processing sb140.skim
+
+
+Processing sb139.skim
+
+
+Processing sb138.skim
+
+
+Processing sr110.skim
+
+
+Processing sr109.skim
+
+
+Processing sr108.skim
+
+
+Processing sr107.skim
+
+
+Processing sr106.skim
+
+
+Processing sr105.skim
+
+
+Processing sr104.skim
+
+
+Processing sr103.skim
+
+
+Processing sr102.skim
+
+
+Processing sr101.skim
+
+
+Processing sr86.skim
+
+sr86.skim: No data in either G1b or G2b for 'step'
+
+I checked 152 files.
+
+These 60 files passed all the checks:
+
+gm25137	gm25138.bibl	gm25139	gm25140	gm25141	ra734	ra736	ra743	sb138.skim	sb139.skim
+sb140.skim	sb141.skim	sb142.skim	sb143.skim	sb144.skim	sb145.skim	sb146.skim	sb147.skim	sb148.bibl	sb149.skim
+sb150.skim	sb151.skim	sb152.skim	sb153.skim	sb154.skim	sb155.skim	sb156.skim	sb157.skim	sb158.skim	sb159.skim
+sb160.skim	sb161.skim	sb162.skim	sb163.skim	sb164.skim	sb165.skim	sb166.skim	sb167.skim	sb168.skim	sb169.skim
+sb170.skim	sb171.skim	sb172.skim	sb173.skim	sb174.skim	sb175.skim	sb176.skim	sb177.skim	sb178.skim	sr101.skim
+sr102.skim	sr103.skim	sr104.skim	sr105.skim	sr106.skim	sr107.skim	sr108.skim	sr109.skim	sr110.skim	st1157.full
+
+These 92 files failed at least one check:
+
+gm24399	gm24943	gm25122	gm25126.edit	gm25127.edit	gm25129.edit	gm25130	gm25132.edit	gm25133	gm25134.edit
+gm25136	gm25142	gm25143	gm25145	gm25147.edit	gm25148.edit	gm25149.edit	gm25150.edit	gm25153.edit	gm25154.edit
+gm25155.edit	gm25156.edit	gm25157.edit	gm25158.edit	gm25159.edit	gm25160.edit	gm25165.edit	gm25166.edit	gm25167.edit	gm25168.edit
+gm25169.edit	gm25170.edit	gm25171.edit	gm25172.edit	gm25173.edit	gm25174.edit	gm25175.edit	gm25176.edit	gm25177.edit	gm25178.edit
+gm25179.edit	gm25180.edit	gm25181.edit	gm25182.edit	gm25183.edit	gm25184.edit	gm25185.edit	gm25186.edit	gm25187.edit	gm25188.edit
+gm25189.edit	gm25190.edit	gm25191.edit	gm25192.edit	gm25195.edit	pm1289	pm1905	pm1907	pm1910	pm2167
+pm2169	pm2170	pm2171	pm2172	pm2173	pm2174	pm2175	pm2176	pm2177	pm2178
+pm2179	pm2180	pm2181	pm2182	pm2183	pm2184	pm2185	pm2186	pm2187	ra728
+ra737	ra742.edit	sm1074.edit	sm1075.edit	sm1076.edit	sr86.skim	st1158.edit	st1159.edit	st1160.edit	st1161.edit
+st1162.edit	st1163.edit
+
+Ignoring these 60 files:
+
+as77.user	as94.user	fb_2010_03_EP3.accession.tsv	fb_2010_03_EP3.secondaryID.tsv	km282	km283	km284	km285	km286	km287
+km288	km289	km290	pl146434.bibl	pl146435.bibl	pl146436.bibl	pl146437.bibl	pl146438.bibl	pl146439.bibl	pl146440.bibl
+pl146441.bibl	pl146442.bibl	pl146443.bibl	pl146444.bibl	pl146445.bibl	pl146446.bibl	pl146447.bibl	pl146448.bibl	pl146449.bibl	pl146450.bibl
+pl146451.bibl	pl146452.bibl	pl146453.bibl	pl146454.bibl	pl146455.bibl	pl146456.bibl	pl146457.bibl	pl146458.bibl	pl146459.bibl	pl146460.bibl
+pl146461.bibl	pl146462.bibl	pl146463.bibl	pl146464.bibl	pl146465.bibl	pl146466.bibl	pl146467.bibl	pl146468.bibl	pl146469.bibl	pl146470.bibl
+pl146472.bibl	pl146473.bibl	pl146474.bibl	pl146475.bibl	pl146476.bibl	pl146477.bibl	pl146478.bibl	pl146479.bibl	pl146480.bibl	pl146481.bibl
+
+
+I came to this conclusion by consulting fb_2010_03_02 stored on oscar.gen.cam.ac.uk
+
+I used these ontologies:
+FBbt: /curfiles/ontologies/fly_anatomy.obo dated 04:02:2010 12:01
+FBdv: /curfiles/ontologies/fly_development.obo dated 19:10:2009 13:49
+FBcv: /curfiles/ontologies/flybase_controlled_vocabulary.obo dated 09:02:2009 13:59
+FBsp: /curfiles/ontologies/fly_taxonomy.obo dated 06:04:2007 11:47
+SO  : /curfiles/ontologies/so.obo dated 02:06:2006 12:44
+GO  : /curfiles/ontologies/gene_ontology.obo dated 26:11:2009 19:30
+GO_dbxrefs: /curfiles/ontologies/GO.xrf_abbs dated 2010/01/23 04:34:32
+
+
+

@@ -182,7 +182,7 @@ sub do_expression_proforma ($$) {
 	{
 		check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
 # can't convert TAP_check to process_field_data format as ideally need to cross-check *part*
-# of field with type of symbol (protein vs transcript) in F1a
+# of field with type of symbol (polypeptide vs transcript) in F1a
 		changes ($file, $2, $1);
 		check_non_utf8 ($file, $2, $3);
 		double_query ($file, $2, $3) or TAP_check ($file, $2, $3);
@@ -366,7 +366,7 @@ sub do_expression_proforma ($$) {
 
 						} elsif ($gene_product_type eq 'FBpp') {
 
-							validate_exp_pro_SO_field ('F3', $F3_list[$i], 'SO:protein');
+							validate_exp_pro_SO_field ('F3', $F3_list[$i], 'SO:polypeptide');
 
 						}
 

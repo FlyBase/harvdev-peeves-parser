@@ -1,0 +1,209 @@
+! PUBLICATION PROFORMA                   Version 44:  6 Nov 2012
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0009259
+! P2.   Parent multipub abbreviation               *w :A. Rep. Biol. Lab., Long Island Biol. Ass.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :no_flag
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :noDOcur
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0017303
+! MA1a. Insertion symbol to use in database    :P{GAL4-elav.L}3E
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :synTE_insertion
+ blah
+! MA4.  Symbol of inserted transposon          :
+! MA20. Species of host genome                 :
+!
+! MA1c. Action - rename this insertion symbol    :
+! MA1g. Action - merge these insertion(s) (FBti) :
+!
+!
+! MA5a. Chromosomal location of insert                     :
+!
+!
+! MA8.  Phenotype (viable, fertile)            :
+!
+!
+!
+!
+!
+!
+!
+! MA10. Internal notes                   :??error - duplicated lien in MA27, also second line has space
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0013995 # FBti0012711
+! MA1a. Insertion symbol to use in database    :P{GAL4-ey.H}4-8 # P{GAL4-ey.H}SS5
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :synTE_insertion
+! MA4.  Symbol of inserted transposon          :
+! MA20. Species of host genome                 :
+!
+! MA1c. Action - rename this insertion symbol    :
+! MA1g. Action - merge these insertion(s) (FBti) :
+!
+!
+! MA5a. Chromosomal location of insert                     :
+!
+!
+! MA8.  Phenotype (viable, fertile)            :
+!
+!
+!
+!
+!
+!
+!
+! MA10. Internal notes                   :??no errros, checking dehashing
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0072994 # FBti0072913
+! MA1a. Insertion symbol to use in database    :P{GAL4-ftz.ng}20 # P{GAL4-ftz.ng}3
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :blah #   newterm # wronghashcount 
+! MA4.  Symbol of inserted transposon          :
+! MA20. Species of host genome                 :
+!
+! MA1c. Action - rename this insertion symbol    :
+! MA1g. Action - merge these insertion(s) (FBti) :
+!
+!
+! MA5a. Chromosomal location of insert                     :
+!
+!
+! MA8.  Phenotype (viable, fertile)            :
+!
+!
+!
+!
+!
+!
+!
+! MA10. Internal notes                   :??error - two many hashes in MA27, also put whitespace around entries 2 and 3
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0014017 # FBti0002141
+! MA1a. Insertion symbol to use in database    :P{GAL4-Hsp70.PB}7-1 # P{GAL4-Hsp70.PB}89-2-1
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :synTE_insertion
+return # single line
+! MA4.  Symbol of inserted transposon          :
+! MA20. Species of host genome                 :
+!
+! MA1c. Action - rename this insertion symbol    :
+! MA1g. Action - merge these insertion(s) (FBti) :
+!
+!
+! MA5a. Chromosomal location of insert                     :
+!
+!
+! MA8.  Phenotype (viable, fertile)            :
+!
+!
+!
+!
+!
+!
+!
+! MA10. Internal notes                   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :new
+! MA1a. Insertion symbol to use in database    :P{}newinsertion
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :
+! MA4.  Symbol of inserted transposon          :
+! MA20. Species of host genome                 :
+!
+! MA1c. Action - rename this insertion symbol    :
+! MA1g. Action - merge these insertion(s) (FBti) :mergefilledin
+!
+!
+! MA5a. Chromosomal location of insert                     :
+!
+!
+! MA8.  Phenotype (viable, fertile)            :
+!
+!
+!
+!
+!
+!
+!
+! MA10. Internal notes                   :??MA27 not filled in
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :new
+! MA1a. Insertion symbol to use in database    :P{GAL4}newinsert
+! MA1b. Symbol used in reference               :P{GAL4}newinsert
+! MA27. Insertion category [CV]                :synTE_insertionblah
+! MA4.  Symbol of inserted transposon          :P{GAL4}
+! MA20. Species of host genome                 :Dmel
+!
+! MA1c. Action - rename this insertion symbol    :
+! MA1g. Action - merge these insertion(s) (FBti) :
+!
+!
+! MA5a. Chromosomal location of insert                     :
+!
+!
+! MA8.  Phenotype (viable, fertile)            :
+!
+!
+!
+!
+!
+!
+!
+! MA10. Internal notes                   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION PROFORMA                   Version 31: 30 Jul 2013
+!
+! MA1f. Database ID for insertion (FBti)       :FBti0131642
+! MA1a. Insertion symbol to use in database    :P{UAS-GCaMP3.T}attP40
+! MA1b. Symbol used in reference               :
+! MA27. Insertion category [CV]                :P{UAS-GCaMP3.T}attP40
+! MA4.  Symbol of inserted transposon          :
+! MA20. Species of host genome                 :
+!
+! MA1c. Action - rename this insertion symbol    :
+! MA1g. Action - merge these insertion(s) (FBti) :
+!
+!
+! MA5a. Chromosomal location of insert                     :
+!
+!
+! MA8.  Phenotype (viable, fertile)            :
+!
+!
+!
+!
+!
+!
+!
+! MA10. Internal notes                   :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

@@ -1,0 +1,16 @@
+! PUBLICATION PROFORMA                   Version 43:  17 Jun 2011
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :new
+! P1.   Type of publication [CV]  *T :paper
+! P2.   Parent multipub abbreviation               *w :Development
+! P12.  Author(s)                           *a-*b :Smith	J.
+! P10.  Year (YYYY), or date (YYYY.M.D) if PC  *t :2012
+! P16.  Title                                  *u :Howdy do.
+! P3.   Volume number                          *y :3
+! P4.   Issue number                           *Y :2
+! P11a. Page range or article number               *z :113--114
+! P13.  Language of publication [CV]                          *L :English
+! P19.  Internal notes                   *H :This record should generate 2 Peeves errors as it's creating a new pub of type 'paper' but has omitted both the PMID and DOI fields.  sm120316.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

@@ -1,0 +1,209 @@
+! PUBLICATION PROFORMA                   Version 47:  25 Nov 2014
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0223742
+! P2.   Parent multipub abbreviation               *w :Development
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :noDOcur
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :Test record  for implementing species field in cam-style proforma - not real data. This record has no errors.  It contains gene renames and merges, with an example of the G1s field being filled in and also being empty in each case??
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :renamed
+! G1b.  Gene symbol(s) used in reference                    *i :renamed
+! G1e.  Action - rename this gene symbol                       :dpp
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :n
+! G1s. Species of gene [symbol]                                :Dmel
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :renamed name
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :decapentaplegic
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :Source for identity of: renamed dpp
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :Example of simple rename with G1s filled in.  Parser should ignore G1s field for renames so shouldn't matter what is in the G1s field anyway??
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :anothernewsymbol
+! G1b.  Gene symbol(s) used in reference                    *i :blah
+! G1e.  Action - rename this gene symbol                       :hh
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :n
+! G1s. Species of gene [symbol]                                :
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :another new name
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :hedgehog
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :Source for identity of: anothernewsymbol hh
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :Example of simple rename with G1s not filled in.  Parser should ignore G1s field for renames so shouldn't matter what is in the G1s field anyway??
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :cnn
+! G1b.  Gene symbol(s) used in reference                    *i :cnn
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :cnn
+l(1)01
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G1s. Species of gene [symbol]                                :Dmel
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :centrosomin
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :Source for merge of: cnn l(1)01
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :Example of merge (where the valid symbol of the merged gene is the same as one of the genes being merged) with G1s filled in.  Parser should ignore G1s field for merges so shouldn't matter what is in the G1s field anyway??
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Dvir\a
+! G1b.  Gene symbol(s) used in reference                    *i :a
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :Dvir\a
+Dvir\Acp65A
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G1s. Species of gene [symbol]                                :
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :approximated
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :Source for merge of: Dvir\a Dvir\Acp65A
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :Example of merge (where the valid symbol of the merged gene is the same as one of the genes being merged) with G1s not filled in.  Parser should ignore G1s field for merges so shouldn't matter what is in the G1s field anyway??
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :madeupsymbol
+! G1b.  Gene symbol(s) used in reference                    *i :amy
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :amy
+da
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :n
+! G1s. Species of gene [symbol]                                :Dmel
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :madeupsymbol fullname
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :Source for merge of: amy da
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :Example of merge (where the valid symbol of the merged gene is a brand new symbol) with G1s filled in.  Parser should ignore G1s field for merges so shouldn't matter what is in the G1s field anyway??
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 76:  04 Sept 2014
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :newCgsymbol
+! G1b.  Gene symbol(s) used in reference                    *i :CG1024
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :CG1024
+Cg67C
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :n
+! G1s. Species of gene [symbol]                                :
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :newCgsymbol name
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :Source for merge of: CG1024 Cg67C
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :Example of merge (where the valid symbol of the merged gene is a brand new symbol) with G1s NOT filled in.  Parser should ignore G1s field for merges so shouldn't matter what is in the G1s field anyway??
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

@@ -1,0 +1,13 @@
+! MULTIPUBLICATION PROFORMA                   Version 10:  21 Aug 2009
+!
+! MP1.  FlyBase multipub ID                       *U :8651
+! MP3.  Is this a new multipub record? (y/n)         :n
+! MP18. Action - make this/these multipub ID(s) secondary IDs of MP1  *N :
+! MP19. Action - obsolete MP1 in FlyBase                       TAKE CARE :
+! MP17. Type of multipub [CV]   *Z :
+! MP2a. Title abbreviation            *s :
+! MP2b. Title                         *u :??testing valid entries in MP1 and obsoletion of MP3 field.  This proforma should generate an error saying "MP3. Invalid proforma field"
+! MP15. ISSN/ISBN                           *I :
+! MP6.  Year of publication, if MP17 = book       *t :
+! MP11. Editor(s), if MP17 = book              *a-*b :
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS MULTIPUBLICATION !!!!!!!!!!!!!!!

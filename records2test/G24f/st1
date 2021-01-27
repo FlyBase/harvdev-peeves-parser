@@ -1,0 +1,142 @@
+! PUBLICATION PROFORMA                   Version 44:  6 Nov 2012
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0214931
+! P2.   Parent multipub abbreviation               *w :Genome Biol.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENE PROFORMA                          Version 74:  6 Nov 2012
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :hh
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :cytoplasm ; GO:0005737 | IDA
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :20130129
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 74:  6 Nov 2012
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :cnn
+! G1b.  Gene symbol(s) used in reference                    *i :cnn
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :??empty field - should trip an error
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 74:  6 Nov 2012
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :bbc
+! G1b.  Gene symbol(s) used in reference                    *i :bbc
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+140229
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :??error - multiple lines, should not trip bad_iso_date as returns before it gets to that
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 74:  6 Nov 2012
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :bbg
+! G1b.  Gene symbol(s) used in reference                    *i :bbg
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - rename this gene name                         :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G24g. GO - Date GO annotation set last reviewed (YYYYMMDD)    :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :20140229
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G14a. Miscellaneous comments                              *u :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

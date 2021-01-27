@@ -1,0 +1,154 @@
+! PUBLICATION PROFORMA                   Version 38:  16 Sep 2009
+!
+! P22.  FlyBase reference ID (FBrf)      *U :FBrf0094055
+! P21.  Parent multipub (ID)                *W :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :no_flag
+! P19.  Internal notes                   *H :??this is for the issue in DC-100
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENE PROFORMA                          Version 64:  12 Jan 2010
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :mer
+! G1b.  Gene symbol(s) used in reference                    *i :mer
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :mer
+Mes2
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :merlin on 3
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - replace this gene name                        :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :Source for merge of: mer Mes2
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G25.  Relationship to clone                       [SoftCV] *s :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G19b. Comments, not allele-specific - molecular          *s :
+! G12a. Comments, not allele-specific - biological role    *r :
+! G12b. Comments, not allele-specific - mutants            *p :
+! G14a. Comments, not allele-specific - other              *u :
+! G15.  Internal notes  *W :??this should not generate an error, as one of the genes (mer) does not have an annotation, but the other one does (Mes2, annotation = CG11100). gm100225
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 64:  12 Jan 2010
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :MESK2
+! G1b.  Gene symbol(s) used in reference                    *i :MESK2
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :MESK2
+MESK4
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :some name
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - replace this gene name                        :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :Source for merge of: MESK2 MESK4
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G25.  Relationship to clone                       [SoftCV] *s :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G19b. Comments, not allele-specific - molecular          *s :
+! G12a. Comments, not allele-specific - biological role    *r :
+! G12b. Comments, not allele-specific - mutants            *p :
+! G14a. Comments, not allele-specific - other              *u :
+! G15.  Internal notes  *W :??this should generate an error as both genes in the merge (in G1f) have annotations - MESK2 = CG15669, and MESK4 = CG31447??
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 64:  12 Jan 2010
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :CG2908
+! G1b.  Gene symbol(s) used in reference                    *i :CG2908
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :CG2908
+CG5470
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :name here
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - replace this gene name                        :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :Source for merge of: CG2908 CG5470
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G25.  Relationship to clone                       [SoftCV] *s :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G19b. Comments, not allele-specific - molecular          *s :
+! G12a. Comments, not allele-specific - biological role    *r :
+! G12b. Comments, not allele-specific - mutants            *p :
+! G14a. Comments, not allele-specific - other              *u :
+! G15.  Internal notes  *W :??this should not give an error as neither gene in G1f has an annotation ID. gm100225.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 64:  12 Jan 2010
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :&agr;Tub67C
+! G1b.  Gene symbol(s) used in reference                    *i :synonym
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :&agr;Tub67C
+1.1.3
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t :
+! G2a.  Action - gene name to use in FlyBase                *e :another name
+! G2b.  Gene name(s) used in reference                      *V :
+! G2c.  Action - replace this gene name                        :
+! G27.  Etymology                                           *u :
+! G28b. Source for merge/identity of                      [SoftCV] *q :Source for merge of: &agr;Tub67C 1.1.3
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G25.  Relationship to clone                       [SoftCV] *s :
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G19b. Comments, not allele-specific - molecular          *s :
+! G12a. Comments, not allele-specific - biological role    *r :
+! G12b. Comments, not allele-specific - mutants            *p :
+! G14a. Comments, not allele-specific - other              *u :
+! G15.  Internal notes  *W :??one with a greek as requested.  Only &agr;Tub67C has an annotation so this should not give an error
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

@@ -1,0 +1,261 @@
+2,3c2,3
+< Using Peeves in /Peeves/test
+< /Peeves/test/Peeves
+---
+> Using Peeves in /Peeves/production
+> /Peeves/production/Peeves
+33,34d32
+< gm25189.edit: G19b: Invalid proforma field 'Comments, not allele-specific - molecular'. Please use G14a instead.
+< 
+522,523d519
+< gm25138.bibl: P27: Invalid proforma field 'ZooRec ID'.
+< 
+540,541d535
+< gm25136: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+590,591d583
+< gm25133: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+640,641d631
+< gm25130: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+796,797d785
+< gm24943: G12a: Invalid proforma field 'Comments, not allele-specific - biological role'. Please use G14a instead.
+< 
+802,803d789
+< gm24943: G12a: Invalid proforma field 'Comments, not allele-specific - biological role'. Please use G14a instead.
+< 
+808,809d793
+< gm24943: GA19: Invalid proforma field 'Assay mode [CV]'
+< 
+841,842d824
+< gm24399: G12a: Invalid proforma field 'Comments, not allele-specific - biological role'. Please use G14a instead.
+< 
+862,863d843
+< pm2187: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+881,882d860
+< pm2186: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+900,901d877
+< pm2185: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+919,920d894
+< pm2184: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+938,939d911
+< pm2183: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+957,958d928
+< pm2182: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+976,977d945
+< pm2181: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+995,996d962
+< pm2180: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+1014,1015d979
+< pm2179: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+1033,1034d996
+< pm2178: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+1052,1053d1013
+< pm2177: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+1071,1072d1030
+< pm2176: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+1090,1091d1047
+< pm2175: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+1109,1110d1064
+< pm2174: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+1128,1129d1081
+< pm2173: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+1147,1148d1098
+< pm2172: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+1166,1167d1115
+< pm2171: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+1218,1231d1165
+< pm1910: G19b: Invalid proforma field 'Comments, not allele-specific - molecular'. Please use G14a instead.
+< 
+< pm1910: G12a: Invalid proforma field 'Comments, not allele-specific - biological role'. Please use G14a instead.
+< 
+< pm1910: G25: superfluous leading whitespace in ' GH07910'
+< 
+< pm1910: G25: Missing or unrecognized SoftCV prefix in 'GH07910'
+< Legal values are
+< 	Identified with:
+< 	Maps to clone:
+< 	Does not map to clone:
+< 
+< pm1910: G25: Invalid proforma field 'Relationship to clone                         [SoftCV]'
+< 
+1272,1273d1205
+< pm1905: P40: Invalid camflag used: 'GOcur' 
+< 
+1309,1310d1240
+< pm1289: G19b: Invalid proforma field 'Comments, not allele-specific - molecular'. Please use G14a instead.
+< 
+1564,1567d1493
+< ra743: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+< ra743: GA19: Invalid proforma field 'Assay mode [CV]'
+< 
+1570,1571d1495
+< ra743: GA19: Invalid proforma field 'Assay mode [CV]'
+< 
+1574,1575d1497
+< ra743: GA19: Invalid proforma field 'Assay mode [CV]'
+< 
+1578,1579d1499
+< ra743: GA19: Invalid proforma field 'Assay mode [CV]'
+< 
+1582,1583d1501
+< ra743: GA19: Invalid proforma field 'Assay mode [CV]'
+< 
+1588,1589d1505
+< ra743: GA19: Invalid proforma field 'Assay mode [CV]'
+< 
+1671,1672d1586
+< ra736: GA19: Invalid proforma field 'Assay mode [CV]'
+< 
+1675,1676d1588
+< ra736: GA19: Invalid proforma field 'Assay mode [CV]'
+< 
+1679,1680d1590
+< ra736: GA19: Invalid proforma field 'Assay mode [CV]'
+< 
+1683,1684d1592
+< ra736: GA19: Invalid proforma field 'Assay mode [CV]'
+< 
+1687,1688d1594
+< ra736: GA19: Invalid proforma field 'Assay mode [CV]'
+< 
+1691,1692d1596
+< ra736: GA19: Invalid proforma field 'Assay mode [CV]'
+< 
+1695,1696d1598
+< ra736: GA19: Invalid proforma field 'Assay mode [CV]'
+< 
+1699,1700d1600
+< ra736: GA19: Invalid proforma field 'Assay mode [CV]'
+< 
+1708,1709d1607
+< ra734: GA19: Invalid proforma field 'Assay mode [CV]'
+< 
+1725,1734d1622
+< ra728: G25: superfluous leading whitespace in ' GH09817'
+< 
+< ra728: G25: Missing or unrecognized SoftCV prefix in 'GH09817'
+< Legal values are
+< 	Identified with:
+< 	Maps to clone:
+< 	Does not map to clone:
+< 
+< ra728: G25: Invalid proforma field 'Relationship to clone                       [SoftCV]'
+< 
+1745,1746d1632
+< ra728: GA19: Invalid proforma field 'Assay mode [CV]'
+< 
+1749,1750d1634
+< ra728: GA19: Invalid proforma field 'Assay mode [CV]'
+< 
+1753,1754d1636
+< ra728: GA19: Invalid proforma field 'Assay mode [CV]'
+< 
+1762,1763d1643
+< km290: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+1773,1774d1652
+< km289: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+3402,3403d3279
+< km288: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+4583,4584d4458
+< km287: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+4980,4981d4853
+< km286: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+5601,5602d5472
+< km285: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+6110,6111d5979
+< km284: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+6955,6956d6822
+< km283: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+7464,7465d7329
+< km282: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+8430,8431d8293
+< sr107.skim: P40: Invalid camflag used: 'GOcur' 
+< 
+8447,8450d8308
+< sr102.skim: P40: Invalid camflag used: 'GOcur' 
+< 
+< sr102.skim: P41: Invalid harvflag used: 'cell_cult' 
+< 
+8457,8460d8314
+< as94.user: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+< as94.user: P40: Invalid camflag used: 'GOcur' 
+< 
+8464,8465d8317
+< sr86.skim: P40: Invalid camflag used: 'GOcur' 
+< 
+8471,8472d8322
+< as77.user: P22: '' cannot be blank: must be 'new', 'unattributed' or 'FBrf0 {6 digits}' [FALSE awaiting Haiyan]
+< 
+8477c8327
+< These 21 files passed all the checks:
+---
+> These 24 files passed all the checks:
+8479,8494c8329,8344
+< gm25137	gm25139	gm25140	gm25141	gm25174.edit	gm25195.edit	sr101.skim	sr103.skim	sr104.skim	sr105.skim
+< sr106.skim	sr108.skim	sr109.skim	sr110.skim	st1157.full	st1158.edit	st1159.edit	st1160.edit	st1161.edit	st1162.edit
+< st1163.edit
+< 
+< These 100 files failed at least one check:
+< 
+< as77.user	as94.user	gm24399	gm24943	gm25126.edit	gm25127.edit	gm25129.edit	gm25130	gm25132.edit	gm25133
+< gm25134.edit	gm25136	gm25138.bibl	gm25142	gm25143	gm25145	gm25147.edit	gm25148.edit	gm25149.edit	gm25150.edit
+< gm25153.edit	gm25154.edit	gm25155.edit	gm25156.edit	gm25157.edit	gm25158.edit	gm25159.edit	gm25160.edit	gm25165.edit	gm25166.edit
+< gm25167.edit	gm25168.edit	gm25169.edit	gm25170.edit	gm25171.edit	gm25172.edit	gm25173.edit	gm25175.edit	gm25176.edit	gm25177.edit
+< gm25178.edit	gm25179.edit	gm25180.edit	gm25181.edit	gm25182.edit	gm25183.edit	gm25184.edit	gm25185.edit	gm25186.edit	gm25187.edit
+< gm25188.edit	gm25189.edit	gm25190.edit	gm25191.edit	gm25192.edit	km282	km283	km284	km285	km286
+< km287	km288	km289	km290	pm1289	pm1905	pm1907	pm1910	pm2167	pm2169
+< pm2170	pm2171	pm2172	pm2173	pm2174	pm2175	pm2176	pm2177	pm2178	pm2179
+< pm2180	pm2181	pm2182	pm2183	pm2184	pm2185	pm2186	pm2187	ra728	ra734
+< ra736	ra737	ra742.edit	ra743	sm1074.edit	sm1075.edit	sm1076.edit	sr102.skim	sr107.skim	sr86.skim
+---
+> as94.user	gm25137	gm25139	gm25140	gm25141	gm25174.edit	gm25195.edit	sr101.skim	sr102.skim	sr103.skim
+> sr104.skim	sr105.skim	sr106.skim	sr107.skim	sr108.skim	sr109.skim	sr110.skim	st1157.full	st1158.edit	st1159.edit
+> st1160.edit	st1161.edit	st1162.edit	st1163.edit
+> 
+> These 97 files failed at least one check:
+> 
+> as77.user	gm24399	gm24943	gm25126.edit	gm25127.edit	gm25129.edit	gm25130	gm25132.edit	gm25133	gm25134.edit
+> gm25136	gm25138.bibl	gm25142	gm25143	gm25145	gm25147.edit	gm25148.edit	gm25149.edit	gm25150.edit	gm25153.edit
+> gm25154.edit	gm25155.edit	gm25156.edit	gm25157.edit	gm25158.edit	gm25159.edit	gm25160.edit	gm25165.edit	gm25166.edit	gm25167.edit
+> gm25168.edit	gm25169.edit	gm25170.edit	gm25171.edit	gm25172.edit	gm25173.edit	gm25175.edit	gm25176.edit	gm25177.edit	gm25178.edit
+> gm25179.edit	gm25180.edit	gm25181.edit	gm25182.edit	gm25183.edit	gm25184.edit	gm25185.edit	gm25186.edit	gm25187.edit	gm25188.edit
+> gm25189.edit	gm25190.edit	gm25191.edit	gm25192.edit	km282	km283	km284	km285	km286	km287
+> km288	km289	km290	pm1289	pm1905	pm1907	pm1910	pm2167	pm2169	pm2170
+> pm2171	pm2172	pm2173	pm2174	pm2175	pm2176	pm2177	pm2178	pm2179	pm2180
+> pm2181	pm2182	pm2183	pm2184	pm2185	pm2186	pm2187	ra728	ra734	ra736
+> ra737	ra742.edit	ra743	sm1074.edit	sm1075.edit	sm1076.edit	sr86.skim
+8522,8525d8371
+< Using ** test ** Peeves
+< 
+< 
+< 

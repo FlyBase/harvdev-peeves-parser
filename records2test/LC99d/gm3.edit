@@ -1,0 +1,60 @@
+! PUBLICATION PROFORMA                   Version 44:  6 Nov 2012
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0009259
+! P2.   Parent multipub abbreviation               *w :A. Rep. Biol. Lab., Long Island Biol. Ass.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :no_flag
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :noDOcur
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! DATASET/COLLECTION PROFORMA   Version 3.1   24 Sep 2015
+!
+! LC1f. Database ID for dataset :FBlc0000531
+! LC1a. Symbol                     :TI_set_Mi{MIC}.MI
+! LC1b. Symbol used in paper/source :
+! LC1c. Synonyms                   :
+! LC1d. Nickname [for labels]      :
+!
+! LC2.  Type of dataset [CV] :
+! LC3.  Parental (umbrella) dataset :
+!
+! LC3a. Action - rename this dataset symbol   :
+! LC3b. Action - merge these datasets     :
+! LC3c. Action - delete dataset record ["y"/blank]  :
+! LC3d. Action - dissociate LC1f from FBrf ["y"/blank] :
+!
+! LC99a. DataSet Accession Number [dbxref.accession] :GH092384
+! LC99b. Database name [database name] :DBID
+! LC99c. DataSet title [free text] :
+! LC99d. Action - dissociate the accession specified in LC99a/LC99b from the dataset specified in LC1f/LC1a? (blank/y) :y
+!
+! LC99a. DataSet Accession Number [dbxref.accession] :9048545654
+! LC99b. Database name [database name] :MGI
+! LC99c. DataSet title [free text] :
+! LC99d. Action - dissociate the accession specified in LC99a/LC99b from the dataset specified in LC1f/LC1a? (blank/y) :F
+!
+! LC8a. Created by [database name]       :
+! LC8c. Created by [free text]     :
+! LC8b. Available from [database name]   :
+! LC8d. Available from [free text] :
+!
+! LC9.  Additional comments :
+! LC10. Internal notes     :??top LC99 block  ok, allowed to fill in LC99d for existing proforma, bottom block shuld complain about F in LC99d
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!
