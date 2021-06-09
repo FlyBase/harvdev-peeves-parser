@@ -1,4 +1,4 @@
-!date: 2019/11/04 16:11:56
+!date: 2020/04/14 16:10:22
 !
 !WARNING: This file is READ-ONLY. Any changes will be overwritten.
 !WARNING: The upstream read/write version is available at:
@@ -16,7 +16,8 @@
 abbreviation: AgBase
 database: AgBase resource for functional analysis of agricultural plant and animal gene products
 generic_url: http://www.agbase.msstate.edu/
-url_syntax: http://www.agbase.msstate.edu/cgi-bin/getEntry.pl?db_pick=[ChickGO/MaizeGO]&uid=[example_id]
+url_syntax: https://agbase.arizona.edu/cgi-bin/getEntry.pl?db_pick=all&database=Swiss-Prot&gb_acc=[example_id]
+example_id: P02264
 entity_type: BET:0000000 ! entity
 
 abbreviation: AGI_LocusCode
@@ -26,7 +27,7 @@ generic_url: http://www.arabidopsis.org
 local_id_syntax: A[Tt][MmCc0-5][Gg][0-9]{5}(\.[0-9]{1})?
 url_syntax: http://arabidopsis.org/servlets/TairObject?type=locus&name=[example_id]
 example_id: AGI_LocusCode:At2g17950
-url_example: http://arabidopsis.org/servlets/TairObject?type=locus&name=At2g17950
+url_example: https://www.arabidopsis.org/servlets/TairObject?type=locus&name=At2g17950
 entity_type: SO:0000704 ! gene
 
 abbreviation: AGRICOLA_ID
@@ -51,15 +52,7 @@ database: PlasmoDB Plasmodium Genome Resource
 generic_url: http://plasmodb.org/
 url_syntax: http://www.plasmodb.org/gene/[example_id]
 example_id: ApiDB_PlasmoDB:PF11_0344
-url_example: http://www.plasmodb.org/gene/PF11_0344
-entity_type: BET:0000000 ! entity
-
-abbreviation: APSNET
-database: APSNET Common Names of Plant Diseases
-generic_url: http://www.mobot.org/mobot/research/apweb/
-url_syntax: http://www.apsnet.org/publications/commonnames/Pages/[example_id].aspx
-example_id: APSNET:AfricanDaisy
-url_example: http://www.apsnet.org/publications/commonnames/Pages/AfricanDaisy.aspx
+url_example: https://plasmodb.org/plasmo/app/record/gene/PF11_0344
 entity_type: BET:0000000 ! entity
 
 abbreviation: APweb
@@ -70,17 +63,9 @@ example_id: APweb:Glossary
 url_example: http://www.mobot.org/mobot/research/apweb/top/glossarya_h.html
 entity_type: BET:0000000 ! entity
 
-abbreviation: AraCyc
-database: AraCyc metabolic pathway database for Arabidopsis thaliana
-generic_url: http://www.arabidopsis.org/biocyc/index.jsp
-url_syntax: http://www.arabidopsis.org:1555/ARA/NEW-IMAGE?type=NIL&object=[example_id]
-example_id: AraCyc:PWYQT-62
-url_example: http://www.arabidopsis.org:1555/ARA/NEW-IMAGE?type=NIL&object=PWYQT-62
-entity_type: BET:0000000 ! entity
-
 abbreviation: ARUK-UCL
 database: Alzheimers Research Gene Ontology Initiative
-generic_url: http://www.ucl.ac.uk/functional-gene-annotation/neurological
+generic_url: https://www.ucl.ac.uk/cardiovascular/research/pre-clinical-and-fundamental-science/functional-gene-annotation/neurological-gene-0
 entity_type: BET:0000000 ! entity
 
 abbreviation: ASAP
@@ -130,7 +115,7 @@ entity_type: BET:0000000 ! entity
 abbreviation: BHF-UCL
 database: Cardiovascular Gene Ontology Annotation Initiative
 description: The Cardiovascular Gene Ontology Annotation Initiative is supported by the British Heart Foundation (BHF) and located at University College London (UCL).
-generic_url: http://www.ucl.ac.uk/cardiovasculargeneontology/
+generic_url: https://www.ucl.ac.uk/cardiovascular/research/pre-clinical-and-fundamental-science/functional-gene-annotation/cardiovascular-gene
 entity_type: BET:0000000 ! entity
 
 abbreviation: BioCyc
@@ -144,16 +129,10 @@ entity_type: BET:0000000 ! entity
 abbreviation: BIOMD
 database: BioModels Database
 synonym: BIOMDID
-generic_url: http://www.ebi.ac.uk/biomodels/
-url_syntax: http://www.ebi.ac.uk/compneur-srv/biomodels-main/publ-model.do?mid=[example_id]
+generic_url: https://www.ebi.ac.uk/biomodels/
+url_syntax: https://www.ebi.ac.uk/biomodels/[example_id]
 example_id: BIOMD:BIOMD0000000045
-url_example: http://www.ebi.ac.uk/compneur-srv/biomodels-main/publ-model.do?mid=BIOMD0000000045
-entity_type: BET:0000000 ! entity
-
-abbreviation: bioPIXIE_MEFIT
-database: biological Process Inference from eXperimental Interaction Evidence/Microarray Experiment Functional Integration Technology
-generic_url: http://avis.princeton.edu/mefit/
-generic_url: http://pixie.princeton.edu/pixie/
+url_example: https://www.ebi.ac.uk/biomodels/BIOMD0000000045
 entity_type: BET:0000000 ! entity
 
 abbreviation: bioRxiv
@@ -166,18 +145,12 @@ example_id: bioRxiv:10.1101/530881v2
 url_example: https://www.biorxiv.org/content/10.1101/530881v2
 entity_type: BET:0000000 ! entity
 
-abbreviation: BIOSIS
-database: BIOSIS previews
-generic_url: http://www.biosis.org/
-example_id: BIOSIS:200200247281
-entity_type: BET:0000000 ! entity
-
 abbreviation: BRENDA
 database: BRENDA, The Comprehensive Enzyme Information System
 generic_url: http://www.brenda-enzymes.info
-url_syntax: http://www.brenda-enzymes.info/php/result_flat.php4?ecno=[example_id]
+url_syntax: https://www.brenda-enzymes.info/enzyme.php?ecno=[example_id]
 example_id: BRENDA:4.2.1.3
-url_example: http://www.brenda-enzymes.info/php/result_flat.php4?ecno=4.2.1.3
+url_example: https://www.brenda-enzymes.info/enzyme.php?ecno=4.2.1.3
 entity_type: GO:0003824 ! catalytic activity
 
 abbreviation: BTO
@@ -189,36 +162,13 @@ example_id: BTO_0002164
 url_example: http://purl.obolibrary.org/obo/BTO_0002164
 entity_type: BET:0000000 ! entity
 
-abbreviation: Broad
-database: Broad Institute
-generic_url: http://www.broad.mit.edu/
-entity_type: BET:0000000 ! entity
-
-abbreviation: Broad_MGG
-database: Magnaporthe grisea Database
-description: Magnaporthe grisea Database at the Broad Institute
-generic_url: http://www.broad.mit.edu/annotation/genome/magnaporthe_grisea/Home.html
-url_syntax: http://www.broad.mit.edu/annotation/genome/magnaporthe_grisea/GeneLocus.html?sp=S[example_id]
-example_id: Broad_MGG:MGG_05132.5
-url_example: http://www.broad.mit.edu/annotation/genome/magnaporthe_grisea/GeneLocus.html?sp=SMGG_05132
-entity_type: BET:0000000 ! entity
-
-abbreviation: Broad_NEUROSPORA
-database: Neurospora crassa Database
-description: Neurospora crassa database at the Broad Institute
-generic_url: http://www.broadinstitute.org/annotation/genome/neurospora/MultiHome.html
-url_syntax: http://www.broadinstitute.org/annotation/genome/neurospora/GeneDetails.html?sp=S[example_id]
-example_id: BROAD_NEUROSPORA:7000007580576824
-url_example: http://www.broadinstitute.org/annotation/genome/neurospora/GeneDetails.html?sp=S7000007580576824
-entity_type: BET:0000000 ! entity
-
 abbreviation: CACAO
 database: Community Assessment of Community Annotation with Ontologies
 description: The Community Assessment of Community Annotation with Ontologies (CACAO) is a project to do large-scale manual community annotation of gene function using the Gene Ontology as a multi-institution student competition.
 generic_url: http://gowiki.tamu.edu/wiki/index.php/Category:CACAO
-url_syntax: http://gowiki.tamu.edu/wiki/index.php/[example_id]
+url_syntax: https://gowiki.tamu.edu/wiki/index.php/[example_id]
 example_id: MYCS2:A0QNF5
-url_example: http://gowiki.tamu.edu/wiki/index.php/MYCS2:A0QNF5
+url_example: https://gowiki.tamu.edu/wiki/index.php/MYCS2:A0QNF5
 entity_type: BET:0000000 ! entity
 
 abbreviation: CAFA
@@ -277,16 +227,17 @@ example_id: CAZY:PL11
 url_example: http://www.cazy.org/PL11.html
 entity_type: BET:0000000 ! entity
 
-abbreviation: CBS
-database: Center for Biological Sequence Analysis
-generic_url: http://www.cbs.dtu.dk/
+abbreviation: DTU
+database: DTU Health Tech Services
+description: Formerly CBS (Center for Biological Sequence Analysis)
+generic_url: http://www.cbs.dtu.dk/services
 example_id: CBS:TMHMM
-url_example: http://www.cbs.dtu.dk/services/[example_id]/
+url_example: http://www.cbs.dtu.dk/services/TMHMM/
 entity_type: BET:0000000 ! entity
 
 abbreviation: CDD
 database: Conserved Domain Database at NCBI
-generic_url: http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=cdd
+generic_url: https://www.ncbi.nlm.nih.gov/cdd
 url_syntax: http://www.ncbi.nlm.nih.gov/Structure/cdd/cddsrv.cgi?uid=[example_id]
 example_id: CDD:34222
 url_example: http://www.ncbi.nlm.nih.gov/Structure/cdd/cddsrv.cgi?uid=34222
@@ -316,12 +267,6 @@ generic_url: http://www.candidagenome.org/
 url_syntax: http://www.candidagenome.org/cgi-bin/reference/reference.pl?dbid=[example_id]
 example_id: CGD_REF:1490
 url_example: http://www.candidagenome.org/cgi-bin/reference/reference.pl?dbid=1490
-entity_type: BET:0000000 ! entity
-
-abbreviation: CGEN
-database: Compugen Gene Ontology Gene Association Data
-generic_url: http://www.cgen.com/
-example_id: CGEN:PrID131022
 entity_type: BET:0000000 ! entity
 
 abbreviation: CGSC
@@ -411,18 +356,10 @@ entity_type: BET:0000000 ! entity
 
 abbreviation: CORUM
 database: CORUM - the Comprehensive Resource of Mammalian protein complexes
-generic_url: http://mips.gsf.de/genre/proj/corum/
-url_syntax: http://mips.gsf.de/genre/proj/corum/complexdetails.html?id=[example_id]
+generic_url: https://mips.helmholtz-muenchen.de/corum/
+url_syntax: https://mips.helmholtz-muenchen.de/corum/?id=[example_id]
 example_id: CORUM:837
-url_example: http://mips.gsf.de/genre/proj/corum/complexdetails.html?id=837
-entity_type: BET:0000000 ! entity
-
-abbreviation: cosmoss_PpV1.2
-database: plantco.de|cosmoss.org
-generic_url: https://www.cosmoss.org/annotation/genonaut
-url_syntax: https://www.cosmoss.org/annotation/genonaut?accession=[example_id]&version=V1.2
-example_id: cosmoss_PpV1.2:Pp1s47_77V2.1
-url_example: https://www.cosmoss.org/annotation/genonaut?accession=Pp1s53_22V2.1&version=V1.2
+url_example: https://mips.helmholtz-muenchen.de/corum/?id=837
 entity_type: BET:0000000 ! entity
 
 abbreviation: cribi_vitis
@@ -451,15 +388,10 @@ entity_type: CARO:0000000 ! anatomical entity
 
 abbreviation: DDBJ
 database: DNA Databank of Japan
-generic_url: http://www.ddbj.nig.ac.jp/
-url_syntax: http://arsa.ddbj.nig.ac.jp/arsa/ddbjSplSearch?KeyWord=[example_id]
+generic_url: https://www.ddbj.nig.ac.jp
+url_syntax: http://getentry.ddbj.nig.ac.jp/getentry/na/[example_id]
 example_id: DDBJ:AA816246
-url_example: http://arsa.ddbj.nig.ac.jp/arsa/ddbjSplSearch?KeyWord=AA816246
-entity_type: BET:0000000 ! entity
-
-abbreviation: DFLAT
-database: Developmental FunctionaL Annotation at Tufts
-generic_url: http://bcb.cs.tufts.edu/dflat/
+url_example: http://getentry.ddbj.nig.ac.jp/getentry/na/AA816246
 entity_type: BET:0000000 ! entity
 
 abbreviation: dictyBase
@@ -485,9 +417,9 @@ abbreviation: dictyBase_REF
 database: dictyBase literature references
 synonym: DDB_REF
 generic_url: http://dictybase.org
-url_syntax: http://dictybase.org/db/cgi-bin/dictyBase/reference/reference.pl?refNo=[example_id]
+url_syntax: http://dictybase.org/publication/[example_id]
 example_id: dictyBase_REF:10157
-url_example: http://dictybase.org/db/cgi-bin/dictyBase/reference/reference.pl?refNo=10157
+url_example: http://dictybase.org/publication/10157
 entity_type: BET:0000000 ! entity
 
 abbreviation: DOI
@@ -509,27 +441,20 @@ entity_type: GO:0003824 ! catalytic activity
 
 abbreviation: EchoBASE
 database: EchoBASE post-genomic database for Escherichia coli
-generic_url: http://www.ecoli-york.org/
+generic_url: https://www.york.ac.uk/res/thomas/
 local_id_syntax: EB[0-9]{4}
-url_syntax: http://www.biolws1.york.ac.uk/echobase/Gene.cfm?recordID=[example_id]
+url_syntax: https://www.york.ac.uk/res/thomas/Gene.cfm?&recordID=[example_id]
 example_id: EchoBASE:EB0231
-url_example: http://www.biolws1.york.ac.uk/echobase/Gene.cfm?recordID=EB0231
-entity_type: SO:0000704 ! gene
-
-abbreviation: ECK
-database: EcoGene Database of Escherichia coli Sequence and Function
-generic_url: http://www.ecogene.org/
-local_id_syntax: ECK[0-9]{4}
-url_syntax: http://www.ecogene.org/geneInfo.php?eck_id=[example_id]
-example_id: ECK:ECK3746
-url_example: http://www.ecogene.org/geneInfo.php?eck_id=ECK3746
+url_example: https://www.york.ac.uk/res/thomas/Gene.cfm?&recordID=EB0231
 entity_type: SO:0000704 ! gene
 
 abbreviation: ECO
-database: Evidence Code ontology
-generic_url: http://www.geneontology.org/
+database: Evidence Code Ontology
+generic_url: http://www.evidenceontology.org/
 local_id_syntax: \d{7}
-example_id: ECO:0000002
+url_syntax: http://www.evidenceontology.org/browse/#ECO_[example_id]
+example_id: ECO:0000315
+url_example: http://www.evidenceontology.org/browse/#ECO_0000315
 entity_type: BET:0000000 ! entity
 
 abbreviation: EcoCyc
@@ -548,22 +473,6 @@ generic_url: http://ecocyc.org/
 url_syntax: http://biocyc.org/ECOLI/reference.html?type=CITATION-FRAME&object=[example_id]
 example_id: EcoCyc_REF:COLISALII
 url_example: http://biocyc.org/ECOLI/reference.html?type=CITATION-FRAME&object=COLISALII
-entity_type: BET:0000000 ! entity
-
-abbreviation: ECOGENE
-database: EcoGene Database of Escherichia coli Sequence and Function
-synonym: EcoGene
-generic_url: http://www.ecogene.org/
-local_id_syntax: EG[0-9]{5}
-url_syntax: http://www.ecogene.org/geneInfo.php?eg_id=[example_id]
-example_id: ECOGENE:EG10818
-url_example: http://www.ecogene.org/geneInfo.php?eg_id=EG10818
-entity_type: SO:0000704 ! gene
-
-abbreviation: ECOGENE_G
-database: EcoGene Database of Escherichia coli Sequence and Function
-generic_url: http://www.ecogene.org/
-example_id: ECOGENE_G:deoC
 entity_type: BET:0000000 ! entity
 
 abbreviation: EcoliWiki
@@ -686,10 +595,10 @@ entity_type: SO:0000704 ! gene
 
 abbreviation: ENZYME
 database: Swiss Institute of Bioinformatics enzyme database
-generic_url: http://www.expasy.ch/
-url_syntax: http://www.expasy.ch/cgi-bin/nicezyme.pl?[example_id]
-example_id: ENZYME:EC 1.1.1.1
-url_example: http://www.expasy.ch/cgi-bin/nicezyme.pl?1.1.1.1
+generic_url: https://enzyme.expasy.org/
+url_syntax: https://enzyme.expasy.org/EC/[example_id]
+example_id: 1.1.1.1
+url_example: https://enzyme.expasy.org/EC/1.1.1.1
 entity_type: BET:0000000 ! entity
 
 abbreviation: EO_GIT
@@ -745,14 +654,6 @@ local_id_syntax: \d{7}
 example_id: FYPO:0000001
 entity_type: BET:0000000 ! entity
 
-abbreviation: GDB
-database: Human Genome Database
-generic_url: http://www.gdb.org/
-url_syntax: http://www.gdb.org/gdb-bin/genera/accno?accessionNum=GDB:[example_id]
-example_id: GDB:306600
-url_example: http://www.gdb.org/gdb-bin/genera/accno?accessionNum=GDB:306600
-entity_type: BET:0000000 ! entity
-
 abbreviation: GenBank
 database: GenBank
 description: The NIH genetic sequence database, an annotated collection of all publicly available DNA sequences.
@@ -794,22 +695,12 @@ example_id: Genesys-pgr:CM1015-16
 url_example: https://www.genesys-pgr.org/acn/search?q=CM1015-16
 entity_type: BET:0000000 ! entity
 
-abbreviation: GenProtEC
-database: GenProtEC E. coli genome and proteome database
-generic_url: http://genprotec.mbl.edu/
-entity_type: BET:0000000 ! entity
-
 abbreviation: GEO
 database: NCBI Gene Expression Omnibus
 generic_url: http://www.ncbi.nlm.nih.gov/geo/
 url_syntax: http://www.ncbi.nlm.nih.gov/sites/GDSbrowser?acc=[example_id]
 example_id: GEO:GDS2223
 url_example: http://www.ncbi.nlm.nih.gov/sites/GDSbrowser?acc=GDS2223
-entity_type: BET:0000000 ! entity
-
-abbreviation: GermOnline
-database: GermOnline
-generic_url: http://www.germonline.org/
 entity_type: BET:0000000 ! entity
 
 abbreviation: GO
@@ -822,18 +713,18 @@ url_example: http://amigo.geneontology.org/amigo/term/GO:0004352
 entity_type: GO:0003674 ! molecular_function
 local_id_syntax: \d{7}
 url_syntax: http://amigo.geneontology.org/amigo/term/GO:[example_id]
-example_id: GO:0004352
-url_example: http://amigo.geneontology.org/amigo/term/GO:0004352
+example_id: GO:0044767
+url_example: http://amigo.geneontology.org/amigo/term/GO:0044767
 entity_type: GO:0008150 ! biological_process
 local_id_syntax: \d{7}
 url_syntax: http://amigo.geneontology.org/amigo/term/GO:[example_id]
-example_id: GO:0004352
-url_example: http://amigo.geneontology.org/amigo/term/GO:0004352
+example_id: GO:0005634
+url_example: http://amigo.geneontology.org/amigo/term/GO:0005634
 entity_type: GO:0005575 ! cellular_component
 local_id_syntax: \d{7}
 url_syntax: http://amigo.geneontology.org/amigo/term/GO:[example_id]
-example_id: GO:0004352
-url_example: http://amigo.geneontology.org/amigo/term/GO:0004352
+example_id: GO:0044776
+url_example: http://amigo.geneontology.org/amigo/term/GO:0044776
 entity_type: GO:0032991 ! macromolecular complex
 
 abbreviation: GO_Central
@@ -851,7 +742,7 @@ entity_type: BET:0000000 ! entity
 
 abbreviation: GO_REF
 database: Gene Ontology Database references
-generic_url: http://purl.obolibrary.org/obo/go/references/
+generic_url: http://current.geneontology.org/metadata/gorefs/index.html
 local_id_syntax: \d{7}
 url_syntax: http://purl.obolibrary.org/obo/go/references/[example_id]
 example_id: 0000001
@@ -880,9 +771,9 @@ abbreviation: GONUTS
 database: Gene Ontology Normal Usage Tracking System (GONUTS)
 description: Third party documentation for GO and community annotation system.
 generic_url: http://gowiki.tamu.edu
-url_syntax: http://gowiki.tamu.edu/wiki/index.php/[example_id]
+url_syntax: https://gowiki.tamu.edu/wiki/index.php/[example_id]
 example_id: GONUTS:MOUSE:CD28
-url_example: http://gowiki.tamu.edu/wiki/index.php/MOUSE:CD28
+url_example: https://gowiki.tamu.edu/wiki/index.php/MOUSE:CD28
 entity_type: BET:0000000 ! entity
 
 abbreviation: GOREL
@@ -943,19 +834,10 @@ example_id: GR_REF:659
 url_example: http://www.gramene.org/db/literature/pub_search?ref_id=659
 entity_type: BET:0000000 ! entity
 
-abbreviation: GRIMS
-database: IRRI Genetic Resources Information Management System
-synonym: irri
-generic_url: https://www.genesys-pgr.org
-url_syntax: https://www.genesys-pgr.org/acn/search2?q=IRGC+[example_id]
-example_id: GRIMS:90637
-url_example: https://www.genesys-pgr.org/acn/search2?q=IRGC+90637
-entity_type: BET:0000000 ! germplasm
-
 abbreviation: GRIN
 database: Germplasm Resources Information Network
 synonym: grin
-generic_url: http://www.ars-grin.gov/
+generic_url: https://www.ars-grin.gov/
 url_syntax: https://npgsweb.ars-grin.gov/gringlobal/accessiondetail.aspx?id=[example_id]
 example_id: GRIN:1882640
 url_example: https://npgsweb.ars-grin.gov/gringlobal/accessiondetail.aspx?id=1882640
@@ -963,7 +845,7 @@ entity_type: BET:0000000 ! germplasm
 
 abbreviation: GRINDesc
 database: Germplasm Resources Information Network
-generic_url: http://www.ars-grin.gov/
+generic_url: https://www.ars-grin.gov/
 url_syntax: https://npgsweb.ars-grin.gov/gringlobal/descriptordetail.aspx?id=[example_id]
 example_id: GRINdesc:89033
 url_example: https://npgsweb.ars-grin.gov/gringlobal/descriptordetail.aspx?id=89033
@@ -1002,18 +884,10 @@ abbreviation: HGNC
 database: HUGO Gene Nomenclature Committee
 generic_url: http://www.genenames.org/
 local_id_syntax: [0-9]+
-url_syntax: http://www.genenames.org/data/hgnc_data.php?hgnc_id=HGNC:[example_id]
+url_syntax: https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:[example_id]
 example_id: HGNC:29
-url_example: http://www.genenames.org/data/hgnc_data.php?hgnc_id=HGNC:29
+url_example: https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:29
 entity_type: SO:0000704 ! gene
-
-abbreviation: HGNC_gene
-database: HUGO Gene Nomenclature Committee
-generic_url: http://www.genenames.org/
-url_syntax: http://www.genenames.org/data/hgnc_data.php?app_sym=[example_id]
-example_id: HGNC_gene:ABCA1
-url_example: http://www.genenames.org/data/hgnc_data.php?app_sym=ABCA1
-entity_type: BET:0000000 ! entity
 
 abbreviation: HPA
 database: Human Protein Atlas tissue profile information
@@ -1036,6 +910,11 @@ database: Human Genome Organisation
 generic_url: http://www.hugo-international.org/
 entity_type: BET:0000000 ! entity
 
+abbreviation: IAO
+database: Information Artifact Ontology
+description: Ontology of information entities, including ontology metadata relations.
+generic_url: http://purl.obolibrary.org/obo/iao
+
 abbreviation: IMG
 database: Integrated Microbial Genomes; JGI web site for genome annotation
 generic_url: http://img.jgi.doe.gov
@@ -1053,17 +932,17 @@ entity_type: BET:0000000 ! entity
 abbreviation: IMGT_LIGM
 database: ImMunoGeneTics database covering immunoglobulins and T-cell receptors
 description: Database of immunoglobulins and T cell receptors from human and other vertebrates, with translation for fully annotated sequences.
-generic_url: http://imgt.cines.fr
+generic_url: http://www.imgt.org/
 example_id: IMGT_LIGM:U03895
 entity_type: BET:0000000 ! entity
 
 abbreviation: IntAct
 database: IntAct protein interaction database
-generic_url: http://www.ebi.ac.uk/intact/
+generic_url: https://www.ebi.ac.uk/intact/
 local_id_syntax: EBI-[0-9]+
-url_syntax: http://www.ebi.ac.uk/intact/search/do/search?searchString=[example_id]
+url_syntax: https://www.ebi.ac.uk/intact/pages/interactions/interactions.xhtml?query=[example_id]
 example_id: IntAct:EBI-17086
-url_example: http://www.ebi.ac.uk/intact/search/do/search?searchString=EBI-17086
+url_example: https://www.ebi.ac.uk/intact/pages/interactions/interactions.xhtml?query=EBI-17086
 entity_type: BET:0000013 ! molecular interaction
 local_id_syntax: EBI-[0-9]+
 url_syntax: http://www.ebi.ac.uk/complexportal/complex/[example_id]
@@ -1082,12 +961,6 @@ example_id: InterPro:IPR000001
 url_example: http://www.ebi.ac.uk/interpro/entry/IPR015421
 entity_type: SO:0000839 ! polypeptide region
 
-abbreviation: IPI
-database: International Protein Index
-generic_url: http://www.ebi.ac.uk/IPI/IPIhelp.html
-example_id: IPI:IPI00000005.1
-entity_type: BET:0000000 ! entity
-
 abbreviation: iPTMnet
 database: iPTMnet protein post-translational modification database
 generic_url: https://research.bioinformatics.udel.edu/iptmnet/
@@ -1098,10 +971,10 @@ entity_type: BET:0000000 ! entity
 
 abbreviation: IRIC
 database: International Rice Research Institute
-generic_url: http://oryzasnp.org
-url_syntax: http://oryzasnp.org/_variety.zul?irisid=[example_id]
+generic_url: https://oryzasnp.org
+url_syntax: https://oryzasnp.org/_variety.zul?irisid=[example_id]
 example_id: IRIS_313-8922
-url_example: http://oryzasnp.org/_variety.zul?irisid=IRIS_313-8922
+url_example: https://oryzasnp.org/_variety.zul?irisid=IRIS_313-8922
 entity_type: BET:0000000 ! entity
 
 abbreviation: IRGC
@@ -1120,39 +993,31 @@ example_id: ISBN:0781702534
 url_example: https://www.worldcat.org/search?q=bn%3A0781702534
 entity_type: BET:0000000 ! entity
 
-abbreviation: ISRR
-database: International Society for Root Research
-generic_url: http://www.rootresearch.org/
-url_syntax: http://wiki.plantontology.org/index.php/ISRR_references
-example_id: ISRR:Richard Zobel
-url_example: http://wiki.plantontology.org/index.php/ISRR_references
-entity_type: BET:0000000 ! entity
-
 abbreviation: ISSN
 database: International Standard Serial Number
 generic_url: http://www.issn.org/
 example_id: ISSN:1234-1231
 entity_type: BET:0000000 ! entity
 
-abbreviation: IUPHAR
-database: International Union of Pharmacology
-generic_url: http://www.iuphar.org/
+abbreviation: IUPHAR/BPS
+database: IUPHAR/BPS Guide to Pharmacology
+generic_url: https://www.guidetopharmacology.org/
 entity_type: BET:0000000 ! entity
 
 abbreviation: IUPHAR_GPCR
 database: International Union of Pharmacology
 generic_url: http://www.iuphar.org/
-url_syntax: http://www.iuphar-db.org/DATABASE/FamilyMenuForward?familyId=[example_id]
-example_id: IUPHAR_GPCR:1279
-url_example: http://www.iuphar-db.org/DATABASE/FamilyMenuForward?familyId=13
+url_syntax: https://www.guidetopharmacology.org/GRAC/FamilyDisplayForward?familyId=[example_id]
+example_id: IUPHAR_GPCR:13
+url_example: https://www.guidetopharmacology.org/GRAC/FamilyDisplayForward?familyId=13
 entity_type: BET:0000000 ! entity
 
 abbreviation: IUPHAR_RECEPTOR
 database: International Union of Pharmacology
 generic_url: http://www.iuphar.org/
-url_syntax: http://www.iuphar-db.org/DATABASE/ObjectDisplayForward?objectId=[example_id]
-example_id: IUPHAR_RECEPTOR:2205
-url_example: http://www.iuphar-db.org/DATABASE/ObjectDisplayForward?objectId=56
+url_syntax: https://www.guidetopharmacology.org/GRAC/ObjectDisplayForward?objectId=[example_id]
+example_id: IUPHAR_RECEPTOR:56
+url_example: https://www.guidetopharmacology.org/GRAC/ObjectDisplayForward?objectId=56
 entity_type: BET:0000000 ! entity
 
 abbreviation: Jaiswal_Lab
@@ -1163,82 +1028,22 @@ example_id: Jaiswal_Lab:gene00002
 url_example: http://wiki.plantontology.org/index.php/PO_REF:00008
 entity_type: BET:0000000 ! entity
 
-abbreviation: JCVI
-database: J. Craig Venter Institute
-synonym: TIGR
-generic_url: http://www.jcvi.org/
-entity_type: BET:0000000 ! entity
-
-abbreviation: JCVI_CMR
-database: EGAD database at the J. Craig Venter Institute
-synonym: TIGR_CMR
-synonym: TIGR_EGAD
-generic_url: http://cmr.jcvi.org/
-local_id_syntax: [A-Z][A-Za-z0-9_]+(\.[0-9])?
-url_syntax: http://cmr.jcvi.org/cgi-bin/CMR/shared/GenePage.cgi?locus=[example_id]
-example_id: JCVI_CMR:VCA0557
-url_example: http://cmr.jcvi.org/cgi-bin/CMR/shared/GenePage.cgi?locus=VCA0557
-entity_type: SO:0000704 ! gene
-local_id_syntax: [A-Z][A-Za-z0-9_]+(\.[0-9])?
-url_syntax: http://cmr.jcvi.org/cgi-bin/CMR/shared/GenePage.cgi?locus=[example_id]
-example_id: JCVI_CMR:VCA0557
-url_example: http://cmr.jcvi.org/cgi-bin/CMR/shared/GenePage.cgi?locus=VCA0557
-entity_type: PR:000000001 ! protein
-
-abbreviation: TIGR_CMR
-database: CMR Blast
-generic_url: http://blast.jcvi.org/cmr-blast/
-
-abbreviation: JCVI_EGAD
-database: JCVI CMR Egad
-generic_url: http://cmr.jcvi.org/
-url_syntax: http://cmr.jcvi.org/cgi-bin/CMR/EgadSearch.cgi?search_string=[example_id]
-example_id: JCVI_EGAD:74462
-url_example: http://cmr.jcvi.org/cgi-bin/CMR/EgadSearch.cgi?search_string=74462
-entity_type: BET:0000000 ! entity
-
-abbreviation: JCVI_GenProp
-database: Genome Properties database at the J. Craig Venter Institute
-synonym: TIGR_GenProp
-generic_url: http://cmr.jcvi.org/
-local_id_syntax: GenProp[0-9]{4}
-url_syntax: http://cmr.jcvi.org/cgi-bin/CMR/shared/GenomePropDefinition.cgi?prop_acc=[example_id]
-example_id: JCVI_GenProp:GenProp0120
-url_example: http://cmr.jcvi.org/cgi-bin/CMR/shared/GenomePropDefinition.cgi?prop_acc=GenProp0120
-entity_type: GO:0008150 ! biological_process
-
-abbreviation: JCVI_Medtr
-database: Medicago truncatula genome database at the J. Craig Venter Institute
-generic_url: http://medicago.jcvi.org/cgi-bin/medicago/overview.cgi
-url_syntax: http://medicago.jcvi.org/cgi-bin/medicago/search/shared/ORF_infopage.cgi?orf=[example_id]
-example_id: JCVI_Medtr:Medtr5g024510
-url_example: http://medicago.jcvi.org/cgi-bin/medicago/search/shared/ORF_infopage.cgi?orf=Medtr5g024510
-entity_type: BET:0000000 ! entity
-
-abbreviation: JCVI_REF
-database: J. Craig Venter Institute
-synonym: TIGR_REF
-generic_url: http://cmr.jcvi.org/
-example_id: JCVI_REF:GO_ref
-url_example: http://cmr.jcvi.org/CMR/AnnotationSops.shtml
-entity_type: BET:0000000 ! entity
-
-abbreviation: JCVI_TIGRFAMS
+abbreviation: TIGRFAMS
 database: TIGRFAMs HMM collection at the J. Craig Venter Institute
 synonym: TIGR_TIGRFAMS
-generic_url: http://search.jcvi.org/
+generic_url: http://tigrfams.jcvi.org/cgi-bin/index.cgi
 local_id_syntax: TIGR[0-9]{5}
-url_syntax: http://search.jcvi.org/search?p&q=[example_id]
-example_id: JCVI_TIGRFAMS:TIGR00254
-url_example: http://search.jcvi.org/search?p&q=TIGR00254
+url_syntax: http://tigrfams.jcvi.org/cgi-bin/HmmReportPage.cgi?acc=[example_id]
+example_id: TIGRFAMS:TIGR00254
+url_example: http://tigrfams.jcvi.org/cgi-bin/HmmReportPage.cgi?acc=TIGR00254
 entity_type: SO:0000839 ! polypeptide region
 
 abbreviation: JSTOR
 database: Digital archive of scholarly articles
-generic_url: http://www.jstor.org/
-url_syntax: http://www.jstor.org/stable/[example_id]
+generic_url: https://www.jstor.org/
+url_syntax: https://www.jstor.org/stable/[example_id]
 example_id: JSTOR:3093870
-url_example: http://www.jstor.org/stable/3093870
+url_example: https://www.jstor.org/stable/3093870
 entity_type: BET:0000000 ! entity
 
 abbreviation: KEGG
@@ -1285,23 +1090,9 @@ abbreviation: LIFEdb
 database: LifeDB
 description: LifeDB is a database for information on protein localization, interaction, functional assays and expression.
 generic_url: http://www.lifedb.de/
-url_syntax: http://www.dkfz.de/LIFEdb/LIFEdb.aspx?ID=[example_id]
+url_syntax: https://www.dkfz.de/en/mga/Groups/LIFEdb-Database.html?ID=[example_id]
 example_id: LIFEdb:DKFZp564O1716
-url_example: http://www.dkfz.de/LIFEdb/LIFEdb.aspx?ID=DKFZp564O1716
-entity_type: BET:0000000 ! entity
-
-abbreviation: LIS
-database: Legume Information System
-generic_url: http://legumeinfo.org/
-url_syntax: http://legumeinfo.org/feature/Medicago/truncatula/gene/[example_id].JCVIMt4.0v1
-example_id: LIS:Medtr5g030920
-url_example: http://legumeinfo.org/feature/Medicago/truncatula/gene/Medtr5g030920.JCVIMt4.0v1
-entity_type: BET:0000000 ! entity
-
-abbreviation: LOCSVMpsi
-database: LOCSVMPSI
-description: Subcellular localization for eukayotic proteins based on SVM and PSI-BLAST
-generic_url: http://bioinformatics.ustc.edu.cn/locsvmpsi/locsvmpsi.php
+url_example: https://www.dkfz.de/en/mga/Groups/LIFEdb-Database.html?ID=DKFZp564O1716
 entity_type: BET:0000000 ! entity
 
 abbreviation: MA
@@ -1323,32 +1114,32 @@ entity_type: BET:0000000 ! entity
 
 abbreviation: MaizeGDB
 database: MaizeGDB
-generic_url: http://www.maizegdb.org
-url_syntax: http://maizegdb.org/gene_center/gene/[example_id]
+generic_url: https://www.maizegdb.org/
+url_syntax: https://maizegdb.org/gene_center/gene/[example_id]
 example_id: MaizeGDB:12098
-url_example: http://maizegdb.org/gene_center/gene/12098
+url_example: https://maizegdb.org/gene_center/gene/12098
 entity_type: BET:0000000 ! entity
 
 abbreviation: MaizeGDB_Locus
 database: MaizeGDB
-generic_url: http://www.maizegdb.org
+generic_url: https://www.maizegdb.org/
 local_id_syntax: [A-Za-z][A-Za-z0-9]*
-url_syntax: http://www.maizegdb.org/cgi-bin/displaylocusresults.cgi?term=[example_id]
-example_id: MaizeGDB_Locus:ZmPK1
-url_example: http://www.maizegdb.org/cgi-bin/displaylocusresults.cgi?term=ZmPK1
+url_syntax: https://www.maizegdb.org/gene_center/gene/[example_id]
+example_id: MaizeGDB_Locus:25011
+url_example: https://www.maizegdb.org/gene_center/gene/25011
 entity_type: SO:0000704 ! gene
 
 abbreviation: MaizeGDB_QTL
 database: Maize Genetics and Genomics Database
-generic_url: http://www.maizegdb.org/
-url_syntax: http://www.maizegdb.org/data_center/trait?id=[example_id]
+generic_url: https://www.maizegdb.org/
+url_syntax: https://www.maizegdb.org/data_center/trait?id=[example_id]
 example_id: MaizeGDB_QTL:78112
-url_example: http://www.maizegdb.org/data_center/trait?id=78112
+url_example: https://www.maizegdb.org/data_center/trait?id=78112
 entity_type: BET:0000000 ! entity
 
 abbreviation: MaizeGDB_REF
 database: Maize Genetics and Genomics Database
-generic_url: http://www.maizegdb.org/
+generic_url: https://www.maizegdb.org/
 url_syntax: http://maizegdb.org/data_center/reference?id=[example_id]
 example_id: MaizeGDB_REF:9021423
 url_example: http://maizegdb.org/data_center/reference?id=9021423
@@ -1356,10 +1147,10 @@ entity_type: BET:0000000 ! entity
 
 abbreviation: MaizeGDB_stock
 database: Maize Genetics and Genomics Database
-generic_url: http://www.maizegdb.org/
-url_syntax: http://maizegdb.org/data_center/stock?id=[example_id]
-example_id: MaizeGDB_stock:12098
-url_example: http://maizegdb.org/data_center/stock?id=12098
+generic_url: https://www.maizegdb.org/
+url_syntax: https://maizegdb.org/data_center/stock?id=[example_id]
+example_id: MaizeGDB_stock:282110
+url_example: https://maizegdb.org/data_center/stock?id=282110
 entity_type: BET:0000000 ! entity
 
 abbreviation: MEDLINE
@@ -1368,14 +1159,9 @@ generic_url: http://www.nlm.nih.gov/databases/databases_medline.html
 example_id: MEDLINE:20572430
 entity_type: BET:0000000 ! entity
 
-abbreviation: MENGO
-database: Microbial ENergy processes Gene Ontology Project
-generic_url: http://mengo.vbi.vt.edu/
-entity_type: BET:0000000 ! entity
-
 abbreviation: MEROPS
 database: MEROPS peptidase database
-generic_url: http://merops.sanger.ac.uk/
+generic_url: https://www.ebi.ac.uk/merops
 url_syntax: http://merops.sanger.ac.uk/cgi-bin/pepsum?mid=[example_id]
 example_id: MEROPS:A08.001
 url_example: http://merops.sanger.ac.uk/cgi-bin/pepsum?mid=A08.001
@@ -1383,7 +1169,7 @@ entity_type: PR:000000001 ! protein
 
 abbreviation: MEROPS_fam
 database: MEROPS peptidase database
-generic_url: http://merops.sanger.ac.uk/
+generic_url: https://www.ebi.ac.uk/merops
 url_syntax: http://merops.sanger.ac.uk/cgi-bin/famsum?family=[example_id]
 example_id: MEROPS_fam:M18
 url_example: http://merops.sanger.ac.uk/cgi-bin/famsum?family=m18
@@ -1393,10 +1179,10 @@ abbreviation: MeSH
 database: Medical Subject Headings
 synonym: MESH
 synonym: MSH
-generic_url: https://www.nlm.nih.gov/mesh/MBrowser.html
-url_syntax: http://n2t.net/MESH:[example_id]
+generic_url: https://meshb.nlm.nih.gov
+url_syntax: http://id.nlm.nih.gov/mesh/[example_id]
 example_id: MeSH:D017209
-url_example: http://n2t.net/MESH:D017209
+url_example: http://id.nlm.nih.gov/mesh/D017209
 entity_type: BET:0000000 ! entity
 
 abbreviation: MetaCyc
@@ -1427,13 +1213,13 @@ database: Mouse Genome Informatics
 generic_url: http://www.informatics.jax.org/
 local_id_syntax: MGI:[0-9]{5,}
 url_syntax: http://www.informatics.jax.org/accession/[example_id]
-example_id: MGI:MGI:80863
-url_example: http://www.informatics.jax.org/accession/MGI:80863
+example_id: MGI:MGI:1345277
+url_example: http://www.informatics.jax.org/accession/MGI:1345277
 entity_type: SO:0000704 ! gene
 local_id_syntax: MGI:[0-9]{5,}
 url_syntax: http://www.informatics.jax.org/accession/[example_id]
-example_id: MGI:MGI:80863
-url_example: http://www.informatics.jax.org/accession/MGI:80863
+example_id: MGI:MGI:3590672
+url_example: http://www.informatics.jax.org/accession/MGI:3590672
 entity_type: VariO:0001 ! variation
 
 abbreviation: MIPS_funcat
@@ -1449,30 +1235,12 @@ database: The MITRE Corporation
 generic_url: http://www.mitre.org/
 entity_type: BET:0000000 ! entity
 
-abbreviation: MO
-database: MGED Ontology
-generic_url: http://mged.sourceforge.net/ontologies/MGEDontology.php
-url_syntax: http://mged.sourceforge.net/ontologies/MGEDontology.php#[example_id]
-example_id: MO:Action
-url_example: http://mged.sourceforge.net/ontologies/MGEDontology.php#Action
-entity_type: BET:0000000 ! entity
-
 abbreviation: ModBase
 database: ModBase comprehensive Database of Comparative Protein Structure Models
 generic_url: http://modbase.compbio.ucsf.edu/
 url_syntax: http://salilab.org/modbase/searchbyid?databaseID=[example_id]
 example_id: ModBase:P10815
 url_example: http://salilab.org/modbase/searchbyid?databaseID=P04848
-entity_type: BET:0000000 ! entity
-
-abbreviation: MTBBASE
-database: Collection and Refinement of Physiological Data on Mycobacterium tuberculosis
-generic_url: http://www.ark.in-berlin.de/Site/MTBbase.html
-entity_type: BET:0000000 ! entity
-
-abbreviation: MultiFun
-database: MultiFun cell function assignment schema
-generic_url: http://genprotec.mbl.edu/files/MultiFun.html
 entity_type: BET:0000000 ! entity
 
 abbreviation: NASC_code
@@ -1501,9 +1269,9 @@ synonym: LocusID
 synonym: NCBI_Gene
 generic_url: http://www.ncbi.nlm.nih.gov/
 local_id_syntax: \d+
-url_syntax: http://www.ncbi.nlm.nih.gov/gene/[example_id]
+url_syntax: https://www.ncbi.nlm.nih.gov/gene[example_id]
 example_id: NCBI_Gene:4771
-url_example: http://www.ncbi.nlm.nih.gov/gene/4771
+url_example: https://www.ncbi.nlm.nih.gov/gene/4771
 entity_type: SO:0000704 ! gene
 
 abbreviation: NCBI_gi
@@ -1519,9 +1287,9 @@ abbreviation: NCBI_GP
 database: NCBI GenPept
 generic_url: http://www.ncbi.nlm.nih.gov/
 local_id_syntax: [A-Z]{3}[0-9]{5}(\.[0-9]+)?
-url_syntax: http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=protein&val=[example_id]
+url_syntax: https://www.ncbi.nlm.nih.gov/protein/[example_id]
 example_id: NCBI_GP:EAL72968
-url_example: http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=protein&val=EAL72968
+url_example: https://www.ncbi.nlm.nih.gov/protein/EAL72968
 entity_type: PR:000000001 ! protein
 
 abbreviation: NCBI_locus_tag
@@ -1542,14 +1310,6 @@ example_id: NIF_Subcellular:sao1186862860
 url_example: http://www.neurolex.org/wiki/sao1770195789
 entity_type: BET:0000000 ! entity
 
-abbreviation: NMPDR
-database: National Microbial Pathogen Data Resource
-generic_url: http://www.nmpdr.org
-url_syntax: http://www.nmpdr.org/linkin.cgi?id=[example_id]
-example_id: NMPDR:fig|306254.1.peg.183
-url_example: http://www.nmpdr.org/linkin.cgi?id=fig|306254.1.peg.183
-entity_type: BET:0000000 ! entity
-
 abbreviation: NTNU_SB
 database: Norwegian University of Science and Technology, Systems Biology team
 generic_url: http://www.ntnu.edu/nt/systemsbiology
@@ -1557,15 +1317,10 @@ entity_type: BET:0000000 ! entity
 
 abbreviation: OBI
 database: Ontology for Biomedical Investigations
-generic_url: http://obi-ontology.org/page/Main_Page
+generic_url: http://obi-ontology.org/
 local_id_syntax: \d{7}
 example_id: OBI:0000038
-entity_type: BET:0000000 ! entity
-
-abbreviation: OBO_REL
-database: OBO relation ontology
-generic_url: http://www.obofoundry.org/ro/
-example_id: OBO_REL:part_of
+url_example: http://purl.obolibrary.org/obo/OBI_0000038
 entity_type: BET:0000000 ! entity
 
 abbreviation: OBO_SF_PO
@@ -1595,55 +1350,15 @@ entity_type: BET:0000000 ! entity
 abbreviation: OMIM
 database: Mendelian Inheritance in Man
 synonym: MIM
-generic_url: http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=OMIM
-url_syntax: http://omim.org/entry/[example_id]
+generic_url: https://omim.org/
+url_syntax: https://omim.org/entry/[example_id]
 example_id: OMIM:190198
-url_example: http://omim.org/entry/190198
+url_example: https://omim.org/entry/190198
 entity_type: BET:0000000 ! entity
 
 abbreviation: OMSSA
 database: Open Mass Spectrometry Search Algorithm
 generic_url: http://pubchem.ncbi.nlm.nih.gov/omssa/
-entity_type: BET:0000000 ! entity
-
-abbreviation: PAINT_REF
-database: Phylogenetic Annotation INference Tool References
-generic_url: http://www.pantherdb.org/
-local_id_syntax: [0-9]{5}
-url_syntax: http://www.pantherdb.org/panther/lookupId.jsp?id=PTHR[example_id]
-example_id: PAINT_REF:23266
-url_example: http://www.pantherdb.org/panther/lookupId.jsp?id=PTHR23266
-entity_type: BET:0000000 ! entity
-
-abbreviation: PAMGO
-database: Plant-Associated Microbe Gene Ontology Interest Group
-generic_url: http://pamgo.vbi.vt.edu/
-entity_type: BET:0000000 ! entity
-
-abbreviation: PAMGO_GAT
-database: Genome Annotation Tool (Agrobacterium tumefaciens C58); PAMGO Interest Group
-generic_url: http://agro.vbi.vt.edu/public/
-url_syntax: http://agro.vbi.vt.edu/public/servlet/GeneEdit?&Search=Search&level=2&genename=[example_id]
-example_id: PAMGO_GAT:Atu0001
-url_example: http://agro.vbi.vt.edu/public/servlet/GeneEdit?&Search=Search&level=2&genename=atu0001
-entity_type: BET:0000000 ! entity
-
-abbreviation: PAMGO_MGG
-database: Magnaporthe grisea database
-description: Magnaporthe grisea database at North Carolina State University; member of PAMGO Interest Group
-generic_url: http://scotland.fgl.ncsu.edu/smeng/GoAnnotationMagnaporthegrisea.html
-url_syntax: http://scotland.fgl.ncsu.edu/cgi-bin/adHocQuery.cgi?adHocQuery_dbName=smeng_goannotation&Action=Data&QueryName=Functional+Categorization+of+MGG+GO+Annotation&P_KeyWord=[example_id]
-example_id: PAMGO_MGG:MGG_05132
-url_example: http://scotland.fgl.ncsu.edu/cgi-bin/adHocQuery.cgi?adHocQuery_dbName=smeng_goannotation&Action=Data&QueryName=Functional+Categorization+of+MGG+GO+Annotation&P_KeyWord=MGG_05132
-entity_type: BET:0000000 ! entity
-
-abbreviation: PAMGO_VMD
-database: Virginia Bioinformatics Institute Microbial Database
-description: Virginia Bioinformatics Institute Microbial Database; member of PAMGO Interest Group
-generic_url: http://phytophthora.vbi.vt.edu
-url_syntax: http://vmd.vbi.vt.edu/cgi-bin/browse/go_detail.cgi?gene_id=[example_id]
-example_id: PAMGO_VMD:109198
-url_example: http://vmd.vbi.vt.edu/cgi-bin/browse/go_detail.cgi?gene_id=109198
 entity_type: BET:0000000 ! entity
 
 abbreviation: PANTHER
@@ -1657,31 +1372,32 @@ entity_type: NCIT:C20130 ! protein family
 
 abbreviation: ParkinsonsUK-UCL
 database: Parkinsons Disease Gene Ontology Initiative
-generic_url: http://www.ucl.ac.uk/functional-gene-annotation/neurological
+generic_url: https://www.ucl.ac.uk/cardiovascular/research/pre-clinical-and-fundamental-science/functional-gene-annotation/neurological-gene
 entity_type: BET:0000000 ! entity
 
 abbreviation: PATO
 database: Phenotypic quality ontology
-generic_url: http://www.bioontology.org/wiki/index.php/PATO:Main_Page
+generic_url: http://www.obofoundry.org/ontology/pato.html
 example_id: PATO:0001420
+url_example: http://purl.obolibrary.org/obo/PATO_0001420
 entity_type: BET:0000000 ! entity
 
 abbreviation: PATRIC
 database: PathoSystems Resource Integration Center
 description: PathoSystems Resource Integration Center at the Virginia Bioinformatics Institute
-generic_url: http://patric.vbi.vt.edu
-url_syntax: http://patric.vbi.vt.edu/gene/overview.php?fid=[example_id]
-example_id: PATRIC:cds.000002.436951
-url_example: http://patric.vbi.vt.edu/gene/overview.php?fid=cds.000002.436951
+generic_url: https://www.patricbrc.org
+url_syntax: https://www.patricbrc.org/view/Feature/[example_id]
+example_id: PATRIC:fig%7C83332.12.peg.11
+url_example: https://www.patricbrc.org/view/Feature/fig%7C83332.12.peg.1
 entity_type: BET:0000000 ! entity
 
 abbreviation: PDB
 database: Protein Data Bank
-generic_url: http://www.rcsb.org/pdb/
+generic_url: https://www.rcsb.org/pdb/
 local_id_syntax: [A-Za-z0-9]{4}
-url_syntax: http://www.rcsb.org/pdb/cgi/explore.cgi?pdbId=[example_id]
+url_syntax: https://www.rcsb.org/structure/[example_id]
 example_id: PDB:1A4U
-url_example: http://www.rcsb.org/pdb/cgi/explore.cgi?pdbId=1A4U
+url_example: https://www.rcsb.org/structure/1A4U
 entity_type: PR:000000001 ! protein
 
 abbreviation: PECO_GIT
@@ -1707,18 +1423,12 @@ example_id: Pfam:PF00046
 url_example: http://pfam.xfam.org/family/PF00069
 entity_type: SO:0000839 ! polypeptide region
 
-abbreviation: PfamB
-database: Pfam-B supplement to Pfam
-generic_url: http://www.sanger.ac.uk/Software/Pfam/
-example_id: PfamB:PB014624
-entity_type: BET:0000000 ! entity
-
 abbreviation: PharmGKB
 database: Pharmacogenetics and Pharmacogenomics Knowledge Base
-generic_url: http://www.pharmgkb.org
-url_syntax: http://www.pharmgkb.org/do/serve?objId=[example_id]
+generic_url: https://www.pharmgkb.org
+url_syntax: https://www.pharmgkb.org/do/serve?objId=[example_id]
 example_id: PharmGKB:PA267
-url_example: http://www.pharmgkb.org/do/serve?objId=PA267
+url_example: https://www.pharmgkb.org/do/serve?objId=PA267
 entity_type: BET:0000000 ! entity
 
 abbreviation: PhenoScape
@@ -1726,25 +1436,13 @@ database: PhenoScape Knowledgebase
 generic_url: http://phenoscape.org/
 entity_type: BET:0000000 ! entity
 
-abbreviation: PHI
-database: MeGO (Phage and Mobile Element Ontology)
-generic_url: http://aclame.ulb.ac.be/Classification/mego.html
-example_id: PHI:0000055
-entity_type: BET:0000000 ! entity
-
-abbreviation: PINC
-database: Proteome Inc.
-description: represents GO annotations created in 2001 for NCBI and extracted into UniProtKB-GOA from EntrezGene
-generic_url: http://www.proteome.com/
-entity_type: BET:0000000 ! entity
-
 abbreviation: PIR
 database: Protein Information Resource
-generic_url: http://pir.georgetown.edu/
+generic_url: https://proteininformationresource.org/
 local_id_syntax: [A-Z]{1}[0-9]{5}
-url_syntax: http://pir.georgetown.edu/cgi-bin/pirwww/nbrfget?uid=[example_id]
+url_syntax: https://proteininformationresource.org/cgi-bin/nbrfget?uid=[example_id]
 example_id: PIR:I49499
-url_example: http://pir.georgetown.edu/cgi-bin/pirwww/nbrfget?uid=I49499
+url_example: https://proteininformationresource.org/cgi-bin/nbrfget?uid=I49499
 entity_type: PR:000000001 ! protein
 
 abbreviation: PIRSF
@@ -1753,14 +1451,6 @@ generic_url: http://pir.georgetown.edu/pirsf/
 url_syntax: http://pir.georgetown.edu/cgi-bin/ipcSF?id=[example_id]
 example_id: PIRSF:SF002327
 url_example: http://pir.georgetown.edu/cgi-bin/ipcSF?id=SF002327
-entity_type: BET:0000000 ! entity
-
-abbreviation: Planteome_gene
-database: Generic planteome genes without homes
-generic_url: http://www.google.com
-url_syntax: https://www.google.com/search?q=[example_id]
-example_id: Planteome_gene:AC148152.3_FGT008
-url_example: https://www.google.com/search?q=AC148152.3_FGT008
 entity_type: BET:0000000 ! entity
 
 abbreviation: PlantSystematics_image_archive
@@ -1773,21 +1463,21 @@ entity_type: BET:0000000 ! entity
 
 abbreviation: PMCID
 database: Pubmed Central
-generic_url: http://www.pubmedcentral.nih.gov/
-url_syntax: http://www.ncbi.nlm.nih.gov/sites/entrez?db=pmc&cmd=search&term=[example_id]
+synonym: PMC
+generic_url: https://www.ncbi.nlm.nih.gov/pmc/
+url_syntax: https://www.ncbi.nlm.nih.gov/pmc/articles/[example_id]
 example_id: PMCID:PMC201377
-url_example: http://www.ncbi.nlm.nih.gov/sites/entrez?db=pmc&cmd=search&term=PMC201377
+url_example: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC201377/
 entity_type: BET:0000000 ! entity
 
 abbreviation: PMID
 database: PubMed
 synonym: PUBMED
-synonym: PubMed
-generic_url: http://www.ncbi.nlm.nih.gov/PubMed/
+generic_url: https://www.ncbi.nlm.nih.gov/pubmed
 local_id_syntax: [0-9]+
 url_syntax: http://www.ncbi.nlm.nih.gov/pubmed/[example_id]
-example_id: PMID:4208797
-url_example: http://www.ncbi.nlm.nih.gov/pubmed/4208797
+example_id: PMID:31931324
+url_example: https://www.ncbi.nlm.nih.gov/pubmed/31931324
 entity_type: BET:0000000 ! entity
 
 abbreviation: PO
@@ -1836,23 +1526,23 @@ entity_type: SO:0000704 ! gene
 
 abbreviation: Pompep
 database: Schizosaccharomyces pombe protein data
-generic_url: ftp://ftp.sanger.ac.uk/pub/yeast/pombe/Protein_data/
+generic_url: https://www.pombase.org/downloads/protein-datasets
 example_id: Pompep:SPAC890.04C
 entity_type: BET:0000000 ! entity
 
 abbreviation: PPI
 database: Pseudomonas syringae community annotation project
-generic_url: http://genome.pseudomonas-syringae.org/
+generic_url: http://www.pseudomonas-syringae.org/
 entity_type: BET:0000000 ! entity
 
 abbreviation: PR
 database: Protein Ontology
 synonym: PRO
-generic_url: http://www.proconsortium.org/pro/pro.shtml
+generic_url: https://proconsortium.org/
 local_id_syntax: ([OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2}){1}(-[0-9]+){0,1}|[0-9]{9}
-url_syntax: http://purl.obolibrary.org/obo/PR_[example_id]
-example_id: PR:000025380
-url_example: http://purl.obolibrary.org/obo/PR_000025380
+url_syntax: https://proconsortium.org/app/entry/PR_[example_id]
+example_id: PR:Q64445
+url_example: https://proconsortium.org/app/entry/PR_Q64445
 entity_type: PR:000000001 ! protein
 
 abbreviation: PRINTS
@@ -1864,22 +1554,13 @@ example_id: PRINTS:PR00025
 url_example: http://www.bioinf.manchester.ac.uk/cgi-bin/dbbrowser/sprint/searchprintss.cgi?display_opts=Prints&category=None&queryform=false&regexpr=off&prints_accn=PR00025
 entity_type: SO:0000839 ! polypeptide region
 
-abbreviation: ProDom
-database: ProDom protein domain families
-description: ProDom protein domain families automatically generated from UniProtKB
-generic_url: http://prodom.prabi.fr/prodom/current/html/home.php
-url_syntax: http://prodom.prabi.fr/prodom/current/cgi-bin/request.pl?question=DBEN&query=[example_id]
-example_id: ProDom:PD000001
-url_example: http://prodom.prabi.fr/prodom/current/cgi-bin/request.pl?question=DBEN&query=PD000001
-entity_type: BET:0000000 ! entity
-
 abbreviation: Prosite
 database: Prosite database of protein families and domains
-generic_url: http://www.expasy.ch/prosite/
-local_id_syntax: PS[0-9]{5}
-url_syntax: http://www.expasy.ch/cgi-bin/prosite-search-ac?[example_id]
-example_id: Prosite:PS00365
-url_example: http://www.expasy.ch/cgi-bin/prosite-search-ac?PS00365
+generic_url: https://prosite.expasy.org/
+local_id_syntax: PDOC[0-9]{5}
+url_syntax: https://prosite.expasy.org/[example_id]
+example_id: PDOC00314
+url_example: https://prosite.expasy.org/PDOC00314
 entity_type: SO:0000839 ! polypeptide region
 
 abbreviation: protein_id
@@ -1892,17 +1573,12 @@ local_id_syntax: [A-Z]{3}[0-9]{5}(\.[0-9]+)?
 example_id: protein_id:CAA71991
 entity_type: PR:000000001 ! protein
 
-abbreviation: PROW
-database: Protein Reviews on the Web
-generic_url: http://www.ncbi.nlm.nih.gov/prow/
-entity_type: BET:0000000 ! entity
-
 abbreviation: PseudoCAP
 database: Pseudomonas Genome Project
-generic_url: http://v2.pseudomonas.com/
-url_syntax: http://v2.pseudomonas.com/getAnnotation.do?locusID=[example_id]
+generic_url: http://www.pseudomonas.com
+url_syntax: http://www.pseudomonas.com/feature/show?locus_tag=[example_id]
 example_id: PseudoCAP:PA4756
-url_example: http://v2.pseudomonas.com/getAnnotation.do?locusID=PA4756
+url_example: http://www.pseudomonas.com/feature/show?locus_tag=PA4756
 entity_type: BET:0000000 ! entity
 
 abbreviation: PSO_GIT
@@ -1916,72 +1592,69 @@ entity_type: BET:0000000 ! entity
 abbreviation: PSI-MI
 database: Proteomic Standard Initiative for Molecular Interaction
 synonym: MI
-generic_url: http://psidev.sourceforge.net/mi/xml/doc/user/index.html
-example_id: MI:0018
+generic_url: http://www.psidev.info/
+url_syntax: http://purl.obolibrary.org/obo/
+example_id: MI_0018
+url_example: http://purl.obolibrary.org/obo/MI_0018
 entity_type: BET:0000000 ! entity
 
 abbreviation: PSI-MOD
 database: Proteomics Standards Initiative protein modification ontology
 synonym: MOD
-generic_url: http://psidev.sourceforge.net/mod/
-url_syntax: http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:[example_id]
-example_id: MOD:00219
-url_example: http://www.ebi.ac.uk/ontology-lookup/?termId=MOD:00219
+generic_url: http://www.psidev.info/groups/protein-modifications
+url_syntax: http://purl.obolibrary.org/obo/[example_id]
+example_id: MOD_00219
+url_example: http://purl.obolibrary.org/obo/MOD_00219
 entity_type: BET:0000000 ! entity
 
 abbreviation: PSORT
 database: PSORT protein subcellular localization databases and prediction tools for bacteria
-generic_url: http://www.psort.org/
-entity_type: BET:0000000 ! entity
-
-abbreviation: pTARGET
-database: pTARGET Prediction server for protein subcellular localization
-generic_url: http://bioinformatics.albany.edu/~ptarget/
+generic_url: https://www.psort.org/
 entity_type: BET:0000000 ! entity
 
 abbreviation: PubChem_BioAssay
 database: NCBI PubChem database of bioassay records
-generic_url: http://pubchem.ncbi.nlm.nih.gov/
-url_syntax: http://pubchem.ncbi.nlm.nih.gov/assay/assay.cgi?aid=[example_id]
+generic_url: https://pubchem.ncbi.nlm.nih.gov
+url_syntax: https://pubchem.ncbi.nlm.nih.gov/bioassay/[example_id]
 example_id: PubChem_BioAssay:177
-url_example: http://pubchem.ncbi.nlm.nih.gov/assay/assay.cgi?aid=177
+url_example: https://pubchem.ncbi.nlm.nih.gov/bioassay/177
 entity_type: BET:0000000 ! entity
 
 abbreviation: PubChem_Compound
 database: NCBI PubChem database of chemical structures
-generic_url: http://pubchem.ncbi.nlm.nih.gov/
+generic_url: https://pubchem.ncbi.nlm.nih.gov
 local_id_syntax: [0-9]+
-url_syntax: http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&DB=pccompound&term=[example_id]
-example_id: PubChem_Compound:2244
-url_example: http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&DB=pccompound&term=2244
+url_syntax: https://pubchem.ncbi.nlm.nih.gov/compound/[example_id]
+example_id: PubChem_Compound:159296
+url_example: https://pubchem.ncbi.nlm.nih.gov/compound/159296
 entity_type: CHEBI:24431 ! chemical entity
 
 abbreviation: PubChem_Substance
 database: NCBI PubChem database of chemical substances
-generic_url: http://pubchem.ncbi.nlm.nih.gov/
+generic_url: https://pubchem.ncbi.nlm.nih.gov
 local_id_syntax: [0-9]{4,}
-url_syntax: http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&DB=pcsubstance&term=[example_id]
+url_syntax: https://pubchem.ncbi.nlm.nih.gov/substance/[example_id]
 example_id: PubChem_Substance:4594
-url_example: http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&DB=pcsubstance&term=4594
+url_example: https://pubchem.ncbi.nlm.nih.gov/substance/4594
 entity_type: CHEBI:24431 ! chemical entity
 
 abbreviation: RAP-DB
 database: Rice annotation Project database
-generic_url: http://rapdb.dna.affrc.go.jp
-url_syntax: http://rapdb.dna.affrc.go.jp/tools/search/run?id=on&attr=desc&attr=cgs&attr=cgn&attr=cgss&attr=cgns&attr=rgss&attr=rgns&keyword=[example_id]
-example_id: RAP-DB:OS01T0100600-01
-url_example: http://rapdb.dna.affrc.go.jp/tools/search/run?id=on&attr=desc&attr=cgs&attr=cgn&attr=cgss&attr=cgns&attr=rgss&attr=rgns&keyword=Os01g0100200
+generic_url: https://rapdb.dna.affrc.go.jp
+url_syntax: https://rapdb.dna.affrc.go.jp/viewer/gene_detail/irgsp1?name=[example_id]
+example_id: RAP-DB:Os01t0100600-01
+url_example: https://rapdb.dna.affrc.go.jp/viewer/gene_detail/irgsp1?name=Os01t0100600-01
 entity_type: BET:0000000 ! entity
 
 abbreviation: Reactome
 database: Reactome - a curated knowledgebase of biological pathways
 synonym: REACTOME
 synonym: REAC
-generic_url: http://www.reactome.org/
+generic_url: https://www.reactome.org/
 local_id_syntax: R-[A-Z]{3}-[0-9]+(-[0-9]+){0,1}(\.[0-9]+){0,1}
-url_syntax: http://www.reactome.org/content/detail/[example_id]
+url_syntax: https://www.reactome.org/content/detail/[example_id]
 example_id: Reactome:R-HSA-109582
-url_example: http://www.reactome.org/content/detail/R-HSA-109582
+url_example: https://www.reactome.org/content/detail/R-HSA-109582
 entity_type: BET:0000000 ! entity
 
 abbreviation: REBASE
@@ -2007,9 +1680,9 @@ example_id: RefSeq:XP_001068954
 url_example: http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?val=XP_001068954
 entity_type: SO:0000704 ! gene
 local_id_syntax: (NC|AC|NG|NT|NW|NZ|NM|NR|XM|XR|NP|AP|XP|YP|ZP)_[0-9]+(\.[0-9]+){0,1}
-url_syntax: http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?val=[example_id]
+url_syntax: https://www.ncbi.nlm.nih.gov/protein/[example_id]
 example_id: RefSeq:XP_001068954
-url_example: http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?val=XP_001068954
+url_example: https://www.ncbi.nlm.nih.gov/protein/NP_001121125
 entity_type: PR:000000001 ! protein
 
 abbreviation: RESID
@@ -2023,21 +1696,21 @@ entity_type: BET:0000000 ! entity
 
 abbreviation: Rfam
 database: Rfam database of RNA families
-generic_url: http://rfam.org
-url_syntax: http://rfam.org/family/[example_id]
+generic_url: https://rfam.org
+url_syntax: https://rfam.org/family/[example_id]
 example_id: Rfam:RF00012
-url_example: http://rfam.org/family/RF00012
+url_example: https://rfam.org/family/RF00012
 entity_type: BET:0000000 ! entity
 
 abbreviation: RGD
 database: Rat Genome Database
 synonym: RAD
 synonym: RGDID
-generic_url: http://rgd.mcw.edu/
+generic_url: https://rgd.mcw.edu/
 local_id_syntax: [0-9]{4,7}
-url_syntax: http://rgd.mcw.edu/rgdweb/search/search.html?term=[example_id]
+url_syntax: https://rgd.mcw.edu/rgdweb/search/search.html?[example_id]
 example_id: RGD:2004
-url_example: http://rgd.mcw.edu/rgdweb/search/search.html?term=2004
+url_example: https://rgd.mcw.edu/rgdweb/search/search.html?term=2004
 entity_type: SO:0000704 ! gene
 
 abbreviation: RHEA
@@ -2060,20 +1733,20 @@ entity_type: BET:0000000 ! entity
 abbreviation: RNAcentral
 database: RNAcentral
 description: An international database of ncRNA sequences
-generic_url: http://rnacentral.org
+generic_url: https://rnacentral.org
 local_id_syntax: URS[0-9A-F]{10}([_\/][0-9]+){0,1}
-url_syntax: http://rnacentral.org/rna/[example_id]
+url_syntax: https://rnacentral.org/rna/[example_id]
 example_id: RNAcentral:URS000047C79B_9606
-url_example: http://rnacentral.org/rna/URS000047C79B_9606
+url_example: https://rnacentral.org/rna/URS000047C79B_9606
 entity_type: CHEBI:33697 ! ribonucleic acid
 
 abbreviation: RNAmods
 database: RNA Modification Database
 synonym: RNAMDB
-generic_url: http://s59.cas.albany.edu/RNAmods/
-url_syntax: http://s59.cas.albany.edu/RNAmods/cgi-bin/rnashow.cgi?[example_id]
-example_id: RNAmods:037
-url_example: http://s59.cas.albany.edu/RNAmods/cgi-bin/rnashow.cgi?091
+generic_url: https://mods.rna.albany.edu/
+url_syntax: https://mods.rna.albany.edu/mods/modifications/view/[example_id]
+example_id: RNAmods:20
+url_example: https://mods.rna.albany.edu/mods/modifications/view/20
 entity_type: BET:0000000 ! entity
 
 abbreviation: RO
@@ -2083,12 +1756,6 @@ generic_url: http://purl.obolibrary.org/obo/ro
 url_syntax: http://purl.obolibrary.org/obo/RO_[example_id]
 example_id: RO:0002211
 url_example: http://purl.obolibrary.org/obo/RO_0002211
-entity_type: BET:0000000 ! entity
-
-abbreviation: Roslin_Institute
-database: Roslin Institute
-synonym: RI
-generic_url: http://www.roslin.ac.uk/
 entity_type: BET:0000000 ! entity
 
 abbreviation: SABIO-RK
@@ -2114,19 +1781,14 @@ example_id: SEED:fig|83331.1.peg.1
 url_example: http://www.theseed.org/linkin.cgi?id=fig|83331.1.peg.1
 entity_type: BET:0000000 ! entity
 
-abbreviation: SFLD
-database: Structure-Function Linkage Database
-description: A hierarchical classification of enzymes that relates specific sequence-structure features to specific chemical capabilities
-generic_url: http://sfld.rbvi.ucsf.edu/django/
-
 abbreviation: SGD
 database: Saccharomyces Genome Database
 synonym: SGDID
 generic_url: http://www.yeastgenome.org/
 local_id_syntax: S[0-9]{9}
-url_syntax: http://www.yeastgenome.org/locus/[example_id]/overview
+url_syntax: https://www.yeastgenome.org/locus/[example_id]
 example_id: SGD:S000006169
-url_example: http://www.yeastgenome.org/locus/S000006169/overview
+url_example: https://www.yeastgenome.org/locus/S000006169
 entity_type: SO:0000704 ! gene
 
 abbreviation: SGD_LOCUS
@@ -2148,23 +1810,23 @@ entity_type: BET:0000000 ! entity
 abbreviation: SGN
 database: Sol Genomics Network
 synonym: SGN_gene
-generic_url: http://www.sgn.cornell.edu/
-url_syntax: http://www.sgn.cornell.edu/phenome/locus_display.pl?locus_id=[example_id]
+generic_url: https://www.sgn.cornell.edu/
+url_syntax: http://solgenomics.net/phenome/locus_display.pl?locus_id=[example_id]
 example_id: SGN_gene:7740
 url_example: http://solgenomics.net/phenome/locus_display.pl?locus_id=7740
 entity_type: SO:0000704 ! gene
 
 abbreviation: SGN_ref
 database: Sol Genomics Network
-generic_url: http://www.sgn.cornell.edu/
-url_syntax: http://www.sgn.cornell.edu/chado/publication.pl?pub_id=[example_id]
+generic_url: https://www.sgn.cornell.edu/
+url_syntax: https://sgn.cornell.edu/chado/publication.pl?pub_id=[example_id]
 example_id: SGN_ref:861
-url_example: http://www.sgn.cornell.edu/chado/publication.pl?pub_id=861
+url_example: https://sgn.cornell.edu/chado/publication.pl?pub_id=861
 entity_type: BET:0000000 ! entity
 
 abbreviation: SGN_germplasm
 database: Sol Genomics Network
-generic_url: http://www.ncbi.nlm.nih.gov/PubMed/
+generic_url: https://solgenomics.net/
 url_syntax: http://solgenomics.net/stock/[example_id]/view/
 example_id: SGN_germplasm:6583
 url_example: http://solgenomics.net/stock/6583/view/
@@ -2178,14 +1840,9 @@ example_id: SMART:SM00005
 url_example: http://smart.embl-heidelberg.de/smart/do_annotation.pl?BLAST=DUMMY&DOMAIN=SM00005
 entity_type: SO:0000839 ! polypeptide region
 
-abbreviation: SMD
-database: Stanford Microarray Database
-generic_url: http://genome-www.stanford.edu/microarray
-entity_type: BET:0000000 ! entity
-
 abbreviation: SO
 database: Sequence Ontology
-generic_url: http://sequenceontology.org/
+generic_url: http://www.sequenceontology.org/
 local_id_syntax: \d{7}
 url_syntax: http://www.sequenceontology.org/browser/current_svn/term/SO:[example_id]
 example_id: SO:0000195
@@ -2199,93 +1856,45 @@ entity_type: SO:0000110 ! sequence feature
 
 abbreviation: Soy_gene
 database: SoyBase
-generic_url: http://soybase.org/
-url_syntax: http://www.soybase.org/sbt/search/search_results.php?category=FeatureName&search_term=[example_id]
+generic_url: https://soybase.org/
+url_syntax: https://www.soybase.org/sbt/search/search_results.php?category=FeatureName&search_term=[example_id]
 example_id: Glyma18g02210
-url_example: http://www.soybase.org/sbt/search/search_results.php?category=FeatureName&search_term=Glyma18g02210
+url_example: https://www.soybase.org/sbt/search/search_results.php?category=FeatureName&search_term=Glyma18g02210
 entity_type: BET:0000000 ! gene
 
 abbreviation: SOY_QTL
 database: SoyBase
-generic_url: http://soybase.org/
-url_syntax: http://soybase.org/sbt/search/search_results.php?category=QTLName&search_term=[example_id]
+generic_url: https://soybase.org/
+url_syntax: https://www.soybase.org/sbt/search/search_results.php?category=QTLName&search_term=[example_id]
 example_id: Seedling, abnormal+1-1
-url_example: http://www.soybase.org/sbt/search/search_results.php?category=QTLName&search_term=Seedling,+abnormal+1-1
+url_example: https://www.soybase.org/sbt/search/search_results.php?category=QTLName&search_term=Seedling,+abnormal+1-1
 entity_type: BET:0000000 ! entity
 
 abbreviation: SOY_ref
 database: SoyBase
-generic_url: http://soybase.org/
-url_syntax: http://www.soybase.org/sbt/search/search_results.php?category=Soybase_ID&search_term=[example_id]
+generic_url: https://soybase.org/
+url_syntax: https://www.soybase.org/sbt/search/search_results.php?category=Soybase_ID&search_term=[example_id]
 example_id: SOY ref:SoyBase6597900
-url_example: http://www.soybase.org/sbt/search/search_results.php?category=Soybase_ID&search_term=SoyBase3142000126
-entity_type: BET:0000000 ! entity
-
-abbreviation: SPD
-database: Schizosaccharomyces pombe Postgenome Database at RIKEN; includes Orfeome Localisation data
-generic_url: http://www.riken.jp/SPD/
-local_id_syntax: [0-9]{2}/[0-9]{2}[A-Z][0-9]{2}
-url_syntax: http://www.riken.jp/SPD/[example_id].html
-example_id: SPD:05/05F01
-url_example: http://www.riken.jp/SPD/05/05F01.html
-entity_type: BET:0000000 ! entity
-
-abbreviation: SPTR
-database: SRS database at EBI
-synonym: SP
-generic_url: http://srs.ebi.ac.uk
-url_syntax: http://srs.ebi.ac.uk/srs6bin/cgi-bin/wgetz?-e+[SWALL-acc:[example_id]]
-example_id: SPTR:12345
-url_example: http://srs.ebi.ac.uk/srs6bin/cgi-bin/wgetz?-e+[SWALL-acc:12345]
-entity_type: BET:0000000 ! entity
-
-abbreviation: SUBTILIST
-database: Bacillus subtilis Genome Sequence Project
-generic_url: http://genolist.pasteur.fr/SubtiList/
-example_id: SUBTILISTG:BG11384
-entity_type: SO:0000704 ! gene
-example_id: SUBTILISTG:BG11384
-entity_type: PR:000000001 ! protein
-
-abbreviation: SUBTILISTG
-database: Bacillus subtilis Genome Sequence Project
-generic_url: http://genolist.pasteur.fr/SubtiList/
-example_id: SUBTILISTG:accC
+url_example: https://www.soybase.org/sbt/search/search_results.php?category=Soybase_ID&search_term=SoyBase3142000126
 entity_type: BET:0000000 ! entity
 
 abbreviation: SUPERFAMILY
 database: SUPERFAMILY protein annotation database
 description: A database of structural and functional protein annotations for completely sequenced genomes
-generic_url: http://supfam.cs.bris.ac.uk/SUPERFAMILY/index.html
-url_syntax: http://supfam.cs.bris.ac.uk/SUPERFAMILY/cgi-bin/scop.cgi?ipid=SSF[example_id]
-example_id: SUPERFAMILY:51905
-url_example: http://supfam.cs.bris.ac.uk/SUPERFAMILY/cgi-bin/scop.cgi?ipid=SSF51905
-entity_type: BET:0000000 ! entity
-
-abbreviation: SWALL
-database: ExPASY Bioinformatics Resource Portal
-generic_url: http://ca.expasy.org
-url_syntax: http://ca.expasy.org/cgi-bin/sprot-search-de?S=1&amp;T=1&amp;SEARCH=[example_id]
-example_id: SWALL:12345
-url_example: http://ca.expasy.org/cgi-bin/sprot-search-de?S=1&amp;T=1&amp;SEARCH=12345
-entity_type: BET:0000000 ! entity
-
-abbreviation: Swiss-Prot
-database: Swiss-Prot protein database.
-generic_url: http://ca.expasy.org/sprot/
-url_syntax: http://www.ebi.uniprot.org/uniprot-srv/uniProtView.do?proteinac=[example_id]
-example_id: Swiss-Prot:P45867
-url_example: http://www.ebi.uniprot.org/uniprot-srv/uniProtView.do?proteinac=P45867
+generic_url: http://supfam.org/
+url_syntax: http://supfam.org/scop/[example_id]
+example_id: SUPERFAMILY:56994
+url_example: http://supfam.org/scop/56994
 entity_type: BET:0000000 ! entity
 
 abbreviation: SynGO
 database: The Synapse Gene Ontology and Annotation Initiative
-generic_url: http://geneontology.org/page/syngo-synapse-biology
+generic_url: https://www.syngoportal.org/
 entity_type: BET:0000000 ! entity
 
 abbreviation: SynGO-UCL
 database: The Synapse Gene Ontology and Annotation Initiative at UCL
-generic_url: http://geneontology.org/page/syngo-synapse-biology
+generic_url: https://www.ucl.ac.uk/cardiovascular/research/pre-clinical-and-fundamental-science/functional-gene-annotation/neurological-gene-2
 entity_type: BET:0000000 ! entity
 
 abbreviation: SYSCILIA_CCNET
@@ -2361,24 +1970,6 @@ example_id: TO_GIT:381
 url_example: https://github.com/Planteome/plant-trait-ontology/issues/381
 entity_type: BET:0000000 ! entity
 
-abbreviation: TR
-database: TREMBL
-synonym: SPTREMBL
-synonym: TREMBL
-synonym: TrEMBL
-generic_url: http://www.ebi.ac.uk/swissprot/
-url_syntax: http://srs.ebi.ac.uk/srs6bin/cgi-bin/wgetz?-e+[SWALL-acc:[example_id]]
-example_id: TrEMBL:Q00177
-url_example: http://srs.ebi.ac.uk/srs6bin/cgi-bin/wgetz?-e+[SWALL-acc:Q00177]
-entity_type: BET:0000000 ! entity
-
-abbreviation: TRAIT
-database: TRAnscript Integrated Table
-description: an integrated database of transcripts expressed in human skeletal muscle
-synonym: MuscleTRAIT
-generic_url: http://muscle.cribi.unipd.it/
-entity_type: BET:0000000 ! entity
-
 abbreviation: TRANSFAC
 database: TRANSFAC database of eukaryotic transcription factors
 generic_url: http://www.gene-regulation.com/pub/databases.html#transfac
@@ -2443,31 +2034,13 @@ example_id: UM-BBD_ruleID:bt0330
 url_example: http://eawag-bbd.ethz.ch/servlets/rule.jsp?rule=bt0330
 entity_type: BET:0000000 ! entity
 
-abbreviation: UniGene
-database: UniGene
-description: NCBI transcript cluster database, organized by transcriptome. Each UniGene entry is a set of transcript sequences that appear to come from the same transcription locus (gene or expressed pseudogene).
-generic_url: http://www.ncbi.nlm.nih.gov/UniGene
-url_syntax: http://www.ncbi.nlm.nih.gov/UniGene/clust.cgi?ORG=[organism_abbreviation]&CID=[cluster_id]
-example_id: UniGene:Hs.212293
-url_example: http://www.ncbi.nlm.nih.gov/UniGene/clust.cgi?ORG=Hs&CID=212293
-entity_type: BET:0000000 ! entity
-
-abbreviation: UniMod
-database: UniMod
-description: protein modifications for mass spectrometry
-generic_url: http://www.unimod.org/
-url_syntax: http://www.unimod.org/modifications_view.php?editid1=[example_id]
-example_id: UniMod:1287
-url_example: http://www.unimod.org/modifications_view.php?editid1=1287
-entity_type: BET:0000000 ! entity
-
 abbreviation: UniParc
 database: UniProt Archive
 description: A non-redundant archive of protein sequences extracted from Swiss-Prot, TrEMBL, PIR-PSD, EMBL, Ensembl, IPI, PDB, RefSeq, FlyBase, WormBase, European Patent Office, United States Patent and Trademark Office, and Japanese Patent Office
-generic_url: http://www.uniprot.org/uniparc/
-url_syntax: http://www.uniprot.org/uniparc/[example_id]
+generic_url: https://www.uniprot.org/uniparc/
+url_syntax: https://www.uniprot.org/uniparc/[example_id]
 example_id: UniParc:UPI000000000A
-url_example: http://www.uniprot.org/uniparc/UPI000000000A
+url_example: https://www.uniprot.org/uniparc/UPI000000000A
 entity_type: BET:0000000 ! entity
 
 abbreviation: UniPathway
@@ -2482,6 +2055,10 @@ entity_type: GO:0008150 ! biological_process
 abbreviation: UniProt
 database: Universal Protein Knowledgebase
 description: A central repository of protein sequence and function created by joining the information contained in Swiss-Prot, TrEMBL, and PIR database
+synonym: Swiss-Prot
+synonym: SwissProt
+synonym: TrEMBL
+synonym: TR
 generic_url: http://www.uniprot.org
 
 abbreviation: UniProtKB
@@ -2489,24 +2066,24 @@ database: Universal Protein Knowledgebase
 description: A central repository of protein sequence and function created by joining the information contained in Swiss-Prot, TrEMBL, and PIR database
 generic_url: http://www.uniprot.org
 local_id_syntax: ([OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z]([0-9][A-Z][A-Z0-9]{2}){1,2}[0-9])((-[0-9]+)|:PRO_[0-9]{10}|:VAR_[0-9]{6}){0,1}
-url_syntax: http://www.uniprot.org/uniprot/[example_id]
+url_syntax: https://www.uniprot.org/uniprot/[example_id]
 example_id: UniProtKB:P51587
-url_example: http://www.uniprot.org/uniprot/P51587
+url_example: https://www.uniprot.org/uniprot/
 entity_type: PR:000000001 ! protein
 
 abbreviation: UniProtKB-KW
 database: UniProt Knowledgebase keywords
 synonym: SP_KW
 generic_url: http://www.uniprot.org/keywords/
-url_syntax: http://www.uniprot.org/keywords/[example_id]
+url_syntax: https://www.uniprot.org/keywords/[example_id]
 example_id: UniProtKB-KW:KW-0812
-url_example: http://www.uniprot.org/keywords/KW-0812
+url_example: https://www.uniprot.org/keywords/KW-0812
 entity_type: BET:0000000 ! entity
 
 abbreviation: UniProtKB-SubCell
 database: UniProt Knowledgebase Subcellular Location vocabulary
 synonym: SP_SL
-generic_url: http://www.uniprot.org/locations/
+generic_url: https://www.uniprot.org/locations/
 url_syntax: http://www.uniprot.org/locations/[example_id]
 example_id: UniProtKB-SubCell:SL-0012
 url_example: http://www.uniprot.org/locations/SL-0012
@@ -2514,40 +2091,11 @@ entity_type: BET:0000000 ! entity
 
 abbreviation: UniRule
 database: Manually curated rules for automatic annotation of UniProtKB unreviewed entries
-generic_url: http://www.uniprot.org/unirule
+generic_url: https://www.uniprot.org/unirule/
 local_id_syntax: UR[0-9]{9}|MF_[0-9]{5}|PIRNR[0-9]{6}|PRU[0-9]{5}|RU[0-9]{6}
-url_syntax: http://www.uniprot.org/unirule/[example_id]
+url_syntax: https://www.uniprot.org/unirule/[example_id]
 example_id: UniRule:UR000107224
-url_example: http://www.uniprot.org/unirule/UR000107224
-entity_type: BET:0000000 ! entity
-
-abbreviation: VBRC
-database: Viral Bioinformatics Resource Center
-generic_url: http://vbrc.org
-url_syntax: http://vbrc.org/query.asp?web_id=VBRC:[example_id]
-example_id: VBRC:F35742
-url_example: http://vbrc.org/query.asp?web_id=VBRC:F35742
-entity_type: BET:0000000 ! entity
-
-abbreviation: VEGA
-database: Vertebrate Genome Annotation database
-generic_url: http://vega.sanger.ac.uk/index.html
-url_syntax: http://vega.sanger.ac.uk/id/[example_id]
-example_id: VEGA:OTTHUMP00000000661
-url_example: http://vega.sanger.ac.uk/id/OTTHUMP00000000661
-entity_type: BET:0000000 ! entity
-
-abbreviation: VIDA
-database: Virus Database at University College London
-generic_url: http://www.biochem.ucl.ac.uk/bsm/virus_database/VIDA.html
-entity_type: BET:0000000 ! entity
-
-abbreviation: VMD
-database: Virginia Bioinformatics Institute Microbial Database
-generic_url: http://phytophthora.vbi.vt.edu
-url_syntax: http://vmd.vbi.vt.edu/cgi-bin/browse/browserDetail_new.cgi?gene_id=[example_id]
-example_id: VMD:109198
-url_example: http://vmd.vbi.vt.edu/cgi-bin/browse/browserDetail_new.cgi?gene_id=109198
+url_example: https://www.uniprot.org/unirule/UR000107224
 entity_type: BET:0000000 ! entity
 
 abbreviation: VZ
@@ -2683,15 +2231,6 @@ url_syntax: http://zfin.org/[example_id]
 example_id: ZDB-GENE-990415-103
 url_example: http://zfin.org/ZDB-GENE-990415-103
 entity_type: VariO:0001 ! variation
-
-abbreviation: PLANA_REF
-database: Planaria Ontology Database References
-generic_url: http://purl.obolibrary.org/obo/plana/references/
-local_id_syntax: \d{7}
-url_syntax: http://purl.obolibrary.org/obo/plana/references/[example_id]
-example_id: 0000001
-url_example: http://purl.obolibrary.org/obo/plana/references/0000001
-entity_type: BET:0000000 ! entity
 
 abbreviation: TFClass
 database: TFClass is a resource for the classification of eukaryotic transcription factors based on the characteristics of their DNA-binding domains

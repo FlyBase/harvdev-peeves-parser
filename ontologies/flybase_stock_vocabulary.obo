@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: 2018-05-03
-date: 30:10:2019 08:51
+date: 18:03:2020 10:08
 saved-by: gm119
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: FlyBase_stock_CV
@@ -221,7 +221,7 @@ name: GenetiVision
 namespace: stock_collection
 def: "GenetiVision Autosomal Duplication Stock Collection." [FlyBase:GM]
 synonym: "GVADpC" EXACT []
-is_a: FBsv:0000101 ! stock center collection
+is_obsolete: true
 created_by: Administrator
 creation_date: 2018-03-12T06:30:46Z
 
