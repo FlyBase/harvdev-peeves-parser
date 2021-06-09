@@ -2,7 +2,7 @@ OBO CHECKING LOG
 
 Filename: go-basic.obo
 DATESTAMP: 
-version:2019-10-07
+version:2021-05-01
 OK for retrofit: y
 OK for loading to chado: y
 OK for using on website: ?
@@ -10,12 +10,12 @@ Comments:New GO moved to trunk
 
 Filename: fly_anatomy.obo
 DATESTAMP: 
-data-version: 2019-09-05
+data-version: 2021-05-11
 CVS version number:
 OK for retrofit: y
 OK for loading to chado: y
 OK for using on website: y
-Comments: 2019-09-05 version of fbbt moved to trunk
+Comments: 2021-05-11 version of fbbt moved to trunk
 
 Filename: fly_development.obo
 DATESTAMP: 21:10:2019 12:49
@@ -26,36 +26,36 @@ OK for using on website? y
 Comments: new fly_development.obo moved to trunk
 
 Filename: flybase_controlled_vocabulary.obo
-DATESTAMP: date:  11:07:2019 15:52
+DATESTAMP: date:  14:01:2021 18:58
 CVS version number:
 OK for retrofit: y
 OK for loading to chado: y
 OK for using on website: y
 Comments: Moving new fbcv to trunk
 
-Filename: so.obo
-DATESTAMP: 
+Filename: so-simple.obo
+DATESTAMP: 2020-11-10
 CVS version number: 
-OK for retrofit?
-OK for loading to chado?
-OK for using on website?
-Comments:
+OK for retrofit: y
+OK for loading to chado: y
+OK for using on website: y
+Comments: Moving new so-simple.obo to trunk
 
 Filename: doid.obo
-DATESTAMP: 16:09:2019 07:28
-data-version: releases/2019-09-16
+DATESTAMP: 29:03:2021 15:42
+data-version: releases/2021-03-29
 OK for retrofit: y
 OK for loading to chado: y
 OK for using on website: y
 Comments: moving new doid.obo to trunk
 
 Filename: flybase_stock_vocabulary.obo
-DATESTAMP: 03:05:2018 10:31
+DATESTAMP: 18:03:2020 10:08
 data-version: 2018-05-03
-OK for retrofit: y
+OK for retrofit: ?
 OK for loading to chado: y
 OK for using on website: ?
-Comments:
+Comments: updating file to obsolete GenetiVision stock center
 
 Filename: psi-mi.obo
 DATESTAMP: 20:08:2015 13:02
