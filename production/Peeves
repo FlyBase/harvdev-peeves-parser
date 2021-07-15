@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.14.2"; #  Adding python_parser_field_stub subroutine for fields that are only checked by new harvard python parser (see PDEV-146) ...
+our $Peeves_version = "2.27"; #  DC-960: adding basic field checks for GG13
 
 =head2 Version
 
