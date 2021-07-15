@@ -1,0 +1,29 @@
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0225556
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 7: 08 May 2018
+!
+! GG1a. Gene group symbol                               *a :BOM
+! GG1b. Gene group symbol synonym(s)                    *i :
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :y
+! GG2a. Action - gene group name to use in FlyBase      *e :
+! GG2b. Gene group name synonym(s)                      *V :
+! GG4.  Type of gene group [CV]  *t :
+! GG5.  Description of gene group  [free text]  *D :
+! GG6a. Key GO term(s) - Cellular Component (term ; ID)  *f :
+! GG6b. Key GO term(s) - Molecular Function (term ; ID)  *F :
+! GG6c. Key GO term(s) - Biological Process (term ; ID)  *d :
+! GG7a. Related gene group(s) in FB - parent (symbol)     *P :
+! GG7c. Related gene group(s) in FB - undefined (symbol)  *U :
+! GG8a. Equivalent gene group accession (rpt. sect. for mult.)  *O :
+! GG8b. FlyBase database symbol (DB1a) for GG8a  *O :
+! GG8c. Title for GG8a [free text]               *T :
+! GG9.  Other related external resource(s) ([title](URL)) *E :
+! GG10. Comments [free text]  *u :
+! GG11. Date gene group last reviewed (YYYYMMDD)  *y :
+!c GG13. Pathway Thumbnails, archived at ftp site :FBgg0001086_pathway_thumb.svg
+multiple values
+! GG12. Internal notes  *W :should fail basic format checks
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!
