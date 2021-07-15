@@ -31,6 +31,7 @@ my @GG1e_list = ();							# Dehashed data from GG1e (rename)
 my @GG1f_list = ();							# Dehashed data from GG1f (merge)
 my @GG1g_list = ();							# dehashed data from GG1g field
 
+my @GG13_list = ();
 
 sub do_genegroup_proforma ($$)
 {
@@ -280,6 +281,11 @@ FIELD:
 	    check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
 		no_hashes_in_proforma ($file, $2, $hash_entries, $3);
 		push @GG8d_list, process_field_data ($file, $hash_entries, $1, '0', $2, $3, \%proforma_fields, '1');
+	}
+	elsif ($field =~ /^(.*?)\s+(GG13)\..*? :(.*)/s)
+	{
+		check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
+		@GG13_list = process_field_data ($file, $hash_entries, $1, '0', $2, $3, \%proforma_fields, '1');
 	}
 
 	elsif ($field =~ /^(.*?)\s+GG(.+?)\..*?:(.*)$/s)
