@@ -1,0 +1,57 @@
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0226669
+! P2.   Parent multipub abbreviation               *w :EMBO Rep.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENE PROFORMA                          Version 79:  3 Oct 2018
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :hh
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :UniProtKB:NOT colocalizes_with actin filament ; GO:0005884 | IDA
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G15.  Internal notes  *W :??expected format
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 79:  3 Oct 2018
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :en
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :NOT UniProtKB:colocalizes_with actin filament ; GO:0005884 | IDA
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G15.  Internal notes  *W :??NOT in wrong place before provenance (although python parser has been set up to use this format)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 79:  3 Oct 2018
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :dpp
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1e.  Action - rename this gene symbol                       :
+! G1f.  Action - merge these genes (symbols)                   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G24a. GO - Cellular Component (term ; ID | evidence) [CV] *f :NOT UniProtKB:located_in extracellular space ; 
+! G24b. GO - Molecular Function (term ; ID | evidence) [CV] *F :
+! G24c. GO - Biological Process (term ; ID | evidence) [CV] *d :
+! G24e. GO - GO-specific internal note                      *H :
+! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :y
+! G15.  Internal notes  *W :??line that Ian said passes Peeves
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!
