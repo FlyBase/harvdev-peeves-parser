@@ -1,4 +1,4 @@
-! GENEGROUP PROFORMA     Version 5: 24 Mar 2015
+! GENEGROUP PROFORMA     Version 8: 12 Jul 2021
 !
 ! GG1h. FlyBase gene group ID (FBgg)  *z :FULL
 ! GG1a. Gene group symbol                               *a :FULL
@@ -35,4 +35,5 @@
 !
 ! GG11. Date gene group last reviewed (YYYYMMDD)  *y :FULL
 !
+! GG13. Pathway Thumbnails, archived at ftp site :BASIC ONLY
 ! GG12. Internal notes  *W :FULL

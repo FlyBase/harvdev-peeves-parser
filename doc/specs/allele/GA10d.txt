@@ -37,12 +37,15 @@ Checks within field:
 
   * warns if the field is filled in for a 'user' or 'auto' curation record.
 
+Cross-checks between fields: 
+
+* If GA10d is filled in, GA10c must be filled in.
+
 
 Cross-checks between fields: [not yet implemented]
 
 * If GA10c contains more than one value, GA10d must NOT be filled in.
 
-* If GA10d is filled in, GA10c must be filled in.
 
 * See Status section of GA1b.txt for description of bug in cross-checking between GA1b, GA2b and GA10 fields [gm140501]
 
@@ -63,4 +66,4 @@ See comments above for what is not yet implemented.
 
 ### Updated:
 
-gm170420.
+gm200203.

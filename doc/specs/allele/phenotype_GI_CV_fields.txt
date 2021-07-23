@@ -91,9 +91,7 @@ where
 
 gene1[allele2] may actually be a deficiency/other aberration that
 disrupts gene1 rather than an allele; however if it is an allele it
-must be an allele of the same gene of which GA1a is an allele, not be
-the same allele as is given in GA1a, and it must be represented as a
-GA1a in its own right in this curation record.
+must be an allele of the same gene of which GA1a is an allele, and it must be represented as a GA1a in its own right in this curation record (unless it is a .edit record).
 
 There may be more than one thing in the (with ) section - separated by ", " or by "/"
 (heterozygotes at a locus being separated by a /, while combinations at distinct loci
@@ -152,9 +150,7 @@ where
 
 gene1[allele2] may actually be a deficiency/other aberration that
 disrupts gene1 rather than an allele; however if it is an allele it
-must be an allele of the same gene of which GA1a is an allele, not be
-the same allele as is given in GA1a, and it must be represented as a
-GA1a in its own right in this curation record.
+must be an allele of the same gene of which GA1a is an allele, and it must be represented as a GA1a in its own right in this curation record (unless it is a .edit record).
 
 There may be more than one thing in the (with ) section - separated by ", " or by "/"
 (heterozygotes at a locus being separated by a /, while combinations at distinct loci
@@ -232,9 +228,7 @@ where it is identical to checks in GA56. and where it is not)
 
 gene1[allele2] may actually be a deficiency/other aberration that
 disrupts gene1 rather than an allele; however if it is an allele it
-must be an allele of the same gene of which GA1a is an allele, not be
-the same allele as is given in GA1a, and it must be represented as a
-GA1a in its own right in this curation record.
+must be an allele of the same gene of which GA1a is an allele, and it must be represented as a GA1a in its own right in this curation record (unless it is a .edit record).
 
 There may be more than one thing in the (with ) section - separated by
 ", " or by "/" (heterozygotes at a locus being separated by a /, while
@@ -389,9 +383,7 @@ where it is identical to checks in GA17. and where it is not)
 
 gene1[allele2] may actually be a deficiency/other aberration that
 disrupts gene1 rather than an allele; however if it is an allele it
-must be an allele of the same gene of which GA1a is an allele, not be
-the same allele as is given in GA1a, and it must be represented as a
-GA1a in its own right in this curation record.
+must be an allele of the same gene of which GA1a is an allele, and it must be represented as a GA1a in its own right in this curation record (unless it is a .edit record).
 
 There may be more than one thing in the (with ) section - separated by
 ", " or by "/" (heterozygotes at a locus being separated by a /, while
