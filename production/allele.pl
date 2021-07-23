@@ -566,7 +566,7 @@ FIELD:
 	    check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
 		no_hashes_in_proforma ($file, $2, $hash_entries, $3);
 		check_site_specific_field($file, $2, 'Harvard', \%proforma_fields) if $3;
-		push @GA90k_list, process_field_data ($file, $hash_entries, $1, '1', $2, $3, \%proforma_fields, '1');
+		push @GA90k_list, process_field_data ($file, $hash_entries, $1, '0', $2, $3, \%proforma_fields, '1');
 	}
 	elsif ($field =~ /^(.*?)\s+(GA91)\..*? :(.*)/s)
 	{
