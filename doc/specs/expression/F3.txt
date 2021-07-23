@@ -30,7 +30,7 @@ Checks between fields:
 
   * if the gene product is an FBtr, the 'SO term id' pair must be a child of 'transcript' (or the term itself)
 
-  * if the gene product is an FBpp, the 'SO term id' pair must be a child of 'protein' (or the term itself) (in practise at the moment this means just 'protein' is allowed).
+  * if the gene product is an FBpp, the 'SO term id' pair must be a child of 'polypeptide' (or the term itself) (in practise at the moment this means just 'polypeptide' is allowed).
 
 - F3 must be filled in for new gene products and for gene product merges.
 
@@ -49,4 +49,4 @@ Although expression curation manual says that this field is required (inclusion 
 
 ### Updated:
 
-gm160330.
+gm200514.

@@ -1,5 +1,5 @@
 
-## ! SF5c. Associated FBtp transgenic_transposon (symbol) :
+## ! SF5c. Associated FBtp transgenic_transposable_element (symbol) :
 
 ### Multiple values allowed:
 

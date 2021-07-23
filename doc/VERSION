@@ -921,3 +921,9 @@ our $Peeves_version = "2.23.2"; #  Updated aberration_class_shortcut value for D
 # 18.1.2021
 our $Peeves_version = "2.24"; #  check for new mandatory qualifiers in GO annotation lines (DC-903)
 our $Peeves_version = "2.25"; #  G24 fields: removing unecessary warnings for GO curators
+# 5.7.2021
+our $Peeves_version = "2.26"; #  adding new curator info
+# 13.7.2021
+our $Peeves_version = "2.27"; #  DC-960: adding basic field checks for GG13
+# 23.7.2021
+our $Peeves_version = "2.28"; #  DC-968: change Peeves check for GA90k so !c = not applicable

@@ -41,10 +41,10 @@ Cross-checks done after parsing the entire proforma:
 * If MS16 is filled in:
 
   * If the symbol in MS1a looks like an FBtp symbol (checked using check_construct_symbol_format to return a value for nat_te_end)
-     * the value in MS16 must be one of the allowed values for FBtp type features ('transgenic_transposon', 'natural_transposon_isolate_named' or 'DNA_segment')
-     * if the symbol in MS1a is a TI-style FBtp, the value in MS16 must be the one allowed for that type of FBtp ('DNA_segment')
+     * if the symbol in MS1a is a TI-style FBtp construct, the value in MS16 must be the one allowed for that type of FBtp
+     * if the symbol in MS1a is a regular FBtp construct, the value in MS16 must be an allowed value for that type of FBtp
   * If the symbol in MS1a does not look like an FBtp symbol
-     * the value in MS16 must NOT be one of the values that is ONLY allowed for FBtp type features ('transgenic_transposon', 'natural_transposon_isolate_named')
+     * the value in MS16 must NOT be one of the values that is allowed only for regular or TI-style FBtp type features
 
 * If MS16 is NOT filled in:
 
@@ -68,4 +68,4 @@ Not yet implemented:
 
 ### Updated:
 
-gm151001.
+gm200514.

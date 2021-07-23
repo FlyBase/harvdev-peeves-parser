@@ -101,4 +101,70 @@ f. pushing code from test->production
 
 - once in production, mark JIRA ticket as 'Closed'
 
-Updated: gm140109.
+
+4. update the git version of peeves once changes are in production.
+-------------------------------------------------------------------
+
+a. cd to copy of git peeves
+
+b. make a new branch, named for a JIRA ticket where possible.
+
+$ git branch <newbranchname>
+$ git checkout <newbranchname>
+
+c. make relevant changes in production by comparing the production folder in the svn and git peeves
+
+(note that for now, cannot just cp entire files that have a diff due to some specific changes in the git version - will try to reconcile these soon (can add most into svn peeves I think)
+
+- to check what the changes are:
+
+$ git status
+
+or
+
+$ git diff
+
+d. once finished, use 'git add' to actually add any new/modified files to be staged for committing:
+
+$ git add <filename>
+
+(adds file to staging for next commit, filename is path/to/file from where you are in repository)
+
+OR
+
+$ git add <path>/
+
+(adds everything under the path directory to staging for next commit)
+
+$ git status
+
+(to check what is scheduled to be added)
+
+e. commit changes (this is local)
+
+git commit -m "message that is summary of changes"
+
+- check you are on correct branch again:
+
+$ git status
+
+
+f. push changes to the remote repository
+
+$ git push -u origin <branch>
+
+(use git push -u the first time as is new branch, no need for -u if then push on this branch again)
+
+g. create a pull request
+
+  - terminal output will have the relevant URL, click on 'Create pull request' and then request appropriate developer as reviewer
+
+h. once merges are approved:
+
+$ git checkout master
+$ git pull
+
+to get back on the master branch and get everything updated with remote repository
+
+
+Updated: gm210723.

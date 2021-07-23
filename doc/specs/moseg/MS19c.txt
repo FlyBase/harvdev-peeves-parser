@@ -50,9 +50,9 @@ doc reflects what is implementeed
 
 Not yet implemented
 
-* MS19c must be filled in for MS16 of type natural_transposon_isolate_named
+* MS19c must be filled in for MS16 of type engineered_transposable_element
 
 
 ### Updated:
 
-gm170131.
+gm200512.
