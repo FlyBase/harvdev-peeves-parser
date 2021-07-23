@@ -27,13 +27,15 @@ The check can cope with empty slots (ie. when there is no space between two deli
 
 * If this slot is filled in check, that it is a valid assay term, print an error if not
 
-* If it is not filled in, issue a warning that it is compulsory (F9 only)
+* If it is not filled in, issue a warning that it is compulsory (F9 only), unless it is the special 'Frequently used GAL4 table data' FB analysis ref (FBrf0237128) (as this slot is often legitimately empty in this FBrf)
 
 
 <t> temporal
 
+* If it is not filled in, issue a warning (as is usually filled in), unless it is the special 'Frequently used GAL4 table data' FB analysis ref (FBrf0237128) (as this slot is often legitimately empty in this FBrf)
 
-* first, the statement is split into chunks, by splitting on '&&' (and) and then on '--' (range)
+
+* If it is filled in, first, the statement is split into chunks, by splitting on '&&' (and) and then on '--' (range)
 
 * if there is a range statement (--) with more than two entries, i.e. 1--2--3 n error message is printed.
 
@@ -101,4 +103,4 @@ Not yet implemented:
 * The assay terms are only checked for overall validity - DC-637 suggests improvements for more nuanced checking based on either which field the TAP statement is in and/or whether the gene product is a transcript/polypeptide.
 
 
-gm181013.
+gm200623.

@@ -48,10 +48,9 @@ Note from Kathleen in PDEV-18: Cannot !c SF2b  as it's an essential to identify 
 ### Status:
 
 
-Need to check with chado whether 'peptide' is a valid SO term - curation manual says that these values should be a valid SO term, but cannot see it in Vocabularies.  If it is supposed to be a valid SO term, should add additional check to list in symtab.pl to check that they are still valid SO terms.
 
 Could possible replace hard-coded symtab.pl with chado query of the correct 'property_type'
 
 ### Updated:
 
-gm160113.
+gm200513.

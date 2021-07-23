@@ -29,8 +29,8 @@
 !    SF5f. Comments concerning gene call :FULL
 ! SF5b. Associated allele       :NA
 ! SF5g. Associated transcript   :NA
-! SF5c. Associated FBtp transgenic_transposon (symbol) :NA
-! SF5h. Associated FBmc engineered_construct (symbol) :NA
+! SF5c. Associated FBtp transgenic_transposable_element (symbol) :NA
+! SF5h. Associated FBmc engineered_plasmid (symbol) :NA
 ! SF5d. Corresponding segment   :NA
 !
 ! SF10a. Evidence/assay [CV] :NA

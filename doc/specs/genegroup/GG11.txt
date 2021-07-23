@@ -27,7 +27,14 @@ No (Implemented)
 
 ### Checks:
 
+Checks within field:
+
 * bad_iso_date subroutine checks that this is in valid YYYYMMDD format
+
+Cross-checks between fields:
+
+* GG11 must be filled in for new gene groups (sub check_filled_in_for_new_feature, test = 'yes')
+
 
 ### Related fields:
 
@@ -43,4 +50,4 @@ G24g
 
 ### Updated:
 
-gm151001.
+gm191122.

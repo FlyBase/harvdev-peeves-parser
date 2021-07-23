@@ -1,5 +1,5 @@
 
-## ! GA90a. Allele to which GA90b-k apply [dupl for multiple] :
+## ! GA90a. Lesion to which GA90b-k apply [dupl for multiple] :
 
 ### Multiple values allowed:
 
@@ -64,4 +64,4 @@ Not yet implemented:
 
 ### Updated:
 
-gm151001.
+gm210723.

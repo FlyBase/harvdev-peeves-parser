@@ -1,4 +1,4 @@
-! ALLELE PROFORMA                        Version 62: 27 Jun 2019
+! ALLELE PROFORMA                        Version 65: 23 July 2021
 !
 ! GA1h. FlyBase allele ID (FBal) *z :FULL
 ! GA1a.  Allele symbol to use in FlyBase                        *A :FULL
@@ -52,7 +52,7 @@
 ! GA13.  Miscellaneous comments                        *u :FULL
 ! GA20.  GA1a stated to be lost?                         *v :FULL
 ! GA33.  Sequence accession number - seq cur only             :BASIC ONLY
-! GA90a. Allele to which GA90b-k apply [dupl for multiple] :FULL
+! GA90a. Lesion to which GA90b-k apply [dupl for multiple] :FULL
 ! GA90k. Molecular nature (type) of lesion :FULL
 ! GA90b. Genomic location of lesion :FULL
 ! GA90c. Genome release number for entry in GA90b :FULL
