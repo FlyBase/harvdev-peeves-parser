@@ -1,0 +1,51 @@
+
+## ! GG13. Pathway Thumbnails, archived at ftp site :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+No (implemented)
+
+### Inclusion essential:
+
+No (implemented)
+
+### Mandatorially has value:
+
+No (implemented)
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+### Checks:
+
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+Only implemented basic checks, the following have not yet been implemented:
+
+Within field checks:
+
+- value must match the general format FBggID_pathway_thumb.svg and FBggID must be valid (may make sense to do the latter part during between field checks)
+
+Between field checks:
+
+- FBggID part of value must match that of the FBgg symbol in GG1a
+
+### Updated:
+
+gm210713.

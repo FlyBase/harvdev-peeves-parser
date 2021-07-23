@@ -37,10 +37,8 @@ where
 
 
 <qualifier> may only be one of the following strings:
-   ''
-   'NOT '
-   'NOT contributes_to '
-   'contributes_to ',
+   'contributes_to'
+   'enables'
 
 <GO_term> corresponds to a current, valid, non-obsolete 'name:' in gene_ontology.obo for
 which 'namespace: molecular_function' appears;
@@ -65,6 +63,9 @@ sub 'do_go_evidence' - checks evidence code and any associated data after the co
 
 'do_go_evidence' uses the 'check_evidence_data' subroutine to check the information after the evidence code (see doc/specs/allele/GA34a.txt for more details on the 'check_evidence_data' subroutine). Note that 'inferred by curator|IC' is not currently checked using this generic subroutine, but is treated as a special case as it has GO ids after the evidence code, rather than database objects.
 
+In addition, if the root term is used, checks that the evidence code is 'ND', the qualifier is 'enables' and no NOT is present.
+
+
 ### Related fields:
 
 G24a
@@ -84,4 +85,4 @@ List of checks carried out above is not yet complete - there are other checks ca
 
 ### Updated:
 
-gm160214.
+gm210118.

@@ -31,7 +31,7 @@ Checcks within field:
 Checks between fields:
 
 * MS19e must only be filled in for FBmc type constructs, so if MS19e is filled in:
-  * If MS16 is filled in it must contain 'engineered_construct' (otherwise an error is printed)
+  * If MS16 is filled in it must contain 'engineered_plasmid' (otherwise an error is printed)
   or
   * If MS16 is not filled in, if MS1f is an FBtp or FBms id, an error is printed
 
@@ -51,4 +51,4 @@ Checks between fields:
 
 ### Updated:
 
-gm170308.
+gm201125.

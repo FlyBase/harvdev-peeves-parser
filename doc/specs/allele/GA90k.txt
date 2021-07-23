@@ -7,7 +7,7 @@ No (Implemented)
 
 ### !c Applicable:
 
-Yes (Implemented)
+No (Implemented) (see Comments below)
 
 
 ### Inclusion essential:
@@ -59,7 +59,7 @@ Checks between fields (for each duplication of the GA90a-GA90k unit):
 
 ### Comments:
 
-
+!c for GA90k not implemented for perl parser, so set to 'No' for now. !c for this field has been implemented in the python parser so when we switch over to that, !c should be set to 'Yes' again (if Peeves is still needed at that time !)
 
 ### Status:
 
@@ -69,4 +69,4 @@ Not yet implemented:
 
 ### Updated:
 
-gm151001.
+gm210723.

@@ -29,8 +29,8 @@
 !    SF5f. Comments concerning gene call :FULL
 ! SF5b. Associated allele       :FULL
 ! SF5g. Associated transcript   :FULL
-! SF5c. Associated FBtp transgenic_transposon (symbol) :FULL
-! SF5h. Associated FBmc engineered_construct (symbol) :FULL
+! SF5c. Associated FBtp transgenic_transposable_element (symbol) :FULL
+! SF5h. Associated FBmc engineered_plasmid (symbol) :FULL
 ! SF5d. Corresponding segment   :(FULL checks are implemented but warning is issued if filled in or !c-d, as field not implemented in proforma parser)
 !
 ! SF10a. Evidence/assay [CV] :FULL
