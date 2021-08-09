@@ -926,15 +926,13 @@ my $dv_short_qualifiers = {
 # (also currently used for IU).
 
     set_symbol ('bibl',  'crec_type', 'BIBL');
+    set_symbol ('coll',  'crec_type', 'COLL');
     set_symbol ('edit',  'crec_type', 'EDIT');
     set_symbol ('full',  'crec_type', 'FULL');
     set_symbol ('skim',  'crec_type', 'SKIM');
     set_symbol ('user',  'crec_type', 'AUTHOR');
-# set 'phen' to PHEN so don't get warnings about missing synonyms
     set_symbol ('phen',  'crec_type', 'PHEN');
-# set 'thin' to EDIT so don't get warnings about missing synonyms
-# (should change this to 'THIN' so can distinguish between real 'edit' records and thin records
-    set_symbol ('thin',  'crec_type', 'EDIT');
+    set_symbol ('thin',  'crec_type', 'THIN');
     set_symbol ('auto',  'crec_type', 'EDIT');
 
 
@@ -963,9 +961,9 @@ my $dv_short_qualifiers = {
     set_symbol ('hds_multiple',  'hrec_type', 'FULL');
     set_symbol ('sf',  'hrec_type', 'FULL');
     set_symbol ('db',  'hrec_type', 'FULL');
-    set_symbol ('coll',  'hrec_type', 'FULL');
-    set_symbol ('lib',  'hrec_type', 'FULL');
-    set_symbol ('dataset',  'hrec_type', 'FULL');
+    set_symbol ('coll',  'hrec_type', 'COLL');
+    set_symbol ('lib',  'hrec_type', 'COLL');
+    set_symbol ('dataset',  'hrec_type', 'COLL');
     set_symbol ('cell',  'hrec_type', 'FULL');
     set_symbol ('DO',  'hrec_type', 'FULL');
 
