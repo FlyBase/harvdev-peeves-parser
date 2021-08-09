@@ -2112,8 +2112,8 @@ sub validate_triage_flags {
 # only fields which can be compulsory under some circumstances (i.e. P41, P43)
 # should be a key here. Fields which are always allowed to be empty (P40, P42)
 # should never need to be listed in this section. 
-			'P41' => { 'BIBL' => '1', 'EDIT' => '1', 'EXPRESSION' => '1'},
-			'P43' =>  { 'BIBL' => '1', 'EDIT' => '1', 'EXPRESSION' => '1', 'AUTHOR' => '1', 'SKIM' => '1'},
+			'P41' => { 'BIBL' => '1', 'EDIT' => '1', 'EXPRESSION' => '1', 'PHEN' => '1'},
+			'P43' =>  { 'BIBL' => '1', 'EDIT' => '1', 'EXPRESSION' => '1', 'AUTHOR' => '1', 'SKIM' => '1', 'PHEN' => '1', 'THIN' => '1', 'COLL' => '1'},
 		},
 
 		'allowed_to_be_empty_by_pub_type' => {
