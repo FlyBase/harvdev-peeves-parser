@@ -632,9 +632,14 @@ compare_field_pairs ($file, $hash_entries, 'GA2c', \@GA2c_list, 'GA2a', \@GA2a_l
 # GA2c and GA1f must not both be filled in
 compare_field_pairs ($file, $hash_entries, 'GA1f', \@GA1f_list, 'GA2c', \@GA2c_list, \%proforma_fields, 'single', '');
 
-# Typically, only onr of GA30c and GA30d are filled in
+# Typically, only one of GA30c and GA30d are filled in
 
 compare_field_pairs ($file, $hash_entries, 'GA30c', \@GA30c_list, 'GA30d', \@GA30d_list, \%proforma_fields, 'single::(except in rare cases, which is usually some kind of sensor tool)', '');
+
+# If GA35 is filled in then neither of the encoded tool fields (GA30c or GA30d) should typically be filled in
+
+compare_field_pairs ($file, $hash_entries, 'GA35', \@GA35_list, 'GA30c', \@GA30c_list, \%proforma_fields, 'single::(except in rare cases, which is usually when the transgene can be used both to study the function of the encoded product and as an experimental tool, depending on circumstance)', '');
+compare_field_pairs ($file, $hash_entries, 'GA35', \@GA35_list, 'GA30d', \@GA30d_list, \%proforma_fields, 'single::(except in rare cases, which is usually when the transgene can be used both to study the function of the encoded product and as an experimental tool, depending on circumstance)', '');
 
 # check that if have filled in any of GA10 'synonym' fields, that the relevant 'valid symbol' field is filled in
 
@@ -748,6 +753,7 @@ if ($hash_entries) {
 				}
 			}
 
+# in this loop, GA30c is empty
 		} else {
 
 # check to see whether GA30c/GA30d were left empty by mistake for new construct alleles of 'tool' genes
@@ -760,14 +766,22 @@ if ($hash_entries) {
 # if the gene is typically used as a tool
 					if (defined $common_tool_uses && (scalar @{$common_tool_uses} > 0)) {
 
+# think could remove GA30c in this loop and change to commented line below - as already tested in loop above and is empty if are here, but will check at end
+#						unless (defined $GA30d_list[$i] && $GA30d_list[$i] ne '')) {
 						unless ((defined $GA30c_list[$i] && $GA30c_list[$i] ne '') || (defined $GA30d_list[$i] && $GA30d_list[$i] ne '')) {
 
+# check whether or not GA35 is filled in, and print slightly different message in the two cases.
 
-							report ($file, "WARNING: An 'encoded tool' field is usually filled in for a new 'construct' allele when the parent gene is commonly used as a tool (as is the case for '%s'), did you forget to fill in either GA30c or GA30d ?\n!%s", $g1a_gene, $proforma_fields{'GA1a'});
+							unless (defined $GA35_list[$i] && $GA35_list[$i] ne '') {
+								report ($file, "WARNING: An 'encoded tool' field is usually filled in for a new 'construct' allele when the parent gene is commonly used as a tool (as is the case for '%s'), did you forget to fill in either GA30c or GA30d ?\n!%s", $g1a_gene, $proforma_fields{'GA1a'});
+
+							} else {
+
+								report ($file, "WARNING: An 'encoded tool' field is usually filled in for a new 'construct' allele when the parent gene is commonly used as a tool (as is the case for '%s'). You have filled in GA35, so this may be a rare 'non-tool' allele of the gene, in which case this message is a false-positive.\n!%s", $g1a_gene, $proforma_fields{'GA1a'});
+
+							}
 
 						}
-
-
 
 					}
 				}
@@ -820,6 +834,46 @@ if ($hash_entries) {
 
 			}
 
+		}
+
+# checks for GA35
+
+		if (defined $GA35_list[$i] && $GA35_list[$i] ne '') {
+
+			unless (valid_symbol ($file, 'record_type') eq 'EDIT') {
+				unless ($allele_type eq 'construct') {
+					report ($file, "%s can only be filled in for a 'construct' allele.\n!%s\n!%s", 'GA35',$proforma_fields{'GA1a'}, $proforma_fields{'GA35'});
+
+				}
+			}
+		} else {
+
+# warn that GA35 should be filled in for new, non-tool construct alleles
+			if ($allele_type eq 'construct' && $object_status eq 'new') {
+
+				if (my $id = valid_chado_symbol($g1a_gene, 'FBgn')) {
+
+					my $common_tool_uses = chat_to_chado ('common_tool_uses', $id)->[0];
+
+					unless (defined $common_tool_uses && (scalar @{$common_tool_uses} > 0)) {
+
+						my $mutagen_switch = 0;
+						foreach my $datum (split (/\n/, $GA8_list[$i])) {
+
+							if ($datum eq 'in vitro construct - RNAi') {
+								$mutagen_switch++;
+							}
+
+						}
+
+						unless ($mutagen_switch) {
+							report ($file, "WARNING: %s is usually filled in for a new '%s' allele of a 'non-experimental tool' parent gene, did you forget to fill it in ? NOTE: if this is a targeting construct that contains complementary nucleotide sequence of a gene of interest (RNAi, sgRNA, antisense etc.) then this message is a false-positive\n!%s", 'GA35', $allele_type, $proforma_fields{'GA1a'});
+						}
+					}
+
+				}
+
+			}
 		}
 
 	}
