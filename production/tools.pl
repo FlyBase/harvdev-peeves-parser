@@ -3703,7 +3703,7 @@ sub validate_cvterm_field {
 		'GG4' => ['FBcv:group_descriptor'],
 		'A4' => ['FBcv:origin_of_mutation'],
 		'GA4' => ['FBcv:allele_class'],
-		'GA35' => ['FBcv:transgenic_product_class'],
+		'GA35' => ['SO:structural_variant', 'SO:functional_effect_variant', 'additional_GA35'],
 		'GA8' => ['FBcv:origin_of_mutation'],
 		'G34' => ['antibody'],
 		'MA8' => ['insertion_phenotype'],
@@ -3816,7 +3816,26 @@ sub validate_cvterm_field {
 	my $uniqued_data = check_for_duplicated_lines($file,$code,$dehashed_data,$context->{$code});
 
 	foreach my $datum (keys %{$uniqued_data}) {
-		valid_symbol_of_list_of_types ($datum, $allowed_types{$code}) or report ($file, "%s: '%s' is not valid for this field%s:\n!%s", $code, $datum, $additional_error_text, $context->{$code});
+
+		if (valid_symbol_of_list_of_types ($datum, $allowed_types{$code})) {
+
+# specific message for GA35 - warnings that some sub-branches of the structural_variant branch
+# are not allowed.
+# only testing for this once have established that the term is a valid SO term of the main branches allowed for the field.
+			if ($code eq 'GA35') {
+
+				valid_symbol ($datum, "SO:translational_product_structure_variant") and report ($file, "%s: '%s' is not valid for this field%s:\n!%s", $code, $datum, " (it is from the translational_product_structure_variant branch). Use a term from the 'coding_sequence_variant' branch instead", $context->{$code});
+
+				valid_symbol ($datum, "SO:incomplete_transcript_variant") and report ($file, "%s: '%s' is not valid for this field%s:\n!%s", $code, $datum, " (it is from the incomplete_transcript_variant branch). This branch of SO describes variants in 'an incompletely *annotated* transcript' and this definition is not applicable to transgenic product class", $context->{$code});
+
+			}	
+
+
+		} else {
+
+			report ($file, "%s: '%s' is not valid for this field%s:\n!%s", $code, $datum, $additional_error_text, $context->{$code});
+		}
+
 
 	}
 
