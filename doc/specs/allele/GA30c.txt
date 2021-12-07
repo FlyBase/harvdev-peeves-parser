@@ -43,7 +43,12 @@ Cross-checks between fields:
 
 * Usually only one of GA30c and GA30d are filled in, so a warning is issued if both are filled in.
 
-* For new 'construct' alleles (i.e. GA10a filled in), where the parent gene has a 'common_tool_uses' in chado, Peeves warns if neither of GA30c or GA30d are filled in.
+* For new 'construct' alleles (i.e. GA10a filled in), where the parent gene has a 'common_tool_uses' in chado:
+
+     * Peeves warns if neither of GA30c or GA30d are filled in (a slightly different error message is given in GA35 is filled in).
+
+* If GA35 is filled in, warns if GA30c is filled in (and vice versa) - prints a field specific message as in rare cases it is OK for both GA35 and either GA30c/GA30d to be filled in.
+
 
 ### Related fields:
 
@@ -58,4 +63,4 @@ Some of the between fields cross-checks are not carried out for .edit records, t
 
 ### Updated:
 
-gm180412.
+gm211123.

@@ -45,7 +45,7 @@
 ! GA30d. Encoded experimental tool [CV]           :FULL
 ! GA30e. Regulatory region(s) present (symbol)  :FULL
 ! GA30f. Propagate uses from construct ? (n or blank)  :FULL
-! GA35. Transgenic product class [CV] :BASIC ONLY
+! GA35. Transgenic product class [CV] :FULL
 ! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :FULL|BUG
 ! GA34b. DO - Human disease model comment                     *p :FULL
 ! GA34c. DO - Human disease model internal note               *w :FULL

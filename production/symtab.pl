@@ -798,7 +798,11 @@ my $dv_short_qualifiers = {
 		'chromosome_structure_variation' => '1',
 		'transposable_element' => '1',
 		'synthetic_sequence' => '1',
-	
+		'functional_effect_variant' => '1',
+		'structural_variant' => '1',
+		'translational_product_structure_variant' => '1',
+		'incomplete_transcript_variant' => '1',
+
 	};
 
 	&process_ontology_file ($SO_obo, 'SO:\d{1,}', '1', $so_ancestors);
@@ -863,9 +867,23 @@ my $dv_short_qualifiers = {
  	my $fbcv_ancestors = {
  		'modifier of variegation' => '1',
 		'increased mortality during development' => '1',
+## the following is stored as a temporary measure, until the 'in vitro construct - X' terms can be obsoleted in the ontology. The stored values are used in validate_cvterm_field (tools.pl) to remind curators that most child 'in vitro construct - X' terms are no longer used for the GA8 field, and that the parent term should be used instead. The value of the key below is '0' NOT '1' which prevents the parent term being stored
+## once terms are removed from ontology, the line below can be removed
+		'in vitro construct' => '0',
 	};
 
 	&process_ontology_file ($FBcv_obo, 'FBcv:\d{1,}', '1', $fbcv_ancestors);
+
+
+## removing 'in vitro construct - RNAi' from the list of 'in vitro construct' descendents as this IS still needed to be used in GA8. Once child terms are removed from ontology, the section below can be removed
+
+	if (valid_symbol ('in vitro construct - RNAi', 'FBcv:in vitro construct')) {
+
+		delete_symbol ('in vitro construct - RNAi', 'FBcv:in vitro construct');
+
+	}
+
+##
 
 
 # adding list of allowed qualifers for phenotypic_class to symbol table
@@ -914,6 +932,19 @@ my $dv_short_qualifiers = {
 
 	my @reagent_collection_protocol_types = ('FBcv:assay_attribute', 'FBcv:biosample_attribute');
 	set_symbol ('reagent_collection_protocol_types', 'allowed_type_list', \@reagent_collection_protocol_types);
+
+# adding additional SO terms allowed for GA35 that are not in the two main 'variant' branches used
+
+	my @additional_GA35 = ('wild_type', 'cDNA', 'genomic_DNA', 'rescue_region', 'polymorphic_sequence_variant');
+
+	foreach my $term (@additional_GA35) {
+
+		set_symbol ($term, 'additional_GA35', '1');
+
+		valid_symbol ($term, 'SO:default') or print "MAJOR PEEVES ERROR in basic ontology processing: the '$term' term listed in Peeves as an additional valid value for GA35 is no longer a valid SO term, Peeves will need altering to cope (probably by replacing this obsolete term with a new valid one).\n\n";
+
+	}
+
 
 
 #  Then various classes of essentially static symbols.  This code looks ugly but the lists have to live
