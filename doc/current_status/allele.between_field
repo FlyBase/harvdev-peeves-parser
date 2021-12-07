@@ -13,7 +13,7 @@
 ! GA32a. Action - obsolete GA1a in FlyBase (y)         TAKE CARE :NOT YET IMPLEMENTED
 ! GA32b. Action - dissociate GA1a from reference (y)   TAKE CARE :PARTIAL
 ! GA4.   Allele class [CV]                                  *k :NA
-! GA35.  Transgenic product class [CV]     :NOT YET IMPLEMENTED
+! GA35.  Transgenic product class [CV]     :FULL
 ! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :NA
 ! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :NA
 ! GA7a.  Phenotype [free text]                            *k :NA
@@ -45,7 +45,7 @@
 ! GA30d. Encoded experimental tool [CV]           :FULL
 ! GA30e. Regulatory region(s) present (symbol)  :FULL
 ! GA30f. Propagate uses from construct ? (n or blank)  :FULL
-! GA35. Transgenic product class [CV] :NOT YET IMPLEMENTED
+! GA35. Transgenic product class [CV] :FULL
 ! GA34a. DO - Human disease model (term ; ID | evidence) [CV] *r :FULL
 ! GA34b. DO - Human disease model comment                     *p :FULL
 ! GA34c. DO - Human disease model internal note               *w :NA

@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.29"; #  DC-973: add 'coll' as valid Cambridge record type
+our $Peeves_version = "2.31"; #  GA8: adding warning for most 'in vitro construct - X' child terms - most cases should now use 'in vitro construct' parent instead (related to DC-917, adding curation of GA35)
 
 =head2 Version
 
@@ -412,7 +412,7 @@ our %field_specific_checks = (
 	'GA30e' => \&check_valid_symbol_field,
 	'GA30f' => \&check_single_allowed_value,
 
-	'GA35' => \&validate_cvterm_field, # FBcv terms not in obo file yet
+	'GA35' => \&validate_cvterm_field,
 
 	'GA33' => \&validate_GA33,
 	'GA34b' => \&check_stamped_free_text,

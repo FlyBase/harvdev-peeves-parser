@@ -929,3 +929,11 @@ our $Peeves_version = "2.27"; #  DC-960: adding basic field checks for GG13
 our $Peeves_version = "2.28"; #  DC-968: change Peeves check for GA90k so !c = not applicable
 # 9.8.2021
 our $Peeves_version = "2.29"; #  DC-973: add 'coll' as valid Cambridge record type
+# 22.11.2021
+our $Peeves_version = "2.30.1"; #  DC-917: GA35 changes: switching expected CV to SO
+our $Peeves_version = "2.30.2"; #  DC-917: GA35 changes: excluding translational_product_structure_variant terms
+# 23.11.2021
+our $Peeves_version = "2.30.3"; #  DC-917: GA35 changes: excluding incomplete_transcript_variant terms
+our $Peeves_version = "2.30.4"; #  DC-917: GA35 changes: adding between field cross-checks
+# 6.12.2021
+our $Peeves_version = "2.31"; #  GA8: adding warning for most 'in vitro construct - X' child terms - most cases should now use 'in vitro construct' parent instead (related to DC-917, adding curation of GA35)
