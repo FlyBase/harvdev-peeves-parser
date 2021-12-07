@@ -30,7 +30,32 @@ No (implemented)
 Checks within field:
 
 
-* sub 'validate_cvterm_field' checks that this is a valid FBcv term from the 'transgenic_product_class' namespace. Note, since these FBcv terms have not been added to the ontology yet, this means that if the field is filled in now by mistake, Peeves will complain.
+* sub 'validate_cvterm_field' checks that this is a valid SO term from the expected branches ('structural_variant', 'functional_effect_variant' and 'additional_GA35' terms that are not in the first two branches, but are specified in the @additional_GA35 array in symtab.pl).
+
+* sub 'validate_cvterm_field' also warns if a valid SO term from the 'translational_product_structure_variant branch' is used and suggests using a term from the 'coding_sequence_variant' branch instead.
+
+* sub 'validate_cvterm_field' also warns if a valid SO term from the 'incomplete_transcript_variant branch' is used as the definition of terms in this branch mean they are not appropriate for transgenic product class.
+
+
+Checks between fields:
+
+* If GA35 is filled in, warns if GA30c is filled in (and vice versa) - prints a field specific message as in rare cases it is OK for both GA35 and either GA30c/GA30d to be filled in.
+
+* If GA35 is filled in, warns if GA30d is filled in (and vice versa) - prints a field specific message as in rare cases it is OK for both GA35 and either GA30c/GA30d to be filled in.
+
+* if GA35 is filled in, the allele must be associated with a 'construct' (in GA10a) (i.e. not a classical or insertional allele)
+
+* For new 'construct' alleles (i.e. GA10a filled in):
+
+  * if the parent gene has a 'common_tool_uses' in chado (i.e. usually used as an experimental tool):
+
+     - Peeves warns if neither of GA30c or GA30d are filled in (a slightly different error message is given depending on whether or not GA35 is filled in).
+
+  * if the parent gene of the allele is NOT usually used as an experimental tool
+
+     - Peeves warns if GA35 is empty (unless it has 'in vitro construct - RNAi' in the mutagen field - this is a temporary hack until we can use experimental tool fields to describe this kind of targeting construct)
+
+
 
 ### Related fields:
 
@@ -38,24 +63,15 @@ Checks within field:
 
 ### Comments:
 
+The constraint using 'in vitro construct - RNAi' should be removed when we implement using experimental tool fields to describe targeting constructs such as RNAi, sgRNA lines. (JIRA DC-910).
 
+Have not put in a test for GA35 being filled in for a targeting construct, because it will trip the general 'not valid in this field' check as the relevant SO terms are not in the allowed set for GA35.
 
 
 ### Status:
-
-Not yet implemented:
-
-
-Checks between fields:
-
-* should only be filled in for transgenic construct alleles (i.e. GA10a)
-
-* GA4 (allele class) and GA35 should not both be filled in
-
-* must be filled in for a new transgenic construct alleles (i.e. GA10a)
 
 
 
 ### Updated:
 
-gm180703.
+gm211123.

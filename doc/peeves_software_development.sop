@@ -112,9 +112,20 @@ b. make a new branch, named for a JIRA ticket where possible.
 $ git branch <newbranchname>
 $ git checkout <newbranchname>
 
-c. make relevant changes in production by comparing the production folder in the svn and git peeves
+c. update relevant folders:
+
+i. production folder: make relevant changes in production by comparing the production folder in the svn and git peeves
 
 (note that for now, cannot just cp entire files that have a diff due to some specific changes in the git version - will try to reconcile these soon (can add most into svn peeves I think)
+
+ii records2test folder - may need to add new records/folders or modify existing ones as necessary
+
+
+iii. doc folder
+
+add/update changed doc as necessary
+
+iv. once finished updating:
 
 - to check what the changes are:
 
