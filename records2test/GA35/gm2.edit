@@ -62,7 +62,6 @@
 ! GA2b.  Allele name(s) used in reference                       *V :
 ! GA35.  Transgenic product class [CV]     :wild_type
 genomic_DNA
-rescue_region
 ! GA10a. Associated construct                                *I :
 ! GA10b. Construct symbol(s) used in reference               *L :
 ! GA10c. Associated insertion - G1a is outwith insert      *G :
