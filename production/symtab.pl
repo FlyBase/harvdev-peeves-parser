@@ -935,7 +935,7 @@ my $dv_short_qualifiers = {
 
 # adding additional SO terms allowed for GA35 that are not in the two main 'variant' branches used
 
-	my @additional_GA35 = ('wild_type', 'cDNA', 'genomic_DNA', 'rescue_region', 'polymorphic_sequence_variant');
+	my @additional_GA35 = ('wild_type', 'cDNA', 'genomic_DNA', 'polymorphic_sequence_variant');
 
 	foreach my $term (@additional_GA35) {
 

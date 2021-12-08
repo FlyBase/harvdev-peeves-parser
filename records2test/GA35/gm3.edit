@@ -33,6 +33,7 @@
 deficient_inversion
 in vitro construct - regulatory fusion
 not a valid SO term
+rescue_region
 ! GA10a. Associated construct                                *I :
 ! GA10b. Construct symbol(s) used in reference               *L :
 ! GA10c. Associated insertion - G1a is outwith insert      *G :
