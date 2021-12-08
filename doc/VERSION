@@ -937,3 +937,5 @@ our $Peeves_version = "2.30.3"; #  DC-917: GA35 changes: excluding incomplete_tr
 our $Peeves_version = "2.30.4"; #  DC-917: GA35 changes: adding between field cross-checks
 # 6.12.2021
 our $Peeves_version = "2.31"; #  GA8: adding warning for most 'in vitro construct - X' child terms - most cases should now use 'in vitro construct' parent instead (related to DC-917, adding curation of GA35)
+# 8.12.2021
+our $Peeves_version = "2.32"; #  GA35: removing 'rescue_region' as allowed term (we think it would be better to derive this from appropriate data if users want this information) (related to DC-917)
