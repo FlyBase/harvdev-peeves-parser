@@ -1,0 +1,59 @@
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0225556
+! P2.   Parent multipub abbreviation               *w :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 8: 12 Jul 2021
+!
+! GG1a. Gene group symbol                               *a :RENAME1
+! GG1b. Gene group symbol synonym(s)                    *i :
+! GG1e. Action - rename this gene group symbol      :ATG-PK
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :n
+! GG2a. Action - gene group name to use in FlyBase      *e :
+! GG2b. Gene group name synonym(s)                      *V :
+! GG2c. Action - rename this gene group name        :
+!
+! GG4.  Type of gene group [CV]  *t :
+! GG12. Internal notes  *W :??should pass - GG4 not filled in at all
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 8: 12 Jul 2021
+!
+! GG1a. Gene group symbol                               *a :RENAME2
+! GG1b. Gene group symbol synonym(s)                    *i :
+! GG1e. Action - rename this gene group symbol      :CNPY
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :n
+! GG2a. Action - gene group name to use in FlyBase      *e :
+! GG2b. Gene group name synonym(s)                      *V :
+! GG2c. Action - rename this gene group name        :
+!
+!c GG4.  Type of gene group [CV]  *t :functional group
+! GG12. Internal notes  *W :??should pass - GG4 filled in, and have remembered plingc
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 8: 12 Jul 2021
+!
+! GG1a. Gene group symbol                               *a :RENAME3
+! GG1b. Gene group symbol synonym(s)                    *i :
+! GG1e. Action - rename this gene group symbol      :PFDN
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :n
+! GG2a. Action - gene group name to use in FlyBase      *e :
+! GG2b. Gene group name synonym(s)                      *V :
+! GG2c. Action - rename this gene group name        :
+!
+! GG4.  Type of gene group [CV]  *t :process group
+! GG12. Internal notes  *W :??should fail - GG4 filled in, forgot to plingc
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 8: 12 Jul 2021
+!
+! GG1a. Gene group symbol                               *a :RENAME4
+! GG1b. Gene group symbol synonym(s)                    *i :
+! GG1e. Action - rename this gene group symbol      :ADAC
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :n
+! GG2a. Action - gene group name to use in FlyBase      *e :
+! GG2b. Gene group name synonym(s)                      *V :
+! GG2c. Action - rename this gene group name        :
+!
+!c GG4.  Type of gene group [CV]  *t :
+! GG12. Internal notes  *W :??should fail - GG4 plingc, forgot to put in value
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

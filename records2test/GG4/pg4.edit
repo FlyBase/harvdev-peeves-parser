@@ -1,0 +1,14 @@
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0225556
+! P2.   Parent multipub abbreviation               *w :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 8: 12 Jul 2021
+!
+! GG1a. Gene group symbol                               *a :ATT
+! GG1b. Gene group symbol synonym(s)                    *i :
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :y
+! GG4.  Type of gene group [CV]  *t :
+! GG12. Internal notes  *W :??should pass, GG4 blank for existing group
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!
