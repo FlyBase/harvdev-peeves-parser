@@ -79,9 +79,9 @@ rewureow
 ! GG2b. Gene group name(s) used in reference            *V :
 ! GG2c. Action - rename this gene group name        :
 !
-! GG4.  Type of gene group [CV]  *t :process group
+!c GG4.  Type of gene group [CV]  *t :
 !
-! GG12. Internal notes  *W :??error -filled in for merge
+! GG12. Internal notes  *W :
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! GENEGROUP PROFORMA     Version 4: 28 Aug 2014
 !
