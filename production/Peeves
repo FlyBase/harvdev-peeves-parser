@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.32"; #  GA35: removing 'rescue_region' as allowed term (we think it would be better to derive this from appropriate data if users want this information) (related to DC-917)
+our $Peeves_version = "2.33"; #  DC-998: improved checks for GG4
 
 =head2 Version
 

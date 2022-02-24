@@ -345,8 +345,64 @@ compare_field_pairs ($file, $hash_entries, 'GG1f', \@GG1f_list, 'GG2a', \@GG2a_l
 
 
 # Fields which must only be filled in for new gene groups
-check_filled_in_for_new_feature ($file, 'GG4', $hash_entries, \@GG4_list, \@GG1g_list, \@GG1e_list, \@GG1f_list, \%proforma_fields, 'only');
 check_filled_in_for_new_feature ($file, 'GG2a', $hash_entries, \@GG2a_list, \@GG1g_list, \@GG1e_list, \@GG1f_list, \%proforma_fields, 'yes');
+
+# cross-checks for GG4, only attempt if hashing is correct for GG4
+	if ($hash_entries and $#GG4_list + 1 == $hash_entries) {
+
+
+		# plingc status is the same for all hash entries
+		my $GG4_plingc = $proforma_fields{'GG4'};
+		$GG4_plingc =~ s/^(.*?)\s+GG4\..*? :.*/$1/s;
+
+		for (my $i = 0; $i < $hash_entries; $i++) {
+
+			my $object_status = get_object_status ('GG', $GG1g_list[$i], $GG1e_list[$i], $GG1f_list[$i]);
+
+
+			if ($object_status eq 'new' || $object_status eq 'merge') {
+
+				unless (defined $GG4_list[$i] && $GG4_list[$i] ne '') {
+
+					report ($file, "%s must be filled in for a %s:\n!%s\n!%s", 'GG4', ($object_status eq 'new' ? "$object_status gene group" : "gene group $object_status"), $proforma_fields{'GG1a'}, $proforma_fields{'GG4'});
+
+				}
+
+				if (changes ($file, 'GG4', $GG4_plingc)) {
+					report ($file, "%s: !c cannot be used for a %s:\n!%s\n!%s", 'GG4', ($object_status eq 'new' ? "$object_status gene group" : "gene group $object_status"), $proforma_fields{'GG1a'}, $proforma_fields{'GG4'});
+
+				}
+				
+
+			} elsif ($object_status eq 'existing' || $object_status eq 'rename') {
+
+				if (changes ($file, 'GG4', $GG4_plingc)) {
+
+					unless (defined $GG4_list[$i] && $GG4_list[$i] ne '') {
+
+						report ($file, "%s cannot be !c to nothing for %s:\n!%s\n!%s", 'GG4', ($object_status eq 'existing' ? "an $object_status gene group" : "a gene group $object_status"),  $proforma_fields{'GG1a'}, $proforma_fields{'GG4'});
+
+
+					}
+
+
+				} else {
+
+					if (defined $GG4_list[$i] && $GG4_list[$i] ne '') {
+
+						report ($file, "%s cannot be filled in without !c for %s:\n!%s\n!%s", 'GG4', ($object_status eq 'existing' ? "an $object_status gene group" : "a gene group $object_status"),  $proforma_fields{'GG1a'}, $proforma_fields{'GG4'});
+
+					}
+
+				}
+
+
+			}
+		}
+	}
+
+
+
 
 # only run the test if the field contains a single line of data, to prevent confusing/repeated error messages
 if (exists $proforma_fields{'GG11'} && index ($proforma_fields{'GG11'}, "\n") == -1) {

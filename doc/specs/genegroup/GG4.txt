@@ -30,8 +30,13 @@ Checks within field:
 
 Cross-checks between fields
 
-* check_filled_in_for_new_feature checks that it is only filled in for new groups
+* GG4 must be filled in for a brand new gene group.
 
+* for an existing gene group (including a gene group being renamed):
+
+   * if GG4 is filled in, it must be a plingc (since only one value is allowed in the database for this field).
+
+   * if GG4 is plingc-ed, it must be filled in (since each gene group *must* have this field filled in in the database).
 
 ### Related fields:
 
@@ -39,6 +44,7 @@ Cross-checks between fields
 
 ### Comments:
 
+Note: Gene group merging has not been implemented yet in the parser (and the GG1f merge field has been removed from the master proforma). To be ready in case gene group merging is ever implemented in proforma (and to prevent any GG4 errors being missed in that case), cross-checks for GG4 for gene group merges have been set up in Peeves the same way as for brand new gene groups, as I think that this would be the desired behaviour if gene group merging is implemented.
 
 
 ### Status:
@@ -47,4 +53,4 @@ Cross-checks between fields
 
 ### Updated:
 
-gm151001.
+gm220211.
