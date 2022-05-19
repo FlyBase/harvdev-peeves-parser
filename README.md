@@ -1,3 +1,5 @@
+**A public version of this repo is hosted on DockerHub. DO NOT include sensitive data in this repository.**
+
 Test stripped down version of peeves to get idea of what errors to expect/anticipate.
 COMPLETE hack here but i added ontologies by :-
 cp /data/harvcur/svn/ontologies/trunk/* ontologies
