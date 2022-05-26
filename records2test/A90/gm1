@@ -28,7 +28,7 @@
 ! A90j.    Comments concerning sequence location                :
 ! A90a. Location data for breakpoint number (dupl for multiple) :0
 ! A90b.    Genomic location of breakpoint                       :2R:23551816..2R3
-! A90c.    Genome release number for entry in A90a              :6
+! A90c.    Genome release number for entry in A90a              :
 ! A90h.    Linked to restriction fragment   :
 ! A90j.    Comments concerning sequence location                :
 ! A90a. Location data for breakpoint number (dupl for multiple) :0
