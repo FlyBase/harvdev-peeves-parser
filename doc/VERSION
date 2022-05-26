@@ -941,3 +941,5 @@ our $Peeves_version = "2.31"; #  GA8: adding warning for most 'in vitro construc
 our $Peeves_version = "2.32"; #  GA35: removing 'rescue_region' as allowed term (we think it would be better to derive this from appropriate data if users want this information) (related to DC-917)
 # 11.2.2022
 our $Peeves_version = "2.33"; #  DC-998: improved checks for GG4
+# 25.5.2022
+our $Peeves_version = "2.34"; #  making genome release number field compulsory when related seq. coord field filled in

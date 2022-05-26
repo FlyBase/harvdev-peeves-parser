@@ -510,8 +510,48 @@ compare_duplicated_field_pairs ($file, 'A90c', \@A90c_list, 'A90a', \@A90a_list,
 compare_duplicated_field_pairs ($file, 'A90h', \@A90h_list, 'A90a', \@A90a_list, \%dup_proforma_fields, 'dependent', '');
 compare_duplicated_field_pairs ($file, 'A90j', \@A90j_list, 'A90a', \@A90a_list, \%dup_proforma_fields, 'dependent', '');
 
-# if A90c is filled in, A90b must be filled in
-compare_duplicated_field_pairs ($file, 'A90c', \@A90c_list, 'A90b', \@A90b_list, \%dup_proforma_fields, 'dependent', '');
+
+
+## checks for the A90b/A90c pair - in almost all cases, both fields must be filled in if one of them is.
+## the single exception is when A90b is !c to nothing - in that case, A90c should be blank
+# only perform check if no hashing in proforma to ensure correct checking as A90b/A90c can be duplicated
+if ($g_num_syms == 1) {
+
+# the following is based on compare_duplicated_field_pairs
+
+	if ($#A90b_list == $#A90c_list) {
+		for (my $i = 0; $i <= $#A90b_list; $i++) {
+
+			my $A90b_plingc = $dup_proforma_fields{'A90b'}[$i];
+			$A90b_plingc =~ s/^(.*?)\s+A90b\..*? :.*/$1/s;
+
+			# need to build the context information in the correct format to pass to compare_pairs_of_data from the %dup_proforma_fields hash
+			my %local_context = ();
+			$local_context{'A90b'} = $dup_proforma_fields{'A90b'}[$i];
+			$local_context{'A90c'} = $dup_proforma_fields{'A90c'}[$i];
+
+			if (changes ($file, 'A90b', $A90b_plingc)) {
+
+
+				if (defined $A90b_list[$i] && $A90b_list[$i] ne '') {
+
+					compare_pairs_of_data ($file, 'A90b', $A90b_list[$i], 'A90c', $A90c_list[$i], \%local_context, 'pair::if either is filled in', '');
+				} else {
+
+					compare_pairs_of_data ($file, 'A90c', $A90c_list[$i], 'A90b', $A90b_list[$i], \%local_context, 'dependent::(unless you are trying to !c A90b to nothing, in which case leave A90c blank).', '');
+
+				}
+
+			} else {
+
+				compare_pairs_of_data ($file, 'A90b', $A90b_list[$i], 'A90c', $A90c_list[$i], \%local_context, 'pair::if either is filled in', '');
+
+			}
+		}
+	}
+}
+## end checks for the A90b/A90c pair
+
 
 # A91 unit checks
 compare_duplicated_field_pairs ($file, 'A91a', \@A91a_list, 'A91b', \@A91b_list, \%dup_proforma_fields, 'pair::if either is filled in', '');

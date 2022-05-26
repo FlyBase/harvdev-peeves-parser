@@ -7,7 +7,7 @@ No (Implemented)
 
 ### !c Applicable:
 
-?? Have implemented as No (need to check with Kathleen ??)
+No
 
 ### Inclusion essential:
 
@@ -31,7 +31,15 @@ checks within field
 
 Cross-checks with other fields
 
+* if MA21a is filled in, MA21b must be filled in
+
+   * the only exception is if MA21a is being !c-ed to nothing (ie. removing sequence location) - in this specific case MA21b should be blank.
+
+      * if MA21b is filled in when MA21a is !c to nothing, a message is printed so that the curator can double-check whether they were trying to !c MA21a to nothing, or failed to fill in the corrected sequence location in MA21a by mistake.
+
+
 * if MA21b is filled in, MA21a must be filled in
+
 
 
 
@@ -52,4 +60,4 @@ Not yet implemented:
 
 ### Updated:
 
-gm151001.
+gm220526.

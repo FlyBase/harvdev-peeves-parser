@@ -593,8 +593,38 @@ compare_field_pairs ($file, $hash_entries, 'MA15c', \@MA15c_list, 'MA15d', \@MA1
 
 compare_field_pairs ($file, $hash_entries, 'MA15b', \@MA15b_list, 'MA15c', \@MA15c_list, \%proforma_fields, 'dependent', 'not same');
 
+## checks for the MA21a/MA21b pair - in almost all cases, both fields must be filled in if one of them is.
+## the single exception is when MA21a is !c to nothing - in that case, MA21b should be blank
+if ($proforma_fields{'MA21a'}) {
+	my $MA21a_plingc = $proforma_fields{'MA21a'};
+	$MA21a_plingc =~ s/^(.*?)\s+MA21a\..*? :.*/$1/s;
 
-compare_field_pairs ($file, $hash_entries, 'MA21b', \@MA21b_list, 'MA21a', \@MA21a_list, \%proforma_fields, 'dependent', '');
+	if (changes ($file, 'MA21a', $MA21a_plingc)) {
+
+		# loop round hashing
+		for (my $i = 0; $i < $hash_entries; $i++) {
+
+			if (defined $MA21a_list[$i] && $MA21a_list[$i] ne '') {
+
+				compare_pairs_of_data ($file, 'MA21a', $MA21a_list[$i], 'MA21b', $MA21b_list[$i], \%proforma_fields, 'pair::if either is filled in', '');
+
+			} else {
+			
+				compare_pairs_of_data ($file, 'MA21b', $MA21b_list[$i], 'MA21a', $MA21a_list[$i], \%proforma_fields, 'dependent::(unless you are trying to !c MA21a to nothing, in which case leave MA21b blank).', '');
+
+
+			}
+
+		}
+
+
+	} else {
+
+		compare_field_pairs ($file, $hash_entries, 'MA21a', \@MA21a_list, 'MA21b', \@MA21b_list, \%proforma_fields, 'pair::if either is filled in', '');
+
+	}
+
+}
 
 
 compare_field_pairs ($file, $hash_entries, 'MA5e', \@MA5e_list, 'MA5f', \@MA5f_list, \%proforma_fields, 'pair', '');

@@ -47,7 +47,7 @@ Checks within field
 Checks between fields (for each duplication of the GA90a-GA90k unit):
 
   * GA90a must be filled in if GA90b is filled in (sub compare_duplicated_field_pairs) 
-  * GA90b must be filled in if GA90c is filled in (sub compare_duplicated_field_pairs) 
+  * GA90b must be filled in if GA90c is filled in and vice versa (sub compare_duplicated_field_pairs) 
 
 
 ### Related fields:
@@ -69,4 +69,4 @@ doc reflects what is implemented.
 
 ### Updated:
 
-gm151001.
+gm220525.

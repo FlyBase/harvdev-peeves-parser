@@ -661,7 +661,7 @@ compare_duplicated_field_pairs ($file, 'GA90i', \@GA90i_list, 'GA90a', \@GA90a_l
 compare_duplicated_field_pairs ($file, 'GA90j', \@GA90j_list, 'GA90a', \@GA90a_list, \%dup_proforma_fields, 'dependent', '');
 compare_duplicated_field_pairs ($file, 'GA90a', \@GA90a_list, 'GA90k', \@GA90k_list, \%dup_proforma_fields, 'pair::if either is filled in', '');
 
-compare_duplicated_field_pairs ($file, 'GA90c', \@GA90c_list, 'GA90b', \@GA90b_list, \%dup_proforma_fields, 'dependent', '');
+compare_duplicated_field_pairs ($file, 'GA90b', \@GA90b_list, 'GA90c', \@GA90c_list, \%dup_proforma_fields, 'pair::if either is filled in', '');
 
 compare_field_pairs ($file, $hash_entries, 'GA91', \@GA91_list, 'GA91a', \@GA91a_list, \%proforma_fields, 'pair::if either is filled in', '');
 

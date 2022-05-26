@@ -45,7 +45,14 @@ Checks within field
 Checks between fields:
 
   * A90a must be filled in if A90b is filled in (sub compare_duplicated_field_pairs) 
-  * A90b must be filled in if A90c is filled in (sub compare_duplicated_field_pairs) 
+
+* if A90b is filled in, A90c must be filled in
+
+   * the only exception is if A90b is being !c-ed to nothing (ie. removing sequence location) - in this specific case A90c should be blank.
+
+      * if A90c is filled in when A90b is !c to nothing, a message is printed so that the curator can double-check whether they were trying to !c A90b to nothing, or failed to fill in the corrected sequence location in A90b by mistake.
+
+* if A90c is filled in, A90b must be filled in
 
 
 ### Related fields:
@@ -66,4 +73,4 @@ Not yet implemented:
 
 ### Updated:
 
-gm151001.
+gm220526.
