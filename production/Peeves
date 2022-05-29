@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.34"; #  making genome release number field compulsory when related seq. coord field filled in
+our $Peeves_version = "2.35"; #  add chemical proforma to list of those not checked by Peeves (DC-1012)
 
 =head2 Version
 
@@ -913,6 +913,7 @@ my %despatch_table = ('MULTIPUBLICATION'                => \&do_multipub_proform
 my %not_checked = (
 
 	'DISEASE IMPLICATED VARIANT' => '1',
+	'CHEMICAL' => '1',
 
 );
 

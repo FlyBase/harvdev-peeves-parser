@@ -943,3 +943,5 @@ our $Peeves_version = "2.32"; #  GA35: removing 'rescue_region' as allowed term 
 our $Peeves_version = "2.33"; #  DC-998: improved checks for GG4
 # 25.5.2022
 our $Peeves_version = "2.34"; #  making genome release number field compulsory when related seq. coord field filled in
+# 27.5.2022
+our $Peeves_version = "2.35"; #  add chemical proforma to list of those not checked by Peeves (DC-1012)
