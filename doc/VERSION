@@ -945,3 +945,6 @@ our $Peeves_version = "2.33"; #  DC-998: improved checks for GG4
 our $Peeves_version = "2.34"; #  making genome release number field compulsory when related seq. coord field filled in
 # 27.5.2022
 our $Peeves_version = "2.35"; #  add chemical proforma to list of those not checked by Peeves (DC-1012)
+# 29.7.2022
+our $Peeves_version = "2.36"; #  DC-1018: remove unecessary false positive from pheno/GI CV fields
+our $Peeves_version = "2.37"; #  DC-1020: add warning for comma in with pheno/GI CV lines

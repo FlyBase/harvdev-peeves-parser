@@ -40,14 +40,13 @@ In BNF
 
 In English
 
-* <Phenotype manifest in> =  An <anatomy> term, which may optionally be combined with a second anatomy term using an '&'.  This is followed zero or more <anatomy qualifier> terms. The <anatomy qualifier> term(s) are separated from the
-<anatomy> terms and each other by ' | '.
+* <Phenotype manifest in> =  An <anatomy> term.  This is followed zero or more <anatomy qualifier> terms. The <anatomy qualifier> term(s) are separated from the <anatomy> terms and each other by ' | '.
 * An <anatomy> term is either a term from FBbt, or from GO namespace=cell_component or a term which is a child of the term 'cell cycle' from GO, namespace=biological process.  Terms from FBbt subset:deprecated should not be used.
 * An anatomy qualifier may be any term from Fbdv, or any term from FBcv subset='camcur' from the following namespaces: environmental_qualifier; genotype_to_phenotype_relation; sex_qualifier; structural_qualifier; spatial_qualifier; clone_qualifier; intensity_qualifier.
 
 In BNF
 
-<Phenotype manifest in> ::= <A>{" & "<A>}{" | "<AQ>}
+<Phenotype manifest in> ::= <A>{" | "<AQ>}
 <Anatomy> ::= <A> ::= <ID:FBbt-S:deprecated> | <ID:GO+NS:cellular_component> | <ID:GO+NS:biological_process+A:cell cycle>
 <Anatomy qualifier> ::= <AQ> ::= <ID:FBcv+NS:environmental_qualifier+S:camcur> | <ID:FBcv+NS:genotype_to_phenotype_relation+S:camcur> | <ID:FBcv+NS:sex_qualifier+S:camcur> | <ID:FBcv+NS:structural_qualifier+S:camcur> | <ID:FBcv+NS:spatial_qualifier+S:camcur>
 <ID:FBcv+NS:clone_qualifier+S:camcur>
@@ -93,26 +92,7 @@ gene1[allele2] may actually be a deficiency/other aberration that
 disrupts gene1 rather than an allele; however if it is an allele it
 must be an allele of the same gene of which GA1a is an allele, and it must be represented as a GA1a in its own right in this curation record (unless it is a .edit record).
 
-There may be more than one thing in the (with ) section - separated by ", " or by "/"
-(heterozygotes at a locus being separated by a /, while combinations at distinct loci
-(e.g.  engineered things, duplications, etc) are separated by a ,).
-
-If there is a statement in the allele.pro with GA1a. = "gene1[allele1]"  :
-
-(with gene1[allele2]) <Phenotypic class statement> { gene2[allele1] }
-
-then there must also be a statement in the allele.pro with GA1a. = "gene1[allele2]"  :
-
-(with gene1[allele1]) <Phenotypic class statement> { gene2[allele1] }
-
-i.e. the statement should be identical, *except* that "gene1[allele1]"
-and "gene1[allele2]" are flipped around in their positions between
-GA1a. and being within the "(with )" bit.
-
-Of course, this gets more complicated if there is more than one thing
-in the "gene1[allele2]" bit, but perhaps we should get the basic check
-in first and then worry about the more complex ones.
-
+There may be more than one thing in the (with ) section - currently only a transheterozygous combination at the same locus (separated by /) is allowed. (Previously, combinations at distinct loci (e.g. construct alleles, duplications, etc) were allowed, separated by a ', ', but there is a bug in the parser which means the genotype is not entered correctly in the database, so Peeves now issues a warning if there are multiple entries in the (with ) section separated by ', ').
 
 " { gene2[allele1] }" is optional. gene2[allele1] is usually a GAL4/GAL80/tetR driver.  There
 can be two or more alleles in the {}, separated by ", ", when 2 drivers are used
@@ -152,27 +132,7 @@ gene1[allele2] may actually be a deficiency/other aberration that
 disrupts gene1 rather than an allele; however if it is an allele it
 must be an allele of the same gene of which GA1a is an allele, and it must be represented as a GA1a in its own right in this curation record (unless it is a .edit record).
 
-There may be more than one thing in the (with ) section - separated by ", " or by "/"
-(heterozygotes at a locus being separated by a /, while combinations at distinct loci
-(e.g.  engineered things, duplications, etc) are separated by a ,).
-
-
-If there is a statement in the allele.pro with GA1a. = "gene1[allele1]"  :
-
-(with gene1[allele2]) <Phenotype manifest in> { gene2[allele1] }
-
-then there must also be a statement in the allele.pro with GA1a. = "gene1[allele2]"  :
-
-(with gene1[allele1]) <Phenotype manifest in> { gene2[allele1] }
-
-i.e. the statementa should be identical, *except* that "gene1[allele1]"
-and "gene1[allele2]" are flipped around in their positions between
-GA1a. and being within the "(with )" bit.
-
-Of course, this gets more complicated if there is more than one thing
-in the "gene1[allele2]" bit, but perhaps we should get the basic check
-in first and then worry about the more complex ones.
-
+There may be more than one thing in the (with ) section - currently only a transheterozygous combination at the same locus (separated by /) is allowed. (Previously, combinations at distinct loci (e.g. construct alleles, duplications, etc) were allowed, separated by a ', ', but there is a bug in the parser which means the genotype is not entered correctly in the database, so Peeves now issues a warning if there are multiple entries in the (with ) section separated by ', ').
 
 " { gene2[allele1] }" is optional.
 
@@ -230,34 +190,7 @@ gene1[allele2] may actually be a deficiency/other aberration that
 disrupts gene1 rather than an allele; however if it is an allele it
 must be an allele of the same gene of which GA1a is an allele, and it must be represented as a GA1a in its own right in this curation record (unless it is a .edit record).
 
-There may be more than one thing in the (with ) section - separated by
-", " or by "/" (heterozygotes at a locus being separated by a /, while
-combinations at distinct loci (e.g.  engineered things, duplications,
-etc) are separated by a ,).
-
-For cases where there is an FBal in the (with ) section, Peeves should
-check
-for symmetry in the statements in different allele.pro.
-
-i.e.
-
-If there is a statement in the allele.pro with GA1a. =
-"gene1[allele1]"  :
-
-(with gene1[allele2]) <Phenotypic class statement> { gene2[allele1] }, <Genetic interaction sub-statement> { interacting alleles }
-
-then there must also be a statement in the allele.pro with GA1a. = "gene1[allele2]"  :
-
-(with gene1[allele1]) <Phenotypic class statement> { gene2[allele1] }, <Genetic interaction sub-statement> { interacting alleles }
-
-
-i.e. the statements should be identical, *except* that "gene1[allele1]"
-and "gene1[allele2]" are flipped around in their positions between
-GA1a. and being within the "(with )" bit.
-
-Of course, this gets more complicated if there is more than one thing
-in the "gene1[allele2]" bit, but perhaps we should get the basic check
-in first and then worry about the more complex ones.
+There may be more than one thing in the (with ) section - currently only a transheterozygous combination at the same locus (separated by /) is allowed. (Previously, combinations at distinct loci (e.g. construct alleles, duplications, etc) were allowed, separated by a ', ', but there is a bug in the parser which means the genotype is not entered correctly in the database, so Peeves now issues a warning if there are multiple entries in the (with ) section separated by ', ').
 
 
 2. "<Phenotypic class statement>" is optional
@@ -385,33 +318,7 @@ gene1[allele2] may actually be a deficiency/other aberration that
 disrupts gene1 rather than an allele; however if it is an allele it
 must be an allele of the same gene of which GA1a is an allele, and it must be represented as a GA1a in its own right in this curation record (unless it is a .edit record).
 
-There may be more than one thing in the (with ) section - separated by
-", " or by "/" (heterozygotes at a locus being separated by a /, while
-combinations at distinct loci (e.g.  engineered things, duplications,
-etc) are separated by a ,).
-
-For cases where there is an FBal in the (with ) section, Peeves should
-check
-for symmetry in the statements in different allele.pro.
-
-i.e.
-
-If there is a statement in the allele.pro with GA1a. = "gene1[allele1]"  :
-
-(with gene1[allele2]) <Phenotype manifest in> { gene2[allele1] }, <Genetic interaction sub-statement> { interacting alleles }
-
-then there must also be a statement in the allele.pro with GA1a. = "gene1[allele2]"  :
-
-(with gene1[allele1]) <Phenotype manifest in> { gene2[allele1] }, <Genetic interaction sub-statement> { interacting alleles }
-
-
-i.e. the statements should be identical, *except* that "gene1[allele1]"
-and "gene1[allele2]" are flipped around in their positions between
-GA1a. and being within the "(with )" bit.
-
-Of course, this gets more complicated if there is more than one thing
-in the "gene1[allele2]" bit, but perhaps we should get the basic check
-in first and then worry about the more complex ones.
+There may be more than one thing in the (with ) section - currently only a transheterozygous combination at the same locus (separated by /) is allowed. (Previously, combinations at distinct loci (e.g. construct alleles, duplications, etc) were allowed, separated by a ', ', but there is a bug in the parser which means the genotype is not entered correctly in the database, so Peeves now issues a warning if there are multiple entries in the (with ) section separated by ', ').
 
 
 

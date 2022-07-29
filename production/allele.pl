@@ -963,6 +963,12 @@ sub do_withs ($$$$)
 
     my ($code, $with, $ga1a, $context) = @_;
 
+    if ($with =~ m/, /) {
+
+	report ($file, "%s: '(with )' portion contains a comma. Please follow 'coping with complex with' instructions in the phen_curation.sop to rearrange the following line to prevent a problematic genotype:\n$context", $code);
+
+    }
+
     foreach my $with_thing (split (/, |\//, $with))
     {
 	$with_thing = trim_space_from_ends ($file, $code, $with_thing);
@@ -978,18 +984,6 @@ sub do_withs ($$$$)
 					      "%s: Mismatch between gene symbol '%s' in GA1a " .
 					      "and the gene portion '%s' given in '(with %s)' in the line\n%s",
 					      $code, $g1a_gene, $gene, $with, $context);
-	    }
-	    if (!exists $new_symbols{$with_thing} or $new_symbols{$with_thing} ne 'FBal')
-
-	    {
-
-			unless (valid_symbol ($file, 'record_type') eq 'EDIT') {
-#				report ($file, "%s: You have a (with ) statement '%s' without having the allele in it," . " '%s', in its own allele proforma", $code, $context, $with_thing);
-
-
-				report ($file, "%s: You have the following (with ) statement without having the allele, '%s', in its own proforma (this will not make the record bounce, but check whether you need to add a '%s' proforma to add relevant free text):\n%s", $code, $with_thing, $with_thing, $context);
-
-				}
 	    }
 
 	}
