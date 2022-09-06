@@ -1128,13 +1128,6 @@ my $dv_short_qualifiers = {
 
     set_symbol ('no_flag',           'P41_flag', 'solo');
     set_symbol ('wt_exp',            'P41_flag', 'multi');
-
-#Temporary end-around to prevent error warnings for 'pert_exp' in user records
-# until checkbox can be removed from FTYP tool	
-	if ($Peeves_config{'Where_running'} eq 'IU') {
-		    set_symbol ('pert_exp',          'P41_flag', 'multi');
-
-	}
     set_symbol ('neur_exp',          'P41_flag', 'multi');
 #    set_symbol ('marker',            'P41_flag', 'multi');
     set_symbol ('gene_model',        'P41_flag', 'multi');
@@ -1149,6 +1142,7 @@ my $dv_short_qualifiers = {
     set_symbol ('cell_line',           'P41_flag', 'multi');
     set_symbol ('cell_line(commercial)',           'P41_flag', 'multi');
     set_symbol ('cell_line(stable)',           'P41_flag', 'multi');
+    set_symbol ('chemical',           'P41_flag', 'multi');
 
 #    set_symbol ('cell_cult',         'P41_flag', 1);
 #    set_symbol ('trans_assay',       'P41_flag', 1);

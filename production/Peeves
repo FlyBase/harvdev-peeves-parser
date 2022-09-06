@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.37"; #  DC-1020: add warning for comma in with pheno/GI CV lines
+our $Peeves_version = "2.38"; #  DC-1027: adding chemical flag
 
 =head2 Version
 
