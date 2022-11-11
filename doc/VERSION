@@ -950,3 +950,5 @@ our $Peeves_version = "2.36"; #  DC-1018: remove unecessary false positive from 
 our $Peeves_version = "2.37"; #  DC-1020: add warning for comma in with pheno/GI CV lines
 # 31.8.2022
 our $Peeves_version = "2.38"; #  DC-1027: adding chemical flag
+# 11.11.2022
+our $Peeves_version = "2.39"; #  D0C-210: adding new allowed value for SP5

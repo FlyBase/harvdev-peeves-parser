@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.38"; #  DC-1027: adding chemical flag
+our $Peeves_version = "2.39"; #  D0C-210: adding new allowed value for SP5
 
 =head2 Version
 
