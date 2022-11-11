@@ -7444,6 +7444,7 @@ my $dv_short_qualifiers = {
     set_symbol ('drosophilid', 'tax group', '1');
     set_symbol ('DIOPT', 'tax group', '1');
     set_symbol ('OrthoDB', 'tax group', '1');
+    set_symbol ('Virus', 'tax group', '1');
 
 # allowed values in SF5e
     set_symbol ('H', 'SF5e_value', 1);
