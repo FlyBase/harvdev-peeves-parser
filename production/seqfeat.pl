@@ -17,7 +17,6 @@ my %proforma_fields;		# Keep track of the latest entry seen for each code
 my %dup_proforma_fields; # keep track of full picture for fields that can be duplicated within a proforma
 my @inclusion_essential = qw (SF1a SF1f);			# Fields which must be present in the proforma
 my %can_dup = ('SF4a' => 1, 'SF4b' => 1, 'SF4h' => 1,
-'SF4d' => 1, 'SF4e' => 1, 'SF4f' => 1,
 'SF5a' => 1,'SF5e' => 1,'SF5f' => 1,
 	       );		# Fields which may be duplicated in a proforma.
 
@@ -69,10 +68,6 @@ sub do_seqfeat_proforma ($$)
 	my @SF4a_list = ();
 	my @SF4b_list = ();
 	my @SF4h_list = ();
-
-	my @SF4d_list = ();
-	my @SF4e_list = ();
-	my @SF4f_list = ();
 
 	my @SF5a_list = ();
 	my @SF5e_list = ();
@@ -199,24 +194,6 @@ FIELD:
 	    check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
 		no_hashes_in_proforma ($file, $2, $hash_entries, $3);
 		@SF4h_list = process_field_data ($file, $hash_entries, $1, '0', $2, $3, \%proforma_fields, '1');
-	}
-	elsif ($field =~ /^(.*?)\s+(SF4d)\..*? :(.*)/s)
-	{
-	    check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
-		no_hashes_in_proforma ($file, $2, $hash_entries, $3);
-		@SF4d_list = process_field_data ($file, $hash_entries, $1, '1', $2, $3, \%proforma_fields, '1');
-	}
-	elsif ($field =~ /^(.*?)\s+(SF4e)\..*? :(.*)/s)
-	{
-	    check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
-		no_hashes_in_proforma ($file, $2, $hash_entries, $3);
-		@SF4e_list = process_field_data ($file, $hash_entries, $1, '0', $2, $3, \%proforma_fields, '1');
-	}
-	elsif ($field =~ /^(.*?)\s+(SF4f)\..*? :(.*)/s)
-	{
-	    check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
-		no_hashes_in_proforma ($file, $2, $hash_entries, $3);
-		@SF4f_list = process_field_data ($file, $hash_entries, $1, '0', $2, $3, \%proforma_fields, '1');
 	}
 	elsif ($field =~ /^(.*?)\s+(SF4g)\..*? :(.*)/s)
 	{
@@ -423,11 +400,6 @@ if ($hash_entries == 1) {
 		}
 	}
 }
-
-# cross-checks for SF4d, SF4e, SF4f
-
-compare_duplicated_field_pairs ($file, 'SF4e', \@SF4e_list, 'SF4d', \@SF4d_list, \%dup_proforma_fields, 'dependent', '');
-compare_duplicated_field_pairs ($file, 'SF4f', \@SF4f_list, 'SF4d', \@SF4d_list, \%dup_proforma_fields, 'dependent', '');
 
 # check that valid symbol is in the symbol synonym field when !c-ing it under the  'unattributed' pub.
 # Only do the check if the symbol synonym field contains some data

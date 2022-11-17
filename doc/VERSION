@@ -952,3 +952,5 @@ our $Peeves_version = "2.37"; #  DC-1020: add warning for comma in with pheno/GI
 our $Peeves_version = "2.38"; #  DC-1027: adding chemical flag
 # 11.11.2022
 our $Peeves_version = "2.39"; #  D0C-210: adding new allowed value for SP5
+# 17.11.2022
+our $Peeves_version = "2.40"; #  removing checking for obsolete seqfeat fields

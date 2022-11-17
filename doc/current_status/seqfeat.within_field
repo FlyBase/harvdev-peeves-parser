@@ -1,4 +1,4 @@
-! SEQUENCE FEATURE/MAPPED ENTITIES PROFORMA    Version 5: 02 Jul 2014
+! SEQUENCE FEATURE/MAPPED ENTITIES PROFORMA    Version 8: 16 Nov 2022
 !
 ! SF1f. Database ID for feature         :FULL
 ! SF1a. Feature symbol to use in database    :PARTIAL
@@ -18,9 +18,6 @@
 ! SF4a. Genomic location of feature (dupl for multiple) :FULL:but need to check with Gil
 !   SF4b. Genome release number for entry in SF4a   :FULL
 !   SF4h. Orientation of feature in SF4a relative to the chromosome ("+"/"-")  :FULL
-! SF4d. Sequence accession (AC no. | gi no. | date)[dupl for multiple) :BASIC ONLY
-!   SF4e. Location of start in accession entry  :FULL
-!   SF4f. Location of finish in accession entry :FULL
 ! SF4g. Sequence of feature (nt or aa) :BASIC ONLY
 ! SF4c. Comments concerning sequence or sequence location :FULL
 !
