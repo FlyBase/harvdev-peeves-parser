@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.39"; #  D0C-210: adding new allowed value for SP5
+our $Peeves_version = "2.40"; #  removing checking for obsolete seqfeat fields
 
 =head2 Version
 
@@ -814,9 +814,6 @@ our %field_specific_checks = (
 	'SF4a' => \&validate_sequence_location,
 	'SF4b' => \&check_genome_release,
 	'SF4c' => \&check_stamped_free_text,
-	'SF4d' => '', # field-specific checks not implemented yet
-	'SF4e' => \&check_positive_integer,
-	'SF4f' => \&check_positive_integer,
 	'SF4g' => '', # will add field specific check later
 	'SF4h' => \&validate_cvterm_field,
 	'SF5a' => \&check_valid_chado_symbol_field,
