@@ -30,7 +30,7 @@ No (implemented)
 Checks within field:
 
 
-* sub 'validate_cvterm_field' checks that this is a valid SO term from the expected branches ('structural_variant', 'functional_effect_variant' and 'additional_GA35' terms that are not in the first two branches, but are specified in the @additional_GA35 array in symtab.pl).
+* sub 'validate_cvterm_field' checks that this is a valid SO term from the expected branches: 'SO:structural_variant', 'SO:functional_effect_variant', 'SO:oligo', 'additional_targeting_GA35', and 'additional_GA35'. The latter two are SO terms not in the first three branches, and are specified in symtab.pl. 'oligo' plus 'additional_targeting_GA35' are the terms expected for transgenes that target a gene of interest using complementary nucleotide sequence and having these separate from 'additional_GA35' will allow for more flexibility when checking GA35 against GA30c once we can put seqfeat in GA30c.
 
 * sub 'validate_cvterm_field' also warns if a valid SO term from the 'translational_product_structure_variant branch' is used and suggests using a term from the 'coding_sequence_variant' branch instead.
 
@@ -53,7 +53,7 @@ Checks between fields:
 
   * if the parent gene of the allele is NOT usually used as an experimental tool
 
-     - Peeves warns if GA35 is empty (unless it has 'in vitro construct - RNAi' in the mutagen field - this is a temporary hack until we can use experimental tool fields to describe this kind of targeting construct)
+     - Peeves warns if GA35 is empty.
 
 
 
@@ -63,10 +63,6 @@ Checks between fields:
 
 ### Comments:
 
-The constraint using 'in vitro construct - RNAi' should be removed when we implement using experimental tool fields to describe targeting constructs such as RNAi, sgRNA lines. (JIRA DC-910).
-
-Have not put in a test for GA35 being filled in for a targeting construct, because it will trip the general 'not valid in this field' check as the relevant SO terms are not in the allowed set for GA35.
-
 
 ### Status:
 
@@ -74,4 +70,4 @@ Have not put in a test for GA35 being filled in for a targeting construct, becau
 
 ### Updated:
 
-gm211123.
+gm230510.

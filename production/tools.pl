@@ -3703,7 +3703,7 @@ sub validate_cvterm_field {
 		'GG4' => ['FBcv:group_descriptor'],
 		'A4' => ['FBcv:origin_of_mutation'],
 		'GA4' => ['FBcv:allele_class'],
-		'GA35' => ['SO:structural_variant', 'SO:functional_effect_variant', 'additional_GA35'],
+		'GA35' => ['SO:structural_variant', 'SO:functional_effect_variant', 'additional_GA35', 'SO:oligo', 'additional_targeting_GA35'],
 		'GA8' => ['FBcv:origin_of_mutation'],
 		'G34' => ['antibody'],
 		'MA8' => ['insertion_phenotype'],

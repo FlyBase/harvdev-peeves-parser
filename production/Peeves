@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.40"; #  removing checking for obsolete seqfeat fields
+our $Peeves_version = "2.41"; #  Tweaks to GA35 checks so that terms appropriate for sequence targeting reagents (RNAi, sgRNA, miRNA) can be added in this field.
 
 =head2 Version
 
