@@ -802,6 +802,7 @@ my $dv_short_qualifiers = {
 		'structural_variant' => '1',
 		'translational_product_structure_variant' => '1',
 		'incomplete_transcript_variant' => '1',
+		'oligo' => '1',
 
 	};
 
@@ -933,7 +934,20 @@ my $dv_short_qualifiers = {
 	my @reagent_collection_protocol_types = ('FBcv:assay_attribute', 'FBcv:biosample_attribute');
 	set_symbol ('reagent_collection_protocol_types', 'allowed_type_list', \@reagent_collection_protocol_types);
 
-# adding additional SO terms allowed for GA35 that are not in the two main 'variant' branches used
+# adding SO terms applicable for transgenes that target a gene of interest using complementary nucleotide sequence that are not in the SO:oligo branch. Adding them as their own type to give more flexibility in error messages, particularly for cross-checks between GA35/GA30c.
+
+	my @additional_targeting_GA35 = ('antisense', 'miRNA');
+
+	foreach my $term (@additional_targeting_GA35) {
+
+		set_symbol ($term, 'additional_targeting_GA35', '1');
+
+		valid_symbol ($term, 'SO:default') or print "MAJOR PEEVES ERROR in basic ontology processing: the '$term' term listed in Peeves as an additional valid value for GA35 is no longer a valid SO term, Peeves will need altering to cope (probably by replacing this obsolete term with a new valid one).\n\n";
+
+	}
+
+# adding additional SO terms allowed for GA35 that are not in either the two main 'variant' branches or those used for transgenes that target a gene of interest using complementary nucleotide sequence (so not in SO:oligo or 'additional_targeting_GA35')
+
 
 	my @additional_GA35 = ('wild_type', 'cDNA', 'genomic_DNA', 'polymorphic_sequence_variant');
 
@@ -944,7 +958,6 @@ my $dv_short_qualifiers = {
 		valid_symbol ($term, 'SO:default') or print "MAJOR PEEVES ERROR in basic ontology processing: the '$term' term listed in Peeves as an additional valid value for GA35 is no longer a valid SO term, Peeves will need altering to cope (probably by replacing this obsolete term with a new valid one).\n\n";
 
 	}
-
 
 
 #  Then various classes of essentially static symbols.  This code looks ugly but the lists have to live

@@ -857,18 +857,8 @@ if ($hash_entries) {
 
 					unless (defined $common_tool_uses && (scalar @{$common_tool_uses} > 0)) {
 
-						my $mutagen_switch = 0;
-						foreach my $datum (split (/\n/, $GA8_list[$i])) {
 
-							if ($datum eq 'in vitro construct - RNAi') {
-								$mutagen_switch++;
-							}
-
-						}
-
-						unless ($mutagen_switch) {
-							report ($file, "WARNING: %s is usually filled in for a new '%s' allele of a 'non-experimental tool' parent gene, did you forget to fill it in ? NOTE: if this is a targeting construct that contains complementary nucleotide sequence of a gene of interest (RNAi, sgRNA, antisense etc.) then this message is a false-positive\n!%s", 'GA35', $allele_type, $proforma_fields{'GA1a'});
-						}
+						report ($file, "WARNING: %s is usually filled in for a new '%s' allele of a 'non-experimental tool' parent gene, did you forget to fill it in ?\n!%s", 'GA35', $allele_type, $proforma_fields{'GA1a'});
 					}
 
 				}
