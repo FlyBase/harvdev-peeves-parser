@@ -936,7 +936,7 @@ my $dv_short_qualifiers = {
 
 # adding SO terms applicable for transgenes that target a gene of interest using complementary nucleotide sequence that are not in the SO:oligo branch. Adding them as their own type to give more flexibility in error messages, particularly for cross-checks between GA35/GA30c.
 
-	my @additional_targeting_GA35 = ('antisense', 'miRNA');
+	my @additional_targeting_GA35 = ('antisense');
 
 	foreach my $term (@additional_targeting_GA35) {
 
