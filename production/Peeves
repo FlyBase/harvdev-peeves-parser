@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.41"; #  Tweaks to GA35 checks so that terms appropriate for sequence targeting reagents (RNAi, sgRNA, miRNA) can be added in this field.
+our $Peeves_version = "2.42"; #  Tweaks to GA35 checks: removing miRNA from allowed values (related to comment in DB-867).
 
 =head2 Version
 
