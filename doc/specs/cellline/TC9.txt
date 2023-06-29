@@ -25,7 +25,7 @@ No (implemented)
 
 ### Checks:
 
-Checks within field: check_stamped_free_text
+Checks within field: check_stamped_free_text_with_ids
 
 ### Related fields:
 
@@ -41,4 +41,4 @@ Checks within field: check_stamped_free_text
 
 ### Updated:
 
-gm170127.
+gm230629.

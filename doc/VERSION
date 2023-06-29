@@ -958,3 +958,5 @@ our $Peeves_version = "2.40"; #  removing checking for obsolete seqfeat fields
 our $Peeves_version = "2.41"; #  Tweaks to GA35 checks so that terms appropriate for sequence targeting reagents (RNAi, sgRNA, miRNA) can be added in this field.
 # 17.5.2023
 our $Peeves_version = "2.42"; #  Tweaks to GA35 checks: removing miRNA from allowed values (related to comment in DB-867).
+# 29.6.2023
+our $Peeves_version = "2.43"; #  DC-1041: allow stamps_with_ids in TC9 field.
