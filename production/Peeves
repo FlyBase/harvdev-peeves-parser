@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.42"; #  Tweaks to GA35 checks: removing miRNA from allowed values (related to comment in DB-867).
+our $Peeves_version = "2.43"; #  DC-1041: allow stamps_with_ids in TC9 field.
 
 =head2 Version
 
@@ -855,7 +855,7 @@ our %field_specific_checks = (
 	'TC5c' => \&validate_cvterm_field,
 	'TC5d' => \&check_stamped_free_text,
 	'TC8' => \&check_valid_symbol_field,
-	'TC9' => \&check_stamped_free_text,
+	'TC9' => \&check_stamped_free_text_with_ids,
 	'TC10' => \&no_stamps,
 
 # experimental tool

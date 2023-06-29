@@ -441,9 +441,9 @@ sub check_stamps ($$$)
 	{
 
 
-# list of FlyBase types that can be used in @@
+# list of FlyBase types that can be used in @@ - tried to order them so that most likely types are checked first
 # not included by might want to consider adding: FBgg
-		my @allowed_types = ('FBab', 'FBal', 'FBba', 'FBgn', 'FBti', 'FBtp', 'FBtr', 'FBpp', 'FBte', 'FBmc', 'FBlc', 'FBcl', 'FBto');
+		my @allowed_types = ('FBgn', 'FBto', 'FBal', 'FBti', 'FBtp', 'FBab', 'FBba', 'FBte', 'FBmc', 'FBlc', 'FBcl', 'FBtr', 'FBpp', 'FBtc');
 		valid_symbol_of_list_of_types ($1, \@allowed_types) or report ($file, "%s: Invalid stamp \@%s\@ in '%s'", $code, $1, $data);
 	}
     }
@@ -463,7 +463,6 @@ sub check_stamps_with_ids {
 
 	return if index ($_[2], '@') == -1; # No @ so no stamps possible.
 	my ($file, $code, $data, $allowed_types_for_id_symbol) = @_;
-
 
 # Odd number of @ can't be right.
 	if ($data =~ s/@/@/g % 2) {
@@ -529,11 +528,16 @@ sub check_stamps_with_ids {
 
 			}
 
+		} elsif ($1 =~ m/^(.*:FB[a-z]{2}[0-9]{7,})$/) {
+
+
+			report ($file, "%s: FBid and symbol in \@%s\@ are the wrong way round in '%s' - correct format is \@FBid:symbol\@.", $code, $1, $data);
+
 		} else {
 
-			# list of FlyBase types that can be used in @@
+			# list of FlyBase types that can be used in @@ - tried to order them so that most likely types are checked first
 			# not included by might want to consider adding: FBgg
-			my @allowed_types = ('FBab', 'FBal', 'FBba', 'FBgn', 'FBti', 'FBtp', 'FBtr', 'FBpp', 'FBte', 'FBmc', 'FBlc', 'FBcl', 'FBto');
+			my @allowed_types = ('FBgn', 'FBto', 'FBal', 'FBti', 'FBtp', 'FBab', 'FBba', 'FBte', 'FBmc', 'FBlc', 'FBcl', 'FBtr', 'FBpp', 'FBtc');
 			valid_symbol_of_list_of_types ($1, \@allowed_types) or report ($file, "%s: Invalid stamp \@%s\@ in '%s'", $code, $1, $data);
 		}
 	}
@@ -583,6 +587,61 @@ sub check_stamped_free_text {
 	}
 
 }
+
+
+sub check_stamped_free_text_with_ids {
+
+# wrapper for check_stamps_with_ids that uses process_field_data + %field_specific_checks format
+# this makes it easy to check whole lines that contain stamps with ids (ie. @FBid:symbol@ format),
+# while keeping check_stamps_with_ids as a separate subroutine that can be used to check parts of lines
+# as needed (e.g. note part of F9 data).
+
+	my ($file, $code, $dehashed_data, $context) = @_;
+
+# hash containing extra checks required for some fields, where it is easy to
+# miss and put neighbouring CV data into a free text field
+# currently empty, but left in place in case we start to replace some
+# check_stamped_free_text checks with check_stamped_free_text_with_ids checks.
+	my $extra_check_mapping = {
+
+# key is field, value is regular expression to test for to see if put
+# CV term field data from neighbouring field in free text field by mistake 
+
+	};
+
+
+	$dehashed_data eq '' and return;
+
+# hash that can be used to limit the expected type of object allowed in @FBid:symbol@ for a particular field
+# only add a field if want to limit the allowed types for that field.
+	my $allowed_types_for_field = {
+
+# format should be as follows to limit allowed types
+#		'field' => {
+#			'FBid_prefix' => '1',
+#		},
+# e.g. (hypothetical example_
+#		'TC9' => {
+#			'FBgn' => '1',
+#			'FBtc' => '1',
+#		},
+
+
+	};
+
+	check_stamps_with_ids ($file, $code, $dehashed_data, $allowed_types_for_field->{$code});
+
+	if (exists $extra_check_mapping->{$code}) {
+
+		if ($dehashed_data =~ m/($extra_check_mapping->{$code})/) {
+
+			report ($file, "%s: has data containing '%s', did you miss and put data intended for a nearby CV field into this free text field by mistake ?:\n!%s", $code, $1, $context->{$code});
+
+		}
+	}
+
+}
+
 
 my (undef, undef, undef, $today, $tomonth, $toyear) = localtime;	# For checking the date given for plausibility.
 $toyear += 1900;		# Local time is based at 1900.
