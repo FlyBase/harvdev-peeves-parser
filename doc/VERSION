@@ -960,3 +960,7 @@ our $Peeves_version = "2.41"; #  Tweaks to GA35 checks so that terms appropriate
 our $Peeves_version = "2.42"; #  Tweaks to GA35 checks: removing miRNA from allowed values (related to comment in DB-867).
 # 29.6.2023
 our $Peeves_version = "2.43"; #  DC-1041: allow stamps_with_ids in TC9 field.
+# 10.7.2023
+our $Peeves_version = "2.44"; #  DC-1044: allow any FBtc ID with 7 digits in TC1j.
+our $Peeves_version = "2.45"; #  DC-1042: Accept > character as valid for cell line names in TC1a.
+our $Peeves_version = "2.46"; #  DC-1043: Fix FBtc valid symbol lookup to cope with symbols with superscripts/subscripts.

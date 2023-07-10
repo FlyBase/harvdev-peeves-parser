@@ -1494,7 +1494,7 @@ sub check_allowed_characters {
 # proformae for which the valid symbol does not include a species prefix, even if the
 # species isn't Dmel (species is defined by a separate field in the proforma).
 # No species prefix is included in the valid symbol for non-Dmel cell lines.
-		'TC1a' => 'a-zA-Z0-9:;&\[\]\()\'\.\+\-', # same as G1a with removal of \ and addition of +
+		'TC1a' => 'a-zA-Z0-9:;&>\[\]\()\'\.\+\-', # same as G1a with removal of \ and addition of +. Also added > (DC-1042)
 		'LC1a' => 'a-zA-Z0-9_:;&\[\]\()\'\.\+\-', # same as TC1a, plus _
 
 # proformae where probably won't include the species prefix in the symbol for non-Dmel

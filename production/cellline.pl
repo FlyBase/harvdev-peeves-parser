@@ -328,8 +328,8 @@ sub validate_TC1j {
 
 	foreach my $datum (keys %{$uniqued_data}) {
 
-		unless ($datum =~ m|^FBtc9[0-9]{6}$|) {
-			report ($file, "%s: '%s' is not the correct format for this field (it should be 'FBtc9nnnnnn' where 'n' is any number.", $code, $datum);
+		unless ($datum =~ m|^FBtc[0-9]{7}$|) {
+			report ($file, "%s: '%s' is not the correct format for this field (it should be 'FBtcnnnnnnn' where 'n' is any number.", $code, $datum);
 
 
 		}
