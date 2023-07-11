@@ -29,7 +29,7 @@ Checks within field
 
 * The value in TC1j must *not* be a valid FBtc id (because TC1j is only supposed to be filled in the first time a cell-line entry goes into the database - I think) (sub validate_TC1j)
 
-* The value in TC1j must match the format FBtc9[0-9]{6}   (these ids start with 9)
+* The value in TC1j must match the format FBtc[0-9]{7}
 
 Checks between fields
 
@@ -52,4 +52,4 @@ Checks between fields
 
 ### Updated:
 
-gm170130
+gm230710.

@@ -1,0 +1,91 @@
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0105495
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! CULTURED CELL LINE PROFORMA            Version 5:  Jul 02 2014
+!
+! TC1f. FB ID for cell line (FBtc ID or "new")  :FBtc0000015
+! TC1j. Use this for FB ID (FBtc ID) :
+! TC1a. Cell line symbol to use in database  :E-r[1]
+! TC1b. Symbol used in paper/source (free text) :
+! TC1c. Symbol synonym (free text)           :
+! TC1d. Species of source [CV]               :
+!
+! TC1e. Action - rename this cell line         :
+! TC1g. Action - merge these cell lines        :
+! TC1h. Action - delete cell line record ("y"/blank)   :
+! TC1i. Action - dissociate TC1f from FBrf ("y"/blank) :
+!
+! TC2a. Source strain (soft CV)            :
+! TC2b. Source genotype (components in FB) :
+! TC2c. Source cross  (components in FB)   :
+! TC2d. Tissue source  [CV]                :
+! TC2e. Developmental stage of source [CV] :
+!
+! TC3a. Lab of origin (free text) :
+! TC4a. Parental cell line (valid cell line symbol) :E-E12[ts]-mal[1]
+! TC4b. Derived from parental line by (CV) :
+!
+! TC5a. Integrated construct insertion (FBti) :
+! TC5b. Karotype (free text)      :
+! TC5c. Sex ("male" or "female")  :
+! TC5d. Basis for sex (free text) :
+!
+! TC8.  Member of dataset/collection [symbol] :
+! TC9.  Comment(s) (free text)       :@FBtc0000015:E-r[1]@ should be ok in stamps, as should @FBtc0000095:ML-DmD14@.
+! TC10. Internal note(s) (free text) :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! CULTURED CELL LINE PROFORMA            Version 5:  Jul 02 2014
+!
+! TC1f. FB ID for cell line (FBtc ID or "new")  :FBtc0000014
+! TC1j. Use this for FB ID (FBtc ID) :
+! TC1a. Cell line symbol to use in database  :E-E12[ts]-mal[1]
+! TC1b. Symbol used in paper/source (free text) :
+! TC1c. Symbol synonym (free text)           :
+! TC1d. Species of source [CV]               :
+!
+! TC1e. Action - rename this cell line         :
+! TC1g. Action - merge these cell lines        :
+! TC1h. Action - delete cell line record ("y"/blank)   :
+! TC1i. Action - dissociate TC1f from FBrf ("y"/blank) :
+!
+! TC2a. Source strain (soft CV)            :
+! TC2b. Source genotype (components in FB) :
+! TC2c. Source cross  (components in FB)   :
+! TC2d. Tissue source  [CV]                :
+! TC2e. Developmental stage of source [CV] :
+!
+! TC3a. Lab of origin (free text) :
+! TC4a. Parental cell line (valid cell line symbol) :
+! TC4b. Derived from parental line by (CV) :
+!
+! TC5a. Integrated construct insertion (FBti) :
+! TC5b. Karotype (free text)      :
+! TC5c. Sex ("male" or "female")  :
+! TC5d. Basis for sex (free text) :
+!
+! TC8.  Member of dataset/collection [symbol] :
+! TC9.  Comment(s) (free text)       :@FBtc0000001:E-E12[ts]-mal[1]@ is a mis-match.
+! TC10. Internal note(s) (free text) :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

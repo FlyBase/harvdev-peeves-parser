@@ -166,7 +166,7 @@ sub valid_symbol ($$)
 
 		if (defined $chado_ref) {
 			my ($name) = @{$chado_ref};
-			set_symbol ($symbol, $type, $name);
+			set_symbol ($symbol, $type, &utf2sgml($name)); # use utf2sgml to convert valid symbol of FBtc to sgml greek format (not utf8), and also <up></up> to [] (i.e. the format used by curators) - same as is done above for other FBid types
 			return $symbol_table{$symbol}{$type};
 
 		} else {
@@ -261,15 +261,35 @@ sub valid_symbol ($$)
 # regardless.
 
 	set_symbol ($symbol, $type, (defined $obsolete && $obsolete == 0));
-    } elsif ($type eq 'FBtc') {
 
 # cell_line has no 'is_obsolete' so cannot use else loop below
+    } elsif ($type eq 'FBtc') {
 
-		my $chado_ref = chat_to_chado ('cell_line_id_from_name', $symbol)->[0];
+
+
+## see also comments in tools.pl sgml2utf and get_species_prefix_from_symbol subroutines for situation if
+## symbol contains utf8 greek symbols to start with (at the moment this still trips a 'non-ASCII' error)
+		my $utf_symbol = &sgml2utf($symbol); # utf8 version to use in query, this also converts superscript [] to </up></up> (and similar for subscripts) which is the format in synonym.synonym_sgml
+
+		$symbol = &utf2sgml($utf_symbol); # explicitly sgml-ise the symbol for greeks, in case original symbol was a mixture of utf8 and sgml types, so that what is stored in symbol table is definitely sgml version of any greek symbols (and not utf8). (copied from else loop for other types below). This sub also converts </up></up> back to [] (and similar for subscripts), so that what is stored in symbol table will be the [] form that curators use.
+
+		my $chado_ref = chat_to_chado ('cell_line_id_from_name', $utf_symbol)->[0];
+
+## useful for de-bugging
+##		warn "cellline: list returned from chado\n";
+##		warn Dumper ($chado_ref);
+##		warn "symbol_table state for $symbol BEFORE going through set_symbol\n";
+##		warn Dumper ($symbol_table{$symbol});
+
 
 		if (defined $chado_ref) {
 			my ($id) = @{$chado_ref};
 			set_symbol ($symbol, $type, $id);
+
+## useful for de-bugging
+##		warn "symbol_table state for VALID $symbol AFTER going through set_symbol:\n";
+##		warn Dumper ($symbol_table{$symbol});
+
 			return $symbol_table{$symbol}{$type};
 
 		} else {
@@ -302,7 +322,7 @@ sub valid_symbol ($$)
 ## symbol contains utf8 greek symbols to start with (at the moment this still trips a 'non-ASCII' error)
 		my $utf_symbol = &sgml2utf($symbol); # utf8 version to use in query
 
-		$symbol = &utf2sgml($utf_symbol); # explicitly sgml-ise the symbol, in case original symbol was a mixture of utf8 and sgml types, so that what is stored in symbol table is definitely sgml version. Put this back into $symbol (even though this is scary), so that the rest of the subroutine works without having to re-do this kind of conversion again later outside this loop.
+		$symbol = &utf2sgml($utf_symbol); # explicitly sgml-ise the symbol for greeks, in case original symbol was a mixture of utf8 and sgml types, so that what is stored in symbol table is definitely sgml version of any greek symbols (and not utf8). Put this back into $symbol (even though this is scary), so that the rest of the subroutine works without having to re-do this kind of conversion again later outside this loop. 
 		$symlist = chat_to_chado (sprintf("%s_id_from_symbol", $chadotypes{$type}), $utf_symbol);
 
 	} else {
@@ -311,7 +331,7 @@ sub valid_symbol ($$)
 
 	}
 ## useful for de-bugging
-##	warn "symlist returned from chado\n";
+##	warn "symlist returned from chado for symbol: $symbol\n";
 ##	warn Dumper ($symlist);
 ##	warn "symbol_table state for $symbol BEFORE going through symlist pairs\n";
 ##	warn Dumper ($symbol_table{$symbol});
