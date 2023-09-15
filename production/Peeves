@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.46"; #  DC-1043: Fix FBtc valid symbol lookup to cope with symbols with superscripts/subscripts.
+our $Peeves_version = "2.47.6"; #  DC-1047: adding checks to warn if F11 fields filled in for FBco.
 
 =head2 Version
 
@@ -270,7 +270,7 @@ our $standard_symbol_mapping = {
 		species_prefix => '1',
 	},
 	'F' => {
-		id => ['FBpp', 'FBtr'],
+		id => ['FBpp', 'FBtr', 'FBco'],
 		type => 'gene product',
 		style => 'Harvard',
 # the following fields must be specified for the expression.pro, because they do not follow the

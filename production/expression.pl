@@ -289,7 +289,7 @@ sub do_expression_proforma ($$) {
 			if ($gene_product_status) {
 
 # get formatting information for gene product symbol in F1a
-				my ($gene_product_type, $parent_symbol, $parent_type) = type_gene_product ($primary_symbol_list->[$i], '1');
+				my ($gene_product_type, $parent_symbols, $parent_type) = type_gene_product ($primary_symbol_list->[$i], '1');
 
 # if gene product type can be determined
 				if ($gene_product_type) {
@@ -298,8 +298,124 @@ sub do_expression_proforma ($$) {
 # check symbol formatting for all except existing symbols.
 					unless ($gene_product_status eq 'existing') {
 
-# check that the 'parent' part of the gene product symbol is a valid symbol of the expected type
-						valid_symbol ($parent_symbol, $parent_type) or report ($file, "%s: '%s' gene product symbol is based on the invalid %s symbol '%s'", 'F1a', $primary_symbol_list->[$i], $parent_type, $parent_symbol);
+						# check that the 'parent' part(s) of the gene product symbol are each a valid symbol of the expected type
+						# (combinations have multiple allele symbol parents, so $parent_symbols is an array reference)
+						foreach my $symbol (@{$parent_symbols}) {
+							valid_symbol ($symbol, $parent_type) or report ($file, "%s: '%s' gene product symbol is based on the invalid %s symbol '%s'", 'F1a', $primary_symbol_list->[$i], $parent_type, $symbol);
+						}
+
+# extra checks for FBco
+						if ($gene_product_type eq 'FBco') {
+
+							# first, for new FBco symbols with two allele components, double-check that the reversed order of components is not already in chado, and warn as appropriate if it is.
+							if (scalar @{$parent_symbols} == 2) {
+
+								my $reversed_symbol = $parent_symbols->[1] . '&cap;'. $parent_symbols->[0];
+
+								# use valid_chado_symbol so works for renames
+								if (my $FBco = valid_chado_symbol($reversed_symbol, 'FBco')) {
+
+									unless ($gene_product_status eq 'rename') {
+
+										report ($file, "%s: You have entered '%s' as the symbol for a %s, but the 'reverse' symbol - %s - already exists in chado (%s), did you mean the existing FBco instead ?.", 'F1a', $primary_symbol_list->[$i], ($gene_product_status eq 'new' ? "$gene_product_status combination" : "combination $gene_product_status"), $reversed_symbol, $FBco);
+
+									} else {
+
+										if ($F1b_list[$i] eq $reversed_symbol) {
+
+											report ($file, "%s: You appear to be trying to 'reverse' the components of the '%s' combination symbol by renaming it to '%s' - was this your intention ?.", 'F1a', $F1b_list[$i], $primary_symbol_list->[$i]);
+
+										} else {
+
+											report ($file, "%s: You have entered '%s' as the new valid symbol to rename %s (id given as %s in F1f), but the 'reverse' symbol - %s - already exists in chado (%s), either choose a new symbol for the rename, or correct the entry in F1f as appropriate.", 'F1a', $primary_symbol_list->[$i], $F1b_list[$i], $primary_id_list[$i],  $reversed_symbol, $FBco);
+
+										}
+									}
+								}
+							}
+
+							# second, do additional checks on the allele parts of the symbol, to check they are of the expected type and in the correct order
+							# at the moment, to simplify checking, this is only doing the checking when the component allele is already in chado
+							# (this should normally be the case anyway given partition of curation).
+
+
+							my $counter = 1; # use counter as easy way of keeping track of which index of array have got to
+
+							foreach my $symbol (@{$parent_symbols}) {
+								# only do checks for symbols already in chado
+								if (my $FBal = valid_chado_symbol($symbol, 'FBal')) {
+
+									my $split_switch = 0; # switch that gets set below if a split system component is found associated with the FBal
+
+									# try to get any encoded tool informaion attached directly to FBal first
+									my $encoded_tool_list = chat_to_chado ('tool_relationship', $FBal, 'encodes_tool');
+
+									foreach my $encoded_tool (@{$encoded_tool_list}) {
+										my $tool_uses_list = chat_to_chado ('tool_uses', $encoded_tool->[0]); # need to add ->[0] as the data is retrieved from chado as an array of arrays (each returned row generates an array that itself contains an array of the return values for that row, and as in this case the query returns one value per matching row, it is retrieved by the ->[0])
+
+										foreach my $tool_uses (@{$tool_uses_list}) {
+
+											if (valid_symbol ($tool_uses->[0], 'FBcv:split system component')) {
+												$split_switch++;
+
+												if (my $order = valid_symbol($tool_uses->[0], 'FBco_order')) {
+													unless ($counter == $order) {
+														report ($file, "%s: The '%s' part of the '%s' combination symbol is in position %s in the symbol, but it is expected to be in position %s.", 'F1a', $symbol, $primary_symbol_list->[$i], $counter, $order);
+													}
+												}
+											}
+										}
+									}
+
+									# if that fails, get inserted elements (via the associated insertion(s)) and use tool info attached to inserted element(s)
+									unless (scalar @{$encoded_tool_list} > 0) {
+
+										my $inserted_element_list = chat_to_chado ('inserted_element', $FBal);
+
+										foreach my $inserted_element (@{$inserted_element_list}) {
+
+											my $encoded_tool_list = chat_to_chado ('tool_relationship', $inserted_element->[0], 'encodes_tool');
+
+											foreach my $encoded_tool (@{$encoded_tool_list}) {
+
+												my $tool_uses_list = chat_to_chado ('tool_uses', $encoded_tool->[0]);
+
+												foreach my $tool_uses (@{$tool_uses_list}) {
+
+													if (valid_symbol ($tool_uses->[0], 'FBcv:split system component')) {
+														$split_switch++;
+
+														if (my $order = valid_symbol($tool_uses->[0], 'FBco_order')) {
+															unless ($counter == $order) {
+																report ($file, "%s: The '%s' part of the '%s' combination symbol is in position %s in the symbol, but it is expected to be in position %s.", 'F1a', $symbol, $primary_symbol_list->[$i], $counter, $order);
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+
+
+									# report if the component of the new FBco symbol is not a split system component
+									unless ($split_switch) {
+										report ($file, "%s: The '%s' part of the '%s' combination symbol is not a split system component, this is NOT currently allowed.", 'F1a', $symbol, $primary_symbol_list->[$i]);
+									}
+
+
+								} else {
+
+									if (valid_symbol($symbol, 'FBal')) {
+										report ($file, "%s: The '%s' part of the new '%s' combination symbol is an allele newly generated in this record, which means that Peeves cannot currently perform additional checks on this allele symbol (it should be a 'split system component' and the DBD half should be listed before the AD half for DBD+AD hemidriver combinations.", 'F1a', $symbol, $primary_symbol_list->[$i]);
+									}
+								}
+
+							$counter++; # increment counter
+							}
+
+						}
+## end additional checks for FBco
+
 
 # renames: check that the format of the new valid symbol (F1a) matches the FBid type of the gene product being renamed (FBti number in F1f)
 						if ($gene_product_status eq 'rename') {
@@ -318,8 +434,8 @@ sub do_expression_proforma ($$) {
 
 							my $id_type;
 							my $allowed_id_types = join '|', @{$standard_symbol_mapping->{'F'}->{id}};
-							my @ids = split ("\n", $F1c_list[$i]);
-							foreach my $id (@ids) {
+
+							foreach my $id (@{$F1c_list[$i]}) {
 								if ($id =~ m/^($allowed_id_types)\d{7,}$/) {
 									$id_type->{$1}++;
 								}
@@ -330,16 +446,18 @@ sub do_expression_proforma ($$) {
 
 							} elsif (scalar keys %{$id_type} == 1) {
 
-								unless ($id_type eq $gene_product_type) {
+								my $merge_field_id_type = join '', keys %{$id_type};
 
-									report ($file, "Mis-match between FBid type and symbol format in gene product merge: the '%s' symbol matches %s format, but the FBid type of the gene products being merged is %s:\n!%s\n!%s", $primary_symbol_list->[$i], $gene_product_type, $id_type, $proforma_fields{'F1a'}, $proforma_fields{'F1c'});
+								unless ($merge_field_id_type eq $gene_product_type) {
+
+									report ($file, "Mis-match between FBid type and symbol format in gene product merge: the '%s' symbol matches %s format, but the FBid type of the gene products being merged is %s:\n!%s\n!%s", $primary_symbol_list->[$i], $gene_product_type, $merge_field_id_type, $proforma_fields{'F1a'}, $proforma_fields{'F1c'});
 								}
 							}
 
 						}
 					}
 
-# F2 must be filled in for new/merged gene products where expression is from a transgene
+# F2 must be filled in for new/merged gene products where expression is from a transgene or a combination
 					if (defined $F2_list[$i] && $F2_list[$i] ne '') {
 
 						unless ($parent_type eq 'FBal') {
@@ -362,11 +480,15 @@ sub do_expression_proforma ($$) {
 
 						if ($gene_product_type eq 'FBtr') {
 
-							validate_exp_pro_SO_field ('F3', $F3_list[$i], 'SO:transcript');
+							validate_exp_pro_CV_field ('F3', $F3_list[$i], 'SO:transcript', 'FBtr');
 
 						} elsif ($gene_product_type eq 'FBpp') {
 
-							validate_exp_pro_SO_field ('F3', $F3_list[$i], 'SO:polypeptide');
+							validate_exp_pro_CV_field ('F3', $F3_list[$i], 'SO:polypeptide', 'FBpp');
+
+						} elsif ($gene_product_type eq 'FBco') {
+
+							validate_exp_pro_CV_field ('F3', $F3_list[$i], 'FBcv:split system combination', 'FBco');
 
 						}
 
@@ -385,6 +507,33 @@ sub do_expression_proforma ($$) {
 							report ($file, "%s: can only be filled in for a 'FBpp' type gene product:\n!%s\n!%s)",'F12', $proforma_fields{'F1a'}, $proforma_fields{'F12'});
 						}
 					}
+
+# cross-checks for F11 fields
+					if (defined $F11_list[$i] && $F11_list[$i] ne '') {
+
+						if ($gene_product_type eq 'FBco') {
+							report ($file, "%s: should not be filled in for a 'FBco' type gene product:\n!%s\n!%s)",'F11', $proforma_fields{'F1a'}, $proforma_fields{'F11'});
+						}
+
+					}
+
+					if (defined $F11a_list[$i] && $F11a_list[$i] ne '') {
+
+						if ($gene_product_type eq 'FBco') {
+							report ($file, "%s: should not be filled in for a 'FBco' type gene product:\n!%s\n!%s)",'F11a', $proforma_fields{'F1a'}, $proforma_fields{'F11a'});
+						}
+
+					}
+
+					if (defined $F11b_list[$i] && $F11b_list[$i] ne '') {
+
+						if ($gene_product_type eq 'FBco') {
+							report ($file, "%s: should not be filled in for a 'FBco' type gene product:\n!%s\n!%s)",'F11b', $proforma_fields{'F1a'}, $proforma_fields{'F11b'});
+						}
+
+					}
+
+
 
 				} else {
 
@@ -420,20 +569,20 @@ if ($unattributed && $#F4_list + 1 == $hash_entries) {
 }
 
 
-sub validate_exp_pro_SO_field {
+sub validate_exp_pro_CV_field {
 
-	my ($code, $content, $type) = @_;
+	my ($code, $content, $cv_type, $gp_type) = @_;
 
-	if ($content =~ m/^(.+) (SO\:\d{7})/) {
+	if ($content =~ m/^(.+) ([a-zA-Z]{1,}\:\d{7})/) {
   
   	my $term = $1;
   	my $id = $2;
   	# have lost error message context for the case where a curator chose the wrong kind of SO term for that type of gene product
   	# by updating, may put that back as field cross-check later
-  	check_ontology_term_id_pair($file, $code, $term, $id, $type, $content, '');
+  	check_ontology_term_id_pair($file, $code, $term, $id, $cv_type, $content, " for a $gp_type type gene product.");
 
   } else {
-	report ($file, "%s: Invalid format in %s (should be SO_term SO_id).",  $code, $content);
+	report ($file, "%s: Invalid format in %s (should be CV_term CV_id).",  $code, $content);
   }
 }
 

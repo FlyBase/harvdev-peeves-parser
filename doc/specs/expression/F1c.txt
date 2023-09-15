@@ -58,7 +58,7 @@ The following check is done at the end of proforma checking within expression.pl
 
 * If gene products are being merged:
 
-  * checks that the FBids in F1c (merge field) are all of one type (i.e. FBtr or FBpp) and prints an error message if not.
+  * checks that the FBids in F1c (merge field) are all of one type (i.e. FBtr, FBpp or FBco) and prints an error message if not.
   * checks that the format of the new valid symbol in F1a matches the type of the FBids (in F1c) which are being merged.
 
 ### Related fields:
@@ -77,4 +77,4 @@ The following check is done at the end of proforma checking within expression.pl
 
 ### Updated:
 
-gm160328.
+gm230912.
