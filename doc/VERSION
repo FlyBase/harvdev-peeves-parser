@@ -964,3 +964,13 @@ our $Peeves_version = "2.43"; #  DC-1041: allow stamps_with_ids in TC9 field.
 our $Peeves_version = "2.44"; #  DC-1044: allow any FBtc ID with 7 digits in TC1j.
 our $Peeves_version = "2.45"; #  DC-1042: Accept > character as valid for cell line names in TC1a.
 our $Peeves_version = "2.46"; #  DC-1043: Fix FBtc valid symbol lookup to cope with symbols with superscripts/subscripts.
+# 12.9.2023
+our $Peeves_version = "2.47"; #  DC-1047: Changes for FBco (hemidriver combinations)
+our $Peeves_version = "2.47.1"; #  DC-1047: Adding encoding conversions for INTERSECTION symbol and FBco type to symbol checking.
+our $Peeves_version = "2.47.2"; #  DC-1047: Adding FBco to type_gene_product subroutine.
+our $Peeves_version = "2.47.3"; #  Fixed bug in F1f (gene product merge) checking (uncovered by adding test record for FBco for DC-1047).
+our $Peeves_version = "2.47.4"; #  DC-1047: adding checks for FBco in F2 and F3 fields.
+# 13.9.2023
+our $Peeves_version = "2.47.5"; #  DC-1047: adding extra checks for new FBco symbols (check that each allele is a split system component, and that bits are in the correct order).
+# 15.9.2023
+our $Peeves_version = "2.47.6"; #  DC-1047: adding checks to warn if F11 fields filled in for FBco.

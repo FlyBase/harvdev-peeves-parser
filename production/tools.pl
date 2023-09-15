@@ -63,6 +63,7 @@ my %greek = (                           # Greek alphabet lookup table.
              '&ngr;'  => 'nu',      '&xgr;'  => 'xi',    '&ogr;'  => 'omicron', '&pgr;'  => 'pi',
              '&rgr;'  => 'rho',     '&sgr;'  => 'sigma', '&tgr;'  => 'tau',     '&ugr;'  => 'upsilon',
              '&phgr;' => 'phi',     '&khgr;' => 'chi',   '&psgr;' => 'psi',     '&ohgr;' => 'omega',
+             '&cap;' => 'INTERSECTION', # not technically a greek symbol, but added here so that the valid_greek check in the validate_primary_proforma_field sub does not issue a false-positive for FBco
              );
 
 sub valid_greek ($)
@@ -443,7 +444,7 @@ sub check_stamps ($$$)
 
 # list of FlyBase types that can be used in @@ - tried to order them so that most likely types are checked first
 # not included by might want to consider adding: FBgg
-		my @allowed_types = ('FBgn', 'FBto', 'FBal', 'FBti', 'FBtp', 'FBab', 'FBba', 'FBte', 'FBmc', 'FBlc', 'FBcl', 'FBtr', 'FBpp', 'FBtc');
+		my @allowed_types = ('FBgn', 'FBto', 'FBal', 'FBti', 'FBtp', 'FBab', 'FBba', 'FBte', 'FBmc', 'FBlc', 'FBcl', 'FBtr', 'FBpp', 'FBtc', 'FBco');
 		valid_symbol_of_list_of_types ($1, \@allowed_types) or report ($file, "%s: Invalid stamp \@%s\@ in '%s'", $code, $1, $data);
 	}
     }
@@ -537,7 +538,7 @@ sub check_stamps_with_ids {
 
 			# list of FlyBase types that can be used in @@ - tried to order them so that most likely types are checked first
 			# not included by might want to consider adding: FBgg
-			my @allowed_types = ('FBgn', 'FBto', 'FBal', 'FBti', 'FBtp', 'FBab', 'FBba', 'FBte', 'FBmc', 'FBlc', 'FBcl', 'FBtr', 'FBpp', 'FBtc');
+			my @allowed_types = ('FBgn', 'FBto', 'FBal', 'FBti', 'FBtp', 'FBab', 'FBba', 'FBte', 'FBmc', 'FBlc', 'FBcl', 'FBtr', 'FBpp', 'FBtc', 'FBco');
 			valid_symbol_of_list_of_types ($1, \@allowed_types) or report ($file, "%s: Invalid stamp \@%s\@ in '%s'", $code, $1, $data);
 		}
 	}
@@ -4844,22 +4845,23 @@ sub validate_primary_species_field {
 sub type_gene_product {
 
 # Subroutine which 'types' a gene product symbol as either FBtr or FBpp based on the format of the symbol.
-# Returns the gene product type, symbol of the parent to which the product is attached
-# (either a gene symbol for regular transcripts/polypeptides, or an allele symbol for expression
-# of transgenic constructs/insertions), and the expected type of the parent symbol if $return_value is '1'.
+# Returns the gene product type, symbol(s) of the parent(s) to which the product is attached (a single gene symbol
+# for regular transcripts/polypeptides, a single allele symbol for expression of transgenic constructs/insertions,
+# multiple alleles for combinations), and the expected type of the parent symbols if $return_value is '1'.
 # If $return_value is '0', returns just the type of the gene product.
 # If the symbol does not match any of the expected formats, then empty values will be returned.
 
 	my ($gene_product, $return_value) = @_;
 
-	my ($parent_symbol, $suffix, $product_type, $parent_type);
+	my ($parent_symbols, $suffix, $product_type, $parent_type);
 
 
 # valid formats are:
-# genesymbol-XR
-# genesymbol-XP
-# allelesymbolRA
-# allelesymbolPA
+# genesymbol-XR (FBtr)
+# genesymbol-XP (FBpp)
+# allelesymbolRA (FBtr)
+# allelesymbolPA (FBpp)
+# allelesymbol&cap;allelesymbol (FBco)
 
 	my $suffix_mapping = {
 	
@@ -4881,20 +4883,37 @@ sub type_gene_product {
 		'-XP' => {		
 			'product_type' => 'FBpp',
 			'parent_type' => 'FBgn',
+		},
+
+		'&cap;' => {
+			'product_type' => 'FBco',
+			'parent_type' => 'FBal',
 		},		
 	};
 
-	if ($gene_product =~ m/^(.+\[.+\])([PR]A)$/ || $gene_product =~ m/^(.+)(-X[RP])$/) {
+	if ($gene_product =~ m/^.+?(&cap;).+$/) {
+
+		$suffix = $1;
+
+# capture $parent_symbols as an array to allow for multiple parents in combinations
+		@{$parent_symbols} = split '&cap;', $gene_product;
+
+		$product_type = $suffix_mapping->{$suffix}->{'product_type'};
+		$parent_type = $suffix_mapping->{$suffix}->{'parent_type'};
+
+
+	} elsif ($gene_product =~ m/^(.+\[.+\])([PR]A)$/ || $gene_product =~ m/^(.+)(-X[RP])$/) {
 	
-		$parent_symbol = $1;
+		@{$parent_symbols} = $1;
 		$suffix = $2;
 	
 		$product_type = $suffix_mapping->{$suffix}->{'product_type'};
-		$parent_type = $suffix_mapping->{$suffix}->{'parent_type'};	
+		$parent_type = $suffix_mapping->{$suffix}->{'parent_type'};
+
 	}
 
 	if ($return_value) {
-		return ($product_type, $parent_symbol, $parent_type);
+		return ($product_type, $parent_symbols, $parent_type);
 	}
 	
 	return $product_type;
@@ -5230,6 +5249,9 @@ sub utf2sgml {
     $string =~ s/\x{03C9}/&ohgr\;/g;
     $string =~ s/\x{03A9}/&OHgr\;/g;
 
+    $string =~ s/\x{2229}/&cap\;/g; # adding conversion of intersection sign for FBco
+
+
     $string =~ s/\<\/down\>/\]\]/g;
     $string =~ s/\<down\>/\[\[/g;
     $string =~ s/\<up\>/\[/g;
@@ -5337,6 +5359,9 @@ sub sgml2utf {
     $string =~ s/&PSgr\;/\x{03A8}/g;
     $string =~ s/&ohgr\;/\x{03C9}/g;
     $string =~ s/&OHgr\;/\x{03A9}/g;
+
+    $string =~ s/&cap\;/\x{2229}/g; # adding conversion of intersection sign for FBco
+
 
     $string =~ s/\]\]/\<\/down\>/g;
     $string =~ s/\[\[/\<down\>/g;

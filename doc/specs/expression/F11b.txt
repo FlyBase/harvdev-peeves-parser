@@ -31,6 +31,8 @@ Checks between fields:
 
 - if F11b is filled in, F11 must be filled in.
 
+- F11b should not be filled in for combinations (FBco).
+
 ### Related fields:
 
 
@@ -45,4 +47,4 @@ Checks between fields:
 
 ### Updated:
 
-gm160305
+gm230915

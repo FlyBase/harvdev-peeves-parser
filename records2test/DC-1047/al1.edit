@@ -1,0 +1,110 @@
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0075340
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :Record to test additional checking of FBco symbol when F1f = new
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Scer\GAL4[DBD.R94B10]&cap;Scer\GAL4[dsx-GAL4-DBD]
+! F3.  Gene product type [CV]        :split system combination
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+! F1b. Action - rename this gene product (symbol)      :
+! F1c. Action - merge these products(s) (symbols or FB#s) :
+! F1d. Action - delete gene product record ("y"/blank) :
+! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
+!
+! F14. Internal note  [free text] :Scer\GAL4[dsx-GAL4-DBD] is an insertion line, and is  a split system component, but in wrong position
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Hsap\RELA[AD.1xCRE]&cap;Avic\GFP[tdGFP.Dsim\Or67a.P.Tag:M(hCD4)]
+! F3.  Gene product type [CV]        :split system combination
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+! F1b. Action - rename this gene product (symbol)      :
+! F1c. Action - merge these products(s) (symbols or FB#s) :
+! F1d. Action - delete gene product record ("y"/blank) :
+! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
+!
+! F14. Internal note  [free text] :Avic\GFP[tdGFP.Dsim\Or67a.P.Tag:M(hCD4)] has multiple encoded tools, neither is split system component
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Avic\GFP[TN-L15.UAS]&cap;Scer\GAL4[M13::GAL4DBDo.nSyb]
+! F3.  Gene product type [CV]        :split system combination
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+! F1b. Action - rename this gene product (symbol)      :
+! F1c. Action - merge these products(s) (symbols or FB#s) :
+! F1d. Action - delete gene product record ("y"/blank) :
+! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
+!
+! F14. Internal note  [free text] :Avic\GFP[TN-L15.UAS] has a single tool, with multiple uses, neither is a split component.
+Scer\GAL4[M13::GAL4DBDo.nSyb] has a single tool with multiple uses, one is a split component, but is in wrong place in symbol.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Hsap\RELA[AD.R47A04]&cap;Scer\GAL4[DBD.8xlexAop]
+! F3.  Gene product type [CV]        :split system combination
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+! F1b. Action - rename this gene product (symbol)      :
+! F1c. Action - merge these products(s) (symbols or FB#s) :
+! F1d. Action - delete gene product record ("y"/blank) :
+! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
+!
+! F14. Internal note  [free text] :symbol in F1a is a reverse of FBco0002135
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :FBco0002074
+! F1a. Gene product symbol           :Hsap\RELA[AD.VT050660]&cap;Ecol\lexA[DBD.VT049484]
+! F3.  Gene product type [CV]        :split system combination
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+! F1b. Action - rename this gene product (symbol)      :Ecol\lexA[DBD.VT049484]&cap;Hsap\RELA[AD.VT050660]
+! F1c. Action - merge these products(s) (symbols or FB#s) :
+! F1d. Action - delete gene product record ("y"/blank) :
+! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
+!
+! F14. Internal note  [free text] :reversing component orders - F1b is current symbol
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :FBco0001755
+! F1a. Gene product symbol           :Hsap\RELA[AD.R93D10]&cap;Ecol\lexA[DBD.R13F04]
+! F3.  Gene product type [CV]        :split system combination
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+! F1b. Action - rename this gene product (symbol)      :Ecol\lexA[DBD.ort]&cap;Hsim\VP16[ET77B]
+! F1c. Action - merge these products(s) (symbols or FB#s) :
+! F1d. Action - delete gene product record ("y"/blank) :
+! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
+!
+! F14. Internal note  [free text] :rename where what is being put in F1a is the reverse of an existing combination (FBco0002064), but not the same FBid as in F1b
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

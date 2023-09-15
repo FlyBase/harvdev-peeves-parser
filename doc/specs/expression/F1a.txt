@@ -25,7 +25,7 @@ No (implemented)
 
 Checks within field:
 
-  * sub validate_primary_proforma_field (see doc/specs/allele/GA1a.txt for details). Note, although the gene product identifier may contain a species prefix, species abbreviation checks are not carried out in validate_primary_proforma_field for this proformae as it can contain more than one type of object (FBtr or FBpp).  Any species abbreviation checking should thus be added to the format checking done at the end of the proforma using the 'type_gene_product' subroutine [note that this has not been added as of 2017.02.06].
+  * sub validate_primary_proforma_field (see doc/specs/allele/GA1a.txt for details). Note, although the gene product identifier may contain a species prefix, species abbreviation checks are not carried out in validate_primary_proforma_field for this proformae as it can contain more than one type of object (FBtr, FBpp or FBco). Any species abbreviation checking should thus be added to the format checking done at the end of the proforma using the 'type_gene_product' subroutine [note that this has not been added as of 2017.02.06].
 
 
 Checks within validate_primary_proforma_field:
@@ -49,17 +49,41 @@ Cross-checks with other fields (done after parsing of entire proforma):
        genesymbol-XP (FBpp)
        allelesymbolRA (FBtr)
        allelesymbolPA (FBpp)
+       allelesymbol&cap;allelesymbol (FBco) ** see note below **
     
-     * the 'genesymbol' or 'allelesymbol' portion of the symbol must be a valid FBgn or FBal (respectively) symbol in chado or generated in the record.
-     
-The following two checks are done at the end of proforma checking within expression.pl, rather than trying to add it to the 'cross_check_harv_style_symbol_rename_merge_fields' subroutine which is used for several different 'Harvard' style proformae:
+     * the 'genesymbol' or 'allelesymbol' portions of the symbol must be a valid FBgn or FBal (respectively) symbol in chado or generated in the record.
 
-* If the gene product is being renamed, checks that the format of the new valid symbol in F1a matches the type of FBid in F1f (i.e. either genesymbol-XR or allelesymbolRA for a FBtr id, either genesymbol-XP or allelesymbolPA for a FBpp id).
+     * the format checking for FBco allows 2 or more allele symbols joined by &cap;, so allelesymbol&cap;allelesymbol&cap;allelesymbol (etc.) is also allowed.
+     
+The following checks are done at the end of proforma checking within expression.pl, rather than trying to add it to the 'cross_check_harv_style_symbol_rename_merge_fields' subroutine which is used for several different 'Harvard' style proformae:
+
+* If the gene product is being renamed, checks that the format of the new valid symbol in F1a matches the type of FBid in F1f (e.g. either genesymbol-XR or allelesymbolRA for a FBtr id, either genesymbol-XP or allelesymbolPA for a FBpp id).
 
 * If gene products are being merged:
 
-  * checks that the FBids in F1c (merge field) are all of one type (i.e. FBtr or FBpp) and prints an error message if not.
+  * checks that the FBids in F1c (merge field) are all of one type (i.e. FBtr, FBpp or FBco) and prints an error message if not.
   * checks that the format of the new valid symbol in F1a matches the type of the FBids (in F1c) which are being merged.
+
+* Additional checks for combination symbol in F1a when F1f is new:
+
+  * Checks that each allele symbol within the combination symbol is associated with a tool (either directly for in vitro construct alleles, or indirectly via inserted element for insertional alleles) that is a 'split system component' or one of its children, and warns if not.
+    * NOTE that this check is only performed if the allele symbol is already in chado (which is the normal case); if the allele is newly generated in the record, a warning saying that the extra checks cannot be carried out.
+
+  * If the tool associated with the allele is either 'split driver - DNA-binding fragment' or 'split driver - transcription activation fragment', checks that the allele is in the expected position within the combination symbol (expects DBD first, then AD).
+    * NOTE that this check is only performed if the allele symbol is already in chado (which is the normal case); if the allele is newly generated in the record, a warning saying that the extra checks cannot be carried out.
+    * NOTE that this check will give false-positives if a combination symbol contains more than two alleles, but this is a very rare case.
+
+  * For combinations containing two allele symbols (i.e. allelesymbol1&cap;allelesymbol2), checks whether the symbol made by reversing the allele symbols (i.e. allelesymbo21&cap;allelesymbol1) already exists in chado.
+
+  If it does:
+
+    * for brand new combinations or merges, warns if so and suggests that the curator may want to use the existing 'reversed' symbol (to try to prevent possible duplication of the same combination in chado with different orders of the same comnbination of allele symbols).
+
+    * for combination renames:
+
+      * If the 'reversed' F1a symbol is the same as that in the rename field, prints a message checking that the intention was to reverse the allele symbol components.
+      * If the 'reversed' F1a symbol is NOT the same as that in the rename field, warns that there is an error and need to either choose a new symbol in F1a, or fix FBid in F1f.
+
 
 ### Related fields:
 
@@ -75,4 +99,4 @@ The following two checks are done at the end of proforma checking within express
 
 ### Updated:
 
-gm170206.
+gm230913.

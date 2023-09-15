@@ -38,6 +38,7 @@ my %chadotypes = (
 
 	'FBin' => 'interaction', # FBin is a made up FBid type so that can re-use code in valid_symbol, but treat it as a special case (the uniquenames actually start with an FBrf id, so have to be careful not to pollute the FBrf part of the symbol table).
 
+	'FBco' => 'feature', # type for combinations of hemidrivers
 );
 
 
@@ -891,6 +892,8 @@ my $dv_short_qualifiers = {
 ## the following is stored as a temporary measure, until the 'in vitro construct - X' terms can be obsoleted in the ontology. The stored values are used in validate_cvterm_field (tools.pl) to remind curators that most child 'in vitro construct - X' terms are no longer used for the GA8 field, and that the parent term should be used instead. The value of the key below is '0' NOT '1' which prevents the parent term being stored
 ## once terms are removed from ontology, the line below can be removed
 		'in vitro construct' => '0',
+		'split system combination' => '1', # for validation of F3 for FBco
+		'split system component' => '1', # for validation that components of combination symbol are split system components
 	};
 
 	&process_ontology_file ($FBcv_obo, 'FBcv:\d{1,}', '1', $fbcv_ancestors);
@@ -979,6 +982,18 @@ my $dv_short_qualifiers = {
 
 	}
 
+
+# pair of terms for checking order of allele symbol components of a new FBco symbol
+	my @FBco_order_terms = ('split driver - DNA-binding fragment', 'split driver - transcription activation fragment');
+
+# using for instead of foreach, so can set the value (which is returned by valid_symbol) to specify the position in which an allele of this type is expected to appear in the FBco symbol.
+	for (my $i = 0; $i <= $#FBco_order_terms; $i++) {
+
+		set_symbol ($FBco_order_terms[$i], 'FBco_order', $i + 1);
+
+		valid_symbol ($FBco_order_terms[$i], 'FBcv:default') or print "MAJOR PEEVES ERROR in basic ontology processing: the '$FBco_order_terms[$i]' term listed in Peeves as term used to check the order of components of a new FBco symbol is no longer a valid FBcv term, Peeves will need altering to cope (probably by replacing this obsolete term with a new valid one).\n\n";
+
+	}
 
 #  Then various classes of essentially static symbols.  This code looks ugly but the lists have to live
 #  somewhere and this is as good a place as any.

@@ -1,0 +1,102 @@
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0105495
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :FBco0000010
+! F1a. Gene product symbol           :Scer\GAL4[newDBD]&cap;Hsap\RELA[AD.R24E06.same]
+! F3.  Gene product type [CV]        :
+! F2.  Sequence attribute [CV]	     :
+!
+! F1b. Action - rename this gene product (symbol)      :Scer\GAL4[DBD.Tdc2]&cap;Hsap\RELA[AD.R24E06]
+! F1c. Action - merge these products(s) (symbols or FB#s) :
+! F1d. Action - delete gene product record ("y"/blank) :
+! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
+!
+! F13. Comment  [free text]       :check whether old symbol @Scer\GAL4[DBD.Tdc2]&cap;Hsap\RELA[AD.R24E06]@ generates an invalid stamp message.
+Second check: new symbol @Scer\GAL4[newDBD]&cap;Hsap\RELA[AD.R24E06.same]@ should NOT generate an invalid stamp message.
+! F14. Internal note  [free text] :??this tests a rename: should get error message saying that symbol in F1a is based on an invalid FBal symbol, for both halves
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :FBtr0000004
+! F1a. Gene product symbol           :Ecol\lacZ[svp-3_rename]RA
+! F3.  Gene product type [CV]        :
+! F2.  Sequence attribute [CV]	     :
+!
+! F1b. Action - rename this gene product (symbol)      :Ecol\lacZ[svp-3]RA
+! F1c. Action - merge these products(s) (symbols or FB#s) :
+! F1d. Action - delete gene product record ("y"/blank) :
+! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
+!
+! F14. Internal note  [free text] :??this tests a rename: should get an error message of form
+F1a: 'Ecol\lacZ[svp-3_rename]RA' gene product symbol is based on the invalid FBal symbol 'Ecol\lacZ[svp-3_rename]'
+as Ecol\lacZ[svp-3_rename] is not a valid allele symbol
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :FBtr0000005
+! F1a. Gene product symbol           :Ecol\lacZ[hkb.0.4]RA
+! F3.  Gene product type [CV]        :
+! F2.  Sequence attribute [CV]	     :
+!
+! F1b. Action - rename this gene product (symbol)      :Ecol\lacZ[hkb-s5953]RA
+! F1c. Action - merge these products(s) (symbols or FB#s) :
+! F1d. Action - delete gene product record ("y"/blank) :
+! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
+!
+! F13. Comment  [free text]       :this is valid: @Ecol\lacZ[hkb.0.4]RA@, this is not @Ecol\lacZ[hkb-s5953]RA@.
+! F14. Internal note  [free text] :??this tests a rename: this should pass as Ecol\lacZ[hkb.0.4] is a valid symbol
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :FBco0000006
+! F1a. Gene product symbol           :Scer\GAL4[DBD.R94B10]&cap;Hsap\RELA[AD.invalid]
+! F3.  Gene product type [CV]        :
+! F2.  Sequence attribute [CV]	     :
+!
+! F1b. Action - rename this gene product (symbol)      :Scer\GAL4[DBD.R94B10]&cap;Hsap\RELA[AD.R20A02]
+! F1c. Action - merge these products(s) (symbols or FB#s) :
+! F1d. Action - delete gene product record ("y"/blank) :
+! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
+! F13. Comment  [free text]       :
+!
+! F14. Internal note  [free text] :??this tests a rename: should get error message saying that symbol in F1a is based on an invalid FBal symbol, just for Hsap\RELA[AD.invalid]
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Scer\GAL4[DBD.R94B10]&cap;Ecol\lacZ[invalid]&cap;Scer\FLP1[187A]
+! F3.  Gene product type [CV]        :split system combination
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+! F1b. Action - rename this gene product (symbol)      :
+! F1c. Action - merge these products(s) (symbols or FB#s) :
+! F1d. Action - delete gene product record ("y"/blank) :
+! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
+!
+! F14. Internal note  [free text] :??this test if copes with multiple &cap;
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

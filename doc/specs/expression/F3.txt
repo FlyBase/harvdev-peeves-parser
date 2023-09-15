@@ -26,11 +26,13 @@ No (implemented)
 
 Checks between fields:
 
-- allowed SO term id pair depends on the type of gene product in F1a, so format checking of value in the field is done during between field cross-checks, rather than as a within field check.
+- allowed CV term id pair depends on the type of gene product in F1a, so format checking of value in the field is done during between field cross-checks, rather than as a within field check.
 
-  * if the gene product is an FBtr, the 'SO term id' pair must be a child of 'transcript' (or the term itself)
+  * if the gene product is an FBtr, the 'CV term id' pair must be a child of the SO term 'transcript' (or the term itself)
 
-  * if the gene product is an FBpp, the 'SO term id' pair must be a child of 'polypeptide' (or the term itself) (in practise at the moment this means just 'polypeptide' is allowed).
+  * if the gene product is an FBpp, the 'CV term id' pair must be a child of the SO term 'polypeptide' (or the term itself) (in practise at the moment this means just 'polypeptide' is allowed).
+
+  * if the gene product is an FBco, the 'CV term id' pair must be a child of the FBcv term 'split system combination' (or the term itself) (in practise at the moment this means just 'split system combination' is allowed).
 
 - F3 must be filled in for new gene products and for gene product merges.
 
@@ -49,4 +51,4 @@ Although expression curation manual says that this field is required (inclusion 
 
 ### Updated:
 
-gm200514.
+gm230912.

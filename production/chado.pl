@@ -428,9 +428,48 @@ sub set_up_chado_queries ()
 								  AND fc.feature_cvterm_id = fcvtp.feature_cvterm_id
 								  AND fcvtp.type_id = cvt2.cvterm_id
 								  AND cvt2.name = \'common_tool_uses\';');
+## Queries for additional checks for new FBco symbols
+## tool field information (can be used for FBal or FBtp)
+## need to specify FBal/FBtp id and type of feature_relationship
+
+	$prepared_queries{'tool_relationship'} = $chado->prepare ('SELECT f2.uniquename
+								  FROM feature f1, feature f2,
+								       feature_relationship fr, cvterm cv
+								  WHERE f1.uniquename=?
+								  AND f1.feature_id = fr.subject_id
+								  AND f2.feature_id = fr.object_id
+								  AND cv.cvterm_id=fr.type_id
+								  AND cv.name=?;');
 
 
-# cvterm information
+## query to get inserted elements (can be FBtp or FBte) for alleles that are associated with an insertion
+## need to provide FBal number
+	$prepared_queries{'inserted_element'} = $chado->prepare ('SELECT f3.uniquename
+								  FROM feature f1, feature f2, feature f3,
+								       feature_relationship fr, cvterm cv,
+								       feature_relationship fr2, cvterm cv2
+								  WHERE f1.uniquename =?
+								  AND f1.feature_id = fr.subject_id
+								  AND f2.feature_id = fr.object_id
+								  AND f2.uniquename like \'FBti%\'
+								  AND cv.cvterm_id=fr.type_id
+								  AND cv.name=\'associated_with\'
+								  AND f2.feature_id = fr2.subject_id
+								  AND f3.feature_id = fr2.object_id
+								  AND cv2.cvterm_id=fr2.type_id
+								  AND cv2.name=\'producedby\';');
+
+## get tool uses information
+	$prepared_queries{'tool_uses'} = $chado->prepare ('SELECT cvt.name
+							   FROM feature f, cvterm cvt, feature_cvterm fcvt, feature_cvtermprop fcp, cvterm cvt2, cv
+							   WHERE fcvt.feature_id = f.feature_id
+							   AND fcvt.feature_cvterm_id = fcp.feature_cvterm_id
+							   AND fcp.type_id = cvt2.cvterm_id
+							   AND cvt2.name = \'tool_uses\'
+							   AND f.uniquename =?
+							   AND fcvt.cvterm_id = cvt.cvterm_id
+							   AND cvt2.cv_id = cv.cv_id
+							   AND cv.name = \'feature_cvtermprop type\';');
 
 ## SO
 

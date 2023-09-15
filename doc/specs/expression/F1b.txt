@@ -26,7 +26,7 @@ No (Implemented)
 
 Cross-checks within field
 
-  * the data must either be empty or be a single valid symbol of a gene product (i.e. FBtr or FBpp) which exists in Chado. (in validate_rename)
+  * the data must either be empty or be a single valid symbol of a gene product (i.e. FBtr, FBpp or FBco) which exists in Chado. (in validate_rename)
 
   * sub 'no_hashes_in_proforma'- checks that there are no hashes in the entire proforma if F1b is filled in
 
@@ -40,7 +40,7 @@ Cross-checks with other fields
 
 The following check is done at the end of proforma checking within expression.pl, rather than trying to add it to the 'cross_check_harv_style_symbol_rename_merge_fields' subroutine which is used for several different 'Harvard' style proformae:
 
-* If the gene product is being renamed, checks that the format of the new valid symbol in F1a matches the type of FBid in F1f (i.e. either genesymbol-XR or allelesymbolRA for a FBtr id, either genesymbol-XP or allelesymbolPA for a FBpp id).
+* If the gene product is being renamed, checks that the format of the new valid symbol in F1a matches the type of FBid in F1f (e.g. either genesymbol-XR or allelesymbolRA for a FBtr id, either genesymbol-XP or allelesymbolPA for a FBpp id).
 
 ### Related fields:
 
@@ -55,4 +55,4 @@ The following check is done at the end of proforma checking within expression.pl
 
 ### Updated:
 
-gm160328.
+gm230912.
