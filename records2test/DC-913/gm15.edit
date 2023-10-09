@@ -1,0 +1,48 @@
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0105495
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! MOLECULAR SEGMENT AND CONSTRUCT PROFORMA           Version 32: 25 Nov 2020
+! MS1f. Database ID for segment (FBid or "new") :FBtp0000385
+! MS1a. Segment symbol to use in database       :P{27.1}
+! MS1b. Symbol used in paper                    :
+! MS16. Segment category (type of entity) [CV]  :transgenic_transposable_element
+! MS4a. Description [CV]                        :transposon
+! MS21. Transposon class (generic)              :
+! MS14. Uses [CV]                               :
+! MS22. Localized function [CV]      :
+! MS1c. Action - replace this segment symbol :
+! MS1g. Action - merge these segments (FBid) :
+!c MS24. Marker allele(s) carried (symbol) :
+!c MS14a. Tagged with experimental tool (FBto symbol)        :
+!c MS14b. Other experimental tools carried (FBto symbol)     :loxP
+!c MS14c. Encoded experimental tool (FBto symbol) :
+! MS14d. Encoded experimental tool [CV]          :
+!c MS14e. Regulatory region(s) present (symbol) :hh
+! MS15. Moseg description [free text] :
+! MS19a. Progenitor construct (symbol) :
+! MS19b. Progenitor(s) (other - free text) :
+! MS10b. General comments :
+! MS11.  Internal notes   :plingc of fields where data added in gm14.edit - some plingc to nothing, others added new value.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!
