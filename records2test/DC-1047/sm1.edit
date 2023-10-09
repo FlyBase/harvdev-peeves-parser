@@ -7,7 +7,7 @@
 ! P42.  Flag Ontologists for curation           ONTO :
 ! P43.  Flag Disease for curation            DISEASE :
 ! P44.  Disease(s) relevant to FBrf      [free text] :
-! P19.  Internal notes                   *H :Record to test additional checking of FBco symbol when F1f = new
+! P19.  Internal notes                   *H :Record to test that get warning if any of the F11 fields are filled in for FBco
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! GENE DATA
 ! Insert gene proforma below.

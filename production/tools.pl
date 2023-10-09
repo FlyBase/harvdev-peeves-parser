@@ -444,7 +444,7 @@ sub check_stamps ($$$)
 
 # list of FlyBase types that can be used in @@ - tried to order them so that most likely types are checked first
 # not included by might want to consider adding: FBgg
-		my @allowed_types = ('FBgn', 'FBto', 'FBal', 'FBti', 'FBtp', 'FBab', 'FBba', 'FBte', 'FBmc', 'FBlc', 'FBcl', 'FBtr', 'FBpp', 'FBtc', 'FBco');
+		my @allowed_types = ('FBgn', 'FBto', 'FBal', 'FBti', 'FBtp', 'FBab', 'FBba', 'FBte', 'FBmc', 'FBlc', 'FBcl', 'FBtr', 'FBpp', 'FBtc', 'FBco', 'FBsf');
 		valid_symbol_of_list_of_types ($1, \@allowed_types) or report ($file, "%s: Invalid stamp \@%s\@ in '%s'", $code, $1, $data);
 	}
     }
@@ -538,7 +538,7 @@ sub check_stamps_with_ids {
 
 			# list of FlyBase types that can be used in @@ - tried to order them so that most likely types are checked first
 			# not included by might want to consider adding: FBgg
-			my @allowed_types = ('FBgn', 'FBto', 'FBal', 'FBti', 'FBtp', 'FBab', 'FBba', 'FBte', 'FBmc', 'FBlc', 'FBcl', 'FBtr', 'FBpp', 'FBtc', 'FBco');
+			my @allowed_types = ('FBgn', 'FBto', 'FBal', 'FBti', 'FBtp', 'FBab', 'FBba', 'FBte', 'FBmc', 'FBlc', 'FBcl', 'FBtr', 'FBpp', 'FBtc', 'FBco', 'FBsf');
 			valid_symbol_of_list_of_types ($1, \@allowed_types) or report ($file, "%s: Invalid stamp \@%s\@ in '%s'", $code, $1, $data);
 		}
 	}
@@ -2485,15 +2485,15 @@ sub check_valid_symbol_field {
 		'TO7b' => ['FBto'],
 		'TO7c' => ['FBgn'],
 
-		'GA30a' => ['FBto'],
-		'GA30b' => ['FBto'],
-		'GA30c' => ['FBto'],
-		'GA30e' => ['FBgn', 'FBto'],
+		'GA30a' => ['FBto', 'FBsf'],
+		'GA30b' => ['FBto', 'FBsf'],
+		'GA30c' => ['FBto', 'FBsf'],
+		'GA30e' => ['FBgn', 'FBto', 'FBsf'],
 
-		'MS14a' => ['FBto'],
-		'MS14b' => ['FBto'],
-		'MS14c' => ['FBto'],
-		'MS14e' => ['FBgn', 'FBto'],
+		'MS14a' => ['FBto', 'FBsf'],
+		'MS14b' => ['FBto', 'FBsf'],
+		'MS14c' => ['FBto', 'FBsf'],
+		'MS14e' => ['FBgn', 'FBto', 'FBsf'],
 
 		'MS23' => ['FBal'],
 
