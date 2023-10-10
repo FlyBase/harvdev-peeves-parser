@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.47.6"; #  DC-1047: adding checks to warn if F11 fields filled in for FBco.
+our $Peeves_version = "2.48.3"; #  Allow FBsf in free text in stamps (relates to DC-911 and DC-913).
 
 =head2 Version
 

@@ -27,7 +27,7 @@ No (implemented)
 
 Checks within field:
 
-* check_valid_symbol_field checks that the values are a valid tool symbol either in chado or generated in the record.
+* check_valid_symbol_field checks that the values are a valid tool or sequence feature symbol either in chado or generated in the record.
 
 ### Related fields:
 
@@ -42,5 +42,5 @@ Checks within field:
 
 ### Updated:
 
-gm171128.
+gm231009.
 

@@ -974,3 +974,7 @@ our $Peeves_version = "2.47.4"; #  DC-1047: adding checks for FBco in F2 and F3 
 our $Peeves_version = "2.47.5"; #  DC-1047: adding extra checks for new FBco symbols (check that each allele is a split system component, and that bits are in the correct order).
 # 15.9.2023
 our $Peeves_version = "2.47.6"; #  DC-1047: adding checks to warn if F11 fields filled in for FBco.
+# 9.10.2023
+our $Peeves_version = "2.48.1"; #  DC-911: allow FBsf in allele.pro experimental tools symbol fields.
+our $Peeves_version = "2.48.2"; #  DC-913: allow FBsf in moseg.pro experimental tools symbol fields.
+our $Peeves_version = "2.48.3"; #  Allow FBsf in free text in stamps (relates to DC-911 and DC-913).
