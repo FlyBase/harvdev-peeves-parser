@@ -1,4 +1,4 @@
-! GENE PROFORMA                          Version 76:  04 Sept 2014
+! GENE PROFORMA                          Version 80:  6 Nov 2023
 !
 ! G1h.  FlyBase gene ID (FBgn) *z :FULL
 ! G1a.  Gene symbol to use in FlyBase                       *a :FULL
@@ -15,6 +15,7 @@
 ! G31b. Action - dissociate G1a from reference (y) TAKE CARE :PARTIAL:DC-327
 ! G28b. Source for merge/identity of                      [SoftCV] *q :FULL
 ! G28a. Relationship to other genes - comments         [free text] *q :NA
+! G41.  Gene nomenclature - comments                   [free text] *q :NA
 ! G37.  Member of Gene Group (symbol) *G :NA
 ! G5.   Genetic map position if by recombination mapping   *b :FULL
 ! G6.   Genetic map position - error, if reported          *b :FULL
@@ -34,6 +35,7 @@
 ! G14a. Miscellaneous comments                              *u :NA
 ! G26.  Tag/Foreign gene summary information             *u :PARTIAL:DC-417
 ! G35.  Reference database ID for foreign sequence          :PARTIAL:DC-417
+! G40. Commonly used as experimental tool [CV] :NOT YET IMPLEMENTED
 ! G32.  Newly assigned annotation ID (CG/CR number) TAKE CARE :NOT YET IMPLEMENTED
 ! G33.  Sequence accession number - seq cur only                :NA
 ! G91.  From dataset/collection (symbol) :FULL
@@ -42,6 +44,5 @@
 ! G39b. Gene summary - enough information ? (y/n) :FULL
 ! G39c. Gene summary - Date stamp (y, n, or YYYYMDD) :FULL
 ! G39d. Gene summary - specific internal note :NA
-! G15.  Internal notes  *W :NA
 ! G38. Member of Generic Gene record (gene symbol) :NA
-! G40. Commonly used as experimental tool [CV] :NOT YET IMPLEMENTED
+! G15.  Internal notes  *W :NA

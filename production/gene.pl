@@ -456,6 +456,12 @@ FIELD:
 	    check_dups ($file, $2, $field, \%proforma_fields, \%dummy_dup_proforma_fields, $g_gene_sym_list, 0);
 		@G38_list = process_field_data ($file, $g_num_syms, $1, '1', $2, $3, \%proforma_fields, '1');
 	}
+	elsif ($field =~ /^(.*?)\s+(G41)\..*? :(.*)/s)
+	{
+	    check_dups ($file, $2, $field, \%proforma_fields, \%dummy_dup_proforma_fields, $g_gene_sym_list, 0);
+		process_field_data ($file, $g_num_syms, $1, '1', $2, $3, \%proforma_fields, '0');
+	}
+
 	elsif ($field =~ /^(.*?) G(.+?)\..*?:(.*)$/s)
 	{
 	    report ($file, "Invalid proforma field\n!%s", $field);

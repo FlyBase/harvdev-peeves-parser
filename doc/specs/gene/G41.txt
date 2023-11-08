@@ -1,4 +1,4 @@
-## ! G27.  Etymology                                              :
+## ! G41. Gene nomenclature - comments [free text] *o :
 
 ### Multiple values allowed:
 
@@ -23,8 +23,6 @@ No (Implemented)
 
 ### Checks:
 
-Checks within field:
-
  * sub 'no_stamps' checks that there are no stamps (so that the text still makes sense if any symbol changes in future)
 
  * sub 'no_stamps' also checks that the line does not *start with* either of the following (to catch cases where SoftCV field data has been put into a neighbouring free text field by mistake):
@@ -35,7 +33,14 @@ Checks within field:
 
 ### Related fields:
 
+**[G28b**][G28b].
+
 ### Comments:
+
+
+
+### Status:
+
 
 
 ### Updated:

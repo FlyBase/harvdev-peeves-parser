@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.48.3"; #  Allow FBsf in free text in stamps (relates to DC-911 and DC-913).
+our $Peeves_version = "2.49"; #  add G41 gene.pro field checks (DC-1058).
 
 =head2 Version
 
@@ -383,6 +383,8 @@ our %field_specific_checks = (
 	'G39d' => \&no_stamps,
 	'G40' => \&validate_cvterm_field,
 	'G38' => \&check_valid_chado_symbol_field,
+
+	'G41' => \&no_stamps,
 
 # allele proforma
 	'GA1b' => \&validate_synonym_field,
