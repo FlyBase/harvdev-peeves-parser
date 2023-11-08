@@ -416,7 +416,28 @@ sub no_stamps {
 
 	my ($file, $code, $dehashed_data, $context) = @_;
 
+# hash containing extra checks required for some fields, where it is easy to
+# miss and put neighbouring CV data into a free text field
+	my $extra_check_mapping = {
+
+# key is field, value is regular expression to test for to see if put
+# CV term field data from neighbouring field in free text field by mistake 
+
+		'G27' => '^(Source for identity of: | Source for merge of: )',
+		'G41' => '^(Source for identity of: | Source for merge of: )',
+
+	};
+
 	$dehashed_data eq '' and return;
+
+	if (exists $extra_check_mapping->{$code}) {
+
+		if ($dehashed_data =~ m/($extra_check_mapping->{$code})/) {
+
+			report ($file, "%s: has data containing '%s', did you miss and put data intended for a nearby CV field into this free text field by mistake ?:\n!%s", $code, $1, $context->{$code});
+
+		}
+	}
 	
 	report ($file, "%s: Unwanted stamp in '%s'", $code, $dehashed_data) if $dehashed_data =~ /@.*@/s;
 
@@ -569,7 +590,6 @@ sub check_stamped_free_text {
 		'GA12b' => '(^(?:Amino acid replacement: |Nucleotide substitution: |Tag:))|(DOID:)',
 
 		'G28a' => '^(Source for identity of: | Source for merge of: )',
-		'G27' => '^(Source for identity of: | Source for merge of: )',
 
 	};
 

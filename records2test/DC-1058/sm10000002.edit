@@ -1,0 +1,18 @@
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0159268
+! P2.   Parent multipub abbreviation               *w :Nucleic Acids Res.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 80:  6 Nov 2023
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Tdg
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G28b. Source for merge/identity of                      [SoftCV] *q :
+! G28a. Relationship to other genes - comments         [free text] *q :
+! G41.  Gene nomenclature - comments                   [free text] *q :FlyBase curator comment: Named as 'TDG homolog of D.melanogaster' (thd1) in FBrf0159268, but changed to 'Tdg' to follow the nomenclature used in the wider field and to avoid referring to 'homolog of D.melanogaster' in the name/symbol.
+And this is another comment on a new line.
+! G15.  Internal notes  *W :This record should pass fine. Two 'entries' in G41.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!
