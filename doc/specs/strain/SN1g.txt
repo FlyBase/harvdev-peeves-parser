@@ -1,0 +1,49 @@
+
+## ! SN1g.  Strain type (free text; use "wild type")   :
+
+### Multiple values allowed:
+
+No (implemented)
+
+### !c Applicable:
+
+Yes (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* if SN1g is filled in, 'check_single_allowed_value' subroutine checks that the only allowed value is 'wild type'
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm231115.

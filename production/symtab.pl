@@ -7213,6 +7213,7 @@ my $dv_short_qualifiers = {
 	set_symbol ('positive', 'current_value', 'y');
 # fields that can only contain 'n'
 	set_symbol ('negative', 'current_value', 'n');
+	set_symbol ('SN1g_value', 'current_value', 'wild type');
 	
 # allowed value for IN2b, plus double check its still a current psi-mi term
 	set_symbol ('IN2b_value', 'current_value', 'physical association');
@@ -7271,6 +7272,10 @@ my $dv_short_qualifiers = {
 		valid_symbol ($term, 'SO:default') or print "MAJOR PEEVES ERROR in basic ontology processing: the '$term' term listed in Peeves as an allowed value for SO terms attached to gene symbols in G38 is no longer a valid SO term, Peeves will need altering to cope (probably by replacing this obsolete term with a new valid one).\n\n";
 
 	}
+# allowed values for the SN9f field
+
+    set_symbol ('isofemale line', 'SN9f_value', 1);
+    set_symbol ('multi-female line', 'SN9f_value', 1);
 
 
 # Assays for TAP statements - would be lovely if these were in an ontology, but Harvard appears to be reluctant, so here they are. Full definitions included where available ;P). For now there is nothing but general typing ('assay'). In future this should probably be further subdivided to allow checking that assay is appropriate to gene product type. The assay name is stored as a value, but is not actually used except to return 'true' as of 111028 (DOS).

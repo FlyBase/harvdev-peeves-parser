@@ -1,0 +1,49 @@
+
+## ! SN9f.  Founded as [isofemale line/multi-female line] :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+
+### !c Applicable:
+
+Yes (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* sub validate_cvterm_field checks that the single value is either 'isofemale line' or 'multi-female line'
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm231115.

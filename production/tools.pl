@@ -1524,6 +1524,8 @@ sub check_allowed_characters {
 
 		'SF1a' => 'a-zA-Z0-9_:;&\[\]\()\'\.\+\-\/', # same as LC1a, but with / added (DC-895)
 
+		'SN1a' => 'a-zA-Z0-9:;&\\\.\-\'', # same characters as G1a, except no [ ] ( )
+
 #		'' => '',
 
 # name fields
@@ -1532,6 +1534,7 @@ sub check_allowed_characters {
 		'A2a' => 'a-zA-Z0-9:;&\[\]\()\'\.,\+/ \?\-', # same characters as for G2a plus ?
 		'AB2a' => 'a-zA-Z0-9:;&\[\]\()\'\.,\+/ \-', # same characters as for G2a
 		'GG2a' => 'a-zA-Z0-9:;&\[\]\()\'\.,\+/ \-', # same characters as for G2a
+		'SN2a' => 'a-zA-Z0-9:;&\\\.\-\' ', # same characters as SN1a, plus space
 
 		'TO2a' => 'a-zA-Z0-9:;&\[\]\()\'\.,\+/ \-', # same characters as for G1a, EXCEPT no \ (has [ ] to allow for things like Ca[2+]-channel). Has in addition , + / and space
 
@@ -1560,7 +1563,7 @@ sub check_allowed_characters {
 
 	unless (exists $mapping_table{$code}) {
 
-		report ($file,"%s proforma has not been set up to check for valid characters in symbol - please let Gillian know if you see this error, so that it can be set up properly",$code);
+		report ($file,"%s proforma field has not been set up to check for valid characters in symbol - please let Gillian know if you see this error, so that it can be set up properly",$code);
 		return;
 	}
 
@@ -2517,6 +2520,15 @@ sub check_valid_symbol_field {
 
 		'MS23' => ['FBal'],
 
+		'SN4' => ['FBsn'],
+		'SN5a' => ['FBal'],
+		'SN5b' => ['FBal'],
+		'SN5c' => ['FBab'],
+		'SN5d' => ['FBab'],
+		'SN5e' => ['FBti'],
+		'SN5f' => ['FBti'],
+		'SN14' => ['FBlc'],
+
 	);
 
 	unless ($allowed_types{$code}) {
@@ -3292,6 +3304,9 @@ sub check_single_allowed_value {
 
 		'GA30f' => 'negative',
 
+		'SN1g' => 'SN1g_value',
+		'SN9e' => 'positive',
+
 	);
 
 	
@@ -3320,6 +3335,7 @@ sub validate_species_abbreviation_field {
 
 		'MA20' => 'drosophilid',
 		'TC1d' => 'drosophilid',
+		'SN1f' => 'drosophilid',
 
 
 
@@ -3864,6 +3880,10 @@ sub validate_cvterm_field {
 		'GA30d' => ['FBcv:experimental_tool_descriptor'],
 		'MS14d' => ['FBcv:experimental_tool_descriptor'],
 		'G40' => ['FBcv:experimental_tool_descriptor'],
+
+		'SN9a' => ['chromosome'],
+		'SN9d' => ['chromosome'],
+		'SN9f' => ['SN9f_value'],
 
 	);
 

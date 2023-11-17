@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.49"; #  add G41 gene.pro field checks (DC-1058).
+our $Peeves_version = "2.50"; #  add strain proforma checking.
 
 =head2 Version
 
@@ -167,7 +167,7 @@ sub classify_curator ($$)			### Warning --- this sub is seriously location depen
 # follow other types.  The %fsm hash is keyed by proforma type (lifted directly from the text of the proforma)
 # and its values are regexps which match allowable types for the immediately following proforma.
 
-my $tmn = 'TRANSPOSON INSERTION|MOLECULAR SEGMENT AND CONSTRUCT|NATURAL TRANSPOSON|GENEPRODUCT ATTRIBUTES/EXPRESSION|GENEGROUP|DATASET/COLLECTION|HUMAN HEALTH MODEL|INTERACTION|SEQUENCE FEATURE/MAPPED ENTITIES|CULTURED CELL LINE|EXPERIMENTAL TOOL';	# For brevity below. DOS:Added expression proforma name to end of this list. Although unlikely to ever actually be used after these, this should allow Peeves to accept Expression Proformae.'
+my $tmn = 'TRANSPOSON INSERTION|MOLECULAR SEGMENT AND CONSTRUCT|NATURAL TRANSPOSON|GENEPRODUCT ATTRIBUTES/EXPRESSION|GENEGROUP|DATASET/COLLECTION|HUMAN HEALTH MODEL|INTERACTION|SEQUENCE FEATURE/MAPPED ENTITIES|CULTURED CELL LINE|EXPERIMENTAL TOOL|STRAIN';	# For brevity below. DOS:Added expression proforma name to end of this list. Although unlikely to ever actually be used after these, this should allow Peeves to accept Expression Proformae.'
 
 our %fsm = ('MULTIPUBLICATION'                => 'MULTIPUBLICATION',
 	    'PUBLICATION'                     => "SPECIES|DATABASE|GENE|ABERRATION|$tmn",
@@ -188,6 +188,7 @@ our %fsm = ('MULTIPUBLICATION'                => 'MULTIPUBLICATION',
 		'SEQUENCE FEATURE/MAPPED ENTITIES' => $tmn,
 		'CULTURED CELL LINE' => "$tmn|PUBLICATION",
 		'EXPERIMENTAL TOOL' => $tmn,
+		'STRAIN' => $tmn,
 	    );
 our $want_next;
 
@@ -214,6 +215,7 @@ require "$Peeves_config{'Peeves_path'}/database.pl";
 require "$Peeves_config{'Peeves_path'}/seqfeat.pl";
 require "$Peeves_config{'Peeves_path'}/cellline.pl";
 require "$Peeves_config{'Peeves_path'}/experimental_tool.pl";
+require "$Peeves_config{'Peeves_path'}/strain.pl";
 
 
 if ($Peeves_config{'Where_running'} eq 'Cambridge') {
@@ -347,6 +349,15 @@ our $standard_symbol_mapping = {
 		id => ['FBto'],
 		type => 'experimental tool',
 		style => 'Harvard',
+
+	},
+	'SN' => {
+		id => ['FBsn'],
+		type => 'strain',
+		style => 'Harvard',
+		rename_field => '1d',
+		merge_field => '1e',
+		primary_id_field => '1b',
 
 	},	
 };
@@ -879,6 +890,44 @@ our %field_specific_checks = (
 	'TO9' => \&no_stamps,
 	'TO10' => \&validate_species_abbreviation_field,
 
+# strain proforma
+	'SN1c' => \&validate_synonym_field,
+	'SN1f' => \&validate_species_abbreviation_field,
+	'SN1g' => \&check_single_allowed_value,
+	'SN2a' => \&validate_new_full_name,
+	'SN2b' => \&validate_synonym_field,
+	'SN2c' => \&validate_existing_full_name,
+
+	'SN12' => \&check_stamped_free_text,
+	'SN4' => \&check_valid_symbol_field,
+	'SN5a' => \&check_valid_symbol_field,
+	'SN5b' => \&check_valid_symbol_field,
+	'SN5c' => \&check_valid_symbol_field,
+	'SN5d' => \&check_valid_symbol_field,
+	'SN5e' => \&check_valid_symbol_field,
+	'SN5f' => \&check_valid_symbol_field,
+
+	'SN6a' => '', # is like allele GA56 field, so complex so just basic checks at the moment
+	'SN6b' => '', # is like allele GA56 field, so complex so just basic checks at the moment
+	'SN6c' => '', # is like allele GA56 field, so complex so just basic checks at the moment
+	'SN6d' => '', # is like allele GA56 field, so complex so just basic checks at the moment
+
+	'SN6e' => \&check_stamped_free_text,
+	'SN6f' => \&check_stamped_free_text,
+	'SN6g' => \&check_stamped_free_text,
+
+	'SN15b' => \&check_stamped_free_text,
+
+	'SN9a' => \&validate_cvterm_field,
+	'SN9d' => \&validate_cvterm_field,
+	'SN9e' => \&check_single_allowed_value,
+	'SN9f' => \&validate_cvterm_field,
+	'SN9g' => \&check_stamped_free_text,
+
+	'SN14' => \&check_valid_symbol_field,
+	'SN13' => \&no_stamps,
+
+
 );
 
 ## add comment detailing Peeves version being used
@@ -906,7 +955,8 @@ my %despatch_table = ('MULTIPUBLICATION'                => \&do_multipub_proform
 		      'DATABASE'              => \&do_database_proforma,
 		      'SEQUENCE FEATURE/MAPPED ENTITIES'              => \&do_seqfeat_proforma,
 		      'CULTURED CELL LINE'              => \&do_cellline_proforma,
-				'EXPERIMENTAL TOOL' => \&do_experimental_tool_proforma,
+		      'EXPERIMENTAL TOOL' => \&do_experimental_tool_proforma,
+		      'STRAIN' => \&do_strain_proforma,
 		     );
 # hash for proforma that are not checked because the proforma is new and checking is being implemented in new Harvard python parser.
 my %not_checked = (
@@ -938,6 +988,7 @@ my %good_symbol = (
 			'F1a' => 'MULTI:gene product',
 			'TC1a' => 'FBtc',
 			'TO1a' => 'FBto',
+			'SN1a' => 'FBsn',
 		  );
 
 # Proforma fields which may invalidate one or more symbols.
@@ -978,6 +1029,8 @@ my %bad_symbol = (
 			'TC1g' => 'FBtc',
 			'TO1c' => 'FBto',
 			'TO1g' => 'FBto',
+			'SN1d' => 'FBsn',
+			'SN1e' => 'FBsn',
 
 			
 		 );
@@ -1273,11 +1326,11 @@ init_symbol_table ($Peeves_version, $pcfg, $ccfg);
 # have to switch it off.
 
 	    my @proforma_lines = split (/\n/, $proforma);
-	    foreach (grep /^!c? (G|A|MP|P|GA|MA|AB|MS|TE|DB|LC|GG|HH|IN|SP|DB|SF|TC|TO)\d+[a-z]?\.[^:]+$/, @proforma_lines)
+	    foreach (grep /^!c? (G|A|MP|P|GA|MA|AB|MS|TE|DB|LC|GG|HH|IN|SP|DB|SF|TC|TO|SN)\d+[a-z]?\.[^:]+$/, @proforma_lines)
 	    {
 		report ($file, "Possibly missing colon in '%s'", $_);
 	    }
-	    foreach (grep /^c? (G|A|MP|P|GA|MA|AB|MS|TE|DB|LC|GG|HH|IN|SP|DB|SF|TC|TO)\d+[a-z]?\./, @proforma_lines)
+	    foreach (grep /^c? (G|A|MP|P|GA|MA|AB|MS|TE|DB|LC|GG|HH|IN|SP|DB|SF|TC|TO|SN)\d+[a-z]?\./, @proforma_lines)
 	    {
 		report ($file, "Possibly missing ! in '%s'", $_);
 	    }

@@ -106,9 +106,7 @@ FIELD:
 #	elsif ($field =~ /^(.*?)\s+(??insert field code here??)\..*? :(.*)/s)
 #	{
 #		check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
-#	    check_non_utf8 ($file, $2, $3);
-#	    check_non_ascii ($file, $2, $3);
-#	    double_query ($file, $2, $3) or validate_stub ($file, $1, $2, $3);
+#		validate_stub ($file, $1, $2, $3);
 #	}
 
 	elsif ($field =~ /^(.*?)\s+<add code prefix for proforma type e.g. MA here>(.+?)\..*?:(.*)$/s)

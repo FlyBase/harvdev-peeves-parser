@@ -1,0 +1,46 @@
+
+## ! SN6b.  Unassigned phenotype(s) (anatomy)                [FBcv term] :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+### !c Applicable:
+
+No (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+
+No (implemented)
+
+### Checks:
+
+
+
+### Related fields:
+
+
+
+### Comments:
+
+No checks on content of the field carried out yet - complex phenotypic statement with | 
+
+### Status:
+
+
+
+### Updated:
+
+gm231115.
