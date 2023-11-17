@@ -1057,10 +1057,8 @@ my $dv_short_qualifiers = {
     set_symbol ('dg', 'cur_type', 'CAMCUR');
     set_symbol ('gm', 'cur_type', 'CAMCUR');
     set_symbol ('sm', 'cur_type', 'CAMCUR');
-    set_symbol ('vt', 'cur_type', 'CAMCUR');
     set_symbol ('ga', 'cur_type', 'GOCUR');
     set_symbol ('ha', 'cur_type', 'GOCUR');
-    set_symbol ('pg', 'cur_type', 'GOCUR');
     set_symbol ('up', 'cur_type', 'GOEXT');
     set_symbol ('pl', 'cur_type', 'BIBLIO');
     set_symbol ('as', 'cur_type', 'USER');
@@ -1076,6 +1074,7 @@ my $dv_short_qualifiers = {
     set_symbol ('pt', 'cur_type', 'AUTO');
     set_symbol ('tl', 'cur_type', 'UNMCUR');
 
+    set_symbol ('rs', 'cur_type', 'CAMCUR');
 
 #  Curator shortcuts are integers or abbreviations which translate into proforma-dependent strings on parsing.
 #  Peeves doesn't care about their values, only their validity, but the translations are given here so that
@@ -7214,6 +7213,7 @@ my $dv_short_qualifiers = {
 # fields that can only contain 'n'
 	set_symbol ('negative', 'current_value', 'n');
 	set_symbol ('SN1g_value', 'current_value', 'wild type');
+
 	
 # allowed value for IN2b, plus double check its still a current psi-mi term
 	set_symbol ('IN2b_value', 'current_value', 'physical association');

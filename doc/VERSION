@@ -982,3 +982,5 @@ our $Peeves_version = "2.48.3"; #  Allow FBsf in free text in stamps (relates to
 our $Peeves_version = "2.49"; #  add G41 gene.pro field checks (DC-1058).
 # 15.11.2023
 our $Peeves_version = "2.50"; #  add strain proforma checking.
+# 17.11.2023
+our $Peeves_version = "2.51"; #  updating curator information.

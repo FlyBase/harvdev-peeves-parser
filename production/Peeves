@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.50"; #  add strain proforma checking.
+our $Peeves_version = "2.51"; #  updating curator information.
 
 =head2 Version
 
