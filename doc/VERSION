@@ -980,3 +980,6 @@ our $Peeves_version = "2.48.2"; #  DC-913: allow FBsf in moseg.pro experimental 
 our $Peeves_version = "2.48.3"; #  Allow FBsf in free text in stamps (relates to DC-911 and DC-913).
 # 7.11.2023
 our $Peeves_version = "2.49"; #  add G41 gene.pro field checks (DC-1058).
+# 17.11.2023
+our $Peeves_version = "2.50"; #  TESTING: do some strain stuff (Gil).
+
