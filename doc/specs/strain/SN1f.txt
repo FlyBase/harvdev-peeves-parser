@@ -1,0 +1,59 @@
+
+## ! SN1f.  Species of strain (predominant if hybrid) [symbol] :
+
+### Multiple values allowed:
+
+No (Implemented)
+
+
+### !c Applicable:
+
+No (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No - see 'Cross-checks done after parsing the entire proforma' below.
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+
+Checks within field (Implemented in validate_species_abbreviation_field):
+
+* The value must be a valid drosophilid species abbreviation.
+
+
+Cross-checks done after parsing the entire proforma:
+
+* check_filled_in_for_new_feature :
+
+  * Must be filled in for a new strain
+
+  * Must NOT be filled in for an existing strain (including strains being renamed or merged).
+
+### Related fields:
+
+
+
+### Comments:
+
+(Have implemented checks the same as for MA20).
+
+### Status:
+
+
+
+### Updated:
+
+gm231115.

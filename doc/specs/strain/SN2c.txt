@@ -1,9 +1,10 @@
 
-## ! TO2c.  Action - rename this experimental tool name             :
+## ! SN2c.  Action - replace this strain name          :
 
 ### Multiple values allowed:
 
 No (Implemented)
+
 
 ### !c Applicable:
 
@@ -14,9 +15,11 @@ No (Implemented)
 
 No (Implemented)
 
+
 ### Mandatorially has value:
 
 No (Implemented)
+
 
 ### Dupl. for multiple field:
 
@@ -31,11 +34,11 @@ Cross-checks within field:
 
 Cross-checks between fields:
 
-* If TO2c is filled in, TO2a must be filled in (compare_field_pairs, pair_test = 'dependent')
+* If SN1e (merge field) is filled in, SN2c must not be filled in (compare_field_pairs, pair_test = 'single')
 
-* If TO2c and TO2a are both filled in, they must not be the same value  (compare_field_pairs, identity_test = 'not same')
+* If SN2c is filled in, SN2a must be filled in (compare_field_pairs, pair_test = 'dependent')
 
-* If TO1g (merge field) is filled in, TO2c must not be filled in (compare_field_pairs, pair_test = 'single')
+* If SN2c and SN2a are both filled in, they must not be the same value  (compare_field_pairs, identity_test = 'not same')
 
 
 ### Related fields:
@@ -46,9 +49,7 @@ Cross-checks between fields:
 
 
 
-
 ### Status:
-
 
 Not yet implemented:
 
@@ -58,4 +59,4 @@ Not yet implemented:
 
 ### Updated:
 
-gm171114.
+gm231115.

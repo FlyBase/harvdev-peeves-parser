@@ -1,18 +1,20 @@
 
-## ! TO1h. Action - obsolete TO1a in FlyBase (y/blank)       :
+## ! SN3a.  Action - obsolete SN1b in FlyBase  (y/blank) TAKE CARE      :
 
 ### Multiple values allowed:
 
-No (Implemented)
+No (Implemented in validate_obsolete)
+
 
 ### !c Applicable:
 
-No (Implemented)
+No (Implemented in validate_obsolete)
 
 
 ### Inclusion essential:
 
 No (Implemented)
+
 
 ### Mandatorially has value:
 
@@ -36,7 +38,6 @@ Checks within field (validate_obsolete subroutine)
 * if the field is filled in with 'y' a warning is still given, since this is a potentially dangerous field.
 
 
-
 ### Related fields:
 
 
@@ -44,8 +45,8 @@ Checks within field (validate_obsolete subroutine)
 ### Comments:
 
 
-### Status:
 
+### Status:
 
 Not yet implemented:
 
@@ -54,6 +55,7 @@ Not yet implemented:
 * the value in the primary symbol field must already be in chado
 
 
+
 ### Updated:
 
-gm171114.
+gm231115.

@@ -1,0 +1,50 @@
+
+## ! SN5e.  Associated homozygous transgenic insertion(s)  [symbol] :
+
+### Multiple values allowed:
+
+Yes (implemented)
+
+
+### !c Applicable:
+
+Yes (implemented)
+
+
+### Inclusion essential:
+
+No (implemented)
+
+
+### Mandatorially has value:
+
+No (implemented)
+
+
+### Dupl. for multiple field:
+
+No (implemented)
+
+
+### Checks:
+
+Checks within field:
+
+* check_valid_symbol_field sub checks that any value is a valid insertion symbol (either in chado or generated in record)
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm231115.

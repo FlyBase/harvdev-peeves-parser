@@ -1,0 +1,76 @@
+! STRAIN PROFORMA               Version 19: 2 May 2013
+!
+! SN1b.  FlyBase strain ID (FBsn, required if not new)  :FULL
+! SN1a.  Strain symbol to use in FlyBase                :FULL
+! SN1c.  Strain symbol(s) used in reference             :FULL
+! SN1f.  Species of strain (predominant if hybrid) [symbol] :FULL
+! SN1g.  Strain type (free text; use "wild type")   :FULL
+!
+! SN2a.  Action - strain name to use in FlyBase     :FULL
+! SN2b.  Strain name(s) used in reference           :FULL
+! SN2c.  Action - replace this strain name          :BASIC ONLY
+!
+! SN1d.  Action - rename this strain symbol (existing symbol)        :FULL
+! SN1e.  Action - merge these strains (symbol)                       :FULL
+! SN3a.  Action - obsolete SN1b in FlyBase  (y/blank) TAKE CARE      :FULL
+! SN3b.  Action - dissociate SN1b from reference (y/blank) TAKE CARE :FULL
+!
+! SN12.  Description/comments  :FULL
+!
+! SN4.   Derived from strain  [symbol] :FULL
+!
+! SN5a.  Associated homozygous allele(s)                [symbol] :FULL
+! SN5b.  Associated heterozygous allele(s)              [symbol] :FULL
+! SN5c.  Associated homozygous aberration(s)            [symbol] :FULL
+! SN5d.  Associated heterozygous aberration(s)          [symbol] :FULL
+! SN5e.  Associated homozygous transgenic insertion(s)  [symbol] :FULL
+! SN5f.  Associated heterozygous transgenic insertion(s)[symbol] :FULL
+!
+! SN6a.  Unassigned phenotype(s) (class | qualifier(s))   [FBcv term] :BASIC ONLY
+! SN6b.  Unassigned phenotype(s) (anatomy)                [FBcv term] :BASIC ONLY
+! SN6c.  Selected phenotype(s)   (class | qualifier(s))   [FBcv term] :BASIC ONLY
+! SN6d.  Selected phenotype(s)   (anatomy)                [FBcv term] :BASIC ONLY
+! SN6e.  Unassigned phenotype comments :
+! SN6f.  Selected phenotype comments   :
+! SN6g.  General phenotype comments    :FULL
+!
+! SN15a. Assayed for quantative trait phenotype(s)   [GO term] :
+! SN15b. Quantitative trait assay comments                     :FULL
+!
+! SN16a. Endosymbiont assay [organism present/organism absent] :
+! SN16b. Endosymbiont assay comment                            :
+!
+! SN7a.  Natural P-element transposon status [present/absent] :
+! SN7b.  Natural hobo transposon status      [present/absent] :
+! SN7c.  Natural transposon related comments                  :
+!
+! SN8a.  Characterized genome sequence (dupl for multiple) [whole genome or specify arm] :
+! SN8b.  Whole genome sequence accession         :
+! SN8c.  Other genome characterization [SoftCV]  :
+! SN8d.  Characterization comments               :
+!
+! SN9a.  Isogenized chromosome(s)          [X/Y/2/3/4] :FULL
+! SN9b.  Year isogenized (in or prior to)     [YYYY] :
+! SN9c.  Isogenization comment                       :
+! SN9d.  Extracted chromosome(s)           [X/Y/2/3/4] :FULL
+! SN9e.  Inbred?                                   [y] :FULL
+! SN9f.  Founded as [isofemale line/multi-female line] :FULL
+! SN9g.  Breeding comments                             :FULL
+!
+! SN10a.  Introgressed chromosome, arm, or "segment" (dupl for multiple) :
+!   SN10b.  Introgressed chromosome etc. species                [symbol] :
+!   SN10c.  Introgressed chromosome etc. comments  :
+!
+! SN11a. Collection site, country                      :
+! SN11b. Collection site, state or region              :
+! SN11c. Collection site, city or local place name     :
+! SN11d. Collection site, latitude (decimal degrees)   :
+! SN11e. Collection site, longitude (decimal degrees)  :
+! SN11f. Collection date     [MM.DD.YYYY/MM.YYYY/YYYY] :
+! SN11g. Collection season [winter/spring/summer/fall] :
+! SN11h. Collection substrate                          :
+! SN11i. Collection comments                           :
+!
+! SN14.  Member of dataset  [symbol] :FULL
+!
+! SN13.  Internal notes   :FULL

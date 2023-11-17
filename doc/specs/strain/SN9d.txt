@@ -1,0 +1,56 @@
+
+## ! SN9d.  Extracted chromosome(s)           [X/Y/2/3/4] :
+
+### Multiple values allowed:
+
+Yes (Implemented)
+
+
+### !c Applicable:
+
+Yes (Implemented)
+
+
+### Inclusion essential:
+
+No (Implemented)
+
+
+### Mandatorially has value:
+
+No (Implemented)
+
+
+### Dupl. for multiple field:
+
+No (Implemented)
+
+
+### Checks:
+
+Checks within field:
+
+uses 'validate_cvterm_field' which:
+
+ * check_for_duplicated_lines:
+    * warns if there is a blank line within the data
+    * warns if there are any duplicated values
+
+* checks each value is a valid chromosome (e.g. '2') - the allowed values are stored in symtab.pl with type 'chromosome'.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+
+
+### Status:
+
+
+
+### Updated:
+
+gm231115.
