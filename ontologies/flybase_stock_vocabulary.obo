@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: 2018-05-03
-date: 18:03:2020 10:08
-saved-by: gm119
+date: 26:09:2022 09:44
+saved-by: Administrator
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: FlyBase_stock_CV
 
@@ -224,6 +224,26 @@ synonym: "GVADpC" EXACT []
 is_obsolete: true
 created_by: Administrator
 creation_date: 2018-03-12T06:30:46Z
+
+[Term]
+id: FBsv:0000112
+name: Korea Drosophila Resource Center
+namespace: stock_collection
+def: "The collection of the Korea Drosophila Resource Center (KDRC), Gwangju Institute of Science and Technology (GIST), Republic of Korea." [FlyBase:GM]
+synonym: "KDRC" EXACT []
+is_a: FBsv:0000101 ! stock center collection
+created_by: Administrator
+creation_date: 2021-12-02T11:42:09Z
+
+[Term]
+id: FBsv:0000113
+name: National Institute of Genetics Fly Stocks
+namespace: stock_collection
+def: "The fly stock collection of the National Institute of Genetics (NIG), Mishima, Japan." [FlyBase:GM]
+synonym: "NIG-Fly" EXACT []
+is_a: FBsv:0000101 ! stock center collection
+created_by: Administrator
+creation_date: 2022-09-26T09:44:00Z
 
 [Term]
 id: FBsv:0000500
