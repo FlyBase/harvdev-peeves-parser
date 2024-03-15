@@ -26,15 +26,18 @@ No (Implemented)
 
 Checks within field:
 
-* sub 'validate_synonym_field' (called in elsif loop for field):
+* sub 'validate_synonym_field':
 
   * uses 'check_for_duplicated'_lines to check that there are no duplicated synonyms and no empty lines
 
-  * warns if any synonym in G1b corresponds exactly to an antibody term (monoclonal/polyclonal) - as this is usually a pasto.
-
   * warns if the synonym is composed entirely of punctuation character(s).
 
+  * warns if the synonym starts with ':'.
+
   * warns if the field is filled in for a 'user' or 'auto' curation record.
+
+  * warns if any synonym in G1b corresponds exactly to an antibody term (monoclonal/polyclonal) - as this is usually a pasto.
+
 
 Checks between fields:
 
@@ -54,4 +57,4 @@ Checks between fields:
 
 ### Updated:
 
-gm170420.
+gm240301.

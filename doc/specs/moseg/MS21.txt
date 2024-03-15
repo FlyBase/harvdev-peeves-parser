@@ -29,7 +29,7 @@ No (Implemented)
 
 Checks within field:
 
-* sub check_valid_symbol_field checks that any value is the valid symbol of a natTE in chado or generated in the record.
+* sub check_valid_chado_symbol_field checks that any value is the valid symbol of a natTE in chado.
 
 
 Cross-checks between fields:
@@ -63,4 +63,4 @@ Cross-checks between fields:
 
 ### Updated:
 
-gm151001.
+gm240314.

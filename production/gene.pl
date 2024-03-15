@@ -663,8 +663,35 @@ compare_field_pairs ($file, $g_num_syms, 'G2c', \@G2c_list, 'G2a', \@G2a_list, \
 
 						}
 					}
+				} elsif ($object_status eq 'new') {
+				# a lot of the checks for new objects are done using check_filled_in_for_new_feature so this loop only contains those that need to be handled a bit differently
+					if (scalar @{$g_gene_sym_list}>1 or scalar @{$g_gene_species_list}>1) {
+
+						report ($file, "When gene symbol(s) in G1a contain hashing, Peeves can\'t manage G35 and G26 checking for new gene entries. Either submit the hashed proforma at your own risk ;), or separate out the genes into separate proformae for more complete peeves checking.");
+
+
+
+					} else {
+
+						my $gene_species = $g_gene_species_list->[0];
+
+						unless (valid_symbol ($gene_species, "taxgroup:drosophilid")) {
+
+							unless ($G26_data) {
+
+								report ($file, "%s must be filled in for a new non-drosophilid gene.\n!%s\n", "G26", $proforma_fields{'G1a'});
+
+							}
+
+							unless ($G35_data) {
+
+								report ($file, "%s must be filled in for a new non-drosophilid gene.\n!%s\n", "G35", $proforma_fields{'G1a'});
+
+							}
+
+						}
+					}
 				}
-# have not got a loop for  ($object_status eq 'new') as will try adding those checks using check_filled_in_for_new_feature
 
 
 			}
@@ -681,6 +708,9 @@ compare_field_pairs ($file, $g_num_syms, 'G2c', \@G2c_list, 'G2a', \@G2a_list, \
 # G1e and G1f must not both contain data.
 
 	rename_merge_check ($file, 'G1e', \@G1e_list, $proforma_fields{'G1e'}, 'G1f', \@G1f_list, $proforma_fields{'G1f'});
+
+# check for rename across species.
+	check_for_rename_across_species ($file, $g_num_syms, 'G', $g_gene_species_list, \@G1e_list, \%proforma_fields);
 
 # no !c if G1f is filled in
 
@@ -799,6 +829,20 @@ compare_field_pairs ($file, $g_num_syms, 'G6', \@G6_list, 'G5', \@G5_list, \%pro
 compare_field_pairs ($file, $g_num_syms, 'G91', \@G91_list, 'G91a', \@G91a_list, \%proforma_fields, 'pair::if either is filled in', '');
 
 check_filled_in_for_new_feature ($file, 'G30', $g_num_syms, \@G30_list, \@G1g_list, \@G1e_list, \@G1f_list, \%proforma_fields, 'yes');
+
+# check that new foreign gene information is attributed to the correct reference
+
+	if ($G26_data) {
+		$g_FBrf eq 'FBrf0199194' and return;
+		report ($file, "%s data must be attributed to the FBrf0199194 reference but P22 specifies '%s'.", 'G26', $g_FBrf ? $g_FBrf : ($unattributed ? 'unattributed' : 'new'));
+
+	}
+
+	if ($G35_data) {
+		$g_FBrf eq 'FBrf0199194' and return;
+		report ($file, "%s data must be attributed to the FBrf0199194 reference but P22 specifies '%s'.", 'G35', $g_FBrf ? $g_FBrf : ($unattributed ? 'unattributed' : 'new'));
+
+	}
 
 # gene summary field checks
 
@@ -1650,6 +1694,7 @@ sub crosscheck_G26_G35 ($$) {
 			($G26_species, $G26_gene, $G26_accession_no) = ($1, $2, $4);
 		}
 
+		my $found_accession = 0;
 		foreach my $database_id (split /\n/, $G35_data) {
 
 # The only check done here is for lines that have a valid database abbreviation
@@ -1657,20 +1702,53 @@ sub crosscheck_G26_G35 ($$) {
 			if ($database_id =~ m/^(.*?):(.*)/) {
 				my ($database, $accession) = ($1, $2);
 
-				if (valid_symbol ($database, 'foreign_database')) {
+				my $gene = $g_gene_sym_list->[0];
+				my $gene_species = $g_gene_species_list->[0];
+				my $official_db = valid_symbol ($gene_species, 'official_db');
+				if ($official_db) {
 
-					my $database_species = valid_symbol ($database, 'foreign_database');
-					my $gene = $g_gene_sym_list->[0];
-					my $gene_species = $g_gene_species_list->[0];
+					unless ($database eq $official_db) {
 
-					$gene_species eq $database_species or report ($file,
-					  "G35: Mismatch between species '%s' of gene symbol '%s' in preceding G1a " .
-					  "and the species expected ('%s') for the database abbreviation in '%s'",
-					  $gene_species, $gene, $database_species, $database_id);
+						report ($file, "G35: The expected database for species '%s' of gene symbol '%s' is '%s', but the accession '%s' in G35 has '%s'.", $gene_species, $gene, $official_db, $database_id, $database);
 
+
+					}
+
+				} else {
+
+					unless ($database eq 'GB' || $database eq 'UniProtKB') {
+
+						report ($file, "G35: The database for the accession for a species without an 'official database' (SP6) is typically 'GB' or 'UniProtKB', but you have '%s' in '%s' - was this deliberate ?", $database, $database_id);
+
+					}
 				}
 
-				$database_id eq $G26_accession_no or report ($file, "Mismatch between accession number '%s' given in G35 and accession portion '%s' given in G26.", $database_id, $G26_accession_no);
+
+				if ($database_id eq $G26_accession_no) {
+					$found_accession++;
+
+				} else {
+
+					if ($G26_data) {
+						report ($file, "Mismatch between accession number '%s' given in G35 and accession portion '%s' given in G26.", $database_id, $G26_accession_no);
+					} else {
+
+						report ($file, "G35 contains accession number '%s' but G26 is not filled in.", $database_id);
+
+					}
+
+				}
+			}
+		}
+
+		if ($G26_accession_no) {
+
+			# add this to prevent 2 error messages for case where both G26 and G35 are filled in but accessions do not match.
+			unless ($G35_data) {
+				unless ($found_accession) {
+
+					report ($file, "G26 contains the accession %s, but it is missing from the G35 field.", $G26_accession_no);
+				}
 			}
 		}
 	}

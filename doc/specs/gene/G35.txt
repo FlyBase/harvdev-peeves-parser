@@ -40,20 +40,24 @@ where
 
 *  <accession number> is the accession number of the foreign gene.  
 
+* For new non-drosophilid genes, warns if G35 is not filled in.
+
 * Did not add code to cope with hashed proformae as that would get complicated, and I don't think we'll be wanting to do that anyway.  Added a message that warns that less checking is done if hashes are used.
 
 
 Cross-checks with other fields
 
-* 1. If G26 is filled in, G35 must be filled in (NB, not implemented directly, but because of cross check 3 below, will effectively generate an error message if one field is filled in and the other isn't)  
+* If G26 is filled in and includes an accession number, that accession number must be present in G35.
 
-* 2. If G35 is filled in, G26 must be filled in (NB, not implemented directly, but because of cross check 3 below, will effectively generate an error message if one field is filled in and the other isn't)  
-
-* 3. The value in G35 must match the <accession number> portion of the value in G26  
+* If G35 is filled in, G26 must be filled in and the accession number in G35 must match the accession number part of the G26 line.  
 
 
-* a small number of spcies are cross-checked (using 'foreign_database' in symtab.pl) to check that the database abbreviation used in G35 matches the species of the gene in G1a.
+* If there is an 'official_db' (SP6 value) in the database for the species of the gene in G1a, then it checks that the accession in G35 is from that database, and warns if not.
 
+* If there is no 'official_db' in the database for the species of the gene in G1a, then it warns if the accession is not from either GB or UniProtKB.
+
+
+* If G35 is filled in, warns if the FBrf is not FBrf0199194.
 
 
 
@@ -70,7 +74,6 @@ Not implemented:
 
 * Must be filled in for a new foreign gene
 
-* Must not be filled in for a tag
 
 
 * Once organism info updated to contain 'official db' info, should use this to cross-check the database used in G35 with the species of the gene in G1a, and remove 'foreign_database' info from symtab.pl
@@ -78,4 +81,4 @@ Not implemented:
 
 ### Updated:
 
-gm160108.
+gm240314.

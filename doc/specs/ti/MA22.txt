@@ -30,15 +30,7 @@ No (Implemented)
 
 Checks within field:
 
-* validate_synonym_field does:
-
-   * check_for_duplicated_lines:
-
-    * warns if there is a blank line within the data
-    * warns if there are any duplicated values
-    * warns if the synonym is composed entirely of punctuation character(s).
-  * warns if the field is filled in for a 'user' or 'auto' curation record.
-
+* sub 'validate_synonym_field' - see specs/allele/GA1b.txt for details.
 
 ### Related fields:
 
@@ -53,4 +45,4 @@ doc reflects what is implemented
 
 ### Updated:
 
-gm170420.
+gm240301.

@@ -271,6 +271,10 @@ FIELD:
 
     rename_merge_check ($file, 'AB1e', \@AB1e_list, $proforma_fields{'AB1e'}, 'AB1f', \@AB1f_list, $proforma_fields{'AB1f'});
 
+# check for rename across species.
+	check_for_rename_across_species ($file, $hash_entries, 'AB', $primary_species_list, \@AB1e_list, \%proforma_fields);
+
+
 # no !c if AB1f is filled in
 
 	plingc_merge_check ($file, $change_count,'AB1f', \@AB1f_list, $proforma_fields{'AB1f'});

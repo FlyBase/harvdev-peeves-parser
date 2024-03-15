@@ -24,13 +24,11 @@ No (Implemented)
 
 ### Checks:
 
-Checks within field, using'check_valid_symbol_field':
+Checks within field:
 
-* check_for_duplicated_lines:
-   * warns if there is a blank line within the data
-   * warns if there are any duplicated values
 
-* checks value is a valid symbol of an allele in chado/generated in the record
+* check_valid_chado_symbol_field subroutine
+
 
 ### Related fields:
 
@@ -47,4 +45,4 @@ All specs implemented.
 
 ### Updated:
 
-gm151001.
+gm240314.

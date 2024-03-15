@@ -33,8 +33,8 @@
 ! G24f. GO - Date stamp (y, n, or YYYYMMDD)                    :PARTIAL
 ! G34.  Antibody generated (monoclonal/polyclonal)      *s :NA
 ! G14a. Miscellaneous comments                              *u :NA
-! G26.  Tag/Foreign gene summary information             *u :PARTIAL:DC-417
-! G35.  Reference database ID for foreign sequence          :PARTIAL:DC-417
+! G26.  Tag/Foreign gene summary information             *u :FULL
+! G35.  Reference database ID for foreign sequence          :FULL
 ! G40. Commonly used as experimental tool [CV] :NOT YET IMPLEMENTED
 ! G32.  Newly assigned annotation ID (CG/CR number) TAKE CARE :NOT YET IMPLEMENTED
 ! G33.  Sequence accession number - seq cur only                :NA

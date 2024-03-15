@@ -27,15 +27,16 @@ No (Implemented)
 
 ### Checks:
 
-Checks within field:
-
-* sub 'validate_synonym_field' (called in elsif loop for field):
+* sub 'validate_synonym_field':
 
   * uses 'check_for_duplicated'_lines to check that there are no duplicated synonyms and no empty lines
 
   * warns if the synonym is composed entirely of punctuation character(s).
 
+  * warns if the synonym starts with ':'.
+
   * warns if the field is filled in for a 'user' or 'auto' curation record.
+
 
 Checks between fields:
 
@@ -56,4 +57,4 @@ Checks between fields:
 
 ### Updated:
 
-gm17420.
+gm240301.

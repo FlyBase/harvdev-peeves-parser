@@ -1,4 +1,4 @@
-! MOLECULAR SEGMENT AND CONSTRUCT PROFORMA           Version 29: 16 June 2014
+! MOLECULAR SEGMENT AND CONSTRUCT PROFORMA           Version 33: 29 Feb 2024
 !
 ! MS1f. Database ID for segment (FBid or "new") :PARTIAL
 ! MS1a. Segment symbol to use in database       :PARTIAL:DC-497
@@ -7,8 +7,6 @@
 !
 ! MS4a. Description [CV]                        :PARTIAL
 ! MS21. Transposon class (generic)              :FULL
-! MS14. Uses [CV]                               :FULL
-! MS22. Localized function [CV]      :NA
 !
 ! MS1c. Action - replace this segment symbol :PARTIAL
 ! MS1g. Action - merge these segments (FBid) :PARTIAL
@@ -29,8 +27,6 @@
 ! MS4b.  Length in kb          :NA
 !
 ! MS4h.  Component allele(s)          :NA
-! MS4g.  Component features [CV]      :NA
-! MS17.  Transcript (expression data) :NA
 !
 ! MS1e.  Type of DNA_segment [CV]              :NA
 ! MS4e.  Component segment source (species)    :NA

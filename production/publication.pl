@@ -498,6 +498,16 @@ FIELD:
 		}
 	}
 
+	if ($g_FBrf eq '' && $g_pub_type && valid_symbol($g_pub_type, 'needs_related_pub')) {
+
+		unless ($P31_list) {
+
+			report ($file, "%s: Related publication must be filled in for a new publication of type '%s'.", 'P31', $g_pub_type);
+
+		}
+	}
+
+
 # checks that fields which can contain FBrf id(s) do not contain the same FBrf number(s)
 
 	compare_pub_fbrf_containing_fields ($file, 'P22', $g_FBrf, 'P30', $P30_list, \%proforma_fields);
@@ -524,6 +534,11 @@ FIELD:
 
 		}
 	}
+
+#
+check_pub_accession_against_chado ($file, 'P11d', $g_FBrf, $P32_list, $p11d_data, 'DOI', 'DOI');
+check_pub_accession_against_chado ($file, 'P26', $g_FBrf, $P32_list, $P26_data, 'pubmed', 'PubMed ID');
+check_pub_accession_against_chado ($file, 'P28', $g_FBrf, $P32_list, $P28_data, 'PMCID', 'PubMed Central ID');
 
 ### End of tests that can only be done after parsing the entire proforma. ###
 
@@ -1294,19 +1309,65 @@ sub validate_P11d ($$$)
 	return;
     }
 
-# Now we perform perfunctory checks on the DOI given.
+# Now we perform checks on the DOI syntax.
 
-#  Very perfunctory, because we don't really know what to do about a DOI yet.  There's no data in Chado nor
-#  space to store it there.  The code below should look rather similar to the corresponding portion of
-#  validate_P11b().
+	if (my ($doi_prefix, $doi_suffix) = ($doi =~ m|^(.+?)\/(.+)$|)) {
+
+		if ($doi_prefix =~ m/^(doi:? *)/i) {
+
+			report ($file, "%s: Do NOT include '%s' in '%s'", $code, $1, $doi);
+			$doi_prefix =~ s/^(doi:? *)//i;
+			$doi =~ s/^(doi:? *)//i;
+		}
+
+		unless ($doi_prefix =~ m/^[0-9]{1,}\.[0-9.]{1,}/) {
+
+			report ($file, "%s: The DOI prefix part '%s' does not match expected format (dd.dd, dd.dd.dd etc) in '%s'", $code, $doi_prefix, $doi);
+
+		} else {
+
+
+			unless ($doi_prefix =~ m/^10\./) {
+
+			report ($file, "%s: The DOI prefix part '%s' does not start with '10' in '%s' (this is unusual, are you sure it is correct?)", $code, $doi_prefix, $doi);
+
+			}
+
+		}
+
+		if ($doi_suffix =~ m/\.$/) {
+
+			report ($file, "%s: The DOI number must not end with a '.' in '%s'", $code, $doi);
+			$doi_suffix =~ s/\.$//i;
+			$doi =~ s/\.$//i;
+		}
+
+		
+		if ($doi_suffix =~ m/ /) {
+
+			report ($file, "%s: The DOI suffix part '%s' must not contain a space in '%s'", $code, $doi_suffix, $doi);
+		}
+
+
+	} else {
+
+		report ($file, "%s: DOI does not match the basic syntax (doi_prefix/doi_suffix) in '%s'", $code, $doi);
+
+
+	}
 
     if ($g_FBrf)			# There is data, so check if it's a known publication
     {
+
+	check_changes_with_chado ($file, $code, $change, $g_FBrf, 'DOI',
+				  chat_to_chado ('pub_accession', $g_FBrf, 'DOI'), $doi);
     }
     else	    # Data for a new publication.  Must not be a change type but otherwise nothing else to do.
     {
 	report ($file, "%s: Can't change the DOI of a new publication!", $code) if $change;
     }
+
+	$p11d_data = $doi; # put the latest version of $doi into $p11_data so that is used for check_pub_accession_against_chado
 }
 
 sub validate_P10 ($$$)
@@ -2368,6 +2429,55 @@ sub compare_pub_fbrf_containing_fields {
 	}
 }
 
+sub check_pub_accession_against_chado {
 
+# Check whether the 'accession' (dbxref) in a publication field is already in chado
+# If it is in chado already:
+# for new publications, warn that are trying to add an accession already in chado to a new publication
+# for existing publications, check that the FBrf the accession is associated with in chado is the same as the FBrf in P22 (and warn if not).
+
+	my ($file, $code, $FBrf, $P32_list, $accession, $type, $label) = @_;
+
+	my $chado_ref = chat_to_chado ('accession_pub', $accession, $type);
+
+	if (defined $chado_ref) {
+
+		foreach my $element (@{$chado_ref}) {
+
+			my ($FBrf_in_chado) = @{$element};
+
+			unless ($FBrf_in_chado eq $FBrf) {
+
+				if ($FBrf) {
+
+					unless ($P32_list) {
+						report ($file, "%s: The %s '%s' is already in chado under a different FBrf (%s) from the value in P22 (%s)", $code, $label, $accession, $FBrf_in_chado, $FBrf);
+					} else {
+						my $switch = 0;
+						my @losing_FBrfs = split '\n', $P32_list;
+						foreach my $losing_FBrf (@losing_FBrfs) {
+
+							if ($FBrf_in_chado eq $losing_FBrf) {
+								$switch++;
+							}
+						}
+
+						unless ($switch) {
+
+							report ($file, "%s: The %s '%s' is already in chado under a different FBrf (%s) from the values in P22 (%s) and in P32 (%s)", $code, $label, $accession, $FBrf_in_chado, $FBrf, (join ', ', @losing_FBrfs));
+
+						}
+					}
+				} else {
+
+
+					report ($file, "%s: The %s '%s' is already in chado under %s but you are trying to add it to a new publication.", $code, $label, $accession, $FBrf_in_chado);
+				}
+			}
+		}
+	}
+
+
+}
 
 1;				# Standard boilerplate.

@@ -7,7 +7,7 @@ No (implemented)
 
 ### !c Applicable:
 
-Yes (implemented)
+No (implemented)
 
 ### Inclusion essential:
 
@@ -56,4 +56,4 @@ Checks between fields:
 
 ### Updated:
 
-gm230912.
+gm240229.

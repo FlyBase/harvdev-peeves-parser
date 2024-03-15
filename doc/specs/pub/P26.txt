@@ -24,27 +24,26 @@ No (Implemented)
 ### Checks:
 
 
-Checks within validate_P26
+Checks within field (validate_P26)
 
 * Any value must consist of 8 digits (not starting with a leading zero), else a warning is issued
 
 
-* If !c is used:
+Checks against data in chado:
 
-  * P22 must contain a valid value
-  * the value given in P26 must be different from the value stored in Chado for the publication specified by the value given in P22.
-
-If !c is not used:
-
-* if P22 contains a valid value, either:
-    * the value given in P26 must be identical to the value
-stored in Chado for the publication specified by the value given in
-P22 or
-    * P26 must contain a valid value and no value is stored in
-Chado for the publication specified by the value given in P22;
+* a warning is given if try to !c the PubMed ID for a new publication
 
 
-The following is implemented as a check after the whole proforma has been parsed:
+* check_changes_with_chado subroutine:
+
+   - If it is an existing publication (P22 contains a valid value), the check_changes_with_chado subroutine is used to see whether the value in the field is the same as that already stored in Chado *for that FBrf*, and gives a warning if this is not consistent with the use (or not) of !c. This subroutine only compares the data that is already stored in Chado *for that FBrf* so another check is required to check that the PubMed ID is not already under another publication (see check_pub_accession_against_chado below).
+
+* check_pub_accession_against_chado subroutine:
+
+  - checks whether the PubMed ID in P26 is already in chado:
+
+    - for new publications, warn that are trying to add an accession already in chado to a new publication
+    - for existing publications, check that the FBrf the accession is associated with in chado is the same as the FBrf in P22 and warn if not.
 
 - if it is a new publication and the publication type is a 'regular' publication (so *not* one of the 'not_regular_pub' types stored in symtab.pl) but isn't a 'supplementary material', P26 must be filled in.
 
@@ -63,4 +62,4 @@ Further information about PubMed and PMIDs may be found at http://www.ncbi.nlm.n
 
 ### Updated:
 
-gm170127.
+gm240313.

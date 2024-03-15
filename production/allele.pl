@@ -622,6 +622,10 @@ FIELD:
 
     rename_merge_check ($file, 'GA1e', \@GA1e_list, $proforma_fields{'GA1e'}, 'GA1f', \@GA1f_list, $proforma_fields{'GA1f'});
 
+# check for rename across species.
+	check_for_rename_across_species ($file, $hash_entries, 'GA', $primary_species_list, \@GA1e_list, \%proforma_fields);
+
+
 # no !c if GA1f is filled in
 
 	plingc_merge_check ($file, $change_count,'GA1f', \@GA1f_list, $proforma_fields{'GA1f'});
@@ -636,9 +640,8 @@ compare_field_pairs ($file, $hash_entries, 'GA1f', \@GA1f_list, 'GA2c', \@GA2c_l
 
 compare_field_pairs ($file, $hash_entries, 'GA30c', \@GA30c_list, 'GA30d', \@GA30d_list, \%proforma_fields, 'single::(except in rare cases, which is usually some kind of sensor tool)', '');
 
-# If GA35 is filled in then neither of the encoded tool fields (GA30c or GA30d) should typically be filled in
-
-compare_field_pairs ($file, $hash_entries, 'GA35', \@GA35_list, 'GA30c', \@GA30c_list, \%proforma_fields, 'single::(except in rare cases, which is usually when the transgene can be used both to study the function of the encoded product and as an experimental tool, depending on circumstance)', '');
+# If GA35 is filled in then GA30d should not typically be filled in
+# (cross-checks between GA35 and GA30c are now done further down, to allow more nuanced checking)
 compare_field_pairs ($file, $hash_entries, 'GA35', \@GA35_list, 'GA30d', \@GA30d_list, \%proforma_fields, 'single::(except in rare cases, which is usually when the transgene can be used both to study the function of the encoded product and as an experimental tool, depending on circumstance)', '');
 
 # check that if have filled in any of GA10 'synonym' fields, that the relevant 'valid symbol' field is filled in
@@ -846,6 +849,97 @@ if ($hash_entries) {
 
 				}
 			}
+# add check for DC-996 - only use 'genomic_DNA' or 'cDNA' with wild_type
+			my $wild_type = 0;
+			my $dna_type = 0;
+
+			foreach my $GA35_item (split /\n/, $GA35_list[$i]) {
+
+				if ($GA35_item eq 'wild_type') {
+
+					$wild_type++;
+
+				} elsif ($GA35_item eq 'genomic_DNA' || $GA35_item eq 'cDNA') {
+
+					$dna_type++;
+				}
+
+			}
+
+			if ($dna_type) {
+
+				unless ($wild_type) {
+
+					report ($file, "%s contains 'genomic_DNA' or 'cDNA' without 'wild_type'.\n!%s\n!%s", 'GA35',$proforma_fields{'GA1a'}, $proforma_fields{'GA35'});
+				}
+			}
+
+# check that if GA35 AND GA30c/GA30d are filled in, it is appropriate, and warn if not
+# do as separate from above loop, in case data goes in in an .edit record
+
+			if (defined $GA30c_list[$i] && $GA30c_list[$i] ne '') {
+
+				my @targeting_types = ('SO:oligo', 'additional_targeting_GA35');
+				my $targeting_tool = 0;
+				my $targeting_match = 0;
+
+				foreach my $GA30c_item (split /\n/, $GA30c_list[$i]) {
+					if (my $id = valid_symbol($GA30c_item, 'FBsf')) {
+
+						if ($id =~ m/^FBsf/) {
+							my $tool_type = chat_to_chado ('feature_type_from_id', $id)->[0]->[0];
+
+							if (valid_symbol_of_list_of_types ($tool_type, \@targeting_types)) {
+								$targeting_tool++;
+							}
+
+							if ($GA35_list[$i] eq $tool_type) {
+								$targeting_match++;
+							}
+
+						} else {
+						# this will be new FBsf generated in record
+
+							my $targeting_mapping = {
+								'dsRNA' => 'RNAi_reagent',
+								'sgRNA' => 'sgRNA',
+							};
+
+							my $tool_type = '';
+
+							if ($GA30c_item =~ m/^(.+?)-/) {
+								$tool_type = $1;
+							}
+
+							if (exists $targeting_mapping->{$tool_type}) {
+
+								$targeting_tool++;
+
+								if ($GA35_list[$i] eq $targeting_mapping->{$tool_type}) {
+									$targeting_match++;
+								}
+
+							}
+						}
+					}
+				}
+
+
+				unless ($targeting_tool) {
+
+					report($file, "%s and %s must NOT both contain data for non-sequence targeting reagents (except in rare cases, which is usually when the transgene can be used both to study the function of the encoded product and as an experimental tool, depending on circumstance).\n!%s\n!%s\n!%s", 'GA35', 'GA30c', $proforma_fields{'GA1a'}, $proforma_fields{'GA35'}, $proforma_fields{'GA30c'});
+
+				} else {
+
+					unless ($targeting_match) {
+						report($file, "Mis-match between sequence targeting reagent SO term(s) in %s and type of tool in %s.\n!%s\n!%s\n!%s", 'GA35', 'GA30c', $proforma_fields{'GA1a'}, $proforma_fields{'GA35'}, $proforma_fields{'GA30c'});
+
+					}
+
+				}
+
+			}
+
 		} else {
 
 # warn that GA35 should be filled in for new, non-tool construct alleles

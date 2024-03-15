@@ -78,6 +78,7 @@ Cross-checks with other fields
 
          * if G1e contains data, warns if the symbol in G1e does not appear in the list in G28b
 
+  * sub check_for_rename_across_species warns if trying to rename across species.
 
 
 ### Related fields:
@@ -95,4 +96,4 @@ Cross-checks with other fields
 
 ### Updated:
 
-gm170201.
+gm230315.

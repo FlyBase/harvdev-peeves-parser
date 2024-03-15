@@ -223,6 +223,27 @@ sub valid_symbol ($$)
 
 	}
 
+	if ($type eq 'official_db') {
+
+		my $chado_ref = chat_to_chado ('chado_species_official_db', $symbol);
+
+#		warn Dumper ($chado_ref);
+
+		foreach my $element (@{$chado_ref}) {
+	    	my ($official_db) = @{$element};
+
+# do return the first time through the loop, as each species should only have one 'official db'
+# However, as this is a featureprop, it is technically possible that there could be more than
+# one returned row - so if Peeves starts giving odd errors this might indicate an error in chado.
+			set_symbol ($symbol, $type, $official_db);
+			return $symbol_table{$symbol}{$type};
+
+		}
+		
+
+
+	}
+
 ## end add species information
 
 ## adding database table information here
@@ -510,11 +531,15 @@ sub GO_dbxrefs ($)
     open (ONT, $_[0]) or die "$0: Can't open ontology file $_[0]\n";
     while (my $term = <ONT>)
     {
-	$version or ($version) = ($term =~ /\n!date: \$Date: (.+) \$\n/);
+#	$version or ($version) = ($term =~ /\n!date: \$Date: (.+) \$\n/);
+	$version or ($version) = ($term =~ /!date: (.+)\n/);
 	set_symbol ($1, 'GO_database', 1) if $term =~ /abbreviation: (.+)/;
 	print '';
     }
     close (ONT);
+# always set version to something even if it could not pull out a date, so that the file appears in the list at the bottom of Peeves output
+    $version or ($version) = ('<no date available>');
+
     $version and set_symbol ('Ontologies', '_Peeves_',
 			      valid_symbol ('Ontologies', '_Peeves_') . "GO_dbxrefs: $_[0] dated $version\n");
 }
@@ -547,6 +572,7 @@ sub process_ontology_file {
 	
 	while ($term = <ONT>) {
 		$version or ($version) = ($term =~ /\ndate: (.+)\n/);
+		$version or ($version) = ($term =~ /\ndata-version: .*?([0-9]{4}-[0-9]{2}-[0-9]{2})\n/);
 		
 		if ($term =~ /default-namespace: (.+)/) {
 			next;
@@ -641,7 +667,8 @@ sub process_ontology_file {
 	}
 
 
-
+# always set version to something even if it could not pull out a date, so that the ontologies file appears in the list at the bottom of Peeves output
+    $version or ($version) = ('<no date available>');
 
     $version and set_symbol ('Ontologies', '_Peeves_', valid_symbol ('Ontologies', '_Peeves_') . "$id_type: $ontology_file dated $version\n");
 
@@ -1143,6 +1170,14 @@ my $dv_short_qualifiers = {
     set_symbol ('review', 'needs_pubmed_abstract', 1);
     set_symbol ('note', 'needs_pubmed_abstract', 1);
     set_symbol ('letter', 'needs_pubmed_abstract', 1);
+
+# Publication types which should have a related publication
+
+    set_symbol ('erratum', 'needs_related_pub', 1);
+    set_symbol ('retraction', 'needs_related_pub', 1);
+    set_symbol ('note', 'needs_related_pub', 1);
+    set_symbol ('supplementary material', 'needs_related_pub', 1); # although we are not making these as separate FBrfs as a rule anymore, added this type here, as its better that if a separate FBrf is made for the supplement for some reason it gets a related pub.
+
 
 # Table of reference types for MP17.
 
@@ -7348,11 +7383,6 @@ my $dv_short_qualifiers = {
     set_symbol ('monoclonal', 'antibody', 1);
     set_symbol ('polyclonal', 'antibody', 1);
 
-# allowed databases for accession numbers in G35. Set final value to the valid species abbreviation for that database for cross-checking
-
-	set_symbol ('HGNC', 'foreign_database', 'Hsap');
-	set_symbol ('SGD', 'foreign_database', 'Scer');
-	set_symbol ('MGI', 'foreign_database', 'Mmus');
 
 ## Information for checking ti.pro.  Hopefully most of this will eventually end up in a separate file located in ontologies so that there is a single file for curator browsing and for computation such as Peeves checking, as that will be more robust for maintenance, but adding them here now to get the checking implemented in Peeves.
 
