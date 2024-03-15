@@ -37,11 +37,10 @@ Checks within field:
 * sub 'validate_cvterm_field' also warns if a valid SO term from the 'incomplete_transcript_variant branch' is used as the definition of terms in this branch mean they are not appropriate for transgenic product class.
 
 
+* If either 'genomic_DNA' or 'cDNA' is present in GA35, checks that 'wild_type' is also present, as 'genomic_DNA' and 'cDNA' are only supposed to be used with the wild_type term.
+
 Checks between fields:
 
-* If GA35 is filled in, warns if GA30c is filled in (and vice versa) - prints a field specific message as in rare cases it is OK for both GA35 and either GA30c/GA30d to be filled in.
-
-* If GA35 is filled in, warns if GA30d is filled in (and vice versa) - prints a field specific message as in rare cases it is OK for both GA35 and either GA30c/GA30d to be filled in.
 
 * if GA35 is filled in, the allele must be associated with a 'construct' (in GA10a) (i.e. not a classical or insertional allele)
 
@@ -55,6 +54,16 @@ Checks between fields:
 
      - Peeves warns if GA35 is empty.
 
+* If both GA35 and GA30c are filled in:
+
+    * checks whether the entries in GA30c correspond to FBsf that are sequence-targeting reagents (e.g. sgRNA, RNAi_reagent)
+
+      * if they are not sequence targeting reagents, warns that it is unusual for both GA35 and GA30c to be filled in in this case.
+
+      * if they are FBsf that are sequence targeting reagents, checks that the value in GA35 matches the type of the GA30c entries (this information is grabbed from chado for existing FBsf, while a simple mapping between symbol and type is currently used for new FBsf generated in the record) and warns if there is a mis-match (note that if more than one value is present in GA35 it will currently count as a mis-match).
+
+
+* If GA35 is filled in, warns if GA30d is filled in (and vice versa) - prints a field specific message as in rare cases it is OK for both GA35 and GA30d to be filled in.
 
 
 ### Related fields:
@@ -70,4 +79,4 @@ Checks between fields:
 
 ### Updated:
 
-gm230510.
+gm240313.

@@ -28,47 +28,48 @@ No (Implemented)
 
 ### Checks:
 
-If a value is given, it must consist of a syntactically correct Digital Object Identifier (DOI) (see http://www.doi.org/handbook_2000/appendix_1.html#A1-4)  as defined by 'The International DOI Foundation' (http://www.doi.org/).
 
-If !c is used:
+Checks within field:
 
-* P22 must contain a valid value and
-* the value given in P11d must be different from the value
-stored in Chado for the publication specified by the value given in
-P22.
+Syntax checks on DOI number:
 
-If !c is not used:
+* The DOI number must not be prefixed with a 'doi:' or 'doi ' style string.
 
-* if P22 contains a valid FBrf, either:
-    * the value given in P11d must be identical to the value
-stored in Chado for the publication specified by the FBrf given in
-P22 or
-    * P11d must contain a valid value and no value is stored in
-Chado for the publication specified by the FBrf given in P22;
-* if P22 does not contain a valid FBrf, either:
-    * P11d must be empty or
-    * P11d must a contain valid value.
-* if P22 is 'unattributed':  
-    * P11d must remain blank.  
+* The DOI number must match the basic 'doi_prefix/doi_suffix' style format.
 
-The following is implemented as a check after the whole proforma has been parsed:
+* The doi_prefix part must match the expected format (dd.dd, dd.dd.dd etc) e.g. 10.1234, 10.1234.555.
 
-- if it is a new publication and the publication type is a 'regular' publication (so *not* one of the 'not_regular_pub' types stored in symtab.pl) but isn't a 'supplementary material', P11d must be filled in.
+* If the doi_prefix part does not start with '10' a warning is printed as this is unusual.
+
+* The doi_suffix part must not end with a '.'
+
+* The doi_suffix part must not contain a space.
+
+(syntax rules made using information in https://www.doi.org/doi-handbook/HTML/index.html - the rules for the doi_suffix part could probably be made tighter still).
 
 
-### Error messages:  
-  
-If P22 is 'unattributed':  
-P11d: Cannot contain data when P22 is 'unattributed'.  
-  
-If pling-c and P22 is 'new':  
-P11d: : can't change the DOI of a new publication!  
-  
-If no DOI and pling-c:  
-P11d: Not allowed to delete the DOI.  
-  
-If P11d data is empty and so are the other P11 fields:  
-None of P11a through P11d have any data.  
+Checks against data in chado:
+
+* a warning is given if try to !c the DOI for a new publication
+
+* a warning is given if try to delete the DOI of an existing publication (using !c to nothing).
+
+* check_changes_with_chado subroutine:
+
+   - If it is an existing publication (P22 contains a valid value), the check_changes_with_chado subroutine is used to see whether the value in the field is the same as that already stored in Chado *for that FBrf*, and gives a warning if this is not consistent with the use (or not) of !c. This subroutine only compares the data that is already stored in Chado *for that FBrf* so another check is required to check that the DOI is not already under another publication (see check_pub_accession_against_chado below).
+
+* check_pub_accession_against_chado subroutine:
+
+  - checks whether the DOI in P11d is already in chado:
+
+    - for new publications, warn that are trying to add an accession already in chado to a new publication
+    - for existing publications, check that the FBrf the accession is associated with in chado is the same as the FBrf in P22 and warn if not.
+
+
+* if it is a new publication and the publication type is a 'regular' publication (so *not* one of the 'not_regular_pub' types stored in symtab.pl) but isn't a 'supplementary material', P11d must be filled in.
+
+* if P22 is 'unattributed' P11d must be blank.
+
 
 ### Related fields:
 
@@ -80,11 +81,8 @@ P11c
 
 Do not include the 'doi:' prefix here.  e.g. not 'doi:10.1016/j.gene.2005.11.020'.  
   
-A check involving P11a/b/c/d is performed (see Error messages).  
   
 
 ### Updated:
 
-gm131204 (removed markdown formatting).
-gm151001 (added Dupl. for multiple field info).
-gm170127 (added info on check done after parsing whole proforma)
+gm240313.

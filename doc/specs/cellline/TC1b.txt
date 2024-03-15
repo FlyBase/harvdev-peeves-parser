@@ -27,13 +27,7 @@ No (implemented)
 
 Checks within field:
 
-* sub 'validate_synonym_field'
-
-  * uses 'check_for_duplicated'_lines to check that there are no duplicated synonyms and no empty lines
-
-  * warns if the synonym is composed entirely of punctuation character(s).
-
-  * warns if the field is filled in for a 'user' or 'auto' curation record.
+* sub 'validate_synonym_field' - see specs/allele/GA1b.txt for details.
 
 
 ### Related fields:
@@ -52,4 +46,4 @@ Have implemented '!c Applicable' as No as indicated in curation manual - if !c i
 
 ### Updated:
 
-gm170420.
+gm240301.

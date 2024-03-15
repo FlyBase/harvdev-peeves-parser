@@ -47,7 +47,13 @@ Cross-checks between fields:
 
      * Peeves warns if neither of GA30c or GA30d are filled in (a slightly different error message is given in GA35 is filled in).
 
-* If GA35 is filled in, warns if GA30c is filled in (and vice versa) - prints a field specific message as in rare cases it is OK for both GA35 and either GA30c/GA30d to be filled in.
+* If both GA35 and GA30c are filled in:
+
+    * checks whether the entries in GA30c correspond to FBsf that are sequence-targeting reagents (e.g. sgRNA, RNAi_reagent)
+
+      * if they are not sequence targeting reagents, warns that it is unusual for both GA35 and GA30c to be filled in in this case.
+
+      * if they are FBsf that are sequence targeting reagents, checks that the value in GA35 matches the type of the GA30c entries (this information is grabbed from chado for existing FBsf, while a simple mapping between symbol and type is currently used for new FBsf generated in the record) and warns if there is a mis-match (note that if more than one value is present in GA35 it will currently count as a mis-match).
 
 
 ### Related fields:
@@ -63,4 +69,4 @@ Some of the between fields cross-checks are not carried out for .edit records, t
 
 ### Updated:
 
-gm231009.
+gm240301.

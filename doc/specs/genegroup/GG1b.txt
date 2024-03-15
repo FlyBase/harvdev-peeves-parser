@@ -29,12 +29,7 @@ No (Implemented)
 
 Checks within field:
 
-* sub 'validate_synonym_field' (called via process_field_data):
-
-  * uses 'check_for_duplicated'_lines to check that there are no duplicated synonyms and no empty lines
-  * warns if the synonym is composed entirely of punctuation character(s).
-
-  * warns if the field is filled in for a 'user' or 'auto' curation record.
+* sub 'validate_synonym_field' - see specs/allele/GA1b.txt for details.
 
 Checks between field:
 
@@ -56,5 +51,5 @@ All specs have been implemented.
 
 ### Updated:
 
-gm170420.
+gm240301.
 

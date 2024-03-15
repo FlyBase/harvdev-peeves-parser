@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.51"; #  updating curator information.
+our $Peeves_version = "2.68.1"; #  add check_for_rename_across_species (DC-536): added for Cambridge style proformae (also fixed bug in get_species_prefix_from_symbol)
 
 =head2 Version
 
@@ -585,16 +585,15 @@ our %field_specific_checks = (
 	'MS3d' => \&validate_synonym_field,
 	'MS4a' => \&validate_cvterm_field,
 	'MS4b' => \&check_positive_integer,
-	'MS4h' => \&check_valid_symbol_field,
-	'MS14' => '', # will add field-specific check once have reliable way of getting up-to-date list of allowed values for this field
+	'MS4h' => \&check_valid_chado_symbol_field,
 	'MS16' => \&validate_cvterm_field,
 	'MS19a' => \&check_valid_chado_symbol_field,
 	'MS19b' => \&check_stamped_free_text,
 	'MS19c' => \&check_valid_symbol_field,
 	'MS19d' => \&check_valid_symbol_field,
 	'MS19e' => \&check_valid_symbol_field,
-	'MS20' => \&check_valid_symbol_field,
-	'MS21' => \&check_valid_symbol_field,
+	'MS20' => \&check_valid_chado_symbol_field,
+	'MS21' => \&check_valid_chado_symbol_field,
 
 	'MS5a' => '',
 	'MS5b' => '',
