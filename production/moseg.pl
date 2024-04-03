@@ -49,7 +49,6 @@ sub do_moseg_proforma ($$)
 	my @MS1b_list = ();
 	my @MS4a_list = ();
 	my @MS4b_list = ();
-	my @MS14_list = ();
 	my @MS16_list = ();
 	my @MS21_list = ();
 	my @MS19c_list = ();
@@ -120,11 +119,6 @@ FIELD:
 	    check_dups ($file, $2, $field, \%proforma_fields, \%dummy_dup_proforma_fields, $primary_symbol_list, 0);
 		@MS21_list = process_field_data ($file, $hash_entries, $1, '1', $2, $3, \%proforma_fields, '1');
 	}
-	elsif ($field =~ /^(.*?)\s+(MS14)\..*? :(.*)/s)
-	{
-	    check_dups ($file, $2, $field, \%proforma_fields, \%dummy_dup_proforma_fields, $primary_symbol_list, 0);
-		@MS14_list = process_field_data ($file, $hash_entries, $1, '1', $2, $3, \%proforma_fields, '0');
-	}
 	elsif ($field =~ /^(.*?) (MS14a)\..*? :(.*)/s)
 	{
 	    check_dups ($file, $2, $field, \%proforma_fields, \%dummy_dup_proforma_fields, $primary_symbol_list, 0);
@@ -149,12 +143,6 @@ FIELD:
 	{
 	    check_dups ($file, $2, $field, \%proforma_fields, \%dummy_dup_proforma_fields, $primary_symbol_list, 0);
 		push @MS14e_list, process_field_data ($file, $hash_entries, $1, '1', $2, $3, \%proforma_fields, '0');
-	}
-
-	elsif ($field =~ /^(.*?)\s+(MS22)\..*? :(.*)/s)
-	{
-	    check_dups ($file, $2, $field, \%proforma_fields, \%dummy_dup_proforma_fields, $primary_symbol_list, 0);
-	    validate_stub ($file, $1, $2, $3);
 	}
 	elsif ($field =~ /^(.*?)\s+(MS1c)\..*? :(.*)/s)
 	{
@@ -247,11 +235,6 @@ FIELD:
 	    check_dups ($file, $2, $field, \%proforma_fields, \%dummy_dup_proforma_fields, $primary_symbol_list, 0);
 		process_field_data ($file, $hash_entries, $1, '1', $2, $3, \%proforma_fields, '0');
 	}
-	elsif ($field =~ /^(.*?)\s+(MS4g)\..*? :(.*)/s)
-	{
-	    check_dups ($file, $2, $field, \%proforma_fields, \%dummy_dup_proforma_fields, $primary_symbol_list, 0);
-	    validate_stub ($file, $1, $2, $3);
-	}
 	elsif ($field =~ /^(.*?)\s+(MS1e)\..*? :(.*)/s)
 	{
 	    check_dups ($file, $2, $field, \%proforma_fields, \%dummy_dup_proforma_fields, $primary_symbol_list, 0);
@@ -318,7 +301,7 @@ FIELD:
 	    process_field_data ($file, $hash_entries, $1, '1', $2, $3, \%proforma_fields, '0');
 	}
 
-	elsif ($field =~ /^(.*?)\s+(MS9|MS17|MS7a|MS7b|MS7c|MS7e)\..*? :(.*)/s)
+	elsif ($field =~ /^(.*?)\s+(MS9|MS7a|MS7b|MS7c|MS7e)\..*? :(.*)/s)
 	{
 	    check_dups ($file, $2, $field, \%proforma_fields, \%dummy_dup_proforma_fields, $primary_symbol_list, 0);
 	    validate_stub ($file, $1, $2, $3);
@@ -551,10 +534,6 @@ if ($hash_entries and $#{$primary_symbol_list} + 1 == $hash_entries and $#MS1c_l
 	}
 }
 
-
-
-
-check_filled_in_for_new_feature ($file, 'MS14', $hash_entries, \@MS14_list, \@FBtp_list, \@MS1c_list, \@MS1g_list, \%proforma_fields, 'advised');
 
 compare_field_pairs ($file, $hash_entries, 'MS30', \@MS30_list, 'MS30a', \@MS30a_list, \%proforma_fields, 'pair::if either is filled in', '');
 

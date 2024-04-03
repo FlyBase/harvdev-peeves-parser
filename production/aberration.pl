@@ -496,6 +496,9 @@ FIELD:
 
     rename_merge_check ($file, 'A1e', \@A1e_list, $proforma_fields{'A1e'}, 'A1f', \@A1f_list, $proforma_fields{'A1f'});
 
+# check for rename across species.
+	check_for_rename_across_species ($file, $g_num_syms, 'A', $primary_species_list, \@A1e_list, \%proforma_fields);
+
 
 # no !c if A1f is filled in
 

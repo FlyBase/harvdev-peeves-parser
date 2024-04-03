@@ -34,6 +34,7 @@ Checks within field
 
    * checks value is a valid FBrf in chado
 
+
 Checks between fields
 
 * sub compare_pub_fbrf_containing_fields (in publication.pl) is used to check:
@@ -41,6 +42,10 @@ Checks between fields
     * No value in P31 can be the same as that in P22 
     * No value in P30 can be the same as any value in P31
     * No value in P31 can be the same as any value in P32
+
+The following is implemented as a check after the whole proforma has been parsed:
+
+- if it is a new publication and the publication type is one of the 'needs_related_pub' list in symtab.pl, then P31 must be filled in.
 
 
 ### Related fields:
@@ -61,5 +66,5 @@ Not implemented yet:
 
 ### Updated:
 
-gm151001.
+gm240313.
 

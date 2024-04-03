@@ -48,6 +48,7 @@ Cross-checks with other fields
 
   * sub 'cross_check_x1e_x1g' checks that if A1e is filled in, A1g is 'n'
 
+  * sub check_for_rename_across_species warns if trying to rename across species.
 
 ### Related fields:
 
@@ -65,4 +66,4 @@ doc: checked that doc reflects what has been implemented
 
 ### Updated:
 
-gm151001.
+gm240315.

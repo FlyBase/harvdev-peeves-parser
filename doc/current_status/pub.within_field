@@ -12,7 +12,7 @@
 ! P3.   Volume number                          *y :FULL
 ! P4.   Issue number                           *Y :FULL
 ! P11a. Page range or article number               *z :FULL
-! P11d. DOI                                           :BASIC ONLY:DC-566
+! P11d. DOI                                           :FULL
 ! P11b. URL                                        *R :PARTIAL
 ! P11c. Sequence accession number                     :BASIC ONLY
 ! P13.  Language of publication [CV]                          *L :FULL

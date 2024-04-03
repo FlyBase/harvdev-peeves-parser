@@ -142,74 +142,93 @@ sub set_up_chado_queries ()
 							 	  AND dbxref.db_id=db.db_id
 								  AND db.name=?;');
 
+# get the pub associated with a given accession
+    $prepared_queries{'accession_pub'}	      = $chado->prepare ('SELECT pub.uniquename
+								  FROM pub, pub_dbxref, dbxref, db
+								  WHERE dbxref.accession=? 
+								  AND pub.pub_id=pub_dbxref.pub_id
+								  AND pub_dbxref.dbxref_id=dbxref.dbxref_id
+							 	  AND dbxref.db_id=db.db_id
+								  AND db.name=?;');
+
 # Generic symbol<->id block
 
 # feature (e.g. gene, allele, etc.)
 
     $prepared_queries{'feature_symbol_from_id'} = $chado->prepare ('SELECT DISTINCT s.synonym_sgml, f.is_obsolete
-    								  							    FROM feature f, feature_synonym fs, synonym s, cvterm cvt
-    								  							    WHERE f.feature_id = fs.feature_id
-    								  							    AND fs.synonym_id = s.synonym_id
-    								  							    AND fs.is_current = \'t\'
-    								  							    AND fs.is_internal = \'f\'
-    								  							    AND s.type_id = cvt.cvterm_id
-    								  							    AND cvt.name = \'symbol\'
-    								  							    AND f.is_obsolete = \'f\'
-    								  							    AND f.uniquename=?;');
+								    FROM feature f, feature_synonym fs, synonym s, cvterm cvt
+								    WHERE f.feature_id = fs.feature_id
+								    AND fs.synonym_id = s.synonym_id
+								    AND fs.is_current = \'t\'
+								    AND fs.is_internal = \'f\'
+								    AND s.type_id = cvt.cvterm_id
+								    AND cvt.name = \'symbol\'
+								    AND f.is_obsolete = \'f\'
+								    AND f.uniquename=?;');
 
     $prepared_queries{'feature_id_from_symbol'} = $chado->prepare ('SELECT DISTINCT f.uniquename, f.is_obsolete
-    								  								FROM feature f, feature_synonym fs, synonym s, cvterm cvt
-    								  								WHERE f.feature_id = fs.feature_id
-    								  								AND fs.synonym_id = s.synonym_id
-    								  								AND fs.is_current = \'t\'
-    								  								AND fs.is_internal = \'f\'
-    								  								AND s.type_id = cvt.cvterm_id
-    								  								AND cvt.name = \'symbol\'
-    								  								AND f.is_obsolete = \'f\'
-    								  								AND s.synonym_sgml=?;');
+								    FROM feature f, feature_synonym fs, synonym s, cvterm cvt
+								    WHERE f.feature_id = fs.feature_id
+								    AND fs.synonym_id = s.synonym_id
+								    AND fs.is_current = \'t\'
+								    AND fs.is_internal = \'f\'
+								    AND s.type_id = cvt.cvterm_id
+								    AND cvt.name = \'symbol\'
+								    AND f.is_obsolete = \'f\'
+								    AND s.synonym_sgml=?;');
 
     $prepared_queries{'simple_feature_symbol_from_id'} = $chado->prepare ('SELECT name,is_obsolete FROM feature WHERE uniquename=?;');
     $prepared_queries{'simple_feature_id_from_symbol'} = $chado->prepare ('SELECT uniquename,is_obsolete FROM feature WHERE name=?;');
 
 
+# query to get SO term corresponding to the type_id in the feature table
+    $prepared_queries{'feature_type_from_id'} = $chado->prepare ('SELECT cvt.name
+								  FROM feature f, cvterm cvt, cv cv
+								  WHERE f.uniquename=?
+								  AND f.type_id = cvt.cvterm_id
+								  AND cvt.is_obsolete = 0
+								  AND cvt.cv_id = cv.cv_id
+								  AND cv.name = \'SO\';');
+
+
 # query to see if current fullname - gets back the sgml version so may need to decode
 
     $prepared_queries{'feature_fullname_from_id'} = $chado->prepare ('SELECT distinct(s.synonym_sgml)
-								  FROM feature f, feature_synonym fs, synonym s, cvterm cvt
-								  WHERE f.feature_id = fs.feature_id
-								  AND fs.synonym_id = s.synonym_id
-								  AND fs.is_current = \'t\'
-								  AND fs.is_internal = \'f\'
-								  AND s.type_id = cvt.cvterm_id
-								  AND cvt.name = \'fullname\'
-								  AND f.is_obsolete = \'f\'
-								  AND f.uniquename=?;');
+								      FROM feature f, feature_synonym fs, synonym s, cvterm cvt
+								      WHERE f.feature_id = fs.feature_id
+								      AND fs.synonym_id = s.synonym_id
+								      AND fs.is_current = \'t\'
+								      AND fs.is_internal = \'f\'
+								      AND s.type_id = cvt.cvterm_id
+								      AND cvt.name = \'fullname\'
+								      AND f.is_obsolete = \'f\'
+								      AND f.uniquename=?;');
 
 # library
 
     $prepared_queries{'library_symbol_from_id'} = $chado->prepare ('SELECT DISTINCT s.synonym_sgml, l.is_obsolete
-    								  							    FROM library l, library_synonym ls, synonym s, cvterm cvt
-    								  							    WHERE l.library_id = ls.library_id
-    								  							    AND ls.synonym_id = s.synonym_id
-    								  							    AND ls.is_current = \'t\'
-    								  							    AND ls.is_internal = \'f\'
-    								  							    AND s.type_id = cvt.cvterm_id
-    								  							    AND cvt.name = \'symbol\'
-    								  							    AND l.is_obsolete = \'f\'
-    								  							    AND l.uniquename=?;');
+								    FROM library l, library_synonym ls, synonym s, cvterm cvt
+								    WHERE l.library_id = ls.library_id
+								    AND ls.synonym_id = s.synonym_id
+								    AND ls.is_current = \'t\'
+								    AND ls.is_internal = \'f\'
+								    AND s.type_id = cvt.cvterm_id
+								    AND cvt.name = \'symbol\'
+								    AND l.is_obsolete = \'f\'
+								    AND l.uniquename=?;');
 
     $prepared_queries{'library_id_from_symbol'} = $chado->prepare ('SELECT DISTINCT l.uniquename, l.is_obsolete
-    								  								FROM library l, library_synonym ls, synonym s, cvterm cvt
-    								  								WHERE l.library_id = ls.library_id
-    								  								AND ls.synonym_id = s.synonym_id
-    								  								AND ls.is_current = \'t\'
-    								  								AND ls.is_internal = \'f\'
-    								  								AND s.type_id = cvt.cvterm_id
-    								  								AND cvt.name = \'symbol\'
-    								  								AND l.is_obsolete = \'f\'
-    								  								AND s.synonym_sgml=?;');
+								    FROM library l, library_synonym ls, synonym s, cvterm cvt
+								    WHERE l.library_id = ls.library_id
+								    AND ls.synonym_id = s.synonym_id
+								    AND ls.is_current = \'t\'
+								    AND ls.is_internal = \'f\'
+								    AND s.type_id = cvt.cvterm_id
+								    AND cvt.name = \'symbol\'
+								    AND l.is_obsolete = \'f\'
+								    AND s.synonym_sgml=?;');
 
-	$prepared_queries{'library_type_from_id'} = $chado->prepare ('SELECT cv.name
+    $prepared_queries{'library_type_from_id'} = $chado->prepare ('SELECT cv.name
 								  FROM library l, cvterm cv
 								  WHERE l.uniquename=?
 								  AND l.is_obsolete = \'f\'
@@ -217,93 +236,93 @@ sub set_up_chado_queries ()
 
 # gene group
     $prepared_queries{'grp_symbol_from_id'} = $chado->prepare ('SELECT DISTINCT s.synonym_sgml, g.is_obsolete
-    								  							    FROM grp g, grp_synonym gs, synonym s, cvterm cvt
-    								  							    WHERE g.grp_id = gs.grp_id
-    								  							    AND gs.synonym_id = s.synonym_id
-    								  							    AND gs.is_current = \'t\'
-    								  							    AND gs.is_internal = \'f\'
-    								  							    AND s.type_id = cvt.cvterm_id
-    								  							    AND cvt.name = \'symbol\'
-    								  							    AND g.is_obsolete = \'f\'
-    								  							    AND g.uniquename=?;');
+								FROM grp g, grp_synonym gs, synonym s, cvterm cvt
+								WHERE g.grp_id = gs.grp_id
+								AND gs.synonym_id = s.synonym_id
+								AND gs.is_current = \'t\'
+								AND gs.is_internal = \'f\'
+								AND s.type_id = cvt.cvterm_id
+								AND cvt.name = \'symbol\'
+								AND g.is_obsolete = \'f\'
+								AND g.uniquename=?;');
 
     $prepared_queries{'grp_id_from_symbol'} = $chado->prepare ('SELECT DISTINCT g.uniquename, g.is_obsolete
-    								  								FROM grp g, grp_synonym gs, synonym s, cvterm cvt
-    								  								WHERE g.grp_id = gs.grp_id
-    								  								AND gs.synonym_id = s.synonym_id
-    								  								AND gs.is_current = \'t\'
-    								  								AND gs.is_internal = \'f\'
-    								  								AND s.type_id = cvt.cvterm_id
-    								  								AND cvt.name = \'symbol\'
-    								  								AND g.is_obsolete = \'f\'
-    								  								AND s.synonym_sgml=?;');
+    								FROM grp g, grp_synonym gs, synonym s, cvterm cvt
+    								WHERE g.grp_id = gs.grp_id
+    								AND gs.synonym_id = s.synonym_id
+    								AND gs.is_current = \'t\'
+    								AND gs.is_internal = \'f\'
+    								AND s.type_id = cvt.cvterm_id
+    								AND cvt.name = \'symbol\'
+    								AND g.is_obsolete = \'f\'
+    								AND s.synonym_sgml=?;');
 
 
 # humanhealth
     $prepared_queries{'humanhealth_symbol_from_id'} = $chado->prepare ('SELECT DISTINCT s.synonym_sgml, h.is_obsolete
-    								  							    FROM humanhealth h, humanhealth_synonym hs, synonym s, cvterm cvt
-    								  							    WHERE h.humanhealth_id = hs.humanhealth_id
-    								  							    AND hs.synonym_id = s.synonym_id
-    								  							    AND hs.is_current = \'t\'
-    								  							    AND hs.is_internal = \'f\'
-    								  							    AND s.type_id = cvt.cvterm_id
-    								  							    AND cvt.name = \'symbol\'
-    								  							    AND h.is_obsolete = \'f\'
-    								  							    AND h.uniquename=?;');
+								  	FROM humanhealth h, humanhealth_synonym hs, synonym s, cvterm cvt
+								  	WHERE h.humanhealth_id = hs.humanhealth_id
+								  	AND hs.synonym_id = s.synonym_id
+								  	AND hs.is_current = \'t\'
+								  	AND hs.is_internal = \'f\'
+								  	AND s.type_id = cvt.cvterm_id
+								  	AND cvt.name = \'symbol\'
+								  	AND h.is_obsolete = \'f\'
+								  	AND h.uniquename=?;');
 
     $prepared_queries{'humanhealth_id_from_symbol'} = $chado->prepare ('SELECT DISTINCT h.uniquename, h.is_obsolete
-    								  								FROM humanhealth h, humanhealth_synonym hs, synonym s, cvterm cvt
-    								  								WHERE h.humanhealth_id = hs.humanhealth_id
-    								  								AND hs.synonym_id = s.synonym_id
-    								  								AND hs.is_current = \'t\'
-    								  								AND hs.is_internal = \'f\'
-    								  								AND s.type_id = cvt.cvterm_id
-    								  								AND cvt.name = \'symbol\'
-    								  								AND h.is_obsolete = \'f\'
-    								  								AND s.synonym_sgml=?;');
+    									FROM humanhealth h, humanhealth_synonym hs, synonym s, cvterm cvt
+    									WHERE h.humanhealth_id = hs.humanhealth_id
+    									AND hs.synonym_id = s.synonym_id
+    									AND hs.is_current = \'t\'
+    									AND hs.is_internal = \'f\'
+    									AND s.type_id = cvt.cvterm_id
+    									AND cvt.name = \'symbol\'
+    									AND h.is_obsolete = \'f\'
+    									AND s.synonym_sgml=?;');
 
 # cell line
     $prepared_queries{'cell_line_name_from_id'} = $chado->prepare ('SELECT DISTINCT s.synonym_sgml
-    								  							    FROM cell_line cl, cell_line_synonym cls, synonym s, cvterm cvt
-    								  							    WHERE cl.cell_line_id = cls.cell_line_id
-    								  							    AND cls.synonym_id = s.synonym_id
-    								  							    AND cls.is_current = \'t\'
-    								  							    AND cls.is_internal = \'f\'
-    								  							    AND s.type_id = cvt.cvterm_id
-    								  							    AND cvt.name = \'symbol\'
-    								  							    AND cl.uniquename=?;');
+    								    FROM cell_line cl, cell_line_synonym cls, synonym s, cvterm cvt
+    								    WHERE cl.cell_line_id = cls.cell_line_id
+    								    AND cls.synonym_id = s.synonym_id
+    								    AND cls.is_current = \'t\'
+    								    AND cls.is_internal = \'f\'
+    								    AND s.type_id = cvt.cvterm_id
+    								    AND cvt.name = \'symbol\'
+    								    AND cl.uniquename=?;');
 
     $prepared_queries{'cell_line_id_from_name'} = $chado->prepare ('SELECT DISTINCT cl.uniquename
-    								  								FROM cell_line cl, cell_line_synonym cls, synonym s, cvterm cvt
-    								  								WHERE cl.cell_line_id = cls.cell_line_id
-    								  								AND cls.synonym_id = s.synonym_id
-    								  								AND cls.is_current = \'t\'
-    								  								AND cls.is_internal = \'f\'
-    								  								AND s.type_id = cvt.cvterm_id
-    								  								AND cvt.name = \'symbol\'
-    								  								AND s.synonym_sgml=?;');
+    								    FROM cell_line cl, cell_line_synonym cls, synonym s, cvterm cvt
+    								   WHERE cl.cell_line_id = cls.cell_line_id
+    								   AND cls.synonym_id = s.synonym_id
+    								   AND cls.is_current = \'t\'
+    								   AND cls.is_internal = \'f\'
+    								   AND s.type_id = cvt.cvterm_id
+    								   AND cvt.name = \'symbol\'
+    								   AND s.synonym_sgml=?;');
 # strain
     $prepared_queries{'strain_symbol_from_id'} = $chado->prepare ('SELECT DISTINCT s.synonym_sgml, st.is_obsolete
-    								  							    FROM strain st, strain_synonym sts, synonym s, cvterm cvt
-    								  							    WHERE st.strain_id = sts.strain_id
-    								  							    AND sts.synonym_id = s.synonym_id
-    								  							    AND sts.is_current = \'t\'
-    								  							    AND sts.is_internal = \'f\'
-    								  							    AND s.type_id = cvt.cvterm_id
-    								  							    AND cvt.name = \'symbol\'
-    								  							    AND st.is_obsolete = \'f\'
-    								  							    AND st.uniquename=?;');
+    								   FROM strain st, strain_synonym sts, synonym s, cvterm cvt
+    								   WHERE st.strain_id = sts.strain_id
+    								   AND sts.synonym_id = s.synonym_id
+    								   AND sts.is_current = \'t\'
+    								   AND sts.is_internal = \'f\'
+    								   AND s.type_id = cvt.cvterm_id
+    								   AND cvt.name = \'symbol\'
+    								   AND st.is_obsolete = \'f\'
+    								   AND st.uniquename=?;');
 
     $prepared_queries{'strain_id_from_symbol'} = $chado->prepare ('SELECT DISTINCT st.uniquename, st.is_obsolete
-    								  								FROM strain st, strain_synonym sts, synonym s, cvterm cvt
-    								  								WHERE st.strain_id = sts.strain_id
-    								  								AND sts.synonym_id = s.synonym_id
-    								  								AND sts.is_current = \'t\'
-    								  								AND sts.is_internal = \'f\'
-    								  								AND s.type_id = cvt.cvterm_id
-    								  								AND cvt.name = \'symbol\'
-    								  								AND st.is_obsolete = \'f\'
-    								  								AND s.synonym_sgml=?;');
+    								   FROM strain st, strain_synonym sts, synonym s, cvterm cvt
+    								   WHERE st.strain_id = sts.strain_id
+    								   AND sts.synonym_id = s.synonym_id
+    								   AND sts.is_current = \'t\'
+    								   AND sts.is_internal = \'f\'
+    								   AND s.type_id = cvt.cvterm_id
+    								   AND cvt.name = \'symbol\'
+    								   AND st.is_obsolete = \'f\'
+    								   AND s.synonym_sgml=?;');
 
 
 # interaction
@@ -344,6 +363,18 @@ sub set_up_chado_queries ()
 								  AND cvt.cv_id = cv.cv_id
 								  AND cv.name = \'property type\'
 								  AND o.abbreviation=?;');
+
+# retrieve 'official database' information using species abbreviation as the argument
+    $prepared_queries{'chado_species_official_db'} = $chado->prepare ('SELECT op.value
+								  FROM organism o, organismprop op, cvterm cvt, cv cv
+								  WHERE o.organism_id = op.organism_id
+								  AND op.type_id = cvt.cvterm_id
+								  AND cvt.name = \'official_db\'
+								  AND cvt.is_obsolete = \'0\'
+								  AND cvt.cv_id = cv.cv_id
+								  AND cv.name = \'property type\'
+								  AND o.abbreviation=?;');
+								  
 
 # used in valid_species as requires two arguments for query
 # simple test for validity of organism
@@ -471,7 +502,7 @@ sub set_up_chado_queries ()
 							   AND cvt2.cv_id = cv.cv_id
 							   AND cv.name = \'feature_cvtermprop type\';');
 
-## SO
+## SO annotation for genes (attached via feature_cvterm, not type_id in feature table
 
 	$prepared_queries{'SO_annotation'} =  $chado->prepare ('SELECT cvt.name
 								  FROM feature f, cvterm cvt,

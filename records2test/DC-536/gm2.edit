@@ -1,0 +1,74 @@
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0105495
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! SEQUENCE FEATURE/MAPPED ENTITIES PROFORMA    Version 8: 16 Nov 2022
+!
+! SF1f. Database ID for feature         :FBsf0000166365
+! SF1a. Feature symbol to use in database    :Dsim\GMR66A01
+! SF1b. Symbol used in paper/source          :
+! SF2a. Feature macromolecular category [CV] :
+! SF2b. Feature description [CV]        :
+!
+! SF1c. Action - rename this feature         :GMR66A01
+! SF1g. Action - merge these features        :
+! SF1h. Action - delete feature record ("y"/blank)   :
+! SF1i. Action - dissociate SF1f from FBrf ("y"/blank) :
+!
+! SF3a. From dataset/collection (symbol) :
+! SF3c. Type of relationship to dataset/collection [member_of_reagent_collection/experimental_result] :
+! SF3b. Species of derivation            :Dmel
+!
+! SF4a. Genomic location of feature (dupl for multiple) :
+!   SF4b. Genome release number for entry in SF4a   :
+!   SF4h. Orientation of feature in SF4a relative to the chromosome ("+"/"-")  :
+! SF4g. Sequence of feature (nt or aa) :
+! SF4c. Comments concerning sequence or sequence location :
+!
+! SF5a. Associated gene(s) (dupl for multiple) :
+!    SF5e. Confidence rating for gene call :
+!    SF5f. Comments concerning gene call :
+! SF5b. Associated allele       :
+! SF5g. Associated transcript   :
+! SF5c. Associated FBtp transgenic_transposable_element (symbol) :
+! SF5h. Associated FBmc engineered_plasmid (symbol) :
+! SF5d. Corresponding segment   :
+!
+! SF10a. Evidence/assay [CV] :
+!
+! SF11a. Bound moiety (FB symbol)   :
+! SF11b. Bound moiety (no FB symbol) :
+! SF11c. Comment concerning bound moiety :
+!
+! SF12. Linked to restriction fragment :
+!
+! SF20a. PCR template [CV] :
+! SF20b. Primer 1 sequence :
+! SF20c. Primer 2 sequence :
+! SF20d. Additional information, primers :
+!
+! SF6. Comments [free text]        :
+! SF7. Information on availability :
+! SF8. Internal notes              :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

@@ -1491,19 +1491,19 @@ sub check_allowed_characters {
 		'G1a' => 'a-zA-Z0-9:;&\\\[\]\()\'\.\-',
 # note that the GA1a character set is used to check the superscripted portion of the allele symbol only, since the non-superscripted part corresponds to the parent gene symbol (which will be checked in G1a)
 		'GA1a' => 'a-zA-Z0-9:;&\\\()\'\.,\+\-', # same characters as for G1a, EXCEPT no [ or ] (to prevent nesting of superscripts) Has in addition , and +
-		'A1a' => 'a-zA-Z0-9:;&\\\[\]\()\'\.,\+\?\-', # same characters as for G1a, and has in addition ? , and + (? is for cases when one of the chromosomes is not known)
-		'AB1a' => 'a-zA-Z0-9:;&\\\[\]\()\'\.,\+\{}\-', # same characters as for G1a, and has in addition , + { and }
-		'MA1a' => 'a-zA-Z0-9:;&\\\[\]\()\'\.,\+\?\{}\-', # same characters as for G1a, and has in addition ? , + { and }
+		'A1a' => 'a-zA-Z0-9:;&\\\[\]\()\'\.\+\?\-', # same characters as for G1a, and has in addition ? and + (? is for cases when one of the chromosomes is not known)
+		'AB1a' => 'a-zA-Z0-9:;&\\\[\]\()\'\.\+\{}\-', # same characters as for G1a, and has in addition + { and }
+		'MA1a' => 'a-zA-Z0-9:;&\\\[\]\()\'\.\+\?\{}\-', # same characters as for G1a, and has in addition ? , + { and }
 
 		'GG1a' => 'a-zA-Z0-9:;&\\\[\]\()\'\.\-', # same as G1a
 		
 
-		'GA10c' => 'a-zA-Z0-9:;&\\\[\]\()\'\.,\+\?\{}\-', # must be the same as MA1a
-		'GA10e' => 'a-zA-Z0-9:;&\\\[\]\()\'\.,\+\?\{}\-', # must be the same as MA1a
+		'GA10c' => 'a-zA-Z0-9:;&\\\[\]\()\'\.\+\?\{}\-', # must be the same as MA1a
+		'GA10e' => 'a-zA-Z0-9:;&\\\[\]\()\'\.\+\?\{}\-', # must be the same as MA1a
 
-		'MS1a' => 'a-zA-Z0-9:;&\\\[\]\()\'\.,\+\?\{}\-', # same characters as MA1a
+		'MS1a' => 'a-zA-Z0-9:;&\\\[\]\()\'\.\+\?\{}\-', # same characters as MA1a
 
-		'GA10a' => 'a-zA-Z0-9:;&\\\[\]\()\'\.,\+\?\{}\-', # must be the same as MS1a
+		'GA10a' => 'a-zA-Z0-9:;&\\\[\]\()\'\.\+\?\{}\-', # must be the same as MS1a
 
 
 		'TE1a' => 'a-zA-Z0-9:;&\\\.\-\'', # same characters as G1a, except no [ ] ( )
@@ -2405,6 +2405,11 @@ sub validate_synonym_field {
 			report ($file, "%s: synonym '%s' consists only of punctuation character(s) (are you sure they called it that ?).", $code, $synonym);
 
 		}
+
+		if($synonym=~ m/^:/) {
+			report ($file, "%s: synonym '%s' starts with ':' (is this a copy-paste error ?).", $code, $synonym);
+
+		}
 	}
 }
 
@@ -2449,13 +2454,10 @@ sub check_valid_symbol_field {
 		'MA18' => ['FBti'],
 		'MA23a' => ['FBgn'],
 
-		'MS4h' => ['FBal'],
 		'MS19a' => ['FBtp', 'FBmc'],
 		'MS19c' => ['FBte'],
 		'MS19d' => ['FBcl'],
 		'MS19e' => ['FBgn'],
-		'MS20' => ['FBtp', 'FBmc'],
-		'MS21' => ['FBte'],
 		'MS24' => ['FBal'],
 
 		'AB9' => ['FBab', 'FBba'],
@@ -5039,6 +5041,9 @@ sub check_valid_chado_symbol_field {
 		'SF11a' => ['FBpp'],
 		'G38' => ['FBgn'],
 
+		'MS4h' => ['FBal'],
+		'MS20' => ['FBtp', 'FBmc'],
+		'MS21' => ['FBte'],
 
 
 	);
@@ -5466,7 +5471,7 @@ sub get_species_prefix_from_symbol {
 # this special reg exp for alleles makes sure that it will only take a species abbreviation
 # from the gene part of the gene[superscript] allele symbol, as the first captured part
 # must not contain [ or ].  This works as species abbreviations are not allowed to contain [ or ]
-		my ($species_prefix, $backslash) = ($symbol =~ /^([^\\\[\]]*)(\\)?/);
+		($species_prefix, $backslash) = ($symbol =~ /^([^\\\[\]]*)(\\)?/);
 
 
 ##		warn "**Remaining from FBal: $symbol: prefix: ^$species_prefix^\n";
@@ -5516,9 +5521,12 @@ sub get_species_prefix_from_symbol {
 
 	}
 
+##	warn "species_prefix before backslash check: $species_prefix\n";
+
 # set to Dmel when there is no backslash in the symbol
 	$backslash or $species_prefix = 'Dmel';
 
+##	warn "species_prefix after backslash check: $species_prefix\n";
 # do not check validity within subroutine as might result in multiple messages for same error.
 # return value can be '' only in the case where there is a \ but nothing before it.
 	return ($species_prefix);
@@ -5619,6 +5627,54 @@ sub python_parser_field_stub {
 		double_query ($file, $code, $data);
 
 		report ($file, "%s: This field is not checked by Peeves, because it is parsed using the new Harvard python parser and checks have been implemented in that. So you should run this record through the new Harvard python parser before loading.\n! %s\n" , $code, $context);
+	}
+}
+
+sub check_for_rename_across_species {
+
+# subroutine to check for a rename across species and warn if so
+
+# $file = curation record
+# $num = number of entries in the primary symbol field of the proforma
+# $proforma_type = code for the type of proforma (G, GA, A, AB, ...)
+# reference to species of entries in primary symbol field
+# reference to rename field data
+# reference to the proforma_fields hash so that error message can provide context
+
+	my ($file, $num, $proforma_type, $primary_species, $rename_data, $context) = @_;
+
+	unless (exists $standard_symbol_mapping->{$proforma_type}) {
+
+		report ($file,"MAJOR PEEVES ERROR - Please let Gillian know the following, so that it can be fixed: check_for_rename_across_species subroutine is asking the $standard_symbol_mapping variable about a '%s' type proforma field, but the variable has no information about that type of proforma so cannot carry out that check.",$proforma_type);
+		return;
+	}
+
+	my $primary_symbol_field = exists $standard_symbol_mapping->{$proforma_type}->{primary_field} ? ($proforma_type . $standard_symbol_mapping->{$proforma_type}->{primary_field}) : ($proforma_type . "1a");
+	my $rename_field = exists $standard_symbol_mapping->{$proforma_type}->{rename_field} ? ($proforma_type . $standard_symbol_mapping->{$proforma_type}->{rename_field}) : ($proforma_type . "1e");
+
+	if ($num) {
+		for (my $i = 0; $i < $num; $i++) {
+
+			if ($rename_data->[$i]) {
+
+				foreach my $rename_symbol (split (/\n/, $rename_data->[$i])) {
+
+					if (exists $standard_symbol_mapping->{$proforma_type}->{species_prefix}) {
+
+						my $rename_species = get_species_prefix_from_symbol($rename_symbol, $standard_symbol_mapping->{$proforma_type}->{id});
+
+						unless ($rename_species eq $primary_species->[$i]) {
+
+							report ($file, "You are trying to rename to a different species. This is not allowed - follow the changing_species.sop instead (make a new stub entry of the correct species and then merge it with the entry whose species you want to change).\n!%s\n!%s\n", $context->{$primary_symbol_field}, $context->{$rename_field});
+
+						}
+
+					}
+
+				}
+
+			}
+		}
 	}
 }
 

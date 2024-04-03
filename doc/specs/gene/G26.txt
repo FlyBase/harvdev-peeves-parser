@@ -36,6 +36,17 @@ So the line should match this regexp:
 
 The value given in $1, i.e. the species, must match the species abbreviation of the gene symbol in G1a.
 
+* For new non-drosophilid genes, warns if G26 is not filled in.
+
+
+Cross-checks with other fields
+
+* If G26 is filled in and includes an accession number, that accession number must be present in G35.
+
+* If G35 is filled in, G26 must be filled in and the accession number in G35 must match the accession number part of the G26 line.  
+
+* If G26 is filled in, warns if the FBrf is not FBrf0199194.
+
 ### Related fields:
 
 
@@ -50,6 +61,4 @@ It may be possible to put constraints on <gene symbol> in the future but for the
 
 ### Updated:
 
-gm131204 (doc for this field moved here from gene.checks.pro).
-gm151001 (added Dupl. for multiple field info).
-gm160717 (check of species part changed to 'the species, must match the species abbreviation of the gene symbol in G1a.')
+gm240314.
