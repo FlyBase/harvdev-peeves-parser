@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.68.1"; #  add check_for_rename_across_species (DC-536): added for Cambridge style proformae (also fixed bug in get_species_prefix_from_symbol)
+our $Peeves_version = "2.69"; #  Add check for malformed proforma header lines (DC-1067)
 
 =head2 Version
 
@@ -1356,17 +1356,33 @@ init_symbol_table ($Peeves_version, $pcfg, $ccfg);
 			}
 		}
 
-# Lose anything up to and including the newline immediately before PROFORMA.
-
+# The regex below results in $header containing all the lines in between the previous '!!!!!\n' and the PROFORMA header line.
+# For curation records without malformed proformae, these will be 'commentary' lines such as
+# '! ALLELE DATA FOR THIS GENE' and '! Insert allele proforma(e) below.' which are not needed by the parser,
+# but are useful for curators to navigate and add more proformae to the curation record.
+# 
+# At this point these 'commentary' lines need to be stored as part of the $header so that if a space is added by mistake
+# at the end of a !!!!! line, the proforma following the '!!!!!! ' error is still passed to the $despatch_table for specific
+# proforma checks, both to check individual proforma fields, but also to be able to catch the '!!!!!! ' error using the
+# 'Malformed proforma field' check carried out in the code for each specific proforma.
+# So this means that the first part of the regex in the substitution below needs to stay as '(.*\n)*?' (do ****NOT**** change to '(.*\n)*')
+# so that any  '!!!!!! ' type errors are still caught and reported.
 	    $proforma =~ s/(.*\n)*?(.*?PROFORMA.*)/$2/s;
 	    my ($header, $type, $vers, $body) = ($proforma =~ /(.*?)([A-Z][A-Z\s.,\/]*?[A-Z])(\s*PROFORMA.*?\n)(.*)/s);  # Edited regex to allow forward slashes in proforma names.  This allows proper parsing of Expression proformae - and could also be useful for Library proforamae in future.
 
-
 # Ignore the proforma version for the moment, but capture it in case we subsequently decide to use it, perhaps
-# to emit different error messages.  We used to check $header, as that's the portion which is most often
-# mangled by accident, but it produced too many false positives.  Review the situation later.
-#
-#    $header eq '! ' or report ($file, "Strange stuff '%s' before the proforma type specification", $header);
+# to emit different error messages.
+
+# Check that the PROFORMA header line is not malformed.
+# Now that the relevant details for any proformae with a '!!!!! ' error in the line above them are safely stored in $type and $body
+# for passing to specific proforma checks via the $despatch_table, the $header can be stripped of anything up to and including the
+# newline immediately before the PROFORMA header line to check for malformed lines where a line break has been deleted by mistake. 
+
+	$header =~ s/(.*\n)*//s;
+# cases where the header is missing its initial ! are already dealt with above, so do not report an error for that again here
+	unless ($header eq '! ' || $header eq ' ') {
+    		report ($file, "Malformed header line with '%s' at the beginning of the PROFORMA line (did you delete a line break by mistake ?):\n%s%s%s", $header, $header, $type, $vers);
+	}
 
 # See whether !c is used anywhere in the proforma so that certain checks may be relaxed.  After the next
 # statement, the symbol 'proforma_type' will be a valid symbol of type 'change' if and only if a !c appears.
