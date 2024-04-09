@@ -1005,3 +1005,5 @@ our $Peeves_version = "2.65"; #  G35 and G26 must be filled in for new foreign g
 our $Peeves_version = "2.66"; #  G35 and G26 must only be filled in under FBrf0199194 (DC-523)
 our $Peeves_version = "2.67"; #  change moseg.pro symbol fields to check_valid_chado_symbol_field where appropriate (DC-802)
 our $Peeves_version = "2.68.1"; #  add check_for_rename_across_species (DC-536): added for Cambridge style proformae (also fixed bug in get_species_prefix_from_symbol)
+# 8.4.2024
+our $Peeves_version = "2.69"; #  Add check for malformed proforma header lines (DC-1067)
