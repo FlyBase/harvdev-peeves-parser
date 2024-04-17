@@ -1,0 +1,113 @@
+! C1. Curator ID  :sian
+! C2. Date    :240403
+! C3. Curator notes to self  :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA         Version 48: 21 May 2018
+!
+! P22. FlyBase reference ID (FBrf) or "new" *U :FBrf0259040
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! HUMAN HEALTH MODEL PROFORMA  Version 2.1: 23 Aug 2019
+!
+! HH1f. Database ID for disease or health issue :FBhh0001572
+! HH1b. Full name to use in database :mucopolysaccharidosis type IIIC
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA         Version 48: 21 May 2018
+!
+! P22. FlyBase reference ID (FBrf) or "new" *U :FBrf0222196
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! HUMAN HEALTH MODEL PROFORMA  Version 2.1: 23 Aug 2019
+!
+! HH1f. Database ID for disease or health issue :FBhh0001572
+! HH1b. Full name to use in database :mucopolysaccharidosis type IIIC
+! HH1e. Additional synonyms (free text)  :MPS 3C
+MPS III C
+MPS3C
+Mucopoly-saccharidosis type 3C
+Mucopolysaccharidosis type IIIC (Sanfilippo C)
+Acetyl-CoA: heparan-alpha-D-glucosaminide N-acetyltransferase deficiency
+Heparan-alpha-glucosaminide acetyltransferase deficiency
+!
+! HH1g. Sub-datatype [disease, health-related process] : 
+! HH2a. Category [parent entity, sub-entity, specific entity, group entity] :
+! HH2b. Parent entity (if HH2a = sub-entity) :
+!
+! HH2d. DOID (with DOID prefix) :DOID:0111393
+!
+! HH3a. Action - rename this disease (HH1b is rename) :
+! HH3c. Action - delete disease record ("y"/blank) :
+!
+! HH15. Overview of Drosophila model (free text) :This report describes mucopolysaccharidosis type IIIC, a subtype of progeria that exhibits autosomal recessive inheritance. The human gene implicated is HGSNAT, which encodes heparan-alpha-glucosaminide N-acetyltransferase, one of several enzymes involved in the lysosomal degradation of heparin sulfate. There is one high-scoring fly ortholog, Dmel\@Hgsnat@, for which multiple genetic reagents, including classical alleles, RNAi-targeting constructs, and alleles caused by insertional mutagenesis, have been generated. 
+
+Human HGSNAT has not been introduced into flies.
+
+Flies mutant for @Hgsnat@ exhibit a progressive accumulation of heparin sulfuate; this is also observed in flies undergoing ubiquitous RNAi-mediated knockdown of Dmel\@Hgsnat@. Ubiquituous RNAi-mediated knockdown also results in a significantly shortened lifespan. Pan-neuronal RNAi-mediated knockdown of Dmel\@Hgsnat@ results in enlargement of the endolysosomal compartment in the brain, presynaptic abnormalities, and locomotor defects. RNAi-mediated knockdown of Dmel\@Hgsnat@ in cortex and wrapping glia resulted in climbing defects in adult flies, while knockdown in sub-perineurial glia and astrocytes impaired activity in an activity monitor assay.
+
+[updated Apr. 2024 by FlyBase; FBrf0222196]
+!
+! HH4h. Description of process (free text) :
+! HH4a. Description/Symptoms and phenotype (free text) :Mucopolysaccharidosis type III (MPS III) is a multisystem lysosomal storage disease characterized by progressive central nervous system degeneration manifest as severe intellectual disability (ID), developmental regression, and other neurologic manifestations including autism spectrum disorder (ASD), behavioral problems, and sleep disturbances. Disease onset is typically before age ten years. Disease course may be rapidly or slowly progressive; some individuals with an extremely attenuated disease course present in mid-to-late adulthood with early-onset dementia with or without a history of ID. Systemic manifestations can include musculoskeletal problems (joint stiffness, contractures, scoliosis, and hip dysplasia), hearing loss, respiratory tract and sinopulmonary infections, and cardiac disease (valvular thickening, defects in the cardiac conduction system). Neurologic decline is seen in all affected individuals; however, clinical severity varies within and among the four MPS III subtypes (defined by the enzyme involved) and even among members of the same family. Death usually occurs in the second or third decade of life secondary to neurologic regression or respiratory tract infections. [from GeneReviews, Mucopolysaccharidosis Type III; 2024.04.03]
+! HH4b. Description/Genetics (free text) :
+! HH4c. Description/Cellular phenotype and pathology (free text) :
+! HH4g. Description/Molecular information (free text) :
+! HH4f. Related human health entity :FBhh0000851
+!
+! HH5a. External link - accession number (repeat for multiple ) :mucopolysaccharidosis-type-iii
+!   HH5b. External link - FB database ID (DB1a) :GHR_condition
+!   HH5c. External link - title/description of specific accession :Mucopolysaccharidosis type III
+!   HH5d. Action - dissociate accession specified in HH5a/HH5b from this human health model (blank/y) :
+! HH5a. External link - accession number (repeat for multiple ) :hgsnat
+!   HH5b. External link - FB database ID (DB1a) :GHR_gene
+!   HH5c. External link - title/description of specific accession :HGSNAT gene heparan-alpha-glucosaminide N-acetyltransferase
+!   HH5d. Action - dissociate accession specified in HH5a/HH5b from this human health model (blank/y) :
+! HH5a. External link - accession number (repeat for multiple ) :NBK546574
+!   HH5b. External link - FB database ID (DB1a) :Gene_reviews
+!   HH5c. External link - title/description of specific accession :Mucopolysaccharidosis Type III
+!   HH5d. Action - dissociate accession specified in HH5a/HH5b from this human health model (blank/y) :
+! HH5a. External link - accession number (repeat for multiple ) :39477 
+!   HH5b. External link - FB database ID (DB1a) :Medgene
+!   HH5c. External link - title/description of specific accession :Mucopolysaccharidosis, MPS-III-C(MPS3C)
+!   HH5d. Action - dissociate accession specified in HH5a/HH5b from this human health model (blank/y) :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA         Version 48: 21 May 2018
+!
+! P22. FlyBase reference ID (FBrf) or "new" *U :FBrf0222195
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! HUMAN HEALTH MODEL PROFORMA  Version 2.1: 23 Aug 2019
+!
+! HH1f. Database ID for disease or health issue :FBhh0001572
+! HH1b. Full name to use in database :mucopolysaccharidosis type IIIC
+!
+! HH7a. Human gene(s) implicated (FB symbol, Hsap\xxx) :
+! HH7e. Human gene(s) implicated (HGNC accession number; with HGNC prefix) :HGNC:26527
+!   HH7d. Orthologous Dmel gene(s) [usu. DIOPT] :Hgsnat
+!   HH7c. Comments on ortholog relationships (free text) :One to one (1 human to 1 Drosophila); HGSNAT has one high-scoring Drosophila ortholog, @Hgsnat@.
+!   HH7f. Action - dissociate accession specified in HH7e from this human health model (blank/y) :
+!
+! HH8a. Dmel gene(s) implicated (repeat for multiple) :Hgsnat
+!   HH8c. Comments on orthologs (free text) :High-scoring ortholog of human HGSNAT (1 Drosophila to 1 human).
+!   HH8d. Action - dissociate gene specified in HH8a from this human health model (blank/y) :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA         Version 48: 21 May 2018
+!
+! P22. FlyBase reference ID (FBrf) or "new" *U :FBrf0222197
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! HUMAN HEALTH MODEL PROFORMA  Version 2.1: 23 Aug 2019
+!
+! HH1f. Database ID for disease or health issue :FBhh0001572
+! HH1b. Full name to use in database :mucopolysaccharidosis type IIIC
+! HH1e. Additional synonyms (free text)  :MPS IIIC
+Sanfilippo syndrome C
+Acetyl-CoA:Alpha-Glucosaminide n-acetyltransferase deficiency
+! HH2c. OMIM phenotype number (number only) :252930
+!
+! HH3d. Action - dissociate HH1f from FBrf ("y"/blank) :
+!
+! HH4a. Description/Symptoms and phenotype (free text) :Sanfilippo syndrome comprises several forms of lysosomal storage diseases due to impaired degradation of heparan sulfate. The deficient enzyme in Sanfilippo syndrome C, or MPS IIIC, is an acetyltransferase that catalyzes the conversion of alpha-glucosaminide residues to N-acetylglucosaminide in the presence of acetyl-CoA. [from OMIM:252930; 2024.04.03]
+! HH4b. Description/Genetics (free text) :Mucopolysaccharidosis type IIIC (MPS3C), also known as Sanfilippo syndrome C, is caused by homozygous or compound heterozygous mutation in the HGSNAT gene, encoding heparan acetyl-CoA:alpha-glucosaminide N-acetyltransferase, on chromosome 8p11. [from OMIM:252930; 2024.04.03]
+! HH4c. Description/Cellular phenotype and pathology (free text) :
+! HH4g. Description/Molecular information (free text) :
+! HH20. Internal notes :OMIM section
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

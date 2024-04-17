@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.69"; #  Add check for malformed proforma header lines (DC-1067)
+our $Peeves_version = "2.71"; #  add check to warn if OMIM: used in free text (DC-1065)
 
 =head2 Version
 

@@ -593,6 +593,21 @@ sub check_stamped_free_text {
 
 	};
 
+# hash containing fields where curators are likely to refer to OMIM MIM: numbers in free text,
+# so can check that MIM: has been used as the prefix.
+
+	my $mim_field = {
+
+		'HH15' => '1',
+		'HH4h' => '1',
+		'HH4a' => '1',
+		'HH4b' => '1',
+		'HH4c' => '1',
+		'HH4g' => '1',
+		'GA34b' => '1',
+
+	};
+
 
 	$dehashed_data eq '' and return;
 
@@ -605,6 +620,20 @@ sub check_stamped_free_text {
 			report ($file, "%s: has data containing '%s', did you miss and put data intended for a nearby CV field into this free text field by mistake ?:\n!%s", $code, $1, $context->{$code});
 
 		}
+	}
+
+	if (exists $mim_field->{$code}) {
+
+		if ($dehashed_data =~ m/(OMIM:(PS)?[0-9]{1,})/) {
+
+			my $given_mim = $1;
+			my $correct_mim = $given_mim;
+			$correct_mim =~ s/^O//;
+
+			report ($file, "%s: You have used '%s' in free text, please use '%s' instead:\n!%s", $code, $given_mim, $correct_mim, $context->{$code});
+
+		}
+
 	}
 
 }
