@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.71"; #  add check to warn if OMIM: used in free text (DC-1065)
+our $Peeves_version = "2.75"; #  fixing bug in G35 checking (removing overly stringent false-positive message) (related to DC-417).
 
 =head2 Version
 
@@ -1410,7 +1410,7 @@ init_symbol_table ($Peeves_version, $pcfg, $ccfg);
 	    }
 	    else
 	    {
-		report ($file, "*CRITICAL ERROR* Found proforma of unexpected type '%s'. You may have missed out a 'parent' proforma (e.g. ALLELE needs to be under a GENE) or got proformae in the wrong order. This could have have VERY bad consequences when loading, please check and *DO NOT LOAD* this curation record until this message disappears.",
+		report ($file, "*CRITICAL ERROR* Found proforma of unexpected type '%s'. You may have missed out a 'parent' proforma (e.g. ALLELE needs to be under a GENE), got proformae in the wrong order, or an odd (likely invisible) character may have crept into your proforma template if you are not using the standard svn proforma templates. If the problem is due to an odd character, Peeves will not have checked any of the proforma fields after the line that tripped this message. In addition, missing out a parent proforma can have VERY bad consequences when loading. So please check and *DO NOT LOAD* this curation record until this message disappears.",
 			$type);
 	    }
 

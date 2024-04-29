@@ -1007,5 +1007,11 @@ our $Peeves_version = "2.67"; #  change moseg.pro symbol fields to check_valid_c
 our $Peeves_version = "2.68.1"; #  add check_for_rename_across_species (DC-536): added for Cambridge style proformae (also fixed bug in get_species_prefix_from_symbol)
 # 8.4.2024
 our $Peeves_version = "2.69"; #  Add check for malformed proforma header lines (DC-1067)
+# 12.4.2024
+our $Peeves_version = "2.70"; #  making sure curators get message not to use 'in vitro construct - RNAi' until it is obsoleted (related to DC-1071)
 # 17.4.2024
 our $Peeves_version = "2.71"; #  add check to warn if OMIM: used in free text (DC-1065)
+# 29.4.2024
+our $Peeves_version = "2.72"; #  remove temp messages about child 'in vitro construct - X' terms now that they are obsolete (DC-1071)
+our $Peeves_version = "2.73"; #  adding more possible causes to 'Found proforma of unexpected type' warning.
+our $Peeves_version = "2.75"; #  fixing bug in G35 checking (removing overly stringent false-positive message) (related to DC-417).

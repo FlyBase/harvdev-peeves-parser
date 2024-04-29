@@ -683,12 +683,6 @@ compare_field_pairs ($file, $g_num_syms, 'G2c', \@G2c_list, 'G2a', \@G2a_list, \
 
 							}
 
-							unless ($G35_data) {
-
-								report ($file, "%s must be filled in for a new non-drosophilid gene.\n!%s\n", "G35", $proforma_fields{'G1a'});
-
-							}
-
 						}
 					}
 				}

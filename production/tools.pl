@@ -3959,13 +3959,7 @@ sub validate_cvterm_field {
 
 				valid_symbol ($datum, "SO:incomplete_transcript_variant") and report ($file, "%s: '%s' is not valid for this field%s:\n!%s", $code, $datum, " (it is from the incomplete_transcript_variant branch). This branch of SO describes variants in 'an incompletely *annotated* transcript' and this definition is not applicable to transgenic product class", $context->{$code});
 
-## message to remind curators to use parent 'in vitro construct' term in most cases now we are curating GA35
-			} elsif ($code eq 'GA8') {
-
-				valid_symbol ($datum, 'FBcv:in vitro construct') and report ($file, "%s: '%s' is deprecated for this field now that we are using GA35, use 'in vitro construct' instead:\n!%s", $code, $datum, $context->{$code});
-
 			}
-
 
 		} else {
 

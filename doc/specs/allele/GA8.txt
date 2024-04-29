@@ -33,8 +33,6 @@ checks within field (in validate_cvterm_field):
 * each value must be valid term (i.e. does not have is_obsolete: true) from
 flybase_controlled_vocabulary.obo, and the term must be in the 'origin_of_mutation' namespace 
 
-* If the term used is a child of 'in vitro construct' (EXCEPT 'in vitro construct - RNAi') warns that the child term is now deprecated (now that we are curating GA35 field) and reminds to use 'in vitro construct' instead. (This check can be removed once the child terms now 'replaced' by GA35 curation have been removed from the ontology, but they need to be kept in place in chado for now until retrofit for GA35 has been done, and any relevant derivation scripts have all been updated, so adding this warning for now rather than removed the terms from the ontology immediately).
-
 
 Checks between fields (done at end of proforma parsing)
 
@@ -61,4 +59,4 @@ doc: doc reflects what has been implemented
 
 ### Updated:
 
-gm211206.
+gm240429.
