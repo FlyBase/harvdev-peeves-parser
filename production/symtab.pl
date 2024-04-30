@@ -916,25 +916,12 @@ my $dv_short_qualifiers = {
  	my $fbcv_ancestors = {
  		'modifier of variegation' => '1',
 		'increased mortality during development' => '1',
-## the following is stored as a temporary measure, until the 'in vitro construct - X' terms can be obsoleted in the ontology. The stored values are used in validate_cvterm_field (tools.pl) to remind curators that most child 'in vitro construct - X' terms are no longer used for the GA8 field, and that the parent term should be used instead. The value of the key below is '0' NOT '1' which prevents the parent term being stored
-## once terms are removed from ontology, the line below can be removed
-		'in vitro construct' => '0',
 		'split system combination' => '1', # for validation of F3 for FBco
 		'split system component' => '1', # for validation that components of combination symbol are split system components
 	};
 
 	&process_ontology_file ($FBcv_obo, 'FBcv:\d{1,}', '1', $fbcv_ancestors);
 
-
-## removing 'in vitro construct - RNAi' from the list of 'in vitro construct' descendents as this IS still needed to be used in GA8. Once child terms are removed from ontology, the section below can be removed
-
-	if (valid_symbol ('in vitro construct - RNAi', 'FBcv:in vitro construct')) {
-
-		delete_symbol ('in vitro construct - RNAi', 'FBcv:in vitro construct');
-
-	}
-
-##
 
 
 # adding list of allowed qualifers for phenotypic_class to symbol table

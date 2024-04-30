@@ -1,0 +1,161 @@
+! C1.  Curator ID	:tl
+! C2.  Date		:240402
+! C3.  Curator notes to self	:New Functional Motifs for the Targeted Localization of Proteins to the Nucleolus in Drosophila and Human Cells. 
+! C9.  Cambridge curation (new_al, merge, split, rename, new_char, pheno, nocur, new_transg, gene_group, pheno_chem, pheno_anat) 
+! C4.  Additional curation (P41. wt_exp, pert_exp, neur_exp, gene_model, gene_model_nonmel, phys_int, cis_reg, genom_feat, no_flag, disease, diseaseHP, dataset, cell_line, dataset, P42. novel_anat, P43. disease)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"            *U   :FBrf0258624
+! P2.   Parent multipub abbreviation                    *w   :Int. J. Mol. Sci.
+! P40.  Flag Cambridge for curation                 CAMCUR   :
+! P41.  Flag Harvard for curation                  HARVCUR   :cell_line??
+! P42.  Flag Ontologists for curation                 ONTO   :
+! P43.  Flag Disease for curation                  DISEASE   :
+! P44.  Disease(s) relevant to FBrf            [free text]   :
+! P19.  Internal notes                                    *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a   :Non3
+! G1b.  Gene symbol(s) used in reference                    *i   :Non3??
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)    :y
+! G2b.  Gene name(s) used in reference                      *V   :
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t   :
+! G34.  Antibody generated (monoclonal/polyclonal)          *s   :
+! G15.  Internal notes  *W :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a   :Ns3
+! G1b.  Gene symbol(s) used in reference                    *i   :NS3
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)    :y
+! G2b.  Gene name(s) used in reference                      *V   :
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t   :
+! G34.  Antibody generated (monoclonal/polyclonal)          *s   :
+! G15.  Internal notes  *W :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a   :pit
+! G1b.  Gene symbol(s) used in reference                    *i   :Pit
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)    :y
+! G2b.  Gene name(s) used in reference                      *V   :
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t   :
+! G34.  Antibody generated (monoclonal/polyclonal)          *s   :
+! G15.  Internal notes  *W :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a   :His2B
+! G1b.  Gene symbol(s) used in reference                    *i   :H2B
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)    :y
+! G2b.  Gene name(s) used in reference                      *V   :
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t   :
+! G34.  Antibody generated (monoclonal/polyclonal)          *s   :
+! G15.  Internal notes  *W :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a   :Ns1
+! G1b.  Gene symbol(s) used in reference                    *i   :NS1
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)    :y
+! G2b.  Gene name(s) used in reference                      *V   :
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t   :
+! G34.  Antibody generated (monoclonal/polyclonal)          *s   :
+! G15.  Internal notes  *W :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a   :mod
+! G1b.  Gene symbol(s) used in reference                    *i   :mod
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)    :y
+! G2b.  Gene name(s) used in reference                      *V   :
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t   :
+! G34.  Antibody generated (monoclonal/polyclonal)          *s   :
+! G15.  Internal notes  *W :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a   :Fib
+! G1b.  Gene symbol(s) used in reference                    *i   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)    :y
+! G2b.  Gene name(s) used in reference                      *V   :Fibrillarin
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t   :
+! G34.  Antibody generated (monoclonal/polyclonal)          *s   :
+! G15.  Internal notes  *W :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a   :Nph
+! G1b.  Gene symbol(s) used in reference                    *i   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)    :y
+! G2b.  Gene name(s) used in reference                      *V   :Nucleophosmin
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t   :
+! G34.  Antibody generated (monoclonal/polyclonal)          *s   :
+! G15.  Internal notes  *W :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a   :Nlp
+! G1b.  Gene symbol(s) used in reference                    *i   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)    :y
+! G2b.  Gene name(s) used in reference                      *V   :Nucleoplasmin
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t   :
+! G34.  Antibody generated (monoclonal/polyclonal)          *s   :
+! G15.  Internal notes  *W :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a   :Nopp140
+! G1b.  Gene symbol(s) used in reference                    *i   :Nopp140
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)    :y
+! G2b.  Gene name(s) used in reference                      *V   :
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t   :
+! G34.  Antibody generated (monoclonal/polyclonal)          *s   :
+! G15.  Internal notes  *W :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a   :Ns2
+! G1b.  Gene symbol(s) used in reference                    *i   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)    :y
+! G2b.  Gene name(s) used in reference                      *V   :Nucleostemin2
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t   :
+! G34.  Antibody generated (monoclonal/polyclonal)          *s   :
+! G15.  Internal notes  *W :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a   :nop5
+! G1b.  Gene symbol(s) used in reference                    *i   :Nop5
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)    :y
+! G2b.  Gene name(s) used in reference                      *V   :
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t   :
+! G34.  Antibody generated (monoclonal/polyclonal)          *s   :
+! G15.  Internal notes  *W :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 77:  01 Jun 2016
+!
+! G1a.  Gene symbol to use in FlyBase                       *a   :Act5C
+! G1b.  Gene symbol(s) used in reference                    *i   :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)    :y
+! G2b.  Gene name(s) used in reference                      *V   :Actin 5C
+! G30.  Class of gene, if new (SO_term ; ID)           [CV] *t   :
+! G34.  Antibody generated (monoclonal/polyclonal)          *s   :
+! G15.  Internal notes  *W :
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!
