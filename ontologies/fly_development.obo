@@ -1,9 +1,21 @@
 format-version: 1.2
-data-version: 2019-10-21
-date: 21:10:2019 12:49
+data-version: 2024-04-18
+date: 18:04:2024 09:08
+subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
+subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
+subsetdef: goslim_aspergillus "Aspergillus GO slim"
+subsetdef: goslim_candida "Candida GO slim"
+subsetdef: goslim_ChEMBL "ChEMBL GO slim"
+subsetdef: goslim_chembl "ChEMBL GO slim"
+subsetdef: goslim_generic "Generic GO slim"
+subsetdef: goslim_metagenomics "Metagenomics GO slim"
+subsetdef: goslim_pir "PIR GO slim"
+subsetdef: goslim_plant "Plant GO slim"
+subsetdef: goslim_pombe "Fission yeast GO slim"
+subsetdef: goslim_yeast "Yeast GO slim"
+subsetdef: gosubset_prok "Prokaryotic GO subset"
 default-namespace: FlyBase development CV
 namespace-id-rule: * FBdv:$sequence(8,7000,10000)$
-remark: Drosophila temporal ontology.
 ontology: fbdv/fbdv-simple
 
 [Term]
@@ -35,6 +47,7 @@ relationship: substage_of FBdv:00005321 ! extended germ band stage
 [Term]
 id: FBdv:00004886
 name: oogenesis
+def: "The complete process of formation and maturation of an ovum or female gemate from a primordial female germ cell." [GO:0048477]
 comment: Temporal ordering number - 10000.
 synonym: "oogenesis stage" EXACT []
 xref: GO:0048477
@@ -45,8 +58,6 @@ id: FBdv:00005259
 name: developmental stage
 alt_id: FBdv:00007010
 def: "A temporal subdivision of a developmental process." [FBC:DOS]
-created_by: djs93
-creation_date: 2009-10-01T05:56:56Z
 
 [Term]
 id: FBdv:00005261
@@ -168,7 +179,7 @@ relationship: substage_of FBdv:00004886 ! oogenesis
 [Term]
 id: FBdv:00005274
 name: oogenesis stage S12
-def: "Oogenesis stage that begins when dying nurse cells form an anterior cap to the oocyte. Shortly after this, nurse cell dumping and growth of the oocyte are complete. Elongation of the dorsal appendages and formation of the innermost chorionic layer and endochondrion begins during this stage." [FlyBase:FBrf0021038, FlyBase:FBrf0034074, FlyBase:FBrf0043885, FlyBase:FBrf0064777]
+def: "Oogenesis stage that begins when dying nurse cells form an anterior cap to the oocyte. Shortly after this, nurse cell dumping and growth of the oocyte are complete. Elongation of the dorsal appendages and formation of the innermost chorionic layer and endochorion begins during this stage." [FlyBase:FBrf0021038, FlyBase:FBrf0034074, FlyBase:FBrf0043885, FlyBase:FBrf0064777]
 comment: Temporal ordering number - 10160.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005273 ! oogenesis stage S11
@@ -177,7 +188,7 @@ relationship: substage_of FBdv:00004886 ! oogenesis
 [Term]
 id: FBdv:00005275
 name: oogenesis stage S12A
-def: "Innermost chorionic layer and endochondrion begin to form in the anterior of the follicle." [FlyBase:FBrf0043885]
+def: "Innermost chorionic layer and endochorion begin to form in the anterior of the follicle." [FlyBase:FBrf0043885]
 comment: Temporal ordering number - 10170.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005273 ! oogenesis stage S11
@@ -186,7 +197,7 @@ relationship: substage_of FBdv:00005274 ! oogenesis stage S12
 [Term]
 id: FBdv:00005276
 name: oogenesis stage S12B
-def: "Secretion of innermost chorionic layer and endochondrion begins in the main follicle cells." [FlyBase:FBrf0043885]
+def: "Secretion of innermost chorionic layer and endochorion begins in the main follicle cells." [FlyBase:FBrf0043885]
 comment: Temporal ordering number - 10180.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005275 ! oogenesis stage S12A
@@ -195,7 +206,7 @@ relationship: substage_of FBdv:00005274 ! oogenesis stage S12
 [Term]
 id: FBdv:00005277
 name: oogenesis stage S12C
-def: "Formation of specialized endochondrion structures in the anterior of the follicle: branches in the developing dorsal appendages; compact endochondrion lacking the pillars seen in the rest of the follicle." [FlyBase:FBrf0021038]
+def: "Formation of specialized endochorion structures in the anterior of the follicle: branches in the developing dorsal appendages; compact endochorion lacking the pillars seen in the rest of the follicle." [FlyBase:FBrf0021038]
 comment: Temporal ordering number - 10190.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005276 ! oogenesis stage S12B
@@ -204,7 +215,7 @@ relationship: substage_of FBdv:00005274 ! oogenesis stage S12
 [Term]
 id: FBdv:00005278
 name: oogenesis stage S13
-def: "Oogenesis stage that begins when the micropile begins to form. At the beginning of this stage, about 12-15 nurse cell nuclei remain at the anterior of the oocyte. By the end of this stage, none of these nuclei remain. Oocyte meiosis up to arrest at full metaphase I occurs during this stage." [FlyBase:FBrf0021038, FlyBase:FBrf0029744, FlyBase:FBrf0034074, FlyBase:FBrf0064777]
+def: "Oogenesis stage that begins when the micropyle begins to form. At the beginning of this stage, about 12-15 nurse cell nuclei remain at the anterior of the oocyte. By the end of this stage, none of these nuclei remain. Oocyte meiosis up to arrest at full metaphase I occurs during this stage." [FlyBase:FBrf0021038, FlyBase:FBrf0029744, FlyBase:FBrf0034074, FlyBase:FBrf0064777]
 comment: Temporal ordering number - 10200.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005274 ! oogenesis stage S12
@@ -285,6 +296,7 @@ is_a: FBdv:00005259 ! developmental stage
 [Term]
 id: FBdv:00005287
 name: unfertilized egg stage
+def: "Developmental stage that starts with ovulation, at the end of oogenesis, until the egg is fertilized by a sperm." [FlyBase:FBrf0158848]
 comment: Temporal ordering number - 10300.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005283 ! oogenesis stage S14
@@ -294,10 +306,12 @@ relationship: substage_of FBdv:00005286 ! egg stage
 [Term]
 id: FBdv:00005288
 name: fertilized egg stage
+def: "Developmental stage that starts with sperm entry until the first mitotic division of the zygote." [FlyBase:FBrf0229233]
 comment: Temporal ordering number - 10.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005287 ! unfertilized egg stage
 relationship: substage_of FBdv:00005286 ! egg stage
+relationship: substage_of FBdv:00005289 ! embryonic stage
 
 [Term]
 id: FBdv:00005289
@@ -305,7 +319,7 @@ name: embryonic stage
 def: "The stage of the Drosophila life-cycle from fertilization to hatching." [FBC:DOS]
 comment: Temporal ordering number - 20.
 is_a: FBdv:00007012 ! life stage
-relationship: immediately_preceded_by FBdv:00005288 ! fertilized egg stage
+relationship: immediately_preceded_by FBdv:00005287 ! unfertilized egg stage
 
 [Term]
 id: FBdv:00005290
@@ -320,7 +334,7 @@ relationship: substage_of FBdv:00000054 ! cleavage stage
 [Term]
 id: FBdv:00005291
 name: embryonic stage 1
-def: "The embryonic stage that lasts from the end of fertilization to the end of the second nuclear division. Duration at 25 degrees C\\: approximately 25 minutes (0-25 minutes after egg laying)." [FlyBase:FBrf0064779, FlyBase:FBrf0089570]
+def: "The embryonic stage that lasts from the end of fertilization to the end of the second nuclear division. Duration at 25 degrees C: approximately 25 minutes (0-25 minutes after egg laying)." [FlyBase:FBrf0064779, FlyBase:FBrf0089570]
 comment: Temporal ordering number - 40.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005288 ! fertilized egg stage
@@ -451,13 +465,13 @@ relationship: substage_of FBdv:00005289 ! embryonic stage
 
 [Term]
 id: FBdv:00005305
-name: syncytial blastoderm stage
+name: obsolete syncytial blastoderm stage
 is_obsolete: true
 
 [Term]
 id: FBdv:00005306
 name: embryonic stage 4
-def: "Nuclear division 10-13. Polar buds divide twice and become tightly grouped at the posterior pole by the end of this stage. Nuclei visible at the rim of the embryo. Stage 4 ends with the beginning of cellularization. Duration at 25 degrees C: approx. 50 minutes (80-130 minutes after egg laying)." [FlyBase:FBrf0089570]
+def: "Nuclear division 10-13. Polar buds divide twice and become tightly grouped at the posterior pole by the end of this stage. Nuclei visible at the rim of the embryo. Stage 4 ends with the beginning of cellularization. Duration at 25 degrees C: approximately 50 minutes (80-130 minutes after egg laying)." [FlyBase:FBrf0089570]
 comment: Temporal ordering number - 170.
 synonym: "syncytial blastoderm" EXACT []
 synonym: "syncytial blastoderm stage" EXACT []
@@ -496,7 +510,7 @@ relationship: substage_of FBdv:00005306 ! embryonic stage 4
 
 [Term]
 id: FBdv:00005310
-name: cellular blastoderm stage
+name: obsolete cellular blastoderm stage
 is_obsolete: true
 
 [Term]
@@ -523,7 +537,7 @@ relationship: substage_of FBdv:00005289 ! embryonic stage
 [Term]
 id: FBdv:00005313
 name: embryonic cycle 14A
-def: "The interphase of embryonic cycle 14.  This begins at the same time as cellularization and is of variable length depending on cell identity: embryonic cycle 14 M phase (14B) is asynchronous across the embryo, but occurs synchronously within discrete domains, known as mitotic domains." [[FlyBase:FBrf0039741]
+def: "The interphase of embryonic cycle 14. This begins at the same time as cellularization and is of variable length depending on cell identity: embryonic cycle 14 M phase (14B) is asynchronous across the embryo, but occurs synchronously within discrete domains, known as mitotic domains." [FlyBase:FBrf0039741]
 comment: Temporal ordering number - 256.
 synonym: "embryonic cycle 14 interphase" EXACT [FBC:DOS]
 is_a: FBdv:00007022 ! embryonic cycle interphase
@@ -533,7 +547,7 @@ relationship: substage_of FBdv:00005312 ! embryonic cycle 14
 id: FBdv:00005314
 name: embryonic cycle 14B
 def: "The M-phase of embryonic cycle 14. This is asynchronous across the embryo, but occurs synchronously within discrete domains, known as mitotic domains." [FlyBase:FBrf0039741]
-comment: Temporal ordering number - 257.  Not to be confused with mitotic domain 14B, which is a domain of cells in the dorsal midline of the head that don't undergo a 14th division (Foe, 1989). The asynchronous nature of cycle 14 divisions means that this is not very useful for annotating stage.  If possible a standard embryonic stage should be used instead.
+comment: Temporal ordering number - 257. Not to be confused with mitotic domain 14B, which is a domain of cells in the dorsal midline of the head that don't undergo a 14th division (Foe, 1989). The asynchronous nature of cycle 14 divisions means that this is not very useful for annotating stage. If possible a standard embryonic stage should be used instead.
 synonym: "embryonic cycle 14 M-phase" EXACT [FBC:DOS]
 is_a: FBdv:00007023 ! embryonic cycle M-phase
 relationship: substage_of FBdv:00005312 ! embryonic cycle 14
@@ -542,7 +556,7 @@ relationship: substage_of FBdv:00005312 ! embryonic cycle 14
 id: FBdv:00005315
 name: embryonic cycle 15
 def: "The 15th cell cycle of embryogenesis. Asynchronous." [FlyBase:FBrf0089570]
-comment: Temporal ordering number - 285. The asynchronous nature of cycle 15 divisions means that this is not very useful for annotating stage.  If possible a standard embryonic stage should be used instead.
+comment: Temporal ordering number - 285. The asynchronous nature of cycle 15 divisions means that this is not very useful for annotating stage. If possible a standard embryonic stage should be used instead.
 synonym: "second blastoderm mitosis" EXACT [FlyBase:FBrf0089570]
 is_a: FBdv:00007011 ! embryonic cycle
 relationship: immediately_preceded_by FBdv:00005312 ! embryonic cycle 14
@@ -552,7 +566,7 @@ relationship: substage_of FBdv:00005289 ! embryonic stage
 id: FBdv:00005316
 name: embryonic cycle 16
 def: "The 16th cell cycle division of embryogenesis. Asynchronous." [FlyBase:FBrf0089570]
-comment: Temporal ordering number - 295. The asynchronous nature of cycle 16 divisions means that this is not very useful for annotating stage.  If possible a standard embryonic stage should be used instead.
+comment: Temporal ordering number - 295. The asynchronous nature of cycle 16 divisions means that this is not very useful for annotating stage. If possible a standard embryonic stage should be used instead.
 synonym: "third blastoderm mitosis" EXACT [FlyBase:FBrf0089570]
 is_a: FBdv:00007011 ! embryonic cycle
 relationship: immediately_preceded_by FBdv:00005315 ! embryonic cycle 15
@@ -590,7 +604,7 @@ relationship: substage_of FBdv:00005317 ! gastrula stage
 
 [Term]
 id: FBdv:00005320
-name: germ band stage
+name: obsolete germ band stage
 is_obsolete: true
 
 [Term]
@@ -616,7 +630,7 @@ relationship: substage_of FBdv:00005317 ! gastrula stage
 [Term]
 id: FBdv:00005323
 name: embryonic stage 9
-def: "Stage 9 begins when mesodermal segmentation becomes (transiently) visible\\, and ends with the appearance of the stomodeal invagination slightly ventral to the anterior pole. Duration at 25 degrees C: approximately 40 minutes (220-260 minutes after egg laying)." [FlyBase:FBrf0089570]
+def: "Stage 9 begins when mesodermal segmentation becomes (transiently) visible, and ends with the appearance of the stomodeal invagination slightly ventral to the anterior pole. Duration at 25 degrees C: approximately 40 minutes (220-260 minutes after egg laying)." [FlyBase:FBrf0089570]
 comment: Temporal ordering number - 280.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005317 ! gastrula stage
@@ -644,7 +658,7 @@ relationship: substage_of FBdv:00004450 ! late extended germ band stage
 
 [Term]
 id: FBdv:00005326
-name: contracted germ band stage
+name: obsolete contracted germ band stage
 is_obsolete: true
 
 [Term]
@@ -671,7 +685,7 @@ relationship: substage_of FBdv:00005331 ! dorsal closure stage
 
 [Term]
 id: FBdv:00005329
-name: head involution stage
+name: obsolete head involution stage
 is_obsolete: true
 replaced_by: FBdv:00005330
 
@@ -728,7 +742,7 @@ relationship: substage_of FBdv:00005333 ! late embryonic stage
 [Term]
 id: FBdv:00005335
 name: embryonic stage 17
-def: "Stage 17 begins when the dorsal ridge (frontal sac) has overgrown the tip of the clypeolabrum, which is thereby enclosed in the atrium. It lasts until hatching of the embryo (approximately 24 hours after egg laying), during which time much terminal differentiation occurs, the tracheal tree fills with air, so becoming completely visible, and the ventral cord continues to retract. Duration at 25 degrees C: approximately  8 hours (16-24 hours after egg laying)." [FlyBase:FBrf0089570]
+def: "Stage 17 begins when the dorsal ridge (frontal sac) has overgrown the tip of the clypeolabrum, which is thereby enclosed in the atrium. It lasts until hatching of the embryo (approximately 24 hours after egg laying), during which time much terminal differentiation occurs, the tracheal tree fills with air, so becoming completely visible, and the ventral cord continues to retract. Duration at 25 degrees C: approximately 8 hours (16-24 hours after egg laying)." [FlyBase:FBrf0089570]
 comment: Temporal ordering number - 390.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005334 ! embryonic stage 16
@@ -751,6 +765,7 @@ def: "The first larval instar begins at hatching and ends at the first larval mo
 comment: Temporal ordering number - 410.
 synonym: "first instar larva" EXACT []
 synonym: "L1" EXACT []
+xref: UBERON:8000000
 is_a: FBdv:00007012 ! life stage
 relationship: immediately_preceded_by FBdv:00005289 ! embryonic stage
 relationship: immediately_preceded_by FBdv:00005333 ! late embryonic stage
@@ -765,6 +780,7 @@ def: "The second larval instar begins at the first larval molt and ends at the s
 comment: Temporal ordering number - 420.
 synonym: "L2" EXACT []
 synonym: "second instar larva" EXACT []
+xref: UBERON:8000001
 is_a: FBdv:00007012 ! life stage
 relationship: immediately_preceded_by FBdv:00005337 ! first instar larval stage
 relationship: substage_of FBdv:00005336 ! larval stage
@@ -776,6 +792,7 @@ def: "The third larval instar begins at the second larval molt and ends at pupar
 comment: Temporal ordering number - 430.
 synonym: "L3" EXACT []
 synonym: "third instar larva" RELATED []
+xref: UBERON:8000002
 is_a: FBdv:00007012 ! life stage
 relationship: immediately_preceded_by FBdv:00005338 ! second instar larval stage
 relationship: substage_of FBdv:00005336 ! larval stage
@@ -788,8 +805,6 @@ comment: Temporal ordering number - 440.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005338 ! second instar larval stage
 relationship: substage_of FBdv:00005339 ! third instar larval stage
-created_by: david
-creation_date: 2008-11-13T11:51:56Z
 
 [Term]
 id: FBdv:00005341
@@ -801,8 +816,6 @@ synonym: "post-feeding larva" BROAD []
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005340 ! early third instar larval stage
 relationship: substage_of FBdv:00007007 ! late third instar larval stage
-created_by: david
-creation_date: 2008-11-13T11:55:46Z
 
 [Term]
 id: FBdv:00005342
@@ -1122,7 +1135,7 @@ id: FBdv:00005370
 name: adult stage A1
 alt_id: FBdv:00005373
 def: "Newly eclosed adult stage. Animal free of pupal case. Runs rapidly to find site for wing expansion. Wings are folded back and black against a very pale abdomen." [FlyBase:FBrf0049147]
-comment: Temporal ordering number - 785.  The time at which eclosed flies settle down for wing expansion can vary greatly.  If they fail to find a suitable site then expansion can be delayed by several hours.
+comment: Temporal ordering number - 785. The time at which eclosed flies settle down for wing expansion can vary greatly. If they fail to find a suitable site then expansion can be delayed by several hours.
 synonym: "adult stage I" RELATED []
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005368 ! pharate adult stage P15(ii)
@@ -1143,8 +1156,8 @@ relationship: substage_of FBdv:00007025 ! immature adult stage
 
 [Term]
 id: FBdv:00005412
-name: gamete
-comment: This should be considered as a type of cell rather than as a stage.  Please use FBbt:00005412.
+name: obsolete gamete
+comment: This should be considered as a type of cell rather than as a stage. Please use FBbt:00005412.
 is_obsolete: true
 
 [Term]
@@ -1171,17 +1184,16 @@ relationship: substage_of FBdv:00007025 ! immature adult stage
 [Term]
 id: FBdv:00007000
 name: spermatogenesis
+def: "The developmental process by which male germ line stem cells self renew or give rise to successive cell types resulting in the development of a spermatozoon." [GO:0007283]
 comment: Temporal ordering number - 20000.
 xref: GO:0007283
 is_a: FBdv:00007009 ! developmental process
-created_by: david
-creation_date: 2008-06-05T04:51:08Z
 
 [Term]
 id: FBdv:00007001
 name: P-stage
 def: "The stage of the Drosophila life-cycle from the formation of the puparium (beginning of the prepupal stage) to eclosion." [FBC:DOS]
-comment: Temporal ordering number - 490. DISAMBIGUATION: In Drosophila lab vernacular, the term 'pupal stage' is often used to refer to the entire period from formation of the puparium to eclosion. However, this does not correspond to the standard usage of 'pupal stage' for Cyclorrhaphous flies (for discussion see: FBrf0087128). Briefly: formation of the puparium (hardening of the larval cuticle) marks the beginning of the pre-pupal stage. The pupal stage begins following pupal/larval apolysis - detachment of the larval epidermis from the puparium. In Drosophila, the outward sign of the completion of apolysis is the eversion of the head an expulsion of the larval mouthparts (FBrf0036849). We use P-stage to refer to the stage from pupariation to eclosion, and restrict pupal stage to its standard usage.
+comment: Temporal ordering number - 490. DISAMBIGUATION: In Drosophila lab vernacular, the term 'pupal stage' is often used to refer to the entire period from formation of the puparium to eclosion. However, this does not correspond to the standard usage of 'pupal stage' for cyclorrhaphous flies (for discussion see: FBrf0087128). Briefly: formation of the puparium (hardening of the larval cuticle) marks the beginning of the pre-pupal stage. The pupal stage begins following pupal/larval apolysis - detachment of the larval epidermis from the puparium. In Drosophila, the outward sign of the completion of apolysis is the eversion of the head an expulsion of the larval mouthparts (FBrf0036849). We use P-stage to refer to the stage from pupariation to eclosion, and restrict pupal stage to its standard usage.
 synonym: "metamorphosis" BROAD []
 synonym: "pupal stage" RELATED []
 is_a: FBdv:00007012 ! life stage
@@ -1189,8 +1201,6 @@ relationship: immediately_preceded_by FBdv:00005336 ! larval stage
 relationship: immediately_preceded_by FBdv:00005339 ! third instar larval stage
 relationship: immediately_preceded_by FBdv:00007005 ! third instar larval stage L2
 relationship: immediately_preceded_by FBdv:00007007 ! late third instar larval stage
-created_by: david
-creation_date: 2008-06-05T04:51:40Z
 
 [Term]
 id: FBdv:00007002
@@ -1236,8 +1246,6 @@ def: "Oogenesis stage during which the number of nurse cell nuclei at the anteri
 comment: Temporal ordering number - 10250.
 is_a: FBdv:00005259 ! developmental stage
 relationship: substage_of FBdv:00005278 ! oogenesis stage S13
-created_by: david
-creation_date: 2008-11-13T06:27:57Z
 
 [Term]
 id: FBdv:00007007
@@ -1247,29 +1255,24 @@ comment: Temporal ordering number - 450.
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005340 ! early third instar larval stage
 relationship: substage_of FBdv:00005339 ! third instar larval stage
-created_by: david
-creation_date: 2008-12-11T01:19:53Z
 
 [Term]
 id: FBdv:00007008
-name: occurrent
+name: obsolete occurrent
 is_obsolete: true
 
 [Term]
 id: FBdv:00007009
 name: developmental process
+def: "A biological process whose specific outcome is the progression of an integrated living unit (an anatomical structure or an entire organism) over time from an initial condition to a later condition." [GO:0032502]
 xref: GO:0032502
 is_a: FBdv:00007024 ! biological process
-created_by: djs93
-creation_date: 2009-10-01T05:56:42Z
 
 [Term]
 id: FBdv:00007011
 name: embryonic cycle
-def: "A cycle of nuclear division during the embryogenesis of Drosophila melanogaster. The first 13 cycles are synchronous throughout the embryo and occur their timing relative to other developmental processes is invariant.  Later nuclear division cycles are asynchronous across the embryo although may be more locally synchronized." [FlyBase:FBrf0049535, FlyBase:FBrf0089570]
+def: "A cycle of nuclear division during the embryogenesis of Drosophila melanogaster. The first 13 cycles are synchronous throughout the embryo and occur their timing relative to other developmental processes is invariant. Later nuclear division cycles are asynchronous across the embryo although may be more locally synchronized." [FlyBase:FBrf0049535, FlyBase:FBrf0089570]
 is_a: FBdv:00007024 ! biological process
-created_by: djs93
-creation_date: 2009-10-01T05:57:41Z
 
 [Term]
 id: FBdv:00007012
@@ -1278,23 +1281,17 @@ def: "A temporal subdivision of a Drosophila life, delimited by major transition
 synonym: "life cycle stage" EXACT []
 is_a: FBdv:00005259 ! developmental stage
 relationship: substage_of FBdv:00000000 ! Drosophila life
-created_by: djs93
-creation_date: 2009-10-01T05:59:22Z
 
 [Term]
 id: FBdv:00007013
 name: age
 def: "Temporal subdivision of life based on time elapsed since some key developmental transition, such as fertilization, hatching or eclosion." [FBC:DOS]
-created_by: djs93
-creation_date: 2010-09-29T12:25:36Z
 
 [Term]
 id: FBdv:00007014
 name: adult age in days
 def: "Temporal subdivision of adulthood in days post-eclosion." [FBC:DOS]
 is_a: FBdv:00007013 ! age
-created_by: djs93
-creation_date: 2010-09-29T12:28:05Z
 
 [Term]
 id: FBdv:00007015
@@ -1304,8 +1301,6 @@ comment: Temporal ordering number - 391. Should not be used to stage embryos who
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00005334 ! embryonic stage 16
 relationship: substage_of FBdv:00005335 ! embryonic stage 17
-created_by: djs93
-creation_date: 2011-04-26T11:57:15Z
 
 [Term]
 id: FBdv:00007016
@@ -1315,8 +1310,6 @@ comment: Temporal ordering number - 392. Should not be used to stage embryos who
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00007015 ! embryonic stage 17(i)
 relationship: substage_of FBdv:00005335 ! embryonic stage 17
-created_by: djs93
-creation_date: 2011-04-26T12:00:15Z
 
 [Term]
 id: FBdv:00007017
@@ -1326,8 +1319,6 @@ comment: Temporal ordering number - 393. Should not be used to stage embryos who
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00007016 ! embryonic stage 17(ii)
 relationship: substage_of FBdv:00005335 ! embryonic stage 17
-created_by: djs93
-creation_date: 2011-04-26T12:01:18Z
 
 [Term]
 id: FBdv:00007018
@@ -1337,8 +1328,6 @@ comment: Temporal ordering number - 394. Should not be used to stage embryos who
 is_a: FBdv:00005259 ! developmental stage
 relationship: immediately_preceded_by FBdv:00007017 ! embryonic stage 17(iii)
 relationship: substage_of FBdv:00005335 ! embryonic stage 17
-created_by: djs93
-creation_date: 2011-04-26T12:03:14Z
 
 [Term]
 id: FBdv:00007019
@@ -1384,6 +1373,7 @@ relationship: substage_of FBdv:00007011 ! embryonic cycle
 [Term]
 id: FBdv:00007024
 name: biological process
+def: "The execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module." [GO:0008150]
 xref: GO:0008150
 
 [Term]
@@ -1395,8 +1385,6 @@ is_a: FBdv:00007012 ! life stage
 relationship: immediately_preceded_by FBdv:00006011 ! pharate adult stage
 relationship: immediately_preceded_by FBdv:00007001 ! P-stage
 relationship: substage_of FBdv:00007075 ! day 0 of adulthood
-created_by: djs93
-creation_date: 2013-01-08T20:06:59Z
 
 [Term]
 id: FBdv:00007026
@@ -1405,8 +1393,6 @@ def: "Life stage from the end of adult stage A3, when tanning is complete, to de
 is_a: FBdv:00007012 ! life stage
 relationship: immediately_preceded_by FBdv:00006012 ! adult stage A3
 relationship: immediately_preceded_by FBdv:00007025 ! immature adult stage
-created_by: djs93
-creation_date: 2013-01-10T13:03:54Z
 
 [Term]
 id: FBdv:00007075
@@ -1970,11 +1956,95 @@ relationship: immediately_preceded_by FBdv:00005317 ! gastrula stage
 relationship: immediately_preceded_by FBdv:00005322 ! embryonic stage 8
 relationship: substage_of FBdv:00005321 ! extended germ band stage
 
-[Typedef]
-id: ends_at_start_of
-name: ends_at_start_of
-comment: X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)
-xref: RO:0002090
+[Term]
+id: FBdv:0010001
+name: day 61 of adulthood
+def: "61st day after eclosion." [FBC:DPG]
+comment: Temporal ordering number - 1410.
+is_a: FBdv:00007014 ! adult age in days
+relationship: immediately_preceded_by FBdv:00007135 ! day 60 of adulthood
+relationship: substage_of FBdv:00005369 ! adult stage
+
+[Term]
+id: FBdv:0010002
+name: day 62 of adulthood
+def: "62nd day after eclosion." [FBC:DPG]
+comment: Temporal ordering number - 1420.
+is_a: FBdv:00007014 ! adult age in days
+relationship: immediately_preceded_by FBdv:0010001 ! day 61 of adulthood
+relationship: substage_of FBdv:00005369 ! adult stage
+
+[Term]
+id: FBdv:0010003
+name: day 63 of adulthood
+def: "63rd day after eclosion." [FBC:DPG]
+comment: Temporal ordering number - 1430.
+is_a: FBdv:00007014 ! adult age in days
+relationship: immediately_preceded_by FBdv:0010002 ! day 62 of adulthood
+relationship: substage_of FBdv:00005369 ! adult stage
+
+[Term]
+id: FBdv:0010004
+name: day 64 of adulthood
+def: "64th day after eclosion." [FBC:DPG]
+comment: Temporal ordering number - 1440.
+is_a: FBdv:00007014 ! adult age in days
+relationship: immediately_preceded_by FBdv:0010003 ! day 63 of adulthood
+relationship: substage_of FBdv:00005369 ! adult stage
+
+[Term]
+id: FBdv:0010005
+name: day 65 of adulthood
+def: "65th day after eclosion." [FBC:DPG]
+comment: Temporal ordering number - 1450.
+is_a: FBdv:00007014 ! adult age in days
+relationship: immediately_preceded_by FBdv:0010004 ! day 64 of adulthood
+relationship: substage_of FBdv:00005369 ! adult stage
+
+[Term]
+id: FBdv:0010006
+name: day 66 of adulthood
+def: "66th day after eclosion." [FBC:DPG]
+comment: Temporal ordering number - 1460.
+is_a: FBdv:00007014 ! adult age in days
+relationship: immediately_preceded_by FBdv:0010005 ! day 65 of adulthood
+relationship: substage_of FBdv:00005369 ! adult stage
+
+[Term]
+id: FBdv:0010007
+name: day 67 of adulthood
+def: "67th day after eclosion." [FBC:DPG]
+comment: Temporal ordering number - 1470.
+is_a: FBdv:00007014 ! adult age in days
+relationship: immediately_preceded_by FBdv:0010006 ! day 66 of adulthood
+relationship: substage_of FBdv:00005369 ! adult stage
+
+[Term]
+id: FBdv:0010008
+name: day 68 of adulthood
+def: "68th day after eclosion." [FBC:DPG]
+comment: Temporal ordering number - 1480.
+is_a: FBdv:00007014 ! adult age in days
+relationship: immediately_preceded_by FBdv:0010007 ! day 67 of adulthood
+relationship: substage_of FBdv:00005369 ! adult stage
+
+[Term]
+id: FBdv:0010009
+name: day 69 of adulthood
+def: "69th day after eclosion." [FBC:DPG]
+comment: Temporal ordering number - 1490.
+is_a: FBdv:00007014 ! adult age in days
+relationship: immediately_preceded_by FBdv:0010008 ! day 68 of adulthood
+relationship: substage_of FBdv:00005369 ! adult stage
+
+[Term]
+id: FBdv:0010010
+name: day 70 of adulthood
+def: "70th day after eclosion." [FBC:DPG]
+comment: Temporal ordering number - 1500.
+is_a: FBdv:00007014 ! adult age in days
+relationship: immediately_preceded_by FBdv:0010009 ! day 69 of adulthood
+relationship: substage_of FBdv:00005369 ! adult stage
 
 [Typedef]
 id: happens_during
@@ -1984,55 +2054,25 @@ xref: RO:0002092
 is_transitive: true
 
 [Typedef]
-id: has_part
-name: has_part
-namespace: relationship
-def: "a core relation that holds between a whole and its part" []
-xref: BFO:0000051
-xref_analog: OBO_REL:has_part
-is_transitive: true
-is_a: overlaps ! overlaps
-
-[Typedef]
 id: immediately_preceded_by
 name: immediately_preceded_by
 comment: X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)
 xref: RO:0002087
-is_a: preceded_by ! preceded_by
-inverse_of: ends_at_start_of ! ends_at_start_of
 
 [Typedef]
-id: occurent_part_of
-name: occurent_part_of
-def: "A part of relation that applies only between occurents." []
+id: occurrent_part_of
+name: occurrent_part_of
+def: "A part of relation that applies only between occurrents." []
 xref: RO:0002012
-is_a: happens_during ! happens_during
-is_a: overlaps ! overlaps
-
-[Typedef]
-id: overlaps
-name: overlaps
-def: "x overlaps y if and only if there exists some z such that x has part z and z part of y" []
-xref: RO:0002131
-holds_over_chain: has_part overlaps
-
-[Typedef]
-id: preceded_by
-name: preceded_by
-namespace: relationship
-def: "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
-xref: BFO:0000062
-xref_analog: OBO_REL:preceded_by
-holds_over_chain: happens_during preceded_by
-is_transitive: true
 
 [Typedef]
 id: substage_of
 name: substage_of
 namespace: relationship
-comment: Creating this relation as a temporary fix, pending adding the axiom occurent_part_of subpropertyof happens_during to RO
+def: "A relation between a developmental stage and another, larger developmental stage during which it happens." [FBC:DPG]
+comment: Creating this relation as a temporary fix, pending adding the axiom occurrent_part_of subproperty of happens_during to RO.
 xref: FBdv:00018001
 is_transitive: true
 is_a: happens_during ! happens_during
-is_a: occurent_part_of ! occurent_part_of
+is_a: occurrent_part_of ! occurrent_part_of
 
