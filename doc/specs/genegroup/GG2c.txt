@@ -36,6 +36,9 @@ Cross-checks with other fields:
 
 * If GG2c is filled in, GG2a must be filled in (compare_field_pairs, pair_test = 'dependent')
 
+* sub cross_check_full_name_rename checks that the value in GG2c matches the fullname in chado of the subject of the proforma ie. the symbol in the symbol rename field (if both the symbol and fullname are being renamed) or the symbol in the primary symbol field (if only the fullname is being renamed).
+
+* GG2c and GG1f must not both be filled in (compare_field_pairs, pair_test = 'single')
 
 ### Related fields:
 
@@ -49,7 +52,6 @@ Cross-checks with other fields:
 
 Not implemented any of the following:
 
-* check that the value given in GG2c is really a valid fullname in chado.
 
 Cross-checks with other fields:
 
@@ -76,4 +78,4 @@ This is only allowed if you are trying to rename a gene's symbol without changin
 
 ### Updated:
 
-gm151001.
+gm240619.

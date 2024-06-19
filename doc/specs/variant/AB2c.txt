@@ -26,6 +26,10 @@ No (Implemented)
 
 ### Checks:
 
+Cross-checks between fields:
+
+* sub cross_check_full_name_rename checks that the value in AB2c matches the fullname in chado of the subject of the proforma ie. the symbol in the symbol rename field (if both the symbol and fullname are being renamed) or the symbol in the primary symbol field (if only the fullname is being renamed).
+
 
 ### Related fields:
 
@@ -41,10 +45,8 @@ doc: checked that doc reflects what has been implemented
 
 Not yet implemented:
 
-* similar to G2c, there is no check that the value given in AB2c is really a valid fullname in chado.
-
 * there is no cross-check of AB2a with AB2c - need to add something that takes into account whether or not the allele is new (AB1g) and whether or not rename/merge fields (AB1e/AB1f) are filled in. [gm131211]
 
 ### Updated:
 
-gm151001.
+gm240619.

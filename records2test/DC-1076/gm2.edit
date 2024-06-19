@@ -1,0 +1,69 @@
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0105495
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+! GENEGROUP PROFORMA     Version 8: 12 Jul 2021
+!
+! GG1a. Gene group symbol                               *a :MRP
+! GG1b. Gene group symbol synonym(s)                    *i :
+! GG1e. Action - rename this gene group symbol      :
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :y
+! GG2a. Action - gene group name to use in FlyBase      *e :no error
+! GG2b. Gene group name synonym(s)                      *V :
+! GG2c. Action - rename this gene group name        :MITOCHONDRIAL RIBOSOMAL COMPONENTS
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 8: 12 Jul 2021
+!
+! GG1a. Gene group symbol                               *a :MRPL
+! GG1b. Gene group symbol synonym(s)                    *i :
+! GG1e. Action - rename this gene group symbol      :
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :y
+! GG2a. Action - gene group name to use in FlyBase      *e :new group name
+! GG2b. Gene group name synonym(s)                      *V :
+! GG2c. Action - rename this gene group name        :MITOCHONDRIAL LARGE RIBOSOMAL COMPONENTS error
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 8: 12 Jul 2021
+!
+! GG1a. Gene group symbol                               *a :enewgroup
+! GG1b. Gene group symbol synonym(s)                    *i :
+! GG1e. Action - rename this gene group symbol      :MRPS
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :n
+! GG2a. Action - gene group name to use in FlyBase      *e :no error in name
+! GG2b. Gene group name synonym(s)                      *V :
+! GG2c. Action - rename this gene group name        :MITOCHONDRIAL SMALL RIBOSOMAL COMPONENTS
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEGROUP PROFORMA     Version 8: 12 Jul 2021
+!
+! GG1a. Gene group symbol                               *a :RPldjroje
+! GG1b. Gene group symbol synonym(s)                    *i :
+! GG1e. Action - rename this gene group symbol      :RP
+! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :n
+! GG2a. Action - gene group name to use in FlyBase      *e :is error in name in GG2c
+! GG2b. Gene group name synonym(s)                      *V :
+! GG2c. Action - rename this gene group name        :not the right name for RP group
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

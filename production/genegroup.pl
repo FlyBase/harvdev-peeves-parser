@@ -332,6 +332,9 @@ FIELD:
 # no !c if GG1f is filled in
 	plingc_merge_check ($file, $change_count,'GG1f', \@GG1f_list, $proforma_fields{'GG1f'});
 
+# cross-checks for fullname renames
+	cross_check_full_name_rename ($file, 'GG', $hash_entries, $primary_symbol_list, \@GG1e_list, \@GG2c_list, \%proforma_fields);
+
 
 # If GG2c is filled in, GG2a must be filled in. PLUS value in GG2a and GG2c must not be the same
 compare_field_pairs ($file, $hash_entries, 'GG2c', \@GG2c_list, 'GG2a', \@GG2a_list, \%proforma_fields, 'dependent', 'not same');

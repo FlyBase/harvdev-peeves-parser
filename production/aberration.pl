@@ -504,6 +504,9 @@ FIELD:
 
 	plingc_merge_check ($file, $change_count,'A1f', \@A1f_list, $proforma_fields{'A1f'});
 
+# cross-checks for fullname renames
+	cross_check_full_name_rename ($file, 'A', $g_num_syms, $primary_symbol_list, \@A1e_list, \@A2c_list, \%proforma_fields);
+
 check_filled_in_for_new_feature ($file, 'A9', $g_num_syms, \@A9_list, \@A1g_list, \@A1e_list, \@A1f_list, \%proforma_fields, 'yes');
 check_filled_in_for_new_feature ($file, 'A26', $g_num_syms, \@A26_list, \@A1g_list, \@A1e_list, \@A1f_list, \%proforma_fields, 'yes');
 

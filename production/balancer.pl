@@ -279,6 +279,10 @@ FIELD:
 
 	plingc_merge_check ($file, $change_count,'AB1f', \@AB1f_list, $proforma_fields{'AB1f'});
 
+# cross-checks for fullname renames
+	cross_check_full_name_rename ($file, 'AB', $hash_entries, $primary_symbol_list, \@AB1e_list, \@AB2c_list, \%proforma_fields);
+
+
 # check that valid symbol is in the symbol synonym field when !c-ing it under the  'unattributed' pub.
 # Only do the check if the symbol synonym field contains some data
 if ($unattributed && $#AB1b_list + 1 == $hash_entries) {

@@ -32,6 +32,9 @@ Cross-checks between fields:
 
 * If GA2c and GA2a are both filled in, they must not be the same value  (compare_field_pairs, pair_test = 'not same')
 
+* sub cross_check_full_name_rename checks that the value in G2c matches the fullname in chado of the subject of the proforma ie. the symbol in the symbol rename field (if both the symbol and fullname are being renamed) or the symbol in the primary symbol field (if only the fullname is being renamed).
+
+* GA2c and GA1f must not both be filled in (compare_field_pairs, pair_test = 'single')
 
 ### Related fields:
 
@@ -44,15 +47,7 @@ Cross-checks between fields:
 
 ### Status:
 
-doc: checked that doc reflects what has been implemented
-
-Not yet implemented:
-
-* similar to G2c, there is no check that the value given in GA2c is really a valid fullname in chado.
-
-
-
 
 ### Updated:
 
-gm151001.
+gm240619.

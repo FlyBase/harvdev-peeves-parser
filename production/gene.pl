@@ -512,54 +512,6 @@ FIELD:
 compare_field_pairs ($file, $g_num_syms, 'G2c', \@G2c_list, 'G2a', \@G2a_list, \%proforma_fields, 'dependent::(unless you are trying to delete the fullname in chado)', 'not same');
 
 
-# test of validity of fullname info in G2c - do at end of proforma as require G1a/G1e info
-    if ($g_num_syms and $#G2c_list + 1 == $g_num_syms) { # Some data in G1a and G2c.
-
-	   	for (my $i = 0; $i < $g_num_syms; $i++) {
-
-			if (defined $G2c_list[$i] && $G2c_list[$i] ne '') {
-
-				my $id;
-				my $relevant_field;
-
-				if ($G1e_list[$i] && $G1e_list[$i] ne '') {
-
-					$id = valid_chado_symbol($G1e_list[$i], 'FBgn');
-					$relevant_field = 'G1e';
-				} else {
-
-					$id = valid_chado_symbol($g_gene_sym_list->[$i], 'FBgn');
-					$relevant_field = 'G1a';
-
-
-				}
-
-				if ($id) {
-
-					my $chado_fullname_ref = chat_to_chado ('feature_fullname_from_id', $id)->[0];
-
-					if (defined $chado_fullname_ref) {
-						unless ($G2c_list[$i] eq utf2sgml(join (' ', @{$chado_fullname_ref}))) {
-
-							report ($file, "%s: Fullname given '%s' does not match the fullname in chado ('%s') of the symbol '%s' given in %s.", 'G2c', $G2c_list[$i], (utf2sgml(join (' ', @{$chado_fullname_ref}))), ($relevant_field eq 'G1e' ? $G1e_list[$i] : $g_gene_sym_list->[$i]), $relevant_field);
-
-						}
-
-					} else {
-
-						report ($file, "%s: You have given a full name in this field, but the symbol '%s' in %s does not have a fullname in chado", 'G2c', ($relevant_field eq 'G1e' ? $G1e_list[$i] : $g_gene_sym_list->[$i]), $relevant_field);
-
-					}
-
-				}
-
-
-			}
-		}
-	}
-
-
-
 
 ## cross-checks based on 'status' of gene in proforma
 	if ($g_num_syms) {
@@ -709,6 +661,10 @@ compare_field_pairs ($file, $g_num_syms, 'G2c', \@G2c_list, 'G2a', \@G2a_list, \
 # no !c if G1f is filled in
 
 	plingc_merge_check ($file, $change_count,'G1f', \@G1f_list, $proforma_fields{'G1f'});
+
+# cross-checks for fullname renames
+	cross_check_full_name_rename ($file, 'G', $g_num_syms, $g_gene_sym_list, \@G1e_list, \@G2c_list, \%proforma_fields);
+
 
 # G28b checking.  G28b is not required to contain data but if it does it must be cross-checked with G1e and
 # G1f.

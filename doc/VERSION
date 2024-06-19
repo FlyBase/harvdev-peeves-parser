@@ -1015,3 +1015,5 @@ our $Peeves_version = "2.71"; #  add check to warn if OMIM: used in free text (D
 our $Peeves_version = "2.72"; #  remove temp messages about child 'in vitro construct - X' terms now that they are obsolete (DC-1071)
 our $Peeves_version = "2.73"; #  adding more possible causes to 'Found proforma of unexpected type' warning.
 our $Peeves_version = "2.75"; #  fixing bug in G35 checking (removing overly stringent false-positive message) (related to DC-417).
+# 19.6.2024
+our $Peeves_version = "2.76"; #  new subroutine to cross-check that full name in rename field is what is in chado for that object (DC-1076).
