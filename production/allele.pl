@@ -630,6 +630,9 @@ FIELD:
 
 	plingc_merge_check ($file, $change_count,'GA1f', \@GA1f_list, $proforma_fields{'GA1f'});
 
+# cross-checks for fullname renames
+	cross_check_full_name_rename ($file, 'GA', $hash_entries, $primary_symbol_list, \@GA1e_list, \@GA2c_list, \%proforma_fields);
+
 # If GA2c is filled in, GA2a must be filled in. PLUS value in GA2a and GA2c must not be the same
 compare_field_pairs ($file, $hash_entries, 'GA2c', \@GA2c_list, 'GA2a', \@GA2a_list, \%proforma_fields, 'dependent', 'not same');
 

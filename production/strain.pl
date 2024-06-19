@@ -299,6 +299,9 @@ FIELD:
 # no !c in other fields if merge field is filled in
 	plingc_merge_check ($file, $change_count,'SN1e', \@SN1e_list, $proforma_fields{'SN1e'});
 
+# cross-checks for fullname renames
+	cross_check_full_name_rename ($file, 'SN', $hash_entries, $primary_symbol_list, \@SN1d_list, \@SN2c_list, \%proforma_fields);
+
 # rename and merge fields must not both contain data.
 
 	rename_merge_check ($file, 'SN1d', \@SN1d_list, $proforma_fields{'SN1d'}, 'SN1e', \@SN1e_list, $proforma_fields{'SN1e'});

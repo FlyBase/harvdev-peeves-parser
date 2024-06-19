@@ -12,7 +12,7 @@
 !
 ! TO2a.  Action - experimental tool name to use in FlyBase       :FULL
 ! TO2b.  Experimental tool name synonym(s)                       :NA
-! TO2c.  Action - rename this experimental tool name             :PARTIAL
+! TO2c.  Action - rename this experimental tool name             :FULL
 !
 ! TO4.   Experimental tool uses [CV]                             :FULL
 ! TO5.   Description of experimental tool [free text]            :FULL

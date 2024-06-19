@@ -257,6 +257,17 @@ sub set_up_chado_queries ()
     								AND g.is_obsolete = \'f\'
     								AND s.synonym_sgml=?;');
 
+    $prepared_queries{'grp_fullname_from_id'} = $chado->prepare ('SELECT DISTINCT s.synonym_sgml
+								FROM grp g, grp_synonym gs, synonym s, cvterm cvt
+								WHERE g.grp_id = gs.grp_id
+								AND gs.synonym_id = s.synonym_id
+								AND gs.is_current = \'t\'
+								AND gs.is_internal = \'f\'
+								AND s.type_id = cvt.cvterm_id
+								AND cvt.name = \'fullname\'
+								AND g.is_obsolete = \'f\'
+								AND g.uniquename=?;');
+
 
 # humanhealth
     $prepared_queries{'humanhealth_symbol_from_id'} = $chado->prepare ('SELECT DISTINCT s.synonym_sgml, h.is_obsolete
@@ -324,6 +335,17 @@ sub set_up_chado_queries ()
     								   AND st.is_obsolete = \'f\'
     								   AND s.synonym_sgml=?;');
 
+# strain
+    $prepared_queries{'strain_fullname_from_id'} = $chado->prepare ('SELECT DISTINCT s.synonym_sgml
+    								   FROM strain st, strain_synonym sts, synonym s, cvterm cvt
+    								   WHERE st.strain_id = sts.strain_id
+    								   AND sts.synonym_id = s.synonym_id
+    								   AND sts.is_current = \'t\'
+    								   AND sts.is_internal = \'f\'
+    								   AND s.type_id = cvt.cvterm_id
+    								   AND cvt.name = \'fullname\'
+    								   AND st.is_obsolete = \'f\'
+    								   AND st.uniquename=?;');
 
 # interaction
 
