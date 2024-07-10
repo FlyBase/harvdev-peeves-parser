@@ -255,10 +255,12 @@ FIELD:
 
     check_presence ($file, \%proforma_fields, \@inclusion_essential, $primary_symbol_list);
 
-	plingc_merge_check ($file, $change_count,'TO1g', \@TO1g_list, $proforma_fields{'TO1g'});
+    plingc_merge_check ($file, $change_count,'TO1g', \@TO1g_list, $proforma_fields{'TO1g'});
 	
     rename_merge_check ($file, 'TO1c', \@TO1c_list, $proforma_fields{'TO1c'}, 'TO1g', \@TO1g_list, $proforma_fields{'TO1g'});
 	
+# cross-checks for fullname renames
+	cross_check_full_name_rename ($file, 'TO', $hash_entries, $primary_symbol_list, \@TO1c_list, \@TO2c_list, \%proforma_fields);
 
 	cross_check_harv_style_symbol_rename_merge_fields ($file, 'TO', $hash_entries, \@primary_id_list, $primary_symbol_list, \@TO1c_list, \@TO1g_list, \%proforma_fields);
 

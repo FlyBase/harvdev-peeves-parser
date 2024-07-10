@@ -5701,4 +5701,98 @@ sub check_for_rename_across_species {
 	}
 }
 
+
+sub cross_check_full_name_rename {
+
+
+# subroutine to check that the full name in the name rename field matches what is in chado for
+# the symbol given in the proforma; the symbol will either be in the symbol rename field (if both
+# the symbol and full name are being renamed) or in the primary symbol field of the proform (if
+# only the full name is being renamed).
+
+# $file = curation record
+# $proforma_type = type of proforma being checked - use the letter prefix of the proforma eg. MA, MS, TE
+# $num = number of entries in the primary symbol field of the proforma
+# $primary_symbol_list = dehashed primary symbol list
+# $symbol_rename_list = dehashed symbol rename list
+# $name_rename_list = dehashed fullname rename list (currently always x2c field)
+# $context = hash reference to %proforma_fields, so can provide context (including proforma field text) in error messages
+
+	my ($file, $proforma_type, $num, $primary_symbol_list, $symbol_rename_list, $name_rename_list, $context) = @_;
+
+	unless (exists $standard_symbol_mapping->{$proforma_type}) {
+
+		report ($file,"MAJOR PEEVES ERROR - Please let Gillian know the following, so that it can be fixed:\ncross_check_full_name_rename subroutine is asking the \$standard_symbol_mapping variable about a '%s' type proforma field, but the variable has no information about that type of proforma.",$proforma_type);
+		return ();
+	}
+
+	my $primary_symbol_field = exists $standard_symbol_mapping->{$proforma_type}->{primary_field} ? ($proforma_type . $standard_symbol_mapping->{$proforma_type}->{primary_field}) : ($proforma_type . "1a");
+
+	my $symbol_rename_field = exists $standard_symbol_mapping->{$proforma_type}->{rename_field} ? ($proforma_type . $standard_symbol_mapping->{$proforma_type}->{rename_field}) : ($proforma_type . "1c");
+
+	my $fullname_rename_field = exists $standard_symbol_mapping->{$proforma_type}->{fullname_rename_field} ? ($proforma_type . $standard_symbol_mapping->{$proforma_type}->{fullname_rename_field}) : ($proforma_type . "2c");
+
+	# Only attempt the checks if the hashing of the primary symbol list is correct
+	if ($num and $#{$primary_symbol_list} + 1 == $num) {
+
+		for (my $i = 0; $i < $num; $i++) {
+
+			if (defined $name_rename_list->[$i] && $name_rename_list->[$i] ne '') {
+
+				my $id; # FBid number of valid chado symbol in the proforma
+				my $relevant_symbol_field;
+
+				if ($symbol_rename_list->[$i] && $symbol_rename_list->[$i] ne '') {
+
+					$id = valid_chado_symbol_of_list_of_types($symbol_rename_list->[$i], $standard_symbol_mapping->{$proforma_type}->{id});
+					$relevant_symbol_field = 'rename';
+				} else {
+
+					$id = valid_chado_symbol_of_list_of_types($primary_symbol_list->[$i], $standard_symbol_mapping->{$proforma_type}->{id});
+					$relevant_symbol_field = 'primary';
+
+
+				}
+
+				if ($id) {
+
+
+					my $chado_table = 'feature';
+
+					if ($standard_symbol_mapping->{$proforma_type}->{type} eq 'gene group') {
+
+						$chado_table = 'grp';
+
+					} elsif ($standard_symbol_mapping->{$proforma_type}->{type} eq 'strain') {
+
+						$chado_table = 'strain';
+
+					}
+
+					my $chado_fullname_ref = chat_to_chado (sprintf("%s_fullname_from_id", $chado_table), $id)->[0];
+
+					if (defined $chado_fullname_ref) {
+						unless ($name_rename_list->[$i] eq utf2sgml(join (' ', @{$chado_fullname_ref}))) {
+
+							report ($file, "%s: Fullname given '%s' does not match the fullname in chado ('%s') of the symbol '%s' given in %s.", $fullname_rename_field, $name_rename_list->[$i], (utf2sgml(join (' ', @{$chado_fullname_ref}))), ($relevant_symbol_field eq 'rename' ? $symbol_rename_list->[$i] : $primary_symbol_list->[$i]), ($relevant_symbol_field eq 'rename' ? $symbol_rename_field : $primary_symbol_field));
+
+						}
+
+					} else {
+
+						report ($file, "%s: You have given a full name in this field, but the symbol '%s' in %s does not have a fullname in chado", $fullname_rename_field, ($relevant_symbol_field eq 'rename' ? $symbol_rename_list->[$i] : $primary_symbol_list->[$i]), ($relevant_symbol_field eq 'rename' ? $symbol_rename_field : $primary_symbol_field));
+
+					}
+
+				}
+
+
+			}
+
+
+		}
+	}
+
+}
+
 1;					# Boilerplate

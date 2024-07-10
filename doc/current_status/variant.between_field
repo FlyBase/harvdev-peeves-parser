@@ -8,7 +8,7 @@
 ! AB1g.  Is AB1a the current symbol of a genotype variant in FlyBase? :FULL
 ! AB2a.  Action - genotype variant name to use in FlyBase          *e :NOT YET IMPLEMENTED
 ! AB2b.  Genotype variant name(s) used in reference                *Q :NA
-! AB2c.  Action - replace this genotype variant name                  :NOT YET IMPLEMENTED
+! AB2c.  Action - replace this genotype variant name                  :PARTIAL
 ! AB11a. Action - obsolete AB1a in FlyBase       TAKE CARE :NOT YET IMPLEMENTED
 ! AB11b. Action - dissociate AB1a from reference TAKE CARE :PARTIAL
 ! AB10.  Nickname                                            *U :NA

@@ -37,6 +37,8 @@ Cross-checks between fields:
 
 * If TO1g (merge field) is filled in, TO2c must not be filled in (compare_field_pairs, pair_test = 'single')
 
+* sub cross_check_full_name_rename checks that the value in TO2c matches the fullname in chado of the subject of the proforma ie. the symbol in the symbol rename field (if both the symbol and fullname are being renamed) or the symbol in the primary symbol field (if only the fullname is being renamed).
+
 
 ### Related fields:
 
@@ -50,12 +52,7 @@ Cross-checks between fields:
 ### Status:
 
 
-Not yet implemented:
-
-* there is no check that the value given in TO2c is really a valid fullname in chado. should make a generic subroutine that can be checked at the end of the proforma - currently this check against chado is only done in gene.pl in amongst all the complex cross-checks
-
-
 
 ### Updated:
 
-gm171114.
+gm240619.
