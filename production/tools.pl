@@ -5795,4 +5795,40 @@ sub cross_check_full_name_rename {
 
 }
 
+sub filled_in_for_dmel_only {
+
+	my ($file, $num, $primary_species, $code, $field_data, $context) = @_;
+
+	my $proforma_type = $code;
+
+	$proforma_type =~ s|[0-9]{1,}[a-z]{0,}$||;
+
+	unless (exists $standard_symbol_mapping->{$proforma_type}) {
+
+		report ($file,"MAJOR PEEVES ERROR, no checking will be done on the '%s' field until it is fixed.\nPlease let Gillian know the following, so that Peeves can be fixed:\nvalidate_obsolete subroutine is asking the \$standard_symbol_mapping variable about a '%s' type proforma field (when trying to check data in '%s'), but the variable has no information about that type of proforma.",$code,$proforma_type,$code);
+		return;
+	}
+
+# work out field to report error for (have "1a" as a default as that is usually the primary
+# symbol field)
+	my $primary_symbol_field = exists $standard_symbol_mapping->{$proforma_type}->{primary_field} ? ($proforma_type . $standard_symbol_mapping->{$proforma_type}->{primary_field}) : ($proforma_type . "1a");
+
+
+	if ($num) {
+		for (my $i = 0; $i < $num; $i++) {
+
+			if ($field_data->[$i]) {
+
+				unless ($primary_species->[$i] eq 'Dmel') {
+
+					report ($file, "%s: Must not be filled in for non-Dmel species:\n!%s\n!%s", $code, $context->{$primary_symbol_field}, $context->{$code});
+
+				}
+
+			}
+		}
+	}
+
+}
+
 1;					# Boilerplate

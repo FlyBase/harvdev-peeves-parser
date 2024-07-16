@@ -29,6 +29,9 @@ Checks between fields:
 
 * G5 must be filled in if G6 must be filled in.
 
+* sub filled_in_for_dmel_only warns if this field is filled in for a non-Dmel gene.
+
+
 ### Related fields:
 
 
@@ -54,4 +57,4 @@ Checks between fields:
 
 ### Updated:
 
-gm151001.
+gm240716.

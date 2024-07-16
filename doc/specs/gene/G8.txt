@@ -28,6 +28,7 @@ No (Implemented)
 
  * sub 'check_stamped_free_text' checks that entries flanked by @@ are valid symbols of any FBid type (either existing already in chado or instantiated in the curation record).
 
+* sub filled_in_for_dmel_only warns if this field is filled in for a non-Dmel gene.
 
 
 ### Related fields:
@@ -44,4 +45,4 @@ No (Implemented)
 
 ### Updated:
 
-gm151001.
+gm240716.
