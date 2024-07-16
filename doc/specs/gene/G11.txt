@@ -29,6 +29,13 @@ No (Implemented)
 
 ### Checks:
 
+Checks within field (validate_G11).
+
+* if the gene is not Dmel, print an error that the field must not be filled in for non-Dmel species.
+
+* if the species of the gene in G1a is Dmel the following checks are carried out:
+
+
 Depends on value in field.
 
 The one SoftCV prefix is: "Location inferred from insertion in:" 
@@ -75,4 +82,4 @@ Not yet implemented
 
 ### Updated:
 
-gm151001.
+gm240716.

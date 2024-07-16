@@ -110,6 +110,9 @@ sub do_gene_proforma ($$)
 	my @G30_list = ();
 	my @G5_list = ();
 	my @G6_list = ();
+	my @G7a_list = ();
+	my @G7b_list = ();
+	my @G8_list = ();
 	my @G91_list = ();
 	my @G91a_list = ();
 
@@ -252,7 +255,7 @@ FIELD:
 	{
 	    check_dups ($file, $2, $field, \%proforma_fields, \%dummy_dup_proforma_fields, $g_gene_sym_list, 0);
 	    check_non_utf8 ($file, $2, $3);
-	    double_query ($file, $2, $3) or validate_G11 ($2, $1, $3);
+	    double_query ($file, $2, $3) or validate_G11 ($2, $1, $3, \%proforma_fields);
 	}
 	elsif ($field =~ /^(.*?) (G14a)\..*? :(.*)/s)
 	{
@@ -364,15 +367,20 @@ FIELD:
 	    check_dups ($file, $2, $field, \%proforma_fields, \%dummy_dup_proforma_fields, $g_gene_sym_list, 0);
 		@G6_list = process_field_data ($file, $g_num_syms, $1, '1', $2, $3, \%proforma_fields, '1');
 	}
-	elsif ($field =~ /^(.*?) (G7[ab])\..*?:(.*)/s)
+	elsif ($field =~ /^(.*?) (G7a)\..*?:(.*)/s)
 	{
 	    check_dups ($file, $2, $field, \%proforma_fields, \%dummy_dup_proforma_fields, $g_gene_sym_list, 0);
-		process_field_data ($file, $g_num_syms, $1, '1', $2, $3, \%proforma_fields, '0');
+		@G7a_list = process_field_data ($file, $g_num_syms, $1, '1', $2, $3, \%proforma_fields, '0');
+	}
+	elsif ($field =~ /^(.*?) (G7b)\..*?:(.*)/s)
+	{
+	    check_dups ($file, $2, $field, \%proforma_fields, \%dummy_dup_proforma_fields, $g_gene_sym_list, 0);
+		@G7b_list = process_field_data ($file, $g_num_syms, $1, '1', $2, $3, \%proforma_fields, '0');
 	}
 	elsif ($field =~ /^(.*?) (G8)\..*?:(.*)/s)
 	{
 	    check_dups ($file, $2, $field, \%proforma_fields, \%dummy_dup_proforma_fields, $g_gene_sym_list, 0);
-	    process_field_data ($file, $g_num_syms, $1, '1', $2, $3, \%proforma_fields, '0');
+	    @G8_list = process_field_data ($file, $g_num_syms, $1, '1', $2, $3, \%proforma_fields, '0');
 	}
 	elsif ($field =~ /^(.*?) (G26)\..*?:(.*)/s)
 	{
@@ -511,6 +519,13 @@ FIELD:
 # If G2c is filled in, G2a must be filled in. PLUS value in G2a and G2c must not be the same
 compare_field_pairs ($file, $g_num_syms, 'G2c', \@G2c_list, 'G2a', \@G2a_list, \%proforma_fields, 'dependent::(unless you are trying to delete the fullname in chado)', 'not same');
 
+# check for fields that are limited to Dmel only
+	filled_in_for_dmel_only ($file, $g_num_syms, $g_gene_species_list, 'G5', \@G5_list, \%proforma_fields);
+	filled_in_for_dmel_only ($file, $g_num_syms, $g_gene_species_list, 'G6', \@G6_list, \%proforma_fields);
+
+	filled_in_for_dmel_only ($file, $g_num_syms, $g_gene_species_list, 'G7a', \@G7a_list, \%proforma_fields);
+	filled_in_for_dmel_only ($file, $g_num_syms, $g_gene_species_list, 'G7b', \@G7b_list, \%proforma_fields);
+	filled_in_for_dmel_only ($file, $g_num_syms, $g_gene_species_list, 'G8', \@G8_list, \%proforma_fields);
 
 
 ## cross-checks based on 'status' of gene in proforma
@@ -957,54 +972,45 @@ sub validate_G10ab {
 }
 
 
-sub validate_G11 ($$$)
-{
-    my ($code, $change, $cyto_comments) = @_;
-    changes ($file, $code, $change);		# Check for garbage, but otherwise don't worry about $change.
-    $cyto_comments eq '' and return;		# Absence of data is always acceptable.
+sub validate_G11 ($$$) {
+	my ($code, $change, $cyto_comments, $context) = @_;
+	changes ($file, $code, $change);		# Check for garbage, but otherwise don't worry about $change.
+	$cyto_comments eq '' and return;		# Absence of data is always acceptable.
 
-    my @comments = dehash ($file, $code, $g_num_syms, $cyto_comments);
-    if (@comments)
-    {
-	for (my $i = 0; $i < $g_num_syms; $i++)
-	{
-	    my $comment = trim_space_from_ends ($file, $code, $comments[$i]);
-	    next if $comment eq '';			# Absence of data is always acceptable.
+	my @comments = dehash ($file, $code, $g_num_syms, $cyto_comments);
 
-	    if (my ($loc, $allele) = ($comment =~ /^Location(.*?) inferred from insertion in:(.*)/s))
-	    {
-		if ($loc ne '')
-		{
-		    if (my ($location) = ($loc =~ /^ (\S+)$/))
-		    {
-			next unless $g_gene_species_list->[$i] eq 'Dmel';	# Only know how to check Dmel cyto positions.
+	if (@comments) {
+		for (my $i = 0; $i < $g_num_syms; $i++) {
+			my $comment = trim_space_from_ends ($file, $code, $comments[$i]);
+			next if $comment eq '';			# Absence of data is always acceptable.
 
-			foreach my $invalid (cyto_check ($location))
-			{
-			    report ($file, "%s: Invalid cytological map position '%s' in '%s'",
-				    $code, $invalid, $location);
+			if ($g_gene_species_list->[$i] eq 'Dmel') {
+				if (my ($loc, $allele) = ($comment =~ /^Location(.*?) inferred from insertion in:(.*)/s)) {
+					if ($loc ne '') {
+						if (my ($location) = ($loc =~ /^ (\S+)$/)) {
+
+							foreach my $invalid (cyto_check ($location)) {
+								report ($file, "%s: Invalid cytological map position '%s' in '%s'", $code, $invalid, $location);
+							}
+						} else {
+							report ($file, "%s: Invalid cytological map position '%s'", $code, $loc);
+						}
+					}
+					if ($allele =~ /^ (\S+)$/) {
+						valid_symbol ($1, 'FBal') or report ($file, "%s: Invalid allele symbol '%s'", $code, $1);
+					} else {
+						report ($file, "%s: Invalid allele symbol '%s'", $code, $allele);
+					}
+				} else {
+					check_stamps ($file, $code, $cyto_comments);
+				}
+
+			} else {
+
+				report ($file, "%s: Must not be filled in for the non-Dmel species '%s' \n!%s\n!%s", $code, $g_gene_species_list->[$i], $context->{G1a}, $context->{$code});
 			}
-		    }
-		    else
-		    {
-			report ($file, "%s: Invalid cytological map position '%s'", $code, $loc);
-		    }
 		}
-		if ($allele =~ /^ (\S+)$/)
-		{
-		    valid_symbol ($1, 'FBal') or report ($file, "%s: Invalid allele symbol '%s'", $code, $1);
-		}
-		else
-		{
-		    report ($file, "%s: Invalid allele symbol '%s'", $code, $allele);
-		}
-	    }
-	    else
-	    {
-		check_stamps ($file, $code, $cyto_comments);
-	    }
 	}
-    }
 }
 
 
