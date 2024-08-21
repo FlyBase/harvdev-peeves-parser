@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.77"; #  restricting all gene cytology and recombination fields to Dmel (DC-1077).
+our $Peeves_version = "2.78"; #  Adding new curator info.
 
 =head2 Version
 
