@@ -1073,6 +1073,7 @@ my $dv_short_qualifiers = {
     set_symbol ('sm', 'cur_type', 'CAMCUR');
     set_symbol ('ga', 'cur_type', 'GOCUR');
     set_symbol ('ha', 'cur_type', 'GOCUR');
+    set_symbol ('rz', 'cur_type', 'GOCUR');
     set_symbol ('up', 'cur_type', 'GOEXT');
     set_symbol ('pl', 'cur_type', 'BIBLIO');
     set_symbol ('as', 'cur_type', 'USER');

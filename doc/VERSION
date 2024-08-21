@@ -1019,3 +1019,5 @@ our $Peeves_version = "2.75"; #  fixing bug in G35 checking (removing overly str
 our $Peeves_version = "2.76"; #  new subroutine to cross-check that full name in rename field is what is in chado for that object (DC-1076).
 # 16.7.2024
 our $Peeves_version = "2.77"; #  restricting all gene cytology and recombination fields to Dmel (DC-1077).
+# 21.8.2024
+our $Peeves_version = "2.78"; #  Adding new curator info.
