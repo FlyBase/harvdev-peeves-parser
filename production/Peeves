@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.78"; #  Adding new curator info.
+our $Peeves_version = "2.79.3"; #  Add Peeves checks for new GG14 field (DC-1084): between field checks
 
 =head2 Version
 
@@ -653,6 +653,7 @@ our %field_specific_checks = (
 	'GG11' => \&validate_date_field,
 	'GG12' => \&no_stamps,
 	'GG13' => '', # will add field-specific checks later
+	'GG14' => \&check_accession_characters,
 
 # publication proforma
 

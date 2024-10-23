@@ -1021,3 +1021,7 @@ our $Peeves_version = "2.76"; #  new subroutine to cross-check that full name in
 our $Peeves_version = "2.77"; #  restricting all gene cytology and recombination fields to Dmel (DC-1077).
 # 21.8.2024
 our $Peeves_version = "2.78"; #  Adding new curator info.
+# 7.10.2024
+our $Peeves_version = "2.79.1"; #  Add Peeves checks for new GG14 field (DC-1084): basic checks
+our $Peeves_version = "2.79.2"; #  Add Peeves checks for new GG14 field (DC-1084): within field checks
+our $Peeves_version = "2.79.3"; #  Add Peeves checks for new GG14 field (DC-1084): between field checks

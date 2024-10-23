@@ -32,6 +32,7 @@ my @GG1f_list = ();							# Dehashed data from GG1f (merge)
 my @GG1g_list = ();							# dehashed data from GG1g field
 
 my @GG13_list = ();
+my @GG14_list = ();
 
 sub do_genegroup_proforma ($$)
 {
@@ -287,6 +288,11 @@ FIELD:
 		check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
 		@GG13_list = process_field_data ($file, $hash_entries, $1, '0', $2, $3, \%proforma_fields, '1');
 	}
+	elsif ($field =~ /^(.*?)\s+(GG14)\..*? :(.*)/s)
+	{
+		check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
+		@GG14_list = process_field_data ($file, $hash_entries, $1, '0', $2, $3, \%proforma_fields, '1');
+	}
 
 	elsif ($field =~ /^(.*?)\s+GG(.+?)\..*?:(.*)$/s)
 	{
@@ -454,6 +460,22 @@ compare_multiple_line_fields_negative($file, $hash_entries, 'GG7a', \@GG7a_list,
 if ($unattributed && $#GG1b_list + 1 == $hash_entries) {
 
 	check_unattributed_synonym_correction ($file, $hash_entries, 'GG1a', $primary_symbol_list, 'GG1b', \@GG1b_list, \%proforma_fields, "You must include the valid symbol in GG1b when \!c-ing it under the 'unnattributed' publication.");
+
+}
+
+
+# check that GG14 is attributed to the correct reference when it is filled in
+
+for (my $i = 0; $i < $hash_entries; $i++) {
+
+	if ($GG14_list[$i] && $GG14_list[$i] ne '') {
+
+		unless ($g_FBrf eq 'FBrf0225556') {
+
+			report ($file, "%s data is usually attributed to the FBrf0225556 reference but P22 specifies '%s'.", 'GG14', $g_FBrf ? $g_FBrf : ($unattributed ? 'unattributed' : 'new'));
+		}
+	}
+
 
 }
 

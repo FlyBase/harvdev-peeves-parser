@@ -1,0 +1,58 @@
+
+## ! GG14. Corresponding GO-CAM identifier :
+
+### Multiple values allowed:
+
+No (implemented).
+
+### !c Applicable:
+
+No (implemented).
+
+NOTE: !c functionality for this field has not yet been implemented in the perl parser (20241003) so Peeves is also currently set to not allow !c for this field.
+
+### Inclusion essential:
+
+No (implemented).
+
+### Mandatorially has value:
+
+No (implemented).
+
+
+### Dupl. for multiple field:
+
+No (implemented).
+
+
+### Checks:
+
+Checks within field:
+
+* sub check_accession_characters does two checks:
+
+  * uses 'check_allowed_characters' to warn if the GO-CAM identifier contains character(s) that are not in the expect4ed character set.
+
+  * warns if the GO-CAM identifier starts with '3A' (as it is easy to add this string by mistake when copying the identifier from the source).
+
+
+Checks between fields:
+
+* If GG14 is filled in, checks that the FBrf is the expected FB analysis reference (FBrf0225556) and issues a warning if not.
+
+
+### Related fields:
+
+
+
+### Comments:
+
+gm241007: I based the 'check_allowed_characters' character set on the current list of models at github geneontology/noctua-models/tree/master/models, but if this check generates false-positives, the character set allowed for the GG14 field can easily be expanded.
+
+### Status:
+
+
+
+### Updated:
+
+gm241007.

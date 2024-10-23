@@ -1577,7 +1577,7 @@ sub check_allowed_characters {
 #		'' => '',
 # other fields
 		'A29' => 'ABCDEFLRSXYcehnt0-9;\() \|\-', # cytological order field.  Temporary check until work out how to check for format properly
-#		'' => '',
+		'GG14' => 'a-zA-Z0-9_:\.\+\-', # Used list of models at github geneontology/noctua-models/tree/master/models to narrow down the character set 
 #		'' => '',
 
 # checks for sub-field portions in complex interaction.pro lines
@@ -1607,12 +1607,12 @@ sub check_allowed_characters {
 		
 # usually the context reported is the whole proforma line (including any hashes)		
 		if ($code =~ m|^[A-Z]{1,}[0-9]{1,}[a-z]{0,}$|) {
-			report ($file, "%s: Invalid character%s '%s' in %s from\n!%s", $code, length ($temp_copy) == 1 ? '' : 's', join ("' '", split (//, $temp_copy)), $symbol, $field_data);
+			report ($file, "%s: Invalid character%s '%s' in '%s' from\n!%s", $code, length ($temp_copy) == 1 ? '' : 's', join ("' '", split (//, $temp_copy)), $symbol, $field_data);
 
 # but if only part of a field line is being checked (e.g. sub-field in complex interaction.pro field), the context reported is just the single line being checked
 		} else {
 
-			report ($file, "%s: Invalid character%s '%s' in %s from '%s'", $code, length ($temp_copy) == 1 ? '' : 's', join ("' '", split (//, $temp_copy)), $symbol, $field_data);
+			report ($file, "%s: Invalid character%s '%s' in '%s' from '%s'", $code, length ($temp_copy) == 1 ? '' : 's', join ("' '", split (//, $temp_copy)), $symbol, $field_data);
 		
 		}
 	}
@@ -5830,5 +5830,56 @@ sub filled_in_for_dmel_only {
 	}
 
 }
+
+sub check_accession_characters {
+# process_field_data + %field_specific_checks format. 241007.
+# simple check for fields that contain accession numbers, when it is not
+# possible to easily specify a regex for the whole accession.
+# This subroutine simply checks for expected characters using check_allowed_characters
+# and then has any additional field-specific extra checks for common errors.
+
+	my ($file, $code, $dehashed_data, $context) = @_;
+
+# hash fields where extra checks are implemented for common formatting errors
+# can check for errors in a particular place in the line
+# each field i
+	my $extra_check_mapping = {
+
+# key is field, multiple checks are allowed, with each being a key-value pair of
+# key = error being looked for, value = error message if error is found
+
+
+		'GG14' => {
+
+
+			'^3A' => 'Are you sure you meant to start the GO-CAM ID with 3A ?:',
+
+		},
+
+	};
+
+
+	$dehashed_data eq '' and return;
+
+	check_allowed_characters($file,$code,$dehashed_data,$context->{$code});
+
+	if (exists $extra_check_mapping->{$code}) {
+
+		foreach my $error (sort keys %{$extra_check_mapping->{$code}}) {
+
+			if ($dehashed_data =~ m/($error)/) {
+
+				report ($file, "%s: %s\n!%s", $code, $extra_check_mapping->{$code}->{$error}, $context->{$code});
+
+			}
+
+
+		}
+	}
+
+
+
+}
+
 
 1;					# Boilerplate
