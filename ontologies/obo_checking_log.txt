@@ -2,20 +2,20 @@ OBO CHECKING LOG
 
 Filename: go-basic.obo
 DATESTAMP: 
-version:releases/2023-11-15
+version:releases/2024-01-17
 OK for retrofit: y
 OK for loading to chado: y
 OK for using on website: ?
 Comments:New GO moved to trunk
 
 Filename: fly_anatomy.obo
-DATESTAMP: 07:12:2023 16:19
-data-version: 2023-12-07
+DATESTAMP: 22:02:2024 16:03
+data-version: 2024-02-22
 CVS version number:
 OK for retrofit: y
 OK for loading to chado: y
 OK for using on website: y
-Comments: new fbbt 2023-12-07 moved to trunk
+Comments: new fbbt 2024-02-22 moved to trunk
 
 Filename: fly_development.obo
 DATESTAMP: 21:10:2019 12:49
