@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.79.3"; #  Add Peeves checks for new GG14 field (DC-1084): between field checks
+our $Peeves_version = "2.80"; #  Add warning if (with ) allele is transgenic (FTA-76)
 
 =head2 Version
 
