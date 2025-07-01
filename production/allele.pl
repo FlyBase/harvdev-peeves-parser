@@ -1052,7 +1052,7 @@ sub do_withs ($$$$)
 
     if ($with =~ m/, /) {
 
-	report ($file, "%s: '(with )' portion contains a comma. Please follow 'coping with complex with' instructions in the phen_curation.sop to rearrange the following line to prevent a problematic genotype:\n$context", $code);
+	report ($file, "%s: '(with )' portion contains a comma. Please follow 'coping with complex with' instructions in the phen_curation.sop to rearrange the following line to prevent a problematic genotype:\n%s", $code, $context);
 
     }
 
@@ -1063,7 +1063,7 @@ sub do_withs ($$$$)
 # $with_thing has to be either any valid aberration symbol or a rather constrained allele symbol.
 
 	next if valid_symbol ($with_thing, 'FBab');		# Always ok if a valid abs symbol
-	if (valid_symbol ($with_thing, 'FBal'))
+	if (my $fbal = valid_symbol ($with_thing, 'FBal'))
 	{
 	    if (my ($gene, undef) = ($with_thing =~ /(.+)\[(.+)\]$/))	# Slice out gene portion.
 	    {
@@ -1071,6 +1071,15 @@ sub do_withs ($$$$)
 					      "%s: Mismatch between gene symbol '%s' in GA1a " .
 					      "and the gene portion '%s' given in '(with %s)' in the line\n%s",
 					      $code, $g1a_gene, $gene, $with, $context);
+	    }
+
+	    # add check to see whether allele is transgenic and print a warning if so, to prevent problematic genotypes being made in db
+	    my $assoc_list = chat_to_chado ('associated_with_FBtp', $fbal);
+	    if (@{$assoc_list}) {
+
+		report ($file, "%s: '(with )' portion contains a transgenic allele (%s) which will cause a problematic genotype on loading. Please rearrange the line (replacing %s with the allele in GA1a) and put it in the %s proforma instead:\n%s", $code, $with_thing, $with_thing, $with_thing, $context);
+
+
 	    }
 
 	}

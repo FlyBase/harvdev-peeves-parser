@@ -1,0 +1,113 @@
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0262206
+! P2.   Parent multipub abbreviation               *w :Cell Rep.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 80:  6 Nov 2023
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Pdzd8
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 65: 23 July 2021
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Pdzd8[KO]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :(with Pdzd8[SMP.UAS.Tag:V5]) abnormal neuroanatomy | larval stage | conditional
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :(with Pdzd8[SMP.UAS.Tag:V5]) NMJ bouton | larval stage | conditional
+! GA28a. Genetic interaction (class, effect) [CV]           *S :(with Pdzd8[SMP.UAS.Tag:V5]) abnormal neuroanatomy | larval stage, UI { Atg1[00305]/+ }
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :(with Pdzd8[SMP.UAS.Tag:V5]) NMJ bouton | larval stage | decreased number, UI { Atg1[00305]/+ }
+NMJ bouton | larval stage | decreased number, UI { Syx17[f03584]/+ }
+(with Pdzd8[SMP.UAS.Tag:V5]) presynaptic active zone | larval stage | decreased number, suppresible { Atg1[00305]/+ }
+! GA10a. Associated construct                                *I :
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 80:  6 Nov 2023
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Atg1
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 65: 23 July 2021
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Atg1[00305]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :(with Atg1[00305]) abnormal neuroanatomy | larval stage
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :(with Atg1[00305]) presynaptic active zone | larval stage | decreased number
+(with Atg1[00305], Atg1[CB-6698-3]) NMJ bouton | larval stage | decreased number
+! GA10a. Associated construct                                *I :
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 65: 23 July 2021
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Atg1[UAS.cSa]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :(with Atg1[3]) abnormal neuroanatomy | larval stage { Scer\GAL4[elav-C155] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :(with Atg1[3]) NMJ bouton | larval stage | increased number { Scer\GAL4[elav-C155] }
+! GA28a. Genetic interaction (class, effect) [CV]           *S :(with Atg1[3]) abnormal neuroanatomy | larval stage { Scer\GAL4[elav-C155] }, suppressible { Pdzd8[KO]/+ }
+! GA28b. Genetic interaction (anatomy, effect) [CV]         *S :(with Atg1[3]) NMJ bouton | larval stage | increased number { Scer\GAL4[elav-C155] }, suppressible { Pdzd8[KO]/+ }
+! GA10a. Associated construct                                *I :
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE PROFORMA                          Version 80:  6 Nov 2023
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :Hsap\PDZD8
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE PROFORMA                        Version 65: 23 July 2021
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :Hsap\PDZD8[UAS.GFP]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA56.  Phenotype (class | qualifier(s)) [CV]            *k :abnormal neuroanatomy | larval stage { Scer\GAL4[elav-C155] }
+! GA17.  Phenotype (anatomy | qualifier(s)) [CV]          *k :NMJ bouton | larval stage | increased number { Scer\GAL4[elav-C155] }
+! GA10a. Associated construct                                *I :
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA10c. Associated insertion - G1a is outwith insert      *G :
+! GA10d. Insertion symbol(s) used in reference             *N :
+! GA10e. Associated insertion - G1a is inside insert    *G :
+! GA10f. Insertion symbol(s) used in reference          *N :
+! GA14.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

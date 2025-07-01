@@ -356,6 +356,7 @@ sub set_up_chado_queries ()
 
 # Allele specific block
 
+# this query gets associated_with FBal when an FBtp/FBti id is given as the argument for the query
     $prepared_queries{'associated_with_FBal'} = $chado->prepare ('SELECT f2.uniquename
 								  FROM feature f1, feature f2,
 								       feature_relationship fr, cvterm cv
@@ -364,6 +365,18 @@ sub set_up_chado_queries ()
 								  AND f2.feature_id = fr.subject_id
 								  AND cv.cvterm_id=fr.type_id
 								  AND cv.name=\'associated_with\';');
+
+# this query gets associated_with FBtps for an FBal id is given as the argument for the query
+    $prepared_queries{'associated_with_FBtp'} = $chado->prepare ('SELECT f2.uniquename
+								  FROM feature f1, feature f2,
+								       feature_relationship fr, cvterm cv
+								  WHERE f1.uniquename=?
+								  AND f1.feature_id = fr.subject_id
+								  AND f2.feature_id = fr.object_id
+								  AND f2.uniquename like \'FBtp%\'
+								  AND cv.cvterm_id=fr.type_id
+								  AND cv.name=\'associated_with\';');
+
 
 # Organism information
 
