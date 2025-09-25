@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.80"; #  Add warning if (with ) allele is transgenic (FTA-76)
+our $Peeves_version = "2.81"; #  Peeves changes for obsoleting MS19c proforma field (DOC-231)
 
 =head2 Version
 
@@ -589,7 +589,6 @@ our %field_specific_checks = (
 	'MS16' => \&validate_cvterm_field,
 	'MS19a' => \&check_valid_chado_symbol_field,
 	'MS19b' => \&check_stamped_free_text,
-	'MS19c' => \&check_valid_symbol_field,
 	'MS19d' => \&check_valid_symbol_field,
 	'MS19e' => \&check_valid_symbol_field,
 	'MS20' => \&check_valid_chado_symbol_field,

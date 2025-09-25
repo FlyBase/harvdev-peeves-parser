@@ -1,4 +1,4 @@
-! MOLECULAR SEGMENT AND CONSTRUCT PROFORMA           Version 33: 29 Feb 2024
+! MOLECULAR SEGMENT AND CONSTRUCT PROFORMA           Version 34: 25 Sep 2025
 !
 ! MS1f. Database ID for segment (FBid or "new") :PARTIAL
 ! MS1a. Segment symbol to use in database       :PARTIAL
@@ -18,7 +18,6 @@
 !
 ! MS19a. Progenitor construct (symbol) :FULL
 ! MS19b. Progenitor(s) (other - free text) :FULL
-! MS19c. Isolate of (generic natTE) :(FULL checks are implemented but warning is issued if filled in, as field not implemented in proforma parser)
 ! MS19d. Progenitor genomic or cDNA clone (symbol) :FULL
 ! MS19e. Associated gene (symbol) :FULL
 ! MS20.  Related constructs    :FULL

@@ -51,7 +51,6 @@ sub do_moseg_proforma ($$)
 	my @MS4b_list = ();
 	my @MS16_list = ();
 	my @MS21_list = ();
-	my @MS19c_list = ();
 	my @MS19e_list = ();
 	my @MS30_list = ();
 	my @MS30a_list = ();
@@ -198,16 +197,6 @@ FIELD:
 	{
 	    check_dups ($file, $2, $field, \%proforma_fields, \%dummy_dup_proforma_fields, $primary_symbol_list, 0);
 	    process_field_data ($file, $hash_entries, $1, '1', $2, $3, \%proforma_fields, '0');
-	}
-	elsif ($field =~ /^(.*?)\s+(MS19c)\..*? :(.*)/s)
-	{
-	    check_dups ($file, $2, $field, \%proforma_fields, \%dummy_dup_proforma_fields, $primary_symbol_list, 0);
-		@MS19c_list = process_field_data ($file, $hash_entries, $1, '1', $2, $3, \%proforma_fields, '1');
-		if (defined $3 && $3 ne '') {
-
-			report ($file, "%s: **WARNING**: Do NOT fill in this field, it will make your record bounce !! (Parsing of this field is currently broken and it is not clear whether the field is still needed in the proforma at all - see DOC-117)\n!%s", $2, $proforma_fields{$2});
-
-		}
 	}
 	elsif ($field =~ /^(.*?)\s+(MS19d)\..*? :(.*)/s)
 	{
