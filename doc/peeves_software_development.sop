@@ -164,7 +164,11 @@ f. push changes to the remote repository
 
 $ git push -u origin <branch>
 
-(use git push -u the first time as is new branch, no need for -u if then push on this branch again)
+(use git push -u the first time as is new branch, no need for -u if then push on this branch again, i.e.:
+
+$ git push origin <branch>
+
+)
 
 g. create a pull request
 

@@ -2484,7 +2484,6 @@ sub check_valid_symbol_field {
 		'MA23a' => ['FBgn'],
 
 		'MS19a' => ['FBtp', 'FBmc'],
-		'MS19c' => ['FBte'],
 		'MS19d' => ['FBcl'],
 		'MS19e' => ['FBgn'],
 		'MS24' => ['FBal'],
