@@ -56,6 +56,8 @@ my @GA10c_list = ();		# List of lists of FBti symbols given in GA10c
 my @GA10d_list = ();		# List of lists of FBti names given in GA10d
 my @GA10e_list = ();		# List of lists of FBti symbols given in GA10e
 my @GA10f_list = ();		# List of lists of FBti names given in GA10f
+my @GA4_list = ();
+
 my $firstGeneAllele; # because GA1h is above GA1a
 
 my $GA1h_ng=0; # misformed or too many FBids...
@@ -281,7 +283,7 @@ FIELD:
 	elsif ($field =~ /^(.*?) (GA4)\..*? :(.*)/s)
 	{
 	    check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
-		process_field_data ($file, $hash_entries, $1, '1', $2, $3, \%proforma_fields, '0');
+		@GA4_list = process_field_data ($file, $hash_entries, $1, '1', $2, $3, \%proforma_fields, '0');
 	}
 	elsif ($field =~ /^(.*?) (GA56)\..*? :(.*)/s)
 	{
@@ -642,6 +644,9 @@ compare_field_pairs ($file, $hash_entries, 'GA1f', \@GA1f_list, 'GA2c', \@GA2c_l
 # Typically, only one of GA30c and GA30d are filled in
 
 compare_field_pairs ($file, $hash_entries, 'GA30c', \@GA30c_list, 'GA30d', \@GA30d_list, \%proforma_fields, 'single::(except in rare cases, which is usually some kind of sensor tool)', '');
+
+compare_field_pairs ($file, $hash_entries, 'GA10a', \@GA10a_list, 'GA4', \@GA4_list, \%proforma_fields, 'single::(GA4 should not be used for transgenic alleles)', '');
+
 
 # If GA35 is filled in then GA30d should not typically be filled in
 # (cross-checks between GA35 and GA30c are now done further down, to allow more nuanced checking)

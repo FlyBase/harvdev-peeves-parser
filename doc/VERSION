@@ -1029,3 +1029,8 @@ our $Peeves_version = "2.79.3"; #  Add Peeves checks for new GG14 field (DC-1084
 our $Peeves_version = "2.80"; #  Add warning if (with ) allele is transgenic (FTA-76)
 # 25.9.2025
 our $Peeves_version = "2.81"; #  Peeves changes for obsoleting MS19c proforma field (DOC-231)
+# 9.1.2026
+our $Peeves_version = "2.82"; #  Peeves changes for FTA-149
+our $Peeves_version = "2.83"; #  obsolete SF5g field (FTA-104)
+our $Peeves_version = "2.84"; #  obsolete SF5d field (FTA-106)
+

@@ -1,4 +1,4 @@
-! SEQUENCE FEATURE/MAPPED ENTITIES PROFORMA    Version 8: 16 Nov 2022
+! SEQUENCE FEATURE/MAPPED ENTITIES PROFORMA    Version 10: 9 Jan 2026
 !
 ! SF1f. Database ID for feature         :FULL
 ! SF1a. Feature symbol to use in database    :FULL
@@ -25,10 +25,8 @@
 !    SF5e. Confidence rating for gene call :FULL
 !    SF5f. Comments concerning gene call :FULL
 ! SF5b. Associated allele       :NA
-! SF5g. Associated transcript   :NA
 ! SF5c. Associated FBtp transgenic_transposable_element (symbol) :NA
 ! SF5h. Associated FBmc engineered_plasmid (symbol) :NA
-! SF5d. Corresponding segment   :NA
 !
 ! SF10a. Evidence/assay [CV] :NA
 !

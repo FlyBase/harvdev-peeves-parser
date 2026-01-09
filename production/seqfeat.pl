@@ -233,30 +233,10 @@ FIELD:
 	    check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
 		process_field_data ($file, $hash_entries, $1, '1', $2, $3, \%proforma_fields, '0');
 	}
-	elsif ($field =~ /^(.*?)\s+(SF5g)\..*? :(.*)/s)
-	{
-	    check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
-		process_field_data ($file, $hash_entries, $1, '0', $2, $3, \%proforma_fields, '0');
-	}
 	elsif ($field =~ /^(.*?)\s+(SF5h)\..*? :(.*)/s)
 	{
 		check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
 		process_field_data ($file, $hash_entries, $1, '1', $2, $3, \%proforma_fields, '0');
-	}
-	elsif ($field =~ /^(.*?)\s+(SF5d)\..*? :(.*)/s)
-	{
-	    check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
-		process_field_data ($file, $hash_entries, $1, '1', $2, $3, \%proforma_fields, '1');
-
-# field is not currently implemented in parsing software, so extra warnings printed if used
-
-		changes ($file, $2, $1) and report ($file, "%s: WARNING: this field cannot be !c-ed as parsing of this field is not implemented in proforma loading software.", $2);
-
-		if (defined $3 && $3 ne '') {
-
-			report ($file, "%s: **WARNING**: this field cannot be filled in (you have '%s') as parsing of this field is not implemented in proforma loading software.", $2, $3);
-
-		}
 	}
 	elsif ($field =~ /^(.*?)\s+(SF10a)\..*? :(.*)/s)
 	{
@@ -332,10 +312,10 @@ FIELD:
 #	    double_query ($file, $2, $3) or validate_stub ($file, $1, $2, $3);
 #	}
 
-	elsif ($field =~ /^(.*?)\s+<add code prefix for proforma type e.g. MA here>(.+?)\..*?:(.*)$/s)
+	elsif ($field =~ /^(.*?)\s+SF(.+?)\..*?:(.*)$/s)
 	{
 	    report ($file, "Invalid proforma field\n!%s", $field);
-	} elsif ($field =~ /.*<add code prefix for proforma type e.g. MA here>.*/s) {
+	} elsif ($field =~ /.*SF.*/s) {
 
 		unless ($field =~ /END OF RECORD FOR THIS PUBLICATION/s) {
 		    report ($file, "Malformed proforma field  (message tripped in seqfeat.pl).\nThis is often caused by the line of !!! before the PROFORMA line below ending with a space (here is a line to help find that case):\n!!!!!!! \n!\n(if that does not work and you think there is nothing wrong with this line let Gillian know as it might indicate a bug with the format of the field-specific regular expressions in Peeves):\n'!%s'", $field);

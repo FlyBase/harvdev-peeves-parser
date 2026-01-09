@@ -5056,10 +5056,8 @@ sub check_valid_chado_symbol_field {
 		'SF3a' => ['FBlc'],
 		'SF5a' => ['FBgn'],
 		'SF5b' => ['FBal'],
-		'SF5g' => ['FBtr'],
 		'SF5c' => ['FBtp'],
 		'SF5h' => ['FBmc'],
-		'SF5d' => ['FBms'],
 		'SF11a' => ['FBpp'],
 		'G38' => ['FBgn'],
 
