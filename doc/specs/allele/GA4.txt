@@ -34,6 +34,10 @@ checks within field (in validate_cvterm_field):
 
 * each value must be a valid FBcv term from the 'allele_class' namespace.
 
+Checks between fields:
+
+* GA10a and GA4 must not both be filled in.
+
 ### Related fields:
 
 
@@ -49,4 +53,4 @@ checks within field (in validate_cvterm_field):
 
 ### Updated:
 
-gm241213.
+gm260109.

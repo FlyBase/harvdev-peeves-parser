@@ -33,7 +33,7 @@
 !    SF5e. Confidence rating for gene call :
 !    SF5f. Comments concerning gene call :
 ! SF5b. Associated allele       :
-! SF5g. Associated transcript   :
+! SF5g. Associated transcript   :transcript_test
 ! SF5c. Associated FBtp transgenic_transposon (symbol) :
 ! SF5h. Associated FBmc engineered_construct (symbol) :
 ! SF5d. Corresponding segment   :blah
