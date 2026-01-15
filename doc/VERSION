@@ -1033,4 +1033,5 @@ our $Peeves_version = "2.81"; #  Peeves changes for obsoleting MS19c proforma fi
 our $Peeves_version = "2.82"; #  Peeves changes for FTA-149
 our $Peeves_version = "2.83"; #  obsolete SF5g field (FTA-104)
 our $Peeves_version = "2.84"; #  obsolete SF5d field (FTA-106)
-
+# 15.1.2026
+our $Peeves_version = "2.85"; #  fix bug for FTA-149 (GA4 vs GA10a checks)

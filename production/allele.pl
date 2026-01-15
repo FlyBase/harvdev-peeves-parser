@@ -645,7 +645,18 @@ compare_field_pairs ($file, $hash_entries, 'GA1f', \@GA1f_list, 'GA2c', \@GA2c_l
 
 compare_field_pairs ($file, $hash_entries, 'GA30c', \@GA30c_list, 'GA30d', \@GA30d_list, \%proforma_fields, 'single::(except in rare cases, which is usually some kind of sensor tool)', '');
 
-compare_field_pairs ($file, $hash_entries, 'GA10a', \@GA10a_list, 'GA4', \@GA4_list, \%proforma_fields, 'single::(GA4 should not be used for transgenic alleles)', '');
+if ($proforma_fields{'GA4'}) {
+
+	for (my $i = 0; $i < $hash_entries; $i++) {
+
+		if (defined $GA4_list[$i] && $GA4_list[$i] ne '') {
+
+			compare_pairs_of_data ($file, 'GA4', $GA4_list[$i], 'GA10a', $GA10a_list[$i], \%proforma_fields, 'single::(GA4 should not be used for transgenic alleles)', '');
+
+		}
+	}
+}
+
 
 
 # If GA35 is filled in then GA30d should not typically be filled in

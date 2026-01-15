@@ -34,31 +34,10 @@
 ! GA2b.  Allele name(s) used in reference                       *V :
 ! GA2c.  Action - rename this allele name                          :
 ! GA31.  Etymology                                              *u :
-! GA4.   Allele class [CV]                                  *k :loss of function allele
+! GA4.   Allele class [CV]                                  *k :gain of function allele
 ! GA10a. Associated construct                                *I :P{dpp83-85,lac+3'UTR}
 ! GA10b. Construct symbol(s) used in reference               *L :
-! GA10c. Associated insertion - G1a is outwith insert      *G :
-! GA10d. Insertion symbol(s) used in reference             *N :
-! GA10e. Associated insertion - G1a is inside insert    *G :
-! GA10f. Insertion symbol(s) used in reference          *N :
-! GA10g. Associated aberration / cytology normal (+)    *P/*C :
-! GA8.   Mutagen [CV]                                  *o :
-! GA36.  Allele/construct represents a human disease-implicated variant? (y or blank) :
-! GA11.  Progenitor genotype                           *O :
-! GA23a. Notes on origin [SoftCV]                      *R :
-! GA23b. Notes on origin [free text]                   *R :
-! GA35.  Transgenic product class [CV]     :
-! GA30e. Regulatory region(s) present (symbol)  :
-! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
-! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :
-! GA30a. Tagged with experimental tool (FBto symbol)        :
-! GA30b. Other experimental tools carried (FBto symbol)     :
-! GA30c. Encoded experimental tool (FBto symbol)  :
-! GA30d. Encoded experimental tool [CV]           :
-! GA30f. Propagate uses from construct ? (n or blank)  :
-! GA13.  Miscellaneous comments                        *u :
-! GA20.  GA1a stated to be lost?                         *v :
-! GA14.  Internal notes  *W :
+! GA14.  Internal notes  *W :error - GA4 and GA10a both filled in
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Insert next allele proforma below.
 ! ALLELE PROFORMA                        Version 65: 23 July 2021
@@ -72,31 +51,107 @@
 ! GA2b.  Allele name(s) used in reference                       *V :
 ! GA2c.  Action - rename this allele name                          :
 ! GA31.  Etymology                                              *u :
-! GA4.   Allele class [CV]                                  *k :loss of function allele
+! GA4.   Allele class [CV]                                  *k :antimorphic allele
 ! GA10a. Associated construct                                *I :
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :no error - both GA4/GA10a present, only GA4 filled in
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 65: 23 July 2021
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :dpp[2HBmut.UAS]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA4.   Allele class [CV]                                  *k :
+! GA10a. Associated construct                                *I :P{UAS-dpp.2HBmut}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :no error - both GA4/GA10a present, only GA10a filled in
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 65: 23 July 2021
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :dpp[7191.lacZ]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA10a. Associated construct                                *I :P{dpp[+]CT7191}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :no error - only GA10a present and filled in
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 65: 23 July 2021
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :dpp[new2]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA4.   Allele class [CV]                                  *k :antimorphic allele
+! GA14.  Internal notes  *W :no error - only GA4 present and filled in
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 65: 23 July 2021
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :dpp[bothempty]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :n
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA10a. Associated construct                                *I :
+! GA4.   Allele class [CV]                                  *k :
 ! GA10b. Construct symbol(s) used in reference               *L :
 ! GA10c. Associated insertion - G1a is outwith insert      *G :
 ! GA10d. Insertion symbol(s) used in reference             *N :
 ! GA10e. Associated insertion - G1a is inside insert    *G :
 ! GA10f. Insertion symbol(s) used in reference          *N :
-! GA10g. Associated aberration / cytology normal (+)    *P/*C :
-! GA8.   Mutagen [CV]                                  *o :
-! GA36.  Allele/construct represents a human disease-implicated variant? (y or blank) :
-! GA11.  Progenitor genotype                           *O :
-! GA23a. Notes on origin [SoftCV]                      *R :
-! GA23b. Notes on origin [free text]                   *R :
-! GA35.  Transgenic product class [CV]     :
-! GA30e. Regulatory region(s) present (symbol)  :
-! GA12a. Nature of the lesion, wrt GA11 - nt/aa changes [SoftCV] *s :
-! GA12b. Nature of the lesion, wrt GA11 [free text]              *s :
-! GA30a. Tagged with experimental tool (FBto symbol)        :
-! GA30b. Other experimental tools carried (FBto symbol)     :
-! GA30c. Encoded experimental tool (FBto symbol)  :
-! GA30d. Encoded experimental tool [CV]           :
-! GA30f. Propagate uses from construct ? (n or blank)  :
-! GA13.  Miscellaneous comments                        *u :
-! GA20.  GA1a stated to be lost?                         *v :
-! GA14.  Internal notes  *W :
+! GA14.  Internal notes  *W :no error - both both GA4/GA10a present, neither filled in
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next gene proforma below.
+! GENE PROFORMA                          Version 80:  6 Nov 2023
+!
+! G1a.  Gene symbol to use in FlyBase                       *a :eve
+! G1b.  Gene symbol(s) used in reference                    *i :
+! G1g.  Is G1a the current symbol of a gene in FlyBase? (y/n)  :y
+! G2b.  Gene name(s) used in reference                      *V :
+! G37.  Member of Gene Group (symbol) *G :
+! G34.  Antibody generated (monoclonal/polyclonal)      *s :
+! G15.  Internal notes  *W :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ALLELE DATA FOR THIS GENE
+! Insert allele proforma(e) below.
+! ALLELE PROFORMA                        Version 65: 23 July 2021
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :eve[2xCQ.RC.G4DBD]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA10a. Associated construct                                *I :P{2xCQ-GAL4-eveRC}
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :no error
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Insert next allele proforma below.
+! ALLELE PROFORMA                        Version 65: 23 July 2021
+!
+! GA1a.  Allele symbol to use in FlyBase                        *A :eve[3]
+! GA1b.  Allele symbol(s) used in reference                     *i :
+! GA1e.  Action - rename this allele symbol                        :
+! GA1f.  Action - merge these alleles (symbols)                    :
+! GA1g.  Is GA1a the current symbol of an allele in FlyBase? (y/n) :y
+! GA2a.  Action - allele name to use in FlyBase                 *e :
+! GA2b.  Allele name(s) used in reference                       *V :
+! GA2c.  Action - rename this allele name                          :
+! GA31.  Etymology                                              *u :
+! GA4.   Allele class [CV]                                  *k :hypomorphic allele
+! GA10a. Associated construct                                *I :
+! GA10b. Construct symbol(s) used in reference               *L :
+! GA14.  Internal notes  *W :no error
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Insert next allele proforma below.
 
