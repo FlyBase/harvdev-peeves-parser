@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.84"; #  obsolete SF5d field (FTA-106)
+our $Peeves_version = "2.85"; #  fix bug for FTA-149 (GA4 vs GA10a checks)
 
 =head2 Version
 
