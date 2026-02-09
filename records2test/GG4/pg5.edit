@@ -8,7 +8,7 @@
 ! GG1a. Gene group symbol                               *a :DRS
 ! GG1b. Gene group symbol synonym(s)                    *i :
 ! GG1g. Is GG1a the current symbol of a gene group? (y/n)  :y
-! GG4.  Type of gene group [CV]  *t :process group
+! GG4.  Type of gene group [CV]  *t :pathway group
 ! GG12. Internal notes  *W :??should fail: existing group, cannot add, only !c
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 

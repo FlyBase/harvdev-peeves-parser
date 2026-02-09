@@ -63,7 +63,7 @@
 ! GG2c. Action - rename this gene group name        :
 !
 ! GG4.  Type of gene group [CV]  *t :loss of function allele
-process group
+pathway group
 !
 ! GG12. Internal notes  *W :??error - multiple values
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -94,7 +94,7 @@ rewureow
 ! GG2b. Gene group name(s) used in reference            *V :
 ! GG2c. Action - rename this gene group name        :
 !
-! GG4.  Type of gene group [CV]  *t :process group
+! GG4.  Type of gene group [CV]  *t :pathway group
 !
 ! GG12. Internal notes  *W :??error -filled in for rename
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
