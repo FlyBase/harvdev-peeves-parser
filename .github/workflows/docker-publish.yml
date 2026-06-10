@@ -1,16 +1,12 @@
 name: Build and push Docker image
 
-# Replaces the retired Docker Hub Automated Build (the "Builds" tab / autobuild
-# webhook). Docker retired classic Automated Builds (full retirement 2027-04-01);
-# the autobuild link for this repo has lapsed, so GitHub pushes no longer rebuild
-# the image and it has been kept current by manual/GoCD pushes instead. This
-# workflow builds the root Dockerfile and pushes flybase/harvdev-peeves-parser to
-# Docker Hub on every push to master, exactly like the old autobuild did.
+# Replaces the retired Docker Hub Automated Build. Docker retired classic
+# Automated Builds (full retirement 2027-04-01). Builds the root Dockerfile and
+# pushes flybase/harvdev-peeves-parser to Docker Hub on every push to master.
 #
 # Requires two repository secrets (Settings -> Secrets and variables -> Actions):
 #   DOCKERHUB_USERNAME  - a Docker Hub user that can push to flybase/*
-#   DOCKERHUB_TOKEN     - a Docker Hub access token (Account Settings -> Personal
-#                         access tokens) with Read & Write scope, NOT the password
+#   DOCKERHUB_PASSWORD  - a Docker Hub access token (Read & Write scope)
 
 on:
   push:
@@ -25,20 +21,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+        uses: docker/setup-buildx-action@v4
 
       - name: Log in to Docker Hub
-        uses: docker/login-action@v3
+        uses: docker/login-action@v4
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
       - name: Extract metadata (tags, labels)
         id: meta
-        uses: docker/metadata-action@v5
+        uses: docker/metadata-action@v6
         with:
           images: flybase/harvdev-peeves-parser
           tags: |
@@ -46,7 +42,7 @@ jobs:
             type=ref,event=tag
 
       - name: Build and push
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           context: .
           file: ./Dockerfile
