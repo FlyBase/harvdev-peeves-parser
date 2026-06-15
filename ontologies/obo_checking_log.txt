@@ -1,66 +1,40 @@
 OBO CHECKING LOG
 
 Filename: go-basic.obo
-DATESTAMP: 
-version:releases/2024-01-17
-OK for retrofit: y
-OK for loading to chado: y
-OK for using on website: ?
-Comments:New GO moved to trunk
+DATESTAMP: NA
+data-version:2025-06-07
+Comments: New version for FB2025_03. Build version.
 
 Filename: fly_anatomy.obo
-DATESTAMP: 22:02:2024 16:03
-data-version: 2024-02-22
-CVS version number:
-OK for retrofit: y
-OK for loading to chado: y
-OK for using on website: y
-Comments: new fbbt 2024-02-22 moved to trunk
+DATESTAMP: 27:03:2025 10:11
+data-version: 2025-03-27
+Comments: new fbbt 2025-03-27 moved to for checking
 
 Filename: fly_development.obo
-DATESTAMP: 21:10:2019 12:49
-CVS version number: 
-OK for retrofit? y
-OK for loading to chado? y
-OK for using on website? y
-Comments: new fly_development.obo moved to trunk
+DATESTAMP: 18:04:2024 09:08
+data-version: 2024-04-18
+Comments: new fly_development.obo moved to for_checking
 
 Filename: flybase_controlled_vocabulary.obo
-DATESTAMP: date:  02:08:2023 18:25
-CVS version number:
-OK for retrofit: y
-OK for loading to chado: y
-OK for using on website: y
-Comments: new fbcv 2023-08-02 moved to trunk
+DATESTAMP: date: 27:03:2025 12:08
+data-version: 2025-03-27
+Comments: new fbcv 2025-03-27 moved to for_checking
 
 Filename: so-simple.obo
 DATESTAMP: 2021-11-22
-CVS version number: 
-OK for retrofit: y
-OK for loading to chado: y
-OK for using on website: y
 Comments: Moving new so-simple.obo to trunk
 
 Filename: doid.obo
-DATESTAMP: 31:01:2024 10:37
-data-version: releases/2024-01-31
-OK for retrofit: y
-OK for loading to chado: y
-OK for using on website: y
-Comments: moving new doid.obo 2024-01-31 to trunk
+DATESTAMP: 31:03:2025 22:44
+data-version: releases/2025-03-31
+Comments: moving new doid.obo 2025-03-31 to for_checking
 
 Filename: flybase_stock_vocabulary.obo
 DATESTAMP: 26:09:2022 09:44
 data-version: 2018-05-03
-OK for retrofit: y
-OK for loading to chado: y
-OK for using on website: ?
 Comments: updating file to add NIG-Fly
 
 Filename: psi-mi.obo
 DATESTAMP: 20:08:2015 13:02
 CVS version number: 2.5.5
-OK for retrofit?
-OK for loading to chado?
-OK for using on website?
 Comments: Just added psi-mi.obo v2.5.5 to this log for the first time. 150820gds.
