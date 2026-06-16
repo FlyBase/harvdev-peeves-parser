@@ -199,12 +199,10 @@ FIELD:
 	elsif ($field =~ /^(.*?) (AB8)\..*? :(.*)/s)
 	{
 	    check_dups ($file, $2, $field, \%proforma_fields, \%dummy_dup_proforma_fields, $primary_symbol_list, 0);
-		contains_data ($file, $2, $3, $proforma_fields{$2}) and process_field_data ($file, $hash_entries, $1, '1', $2, $3, \%proforma_fields, '1');
-	}
-	elsif ($field =~ /^(.*?) (AB3)\..*? :(.*)/s)
-	{
-	    check_dups ($file, $2, $field, \%proforma_fields, \%dummy_dup_proforma_fields, $primary_symbol_list, 0);
-	    process_field_data ($file, $hash_entries, $1, '1', $2, $3, \%proforma_fields, '0');
+		unless (changes ($file, $field, $1)) {
+			contains_data ($file, $2, $3, $proforma_fields{$2});
+		}
+		process_field_data ($file, $hash_entries, $1, '1', $2, $3, \%proforma_fields, '1');
 	}
 	elsif ($field =~ /^(.*?) (AB9)\..*? :(.*)/s)
 	{

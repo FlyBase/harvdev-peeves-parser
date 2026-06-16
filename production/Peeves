@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.85"; #  fix bug for FTA-149 (GA4 vs GA10a checks)
+our $Peeves_version = "2.91"; #  GA12a should not be filled in for transgenic (cassette) FBal (FTA-204)
 
 =head2 Version
 
@@ -509,21 +509,21 @@ our %field_specific_checks = (
  	'A14' => \&check_stamped_free_text,
 	'A15' => \&no_stamps,
 
+	'A28' => '', # will add field-specific check when implement checking of accession format, if this field is still required for curation
+
 # balancer proforma
 	'AB1b' => \&validate_synonym_field,
 	'AB2a' => \&validate_new_full_name,
 	'AB2b' => \&validate_synonym_field,
 	'AB2c' => \&validate_existing_full_name,
-	'AB3' => \&no_stamps,
 	'AB5a' => \&check_valid_symbol_field,
 	'AB5b' => \&validate_AB5b, #  cannot just use check_valid_symbol_field as allele symbols with [*], [-] or [+] also allowed, should probably try to expand check_valid_symbol_field so that it allows these extra symbols for A24b and AB5b
 	'AB6' => \&check_stamped_free_text,
 	'AB7' => \&no_stamps,
-	'AB8' => \&validate_cvterm_field,
+	'AB8' => \&check_single_allowed_value,
 	'AB9' => \&check_valid_symbol_field,
 	'AB10' => \&validate_synonym_field,
 
-	'A28' => '', # will add field-specific check when implement checking of accession format, if this field is still required for curation
 
 
 # insertion proforma
@@ -647,7 +647,6 @@ our %field_specific_checks = (
 	'GG8b' => \&validate_cvterm_field,
 	'GG8c' => \&check_stamped_free_text,
 	'GG8d' => \&check_single_allowed_value,
-	'GG9' => \&no_stamps,
 	'GG10' => \&check_stamped_free_text,
 	'GG11' => \&validate_date_field,
 	'GG12' => \&no_stamps,
