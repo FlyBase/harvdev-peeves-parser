@@ -53,6 +53,8 @@ Checks done after whole proforma read (cross checks with other fields):
 
      * warns if the symbol in G1a does not appear in the list in G28b
 
+     * warns if the symbol in G1a is not *first* in the list in G28b (as order in G28b must be 'new symbol old symbol')
+
      * warns if G1e is empty
 
      * if G1e contains data, warns if the symbol in G1e does not appear in the list in G28b
@@ -99,4 +101,4 @@ doc: updated doc so that it reflects what has been implemented
 
 ### Updated:
 
-gm151001.
+gm260527.

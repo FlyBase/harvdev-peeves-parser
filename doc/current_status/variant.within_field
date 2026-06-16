@@ -1,4 +1,4 @@
-! GENOTYPE VARIANT PROFORMA                 Version 23: 13 Jan 2010
+! GENOTYPE VARIANT PROFORMA                 Version 24: 5 Jun 2026
 !
 ! AB1h. FlyBase genotype variant ID (FBba) :FULL
 ! AB1a.  Genotype variant symbol to use in FlyBase                 *I :FULL
@@ -13,7 +13,6 @@
 ! AB11b. Action - dissociate AB1a from reference TAKE CARE :FULL
 ! AB10.  Nickname                                            *U :FULL
 ! AB8.   Is AB1a used/usable as a balancer? (y/n)            *u :FULL
-! AB3.   Culprit                *w :PARTIAL
 ! AB9.   Progenitor chromosome  *u :FULL
 ! AB5a.  Transposon insertions  *P :FULL
 ! AB5b.  Non-insertion alleles  *S :FULL

@@ -15,7 +15,10 @@ Yes (Implemented)
 
 ### Mandatorially has value:
 
-Yes (Implemented) ('contains_data' subroutine in loop where the field is identified)
+If there is no !c, this field must be filled in  ('contains_data' subroutine in loop where the field is identified).
+
+If there is a !c, this field is allowed to be empty (this allows for future correction of any existing AB8 data if we have not yet identified all the existing errors in the database).
+
 
 ### Dupl. for multiple field:
 
@@ -26,8 +29,7 @@ No (Implemented)
 
 Checks within field:
 
-* sub 'validate_cvterm_field' checks that the value is either 'y' or 'n' (only 'y or n' terms are allowed).  Using this subroutine instead of 'check_y_or_n' subroutine because need to go through process_field_data to store values for checks between fields.
-
+* 'check_single_allowed_value' checks that any value corresponds to the single value ('y') allowed for this field
 
 ### Related fields:
 
@@ -43,4 +45,4 @@ Checks within field:
 
 ### Updated:
 
-gm151001.
+gm260608.
