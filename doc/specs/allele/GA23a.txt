@@ -25,6 +25,9 @@ No (Implemented)
 
 ### Checks:
 
+
+Checks within field (validate_GA23a): 
+
 - 1 SoftCV prefix exists specifically for this field:
 Separable from:
 
@@ -49,7 +52,6 @@ Checks between fields:
 ### Status:
 
 
-
 ### Updated:
 
-gm260615.
+gm260616.

@@ -1045,4 +1045,5 @@ our $Peeves_version = "2.89"; #  Update checks for AB8 (FTA-202)
 # 15.6.2026
 our $Peeves_version = "2.90"; #  Notes on origin (GA23a and GA23b) should not be filled in for transgenic (cassette) FBal (FTA-203)
 our $Peeves_version = "2.91"; #  GA12a should not be filled in for transgenic (cassette) FBal (FTA-204)
-
+# 16.6.2026
+our $Peeves_version = "2.92"; #  Fixing bugs found by Claude (correct variable in AB8 field, convert A23a checks and validate_GA23a to standard process_field_data)
