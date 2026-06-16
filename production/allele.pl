@@ -400,9 +400,7 @@ FIELD:
 	{
 		check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
 		check_non_utf8 ($file, $2, $3);
-		unless (double_query ($file, $2, $3)) {
-			@GA23a_list =  validate_GA23a ($2, $1, $3);
-		}
+		@GA23a_list = process_field_data ($file, $hash_entries, $1, '1', $2, $3, \%proforma_fields, '0');
 	}
 	elsif ($field =~ /^(.*?) (GA23b)\..*? :(.*)/s)
 	{
@@ -2167,51 +2165,43 @@ sub validate_GA10g ($$$)
 
 
 
-sub validate_GA23a ($$$)
-{
-# Notes on origin: must be preceded by a valid SoftCV prefix.  The following material is essentially a single
-# line of free text, for which we need only check material within stamps.
+sub validate_GA23a {
+# converted to process_field_data + %field_specific_checks format. 260616.
 
-    my ($code, $change, $n_o_o) = @_;
 
-    my @return_list;
-    changes ($file, $code, $change);		# Check for garbage, but otherwise don't worry about $change.
-    $n_o_o eq '' and return ();			# Absence of data is always acceptable.
+	my ($file, $code, $dehashed_data, $context) = @_;
 
-    foreach my $notes (dehash ($file, $code, $hash_entries, $n_o_o))
-    {
-	next if $notes eq '';						# Absence of data is always acceptable.
-	foreach my $note (split /\n/, $notes)
-	{
-	    $note = trim_space_from_ends ($file, $code, $note);
+	$dehashed_data eq '' and return;
 
-		push @return_list, $note;
-	    next if $note eq '';					# Ignore blank lines.
-	    my (undef, $softcv, $space, $rest) = ($note =~ /^((.*?):)?( )?(.*)/);
-	    if (defined $softcv)
-	    {
-		valid_symbol ($softcv, 'notes on origin') or report ($file, "%s: Invalid SoftCV prefix '%s' in '%s'",
-								     $code, $softcv, $note);
-		defined $space or report ($file, "%s: I think you omitted the space after the SoftCV prefix in '%s'",
-					  $code, $note);
+	my $uniqued_data = check_for_duplicated_lines($file,$code,$dehashed_data,$context->{$code});
 
-# Add temporary message that 'Associated with:' is not allowed - will eventually just remove
-# as allowed value from symtab.pl
-		if ($softcv eq 'Associated with') {
+	foreach my $note (keys %{$uniqued_data}) {
 
-			report ($file, "%s: 'Associated with:' is no longer an allowed SoftCV prefix - remove this line and any associated data in GA23b, and simply describe the nature of the mutation (including all genes affected) in the GA12b 'Nature of the lesion' field instead.\n!%s", $code, $proforma_fields{$code});
+		# insert field specific checks here
+		# Notes on origin: must be preceded by a valid SoftCV prefix.
+		# The rest of the line is essentially free text, so just check for symbol validity within stamps.
 
-		}
+		my (undef, $softcv, $space, $rest) = ($note =~ /^((.*?):)?( )?(.*)/);
+		if (defined $softcv) {
+			valid_symbol ($softcv, 'notes on origin') or report ($file, "%s: Invalid SoftCV prefix '%s' in '%s'",$code, $softcv, $note);
+			defined $space or report ($file, "%s: I think you omitted the space after the SoftCV prefix in '%s'",$code, $note);
+
+			# Add temporary message that 'Associated with:' is not allowed - will eventually just remove
+			# as allowed value from symtab.pl
+			if ($softcv eq 'Associated with') {
+
+				report ($file, "%s: 'Associated with:' is no longer an allowed SoftCV prefix - remove this line and any associated data in GA23b, and simply describe the nature of the mutation (including all genes affected) in the GA12b 'Nature of the lesion' field instead.\n!%s", $code, $context->{$code});
+
+			}
 		
-	    }
-	    else
-	    {
-		report ($file, "%s: Missing SoftCV prefix in '%s'", $code, $note);
-	    }
-	    check_stamps ($file, $code, trim_space_from_ends ($rest));
+		} else {
+			report ($file, "%s: Missing SoftCV prefix in '%s'", $code, $note);
+		}
+
+		check_stamps ($file, $code, $rest);
+	
 	}
-    }
-	return @return_list;
+
 }
 
 

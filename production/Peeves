@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.91"; #  GA12a should not be filled in for transgenic (cassette) FBal (FTA-204)
+our $Peeves_version = "2.92"; #  Fixing bugs found by Claude (correct variable in AB8 field, convert A23a checks and validate_GA23a to standard process_field_data)
 
 =head2 Version
 
@@ -450,6 +450,7 @@ our %field_specific_checks = (
 	'GA13' => \&check_stamped_free_text,
 	'GA14' => \&no_stamps,
 
+	'GA23a' => \&validate_GA23a,
 
 # aberration proforma
 	'A1b' => \&validate_synonym_field,
