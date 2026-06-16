@@ -1035,3 +1035,14 @@ our $Peeves_version = "2.83"; #  obsolete SF5g field (FTA-104)
 our $Peeves_version = "2.84"; #  obsolete SF5d field (FTA-106)
 # 15.1.2026
 our $Peeves_version = "2.85"; #  fix bug for FTA-149 (GA4 vs GA10a checks)
+# 11.5.2026
+our $Peeves_version = "2.86"; #  GG9 field has been retired (DC-1104)
+# 26.5.2026
+our $Peeves_version = "2.87"; #  Add Peeves check for gene order in G28b 'source for identity' entries (DC-1105)
+# 8.6.2026
+our $Peeves_version = "2.88"; #  Peeves changes for obsoleting AB3 field
+our $Peeves_version = "2.89"; #  Update checks for AB8 (FTA-202)
+# 15.6.2026
+our $Peeves_version = "2.90"; #  Notes on origin (GA23a and GA23b) should not be filled in for transgenic (cassette) FBal (FTA-203)
+our $Peeves_version = "2.91"; #  GA12a should not be filled in for transgenic (cassette) FBal (FTA-204)
+

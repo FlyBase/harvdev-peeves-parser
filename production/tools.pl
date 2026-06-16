@@ -3337,6 +3337,7 @@ sub check_single_allowed_value {
 		'SN1g' => 'SN1g_value',
 		'SN9e' => 'positive',
 
+		'AB8' => 'positive',
 	);
 
 	

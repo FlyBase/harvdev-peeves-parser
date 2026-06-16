@@ -710,6 +710,12 @@ compare_field_pairs ($file, $g_num_syms, 'G2c', \@G2c_list, 'G2a', \@G2a_list, \
 						}
 						$missing_G1e and report ($file, "G28b: G1e symbol '%s' does not occur in 'Source for identity of: %s", $G1e_list[$i], join (' ', @G28b_genes));
 					}
+
+					if ($G28b_genes[0] ne $g_gene_sym_list->[$i]) {
+
+						report ($file, "G28b: Gene order error: new symbol in rename (in G1a) '%s' must be *first* in 'Source for identity of: %s", $g_gene_sym_list->[$i], join (' ', @G28b_genes));
+					}
+
 				} else {
 
 					report ($file, "You have filled in 'Source for identity of: %s', but have not filled in the corresponding G1e field.", join (' ', @G28b_genes));

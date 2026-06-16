@@ -237,11 +237,6 @@ FIELD:
 	    check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
 		@GG7c_list = process_field_data ($file, $hash_entries, $1, '1', $2, $3, \%proforma_fields, '0');
 	}
-	elsif ($field =~ /^(.*?) (GG9)\..*? :(.*)/s)
-	{
-	    check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
-	    process_field_data ($file, $hash_entries, $1, '1', $2, $3, \%proforma_fields, '0');
-	}
 	elsif ($field =~ /^(.*?)\s+(GG10)\..*? :(.*)/s)
 	{
 	    check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);

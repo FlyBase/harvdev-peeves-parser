@@ -32,6 +32,12 @@ and every line must begin with this.
 
 Any stamps in the remainder of the line must be checked for validity in the standard manner.
 
+
+Checks between fields:
+
+* GA10a and GA23a must not both be filled in.
+
+
 ### Related fields:
 
 
@@ -46,4 +52,4 @@ Any stamps in the remainder of the line must be checked for validity in the stan
 
 ### Updated:
 
-gm170213.
+gm260615.

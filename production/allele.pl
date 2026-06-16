@@ -143,6 +143,9 @@ sub do_allele_proforma ($$)
 	my @GA91_list = ();
 	my @GA91a_list = ();
 
+	my @GA23a_list = ();
+	my @GA23b_list = ();
+
 
 # We know only one gene was given in G1a, because allele proformae are not allowed to follow gene proformae
 # which contain hash lists.  Consequently, the only gene symbol will be found in $g_gene_sym_list->[0] and
@@ -395,14 +398,16 @@ FIELD:
 	}
 	elsif ($field =~ /^(.*?) (GA23a)\..*? :(.*)/s)
 	{
-	    check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
-	    check_non_utf8 ($file, $2, $3);
-	    double_query ($file, $2, $3) or validate_GA23a ($2, $1, $3);
+		check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
+		check_non_utf8 ($file, $2, $3);
+		unless (double_query ($file, $2, $3)) {
+			@GA23a_list =  validate_GA23a ($2, $1, $3);
+		}
 	}
 	elsif ($field =~ /^(.*?) (GA23b)\..*? :(.*)/s)
 	{
 	    check_dups ($file, $2, $field, \%proforma_fields, \%dup_proforma_fields, $primary_symbol_list, $can_dup{$2} ? 1 : 0);
-	    process_field_data ($file, $hash_entries, $1, '1', $2, $3, \%proforma_fields, '0');
+	    @GA23b_list = process_field_data ($file, $hash_entries, $1, '1', $2, $3, \%proforma_fields, '0');
 	}
 	elsif ($field =~ /^(.*?) (GA12a)\..*? :(.*)/s)
 	{
@@ -645,6 +650,7 @@ compare_field_pairs ($file, $hash_entries, 'GA1f', \@GA1f_list, 'GA2c', \@GA2c_l
 
 compare_field_pairs ($file, $hash_entries, 'GA30c', \@GA30c_list, 'GA30d', \@GA30d_list, \%proforma_fields, 'single::(except in rare cases, which is usually some kind of sensor tool)', '');
 
+# cross-checks to warn for fields that should not be filled in for transgenic (cassette) alleles
 if ($proforma_fields{'GA4'}) {
 
 	for (my $i = 0; $i < $hash_entries; $i++) {
@@ -657,6 +663,45 @@ if ($proforma_fields{'GA4'}) {
 	}
 }
 
+if ($proforma_fields{'GA12a'}) {
+
+	for (my $i = 0; $i < $hash_entries; $i++) {
+
+		if (defined $GA12a_list[$i] && $GA12a_list[$i] ne '') {
+
+			compare_pairs_of_data ($file, 'GA12a', $GA12a_list[$i], 'GA10a', $GA10a_list[$i], \%proforma_fields, 'single::(GA12a should not be used for transgenic alleles - add the mutation to the GA12b description instead)', '');
+
+		}
+	}
+}
+
+if ($proforma_fields{'GA23a'}) {
+
+	for (my $i = 0; $i < $hash_entries; $i++) {
+
+		if (defined $GA23a_list[$i] && $GA23a_list[$i] ne '') {
+
+			compare_pairs_of_data ($file, 'GA23a', $GA23a_list[$i], 'GA10a', $GA10a_list[$i], \%proforma_fields, 'single::(GA23a should not be used for transgenic alleles)', '');
+
+		}
+	}
+}
+
+
+if ($proforma_fields{'GA23b'}) {
+
+	for (my $i = 0; $i < $hash_entries; $i++) {
+
+		if (defined $GA23b_list[$i] && $GA23b_list[$i] ne '') {
+
+			compare_pairs_of_data ($file, 'GA23b', $GA23b_list[$i], 'GA10a', $GA10a_list[$i], \%proforma_fields, 'single::(GA23b should not be used for transgenic alleles)', '');
+
+		}
+	}
+}
+
+
+#
 
 
 # If GA35 is filled in then GA30d should not typically be filled in
@@ -2128,8 +2173,10 @@ sub validate_GA23a ($$$)
 # line of free text, for which we need only check material within stamps.
 
     my ($code, $change, $n_o_o) = @_;
+
+    my @return_list;
     changes ($file, $code, $change);		# Check for garbage, but otherwise don't worry about $change.
-    $n_o_o eq '' and return;			# Absence of data is always acceptable.
+    $n_o_o eq '' and return ();			# Absence of data is always acceptable.
 
     foreach my $notes (dehash ($file, $code, $hash_entries, $n_o_o))
     {
@@ -2137,6 +2184,8 @@ sub validate_GA23a ($$$)
 	foreach my $note (split /\n/, $notes)
 	{
 	    $note = trim_space_from_ends ($file, $code, $note);
+
+		push @return_list, $note;
 	    next if $note eq '';					# Ignore blank lines.
 	    my (undef, $softcv, $space, $rest) = ($note =~ /^((.*?):)?( )?(.*)/);
 	    if (defined $softcv)
@@ -2162,6 +2211,7 @@ sub validate_GA23a ($$$)
 	    check_stamps ($file, $code, trim_space_from_ends ($rest));
 	}
     }
+	return @return_list;
 }
 
 

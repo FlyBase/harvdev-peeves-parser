@@ -34,6 +34,9 @@ Checks within field:
     * X is the sequence before the change, N is the coordinate of the change, Y is the change.
     * values allowed for X and Y for the field are specified in the subroutine (see also curation_manual for details)
 
+Checks between fields:
+
+* GA10a and GA12a must not both be filled in (suggests to put the change in the GA12b description instead).
 
 
 ### Related fields:
@@ -53,4 +56,4 @@ Not yet implemented:
 
 ### Updated:
 
-gm151001.
+gm260615.

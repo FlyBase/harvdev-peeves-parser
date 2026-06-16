@@ -1,4 +1,4 @@
-! GENEGROUP PROFORMA     Version 9: 3 Oct 2024
+! GENEGROUP PROFORMA     Version 10: 7 May 2026
 !
 ! GG1h. FlyBase gene group ID (FBgg)  *z :FULL
 ! GG1a. Gene group symbol                               *a :FULL
@@ -28,8 +28,6 @@
 ! GG8b. FlyBase database symbol (DB1a) for GG8a  *O :FULL
 ! GG8c. Title for GG8a [free text]               *T :FULL
 ! GG8d. Action - dissociate the accession specified in GG8a/GG8b from the gene group specified in GG1h/GG1a? (blank/y) :FULL
-!
-! GG9.  Other related external resource(s) ([title](URL)) *E :PARTIAL:DC-569
 !
 ! GG10. Comments [free text]  *u :FULL
 !

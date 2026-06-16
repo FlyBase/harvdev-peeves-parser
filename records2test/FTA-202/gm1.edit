@@ -1,0 +1,159 @@
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0200457
+! P2.   Parent multipub abbreviation               *w :Dev. Biol.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION PROFORMA                    Version 60: 05 Mar 2014
+!
+! A1a.  Aberration symbol to use in FlyBase                 *a :In(2)Heidi
+! A1b.  Aberration symbol(s) used in reference              *i :
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+! A2b.  Aberration name(s) used in reference                *Q :
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENOTYPE VARIANT PROFORMA                 Version 23: 13 Jan 2010
+!
+! AB1a.  Genotype variant symbol to use in FlyBase                 *I :In(2)Heidi-P{Winkelried}D
+! AB1b.  Genotype variant symbol(s) used in reference              *i :
+! AB1e.  Action - rename this genotype variant symbol                 :
+! AB1f.  Action - merge these genotype variants (symbols)             :
+! AB1g.  Is AB1a the current symbol of a genotype variant in FlyBase? :y
+! AB2a.  Action - genotype variant name to use in FlyBase          *e :
+! AB2b.  Genotype variant name(s) used in reference                *Q :
+! AB2c.  Action - replace this genotype variant name                  :
+! AB11a. Action - obsolete AB1a in FlyBase       TAKE CARE :
+! AB11b. Action - dissociate AB1a from reference TAKE CARE :
+! AB10.  Nickname                                            *U :
+!c AB8.   Is AB1a used/usable as a balancer? (y/n)            *u :n
+! AB3.   Culprit                *w :
+! AB9.   Progenitor chromosome  *u :
+! AB5a.  Transposon insertions  *P :
+! AB5b.  Non-insertion alleles  *S :
+! AB6.   Miscellaneous comments *u :
+! AB7.   Internal notes         *K :??should make an error - n is not allowed
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION PROFORMA                    Version 60: 05 Mar 2014
+!
+! A1a.  Aberration symbol to use in FlyBase                 *a :In(3LR)TM3
+! A1b.  Aberration symbol(s) used in reference              *i :
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+! A2b.  Aberration name(s) used in reference                *Q :
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENOTYPE VARIANT PROFORMA                 Version 24: 5 Jun 2026
+!
+! AB1a.  Genotype variant symbol to use in FlyBase                 *I :TM3,daeh
+! AB1b.  Genotype variant symbol(s) used in reference              *i :
+! AB1e.  Action - rename this genotype variant symbol                 :
+! AB1f.  Action - merge these genotype variants (symbols)             :
+! AB1g.  Is AB1a the current symbol of a genotype variant in FlyBase? :y
+! AB2a.  Action - genotype variant name to use in FlyBase          *e :
+! AB2b.  Genotype variant name(s) used in reference                *Q :
+! AB2c.  Action - replace this genotype variant name                  :
+! AB11a. Action - obsolete AB1a in FlyBase       TAKE CARE :
+! AB11b. Action - dissociate AB1a from reference TAKE CARE :
+! AB10.  Nickname                                            *U :
+! AB8.   Is AB1a used/usable as a balancer? (y/n)            *u :n
+! AB9.   Progenitor chromosome  *u :
+! AB5a.  Transposon insertions  *P :
+! AB5b.  Non-insertion alleles  *S :
+! AB6.   Miscellaneous comments *u :
+! AB7.   Internal notes         *K :??should make an error - n is not allowed
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION PROFORMA                    Version 60: 05 Mar 2014
+!
+! A1a.  Aberration symbol to use in FlyBase                 *a :Dp(4;Y)E
+! A1b.  Aberration symbol(s) used in reference              *i :
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+! A2b.  Aberration name(s) used in reference                *Q :
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENOTYPE VARIANT PROFORMA                 Version 24: 5 Jun 2026
+!
+! AB1a.  Genotype variant symbol to use in FlyBase                 *I :DcY-FrTr4B1A
+! AB1b.  Genotype variant symbol(s) used in reference              *i :
+! AB1e.  Action - rename this genotype variant symbol                 :
+! AB1f.  Action - merge these genotype variants (symbols)             :
+! AB1g.  Is AB1a the current symbol of a genotype variant in FlyBase? :y
+! AB2a.  Action - genotype variant name to use in FlyBase          *e :
+! AB2b.  Genotype variant name(s) used in reference                *Q :
+! AB2c.  Action - replace this genotype variant name                  :
+! AB11a. Action - obsolete AB1a in FlyBase       TAKE CARE :
+! AB11b. Action - dissociate AB1a from reference TAKE CARE :
+! AB10.  Nickname                                            *U :
+!c AB8.   Is AB1a used/usable as a balancer? (y/n)            *u :
+! AB9.   Progenitor chromosome  *u :
+! AB5a.  Transposon insertions  *P :
+! AB5b.  Non-insertion alleles  *S :
+! AB6.   Miscellaneous comments *u :
+! AB7.   Internal notes         *K :??should not generate an error - allowing empty in !c so can correct any more cases for existing FBba where we got the original AB8 value wrong
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENOTYPE VARIANT PROFORMA                 Version 24: 5 Jun 2026
+!
+! AB1a.  Genotype variant symbol to use in FlyBase                 *I :DcYy[+]
+! AB1b.  Genotype variant symbol(s) used in reference              *i :
+! AB1e.  Action - rename this genotype variant symbol                 :
+! AB1f.  Action - merge these genotype variants (symbols)             :
+! AB1g.  Is AB1a the current symbol of a genotype variant in FlyBase? :y
+! AB2a.  Action - genotype variant name to use in FlyBase          *e :
+! AB2b.  Genotype variant name(s) used in reference                *Q :
+! AB2c.  Action - replace this genotype variant name                  :
+! AB11a. Action - obsolete AB1a in FlyBase       TAKE CARE :
+! AB11b. Action - dissociate AB1a from reference TAKE CARE :
+! AB10.  Nickname                                            *U :
+! AB8.   Is AB1a used/usable as a balancer? (y/n)            *u :
+! AB9.   Progenitor chromosome  *u :
+! AB5a.  Transposon insertions  *P :
+! AB5b.  Non-insertion alleles  *S :
+! AB6.   Miscellaneous comments *u :
+! AB7.   Internal notes         *K :??should generate an error - not allowed to 'add' a non-balancer anymore, so for non !c would expect AB8 to always be filled in
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION PROFORMA                    Version 60: 05 Mar 2014
+!
+! A1a.  Aberration symbol to use in FlyBase                 *a :Dp(2;Y)G
+! A1b.  Aberration symbol(s) used in reference              *i :
+! A1g.  Is A1a the current symbol of an aberration in FlyBase? :y
+! A2b.  Aberration name(s) used in reference                *Q :
+! A15.  Internal notes                          *K :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENOTYPE VARIANT PROFORMA                 Version 24: 5 Jun 2026
+!
+! AB1a.  Genotype variant symbol to use in FlyBase                 *I :Dp(2;Y)G-P{CaryP}attPY
+! AB1b.  Genotype variant symbol(s) used in reference              *i :
+! AB1e.  Action - rename this genotype variant symbol                 :
+! AB1f.  Action - merge these genotype variants (symbols)             :
+! AB1g.  Is AB1a the current symbol of a genotype variant in FlyBase? :y
+! AB2a.  Action - genotype variant name to use in FlyBase          *e :
+! AB2b.  Genotype variant name(s) used in reference                *Q :
+! AB2c.  Action - replace this genotype variant name                  :
+! AB11a. Action - obsolete AB1a in FlyBase       TAKE CARE :
+! AB11b. Action - dissociate AB1a from reference TAKE CARE :
+! AB10.  Nickname                                            *U :
+! AB8.   Is AB1a used/usable as a balancer? (y/n)            *u :y
+! AB9.   Progenitor chromosome  *u :
+! AB5a.  Transposon insertions  *P :
+! AB5b.  Non-insertion alleles  *S :
+! AB6.   Miscellaneous comments *u :
+! AB7.   Internal notes         *K :??no error - adding y, which is the allowed value
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENOTYPE VARIANT PROFORMA                 Version 24: 5 Jun 2026
+!
+! AB1a.  Genotype variant symbol to use in FlyBase                 *I :Dp(2;Y)G-P{mwh.+t38}attPY
+! AB1b.  Genotype variant symbol(s) used in reference              *i :
+! AB1e.  Action - rename this genotype variant symbol                 :
+! AB1f.  Action - merge these genotype variants (symbols)             :
+! AB1g.  Is AB1a the current symbol of a genotype variant in FlyBase? :y
+! AB2a.  Action - genotype variant name to use in FlyBase          *e :
+! AB2b.  Genotype variant name(s) used in reference                *Q :
+! AB2c.  Action - replace this genotype variant name                  :
+! AB11a. Action - obsolete AB1a in FlyBase       TAKE CARE :
+! AB11b. Action - dissociate AB1a from reference TAKE CARE :
+! AB10.  Nickname                                            *U :
+!c AB8.   Is AB1a used/usable as a balancer? (y/n)            *u :y
+! AB9.   Progenitor chromosome  *u :
+! AB5a.  Transposon insertions  *P :
+! AB5b.  Non-insertion alleles  *S :
+! AB6.   Miscellaneous comments *u :
+! AB7.   Internal notes         *K :??no error - correcting to y, which is the allowed value (allowing this so can correct any remaining existing AB8 errors already in the db)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

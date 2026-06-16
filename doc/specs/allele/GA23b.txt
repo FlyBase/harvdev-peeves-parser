@@ -26,6 +26,11 @@ No (Implemented)
 
  * sub 'check_stamped_free_text' checks that entries flanked by @@ are valid symbols of any FBid type (either existing already in chado or instantiated in the curation record).
 
+Checks between fields:
+
+* GA10a and GA23b must not both be filled in.
+
+
 
 ### Related fields:
 
@@ -41,4 +46,4 @@ No (Implemented)
 
 ### Updated:
 
-gm151001.
+gm260615.
