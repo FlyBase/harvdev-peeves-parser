@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.92"; #  Fixing bugs found by Claude (correct variable in AB8 field, convert A23a checks and validate_GA23a to standard process_field_data)
+our $Peeves_version = "2.93"; #  Changes for obsoleting GA31 field (FTA-208)
 
 =head2 Version
 
@@ -442,7 +442,6 @@ our %field_specific_checks = (
 	'GA90j' => \&check_stamped_free_text,
 	'GA90k' => \&validate_cvterm_field,
 
-	'GA31' => \&no_stamps,
 	'GA33' => '', # will add field-specific check when implement checking of accession format, if this field is still required for curation
 
 	'GA91' => \&check_valid_symbol_field,
