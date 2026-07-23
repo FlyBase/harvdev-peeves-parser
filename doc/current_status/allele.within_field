@@ -1,4 +1,4 @@
-! ALLELE PROFORMA                        Version 65: 23 July 2021
+! ALLELE PROFORMA                        Version 66: 22 July 2026
 !
 ! GA1h. FlyBase allele ID (FBal) *z :FULL
 ! GA1a.  Allele symbol to use in FlyBase                        *A :FULL
@@ -9,7 +9,6 @@
 ! GA2a.  Action - allele name to use in FlyBase                 *e :FULL
 ! GA2b.  Allele name(s) used in reference                       *V :FULL
 ! GA2c.  Action - rename this allele name                          :BASIC ONLY
-! GA31.  Etymology                                              *u :FULL
 ! GA32a. Action - obsolete GA1a in FlyBase (y)         TAKE CARE :FULL
 ! GA32b. Action - dissociate GA1a from reference (y)   TAKE CARE :FULL
 ! GA4.   Allele class [CV]                                  *k :FULL
