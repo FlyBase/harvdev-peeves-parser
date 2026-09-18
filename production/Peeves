@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.93"; #  Changes for obsoleting GA31 field (FTA-208)
+our $Peeves_version = "2.94"; #  clearer error message for malformed proforma field (DC-1113)
 
 =head2 Version
 

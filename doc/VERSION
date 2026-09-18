@@ -1049,3 +1049,5 @@ our $Peeves_version = "2.91"; #  GA12a should not be filled in for transgenic (c
 our $Peeves_version = "2.92"; #  Fixing bugs found by Claude (correct variable in AB8 field, convert A23a checks and validate_GA23a to standard process_field_data)
 # 22.7.2026
 our $Peeves_version = "2.93"; #  Changes for obsoleting GA31 field (FTA-208)
+# 18.9.2026
+our $Peeves_version = "2.94"; #  clearer error message for malformed proforma field (DC-1113)
