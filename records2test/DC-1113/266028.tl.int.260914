@@ -1,0 +1,99 @@
+! C1.  Curator ID	:tl
+! C2.  Date		:260914
+! C3.  Curator notes to self	:Ana1/Cep295 regulates centriole elongation via Cep135 and microtubules.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0266028
+! P2.   Parent multipub abbreviation               *w :J. Cell Biol.
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA            Version 2.8  10 Jan 2020
+!
+! IN1f. Database ID for interaction  :FBrf0266028-1.coIP.WB
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :n
+! IN2a. Interaction description (protein-protein/RNA-protein)     :protein-protein
+! IN2b. Interaction type (Termlink MI CV) :physical association
+! IN3.  Interaction assay (Termlink MI CV)    :anti tag coimmunoprecipitation
+anti tag western blot
+! IN5a. Cell line used               :S2-unspecified
+! IN5e. Comments concerning source   :Source was cell extract of S2 cell line; bait produced from transfected construct; prey produced from transfected construct.
+! IN6.  List of interactors (FB symbol or ids), role (Termlink MI CV), qualifier ( <symbol>  <ID_as_reported>  <role>  <qual/note> ) :
+<symbol> ana1-XP <ID_as_reported> ana1 <role> bait <qual/note> GFP tag
+<symbol> Cep135-XP <ID_as_reported> Cep135 <role> prey <qual/note> FLAG tag
+! IN7c. Subregion(s) of participant(s) with role in interaction ( <link to>  <description> region <role> unspecified role <coordinates/seq>  <note> ) :
+<link to> Cep135-XP <description> N-terminal domain <role> sufficient binding region <coordinates/seq> aa 1-498 <note>
+! IN7b. Comments concerning experimental data :
+! IN8a. Public comments   :
+! IN8b. Internal comments :Fig3B, Source data Fig3B
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA            Version 2.8  10 Jan 2020
+!
+! IN1f. Database ID for interaction  :FBrf0266028-2.coIP.WB
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :n
+! IN2a. Interaction description (protein-protein/RNA-protein)     :protein-protein
+! IN2b. Interaction type (Termlink MI CV) :physical association
+! IN3.  Interaction assay (Termlink MI CV)    :anti tag coimmunoprecipitation
+anti tag western blot
+! IN5a. Cell line used               :S2-unspecified
+! IN5e. Comments concerning source   :Source was cell extract of S2 cell line; bait produced from transfected construct; prey produced from transfected construct.
+! IN6.  List of interactors (FB symbol or ids), role (Termlink MI CV), qualifier ( <symbol>  <ID_as_reported>  <role>  <qual/note> ) :
+<symbol> Cep135-XP <ID_as_reported> Cep135 <role> bait <qual/note> GFP tag
+<symbol> ana1-XP <ID_as_reported> ana1 <role> prey <qual/note> FLAG tag
+! IN7c. Subregion(s) of participant(s) with role in interaction ( <link to>  <description> region <role> unspecified role <coordinates/seq>  <note> ) :
+<link to> Cep135-XP <description> N-terminal and coiled coil domain <role> sufficient binding region <coordinates/seq> aa 1-498 <note>
+<link to> ana1-XP <description> N-terminal domain <role> sufficient binding region <coordinates/seq> aa 1-180 <note>
+<link to> ana1-XP <description> interaction domain <role> mutation decreasing interaction <coordinates/seq> aa 282-301 <note> deletion mutation
+<link to> ana1-XP <description> interaction domain <role> mutation decreasing interaction <coordinates/seq> aa 244-371 <note> deletion mutation
+<link to> ana1-XP <description> hydrophobic residue 286 <role> mutation disrupting interaction  <coordinates/seq> aa 286 <note> I286D
+<link to> ana1-XP <description> hydrophobic residue 283 <role> mutation disrupting interaction <coordinates/seq> aa 283 <note> F283D
+! IN7b. Comments concerning experimental data :
+! IN8a. Public comments   :
+! IN8b. Internal comments :Fig3CE, Fig4C
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA            Version 2.8  10 Jan 2020
+!
+! IN1f. Database ID for interaction  :FBrf0266028-3.coIP.WB
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :n
+! IN2a. Interaction description (protein-protein/RNA-protein)     :protein-protein
+! IN2b. Interaction type (Termlink MI CV) :physical association
+! IN3.  Interaction assay (Termlink MI CV)    :anti tag coimmunoprecipitation
+anti tag western blot
+! IN5a. Cell line used               :S2-unspecified
+! IN5e. Comments concerning source   :Source was cell extract of S2 cell line; bait produced from transfected construct; prey produced from transfected construct.
+! IN6.  List of interactors (FB symbol or ids), role (Termlink MI CV), qualifier ( <symbol>  <ID_as_reported>  <role>  <qual/note> ) :
+<symbol> Cep135-XP <ID_as_reported> Cep135 <role> bait <qual/note> FLAG  tag
+<symbol> ana1-XP <ID_as_reported> ana1 <role> prey <qual/note> GFP tag
+! IN7c. Subregion(s) of participant(s) with role in interaction ( <link to>  <description> region <role> unspecified role <coordinates/seq>  <note> ) :
+<link to> Cep135-XP <description> N-terminal and coiled coil domain <role> sufficient binding region <coordinates/seq> aa 1-498 <note>
+<link to> ana1-XP <description> N-terminal domain <role> sufficient binding region <coordinates/seq> aa 1-180 <note>
+<link to> ana1-XP <description> interaction domain <role> sufficient binding region <coordinates/seq> aa 180-497 <note>
+! IN7b. Comments concerning experimental data :
+! IN8a. Public comments   :
+! IN8b. Internal comments :Fig3C
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! INTERACTION PROFORMA            Version 2.8  10 Jan 2020
+!
+! IN1f. Database ID for interaction  :FBrf0266028-4.ITC
+! IN1d. Is IN1f the valid uniquename of an interaction in FlyBase? (y/n)  :n
+! IN2a. Interaction description (protein-protein/RNA-protein)     :protein-protein
+! IN2b. Interaction type (Termlink MI CV) :physical association
+! IN3.  Interaction assay (Termlink MI CV)    :isothermal titration calorimetry
+predetermined participant
+! IN5a. Cell line used               :
+! IN5e. Comments concerning source   :Interaction in vitro; bait produced as a recombinant fusion protein in bacterial system; prey produced as a recombinant fusion protein in bacterial system.
+! IN6.  List of interactors (FB symbol or ids), role (Termlink MI CV), qualifier ( <symbol>  <ID_as_reported>  <role>  <qual/note> ) :
+<symbol> ana1-XP <ID_as_reported> ana1 <role> bait <qual/note>
+<symbol> Cep135-XP <ID_as_reported> Cep135 <role> prey <qual/note>
+! IN7c. Subregion(s) of participant(s) with role in interaction ( <link to>  <description> region <role> unspecified role <coordinates/seq>  <note> ) :
+<link to> Cep135-XP <description> interaction domain <role> sufficient binding region <coordinates/seq> aa 257-351 <note>
+<link to> ana1-XP <description> N-terminal domain <role> sufficient binding region <coordinates/seq> aa 280-300 <note>
+<link to> ana1-XP <description> hydrophobic residue 286 <role> mutation disrupting interaction  <coordinates/seq> aa 286 <note> I286D
+<link to> ana1-XP <description> hydrophobic residue 283 <role> mutation disrupting interaction <coordinates/seq> aa 283 <note> F283D
+! IN7b. Comments concerning experimental data :Kd = 2.54 um
+! IN8a. Public comments   :
+! IN8b. Internal comments :Fig3D, Fig4B
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!

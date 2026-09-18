@@ -5880,4 +5880,12 @@ sub check_accession_characters {
 }
 
 
+sub get_malformed_field_message {
+
+	my $error_text = 'Malformed proforma field - check for non-linux line endings or !!! proforma delimiter lines with whitespace at the end.';
+
+	return $error_text;
+
+}
+
 1;					# Boilerplate

@@ -230,7 +230,8 @@ FIELD:
 	} elsif ($field =~ /.*IN.*/s) {
 
 		unless ($field =~ /END OF RECORD FOR THIS PUBLICATION/s) {
-		    report ($file, "Malformed proforma field  (message tripped in interaction.pl).\nThis is often caused by the line of !!! before the PROFORMA line below ending with a space (here is a line to help find that case):\n!!!!!!! \n!\n(if that does not work and you think there is nothing wrong with this line let Gillian know as it might indicate a bug with the format of the field-specific regular expressions in Peeves):\n'!%s'", $field);
+		    my $malformed_field_message = &get_malformed_field_message;
+		    report ($file, "$malformed_field_message");
 		}
 	}
     }
