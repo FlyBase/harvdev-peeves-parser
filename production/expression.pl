@@ -33,6 +33,7 @@ my %proforma_fields;		# Keep track of the latest entry seen for each code
 my %dup_proforma_fields; # keep track of full picture for fields that can be duplicated within a proforma
 my @inclusion_essential = qw (F1f F1a);	# Fields which must be present in the proforma.  Minimal list, may want to revisit to add more.
 my $hash_entries ='';						# Number of elements in hash list.
+my $FBco_component_number = 2; # Number of insertion (FBti) components allowed in a split system combination (FBco) symbol (FTA-279).
 
 
 # A set of file-global variables for communicating between different proforma fields.
@@ -308,9 +309,12 @@ sub do_expression_proforma ($$) {
 # extra checks for FBco
 						if ($gene_product_type eq 'FBco') {
 
-							# split system combinations are defined by a pair of FBti insertions (FTA-279), so must have exactly two components
-							unless (scalar @{$parent_symbols} == 2) {
-								report ($file, "%s: The '%s' combination symbol has %s components, but a split system combination must be made of exactly two insertion (FBti) symbols.", 'F1a', $primary_symbol_list->[$i], scalar @{$parent_symbols});
+							# split system combinations are defined by a set number of FBti insertions (a pair, FTA-279). If the number of components is wrong,
+							# report that and skip the order check, so that the number of components is clearly the problem to fix first.
+							my $component_number_ok = (scalar @{$parent_symbols} == $FBco_component_number);
+
+							unless ($component_number_ok) {
+								report ($file, "%s: The '%s' combination symbol has %s insertion (FBti) components, but a split system combination must have exactly %s. Fix the number of components first (the order of the components has not been checked).", 'F1a', $primary_symbol_list->[$i], scalar @{$parent_symbols}, $FBco_component_number);
 							}
 
 							# first, for new FBco symbols with two insertion components, double-check that the reversed order of components is not already in chado, and warn as appropriate if it is.
@@ -345,7 +349,7 @@ sub do_expression_proforma ($$) {
 							# (this should normally be the case anyway given partition of curation).
 
 
-							my $counter = 1; # use counter as easy way of keeping track of which index of array have got to
+							my @component_halves; # [symbol, expected order] for each component that is one known half (DBD or AD), in the order given in the symbol
 
 							foreach my $symbol (@{$parent_symbols}) {
 								# only do checks for symbols already in chado
@@ -379,13 +383,9 @@ sub do_expression_proforma ($$) {
 
 										report ($file, "%s: The '%s' part of the '%s' combination symbol carries both DBD and AD split system components (i.e. it is a complete split driver), so it cannot be one half of a split system combination.", 'F1a', $symbol, $primary_symbol_list->[$i]);
 
-									} else {
+									} elsif (scalar keys %orders == 1) {
 
-										foreach my $order (keys %orders) {
-											unless ($counter == $order) {
-												report ($file, "%s: The '%s' part of the '%s' combination symbol is in position %s in the symbol, but it is expected to be in position %s.", 'F1a', $symbol, $primary_symbol_list->[$i], $counter, $order);
-											}
-										}
+										push @component_halves, [$symbol, keys %orders];
 									}
 
 									# report if the component of the new FBco symbol is not a split system component
@@ -401,7 +401,25 @@ sub do_expression_proforma ($$) {
 									}
 								}
 
-							$counter++; # increment counter
+							}
+
+							# third, check the order of the halves relative to each other (all DBD halves before all AD halves), so that this also works if more than two components are ever allowed.
+							# only done if the number of components is right, as that is the primary problem to fix.
+							if ($component_number_ok) {
+
+								my %half_label = (1 => 'DBD', 2 => 'AD');
+
+								for (my $x = 0; $x < $#component_halves; $x++) {
+									for (my $y = $x + 1; $y <= $#component_halves; $y++) {
+
+										my ($first_symbol, $first_order) = @{$component_halves[$x]};
+										my ($second_symbol, $second_order) = @{$component_halves[$y]};
+
+										if ($first_order > $second_order) {
+											report ($file, "%s: In the '%s' combination symbol, the %s half '%s' is listed before the %s half '%s', but the DBD half must be listed before the AD half.", 'F1a', $primary_symbol_list->[$i], $half_label{$first_order}, $first_symbol, $half_label{$second_order}, $second_symbol);
+										}
+									}
+								}
 							}
 
 						}

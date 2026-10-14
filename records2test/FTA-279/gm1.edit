@@ -47,7 +47,7 @@
 ! F1d. Action - delete gene product record ("y"/blank) :
 ! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
 !
-! F14. Internal note  [free text] :??T2 AD before DBD should give 2 order warnings
+! F14. Internal note  [free text] :??T2 AD before DBD should give 1 order warning
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
 !
@@ -89,7 +89,7 @@
 ! F1d. Action - delete gene product record ("y"/blank) :
 ! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
 !
-! F14. Internal note  [free text] :??T5 three components should fail
+! F14. Internal note  [free text] :??T5 three components should fail with only the number of components error
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
 !
@@ -132,4 +132,18 @@
 ! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
 !
 ! F14. Internal note  [free text] :??T8 complete split driver construct in position 1 should fail as not a half
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :P{R14E06-p65.AD}attP40&cap;P{R22B12-GAL4.DBD}attP2&cap;P{R93D10-p65.AD}attP40
+! F3.  Gene product type [CV]        :split system combination FBcv:0009026
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+! F1b. Action - rename this gene product (symbol)      :
+! F1c. Action - merge these products(s) (symbols or FB#s) :
+! F1d. Action - delete gene product record ("y"/blank) :
+! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
+!
+! F14. Internal note  [free text] :??T9 three components in wrong order should fail with only the number of components error
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
