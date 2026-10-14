@@ -372,9 +372,16 @@ sub do_expression_proforma ($$) {
 										get_split_system_components (\@tool_carriers, \%split_components);
 									}
 
-									foreach my $tool_uses (sort keys %split_components) {
+									# an insertion that carries both DBD and AD halves (e.g. a construct with complete split driver(s)) cannot be one half of a combination, so report that instead of checking the order
+									my %orders = map { $_ => 1 } grep { $_ } map { valid_symbol($_, 'FBco_order') } keys %split_components;
 
-										if (my $order = valid_symbol($tool_uses, 'FBco_order')) {
+									if (scalar keys %orders > 1) {
+
+										report ($file, "%s: The '%s' part of the '%s' combination symbol carries both DBD and AD split system components (i.e. it is a complete split driver), so it cannot be one half of a split system combination.", 'F1a', $symbol, $primary_symbol_list->[$i]);
+
+									} else {
+
+										foreach my $order (keys %orders) {
 											unless ($counter == $order) {
 												report ($file, "%s: The '%s' part of the '%s' combination symbol is in position %s in the symbol, but it is expected to be in position %s.", 'F1a', $symbol, $primary_symbol_list->[$i], $counter, $order);
 											}

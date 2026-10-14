@@ -117,5 +117,19 @@
 ! F1d. Action - delete gene product record ("y"/blank) :
 ! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
 !
-! F14. Internal note  [free text] :??T7 multi-half construct, see what happens
+! F14. Internal note  [free text] :??T7 complete split driver construct in position 2 should fail as not a half
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :P{MB112C,MB083C,MB011B}attP2&cap;P{R14E06-p65.AD}attP40
+! F3.  Gene product type [CV]        :split system combination FBcv:0009026
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+! F1b. Action - rename this gene product (symbol)      :
+! F1c. Action - merge these products(s) (symbols or FB#s) :
+! F1d. Action - delete gene product record ("y"/blank) :
+! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
+!
+! F14. Internal note  [free text] :??T8 complete split driver construct in position 1 should fail as not a half
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
