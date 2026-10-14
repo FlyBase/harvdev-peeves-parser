@@ -1537,7 +1537,7 @@ sub check_allowed_characters {
 
 		'TE1a' => 'a-zA-Z0-9:;&\\\.\-\'', # same characters as G1a, except no [ ] ( )
 
-		'F1a' => 'a-zA-Z0-9:;&\\\[\]\()\'\.,\+\-', # same as G1a (so includes [ ]), plus , and +, so that it has all the characters that could be in either a gene or allele symbol (which is what the symbols in this field are based on)
+		'F1a' => 'a-zA-Z0-9:;&\\\[\]\()\'\.,\+\?\{}\-', # same as G1a (so includes [ ]), plus , and +, so that it has all the characters that could be in either a gene or allele symbol (which is what the symbols in this field are based on), plus ? { and } (as for MA1a) as FBco symbols are based on insertion symbols (FTA-279)
 
 		'TO1a' => 'a-zA-Z0-9:;&\\\[\]\()\'\.\+\-', # same as G1a, plus + Have allowed \ for now.
 

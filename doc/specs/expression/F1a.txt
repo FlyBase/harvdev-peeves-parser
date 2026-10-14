@@ -32,6 +32,8 @@ Checks within validate_primary_proforma_field:
 
   * first checks for a trailing hash, and manually removes it to avoid this kind of error breaking lots of downstream checks (does not rely on dehash to do this as happens for other fields, but uses code at the top of validate_primary_proforma_field, presumably because being the primary symbol field, loads of other checks rely on it).
 
+  * check_allowed_characters: as for G1a, plus , + ? { and } (the braces and ? are needed because FBco symbols are made of FBti symbols, FTA-279)
+
   * report error if the same symbol is given in multiple different proformae within the same record (uses %x1a_symbols hash in validate_primary_proforma_field)
 
 

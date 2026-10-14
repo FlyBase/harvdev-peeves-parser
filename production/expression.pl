@@ -444,13 +444,14 @@ sub do_expression_proforma ($$) {
 # F2 must be filled in for new/merged gene products where expression is from a transgene or a combination
 					if (defined $F2_list[$i] && $F2_list[$i] ne '') {
 
-						unless ($parent_type eq 'FBal') {
+						# FBco are based on FBti, other transgene products on FBal (FTA-279)
+						unless ($parent_type eq 'FBal' || $parent_type eq 'FBti') {
 							report ($file, "%s must only be filled in if expression is from a transgene:\n!%s\n!%s", 'F2', $proforma_fields{'F1a'}, $proforma_fields{'F2'});
 						}
 
 					} else {
 
-						if ($parent_type eq 'FBal') {
+						if ($parent_type eq 'FBal' || $parent_type eq 'FBti') {
 							if ($gene_product_status eq 'new' || $gene_product_status eq 'merge') {
 
 								report ($file, "%s must be filled in for a %s where expression is from a transgene:\n!%s\n!%s", 'F2', ($gene_product_status eq 'new' ? "$gene_product_status gene product" : "gene product $gene_product_status"), $proforma_fields{'F1a'}, $proforma_fields{'F2'});
