@@ -361,7 +361,7 @@ sub do_expression_proforma ($$) {
 									my %split_components; # split system component tool uses found for the FBti (hash so that each is only checked once)
 
 									my $allele_list = chat_to_chado ('associated_allele', $FBti); # need to add ->[0] to each element as the data is retrieved from chado as an array of arrays (each returned row generates an array that itself contains an array of the return values for that row, and as in this case the query returns one value per matching row, it is retrieved by the ->[0])
-									my @tool_carriers = map { $_->[0] } @{$allele_list};
+									my @tool_carriers = map { $_->[0] } @{$allele_list}; # @tool_carriers array stores list of FBal entities that may carry tool-related information required for checks below. Obtained from associated_with relationships: either from direct FBal<->FBti link (identified here), or FBti<->FBtp<->FBal link (unless loop below).
 
 									unless (get_split_system_components (\@tool_carriers, \%split_components)) {
 
