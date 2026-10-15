@@ -33,6 +33,7 @@ my %proforma_fields;		# Keep track of the latest entry seen for each code
 my %dup_proforma_fields; # keep track of full picture for fields that can be duplicated within a proforma
 my @inclusion_essential = qw (F1f F1a);	# Fields which must be present in the proforma.  Minimal list, may want to revisit to add more.
 my $hash_entries ='';						# Number of elements in hash list.
+my $FBco_component_number = 2; # Number of insertion (FBti) components allowed in a split system combination (FBco) symbol (FTA-279).
 
 
 # A set of file-global variables for communicating between different proforma fields.
@@ -300,7 +301,7 @@ sub do_expression_proforma ($$) {
 					unless ($gene_product_status eq 'existing') {
 
 						# check that the 'parent' part(s) of the gene product symbol are each a valid symbol of the expected type
-						# (combinations have multiple allele symbol parents, so $parent_symbols is an array reference)
+						# (combinations have multiple insertion symbol parents, so $parent_symbols is an array reference)
 						foreach my $symbol (@{$parent_symbols}) {
 							valid_symbol ($symbol, $parent_type) or report ($file, "%s: '%s' gene product symbol is based on the invalid %s symbol '%s'", 'F1a', $primary_symbol_list->[$i], $parent_type, $symbol);
 						}
@@ -308,7 +309,15 @@ sub do_expression_proforma ($$) {
 # extra checks for FBco
 						if ($gene_product_type eq 'FBco') {
 
-							# first, for new FBco symbols with two allele components, double-check that the reversed order of components is not already in chado, and warn as appropriate if it is.
+							# split system combinations are defined by a set number of FBti insertions (a pair, FTA-279). If the number of components is wrong,
+							# report that and skip the order check, so that the number of components is clearly the problem to fix first.
+							my $component_number_ok = (scalar @{$parent_symbols} == $FBco_component_number);
+
+							unless ($component_number_ok) {
+								report ($file, "%s: The '%s' combination symbol has %s insertion (FBti) components, but a split system combination must have exactly %s. Fix the number of components first (the order of the components has not been checked).", 'F1a', $primary_symbol_list->[$i], scalar @{$parent_symbols}, $FBco_component_number);
+							}
+
+							# first, for new FBco symbols with two insertion components, double-check that the reversed order of components is not already in chado, and warn as appropriate if it is.
 							if (scalar @{$parent_symbols} == 2) {
 
 								my $reversed_symbol = $parent_symbols->[1] . '&cap;'. $parent_symbols->[0];
@@ -335,83 +344,82 @@ sub do_expression_proforma ($$) {
 								}
 							}
 
-							# second, do additional checks on the allele parts of the symbol, to check they are of the expected type and in the correct order
-							# at the moment, to simplify checking, this is only doing the checking when the component allele is already in chado
+							# second, do additional checks on the insertion parts of the symbol, to check they carry a split system component and are in the correct order
+							# at the moment, to simplify checking, this is only doing the checking when the component insertion is already in chado
 							# (this should normally be the case anyway given partition of curation).
 
 
-							my $counter = 1; # use counter as easy way of keeping track of which index of array have got to
+							my @component_halves; # [symbol, expected order] for each component that is one known half (DBD or AD), in the order given in the symbol
 
 							foreach my $symbol (@{$parent_symbols}) {
 								# only do checks for symbols already in chado
-								if (my $FBal = valid_chado_symbol($symbol, 'FBal')) {
+								if (my $FBti = valid_chado_symbol($symbol, 'FBti')) {
 
-									my $split_switch = 0; # switch that gets set below if a split system component is found associated with the FBal
+									# the encoded tool information is not attached to the FBti itself, so get it from:
+									# 1. the FBal associated with the FBti (FBti->FBal)
+									# 2. if that fails, the inserted element(s) of the FBti, and the FBal associated with the inserted element(s) (FBti->FBtp and FBti->FBtp->FBal)
+									my %split_components; # split system component tool uses found for the FBti (hash so that each is only checked once)
 
-									# try to get any encoded tool informaion attached directly to FBal first
-									my $encoded_tool_list = chat_to_chado ('tool_relationship', $FBal, 'encodes_tool');
+									my $allele_list = chat_to_chado ('associated_allele', $FBti);
+									my @tool_carriers = map { $_->[0] } @{$allele_list}; # @tool_carriers array stores list of FBal entities that may carry tool-related information required for checks below. Obtained from associated_with relationships: either from direct FBal<->FBti link (identified here), or FBti<->FBtp<->FBal link (unless loop below).
 
-									foreach my $encoded_tool (@{$encoded_tool_list}) {
-										my $tool_uses_list = chat_to_chado ('tool_uses', $encoded_tool->[0]); # need to add ->[0] as the data is retrieved from chado as an array of arrays (each returned row generates an array that itself contains an array of the return values for that row, and as in this case the query returns one value per matching row, it is retrieved by the ->[0])
+									unless (get_split_system_components (\@tool_carriers, \%split_components)) {
 
-										foreach my $tool_uses (@{$tool_uses_list}) {
-
-											if (valid_symbol ($tool_uses->[0], 'FBcv:split system component')) {
-												$split_switch++;
-
-												if (my $order = valid_symbol($tool_uses->[0], 'FBco_order')) {
-													unless ($counter == $order) {
-														report ($file, "%s: The '%s' part of the '%s' combination symbol is in position %s in the symbol, but it is expected to be in position %s.", 'F1a', $symbol, $primary_symbol_list->[$i], $counter, $order);
-													}
-												}
-											}
-										}
-									}
-
-									# if that fails, get inserted elements (via the associated insertion(s)) and use tool info attached to inserted element(s)
-									unless (scalar @{$encoded_tool_list} > 0) {
-
-										my $inserted_element_list = chat_to_chado ('inserted_element', $FBal);
+										my $inserted_element_list = chat_to_chado ('tool_relationship', $FBti, 'producedby');
+										@tool_carriers = ();
 
 										foreach my $inserted_element (@{$inserted_element_list}) {
-
-											my $encoded_tool_list = chat_to_chado ('tool_relationship', $inserted_element->[0], 'encodes_tool');
-
-											foreach my $encoded_tool (@{$encoded_tool_list}) {
-
-												my $tool_uses_list = chat_to_chado ('tool_uses', $encoded_tool->[0]);
-
-												foreach my $tool_uses (@{$tool_uses_list}) {
-
-													if (valid_symbol ($tool_uses->[0], 'FBcv:split system component')) {
-														$split_switch++;
-
-														if (my $order = valid_symbol($tool_uses->[0], 'FBco_order')) {
-															unless ($counter == $order) {
-																report ($file, "%s: The '%s' part of the '%s' combination symbol is in position %s in the symbol, but it is expected to be in position %s.", 'F1a', $symbol, $primary_symbol_list->[$i], $counter, $order);
-															}
-														}
-													}
-												}
-											}
+											push @tool_carriers, $inserted_element->[0];
+											push @tool_carriers, map { $_->[0] } @{chat_to_chado ('associated_allele', $inserted_element->[0])};
 										}
+
+										get_split_system_components (\@tool_carriers, \%split_components);
 									}
 
+									# an insertion that carries both DBD and AD halves (e.g. a construct with complete split driver(s)) cannot be one half of a combination, so report that instead of checking the order
+									my %orders = map { $_ => 1 } grep { $_ } map { valid_symbol($_, 'FBco_order') } keys %split_components;
+
+									if (scalar keys %orders > 1) {
+
+										report ($file, "%s: The '%s' part of the '%s' combination symbol carries both DBD and AD split system components (i.e. it is a complete split driver), so it cannot be one half of a split system combination.", 'F1a', $symbol, $primary_symbol_list->[$i]);
+
+									} elsif (scalar keys %orders == 1) {
+
+										push @component_halves, [$symbol, keys %orders];
+									}
 
 									# report if the component of the new FBco symbol is not a split system component
-									unless ($split_switch) {
+									unless (%split_components) {
 										report ($file, "%s: The '%s' part of the '%s' combination symbol is not a split system component, this is NOT currently allowed.", 'F1a', $symbol, $primary_symbol_list->[$i]);
 									}
 
 
 								} else {
 
-									if (valid_symbol($symbol, 'FBal')) {
-										report ($file, "%s: The '%s' part of the new '%s' combination symbol is an allele newly generated in this record, which means that Peeves cannot currently perform additional checks on this allele symbol (it should be a 'split system component' and the DBD half should be listed before the AD half for DBD+AD hemidriver combinations.", 'F1a', $symbol, $primary_symbol_list->[$i]);
+									if (valid_symbol($symbol, 'FBti')) {
+										report ($file, "%s: The '%s' part of the new '%s' combination symbol is an insertion newly generated in this record, which means that Peeves cannot currently perform additional checks on this insertion symbol (it should carry a 'split system component' and the DBD half should be listed before the AD half for DBD+AD hemidriver combinations.", 'F1a', $symbol, $primary_symbol_list->[$i]);
 									}
 								}
 
-							$counter++; # increment counter
+							}
+
+							# third, check the order of the halves relative to each other (all DBD halves before all AD halves), so that this also works if more than two components are ever allowed.
+							# only done if the number of components is right, as that is the primary problem to fix.
+							if ($component_number_ok) {
+
+								my %half_label = (1 => 'DBD', 2 => 'AD');
+
+								for (my $x = 0; $x < $#component_halves; $x++) {
+									for (my $y = $x + 1; $y <= $#component_halves; $y++) {
+
+										my ($first_symbol, $first_order) = @{$component_halves[$x]};
+										my ($second_symbol, $second_order) = @{$component_halves[$y]};
+
+										if ($first_order > $second_order) {
+											report ($file, "%s: In the '%s' combination symbol, the %s half '%s' is listed before the %s half '%s', but the DBD half must be listed before the AD half.", 'F1a', $primary_symbol_list->[$i], $half_label{$first_order}, $first_symbol, $half_label{$second_order}, $second_symbol);
+										}
+									}
+								}
 							}
 
 						}
@@ -461,13 +469,14 @@ sub do_expression_proforma ($$) {
 # F2 must be filled in for new/merged gene products where expression is from a transgene or a combination
 					if (defined $F2_list[$i] && $F2_list[$i] ne '') {
 
-						unless ($parent_type eq 'FBal') {
+						# FBco are based on FBti, other transgene products on FBal (FTA-279)
+						unless ($parent_type eq 'FBal' || $parent_type eq 'FBti') {
 							report ($file, "%s must only be filled in if expression is from a transgene:\n!%s\n!%s", 'F2', $proforma_fields{'F1a'}, $proforma_fields{'F2'});
 						}
 
 					} else {
 
-						if ($parent_type eq 'FBal') {
+						if ($parent_type eq 'FBal' || $parent_type eq 'FBti') {
 							if ($gene_product_status eq 'new' || $gene_product_status eq 'merge') {
 
 								report ($file, "%s must be filled in for a %s where expression is from a transgene:\n!%s\n!%s", 'F2', ($gene_product_status eq 'new' ? "$gene_product_status gene product" : "gene product $gene_product_status"), $proforma_fields{'F1a'}, $proforma_fields{'F2'});
@@ -662,5 +671,36 @@ sub validate_F10 {
 }
 
 
+
+sub get_split_system_components {
+
+# FTA-279: for each feature (FBal/FBtp) in the list given in the first argument, get the tool(s) it encodes
+# and add any 'split system component' tool uses to the hash given in the second argument.
+# Returns the number of encoded tools found (whatever their tool uses), so that the caller can decide whether to look elsewhere.
+
+	my ($tool_carriers, $split_components) = @_;
+
+	my $encoded_tool_count = 0;
+
+	foreach my $tool_carrier (@{$tool_carriers}) {
+
+		my $encoded_tool_list = chat_to_chado ('tool_relationship', $tool_carrier, 'encodes_tool');
+		$encoded_tool_count += scalar @{$encoded_tool_list};
+
+		foreach my $encoded_tool (@{$encoded_tool_list}) {
+
+			my $tool_uses_list = chat_to_chado ('tool_uses', $encoded_tool->[0]);
+
+			foreach my $tool_uses (@{$tool_uses_list}) {
+
+				if (valid_symbol ($tool_uses->[0], 'FBcv:split system component')) {
+					$split_components->{$tool_uses->[0]}++;
+				}
+			}
+		}
+	}
+
+	return $encoded_tool_count;
+}
 
 1; # return true

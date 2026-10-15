@@ -32,6 +32,8 @@ Checks within validate_primary_proforma_field:
 
   * first checks for a trailing hash, and manually removes it to avoid this kind of error breaking lots of downstream checks (does not rely on dehash to do this as happens for other fields, but uses code at the top of validate_primary_proforma_field, presumably because being the primary symbol field, loads of other checks rely on it).
 
+  * check_allowed_characters: as for G1a, plus , + ? { and } (the braces and ? are needed because FBco symbols are made of FBti symbols, FTA-279)
+
   * report error if the same symbol is given in multiple different proformae within the same record (uses %x1a_symbols hash in validate_primary_proforma_field)
 
 
@@ -49,11 +51,11 @@ Cross-checks with other fields (done after parsing of entire proforma):
        genesymbol-XP (FBpp)
        allelesymbolRA (FBtr)
        allelesymbolPA (FBpp)
-       allelesymbol&cap;allelesymbol (FBco) ** see note below **
+       insertionsymbol&cap;insertionsymbol (FBco) ** see note below **
     
-     * the 'genesymbol' or 'allelesymbol' portions of the symbol must be a valid FBgn or FBal (respectively) symbol in chado or generated in the record.
+     * the 'genesymbol', 'allelesymbol' or 'insertionsymbol' portions of the symbol must be a valid FBgn, FBal or FBti (respectively) symbol in chado or generated in the record.
 
-     * the format checking for FBco allows 2 or more allele symbols joined by &cap;, so allelesymbol&cap;allelesymbol&cap;allelesymbol (etc.) is also allowed.
+     * split system combinations (FBco) are defined by a unique pair of FBti insertions (FTA-268/FTA-279), so the components of an FBco symbol are FBti symbols (not FBal symbols). The format checking for FBco allows 2 or more insertion symbols joined by &cap;, but a separate check (below) reports an error unless there are exactly two.
      
 The following checks are done at the end of proforma checking within expression.pl, rather than trying to add it to the 'cross_check_harv_style_symbol_rename_merge_fields' subroutine which is used for several different 'Harvard' style proformae:
 
@@ -66,14 +68,19 @@ The following checks are done at the end of proforma checking within expression.
 
 * Additional checks for combination symbol in F1a when F1f is new:
 
-  * Checks that each allele symbol within the combination symbol is associated with a tool (either directly for in vitro construct alleles, or indirectly via inserted element for insertional alleles) that is a 'split system component' or one of its children, and warns if not.
-    * NOTE that this check is only performed if the allele symbol is already in chado (which is the normal case); if the allele is newly generated in the record, a warning saying that the extra checks cannot be carried out.
+  * Checks that the combination symbol has exactly two insertion symbol components (set by $FBco_component_number at the top of expression.pl), and reports an error if not. If the number is wrong, the order check (below) is skipped, so that the number of components is clearly the problem to fix first.
 
-  * If the tool associated with the allele is either 'split driver - DNA-binding fragment' or 'split driver - transcription activation fragment', checks that the allele is in the expected position within the combination symbol (expects DBD first, then AD).
-    * NOTE that this check is only performed if the allele symbol is already in chado (which is the normal case); if the allele is newly generated in the record, a warning saying that the extra checks cannot be carried out.
-    * NOTE that this check will give false-positives if a combination symbol contains more than two alleles, but this is a very rare case.
+  * Checks that each insertion symbol within the combination symbol carries a tool that is a 'split system component' or one of its children, and warns if not. The tool information is not attached to the FBti itself, so it is found:
+    * first, via the FBal associated with the FBti (FBti->FBal encodes_tool)
+    * if no encoded tool is found that way, via the inserted element(s) of the FBti, and the FBal associated with those inserted element(s) (FBti->FBtp encodes_tool and FBti->FBtp->FBal encodes_tool)
+    * NOTE that this check is only performed if the insertion symbol is already in chado (which is the normal case); if the insertion is newly generated in the record, a warning saying that the extra checks cannot be carried out.
 
-  * For combinations containing two allele symbols (i.e. allelesymbol1&cap;allelesymbol2), checks whether the symbol made by reversing the allele symbols (i.e. allelesymbo21&cap;allelesymbol1) already exists in chado.
+  * If the insertion carries both 'split driver - DNA-binding fragment' and 'split driver - transcription activation fragment' tools (e.g. an FBtp with complete split driver(s), such as P{MB112C,MB083C,MB011B}), reports that it cannot be one half of a combination, and does not do the order check below for it.
+
+  * If the tool carried by the insertion is either 'split driver - DNA-binding fragment' or 'split driver - transcription activation fragment', checks that DBD halves are listed before AD halves within the combination symbol. The check compares the halves with each other (not with fixed positions), so it would also work if more than two components were ever allowed.
+    * NOTE that this check is only performed if the insertion symbol is already in chado (which is the normal case); if the insertion is newly generated in the record, a warning saying that the extra checks cannot be carried out.
+
+  * For combinations containing two insertion symbols (i.e. insertionsymbol1&cap;insertionsymbol2), checks whether the symbol made by reversing the insertion symbols (i.e. insertionsymbol2&cap;insertionsymbol1) already exists in chado.
 
   If it does:
 
@@ -99,4 +106,4 @@ The following checks are done at the end of proforma checking within expression.
 
 ### Updated:
 
-gm230913.
+Claude (reviewed by gm) 261015.
