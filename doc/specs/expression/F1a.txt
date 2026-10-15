@@ -106,4 +106,4 @@ The following checks are done at the end of proforma checking within expression.
 
 ### Updated:
 
-gm230913. FTA-279: FBco components are FBti (2026-10-14).
+Claude (reviewed by gm) 261015.
