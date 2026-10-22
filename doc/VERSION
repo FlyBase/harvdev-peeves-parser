@@ -1051,3 +1051,5 @@ our $Peeves_version = "2.92"; #  Fixing bugs found by Claude (correct variable i
 our $Peeves_version = "2.93"; #  Changes for obsoleting GA31 field (FTA-208)
 # 18.9.2026
 our $Peeves_version = "2.94"; #  clearer error message for malformed proforma field (DC-1113)
+# 22.10.2026
+our $Peeves_version = "2.95"; #  rescue_region allowed in SF2b, removed from GA90k (FTA-88)

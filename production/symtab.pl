@@ -7393,7 +7393,8 @@ my $dv_short_qualifiers = {
 
 # allowed values in GA90k
 
-	my @GA90k = ('point_mutation', 'rescue_region', 'insertion', 'sequence_variant', 'complex_substitution', 'deletion', 'insertion_site', 'sequence_alteration');
+	# rescue_region removed for FTA-88: rescue regions are now FBsf features curated in the SEQUENCE FEATURE proforma (SF2b).
+	my @GA90k = ('point_mutation', 'insertion', 'sequence_variant', 'complex_substitution', 'deletion', 'insertion_site', 'sequence_alteration');
 
 	foreach my $term (@GA90k) {
 
@@ -7550,7 +7551,7 @@ my $dv_short_qualifiers = {
 
 # SO term if that turns out to be needed.
 
-	my @SF2b = ('enhancer', 'exon_junction', 'insulator', 'modified_RNA_base_feature', 'origin_of_replication', 'protein_binding_site', 'region', 'regulatory_region', 'RNAi_reagent', 'silencer', 'TF_binding_site', 'polypeptide_region', 'polyA_site', 'repeat_region', 'satellite_DNA', 'TSS', 'experimental_result_region', 'sgRNA');
+	my @SF2b = ('enhancer', 'exon_junction', 'insulator', 'modified_RNA_base_feature', 'origin_of_replication', 'protein_binding_site', 'region', 'regulatory_region', 'RNAi_reagent', 'silencer', 'TF_binding_site', 'polypeptide_region', 'polyA_site', 'repeat_region', 'satellite_DNA', 'TSS', 'experimental_result_region', 'sgRNA', 'rescue_region'); # rescue_region added for FTA-88
 
 	foreach my $term (@SF2b) {
 
