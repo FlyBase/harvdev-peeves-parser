@@ -344,8 +344,10 @@ FIELD:
 
 # checks for fields where whether or not they are filled in depends on 'status' (new etc.) of seq. feat.
 
-check_filled_in_for_new_feature ($file, 'SF2a', $hash_entries, \@SF2a_list, \@FBid_list, \@SF1c_list, \@SF1g_list, \%proforma_fields, 'only');
-check_filled_in_for_new_feature ($file, 'SF2b', $hash_entries, \@SF2b_list, \@FBid_list, \@SF1c_list, \@SF1g_list, \%proforma_fields, 'only');
+# SF2a/SF2b: a merge into a 'new' FBsf (SF1f 'new' + SF1g) creates a new feature and the proforma parser needs
+# its type, so the SF1g list is not passed (DC-1117). A merge into an existing FBsf still must not have SF2a/SF2b.
+check_filled_in_for_new_feature ($file, 'SF2a', $hash_entries, \@SF2a_list, \@FBid_list, \@SF1c_list, [], \%proforma_fields, 'only');
+check_filled_in_for_new_feature ($file, 'SF2b', $hash_entries, \@SF2b_list, \@FBid_list, \@SF1c_list, [], \%proforma_fields, 'only');
 check_filled_in_for_new_feature ($file, 'SF3b', $hash_entries, \@SF3b_list, \@FBid_list, \@SF1c_list, \@SF1g_list, \%proforma_fields, 'yes');
 
 compare_field_pairs ($file, $hash_entries, 'SF3a', \@SF3a_list, 'SF3c', \@SF3c_list, \%proforma_fields, 'pair', '');
