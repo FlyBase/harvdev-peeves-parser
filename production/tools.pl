@@ -4310,6 +4310,12 @@ sub get_object_status {
 							$object_status = "rename";
 						}
 					}
+				} else {
+# both rename and merge are filled in: only allowed for a merge into an existing sequence feature (DC-1117),
+# where the merged feature can also be renamed
+					if ($type eq 'SF' && $status ne $new_string) {
+						$object_status = "merge";
+					}
 				}
 
 # merge field only MUST be filled in else would not have got here

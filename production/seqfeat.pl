@@ -349,11 +349,43 @@ FIELD:
 
 # checks for fields where whether or not they are filled in depends on 'status' (new etc.) of seq. feat.
 
-# SF2a/SF2b: a merge into a 'new' FBsf (SF1f 'new' + SF1g) creates a new feature and the proforma parser needs
-# its type, so the SF1g list is not passed (DC-1117). A merge into an existing FBsf still must not have SF2a/SF2b.
-check_filled_in_for_new_feature ($file, 'SF2a', $hash_entries, \@SF2a_list, \@FBid_list, \@SF1c_list, [], \%proforma_fields, 'only');
-check_filled_in_for_new_feature ($file, 'SF2b', $hash_entries, \@SF2b_list, \@FBid_list, \@SF1c_list, [], \%proforma_fields, 'only');
+# SF2a/SF2b for new, existing and renamed features (merges are checked separately below, DC-1117)
+unless (@SF1g_list) {
+	check_filled_in_for_new_feature ($file, 'SF2a', $hash_entries, \@SF2a_list, \@FBid_list, \@SF1c_list, \@SF1g_list, \%proforma_fields, 'only');
+	check_filled_in_for_new_feature ($file, 'SF2b', $hash_entries, \@SF2b_list, \@FBid_list, \@SF1c_list, \@SF1g_list, \%proforma_fields, 'only');
+}
 check_filled_in_for_new_feature ($file, 'SF3b', $hash_entries, \@SF3b_list, \@FBid_list, \@SF1c_list, \@SF1g_list, \%proforma_fields, 'yes');
+
+# SF2a/SF2b for merges (DC-1117). A merge into a new FBsf (SF1f 'new') creates a new feature, so SF2a and SF2b must be
+# filled in (the proforma parser needs SF2b to make it). A merge into an existing FBsf (SF1f FBsf ID) keeps the type of
+# that feature, so SF2a and SF2b must NOT be filled in.
+# only perform check if no hashing in proforma (SF1g cannot be hashed)
+
+if ($hash_entries == 1) {
+
+	my $object_status = get_object_status ('SF', $FBid_list[0], $SF1c_list[0], $SF1g_list[0]);
+
+	if ($object_status eq 'merge') {
+
+		my $into_new = (defined $FBid_list[0] && $FBid_list[0] eq 'new');
+		my %merge_type_fields = ('SF2a' => $SF2a_list[0], 'SF2b' => $SF2b_list[0]);
+
+		foreach my $code (sort keys %merge_type_fields) {
+
+			my $filled_in = (defined $merge_type_fields{$code} && $merge_type_fields{$code} ne '');
+
+			if ($into_new && !$filled_in) {
+
+				report ($file, "%s must be filled in for a merge into a new sequence feature:\n!%s\n!%s", $code, $proforma_fields{'SF1f'}, $proforma_fields{'SF1g'});
+
+			} elsif (!$into_new && $filled_in) {
+
+				report ($file, "%s must NOT be filled in for a merge into an existing sequence feature:\n!%s\n!%s\n!%s", $code, $proforma_fields{'SF1f'}, $proforma_fields{'SF1g'}, $proforma_fields{$code});
+
+			}
+		}
+	}
+}
 
 compare_field_pairs ($file, $hash_entries, 'SF3a', \@SF3a_list, 'SF3c', \@SF3c_list, \%proforma_fields, 'pair', '');
 
