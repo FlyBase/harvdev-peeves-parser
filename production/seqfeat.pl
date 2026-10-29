@@ -129,7 +129,8 @@ FIELD:
 	    check_non_ascii ($file, $2, $3);
 		no_hashes_in_proforma ($file, $2, $hash_entries, $3);
 		unless (double_query ($file, $2, $3)) {
-			@SF1g_list = validate_merge_using_ids ($file, $2, $hash_entries, $1, $3, $proforma_fields{$2});
+# DC-1117: pass @FBid_list (SF1f comes before SF1g), so that a single FBsf can be merged into the existing FBsf in SF1f
+			@SF1g_list = validate_merge_using_ids ($file, $2, $hash_entries, $1, $3, $proforma_fields{$2}, \@FBid_list);
 		}
 	}
 	elsif ($field =~ /^(.*?)\s+(SF1b)\..*? :(.*)/s)
@@ -331,21 +332,27 @@ FIELD:
 # no !c if SF1g is filled in
 	plingc_merge_check ($file, $change_count,'SF1g', \@SF1g_list, $proforma_fields{'SF1g'});
 
-# SF1c and SF1g must not both contain data.
+# SF1c and SF1g must not both contain data, except when merging into an existing FBsf (SF1f is an FBsf ID), which can
+# also be renamed in the same proforma (DC-1117). (SF1c with SF1f 'new' is reported by the cross-checks below.)
 
-    rename_merge_check ($file, 'SF1c', \@SF1c_list, $proforma_fields{'SF1c'}, 'SF1g', \@SF1g_list, $proforma_fields{'SF1g'});
+    unless (@FBid_list && !grep { !/^FBsf\d{7,}$/ } @FBid_list) {
+        rename_merge_check ($file, 'SF1c', \@SF1c_list, $proforma_fields{'SF1c'}, 'SF1g', \@SF1g_list, $proforma_fields{'SF1g'});
+    }
 
 
 # Basic cross-checks between SF1f, SF1a, SF1c and SF1g fields that are common to all harvard-style proformae
+# (with merges into an existing FBsf allowed, DC-1117)
 
-	cross_check_harv_style_symbol_rename_merge_fields ($file, 'SF', $hash_entries, \@FBid_list, $primary_symbol_list, \@SF1c_list, \@SF1g_list, \%proforma_fields);
+	cross_check_harv_style_symbol_rename_merge_fields ($file, 'SF', $hash_entries, \@FBid_list, $primary_symbol_list, \@SF1c_list, \@SF1g_list, \%proforma_fields, 1);
 
 
 
 # checks for fields where whether or not they are filled in depends on 'status' (new etc.) of seq. feat.
 
-check_filled_in_for_new_feature ($file, 'SF2a', $hash_entries, \@SF2a_list, \@FBid_list, \@SF1c_list, \@SF1g_list, \%proforma_fields, 'only');
-check_filled_in_for_new_feature ($file, 'SF2b', $hash_entries, \@SF2b_list, \@FBid_list, \@SF1c_list, \@SF1g_list, \%proforma_fields, 'only');
+# SF2a/SF2b: a merge into a 'new' FBsf (SF1f 'new' + SF1g) creates a new feature and the proforma parser needs
+# its type, so the SF1g list is not passed (DC-1117). A merge into an existing FBsf still must not have SF2a/SF2b.
+check_filled_in_for_new_feature ($file, 'SF2a', $hash_entries, \@SF2a_list, \@FBid_list, \@SF1c_list, [], \%proforma_fields, 'only');
+check_filled_in_for_new_feature ($file, 'SF2b', $hash_entries, \@SF2b_list, \@FBid_list, \@SF1c_list, [], \%proforma_fields, 'only');
 check_filled_in_for_new_feature ($file, 'SF3b', $hash_entries, \@SF3b_list, \@FBid_list, \@SF1c_list, \@SF1g_list, \%proforma_fields, 'yes');
 
 compare_field_pairs ($file, $hash_entries, 'SF3a', \@SF3a_list, 'SF3c', \@SF3c_list, \%proforma_fields, 'pair', '');
