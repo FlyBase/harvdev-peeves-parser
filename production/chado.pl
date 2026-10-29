@@ -495,8 +495,8 @@ sub set_up_chado_queries ()
 								  AND fcvtp.type_id = cvt2.cvterm_id
 								  AND cvt2.name = \'common_tool_uses\';');
 ## Queries for additional checks for new FBco symbols
-## tool field information (can be used for FBal or FBtp)
-## need to specify FBal/FBtp id and type of feature_relationship
+## tool field information (can be used for FBal or FBtp), or inserted elements of an FBti (type 'producedby')
+## need to specify FBal/FBtp/FBti id and type of feature_relationship
 
 	$prepared_queries{'tool_relationship'} = $chado->prepare ('SELECT f2.uniquename
 								  FROM feature f1, feature f2,
@@ -508,22 +508,18 @@ sub set_up_chado_queries ()
 								  AND cv.name=?;');
 
 
-## query to get inserted elements (can be FBtp or FBte) for alleles that are associated with an insertion
-## need to provide FBal number
-	$prepared_queries{'inserted_element'} = $chado->prepare ('SELECT f3.uniquename
-								  FROM feature f1, feature f2, feature f3,
-								       feature_relationship fr, cvterm cv,
-								       feature_relationship fr2, cvterm cv2
-								  WHERE f1.uniquename =?
+## query to get the alleles associated with a feature (e.g. FBti or FBtp)
+## need to provide FBti/FBtp number
+	$prepared_queries{'associated_allele'} = $chado->prepare ('SELECT f1.uniquename
+								  FROM feature f1, feature f2,
+								       feature_relationship fr, cvterm cv
+								  WHERE f2.uniquename =?
 								  AND f1.feature_id = fr.subject_id
 								  AND f2.feature_id = fr.object_id
-								  AND f2.uniquename like \'FBti%\'
+								  AND f1.uniquename like \'FBal%\'
+								  AND f1.is_obsolete = \'f\'
 								  AND cv.cvterm_id=fr.type_id
-								  AND cv.name=\'associated_with\'
-								  AND f2.feature_id = fr2.subject_id
-								  AND f3.feature_id = fr2.object_id
-								  AND cv2.cvterm_id=fr2.type_id
-								  AND cv2.name=\'producedby\';');
+								  AND cv.name=\'associated_with\';');
 
 ## get tool uses information
 	$prepared_queries{'tool_uses'} = $chado->prepare ('SELECT cvt.name

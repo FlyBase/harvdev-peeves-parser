@@ -1537,7 +1537,7 @@ sub check_allowed_characters {
 
 		'TE1a' => 'a-zA-Z0-9:;&\\\.\-\'', # same characters as G1a, except no [ ] ( )
 
-		'F1a' => 'a-zA-Z0-9:;&\\\[\]\()\'\.,\+\-', # same as G1a (so includes [ ]), plus , and +, so that it has all the characters that could be in either a gene or allele symbol (which is what the symbols in this field are based on)
+		'F1a' => 'a-zA-Z0-9:;&\\\[\]\()\'\.,\+\?\{}\-', # same as G1a (so includes [ ]), plus , and +, so that it has all the characters that could be in either a gene or allele symbol (which is what the symbols in this field are based on), plus ? { and } (as for MA1a) as FBco symbols are based on insertion symbols (FTA-279)
 
 		'TO1a' => 'a-zA-Z0-9:;&\\\[\]\()\'\.\+\-', # same as G1a, plus + Have allowed \ for now.
 
@@ -1981,9 +1981,12 @@ sub validate_merge_using_ids {
 # $change = whatever is between ! and code i.e. nothing if no !c, 'c' if !c
 # $merge_field_list = entire contents of merge proforma field, without proforma field text
 # $context = entire contents of merge proforma field, including proforma field text, should be provided using %proforma_fields hash
+# $primary_id_list = (optional) reference to the dehashed primary FBid list (e.g. SF1f). Only pass this for proforma types
+# that allow a merge into an existing feature (DC-1117): for an entry whose primary FBid field contains an FBid, a single id
+# in the merge field is allowed, since that feature is merged into the existing one.
 
 
-    my ($file, $code, $num, $change, $merge_field_list, $context) = @_;
+    my ($file, $code, $num, $change, $merge_field_list, $context, $primary_id_list) = @_;
 
 	my @merge_list;
 
@@ -2014,7 +2017,9 @@ sub validate_merge_using_ids {
 
 			my $uniqued_ids = check_for_duplicated_lines($file,$code,$ids[$i],$context);
 
-			scalar (keys %{$uniqued_ids}) >1 or report ($file, "%s: You have entered only the id '%s' here.  " .
+			my $into_existing = ($primary_id_list && defined $primary_id_list->[$i] && $primary_id_list->[$i] =~ m/^($id_types)\d{7,}$/);
+
+			scalar (keys %{$uniqued_ids}) >1 or $into_existing or report ($file, "%s: You have entered only the id '%s' here.  " .
 					    "%s requires at least two ids or no merge can occur.",
 					    $code, $ids[$i], $code);
 
@@ -2239,10 +2244,12 @@ sub cross_check_harv_style_symbol_rename_merge_fields {
 # $rename_list = dehashed rename list (symbol(s))
 # $merge_list = dehashed merge list (FBid(s))
 # $context = hash reference to %proforma_fields, so can provide context (including proforma field text) in error messages
+# $merge_into_existing = (optional) true for proforma types that allow a merge into an existing feature (DC-1117): the merge
+# field may then be filled in when the primary FBid field contains an FBid, as long as it does not also list that FBid.
 #
 # call as e.g. cross_check_harv_style_symbol_rename_merge_fields ($file, 'MA', $hash_entries, \@FBti_list, \@TI_sym_list, \@MA1c_list, \@MA1g_list, \%proforma_fields);
 
-    my ($file, $proforma_type, $num, $FBid_list, $symbol_list, $rename_list, $merge_list, $context) = @_;
+    my ($file, $proforma_type, $num, $FBid_list, $symbol_list, $rename_list, $merge_list, $context, $merge_into_existing) = @_;
 
 	unless (exists $standard_symbol_mapping->{$proforma_type}) {
 
@@ -2274,7 +2281,13 @@ sub cross_check_harv_style_symbol_rename_merge_fields {
 # merge field must be empty (this means there is no need to worry about whether the merge field is present at all in the proforma,
 # since if its not there, by definition it must be empty !)
 				if ($merge_list->[$i]) {
-					report ($file, "%s must be empty if %s contains an FBid number\n!%s\n!%s", $merge_field, $primary_id_field ,$context->{$primary_id_field},$context->{$merge_field});
+					if ($merge_into_existing) {
+						if (grep { $_ eq $FBid_list->[$i] } @{$merge_list->[$i]}) {
+							report ($file, "%s must not contain the FBid given in %s (%s): list only the FBid(s) to be merged into it\n!%s\n!%s", $merge_field, $primary_id_field, $FBid_list->[$i], $context->{$primary_id_field}, $context->{$merge_field});
+						}
+					} else {
+						report ($file, "%s must be empty if %s contains an FBid number\n!%s\n!%s", $merge_field, $primary_id_field ,$context->{$primary_id_field},$context->{$merge_field});
+					}
 				}
 
 
@@ -4912,7 +4925,7 @@ sub type_gene_product {
 # Subroutine which 'types' a gene product symbol as either FBtr or FBpp based on the format of the symbol.
 # Returns the gene product type, symbol(s) of the parent(s) to which the product is attached (a single gene symbol
 # for regular transcripts/polypeptides, a single allele symbol for expression of transgenic constructs/insertions,
-# multiple alleles for combinations), and the expected type of the parent symbols if $return_value is '1'.
+# multiple insertions for combinations), and the expected type of the parent symbols if $return_value is '1'.
 # If $return_value is '0', returns just the type of the gene product.
 # If the symbol does not match any of the expected formats, then empty values will be returned.
 
@@ -4926,7 +4939,7 @@ sub type_gene_product {
 # genesymbol-XP (FBpp)
 # allelesymbolRA (FBtr)
 # allelesymbolPA (FBpp)
-# allelesymbol&cap;allelesymbol (FBco)
+# insertionsymbol&cap;insertionsymbol (FBco) - split system combinations are defined by a pair of FBti (FTA-279)
 
 	my $suffix_mapping = {
 	
@@ -4952,7 +4965,7 @@ sub type_gene_product {
 
 		'&cap;' => {
 			'product_type' => 'FBco',
-			'parent_type' => 'FBal',
+			'parent_type' => 'FBti',
 		},		
 	};
 

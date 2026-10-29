@@ -1,0 +1,149 @@
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0105495
+! P2.   Parent multipub abbreviation               *w :
+! P40.  Flag Cambridge for curation           CAMCUR :
+! P41.  Flag Harvard for curation            HARVCUR :
+! P42.  Flag Ontologists for curation           ONTO :
+! P43.  Flag Disease for curation            DISEASE :
+! P44.  Disease(s) relevant to FBrf      [free text] :
+! P19.  Internal notes                   *H :
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :P{R22B12-GAL4.DBD}attP2&cap;P{R14E06-p65.AD}attP40
+! F3.  Gene product type [CV]        :split system combination FBcv:0009026
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+! F1b. Action - rename this gene product (symbol)      :
+! F1c. Action - merge these products(s) (symbols or FB#s) :
+! F1d. Action - delete gene product record ("y"/blank) :
+! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
+!
+! F14. Internal note  [free text] :??T1 good pair (FBti->FBtp->FBal) should pass
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :P{R14E06-p65.AD}attP40&cap;P{R22B12-GAL4.DBD}attP2
+! F3.  Gene product type [CV]        :split system combination FBcv:0009026
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+! F1b. Action - rename this gene product (symbol)      :
+! F1c. Action - merge these products(s) (symbols or FB#s) :
+! F1d. Action - delete gene product record ("y"/blank) :
+! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
+!
+! F14. Internal note  [free text] :??T2 AD before DBD should give 1 order warning
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :TI{GAL4(DBD)::Zip-}dsx[GAL4-DBD]&cap;P{R14E06-p65.AD}attP40
+! F3.  Gene product type [CV]        :split system combination FBcv:0009026
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+! F1b. Action - rename this gene product (symbol)      :
+! F1c. Action - merge these products(s) (symbols or FB#s) :
+! F1d. Action - delete gene product record ("y"/blank) :
+! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
+!
+! F14. Internal note  [free text] :??T3 insertional allele (FBti->FBal direct) should pass
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :Scer\GAL4[DBD.R22B12]&cap;Hsap\RELA[AD.R14E06]
+! F3.  Gene product type [CV]        :split system combination FBcv:0009026
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+! F1b. Action - rename this gene product (symbol)      :
+! F1c. Action - merge these products(s) (symbols or FB#s) :
+! F1d. Action - delete gene product record ("y"/blank) :
+! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
+!
+! F14. Internal note  [free text] :??T4 old FBal-style symbol should fail as invalid FBti
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :P{R22B12-GAL4.DBD}attP2&cap;P{R14E06-p65.AD}attP40&cap;P{R93D10-p65.AD}attP40
+! F3.  Gene product type [CV]        :split system combination FBcv:0009026
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+! F1b. Action - rename this gene product (symbol)      :
+! F1c. Action - merge these products(s) (symbols or FB#s) :
+! F1d. Action - delete gene product record ("y"/blank) :
+! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
+!
+! F14. Internal note  [free text] :??T5 three components should fail with only the number of components error
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :P{GawB}elav[C155]&cap;P{R14E06-p65.AD}attP40
+! F3.  Gene product type [CV]        :split system combination FBcv:0009026
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+! F1b. Action - rename this gene product (symbol)      :
+! F1c. Action - merge these products(s) (symbols or FB#s) :
+! F1d. Action - delete gene product record ("y"/blank) :
+! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
+!
+! F14. Internal note  [free text] :??T6 non-split FBti should fail
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :P{R22B12-GAL4.DBD}attP2&cap;P{MB112C,MB083C,MB011B}attP2
+! F3.  Gene product type [CV]        :split system combination FBcv:0009026
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+! F1b. Action - rename this gene product (symbol)      :
+! F1c. Action - merge these products(s) (symbols or FB#s) :
+! F1d. Action - delete gene product record ("y"/blank) :
+! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
+!
+! F14. Internal note  [free text] :??T7 complete split driver construct in position 2 should fail as not a half
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :P{MB112C,MB083C,MB011B}attP2&cap;P{R14E06-p65.AD}attP40
+! F3.  Gene product type [CV]        :split system combination FBcv:0009026
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+! F1b. Action - rename this gene product (symbol)      :
+! F1c. Action - merge these products(s) (symbols or FB#s) :
+! F1d. Action - delete gene product record ("y"/blank) :
+! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
+!
+! F14. Internal note  [free text] :??T8 complete split driver construct in position 1 should fail as not a half
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENEPRODUCT ATTRIBUTES/EXPRESSION PROFORMA       Version 10: 02 Jul 2014
+!
+! F1f. Database id (default 'new')   :new
+! F1a. Gene product symbol           :P{R14E06-p65.AD}attP40&cap;P{R22B12-GAL4.DBD}attP2&cap;P{R93D10-p65.AD}attP40
+! F3.  Gene product type [CV]        :split system combination FBcv:0009026
+! F2.  Sequence attribute [CV]	     :synthetic_sequence SO:0000351
+!
+! F1b. Action - rename this gene product (symbol)      :
+! F1c. Action - merge these products(s) (symbols or FB#s) :
+! F1d. Action - delete gene product record ("y"/blank) :
+! F1e. Action - dissociate F1f from FBrf ("y"/blank)   :
+!
+! F14. Internal note  [free text] :??T9 three components in wrong order should fail with only the number of components error
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
