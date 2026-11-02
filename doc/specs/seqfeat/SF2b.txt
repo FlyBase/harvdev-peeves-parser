@@ -34,7 +34,7 @@ Checks within field:
 Checks between fields:
 
 
-* must be filled in for new entries, avoid subsequent use (sub check_filled_in_for_new_feature, test = 'only')
+* must only be filled in for new entries or merges (i.e. when SF1a is 'new')
 
 
 ### Related fields:
@@ -53,4 +53,4 @@ Could possible replace hard-coded symtab.pl with chado query of the correct 'pro
 
 ### Updated:
 
-gm200513.
+gm261030.

@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.95"; #  rescue_region allowed in SF2b, removed from GA90k (FTA-88)
+our $Peeves_version = "2.96.3"; #  Add warning when try to merge multiple genome localized genes (DC-100, DC-1117)
 
 =head2 Version
 
@@ -236,6 +236,7 @@ our $standard_symbol_mapping = {
 		type => 'gene',
 		style => 'Cambridge',
 		species_prefix => '1',
+		check_for_multi_feature_loc => 'the record will bounce. Coordinate with HarvCur: they will need to reconcile the gene models first (e.g. make a new merged CG annotation), before the merge of gene records can be done', # this is the error message that gets printed if the check finds multiple genome localized features in the merge field
 	},
 	'GA' => {
 		id => ['FBal'],
@@ -259,6 +260,7 @@ our $standard_symbol_mapping = {
 		id => ['FBti'],
 		type => 'insertion',
 		style => 'Harvard',
+		check_for_multi_feature_loc => 'the record will still load, but you might want to double check you meant to merge these insertions', # this is the error message that gets printed if the check finds multiple genome localized features in the merge field
 	},
 	'MS' => {
 		id => ['FBtp'],
@@ -334,6 +336,7 @@ our $standard_symbol_mapping = {
 		id => ['FBsf'],
 		type => 'sequence feature',
 		style => 'Harvard',
+		check_for_multi_feature_loc => 'the record will bounce. Fix by removing one of the locations in a separate record (using plingc of SF4a) before loading this one', # this is the error message that gets printed if the check finds multiple genome localized features in the merge field
 
 	},	
 	'TC' => {

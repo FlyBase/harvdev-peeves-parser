@@ -344,8 +344,6 @@ FIELD:
 
 # checks for fields where whether or not they are filled in depends on 'status' (new etc.) of seq. feat.
 
-check_filled_in_for_new_feature ($file, 'SF2a', $hash_entries, \@SF2a_list, \@FBid_list, \@SF1c_list, \@SF1g_list, \%proforma_fields, 'only');
-check_filled_in_for_new_feature ($file, 'SF2b', $hash_entries, \@SF2b_list, \@FBid_list, \@SF1c_list, \@SF1g_list, \%proforma_fields, 'only');
 check_filled_in_for_new_feature ($file, 'SF3b', $hash_entries, \@SF3b_list, \@FBid_list, \@SF1c_list, \@SF1g_list, \%proforma_fields, 'yes');
 
 compare_field_pairs ($file, $hash_entries, 'SF3a', \@SF3a_list, 'SF3c', \@SF3c_list, \%proforma_fields, 'pair', '');
@@ -359,6 +357,50 @@ compare_field_pairs ($file, $hash_entries, 'SF5e', \@SF5e_list, 'SF5f', \@SF5f_l
 
 compare_duplicated_field_pairs ($file, 'SF4b', \@SF4b_list, 'SF4a', \@SF4a_list, \%dup_proforma_fields, 'pair', '');
 compare_duplicated_field_pairs ($file, 'SF4h', \@SF4h_list, 'SF4a', \@SF4a_list, \%dup_proforma_fields, 'dependent', '');
+
+
+# check that SF2a and SF2b are only filled in for new or merged features, only do if hashing is correct for FBid field
+
+	if ($hash_entries and $#FBid_list + 1 == $hash_entries) {
+
+		for (my $i = 0; $i < $hash_entries; $i++) {
+
+			my $object_status = get_object_status ('SF', $FBid_list[0], $SF1c_list[0], $SF1g_list[0]);
+
+
+			if ($object_status eq 'new' || $object_status eq 'merge') {
+				unless (defined $SF2a_list[$i] && $SF2a_list[$i] ne '') {
+
+					report ($file, "%s must be filled in for a %s:\n!%s\n!%s", 'SF2a', ($object_status eq 'new' ? "$object_status sequence feature" : "sequence feature $object_status"), $proforma_fields{'SF1a'}, $proforma_fields{'SF2a'});
+
+				}
+
+				unless (defined $SF2b_list[$i] && $SF2b_list[$i] ne '') {
+
+					report ($file, "%s must be filled in for a %s:\n!%s\n!%s", 'SF2b', ($object_status eq 'new' ? "$object_status sequence feature" : "sequence feature $object_status"), $proforma_fields{'SF1a'}, $proforma_fields{'SF2b'});
+
+				}
+
+
+			} elsif ($object_status eq 'existing' || $object_status eq 'rename') {
+
+				if (defined $SF2a_list[$i] && $SF2a_list[$i] ne '') {
+
+					report ($file, "%s must NOT be filled in for a %s:\n!%s\n!%s", 'SF2a', ($object_status eq 'existing' ? "$object_status sequence feature" : "sequence feature $object_status"), $proforma_fields{'SF1a'}, $proforma_fields{'SF2a'});
+
+				}
+
+				if (defined $SF2b_list[$i] && $SF2b_list[$i] ne '') {
+
+					report ($file, "%s must NOT be filled in for a %s:\n!%s\n!%s", 'SF2b', ($object_status eq 'existing' ? "$object_status sequence feature" : "sequence feature $object_status"), $proforma_fields{'SF1a'}, $proforma_fields{'SF2b'});
+
+				}
+
+
+
+			}
+		}
+	}
 
 # check that SF4a is filled in for a new feature
 # only perform check if no hashing in proforma to ensure correct checking as SF4a can be duplicated

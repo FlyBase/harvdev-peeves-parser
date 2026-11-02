@@ -1798,10 +1798,12 @@ sub validate_x1f {
     return () if $merge_list eq '';			# Absence of data is permissible.
 
 	my @symbols = dehash ($file, $code, $num, $merge_list);
+	my $featureloc_count = 0;
 
 # only run the test if dehash found the correct number of hash entries, prevents
 # warnings in the terminal
 	if (@symbols) {
+
 	    for (my $i = 0; $i < $num; $i++) {
 
 		my @s_list = ();
@@ -1815,17 +1817,40 @@ sub validate_x1f {
 			foreach my $symbol (keys %{$uniqued_symbols}) {
 
 
-	    		$symbol = trim_space_from_ends ($file, $code, $symbol);
-	    		push @s_list, $symbol;
-				valid_chado_symbol_of_list_of_types ($symbol, $standard_symbol_mapping->{$symbol_type}->{id}) or report ($file, "%s: '%s' is not a valid %s symbol", $code, $symbol, $standard_symbol_mapping->{$symbol_type}->{type});
+	    			$symbol = trim_space_from_ends ($file, $code, $symbol);
+	    			push @s_list, $symbol;
+
+				if (my $chado_id = valid_chado_symbol_of_list_of_types ($symbol, $standard_symbol_mapping->{$symbol_type}->{id})) {
 
 
+					if (exists $standard_symbol_mapping->{$symbol_type}->{check_for_multi_feature_loc}) {
+
+						my $featureloc = chat_to_chado ('featureloc_from_id', $chado_id);
+
+							if (@{$featureloc}) {
+
+								$featureloc_count++;
+							}
+
+					}
+
+				} else {
+
+				report ($file, "%s: '%s' is not a valid %s symbol", $code, $symbol, $standard_symbol_mapping->{$symbol_type}->{type});
+
+				}
 
 			}
 
 			push @x1f_list, [@s_list];
 
 		}
+	}
+
+	if ($featureloc_count > 1) {
+
+		report ($file, "%s: more than one of the merge items is localized to the genome: %s.\n!%s", $code, $standard_symbol_mapping->{$symbol_type}->{check_for_multi_feature_loc}, $context);
+
 	}
 
 	return @x1f_list;
@@ -2005,9 +2030,12 @@ sub validate_merge_using_ids {
 
 	my @ids = dehash ($file, $code, $num, $merge_field_list);
 
+	my $featureloc_count = 0;
+
 # only run the test if dehash found the correct number of hash entries, prevents
 # warnings in the terminal
 	if (@ids) {
+
 	    for (my $i = 0; $i < $num; $i++) {
 
 		my @id_list = ();
@@ -2027,6 +2055,19 @@ sub validate_merge_using_ids {
 				if ($id =~ m/^($id_types)\d{7,}$/) {
 					unless (valid_symbol ($id, 'uniquename')) {
 						report ($file, "%s: '%s' is not a valid id in Chado.", $code, $id);
+					} else {
+
+						if (exists $standard_symbol_mapping->{$proforma_type}->{check_for_multi_feature_loc}) {
+						
+							my $featureloc = chat_to_chado ('featureloc_from_id', $id);
+
+							if (@{$featureloc}) {
+
+								$featureloc_count++;
+							}
+						}
+
+
 					}
 				} else {
 
@@ -2053,6 +2094,12 @@ sub validate_merge_using_ids {
 			push @merge_list, [@id_list];
 
 		}
+	}
+
+	if ($featureloc_count > 1) {
+
+		report ($file, "%s: more than one of the merge items is localized to the genome: %s.\n!%s", $code, $standard_symbol_mapping->{$proforma_type}->{check_for_multi_feature_loc}, $context);
+
 	}
 
 	return @merge_list;
