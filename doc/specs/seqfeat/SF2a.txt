@@ -37,7 +37,7 @@ polypeptide
 
 Checks between fields:
 
-* must be filled in for new entries, avoid subsequent use (sub check_filled_in_for_new_feature, test = 'only')
+* must only be filled in for new entries or merges (i.e. when SF1a is 'new')
 
 
 ### Related fields:
@@ -54,4 +54,4 @@ Note from Kathleen in PDEV-18: Can !c SF2a as its implemented similar to G30.
 
 ### Updated:
 
-gm160113.
+gm261030.

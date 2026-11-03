@@ -36,6 +36,9 @@ Checks within field:
 
   * checks in validate_merge_using_ids - see MA1g.txt for details
 
+  * warns if try to merge two genome localized seqfeats (FBsf specific check in validate_merge_using_ids)
+
+
 Cross-checks with other fields:
 
     * sub 'plingc_merge_check' - no !c in entire proforma if SF1g is filled in
@@ -62,4 +65,4 @@ Cross-checks with other fields
 
 ### Updated:
 
-gm160110.
+gm261102.

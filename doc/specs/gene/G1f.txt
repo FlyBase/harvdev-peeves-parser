@@ -41,6 +41,9 @@ Checks within field
     * there must be at least two entries (i.e. gene symbols) in the list
     * there must not be any duplications in the list (checked using check_for_duplicated_lines subroutine)
 
+    * warns if try to merge two genome localized genes (FBgn specific check in validate_x1f)
+
+
 Cross-checks with other fields
 
   * checks done after parsing entire proforma
@@ -91,4 +94,4 @@ Cross-checks with other fields
 
 ### Updated:
 
-gm170201.
+gm261102.

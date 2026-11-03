@@ -549,6 +549,14 @@ sub set_up_chado_queries ()
 								  AND cvt.cv_id = cv.cv_id
 								  AND cv.name = \'SO\';');
 
+	$prepared_queries{'featureloc_from_id'} = $chado->prepare ('SELECT DISTINCT featureloc_id
+							   FROM feature f, featureloc fl, feature src, cvterm cvt
+							   WHERE f.feature_id = fl.feature_id
+							   AND f.is_obsolete = \'f\'
+							   AND f.uniquename =?
+							   AND fl.srcfeature_id = src.feature_id
+							   AND src.type_id = cvt.cvterm_id
+							   AND cvt.name = \'golden_path\';');
 
 }
 

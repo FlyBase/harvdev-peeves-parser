@@ -43,6 +43,9 @@ Checks within field:
     * otherwise, if it matches the valid *symbol* of the FBid type expected (i.e. someone entered an insertion symbol instead of an id by mistake), warns that a symbol has been entered, and provides the valid FBti number for that symbol, so that it can easily be entered instead,
     * otherwise, warns that it is not a valid FBid format.
 
+
+    * warns if try to merge two genome localized insertions (allowed, but suggests curator double-checks) (FBti specific check in validate_merge_using_ids)
+
 Cross-checks with other fields:
 
     * sub 'plingc_merge_check' - no !c in entire proforma if MA1g is filled in
@@ -71,4 +74,4 @@ doc: checked that doc reflects what has been implemented
 
 ### Updated:
 
-gm151001.
+gm261102.
