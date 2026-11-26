@@ -50,6 +50,17 @@ Checks between fields
 
 * P32 must not be filled in unless P22 contains a valid FBrf number in chado
 
+* sub check_pub_merge looks for mis-matches between citation data for each FBrf in P32 and the corresponding citation data for the FBrf in P22. If there is a mis-match in one or more of the citation data fields, an error message is printed so the curator can double-check that the correct publications are being merged.
+
+    * the data for the winning pub (P22) is obtained from the publication proforma if the field is filled in (to account for the rare case where a pub merge is happening as well as correction/addition of citation data) and from chado if not
+    * the data for the losing pub (P32) is obtained from chado
+    * citation data fields compared are: pubtype, journal, year, issue, pages, first author, title
+
+        * title is only compared if any of the pubs (in P22 or P32) are 'personal communication to FlyBase' - to make sure that a merge of multiple pcs with the same first author and same date get an error message for double checking
+        * for losing pubs that are supplementary materials: pubtype is not compared, and if pages is blank for the supplementary material, it is not compared
+
+    * the error message lists which citation data fields are mis-matched, along with a miniref for both the winning pub and losing pub, to make it easy to check the merge.
+
 
 ### Related or dependant fields:
 
@@ -67,5 +78,5 @@ If P32 contains a value or values, P39 must be left blank.
 
 ### Updated:
 
-gm151001.
+gm261126.
 
