@@ -1058,3 +1058,5 @@ our $Peeves_version = "2.96.1"; #  Add warning for multiple genome localized fea
 our $Peeves_version = "2.96.2"; #  SF2a and SF2b must be filled in for a merge (as well as brand new seqfeat) (DC-1117)
 # 2.11.2026
 our $Peeves_version = "2.96.3"; #  Add warning when try to merge multiple genome localized genes (DC-100, DC-1117)
+# 25.11.2026
+our $Peeves_version = "2.97"; #  Add checks to warn for unlikely looking pub merges (DC-1122)

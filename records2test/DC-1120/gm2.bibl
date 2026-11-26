@@ -1,0 +1,24 @@
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0046057
+! P45.  Publication is NOT about Drosophila? (y)      *q :
+! P32.  Action - make this FBrf a secondary ID of P22 (FBrf)  *N :FBrf0074090
+! P1.   Type of publication [CV]  *T :
+! P2.   Parent multipub abbreviation               *w :Development
+! P12.  Author(s)                           *a-*b :
+! P19.  Internal notes                   *H :??pub_merge_check should trip 'pubtype' error
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

@@ -1,0 +1,21 @@
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"  *U :FBrf0252366
+! P32.  Action - make this FBrf a secondary ID of P22 (FBrf)  *N :FBrf0252367
+! P1.   Type of publication [CV]  *T :
+! P19.  Internal notes                   *H :??both FBrfs are pcs from the same author on the same day, so the only mis-match in pub_merge_check is the title??
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! GENE DATA
+! Insert gene proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! ABERRATION DATA
+! Insert aberration proforma below.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! TRANSPOSON INSERTION DATA
+! MOLECULAR SEGMENT AND CONSTRUCT DATA
+! NATURAL TRANSPOSON DATA
+! Insert relevant proforma(e) below.
+
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!

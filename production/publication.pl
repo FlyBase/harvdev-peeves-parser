@@ -40,6 +40,8 @@ my ($p41_data, $p43_data, $p44_data);
 
 my ($P28_data, $P26_data, $P34_data);
 
+my ($P10_data, $P12_data, $P16_data);
+
 my @dummy_arry;
 my %dummy_dup_proforma_fields; # no proforma fields can be duplicated, so called the hash %dummy_dup_proforma_fields
 
@@ -80,6 +82,10 @@ sub do_publication_proforma ($$)
 	$P28_data = '';
 	$P34_data = '';
 	$P26_data = '';
+
+	$P10_data = '';
+	$P12_data = '';
+	$P16_data = '';
 
 # make sure reset variables for each publication proforma
 	$triage_flags_in_chado = {};
@@ -540,6 +546,10 @@ FIELD:
 check_pub_accession_against_chado ($file, 'P11d', $g_FBrf, $P32_list, $p11d_data, 'DOI', 'DOI');
 check_pub_accession_against_chado ($file, 'P26', $g_FBrf, $P32_list, $P26_data, 'pubmed', 'PubMed ID');
 check_pub_accession_against_chado ($file, 'P28', $g_FBrf, $P32_list, $P28_data, 'PMCID', 'PubMed Central ID');
+
+# new checks for unlikely looking pub merges
+check_pub_merge ($file, 'P32', $g_FBrf, $P32_list);
+
 
 ### End of tests that can only be done after parsing the entire proforma. ###
 
@@ -1379,7 +1389,7 @@ sub validate_P10 ($$$)
     my ($code, $change, $date) = @_;
 
     $date = trim_space_from_ends ($file, $code, $date);
-
+    $P10_data = $date; # preserve for checks after whole proforma has been checked
 # First deal with the case of no data.  We're not allowed to change the date of publication to nothing
 # (i.e. delete it).  If we're not trying to change it, then $g_FBrf must be set, otherwise we're not filling in
 # a mandatory piece of information. - now only mandatory for personal communication.
@@ -1450,6 +1460,7 @@ sub validate_P12 ($$$)
     $change = changes ($file, $code, $change);
 
     $authors = trim_space_from_ends ($file, $code, $authors);
+    $P12_data = $authors; # preserve for checks after whole proforma has been checked
     $authors =~ /\n\n/ and report ($file, "%s: Blank line not allowed in %s", $code, $authors);
     $authors =~ /\,/ and report ($file, "%s: Commas not allowed in %s", $code, $authors);
 
@@ -1579,6 +1590,7 @@ sub validate_P16 ($$$)
     my ($code, $change, $title) = @_;
 
     $title = trim_space_from_ends ($file, $code, $title);
+    $P16_data = $title; # preserve for checks after whole proforma has been checked
 
 # First deal with the case of no data.  We're not allowed to change the title of publication to nothing
 # (i.e. delete it) but otherwise lack of a title is legal if and only if g_FBrf has a value.
@@ -2475,6 +2487,123 @@ sub check_pub_accession_against_chado {
 					report ($file, "%s: The %s '%s' is already in chado under %s but you are trying to add it to a new publication.", $code, $label, $accession, $FBrf_in_chado);
 				}
 			}
+		}
+	}
+
+
+}
+
+sub check_pub_merge {
+
+
+	my ($file, $code, $winning_FBrf, $P32_list) = @_;
+
+	my $winning_pub_data = {};
+
+	$winning_pub_data->{journal} = $multipub_abbrev ne '' ? $multipub_abbrev : chat_to_chado ('pub_journal_from_FBrf', $winning_FBrf)->[0]->[0];
+	$winning_pub_data->{year} = $P10_data ne '' ? $P10_data : chat_to_chado ('pub_date_from_id', $winning_FBrf)->[0]->[0];
+	$winning_pub_data->{volume} = $p3_data ne '' ? $p3_data : chat_to_chado ('pub_volume', $winning_FBrf)->[0]->[0];
+	$winning_pub_data->{issue} = $p4_data ne '' ? $p4_data : chat_to_chado ('pub_issue', $winning_FBrf)->[0]->[0];
+	$winning_pub_data->{pages} = $p11a_data ne '' ? $p11a_data : chat_to_chado ('pub_pages', $winning_FBrf)->[0]->[0];
+	$winning_pub_data->{title} = $P16_data ne '' ? $P16_data : chat_to_chado ('pub_title_from_id', $winning_FBrf)->[0]->[0];
+	$winning_pub_data->{pubtype} = $p1_data ne '' ? $p1_data : chat_to_chado ('pub_pubtype', $winning_FBrf)->[0]->[0];
+
+	# get first author
+	if ($P12_data ne '') {
+		my $first_author = "$P12_data";
+		$first_author =~ s/\n.+$//m;
+		$winning_pub_data->{first_author} = $first_author;
+	} else {
+		my $winning_authors_array = chat_to_chado ('pub_authors', $winning_FBrf);
+		$winning_pub_data->{first_author} = $winning_authors_array->[0]->[0] . "\t" . (defined $winning_authors_array->[0]->[1] ? $winning_authors_array->[0]->[1] : '?.');
+
+	}
+
+	foreach my $field (sort keys %{$winning_pub_data}) {
+
+		defined $winning_pub_data->{$field} or $winning_pub_data->{$field} = '';
+
+	}
+
+	my $winning_miniref = chat_to_chado ('pub_miniref_from_id', $winning_FBrf)->[0]->[0];
+
+
+	my @losing_FBrfs = split '\n', $P32_list;
+
+	foreach my $losing_FBrf (@losing_FBrfs) {
+
+		my $losing_pub_data = {};
+		my $mismatch_count = 0;
+		my @mismatch_types;
+
+		$losing_pub_data->{journal} = chat_to_chado ('pub_journal_from_FBrf', $losing_FBrf)->[0]->[0];
+		$losing_pub_data->{year} = chat_to_chado ('pub_date_from_id', $losing_FBrf)->[0]->[0];
+		$losing_pub_data->{volume} = chat_to_chado ('pub_volume', $losing_FBrf)->[0]->[0];
+		$losing_pub_data->{issue} = chat_to_chado ('pub_issue', $losing_FBrf)->[0]->[0];
+		$losing_pub_data->{pages} = chat_to_chado ('pub_pages', $losing_FBrf)->[0]->[0];
+		$losing_pub_data->{title} = chat_to_chado ('pub_title_from_id', $losing_FBrf)->[0]->[0];
+		$losing_pub_data->{pubtype} = chat_to_chado ('pub_pubtype', $losing_FBrf)->[0]->[0];
+
+		# get first author 
+
+		my $losing_authors_array = chat_to_chado ('pub_authors', $losing_FBrf);
+		$losing_pub_data->{first_author} = $losing_authors_array->[0]->[0] . "\t" . (defined $losing_authors_array->[0]->[1] ? $losing_authors_array->[0]->[1] : '?.');
+
+		my $losing_miniref = chat_to_chado ('pub_miniref_from_id', $losing_FBrf)->[0]->[0];
+
+		foreach my $field (sort keys %{$losing_pub_data}) {
+
+			defined $losing_pub_data->{$field} or $losing_pub_data->{$field} = '';
+
+		}
+
+		foreach my $field (sort keys %{$losing_pub_data}) {
+
+			unless ($losing_pub_data->{$field} eq $winning_pub_data->{$field}) {
+
+				if ($field eq 'pages') {
+
+					unless ($losing_pub_data->{pubtype} eq 'supplementary material') {
+
+						$mismatch_count++;
+						push @mismatch_types, $field;
+					} else {
+						# for supplements, if they have pages data and it does not match winning pub, count as a mismatch
+						if ($losing_pub_data->{$field} ne '') {
+							$mismatch_count++;
+							push @mismatch_types, $field;
+
+						}
+					}
+
+				} elsif ($field eq 'title') {
+
+
+					if ($winning_pub_data->{pubtype} eq 'personal communication to FlyBase' || $losing_pub_data->{pubtype} eq 'personal communication to FlyBase') {
+						$mismatch_count++;
+						push @mismatch_types, $field;
+					}
+
+				} elsif ($field eq 'pubtype') {
+
+					unless ($losing_pub_data->{$field} eq 'supplementary material') {
+						$mismatch_count++;
+						push @mismatch_types, $field;
+					}
+
+				} else {
+
+					$mismatch_count++;
+					push @mismatch_types, $field;
+				}
+			}
+		}
+
+		if ($mismatch_count) {
+
+			report ($file, "%s: Bibliographic data mis-match for pub merge (%s) - check the data carefully before proceeeding.\nP22:%s\nP32:%s", $code, (join ' ', @mismatch_types), ("$winning_FBrf: $winning_miniref, pub_type: $winning_pub_data->{pubtype}"), ("$losing_FBrf: $losing_miniref, pub_type: $losing_pub_data->{pubtype}"));
+
+
 		}
 	}
 

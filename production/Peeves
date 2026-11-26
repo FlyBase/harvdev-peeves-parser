@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.96.3"; #  Add warning when try to merge multiple genome localized genes (DC-100, DC-1117)
+our $Peeves_version = "2.97"; #  Add checks to warn for unlikely looking pub merges (DC-1122)
 
 =head2 Version
 

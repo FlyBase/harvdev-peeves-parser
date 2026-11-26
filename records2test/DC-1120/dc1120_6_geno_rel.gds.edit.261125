@@ -1,0 +1,10 @@
+! C1. Curator ID        :gds
+! C2. Date              :261125
+! C3. Curator notes to self :DC-1120 test: merge supplement FBrf0188485 into paper FBrf0183817 (losing supplement has genotype_relationship which links old style FB genotypes (with FBal for constructs) to new Alliance-compliant one (with unspecified insertion)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! PUBLICATION PROFORMA                   Version 48:  21 May 2018
+!
+! P22.  FlyBase reference ID (FBrf) or "new"            *U   :FBrf0183817
+! P32.  Action - make this/these FBrf(s) secondary IDs of P22 *N :FBrf0188485
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!! END OF RECORD FOR THIS PUBLICATION !!!!!!!!!!!!!!!!!!!!
