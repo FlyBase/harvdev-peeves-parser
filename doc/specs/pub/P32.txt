@@ -61,6 +61,8 @@ Checks between fields
 
     * the error message lists which citation data fields are mis-matched, along with a miniref for both the winning pub and losing pub, to make it easy to check the merge.
 
+* sub check_pub_merge also warns if a losing pub is a supplementary material and is not already associated as a related publication to the winning pub in chado.
+
 
 ### Related or dependant fields:
 
@@ -78,5 +80,5 @@ If P32 contains a value or values, P39 must be left blank.
 
 ### Updated:
 
-gm261126.
+gm261127.
 
