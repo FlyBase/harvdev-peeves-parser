@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-our $Peeves_version = "2.97"; #  Add checks to warn for unlikely looking pub merges (DC-1122)
+our $Peeves_version = "2.98"; #  Add extra check for supplement merges (related to DC-1122)
 
 =head2 Version
 

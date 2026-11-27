@@ -2605,6 +2605,32 @@ sub check_pub_merge {
 
 
 		}
+		# extra check for supplements being merged in P32, to make sure that it is already a related publication to the winning pub in P22
+		if ($losing_pub_data->{pubtype} eq 'supplementary material') {
+
+			my $related_pub_count = 0;
+
+			if (defined (chat_to_chado ('check_related_pubs', $winning_FBrf, $losing_FBrf)->[0])) {
+
+				 $related_pub_count++
+
+			}
+
+			if (defined (chat_to_chado ('check_related_pubs', $losing_FBrf, $winning_FBrf)->[0])) {
+
+				 $related_pub_count++
+
+			}
+
+			unless ($related_pub_count) {
+
+
+				report ($file, "%s: Pub merge involving supplementary material (%s) that is not already a related publication for the winning FBrf (%s) - check the FBrfs carefully before proceeeding.", $code, $losing_FBrf, $winning_FBrf);
+
+			}
+
+		}
+
 	}
 
 

@@ -151,6 +151,17 @@ sub set_up_chado_queries ()
 							 	  AND dbxref.db_id=db.db_id
 								  AND db.name=?;');
 
+# check two pubs are linked as related publications. Need to do the check both ways round when call chat_to_chado, as either FBrf could be the subject
+    $prepared_queries{'check_related_pubs'}       = $chado->prepare ('SELECT p.uniquename
+								   FROM pub p, pub_relationship pr, pub p2, cvterm c
+								   WHERE p.uniquename=?
+								   AND p2.uniquename=?
+								   AND pr.subject_id=p.pub_id
+								   AND pr.object_id=p2.pub_id
+								   AND c.cvterm_id=pr.type_id
+								   AND c.name=\'related_to\';');
+
+
 # Generic symbol<->id block
 
 # feature (e.g. gene, allele, etc.)
